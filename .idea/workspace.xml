@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.0.3 prettier 설치완료">
-      <change afterPath="$PROJECT_DIR$/eslint.config.js" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.0.4 yarn lint 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/components/main/info/Info.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/components/main/info/Info.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/pages/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729514906571</updated>
       <workItem from="1729514907892" duration="288000" />
-      <workItem from="1729515222983" duration="6790000" />
+      <workItem from="1729515222983" duration="7186000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
       <option name="closed" value="true" />
@@ -114,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729520681896</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="v0.0.4 yarn lint 추가">
+      <option name="closed" value="true" />
+      <created>1729522479365</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729522479365</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +128,7 @@
     <MESSAGE value="v0.0.1 차크라 pro black &amp; white 스타일 탑재" />
     <MESSAGE value="v0.0.2 메인 옵션 시작 UI 추가" />
     <MESSAGE value="v0.0.3 prettier 설치완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.0.3 prettier 설치완료" />
+    <MESSAGE value="v0.0.4 yarn lint 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.0.4 yarn lint 추가" />
   </component>
 </project>

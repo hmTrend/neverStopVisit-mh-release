@@ -8,13 +8,14 @@ import {
   TableCaption,
   TableContainer,
   Code,
-} from '@chakra-ui/react';
+  Flex,
+} from "@chakra-ui/react";
 
 export const Info = () => {
   return (
     <TableContainer>
       <Table variant="simple">
-        <TableCaption>Imperial to metric conversion factors</TableCaption>
+        <TableCaption>PC Traffic Performance Program</TableCaption>
         <Thead>
           <Tr>
             <Th>명칭</Th>
@@ -29,18 +30,14 @@ export const Info = () => {
           <Tr>
             <Td>제품</Td>
             <Td>
-              <Code>NP</Code>
-              <Code>NS</Code>
-              <Code>CP</Code>
+              <Flex gap={3}>
+                <Code>NP</Code>
+                <Code>NS</Code>
+                <Code>CP</Code>
+              </Flex>
             </Td>
           </Tr>
         </Tbody>
-        {/*<Tfoot>*/}
-        {/*  <Tr>*/}
-        {/*	  <Th>To convert</Th>*/}
-        {/*	  <Th>into</Th>*/}
-        {/*  </Tr>*/}
-        {/*</Tfoot>*/}
       </Table>
     </TableContainer>
   );
