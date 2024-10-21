@@ -4,14 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
+      <change afterPath="$PROJECT_DIR$/renderer/components/Layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/components/option/Option.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/components/start/Start.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/components/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/components/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/pages/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/renderer/my-app" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -23,6 +40,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2nkR5r2SQ8zWLE9oCCcMDupeYap" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -33,10 +53,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/renderer",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/renderer/lib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,8 +69,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/renderer" />
       <recent name="$PROJECT_DIR$/renderer/lib" />
+      <recent name="$PROJECT_DIR$/renderer" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -61,23 +82,25 @@
       <option name="presentableId" value="Default" />
       <updated>1729514906571</updated>
       <workItem from="1729514907892" duration="288000" />
-      <workItem from="1729515222983" duration="2706000" />
+      <workItem from="1729515222983" duration="4436000" />
     </task>
+    <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
+      <option name="closed" value="true" />
+      <created>1729518142591</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729518142591</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/renderer/pages/_app.tsx</url>
-          <line>12</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="v0.0.1 차크라 pro black &amp; white 스타일 탑재" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.0.1 차크라 pro black &amp; white 스타일 탑재" />
   </component>
 </project>
