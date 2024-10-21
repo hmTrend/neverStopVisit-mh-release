@@ -1,7 +1,8 @@
 import {Tab, TabList, TabPanel, TabPanels, Tabs} from "@chakra-ui/react";
-import {Main} from "./Main";
+
 import {Option} from "./option/Option";
 import {Start} from "./start/Start";
+import {Main} from "./main/Main";
 
 export default function Layout({ children }) {
 	return (
