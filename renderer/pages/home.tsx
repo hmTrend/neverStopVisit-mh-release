@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <React.Fragment>
       <Head>
-        <title>Home - Nextron (with-chakra-ui)</title>
+        <title>네버스탑 비지트히트</title>
       </Head>
       <Container minHeight="100vh"></Container>
     </React.Fragment>
