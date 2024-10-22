@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.0.5 메인 Info.tsx">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.0.6 넥스트론 타이틀 변경">
+      <change afterPath="$PROJECT_DIR$/renderer/components/option/OptionCommon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/components/option/OptionCoupang.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/components/option/OptionPlace.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/components/option/OptionShopping.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/components/register/Register.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkCreateGroup.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkGetGroupList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkGetList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/pages/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/pages/next.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/components/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/components/option/Option.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/components/option/Option.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +60,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/renderer/lib",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/renderer/components/register",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -68,6 +76,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/renderer/components/register" />
+      <recent name="$PROJECT_DIR$/renderer/components/option" />
       <recent name="$PROJECT_DIR$/renderer/lib" />
       <recent name="$PROJECT_DIR$/renderer" />
     </key>
@@ -84,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729514906571</updated>
       <workItem from="1729514907892" duration="288000" />
-      <workItem from="1729515222983" duration="7311000" />
+      <workItem from="1729515222983" duration="14088000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
       <option name="closed" value="true" />
@@ -126,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729522778623</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v0.0.6 넥스트론 타이틀 변경">
+      <option name="closed" value="true" />
+      <created>1729522888677</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729522888677</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +168,7 @@
     <MESSAGE value="v0.0.3 prettier 설치완료" />
     <MESSAGE value="v0.0.4 yarn lint 추가" />
     <MESSAGE value="v0.0.5 메인 Info.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.0.5 메인 Info.tsx" />
+    <MESSAGE value="v0.0.6 넥스트론 타이틀 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.0.6 넥스트론 타이틀 변경" />
   </component>
 </project>
