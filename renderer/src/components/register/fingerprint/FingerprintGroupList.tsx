@@ -7,17 +7,17 @@ import {
   FormLabel,
   IconButton,
 } from "@chakra-ui/react";
-import { DeleteIcon, EditIcon } from "@chakra-ui/icons";
+import { CloseIcon, DeleteIcon, EditIcon } from "@chakra-ui/icons";
 
-export const RegisterPersonalMarkGetGroupList = () => {
+export const FingerprintGroupList = () => {
   return (
     <Flex>
       <Box>
         <FormControl>
           <FormLabel>생성된 그룹리스트</FormLabel>
           <Box display={"flex"} gap={3}>
-            <Box>
-              <Button variant={"outline"}>그룹1</Button>
+            <Box border="1px solid black">
+              <Button>그룹1</Button>
               <IconButton
                 aria-label="Edit"
                 icon={<EditIcon />}
@@ -27,14 +27,15 @@ export const RegisterPersonalMarkGetGroupList = () => {
               />
               <IconButton
                 aria-label="Delete"
-                icon={<DeleteIcon />}
+                icon={<CloseIcon />}
                 onClick={() => alert("Delete button clicked!")}
                 bg="white"
                 color="black"
+                size={"sm"}
               />
             </Box>
-            <Box>
-              <Button variant={"outline"}>그룹2</Button>
+            <Box border="1px solid black">
+              <Button>그룹2</Button>
               <IconButton
                 aria-label="Edit"
                 icon={<EditIcon />}
@@ -44,14 +45,15 @@ export const RegisterPersonalMarkGetGroupList = () => {
               />
               <IconButton
                 aria-label="Delete"
-                icon={<DeleteIcon />}
+                icon={<CloseIcon />}
                 onClick={() => alert("Delete button clicked!")}
                 bg="white"
                 color="black"
+                size={"sm"}
               />
             </Box>
-            <Box>
-              <Button variant={"outline"}>그룹3</Button>
+            <Box border="1px solid black">
+              <Button>그룹3</Button>
               <IconButton
                 aria-label="Edit"
                 icon={<EditIcon />}
@@ -61,10 +63,11 @@ export const RegisterPersonalMarkGetGroupList = () => {
               />
               <IconButton
                 aria-label="Delete"
-                icon={<DeleteIcon />}
+                icon={<CloseIcon />}
                 onClick={() => alert("Delete button clicked!")}
                 bg="white"
                 color="black"
+                size={"sm"}
               />
             </Box>
           </Box>

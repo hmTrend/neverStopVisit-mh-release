@@ -10,12 +10,13 @@ import {
   Code,
   Flex,
 } from "@chakra-ui/react";
+import { version } from "../../../../package.json";
 
 export const Info = () => {
   return (
     <TableContainer>
       <Table variant="simple">
-        <TableCaption>PC Traffic Performance Program</TableCaption>
+        <TableCaption>Never Stop VIsit Hit</TableCaption>
         <Thead>
           <Tr>
             <Th>명칭</Th>
@@ -24,8 +25,8 @@ export const Info = () => {
         </Thead>
         <Tbody>
           <Tr>
-            <Td>네버스탑 비지트히트</Td>
-            <Td>v0.0.2</Td>
+            <Td>네버스탑 비지트 히트</Td>
+            <Td>v{version}</Td>
           </Tr>
           <Tr>
             <Td>제품</Td>

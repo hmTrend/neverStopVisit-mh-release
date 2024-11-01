@@ -4,7 +4,7 @@ import { OptionShopping } from "./OptionShopping";
 import { OptionCoupang } from "./OptionCoupang";
 import { OptionCommon } from "./OptionCommon";
 
-export const Option = () => {
+export const App = () => {
   return (
     <Tabs isManual variant="enclosed">
       <TabList>

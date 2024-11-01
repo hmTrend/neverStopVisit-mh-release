@@ -8,7 +8,7 @@ import {
   Input,
 } from "@chakra-ui/react";
 
-export const RegisterPersonalMarkCreateGroup = () => {
+export const FingerprintCreateGroup = () => {
   return (
     <Flex>
       <Box>

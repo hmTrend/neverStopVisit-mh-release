@@ -14,7 +14,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-export const RegisterPersonalMarkGetList = () => {
+export const FingerprintExcelList = () => {
   return (
     <Flex>
       <Box>
