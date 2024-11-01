@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.0.6 넥스트론 타이틀 변경">
-      <change afterPath="$PROJECT_DIR$/renderer/components/option/OptionCommon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/components/option/OptionCoupang.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/components/option/OptionPlace.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/components/option/OptionShopping.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/components/register/Register.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkCreateGroup.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkGetGroupList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkGetList.tsx" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.0.7 옵션 / 등록 UI 추가">
+      <change afterPath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkCreateExcel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/valtio/option.valtio.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/components/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/option/Option.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/components/option/Option.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/components/register/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/components/register/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkGetGroupList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkGetGroupList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkGetList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkGetList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -53,27 +51,27 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "eslint.code.style.apply.dismiss": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/renderer/components/register",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/renderer/components/register&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/renderer/components/register" />
@@ -94,7 +92,8 @@
       <option name="presentableId" value="Default" />
       <updated>1729514906571</updated>
       <workItem from="1729514907892" duration="288000" />
-      <workItem from="1729515222983" duration="14088000" />
+      <workItem from="1729515222983" duration="17595000" />
+      <workItem from="1729750915321" duration="3908000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
       <option name="closed" value="true" />
@@ -144,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729522888677</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="v0.0.7 옵션 / 등록 UI 추가">
+      <option name="closed" value="true" />
+      <created>1729562618396</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729562618396</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +176,7 @@
     <MESSAGE value="v0.0.4 yarn lint 추가" />
     <MESSAGE value="v0.0.5 메인 Info.tsx" />
     <MESSAGE value="v0.0.6 넥스트론 타이틀 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.0.6 넥스트론 타이틀 변경" />
+    <MESSAGE value="v0.0.7 옵션 / 등록 UI 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.0.7 옵션 / 등록 UI 추가" />
   </component>
 </project>

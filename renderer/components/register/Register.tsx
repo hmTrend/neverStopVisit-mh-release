@@ -9,6 +9,7 @@ import {
 import { RegisterPersonalMarkCreateGroup } from "./RegisterPersonalMarkCreateGroup";
 import { RegisterPersonalMarkGetGroupList } from "./RegisterPersonalMarkGetGroupList";
 import { RegisterPersonalMarkGetList } from "./RegisterPersonalMarkGetList";
+import { RegisterPersonalMarkCreateExcel } from "./RegisterPersonalMarkCreateExcel";
 
 export const Register = () => {
   return (
@@ -24,6 +25,7 @@ export const Register = () => {
           <Flex direction={"column"} gap={3}>
             <RegisterPersonalMarkCreateGroup />
             <RegisterPersonalMarkGetGroupList />
+            <RegisterPersonalMarkCreateExcel />
             <RegisterPersonalMarkGetList />
           </Flex>
         </TabPanel>

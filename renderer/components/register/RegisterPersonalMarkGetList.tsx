@@ -2,12 +2,10 @@ import {
   Box,
   Flex,
   FormControl,
-  FormHelperText,
   FormLabel,
   Table,
   Thead,
   Tbody,
-  Tfoot,
   Tr,
   Th,
   Td,
@@ -36,24 +34,24 @@ export const RegisterPersonalMarkGetList = () => {
               <Tbody>
                 <Tr>
                   <Td>1</Td>
-                  <Td>millimetres (mm)</Td>
-                  <Td isNumeric>25.4</Td>
+                  <Td>[cookie list]</Td>
+                  <Td isNumeric>2024-10-22</Td>
                   <Td>
                     <Button variant={"ghost"}>오픈</Button>
                   </Td>
                 </Tr>
                 <Tr>
                   <Td>2</Td>
-                  <Td>centimetres (cm)</Td>
-                  <Td isNumeric>30.48</Td>
+                  <Td>[cookie list]</Td>
+                  <Td isNumeric>2024-10-22</Td>
                   <Td>
                     <Button variant={"ghost"}>오픈</Button>
                   </Td>
                 </Tr>
                 <Tr>
                   <Td>3</Td>
-                  <Td>metres (m)</Td>
-                  <Td isNumeric>0.91444</Td>
+                  <Td>[cookie list]</Td>
+                  <Td isNumeric>2024-10-22</Td>
                   <Td>
                     <Button variant={"ghost"}>오픈</Button>
                   </Td>
