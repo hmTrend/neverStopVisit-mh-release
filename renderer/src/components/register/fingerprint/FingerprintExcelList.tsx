@@ -19,10 +19,10 @@ export const FingerprintExcelList = () => {
     <Flex>
       <Box>
         <FormControl>
-          <FormLabel>퍼스널마크 리스트</FormLabel>
+          <FormLabel>지문 리스트</FormLabel>
           <TableContainer>
             <Table variant="striped" colorScheme="teal" size={"sm"}>
-              <TableCaption>선택된 퍼스널마크 리스트</TableCaption>
+              <TableCaption>선택된 지문 리스트</TableCaption>
               <Thead>
                 <Tr>
                   <Th>3개</Th>

@@ -4,74 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.1.0 package.json 셋팅">
-      <change afterPath="$PROJECT_DIR$/renderer/src/app/fonts.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/app/option/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/app/register/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/app/start/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/components/layout/Footer.tsx" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.2.0 + app router 변경&#10;+ 차크라ui 2버전 대로 다운그레이드&#10;+ ui 재셋팅">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/background.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/background.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/Container.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/DarkModeSwitch.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/Footer.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/Hero.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/layout/MainTopMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/main/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/main/info/Info.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/main/Info.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/option/Option.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/option/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/option/OptionCommon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/option/OptionCommon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/option/OptionCoupang.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/option/OptionCoupang.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/option/OptionPlace.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/option/OptionPlace.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/option/OptionShopping.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/option/OptionShopping.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/register/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkCreateExcel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateExcel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkCreateGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateGroup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkGetGroupList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/register/RegisterPersonalMarkGetList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/components/start/Start.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/lib/theme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/lib/theme.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/pages/_app.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/alert.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/alert.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/avatar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/avatar.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/badge.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/badge.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/button.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/button.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/checkbox.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/checkbox.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/close-button.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/close-button.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/container.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/container.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/custom-select.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/custom-select.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/divider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/divider.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/form-control.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/form-control.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/form-label.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/form-label.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/heading.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/heading.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/input.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/input.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/menu.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/modal.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/modal.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/progress.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/progress.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/radio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/radio.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/select.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/select.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/slider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/slider.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/switch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/switch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/table.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/table.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/tabs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/tabs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/tag.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/tag.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/components/textarea.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/components/textarea.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/foundations/baseStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/foundations/baseStyles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/foundations/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/foundations/colors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/foundations/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/foundations/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/foundations/radii.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/foundations/radii.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/foundations/shadows.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/foundations/shadows.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/foundations/tokens.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/foundations/tokens.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/foundations/typography.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/foundations/typography.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/theme/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/valtio/option.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/option.valtio.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/main/Info.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/main/Info.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +65,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/node_modules/prettier",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -159,6 +96,7 @@
       <workItem from="1729514907892" duration="288000" />
       <workItem from="1729515222983" duration="17595000" />
       <workItem from="1729750915321" duration="3908000" />
+      <workItem from="1730514445431" duration="186000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
       <option name="closed" value="true" />
@@ -216,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729562618396</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="v0.2.0 + app router 변경&#10;+ 차크라ui 2버전 대로 다운그레이드&#10;+ ui 재셋팅">
+      <option name="closed" value="true" />
+      <created>1730485286060</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730485286060</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +188,7 @@
     <MESSAGE value="v0.0.5 메인 Info.tsx" />
     <MESSAGE value="v0.0.6 넥스트론 타이틀 변경" />
     <MESSAGE value="v0.0.7 옵션 / 등록 UI 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.0.7 옵션 / 등록 UI 추가" />
+    <MESSAGE value="v0.2.0 + app router 변경&#10;+ 차크라ui 2버전 대로 다운그레이드&#10;+ ui 재셋팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.2.0 + app router 변경&#10;+ 차크라ui 2버전 대로 다운그레이드&#10;+ ui 재셋팅" />
   </component>
 </project>
