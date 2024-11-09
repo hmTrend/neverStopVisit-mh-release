@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Box,
   Flex,
@@ -8,8 +10,12 @@ import {
   Radio,
   RadioGroup,
 } from "@chakra-ui/react";
+import { useSnapshot } from "valtio/react";
+import { storeOptionValtio } from "@/valtio/option.valtio";
 
 export const OptionCommon = () => {
+  const { common } = useSnapshot(storeOptionValtio);
+
   return (
     <Flex>
       <Box>
@@ -17,7 +23,7 @@ export const OptionCommon = () => {
           <FormLabel as="legend" fontSize={"xl"}>
             IP 교체방식
           </FormLabel>
-          <RadioGroup defaultValue="Itachi">
+          <RadioGroup value={common.ipChangeType}>
             <HStack spacing="24px">
               <Radio value="STATIC">고정</Radio>
               <Radio value="TETHERING">테더링</Radio>
