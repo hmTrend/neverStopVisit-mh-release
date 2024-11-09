@@ -1,18 +1,25 @@
-import * as Puppeteer from "puppeteer";
 import { initialize } from "./initialize";
+import { Browser, Page, chromium } from "playwright";
 
 export class PuppeteerEngine {
-  browser: Puppeteer.Browser;
-  page: Puppeteer.Page;
-  pages: Puppeteer.Page[];
+  chromiumEngine: typeof chromium; // 'typeof chromium'으로 수정
+  page: Page;
+  pages: Page[];
+  browser: Browser;
 
-  async initialize() {
-    await initialize({
-      url: "https://www.naver.com/",
-      puppeteer: Puppeteer,
+  constructor() {
+    this.chromiumEngine = chromium; // chromium 초기화
+    this.pages = []; // pages 배열 초기화
+  }
+
+  async initialize({ url }) {
+    const { page } = await initialize({
+      url,
+      chromiumEngine: this.chromiumEngine,
       browser: this.browser,
       page: this.page,
       pages: this.pages,
     });
+    this.page = page;
   }
 }
