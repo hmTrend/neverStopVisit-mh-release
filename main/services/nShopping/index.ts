@@ -14,7 +14,6 @@ export class NShopping extends PuppeteerEngine {
         cookie: sampleCookieNaverLoggedIn,
       });
       await loggedInCheck({ page: this.page });
-      return;
       {
         const { page } = await goToShopping({
           page: this.page,
@@ -34,5 +33,8 @@ export class NShopping extends PuppeteerEngine {
   }
 }
 
-const xxx = new NShopping();
-xxx.start();
+const instanceOne = new NShopping();
+
+Promise.all([instanceOne.start()])
+  .then(() => console.log("Both instances completed"))
+  .catch((error) => console.error("An error occurred:", error));
