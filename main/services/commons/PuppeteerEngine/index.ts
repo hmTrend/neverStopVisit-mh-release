@@ -1,5 +1,6 @@
 import { initialize } from "./initialize";
 import { Browser, Page, chromium } from "playwright";
+import { formatCookiesForPlaywright } from "./formatCookiesForPlaywright";
 
 export class PuppeteerEngine {
   chromiumEngine: typeof chromium; // 'typeof chromium'으로 수정
@@ -12,7 +13,7 @@ export class PuppeteerEngine {
     this.pages = []; // pages 배열 초기화
   }
 
-  async initialize({ url }) {
+  async initialize({ url, cookie }) {
     try {
       const { page } = await initialize({
         url,
@@ -21,6 +22,12 @@ export class PuppeteerEngine {
         page: this.page,
         pages: this.pages,
       });
+
+      if (cookie && cookie.length > 0) {
+        const formattedCookies = formatCookiesForPlaywright(cookie);
+        await page.context().addCookies(formattedCookies);
+      }
+
       this.page = page;
     } catch (e) {
       console.error(e.message);
