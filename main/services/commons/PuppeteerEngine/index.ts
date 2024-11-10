@@ -21,6 +21,7 @@ export class PuppeteerEngine {
         browser: this.browser,
         page: this.page,
         pages: this.pages,
+        cookie,
       });
       this.page = page;
     } catch (e) {
