@@ -15,12 +15,18 @@ export class NShopping extends PuppeteerEngine {
       });
       await loggedInCheck({ page: this.page });
       return;
-      const { page: goToShoppingPage } = await goToShopping({
-        page: this.page,
-      });
-      this.page = goToShoppingPage;
-      const { page: goToKeywordPage } = await goToKeyword({ page: this.page });
-      this.page = goToKeywordPage;
+      {
+        const { page } = await goToShopping({
+          page: this.page,
+        });
+        this.page = page;
+      }
+      {
+        const { page } = await goToKeyword({
+          page: this.page,
+        });
+        this.page = page;
+      }
       await keywordSearch({ page: this.page });
     } catch (e) {
       console.error(e.message);
