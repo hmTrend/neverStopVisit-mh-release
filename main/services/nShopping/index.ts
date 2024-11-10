@@ -4,6 +4,7 @@ import wait from "waait";
 import { goToKeyword } from "./goToKeyword";
 import { keywordSearch } from "./keywordSearch";
 import { sampleCookieNaverLoggedIn } from "./mockData";
+import { loggedInCheck } from "../commons/naver/loggedInCheck";
 
 export class NShopping extends PuppeteerEngine {
   async start(): Promise<void> {
@@ -12,6 +13,7 @@ export class NShopping extends PuppeteerEngine {
         url: "https://www.naver.com/",
         cookie: sampleCookieNaverLoggedIn,
       });
+      await loggedInCheck({ page: this.page });
       return;
       const { page: goToShoppingPage } = await goToShopping({
         page: this.page,

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.5.3 + 로그인 기능 제작중">
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.5.4 + 쿠키 로그인 반영 성공">
+      <change afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +168,7 @@
       <workItem from="1730514762192" duration="2336000" />
       <workItem from="1730562069962" duration="552000" />
       <workItem from="1730562685900" duration="7897000" />
-      <workItem from="1730992352376" duration="18409000" />
+      <workItem from="1730992352376" duration="19101000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
       <option name="closed" value="true" />
@@ -289,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731242389999</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="v0.5.4 + 쿠키 로그인 반영 성공">
+      <option name="closed" value="true" />
+      <created>1731242511260</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1731242511260</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +332,7 @@
     <MESSAGE value="v0.5.1 + 예외 처리 추가" />
     <MESSAGE value="v0.5.2 + 로그인 여부 체크 &gt; 쿠키적용" />
     <MESSAGE value="v0.5.3 + 로그인 기능 제작중" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.5.3 + 로그인 기능 제작중" />
+    <MESSAGE value="v0.5.4 + 쿠키 로그인 반영 성공" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.5.4 + 쿠키 로그인 반영 성공" />
   </component>
 </project>
