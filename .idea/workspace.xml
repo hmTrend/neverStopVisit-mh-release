@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.5.1 + 예외 처리 추가">
-      <change afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/formatCookiesForPlaywright.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/services/nShopping/mockData.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.5.2 + 로그인 여부 체크 &gt; 쿠키적용">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +55,7 @@
     "TypeScript.index.ts (1).executor": "Run",
     "TypeScript.index.ts (2).executor": "Run",
     "TypeScript.index.ts.executor": "Run",
+    "TypeScript.initialize.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/renderer/src/app/start",
@@ -131,9 +130,24 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="initialize.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TypeScript.index.ts (1)" />
+        <item itemvalue="TypeScript.initialize.ts" />
         <item itemvalue="TypeScript.index.ts (2)" />
         <item itemvalue="TypeScript.index.ts" />
       </list>
@@ -154,7 +168,7 @@
       <workItem from="1730514762192" duration="2336000" />
       <workItem from="1730562069962" duration="552000" />
       <workItem from="1730562685900" duration="7897000" />
-      <workItem from="1730992352376" duration="16554000" />
+      <workItem from="1730992352376" duration="18152000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
       <option name="closed" value="true" />
@@ -260,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731204392595</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="v0.5.2 + 로그인 여부 체크 &gt; 쿠키적용">
+      <option name="closed" value="true" />
+      <created>1731213986261</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731213986261</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +314,7 @@
     <MESSAGE value="v0.4.0 + playwright로 교체" />
     <MESSAGE value="v0.5.0 + goToKeyword" />
     <MESSAGE value="v0.5.1 + 예외 처리 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.5.1 + 예외 처리 추가" />
+    <MESSAGE value="v0.5.2 + 로그인 여부 체크 &gt; 쿠키적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.5.2 + 로그인 여부 체크 &gt; 쿠키적용" />
   </component>
 </project>

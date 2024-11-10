@@ -14,7 +14,7 @@ export const initialize = async ({
   pages: Page[];
 }) => {
   browser = await chromiumEngine.launch({ headless: false });
-  const context = await browser.newContext(devices["iPhone 11"]);
+  const context = await browser.newContext(devices["iPhone 15 Pro Max"]);
   page = await context.newPage();
   await page.goto(url, { waitUntil: "networkidle" });
   return { page };

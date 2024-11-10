@@ -22,12 +22,6 @@ export class PuppeteerEngine {
         page: this.page,
         pages: this.pages,
       });
-
-      if (cookie && cookie.length > 0) {
-        const formattedCookies = formatCookiesForPlaywright(cookie);
-        await page.context().addCookies(formattedCookies);
-      }
-
       this.page = page;
     } catch (e) {
       console.error(e.message);
