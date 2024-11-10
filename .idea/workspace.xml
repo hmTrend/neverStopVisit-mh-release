@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.4.0 + playwright로 교체">
-      <change afterPath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/services/nShopping/keywordSearch.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.5.0 + goToKeyword">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShopping/goToShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/goToShopping.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/keywordSearch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/keywordSearch.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +154,7 @@
       <workItem from="1730514762192" duration="2336000" />
       <workItem from="1730562069962" duration="552000" />
       <workItem from="1730562685900" duration="7897000" />
-      <workItem from="1730992352376" duration="12946000" />
+      <workItem from="1730992352376" duration="14155000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
       <option name="closed" value="true" />
@@ -244,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731169754757</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="v0.5.0 + goToKeyword">
+      <option name="closed" value="true" />
+      <created>1731170808474</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731170808474</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +282,7 @@
     <MESSAGE value="v0.3.0 + 퍼페티어 엔진추가" />
     <MESSAGE value="v0.3.1 + 모바일 창으로 열기" />
     <MESSAGE value="v0.4.0 + playwright로 교체" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.4.0 + playwright로 교체" />
+    <MESSAGE value="v0.5.0 + goToKeyword" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.5.0 + goToKeyword" />
   </component>
 </project>

@@ -13,13 +13,18 @@ export class PuppeteerEngine {
   }
 
   async initialize({ url }) {
-    const { page } = await initialize({
-      url,
-      chromiumEngine: this.chromiumEngine,
-      browser: this.browser,
-      page: this.page,
-      pages: this.pages,
-    });
-    this.page = page;
+    try {
+      const { page } = await initialize({
+        url,
+        chromiumEngine: this.chromiumEngine,
+        browser: this.browser,
+        page: this.page,
+        pages: this.pages,
+      });
+      this.page = page;
+    } catch (e) {
+      console.error(e.message);
+      throw Error("initialize");
+    }
   }
 }
