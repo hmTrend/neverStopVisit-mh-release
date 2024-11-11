@@ -19,6 +19,7 @@ import {
 import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 import { CommonUtil } from "@/util/common.util";
+import CopyToClipboardButton from "@/components/commons/CopyToClipboardButton";
 
 export const FingerprintExcelList = () => {
   const { selectedGroupName, selectedExcelList } = useSnapshot(
@@ -60,7 +61,10 @@ export const FingerprintExcelList = () => {
                     <Td>{v.nState}</Td>
                     <Td>{v.createdAt}</Td>
                     <Td>{v.ip}</Td>
-                    <Td>쿠키</Td>
+                    <Td>
+                      {" "}
+                      <CopyToClipboardButton value={v.cookie} />
+                    </Td>
                     <Td>{v.phoneNumber}</Td>
                   </Tr>
                 ))}
