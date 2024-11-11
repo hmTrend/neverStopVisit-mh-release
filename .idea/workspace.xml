@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.5.6 + Promise all로 멀티구동 성공">
-      <change afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.5.7 + nPlace 껍데기 추가">
+      <change afterPath="$PROJECT_DIR$/renderer/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/apollo-provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateGroup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +64,7 @@
     "TypeScript.initialize.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisitHit/renderer/src/app/start",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -72,11 +80,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/renderer" />
+      <recent name="$PROJECT_DIR$/renderer/src/lib/graphql" />
       <recent name="$PROJECT_DIR$/renderer/src/app/start" />
       <recent name="$PROJECT_DIR$/renderer/src/app" />
       <recent name="$PROJECT_DIR$/renderer/components/register" />
-      <recent name="$PROJECT_DIR$/renderer/components/option" />
-      <recent name="$PROJECT_DIR$/renderer/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/renderer/src/components/main" />
@@ -166,7 +174,7 @@
       <workItem from="1730514762192" duration="2336000" />
       <workItem from="1730562069962" duration="552000" />
       <workItem from="1730562685900" duration="7897000" />
-      <workItem from="1730992352376" duration="19545000" />
+      <workItem from="1730992352376" duration="23167000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
       <option name="closed" value="true" />
@@ -320,7 +328,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731243519861</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="v0.5.7 + nPlace 껍데기 추가">
+      <option name="closed" value="true" />
+      <created>1731243706946</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1731243706946</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +347,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -358,6 +386,7 @@
     <MESSAGE value="v0.5.5 + loggedInCheck" />
     <MESSAGE value="v0.5.5 + 블록 나누기" />
     <MESSAGE value="v0.5.6 + Promise all로 멀티구동 성공" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.5.6 + Promise all로 멀티구동 성공" />
+    <MESSAGE value="v0.5.7 + nPlace 껍데기 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.5.7 + nPlace 껍데기 추가" />
   </component>
 </project>

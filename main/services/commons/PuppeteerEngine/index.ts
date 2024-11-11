@@ -1,6 +1,5 @@
 import { initialize } from "./initialize";
 import { Browser, Page, chromium } from "playwright";
-import { formatCookiesForPlaywright } from "./formatCookiesForPlaywright";
 
 export class PuppeteerEngine {
   chromiumEngine: typeof chromium; // 'typeof chromium'으로 수정
