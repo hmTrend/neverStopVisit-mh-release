@@ -31,3 +31,12 @@ export const gqlGetFingerPrintGroupList = gql`
     }
   }
 `;
+
+export const gqlDeleteFingerPrintGroup = gql`
+  mutation DeleteFingerPrintGroup($input: DeleteFingerPrintInput!) {
+    deleteFingerPrintGroup(input: $input) {
+      message
+      error
+    }
+  }
+`;

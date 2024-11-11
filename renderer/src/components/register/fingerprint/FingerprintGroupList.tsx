@@ -64,7 +64,10 @@ export const FingerprintGroupList = () => {
                   color="black"
                   onClick={() => alert("Edit button clicked!")}
                 />
-                <FingerprintGroupListModal groupName={v.groupName} />
+                <FingerprintGroupListModal
+                  groupName={v.groupName}
+                  groupFid={v._id}
+                />
               </Box>
             ))}
           </Flex>

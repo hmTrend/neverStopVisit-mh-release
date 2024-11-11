@@ -11,9 +11,21 @@ import {
   Kbd,
 } from "@chakra-ui/react";
 import { CloseIcon, useDisclosure } from "@chakra-ui/icons";
+import { useDeleteFingerPrintGroup } from "@/hook/fingerPrint/useDeleteFingerPrintGroup";
 
-export function FingerprintGroupListModal({ groupName }) {
+export function FingerprintGroupListModal({ groupName, groupFid }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { deleteFingerPrintGroup } = useDeleteFingerPrintGroup();
+
+  const handleDeleteFingerPrintGroup = async () => {
+    try {
+      await deleteFingerPrintGroup({ groupFid });
+      onClose();
+    } catch (e) {
+      console.error(e.message);
+    }
+  };
+
   return (
     <>
       <IconButton
@@ -37,7 +49,9 @@ export function FingerprintGroupListModal({ groupName }) {
             <Button colorScheme="blue" mr={3} onClick={onClose}>
               취소하기
             </Button>
-            <Button variant="ghost">삭제</Button>
+            <Button variant="ghost" onClick={handleDeleteFingerPrintGroup}>
+              삭제
+            </Button>
           </ModalFooter>
         </ModalContent>
       </Modal>

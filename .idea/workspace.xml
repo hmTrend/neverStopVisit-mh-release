@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.6.5 + 생성된 그룹리스트">
-      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.modal.tsx" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.6.6 + 지문 &gt; 그룹 &gt; 삭제 모달추가">
+      <change afterPath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useDeleteFingerPrintGroup.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.modal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/lib/graphql/finger-print.apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/finger-print.apollo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -367,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731310086106</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="v0.6.6 + 지문 &gt; 그룹 &gt; 삭제 모달추가">
+      <option name="closed" value="true" />
+      <created>1731310748727</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1731310748727</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +408,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.0.1 차크라 pro black &amp; white 스타일 탑재" />
     <MESSAGE value="v0.0.2 메인 옵션 시작 UI 추가" />
     <MESSAGE value="v0.0.3 prettier 설치완료" />
     <MESSAGE value="v0.0.4 yarn lint 추가" />
@@ -423,6 +432,7 @@
     <MESSAGE value="v0.6.3 + 그룹생성" />
     <MESSAGE value="v0.6.4 + 서버 그룹 리스트 가져오기" />
     <MESSAGE value="v0.6.5 + 생성된 그룹리스트" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.6.5 + 생성된 그룹리스트" />
+    <MESSAGE value="v0.6.6 + 지문 &gt; 그룹 &gt; 삭제 모달추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.6.6 + 지문 &gt; 그룹 &gt; 삭제 모달추가" />
   </component>
 </project>
