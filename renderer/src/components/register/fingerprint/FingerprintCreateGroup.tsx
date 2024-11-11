@@ -18,7 +18,10 @@ export const FingerprintCreateGroup = () => {
     console.log(groupNameRef.current.value);
     const groupName = groupNameRef.current.value;
     setLoading(true);
-    await createFingerPrintGroup({ groupName, memberFid: "aaa" });
+    await createFingerPrintGroup({
+      groupName,
+      memberFid: "67315a7130d6d4d2bb26e38a",
+    });
     setLoading(false);
   };
   return (
