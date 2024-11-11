@@ -8,12 +8,16 @@ import {
   Input,
 } from "@chakra-ui/react";
 import { useRef } from "react";
+import { useCreateFingerPrintGroup } from "@/hook/fingerPrint/useCreateFingerPrintGroup";
 
 export const FingerprintCreateGroup = () => {
   const groupNameRef = useRef<HTMLInputElement>(null);
-  const handleSubmit = () => {
+  const { createFingerPrintGroup } = useCreateFingerPrintGroup();
+  const handleSubmit = async () => {
     console.log("1");
     console.log(groupNameRef.current.value);
+    const groupName = groupNameRef.current.value;
+    await createFingerPrintGroup({ groupName, memberFid: "aaa" });
   };
   return (
     <Flex>

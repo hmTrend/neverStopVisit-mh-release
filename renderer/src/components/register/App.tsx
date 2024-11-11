@@ -1,17 +1,7 @@
 "use client";
 
-import {
-  Tabs,
-  TabList,
-  TabPanels,
-  Tab,
-  TabPanel,
-  Flex,
-} from "@chakra-ui/react";
-import { FingerprintCreateGroup } from "@/components/register/fingerprint/FingerprintCreateGroup";
-import { FingerprintGroupList } from "@/components/register/fingerprint/FingerprintGroupList";
-import { FingerprintCreateExcel } from "@/components/register/fingerprint/FingerprintCreateExcel";
-import { FingerprintExcelList } from "@/components/register/fingerprint/FingerprintExcelList";
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import { App as AppFingerprint } from "@/components/register/fingerprint/App";
 
 export const App = () => {
   return (
@@ -24,12 +14,7 @@ export const App = () => {
       </TabList>
       <TabPanels>
         <TabPanel>
-          <Flex direction={"column"} gap={3}>
-            <FingerprintCreateGroup />
-            <FingerprintGroupList />
-            <FingerprintCreateExcel />
-            <FingerprintExcelList />
-          </Flex>
+          <AppFingerprint />
         </TabPanel>
         <TabPanel>a</TabPanel>
         <TabPanel>c</TabPanel>
