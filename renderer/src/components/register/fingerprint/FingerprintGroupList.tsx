@@ -12,15 +12,16 @@ import { CloseIcon, DeleteIcon, EditIcon } from "@chakra-ui/icons";
 import { useSuspenseQuery } from "@apollo/client";
 import { gqlGetFingerPrintGroupList } from "@/lib/graphql/finger-print.apollo";
 import { useEffect } from "react";
-import { storeRegister } from "@/valtio/register.valtio";
 import { useSnapshot } from "valtio/react";
+import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 
 export const FingerprintGroupList = () => {
   const { data, error } = useSuspenseQuery(gqlGetFingerPrintGroupList, {
     variables: { input: { memberFid: "67315a7130d6d4d2bb26e38a" } },
+    fetchPolicy: "no-cache",
   });
   const toast = useToast();
-  const { groupList } = useSnapshot(storeRegister);
+  const { groupList } = useSnapshot(storeFingerPrintRegister);
 
   useEffect(() => {
     if (error) {
@@ -33,8 +34,12 @@ export const FingerprintGroupList = () => {
       return;
     }
     console.log(data.getFingerPrintGroupList.data);
-    storeRegister.groupList = data.getFingerPrintGroupList.data;
+    storeFingerPrintRegister.groupList = data.getFingerPrintGroupList.data;
   }, []);
+
+  const handleSelectGroup = (groupFid) => {
+    console.log(groupFid);
+  };
   return (
     <Flex>
       <Box>
@@ -48,7 +53,9 @@ export const FingerprintGroupList = () => {
                 display={"flex"}
                 alignItems={"center"}
               >
-                <Button>{v.groupName}</Button>
+                <Button onClick={() => handleSelectGroup(v._id)}>
+                  {v.groupName}
+                </Button>
                 <IconButton
                   aria-label="Edit"
                   icon={<EditIcon />}

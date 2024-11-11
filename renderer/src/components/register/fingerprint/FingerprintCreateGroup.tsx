@@ -6,22 +6,34 @@ import {
   FormHelperText,
   FormLabel,
   Input,
+  useToast,
 } from "@chakra-ui/react";
 import { useRef, useState } from "react";
 import { useCreateFingerPrintGroup } from "@/hook/fingerPrint/useCreateFingerPrintGroup";
+import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
+import { useSnapshot } from "valtio/react";
 
 export const FingerprintCreateGroup = () => {
   const groupNameRef = useRef<HTMLInputElement>(null);
   const { createFingerPrintGroup } = useCreateFingerPrintGroup();
   const [loading, setLoading] = useState(false);
+  const { groupList } = useSnapshot(storeFingerPrintRegister);
+  const toast = useToast();
+
   const handleSubmit = async () => {
-    console.log(groupNameRef.current.value);
     const groupName = groupNameRef.current.value;
+    try {
+      isSameGroup({ payload: groupList, groupName });
+    } catch (e) {
+      console.error(e.message);
+      return;
+    }
     setLoading(true);
-    await createFingerPrintGroup({
+    const { data } = await createFingerPrintGroup({
       groupName,
       memberFid: "67315a7130d6d4d2bb26e38a",
     });
+    storeFingerPrintRegister.groupList.push(data);
     setLoading(false);
   };
   return (
@@ -40,4 +52,17 @@ export const FingerprintCreateGroup = () => {
       </Box>
     </Flex>
   );
+
+  function isSameGroup({ payload, groupName }) {
+    const getGroupName = payload.some((v: any) => v.groupName === groupName);
+    if (getGroupName) {
+      toast({
+        title: "이미 생성된 그룹",
+        isClosable: true,
+        duration: 3000,
+        status: "error",
+      });
+      throw Error("이미 생성된 그룹");
+    }
+  }
 };
