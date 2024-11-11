@@ -38,8 +38,11 @@ export const FingerprintGroupList = () => {
     storeFingerPrintRegister.groupList = data.getFingerPrintGroupList.data;
   }, []);
 
-  const handleSelectGroup = (groupFid) => {
-    console.log(groupFid);
+  const handleSelectGroup = ({ groupId, groupName }) => {
+    storeFingerPrintRegister.selectedGroupId = groupId;
+    storeFingerPrintRegister.selectedGroupName = groupName;
+    console.log(groupId);
+    console.log(groupName);
   };
   return (
     <Flex>
@@ -54,7 +57,14 @@ export const FingerprintGroupList = () => {
                 display={"flex"}
                 alignItems={"center"}
               >
-                <Button onClick={() => handleSelectGroup(v._id)}>
+                <Button
+                  onClick={() =>
+                    handleSelectGroup({
+                      groupId: v._id,
+                      groupName: v.groupName,
+                    })
+                  }
+                >
                   {v.groupName}
                 </Button>
                 <IconButton

@@ -12,14 +12,21 @@ import {
   TableCaption,
   TableContainer,
   Button,
+  Kbd,
 } from "@chakra-ui/react";
+import { useSnapshot } from "valtio/react";
+import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 
 export const FingerprintExcelList = () => {
+  const { selectedGroupName } = useSnapshot(storeFingerPrintRegister);
+
   return (
     <Flex>
       <Box>
         <FormControl>
-          <FormLabel>지문 리스트</FormLabel>
+          <FormLabel>
+            <Kbd fontSize={"md"}>{selectedGroupName}</Kbd> 지문 리스트
+          </FormLabel>
           <TableContainer>
             <Table variant="striped" colorScheme="teal" size={"sm"}>
               <TableCaption>선택된 지문 리스트</TableCaption>

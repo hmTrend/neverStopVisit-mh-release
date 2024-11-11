@@ -2,11 +2,13 @@ import { proxy } from "valtio/vanilla";
 
 class FingerPrintRegisterValtio {
   groupList: string[];
-  selectGroupFid: string;
+  selectedGroupId: string;
+  selectedGroupName: string;
 
   constructor() {
     this.groupList = [];
-    this.selectGroupFid = "";
+    this.selectedGroupId = "";
+    this.selectedGroupName = "";
   }
 }
 
