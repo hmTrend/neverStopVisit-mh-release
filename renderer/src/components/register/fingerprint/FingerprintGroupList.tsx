@@ -14,6 +14,7 @@ import { gqlGetFingerPrintGroupList } from "@/lib/graphql/finger-print.apollo";
 import { useEffect } from "react";
 import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
+import { FingerprintGroupListModal } from "@/components/register/fingerprint/FingerprintGroupList.modal";
 
 export const FingerprintGroupList = () => {
   const { data, error } = useSuspenseQuery(gqlGetFingerPrintGroupList, {
@@ -63,14 +64,7 @@ export const FingerprintGroupList = () => {
                   color="black"
                   onClick={() => alert("Edit button clicked!")}
                 />
-                <IconButton
-                  aria-label="Delete"
-                  icon={<CloseIcon />}
-                  onClick={() => alert("Delete button clicked!")}
-                  bg="white"
-                  color="black"
-                  size={"sm"}
-                />
+                <FingerprintGroupListModal groupName={v.groupName} />
               </Box>
             ))}
           </Flex>
