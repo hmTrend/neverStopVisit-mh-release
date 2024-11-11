@@ -18,7 +18,7 @@ export const FingerprintCreateExcel = () => {
   const fileInputRef = useRef(null);
   const [selectedFile, setSelectedFile] = useState(null);
   const toast = useToast();
-  const { selectedGroupName, getExcelList } = useSnapshot(
+  const { selectedGroupName, getExcelList, selectedExcelList } = useSnapshot(
     storeFingerPrintRegister,
   );
 
@@ -82,7 +82,7 @@ export const FingerprintCreateExcel = () => {
       });
       return;
     }
-    console.log(1);
+    storeFingerPrintRegister.selectedExcelList = getExcelList;
   };
 
   const handleClearExcelList = () => {

@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.8.0 + 지문 &gt; 엑셀 &gt; 파일 가져오기 성공">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.8.1 + 지문 &gt; 엑셀 &gt; 가져온 엑셀비우기">
+      <change afterPath="$PROJECT_DIR$/renderer/src/util/common.util.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateExcel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateExcel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/fingerPrint.register.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/fingerPrint.register.valtio.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -408,7 +408,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731327432590</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="v0.8.1 + 지문 &gt; 엑셀 &gt; 가져온 엑셀비우기">
+      <option name="closed" value="true" />
+      <created>1731328966034</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1731328966034</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +447,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.0.6 넥스트론 타이틀 변경" />
     <MESSAGE value="v0.0.7 옵션 / 등록 UI 추가" />
     <MESSAGE value="v0.2.0 + app router 변경&#10;+ 차크라ui 2버전 대로 다운그레이드&#10;+ ui 재셋팅" />
     <MESSAGE value="v0.3.0 + 퍼페티어 엔진추가" />
@@ -464,6 +471,7 @@
     <MESSAGE value="v0.7.1 + 지문 &gt; 리스트 그룹 이름 표시 셋팅" />
     <MESSAGE value="v0.7.1 + 지문 &gt; 리스트 2" />
     <MESSAGE value="v0.8.0 + 지문 &gt; 엑셀 &gt; 파일 가져오기 성공" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.8.0 + 지문 &gt; 엑셀 &gt; 파일 가져오기 성공" />
+    <MESSAGE value="v0.8.1 + 지문 &gt; 엑셀 &gt; 가져온 엑셀비우기" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.8.1 + 지문 &gt; 엑셀 &gt; 가져온 엑셀비우기" />
   </component>
 </project>
