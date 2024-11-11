@@ -1,19 +1,26 @@
 import {
   Box,
   Button,
+  Code,
   Flex,
   FormControl,
   FormHelperText,
   FormLabel,
   Input,
+  Kbd,
   useToast,
 } from "@chakra-ui/react";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
+import { useSnapshot } from "valtio/react";
+import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 
 export const FingerprintCreateExcel = () => {
   const fileInputRef = useRef(null);
   const [selectedFile, setSelectedFile] = useState(null);
   const toast = useToast();
+  const { selectedGroupName, getExcelList } = useSnapshot(
+    storeFingerPrintRegister,
+  );
 
   const handleExcelButtonClick = () => {
     if (fileInputRef.current) {
@@ -43,6 +50,8 @@ export const FingerprintCreateExcel = () => {
 
       console.log("result 3333");
       console.log(result);
+      storeFingerPrintRegister.getExcelList = result.data;
+
       // 파일 선택 성공 메시지
       toast({
         title: result.success ? "성공" : "오류",
@@ -54,8 +63,40 @@ export const FingerprintCreateExcel = () => {
     }
   };
 
+  const handleCreateExcelList = () => {
+    if (getExcelList.length === 0) {
+      toast({
+        title: "생성된 엑셀없음",
+        isClosable: true,
+        duration: 3000,
+        status: "error",
+      });
+      return;
+    }
+    if (!selectedGroupName) {
+      toast({
+        title: "선택된 그룹없음",
+        isClosable: true,
+        duration: 3000,
+        status: "error",
+      });
+      return;
+    }
+    console.log(1);
+  };
+
+  const handleClearExcelList = () => {
+    storeFingerPrintRegister.getExcelList = [];
+    toast({
+      title: "가져온 엑셀리스트 비우기 성공",
+      isClosable: true,
+      duration: 3000,
+      status: "success",
+    });
+  };
+
   return (
-    <Flex>
+    <Flex direction={"column"} gap={3}>
       <Box>
         <FormControl>
           <FormLabel>엑셀 만들기</FormLabel>
@@ -73,9 +114,26 @@ export const FingerprintCreateExcel = () => {
                 accept=".xlsx,.xls"
                 style={{ display: "none" }}
               />
-              <Button onClick={handleExcelButtonClick}>엑셀생성</Button>
+              <Button onClick={handleExcelButtonClick}>엑셀 생성</Button>
             </Box>
             <Button variant={"outline"}>기존엑셀 다운받기</Button>
+          </Flex>
+          <FormHelperText>새로운 엑셀리스트를 가져옵니다.</FormHelperText>
+        </FormControl>
+      </Box>
+      <Box>
+        <FormControl>
+          <FormLabel>엑셀 등록하기</FormLabel>
+          <Flex gap={6}>
+            <Box display={"flex"} alignItems={"center"} gap={3}>
+              <Code fontSize={"xl"} px={4} py={1}>
+                {selectedGroupName || "선택된 그룹 없음"}
+              </Code>
+              <Button onClick={handleCreateExcelList}>엑셀 등록하기</Button>
+            </Box>
+            <Button variant={"outline"} onClick={handleClearExcelList}>
+              가져온 엑셀비우기
+            </Button>
           </Flex>
           <FormHelperText>
             새로운 엑셀리스트로 교체합니다 (기존값 삭제됨)

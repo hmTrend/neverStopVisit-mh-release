@@ -13,6 +13,8 @@ import {
   TableContainer,
   Button,
   Kbd,
+  Code,
+  Text,
 } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
@@ -25,7 +27,7 @@ export const FingerprintExcelList = () => {
       <Box>
         <FormControl>
           <FormLabel>
-            <Kbd fontSize={"md"}>{selectedGroupName}</Kbd> 지문 리스트
+            <Text>{selectedGroupName} 지문 리스트</Text>
           </FormLabel>
           <TableContainer>
             <Table variant="striped" colorScheme="gray" size={"sm"}>

@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.7.1 + 지문 &gt; 리스트 2">
-      <change afterPath="$PROJECT_DIR$/main/api/ipc/excel.ipc.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/services/commons/excel/processExcelData.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.8.0 + 지문 &gt; 엑셀 &gt; 파일 가져오기 성공">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/background.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/background.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/preload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/preload.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateExcel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateExcel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/valtio/fingerPrint.register.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/fingerPrint.register.valtio.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -406,7 +400,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731321964023</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="v0.8.0 + 지문 &gt; 엑셀 &gt; 파일 가져오기 성공">
+      <option name="closed" value="true" />
+      <created>1731327432590</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1731327432590</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +439,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.0.5 메인 Info.tsx" />
     <MESSAGE value="v0.0.6 넥스트론 타이틀 변경" />
     <MESSAGE value="v0.0.7 옵션 / 등록 UI 추가" />
     <MESSAGE value="v0.2.0 + app router 변경&#10;+ 차크라ui 2버전 대로 다운그레이드&#10;+ ui 재셋팅" />
@@ -462,6 +463,7 @@
     <MESSAGE value="v0.7.0 + 지문 &gt; 그룹 &gt; 삭제셋팅" />
     <MESSAGE value="v0.7.1 + 지문 &gt; 리스트 그룹 이름 표시 셋팅" />
     <MESSAGE value="v0.7.1 + 지문 &gt; 리스트 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.7.1 + 지문 &gt; 리스트 2" />
+    <MESSAGE value="v0.8.0 + 지문 &gt; 엑셀 &gt; 파일 가져오기 성공" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.8.0 + 지문 &gt; 엑셀 &gt; 파일 가져오기 성공" />
   </component>
 </project>
