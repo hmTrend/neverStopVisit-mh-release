@@ -15,3 +15,19 @@ export const gqlCreateFingerPrintGroup = gql`
     }
   }
 `;
+
+export const gqlGetFingerPrintGroupList = gql`
+  query GetFingerPrintGroupList($input: GetFingerPrintInput!) {
+    getFingerPrintGroupList(input: $input) {
+      data {
+        _id
+        memberFid
+        groupName
+        createdAt
+        updatedAt
+      }
+      message
+      error
+    }
+  }
+`;

@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.6.2 + FingerprintCreateGroup.tsx &gt; 로딩추가">
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateGroup.tsx" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.6.3 + 그룹생성">
+      <change afterPath="$PROJECT_DIR$/renderer/src/valtio/register.valtio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/lib/graphql/finger-print.apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/finger-print.apollo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -341,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731303963073</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="v0.6.3 + 그룹생성">
+      <option name="closed" value="true" />
+      <created>1731304113859</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1731304113859</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,6 +406,7 @@
     <MESSAGE value="v0.5.7 + nPlace 껍데기 추가" />
     <MESSAGE value="v0.6.0 + graphql 추가" />
     <MESSAGE value="v0.6.2 + FingerprintCreateGroup.tsx &gt; 로딩추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.6.2 + FingerprintCreateGroup.tsx &gt; 로딩추가" />
+    <MESSAGE value="v0.6.3 + 그룹생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.6.3 + 그룹생성" />
   </component>
 </project>
