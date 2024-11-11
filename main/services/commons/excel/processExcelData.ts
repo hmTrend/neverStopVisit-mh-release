@@ -18,7 +18,16 @@ export function processExcelData({ filePath, sheetName = "" }) {
 
     // Excel 데이터를 JSON으로 변환
     const rawData = xlsx.utils.sheet_to_json(sheet, {
-      header: ["nId", "nPw", "bPw", "nState", "cookie", "phoneNumber"],
+      header: [
+        "nId",
+        "nPw",
+        "bPw",
+        "nState",
+        "createdAt",
+        "ip",
+        "cookie",
+        "phoneNumber",
+      ],
     });
 
     // 헤더 행 제거

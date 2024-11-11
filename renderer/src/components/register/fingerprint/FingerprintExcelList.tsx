@@ -44,6 +44,8 @@ export const FingerprintExcelList = () => {
                   <Th>현재비번</Th>
                   <Th>이전비번</Th>
                   <Th>상태</Th>
+                  <Th>생성일</Th>
+                  <Th>아이피</Th>
                   <Th>쿠키</Th>
                   <Th>폰번호</Th>
                 </Tr>
@@ -56,7 +58,10 @@ export const FingerprintExcelList = () => {
                     <Td>{CommonUtil.maskLast4Digits(v.nPw)}</Td>
                     <Td>{CommonUtil.maskLast4Digits(v.bPw)}</Td>
                     <Td>{v.nState}</Td>
-                    <Td>2024-10-22</Td>
+                    <Td>{v.createdAt}</Td>
+                    <Td>{v.ip}</Td>
+                    <Td>쿠키</Td>
+                    <Td>{v.phoneNumber}</Td>
                   </Tr>
                 ))}
               </Tbody>
