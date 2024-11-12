@@ -7,13 +7,17 @@ export const CreateGroupLogic = ({ id }) => {
   const { createNShoppingGroup } = useCreateNShoppingGroup();
 
   const handleCreateGroup = async () => {
-    console.log(inputRef.current.value);
-    const { data } = await createNShoppingGroup({
-      groupName: inputRef.current.value,
-      memberFid: id,
-    });
-    console.log("data 333");
-    console.log(data);
+    try {
+      console.log(inputRef.current.value);
+      const { data } = await createNShoppingGroup({
+        groupName: inputRef.current.value,
+        memberFid: id,
+      });
+      console.log("data 333");
+      console.log(data);
+    } catch (e) {
+      console.error(e.message);
+    }
   };
   return <CreateGroup fn={handleCreateGroup} ref={inputRef} loading={false} />;
 };
