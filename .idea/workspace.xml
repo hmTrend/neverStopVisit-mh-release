@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.8.3 + 엑셀파일 리스트 등록">
-      <change afterPath="$PROJECT_DIR$/renderer/src/components/commons/CopyToClipboardButton.tsx" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.8.4 + CopyToClipboardButton.tsx 추가">
+      <change afterPath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useCreateExcelList.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/excel/processExcelData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/excel/processExcelData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateExcel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateExcel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/lib/graphql/finger-print.apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/finger-print.apollo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -166,6 +168,7 @@
       <workItem from="1730562069962" duration="552000" />
       <workItem from="1730562685900" duration="7897000" />
       <workItem from="1730992352376" duration="24377000" />
+      <workItem from="1731374161692" duration="4905000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
       <option name="closed" value="true" />

@@ -27,6 +27,7 @@ export function processExcelData({ filePath, sheetName = "" }) {
         "ip",
         "cookie",
         "phoneNumber",
+        "updatedAt",
       ],
     });
 

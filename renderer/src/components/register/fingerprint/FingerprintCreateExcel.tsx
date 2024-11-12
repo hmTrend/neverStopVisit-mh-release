@@ -13,14 +13,19 @@ import {
 import { useRef, useState } from "react";
 import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
+import { useCreateExcelList } from "@/hook/fingerPrint/useCreateExcelList";
 
 export const FingerprintCreateExcel = () => {
   const fileInputRef = useRef(null);
   const [selectedFile, setSelectedFile] = useState(null);
   const toast = useToast();
-  const { selectedGroupName, getExcelList, selectedExcelList } = useSnapshot(
-    storeFingerPrintRegister,
-  );
+  const {
+    selectedGroupName,
+    getExcelList,
+    selectedExcelList,
+    selectedGroupId,
+  } = useSnapshot(storeFingerPrintRegister);
+  const { createExcelList } = useCreateExcelList();
 
   const handleExcelButtonClick = () => {
     if (fileInputRef.current) {
@@ -63,7 +68,7 @@ export const FingerprintCreateExcel = () => {
     }
   };
 
-  const handleCreateExcelList = () => {
+  const handleCreateExcelList = async () => {
     if (getExcelList.length === 0) {
       toast({
         title: "생성된 엑셀없음",
@@ -82,6 +87,15 @@ export const FingerprintCreateExcel = () => {
       });
       return;
     }
+    const inputList = getExcelList.map((v) => ({
+      ...v,
+      groupFid: selectedGroupId,
+    }));
+    const { data } = await createExcelList({
+      input: inputList,
+    });
+    console.log("data 99999");
+    console.log(data);
     storeFingerPrintRegister.selectedExcelList = getExcelList;
   };
 

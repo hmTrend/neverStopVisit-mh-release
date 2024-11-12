@@ -40,3 +40,25 @@ export const gqlDeleteFingerPrintGroup = gql`
     }
   }
 `;
+
+export const gqlCreateExcelList = gql`
+  mutation CreateExcelList($input: [CreateFingerPrintExcelListInput!]!) {
+    createExcelList(input: $input) {
+      data {
+        _id
+        groupFid
+        nId
+        nPw
+        bPw
+        nState
+        createdAt
+        ip
+        cookie
+        phoneNumber
+        updatedAt
+      }
+      message
+      error
+    }
+  }
+`;
