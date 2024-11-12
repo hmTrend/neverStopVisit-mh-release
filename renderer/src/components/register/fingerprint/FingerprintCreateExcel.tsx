@@ -14,6 +14,7 @@ import { useRef, useState } from "react";
 import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 import { useCreateExcelList } from "@/hook/fingerPrint/useCreateExcelList";
+import { FingerprintCreateExcelModal } from "@/components/register/fingerprint/FingerprintCreateExcel.modal";
 
 export const FingerprintCreateExcel = () => {
   const fileInputRef = useRef(null);
@@ -143,7 +144,10 @@ export const FingerprintCreateExcel = () => {
               <Code fontSize={"xl"} px={4} py={1}>
                 {selectedGroupName || "선택된 그룹 없음"}
               </Code>
-              <Button onClick={handleCreateExcelList}>엑셀 등록하기</Button>
+              <FingerprintCreateExcelModal
+                fn={handleCreateExcelList}
+                selectedGroupName={selectedGroupName}
+              />
             </Box>
             <Button variant={"outline"} onClick={handleClearExcelList}>
               가져온 엑셀비우기

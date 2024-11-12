@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.10.0 + 지문 리스트 가져오기 성공">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.10.1 + 엑셀 삭제버튼 클릭시 빈배열 리스트">
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateExcel.modal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useGetExcelList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useGetExcelList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateExcel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateExcel.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +166,7 @@
       <workItem from="1730562069962" duration="552000" />
       <workItem from="1730562685900" duration="7897000" />
       <workItem from="1730992352376" duration="24377000" />
-      <workItem from="1731374161692" duration="7751000" />
+      <workItem from="1731374161692" duration="8321000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
       <option name="closed" value="true" />
@@ -448,7 +448,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731408330746</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="v0.10.1 + 엑셀 삭제버튼 클릭시 빈배열 리스트">
+      <option name="closed" value="true" />
+      <created>1731409996129</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1731409996129</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +487,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.4.0 + playwright로 교체" />
     <MESSAGE value="v0.5.0 + goToKeyword" />
     <MESSAGE value="v0.5.1 + 예외 처리 추가" />
     <MESSAGE value="v0.5.2 + 로그인 여부 체크 &gt; 쿠키적용" />
@@ -504,6 +511,7 @@
     <MESSAGE value="v0.8.3 + 엑셀파일 리스트 등록" />
     <MESSAGE value="v0.9.0 + 지문 엑셀리스트 등록 성공" />
     <MESSAGE value="v0.10.0 + 지문 리스트 가져오기 성공" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.10.0 + 지문 리스트 가져오기 성공" />
+    <MESSAGE value="v0.10.1 + 엑셀 삭제버튼 클릭시 빈배열 리스트" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.10.1 + 엑셀 삭제버튼 클릭시 빈배열 리스트" />
   </component>
 </project>
