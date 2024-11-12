@@ -9,6 +9,7 @@ export const useGetExcelList = () => {
   const getExcelList = async ({ groupFid }) => {
     const { data, error } = await GetExcelList({
       variables: { input: { groupFid } },
+      fetchPolicy: "no-cache",
     });
     if (error) {
       toast({

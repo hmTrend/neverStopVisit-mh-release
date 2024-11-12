@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { CloseIcon, useDisclosure } from "@chakra-ui/icons";
 import { useDeleteFingerPrintGroup } from "@/hook/fingerPrint/useDeleteFingerPrintGroup";
+import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 
 export function FingerprintGroupListModal({ groupName, groupFid }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -20,6 +21,7 @@ export function FingerprintGroupListModal({ groupName, groupFid }) {
   const handleDeleteFingerPrintGroup = async () => {
     try {
       await deleteFingerPrintGroup({ groupFid });
+      storeFingerPrintRegister.selectedExcelList = [];
       onClose();
     } catch (e) {
       console.error(e.message);
