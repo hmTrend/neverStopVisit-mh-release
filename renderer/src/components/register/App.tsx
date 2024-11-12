@@ -2,6 +2,7 @@
 
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { App as AppFingerprint } from "@/components/register/fingerprint/App";
+import { App as AppNShopping } from "@/components/register/nShopping/App";
 
 export const App = () => {
   return (
@@ -16,8 +17,10 @@ export const App = () => {
         <TabPanel>
           <AppFingerprint />
         </TabPanel>
-        <TabPanel>a</TabPanel>
         <TabPanel>c</TabPanel>
+        <TabPanel>
+          <AppNShopping />
+        </TabPanel>
         <TabPanel>bs</TabPanel>
       </TabPanels>
     </Tabs>
