@@ -1,0 +1,31 @@
+import { useLazyQuery } from "@apollo/client";
+import { gqlGetExcelList } from "@/lib/graphql/finger-print.apollo";
+import { useToast } from "@chakra-ui/react";
+
+export const useGetExcelList = () => {
+  const [GetExcelList] = useLazyQuery(gqlGetExcelList);
+  const toast = useToast();
+
+  const getExcelList = async ({ groupFid }) => {
+    const { data, error } = await GetExcelList({
+      variables: { input: { groupFid } },
+    });
+    if (error) {
+      toast({
+        title: "그룹엑셀리스트 가져오기 실패",
+        isClosable: true,
+        duration: 3000,
+        status: "error",
+      });
+      throw Error("ERR > getExcelList");
+    }
+    toast({
+      title: "그룹엑셀리스트 가져오기 성공",
+      isClosable: true,
+      duration: 3000,
+      status: "success",
+    });
+    return { data };
+  };
+  return { getExcelList };
+};

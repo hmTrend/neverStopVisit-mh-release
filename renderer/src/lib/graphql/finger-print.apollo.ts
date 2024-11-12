@@ -62,3 +62,25 @@ export const gqlCreateExcelList = gql`
     }
   }
 `;
+
+export const gqlGetExcelList = gql`
+  query GetExcelList($input: GetFingerPrintExcelListInput!) {
+    getExcelList(input: $input) {
+      data {
+        _id
+        groupFid
+        nId
+        nPw
+        bPw
+        nState
+        createdAt
+        ip
+        cookie
+        phoneNumber
+        updatedAt
+      }
+      message
+      error
+    }
+  }
+`;

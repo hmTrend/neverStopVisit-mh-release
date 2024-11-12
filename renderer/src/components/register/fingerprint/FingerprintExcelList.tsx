@@ -20,11 +20,24 @@ import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 import { CommonUtil } from "@/util/common.util";
 import CopyToClipboardButton from "@/components/commons/CopyToClipboardButton";
+import { useEffect } from "react";
+import { useGetExcelList } from "@/hook/fingerPrint/useGetExcelList";
 
 export const FingerprintExcelList = () => {
-  const { selectedGroupName, selectedExcelList } = useSnapshot(
+  const { selectedGroupName, selectedExcelList, selectedGroupId } = useSnapshot(
     storeFingerPrintRegister,
   );
+  const { getExcelList } = useGetExcelList();
+
+  const GetExcelList = async () => {
+    const { data } = await getExcelList({ groupFid: selectedGroupId });
+    return { data };
+  };
+  useEffect(() => {
+    GetExcelList().then((v: any) => {
+      storeFingerPrintRegister.selectedExcelList = v.data.getExcelList.data;
+    });
+  }, [selectedGroupName]);
 
   return (
     <Flex>
