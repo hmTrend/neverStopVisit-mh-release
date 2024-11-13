@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/icons";
 
-export function FingerprintCreateExcelModal({ fn, selectedGroupName }) {
+export function CreateExcelModal({ fn, selectedGroupName }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>

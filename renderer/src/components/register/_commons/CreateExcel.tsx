@@ -15,6 +15,7 @@ import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 import { useCreateExcelList } from "@/hook/fingerPrint/useCreateExcelList";
 import { FingerprintCreateExcelModal } from "@/components/register/fingerprint/FingerprintCreateExcel.modal";
+import { CreateExcelModal } from "@/components/register/_commons/CreateExcel.modal";
 
 export const CreateExcel = forwardRef(
   (
@@ -69,7 +70,7 @@ export const CreateExcel = forwardRef(
                 <Code fontSize={"xl"} px={4} py={1}>
                   {selectedGroupName || "선택된 그룹 없음"}
                 </Code>
-                <FingerprintCreateExcelModal
+                <CreateExcelModal
                   fn={handleCreateExcelList}
                   selectedGroupName={selectedGroupName}
                 />

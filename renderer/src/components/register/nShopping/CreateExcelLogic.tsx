@@ -88,7 +88,7 @@ export const CreateExcelLogic = () => {
   };
 
   const handleClearExcelList = () => {
-    storeFingerPrintRegister.getExcelList = [];
+    storeNShopping.getExcelList = [];
     toast({
       title: "가져온 엑셀리스트 비우기 성공",
       isClosable: true,
