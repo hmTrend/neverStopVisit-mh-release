@@ -20,12 +20,6 @@ export const useGetExcelList = () => {
       });
       throw Error("ERR > getExcelList");
     }
-    toast({
-      title: "그룹엑셀리스트 가져오기 성공",
-      isClosable: true,
-      duration: 3000,
-      status: "success",
-    });
     return { data };
   };
   return { getExcelList };

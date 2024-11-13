@@ -1,8 +1,9 @@
 import { useRef } from "react";
 import { CreateGroup } from "@/components/register/_commons/CreateGroup";
 import { useCreateNShoppingGroup } from "@/hook/nShopping/useCreateNShoppingGroup";
+import { storeNShopping } from "@/valtio/nShopping.register.valtio";
 
-export const CreateGroupLogic = ({ id }) => {
+export const CreateGroupLogic = ({ id, selectedGroupName }) => {
   const inputRef = useRef(null);
   const { createNShoppingGroup } = useCreateNShoppingGroup();
 
@@ -15,6 +16,8 @@ export const CreateGroupLogic = ({ id }) => {
       });
       console.log("data 333");
       console.log(data);
+
+      storeNShopping.selectedGroupName = inputRef.current.value;
     } catch (e) {
       console.error(e.message);
     }

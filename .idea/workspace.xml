@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.11.1 + 쇼핑 &gt; 그룹이름 만들기 성공">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.11.2 + 그룹이름 중복일경우 에러처리">
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/_commons/GroupList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/GroupListLogic.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nShopping/useGetNShoppingGroupList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/valtio/nShopping.register.valtio.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateGroupLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateGroupLogic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nShopping/useCreateNShoppingGroup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nShopping/useCreateNShoppingGroup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useCreateExcelList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useCreateExcelList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useGetExcelList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useGetExcelList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/lib/graphql/n-shopping-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/n-shopping-apollo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +175,7 @@
       <workItem from="1730562685900" duration="7897000" />
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
-      <workItem from="1731419482161" duration="1874000" />
+      <workItem from="1731419482161" duration="8216000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
       <option name="closed" value="true" />
@@ -481,7 +489,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731421852512</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="v0.11.2 + 그룹이름 중복일경우 에러처리">
+      <option name="closed" value="true" />
+      <created>1731422379817</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1731422379817</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +528,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.5.3 + 로그인 기능 제작중" />
     <MESSAGE value="v0.5.4 + 쿠키 로그인 반영 성공" />
     <MESSAGE value="v0.5.5 + loggedInCheck" />
     <MESSAGE value="v0.5.5 + 블록 나누기" />
@@ -537,6 +552,7 @@
     <MESSAGE value="v0.10.2 + 엑셀 등록하기 클릭시 모달창 오픈" />
     <MESSAGE value="v0.11.0 + 쇼핑 등록 UI" />
     <MESSAGE value="v0.11.1 + 쇼핑 &gt; 그룹이름 만들기 성공" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.11.1 + 쇼핑 &gt; 그룹이름 만들기 성공" />
+    <MESSAGE value="v0.11.2 + 그룹이름 중복일경우 에러처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.11.2 + 그룹이름 중복일경우 에러처리" />
   </component>
 </project>

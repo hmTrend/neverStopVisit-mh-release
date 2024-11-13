@@ -8,7 +8,7 @@ import {
   IconButton,
   useToast,
 } from "@chakra-ui/react";
-import { CloseIcon, DeleteIcon, EditIcon } from "@chakra-ui/icons";
+import { EditIcon } from "@chakra-ui/icons";
 import { useSuspenseQuery } from "@apollo/client";
 import { gqlGetFingerPrintGroupList } from "@/lib/graphql/finger-print.apollo";
 import { useEffect } from "react";
