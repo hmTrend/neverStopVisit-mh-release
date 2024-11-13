@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.14.1 + 쇼핑 &gt; 엑셀생성 가능">
-      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/ExcelList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/ExcelListLogic.tsx" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.15.0 + 등록 &gt; 쇼핑 셋팅">
+      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nShopping/useCreateExcelList.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/ExcelList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/ExcelList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/ExcelListLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/ExcelListLogic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/lib/graphql/n-shopping-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/n-shopping-apollo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +61,7 @@
     "TypeScript.initialize.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/register/_commons",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/hook/nShopping",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -75,9 +77,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/renderer/src/hook/nShopping" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/_commons" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/nShopping" />
-      <recent name="$PROJECT_DIR$/renderer/src/hook/nShopping" />
       <recent name="$PROJECT_DIR$/renderer" />
       <recent name="$PROJECT_DIR$/renderer/src/lib/graphql" />
     </key>
@@ -168,7 +170,7 @@
       <workItem from="1730562685900" duration="7897000" />
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
-      <workItem from="1731419482161" duration="18344000" />
+      <workItem from="1731419482161" duration="20831000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
       <option name="closed" value="true" />
@@ -522,7 +524,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731483544741</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="v0.15.0 + 등록 &gt; 쇼핑 셋팅">
+      <option name="closed" value="true" />
+      <created>1731491040788</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1731491040788</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +563,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.5.7 + nPlace 껍데기 추가" />
     <MESSAGE value="v0.6.0 + graphql 추가" />
     <MESSAGE value="v0.6.2 + FingerprintCreateGroup.tsx &gt; 로딩추가" />
     <MESSAGE value="v0.6.3 + 그룹생성" />
@@ -578,6 +587,7 @@
     <MESSAGE value="v0.13.0 + 쇼핑 &gt; 생성된 그룹 삭제로직 추가" />
     <MESSAGE value="v0.14.0 + 쇼핑 &gt; 엑셀만들기" />
     <MESSAGE value="v0.14.1 + 쇼핑 &gt; 엑셀생성 가능" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.14.1 + 쇼핑 &gt; 엑셀생성 가능" />
+    <MESSAGE value="v0.15.0 + 등록 &gt; 쇼핑 셋팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.15.0 + 등록 &gt; 쇼핑 셋팅" />
   </component>
 </project>

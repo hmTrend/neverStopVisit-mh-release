@@ -13,8 +13,6 @@ import {
   TableContainer,
   Text,
 } from "@chakra-ui/react";
-import { CommonUtil } from "@/util/common.util";
-import CopyToClipboardButton from "@/components/commons/CopyToClipboardButton";
 
 export const ExcelList = ({ selectedGroupName, selectedExcelList }) => {
   return (
@@ -23,7 +21,7 @@ export const ExcelList = ({ selectedGroupName, selectedExcelList }) => {
         <FormControl>
           <FormLabel>
             <Text>
-              {selectedGroupName} 지문 리스트 {selectedExcelList.length}개
+              {selectedGroupName} 쇼핑 리스트 {selectedExcelList.length}개
             </Text>
           </FormLabel>
           <TableContainer>

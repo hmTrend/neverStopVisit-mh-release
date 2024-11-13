@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { useToast } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
-import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
-import { useCreateExcelList } from "@/hook/fingerPrint/useCreateExcelList";
 import { CreateExcel } from "@/components/register/_commons/CreateExcel";
 import { storeNShopping } from "@/valtio/nShopping.register.valtio";
+import { useCreateExcelList } from "@/hook/nShopping/useCreateExcelList";
 
 export const CreateExcelLogic = () => {
   const toast = useToast();
@@ -78,7 +77,11 @@ export const CreateExcelLogic = () => {
     const inputList = getExcelList.map((v) => ({
       ...v,
       groupFid: selectedGroupId,
+      catalog: v.catalog.toString(),
+      nvMid: v.nvMid.toString(),
     }));
+    console.log("inputList 5555");
+    console.log(inputList);
     const { data } = await createExcelList({
       input: inputList,
     });

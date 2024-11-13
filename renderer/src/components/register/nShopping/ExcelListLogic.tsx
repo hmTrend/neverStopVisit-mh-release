@@ -1,13 +1,12 @@
 import { useSnapshot } from "valtio/react";
-import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 import { useGetExcelList } from "@/hook/fingerPrint/useGetExcelList";
 import { useEffect } from "react";
 import { ExcelList } from "@/components/register/nShopping/ExcelList";
+import { storeNShopping } from "@/valtio/nShopping.register.valtio";
 
 export const ExcelListLogic = () => {
-  const { selectedGroupName, selectedExcelList, selectedGroupId } = useSnapshot(
-    storeFingerPrintRegister,
-  );
+  const { selectedGroupName, selectedExcelList, selectedGroupId } =
+    useSnapshot(storeNShopping);
   const { getExcelList } = useGetExcelList();
 
   const GetExcelList = async () => {
@@ -16,7 +15,7 @@ export const ExcelListLogic = () => {
   };
   useEffect(() => {
     GetExcelList().then((v: any) => {
-      storeFingerPrintRegister.selectedExcelList = v.data.getExcelList.data;
+      storeNShopping.selectedExcelList = v.data.getExcelList.data;
     });
   }, [selectedGroupName]);
 
