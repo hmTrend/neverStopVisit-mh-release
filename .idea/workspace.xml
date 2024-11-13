@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.14.0 + 쇼핑 &gt; 엑셀만들기">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.14.1 + 쇼핑 &gt; 엑셀생성 가능">
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/ExcelList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/ExcelListLogic.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/excel.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/excel.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateExcel.modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateExcel.modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateExcel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateExcel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -60,7 +59,7 @@
     "TypeScript.initialize.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/register/nShopping",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/register/_commons",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -76,18 +75,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/renderer/src/components/register/_commons" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/nShopping" />
       <recent name="$PROJECT_DIR$/renderer/src/hook/nShopping" />
-      <recent name="$PROJECT_DIR$/renderer/src/components/register/_commons" />
       <recent name="$PROJECT_DIR$/renderer" />
       <recent name="$PROJECT_DIR$/renderer/src/lib/graphql" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/renderer/src/components/register/nShopping" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/_commons" />
       <recent name="$PROJECT_DIR$/renderer/src/components/main" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/fingerprint" />
       <recent name="$PROJECT_DIR$/renderer/src/components/layout" />
-      <recent name="$PROJECT_DIR$/renderer/src" />
     </key>
   </component>
   <component name="RunManager" selected="TypeScript.index.ts (1)">
@@ -169,7 +168,7 @@
       <workItem from="1730562685900" duration="7897000" />
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
-      <workItem from="1731419482161" duration="17113000" />
+      <workItem from="1731419482161" duration="18344000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
       <option name="closed" value="true" />
@@ -515,7 +514,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731480970369</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="v0.14.1 + 쇼핑 &gt; 엑셀생성 가능">
+      <option name="closed" value="true" />
+      <created>1731483544741</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1731483544741</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,7 +553,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.5.6 + Promise all로 멀티구동 성공" />
     <MESSAGE value="v0.5.7 + nPlace 껍데기 추가" />
     <MESSAGE value="v0.6.0 + graphql 추가" />
     <MESSAGE value="v0.6.2 + FingerprintCreateGroup.tsx &gt; 로딩추가" />
@@ -571,6 +577,7 @@
     <MESSAGE value="v0.12.0 + 쇼핑 &gt; 생성된 그룹리스트" />
     <MESSAGE value="v0.13.0 + 쇼핑 &gt; 생성된 그룹 삭제로직 추가" />
     <MESSAGE value="v0.14.0 + 쇼핑 &gt; 엑셀만들기" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.14.0 + 쇼핑 &gt; 엑셀만들기" />
+    <MESSAGE value="v0.14.1 + 쇼핑 &gt; 엑셀생성 가능" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.14.1 + 쇼핑 &gt; 엑셀생성 가능" />
   </component>
 </project>
