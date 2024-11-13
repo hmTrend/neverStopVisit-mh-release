@@ -106,21 +106,21 @@ export function processNShoppingExcelData({
     });
 
     // 가장 긴 query 배열의 길이 찾기
-    const maxQueryLength = Math.max(
-      ...Object.values(queryArrays).map((arr) => arr.length),
-    );
+    // const maxQueryLength = Math.max(
+    //   ...Object.values(queryArrays).map((arr) => arr.length),
+    // );
 
     // query 배열 길이 맞추기
-    Object.keys(queryArrays).forEach((col) => {
-      const originalArray = queryArrays[col];
-      if (originalArray.length < maxQueryLength) {
-        const newArray: string[] = [];
-        for (let i = 0; i < maxQueryLength; i++) {
-          newArray[i] = originalArray[i % originalArray.length];
-        }
-        queryArrays[col] = newArray;
-      }
-    });
+    // Object.keys(queryArrays).forEach((col) => {
+    //   const originalArray = queryArrays[col];
+    //   if (originalArray.length < maxQueryLength) {
+    //     const newArray: string[] = [];
+    //     for (let i = 0; i < maxQueryLength; i++) {
+    //       newArray[i] = originalArray[i % originalArray.length];
+    //     }
+    //     queryArrays[col] = newArray;
+    //   }
+    // });
 
     // 최종 결과 생성
     const result = columns.map((col) => {
