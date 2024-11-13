@@ -27,7 +27,7 @@ export const useGetNShoppingGroupList = () => {
     if (!data) {
       return;
     }
-    return { data };
+    return { data: data.getNShoppingGroupList.data };
   };
 
   return { getNShoppingGroupList };

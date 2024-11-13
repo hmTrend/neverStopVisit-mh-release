@@ -1,9 +1,9 @@
 import { GroupList } from "@/components/register/_commons/GroupList";
 import { useGetNShoppingGroupList } from "@/hook/nShopping/useGetNShoppingGroupList";
 import { useEffect, useState } from "react";
-import { storeNShopping } from "@/valtio/nShopping.register.valtio";
 import { useDeleteNShoppingGroup } from "@/hook/nShopping/useDeleteNShoppingGroup";
-import { GroupListModal } from "@/components/register/nShopping/GroupList.modal";
+import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
+import { storeNShopping } from "@/valtio/nShopping.register.valtio";
 
 export const GroupListLogic = ({ selectedGroupName, selectedExcelList }) => {
   const { getNShoppingGroupList } = useGetNShoppingGroupList();
@@ -12,12 +12,25 @@ export const GroupListLogic = ({ selectedGroupName, selectedExcelList }) => {
 
   const GetNShoppingGroupList = async () => {
     const { data } = await getNShoppingGroupList();
-    setGroupList(data.getNShoppingGroupList.data);
+    setGroupList(data);
   };
 
   useEffect(() => {
     GetNShoppingGroupList();
   }, [selectedGroupName, selectedExcelList]);
 
-  return <GroupList groupList={groupList} fn={deleteNShoppingGroup} />;
+  const handleSelectGroup = ({ groupId, groupName }) => {
+    storeNShopping.selectedGroupId = groupId;
+    storeNShopping.selectedGroupName = groupName;
+    console.log(groupId);
+    console.log(groupName);
+  };
+
+  return (
+    <GroupList
+      groupList={groupList}
+      fn={handleSelectGroup}
+      modalFn={deleteNShoppingGroup}
+    />
+  );
 };

@@ -4,6 +4,7 @@ import { useSnapshot } from "valtio/react";
 import { storeMember } from "@/valtio/member.valtio";
 import { GroupListLogic } from "@/components/register/nShopping/GroupListLogic";
 import { storeNShopping } from "@/valtio/nShopping.register.valtio";
+import { CreateExcelLogic } from "@/components/register/nShopping/CreateExcelLogic";
 
 export const App = () => {
   const { id } = useSnapshot(storeMember);
@@ -17,6 +18,7 @@ export const App = () => {
         selectedGroupName={selectedGroupName}
         selectedExcelList={selectedExcelList}
       />
+      <CreateExcelLogic />
     </Flex>
   );
 };

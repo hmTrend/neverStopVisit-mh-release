@@ -8,9 +8,9 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 import { EditIcon } from "@chakra-ui/icons";
-import { GroupListModal } from "@/components/register/nShopping/GroupList.modal";
+import { GroupListModal } from "@/components/register/_commons/GroupList.modal";
 
-export const GroupList = ({ groupList = [], fn }) => (
+export const GroupList = ({ groupList = [], fn, modalFn }) => (
   <Flex>
     <Box>
       <FormControl>
@@ -23,7 +23,16 @@ export const GroupList = ({ groupList = [], fn }) => (
               display={"flex"}
               alignItems={"center"}
             >
-              <Button onClick={fn}>{v.groupName}</Button>
+              <Button
+                onClick={() =>
+                  fn({
+                    groupId: v._id,
+                    groupName: v.groupName,
+                  })
+                }
+              >
+                {v.groupName}
+              </Button>
               <IconButton
                 aria-label="Edit"
                 icon={<EditIcon />}
@@ -34,7 +43,7 @@ export const GroupList = ({ groupList = [], fn }) => (
               <GroupListModal
                 groupName={v.groupName}
                 groupFid={v._id}
-                fn={fn}
+                fn={modalFn}
               />
             </Box>
           ))}
