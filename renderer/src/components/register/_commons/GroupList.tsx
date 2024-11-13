@@ -8,7 +8,7 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 import { EditIcon } from "@chakra-ui/icons";
-import { FingerprintGroupListModal } from "@/components/register/fingerprint/FingerprintGroupList.modal";
+import { GroupListModal } from "@/components/register/nShopping/GroupList.modal";
 
 export const GroupList = ({ groupList = [], fn }) => (
   <Flex>
@@ -31,9 +31,10 @@ export const GroupList = ({ groupList = [], fn }) => (
                 color="black"
                 onClick={() => alert("Edit button clicked!")}
               />
-              <FingerprintGroupListModal
+              <GroupListModal
                 groupName={v.groupName}
                 groupFid={v._id}
+                fn={fn}
               />
             </Box>
           ))}

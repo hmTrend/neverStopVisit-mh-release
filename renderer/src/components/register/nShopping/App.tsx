@@ -7,13 +7,15 @@ import { storeNShopping } from "@/valtio/nShopping.register.valtio";
 
 export const App = () => {
   const { id } = useSnapshot(storeMember);
-  const { selectedGroupName, groupList } = useSnapshot(storeNShopping);
+  const { selectedGroupName, groupList, selectedExcelList } =
+    useSnapshot(storeNShopping);
   return (
     <Flex direction={"column"} gap={3}>
       <CreateGroupLogic id={id} selectedGroupName={selectedGroupName} />
       <GroupListLogic
         groupList={groupList}
         selectedGroupName={selectedGroupName}
+        selectedExcelList={selectedExcelList}
       />
     </Flex>
   );

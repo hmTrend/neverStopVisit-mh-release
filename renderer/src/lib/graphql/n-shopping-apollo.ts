@@ -31,3 +31,19 @@ export const gqlGetNShoppingGroupList = gql`
     }
   }
 `;
+
+export const gqlDeleteNShoppingGroup = gql`
+  mutation DeleteNShoppingGroup($input: DeleteFingerPrintInput!) {
+    deleteNShoppingGroup(input: $input) {
+      data {
+        _id
+        memberFid
+        groupName
+        createdAt
+        updatedAt
+      }
+      message
+      error
+    }
+  }
+`;
