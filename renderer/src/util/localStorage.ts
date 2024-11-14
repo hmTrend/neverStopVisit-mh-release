@@ -1,14 +1,14 @@
 // utils/localStorage.ts
+import { storeStart } from "@/valtio/start.valtio";
+
 const STORAGE_KEY = "nShopping";
 const STORAGE_KEY2 = "common";
 
 export const nShoppingStorage = {
-  // 전체 상태 저장
   saveState: (state: any) => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   },
 
-  // 전체 상태 불러오기
   loadState: () => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (!saved) {
@@ -28,7 +28,6 @@ export const nShoppingStorage = {
     return JSON.parse(saved);
   },
 
-  // 특정 필드만 업데이트
   updateField: (field: string, value: any) => {
     const currentState = nShoppingStorage.loadState();
     const newState = {
@@ -38,15 +37,22 @@ export const nShoppingStorage = {
     nShoppingStorage.saveState(newState);
     return newState;
   },
+
+  syncToValtio: () => {
+    const savedState = nShoppingStorage.loadState();
+    // storeStart의 nShopping에 저장된 상태 적용
+    storeStart.nShopping = {
+      ...savedState, // localStorage 값으로 덮어쓰기
+    };
+    return savedState;
+  },
 };
 
 export const commonStorage = {
-  // 전체 상태 저장
   saveState: (state: any) => {
     localStorage.setItem(STORAGE_KEY2, JSON.stringify(state));
   },
 
-  // 전체 상태 불러오기
   loadState: () => {
     const saved = localStorage.getItem(STORAGE_KEY2);
     if (!saved) {
@@ -58,7 +64,6 @@ export const commonStorage = {
     return JSON.parse(saved);
   },
 
-  // 특정 필드만 업데이트
   updateField: (field: string, value: any) => {
     const currentState = commonStorage.loadState();
     const newState = {
@@ -67,5 +72,13 @@ export const commonStorage = {
     };
     commonStorage.saveState(newState);
     return newState;
+  },
+
+  syncToValtio: () => {
+    const savedState = commonStorage.loadState();
+    storeStart.common = {
+      ...savedState,
+    };
+    return savedState;
   },
 };
