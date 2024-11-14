@@ -2,6 +2,7 @@ import { Page } from "playwright";
 
 export const goToKeyword = async ({ page }: { page: Page }) => {
   try {
+    await clickSwipeCoachMark({ page }); // 팝업창 있을시 대응
     await page.getByRole("button", { name: "상품, 브랜드 입력" }).click();
     return { page };
   } catch (e) {
@@ -9,3 +10,15 @@ export const goToKeyword = async ({ page }: { page: Page }) => {
     throw Error("goToKeyword");
   }
 };
+
+// 팝업창 좌우로 스와이프해서 다른 탭으로 이동해보세요!
+async function clickSwipeCoachMark({ page }) {
+  await page.evaluate(() => {
+    const element = document.querySelector(
+      ".swipeCoachMarkMobile_swipe_coach_mark_mobile__2BVtK",
+    );
+    if (element) {
+      (element as HTMLElement).click();
+    }
+  });
+}

@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.23.0 + 옵션 삭제">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/util/localStorage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/util/localStorage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,15 +167,7 @@
       <workItem from="1730562685900" duration="7897000" />
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
-      <workItem from="1731419482161" duration="46994000" />
-    </task>
-    <task id="LOCAL-00010" summary="v0.3.1 + 모바일 창으로 열기">
-      <option name="closed" value="true" />
-      <created>1731164656552</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1731164656552</updated>
+      <workItem from="1731419482161" duration="49003000" />
     </task>
     <task id="LOCAL-00011" summary="v0.4.0 + playwright로 교체">
       <option name="closed" value="true" />
@@ -562,7 +553,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731579842576</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감">
+      <option name="closed" value="true" />
+      <created>1731580569937</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1731580569937</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.9.0 + 지문 엑셀리스트 등록 성공" />
     <MESSAGE value="v0.10.0 + 지문 리스트 가져오기 성공" />
     <MESSAGE value="v0.10.1 + 엑셀 삭제버튼 클릭시 빈배열 리스트" />
     <MESSAGE value="v0.10.2 + 엑셀 등록하기 클릭시 모달창 오픈" />
@@ -618,6 +616,7 @@
     <MESSAGE value="v0.21.0 + nShopping 옵션 저장하기 성공" />
     <MESSAGE value="v0.22.0 + 라우터 시작에 적용" />
     <MESSAGE value="v0.23.0 + 옵션 삭제" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.23.0 + 옵션 삭제" />
+    <MESSAGE value="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감" />
   </component>
 </project>
