@@ -27,7 +27,6 @@ export default function MainTopMenu() {
       <Tabs index={tabIndex} onChange={handleTabsChange}>
         <TabList>
           <Tab onClick={() => router.push("/")}>메인</Tab>
-          <Tab onClick={() => router.push("/option")}>옵션</Tab>
           <Tab onClick={() => router.push("/register")}>등록</Tab>
           <Tab onClick={() => router.push("/start")}>시작</Tab>
         </TabList>
