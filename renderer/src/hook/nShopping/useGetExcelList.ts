@@ -11,8 +11,6 @@ export const useGetExcelList = () => {
       variables: { input: { groupFid } },
       fetchPolicy: "no-cache",
     });
-    console.log("data 999");
-    console.log(data);
     if (error) {
       toast({
         title: "그룹엑셀리스트 가져오기 실패",

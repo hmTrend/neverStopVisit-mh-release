@@ -39,9 +39,6 @@ export const CreateExcelLogic = () => {
         "process-excel-file-n-shopping",
         file.path,
       );
-
-      console.log("result 3333");
-      console.log(result);
       storeNShopping.getExcelList = result.data;
 
       // 파일 선택 성공 메시지
@@ -80,13 +77,9 @@ export const CreateExcelLogic = () => {
       catalog: v.catalog.toString(),
       nvMid: v.nvMid.toString(),
     }));
-    console.log("inputList 5555");
-    console.log(inputList);
     const { data } = await createExcelList({
       input: inputList,
     });
-    console.log("data 99999");
-    console.log(data);
     storeNShopping.selectedExcelList = inputList;
   };
 

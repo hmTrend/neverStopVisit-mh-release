@@ -53,9 +53,6 @@ export const FingerprintCreateExcel = () => {
 
       setSelectedFile(file);
       const result = await window.ipc.invoke("process-excel-file", file.path);
-
-      console.log("result 3333");
-      console.log(result);
       storeFingerPrintRegister.getExcelList = result.data;
 
       // 파일 선택 성공 메시지

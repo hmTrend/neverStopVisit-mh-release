@@ -21,8 +21,6 @@ export const GroupListLogic = ({ selectedGroupName, selectedExcelList }) => {
   const handleSelectGroup = ({ groupId, groupName }) => {
     storeNShopping.selectedGroupId = groupId;
     storeNShopping.selectedGroupName = groupName;
-    console.log(groupId);
-    console.log(groupName);
   };
 
   return (

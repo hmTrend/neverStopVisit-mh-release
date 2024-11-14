@@ -34,15 +34,12 @@ export const FingerprintGroupList = () => {
       });
       return;
     }
-    console.log(data.getFingerPrintGroupList.data);
     storeFingerPrintRegister.groupList = data.getFingerPrintGroupList.data;
   }, []);
 
   const handleSelectGroup = ({ groupId, groupName }) => {
     storeFingerPrintRegister.selectedGroupId = groupId;
     storeFingerPrintRegister.selectedGroupName = groupName;
-    console.log(groupId);
-    console.log(groupName);
   };
   return (
     <Flex>

@@ -11,8 +11,8 @@ export const useCreateNShoppingGroup = () => {
       variables: { input: { groupName, memberFid } },
     });
     if (errors) {
-      console.log("errors 333");
-      console.log(errors);
+      console.error("errors 333");
+      console.error(errors);
       toast({
         title: "그룹생성 실패",
         isClosable: true,

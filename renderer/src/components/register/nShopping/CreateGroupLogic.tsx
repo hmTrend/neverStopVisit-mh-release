@@ -9,14 +9,10 @@ export const CreateGroupLogic = ({ id, selectedGroupName }) => {
 
   const handleCreateGroup = async () => {
     try {
-      console.log(inputRef.current.value);
       const { data } = await createNShoppingGroup({
         groupName: inputRef.current.value,
         memberFid: id,
       });
-      console.log("data 333");
-      console.log(data);
-
       storeNShopping.selectedGroupName = inputRef.current.value;
     } catch (e) {
       console.error(e.message);

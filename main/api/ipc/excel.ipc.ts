@@ -26,7 +26,6 @@ export const excelIpc = () => {
 
   ipcMain.handle("process-excel-file-n-shopping", (e, filePath) => {
     try {
-      console.log("Received excel file path:", filePath);
       const result = processNShoppingExcelData({ filePath });
       return {
         data: result,

@@ -33,8 +33,7 @@ export class NShopping extends PuppeteerEngine {
   }
 }
 
-const instanceOne = new NShopping();
-
-Promise.all([instanceOne.start()])
-  .then(() => console.log("Both instances completed"))
-  .catch((error) => console.error("An error occurred:", error));
+// const instanceOne = new NShopping();
+// Promise.all([instanceOne.start()])
+//   .then(() => console.log("Both instances completed"))
+//   .catch((error) => console.error("An error occurred:", error));

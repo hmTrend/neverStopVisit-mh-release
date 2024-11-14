@@ -22,8 +22,6 @@ export const useCreateFingerPrintGroup = () => {
       });
       return;
     }
-    console.log("data");
-    console.log(data.createFingerPrintGroup.data);
     return { data: data.createFingerPrintGroup.data };
   };
   return { createFingerPrintGroup };
