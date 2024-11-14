@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.19.0 + 시작버튼에 옵션 + 등록 연동">
-      <change afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/components/start/FingerPrintSelect.tsx" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.20.0 + 시작 &gt; 그룹네임, 그룹아이디 설정완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/background.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/background.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/GroupListLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/GroupListLogic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/StartButtonLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/StartButtonLogic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/FingerPrintSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/FingerPrintSelect.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,15 +167,7 @@
       <workItem from="1730562685900" duration="7897000" />
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
-      <workItem from="1731419482161" duration="41389000" />
-    </task>
-    <task id="LOCAL-00005" summary="v0.0.5 메인 Info.tsx">
-      <option name="closed" value="true" />
-      <created>1729522778623</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1729522778623</updated>
+      <workItem from="1731419482161" duration="41833000" />
     </task>
     <task id="LOCAL-00006" summary="v0.0.6 넥스트론 타이틀 변경">
       <option name="closed" value="true" />
@@ -569,7 +553,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731561042052</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="v0.20.0 + 시작 &gt; 그룹네임, 그룹아이디 설정완료">
+      <option name="closed" value="true" />
+      <created>1731566893043</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1731566893043</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.7.1 + 지문 &gt; 리스트 2" />
     <MESSAGE value="v0.8.0 + 지문 &gt; 엑셀 &gt; 파일 가져오기 성공" />
     <MESSAGE value="v0.8.1 + 지문 &gt; 엑셀 &gt; 가져온 엑셀비우기" />
     <MESSAGE value="v0.8.2 + 지문리스트 &gt; **** 비번에 별4개 추가" />
@@ -625,6 +616,7 @@
     <MESSAGE value="v0.17.0 + 시작 UI 옵션" />
     <MESSAGE value="v0.18.0 + 동적으로 작업할 그룹 선택 가능" />
     <MESSAGE value="v0.19.0 + 시작버튼에 옵션 + 등록 연동" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.19.0 + 시작버튼에 옵션 + 등록 연동" />
+    <MESSAGE value="v0.20.0 + 시작 &gt; 그룹네임, 그룹아이디 설정완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.20.0 + 시작 &gt; 그룹네임, 그룹아이디 설정완료" />
   </component>
 </project>
