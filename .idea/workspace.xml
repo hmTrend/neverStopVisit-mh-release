@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.24.2 + 모든 작업 완료 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/StartButtonLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/StartButtonLogic.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,23 +166,7 @@
       <workItem from="1730562685900" duration="7897000" />
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
-      <workItem from="1731419482161" duration="49003000" />
-    </task>
-    <task id="LOCAL-00011" summary="v0.4.0 + playwright로 교체">
-      <option name="closed" value="true" />
-      <created>1731169754757</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1731169754757</updated>
-    </task>
-    <task id="LOCAL-00012" summary="v0.5.0 + goToKeyword">
-      <option name="closed" value="true" />
-      <created>1731170808474</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1731170808474</updated>
+      <workItem from="1731419482161" duration="49431000" />
     </task>
     <task id="LOCAL-00013" summary="v0.5.1 + 예외 처리 추가">
       <option name="closed" value="true" />
@@ -561,7 +544,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731580569937</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="v0.24.1 + 쇼핑 팝업창 있을시 대응">
+      <option name="closed" value="true" />
+      <created>1731582967193</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1731582967193</updated>
+    </task>
+    <task id="LOCAL-00061" summary="v0.24.2 + 모든 작업 완료 추가">
+      <option name="closed" value="true" />
+      <created>1731583340446</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1731583340446</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,8 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.10.0 + 지문 리스트 가져오기 성공" />
-    <MESSAGE value="v0.10.1 + 엑셀 삭제버튼 클릭시 빈배열 리스트" />
     <MESSAGE value="v0.10.2 + 엑셀 등록하기 클릭시 모달창 오픈" />
     <MESSAGE value="v0.11.0 + 쇼핑 등록 UI" />
     <MESSAGE value="v0.11.1 + 쇼핑 &gt; 그룹이름 만들기 성공" />
@@ -617,6 +614,8 @@
     <MESSAGE value="v0.22.0 + 라우터 시작에 적용" />
     <MESSAGE value="v0.23.0 + 옵션 삭제" />
     <MESSAGE value="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감" />
+    <MESSAGE value="v0.24.1 + 쇼핑 팝업창 있을시 대응" />
+    <MESSAGE value="v0.24.2 + 모든 작업 완료 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.24.2 + 모든 작업 완료 추가" />
   </component>
 </project>
