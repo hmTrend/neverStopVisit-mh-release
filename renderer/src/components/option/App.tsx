@@ -1,5 +1,4 @@
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
-import { OptionCommon } from "./OptionCommon";
 import { OptionMultiCountLogic } from "@/components/option/OptionMultiCountLogic";
 
 export const App = () => {
@@ -10,9 +9,7 @@ export const App = () => {
         <Tab>프로그램</Tab>
       </TabList>
       <TabPanels>
-        <TabPanel>
-          <OptionCommon />
-        </TabPanel>
+        <TabPanel></TabPanel>
         <TabPanel>
           <OptionMultiCountLogic />
         </TabPanel>

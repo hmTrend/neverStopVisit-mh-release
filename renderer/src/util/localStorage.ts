@@ -1,5 +1,6 @@
 // utils/localStorage.ts
 const STORAGE_KEY = "nShopping";
+const STORAGE_KEY2 = "common";
 
 export const nShoppingStorage = {
   // 전체 상태 저장
@@ -35,6 +36,36 @@ export const nShoppingStorage = {
       [field]: value,
     };
     nShoppingStorage.saveState(newState);
+    return newState;
+  },
+};
+
+export const commonStorage = {
+  // 전체 상태 저장
+  saveState: (state: any) => {
+    localStorage.setItem(STORAGE_KEY2, JSON.stringify(state));
+  },
+
+  // 전체 상태 불러오기
+  loadState: () => {
+    const saved = localStorage.getItem(STORAGE_KEY2);
+    if (!saved) {
+      return {
+        ip: "STATIC",
+        memberFid: "",
+      };
+    }
+    return JSON.parse(saved);
+  },
+
+  // 특정 필드만 업데이트
+  updateField: (field: string, value: any) => {
+    const currentState = commonStorage.loadState();
+    const newState = {
+      ...currentState,
+      [field]: value,
+    };
+    commonStorage.saveState(newState);
     return newState;
   },
 };
