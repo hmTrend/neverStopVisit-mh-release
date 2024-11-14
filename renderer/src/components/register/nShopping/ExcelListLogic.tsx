@@ -1,8 +1,8 @@
 import { useSnapshot } from "valtio/react";
-import { useGetExcelList } from "@/hook/fingerPrint/useGetExcelList";
 import { useEffect } from "react";
 import { ExcelList } from "@/components/register/nShopping/ExcelList";
 import { storeNShopping } from "@/valtio/nShopping.register.valtio";
+import { useGetExcelList } from "@/hook/nShopping/useGetExcelList";
 
 export const ExcelListLogic = () => {
   const { selectedGroupName, selectedExcelList, selectedGroupId } =
@@ -15,7 +15,7 @@ export const ExcelListLogic = () => {
   };
   useEffect(() => {
     GetExcelList().then((v: any) => {
-      storeNShopping.selectedExcelList = v.data.getExcelList.data;
+      storeNShopping.selectedExcelList = v.data;
     });
   }, [selectedGroupName]);
 

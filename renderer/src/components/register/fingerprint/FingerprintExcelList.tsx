@@ -11,9 +11,6 @@ import {
   Td,
   TableCaption,
   TableContainer,
-  Button,
-  Kbd,
-  Code,
   Text,
 } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
@@ -35,7 +32,7 @@ export const FingerprintExcelList = () => {
   };
   useEffect(() => {
     GetExcelList().then((v: any) => {
-      storeFingerPrintRegister.selectedExcelList = v.data.getExcelList.data;
+      storeFingerPrintRegister.selectedExcelList = v.data;
     });
   }, [selectedGroupName]);
 
@@ -45,7 +42,7 @@ export const FingerprintExcelList = () => {
         <FormControl>
           <FormLabel>
             <Text>
-              {selectedGroupName} 지문 리스트 {selectedExcelList.length}개
+              {selectedGroupName} 지문 리스트 {selectedExcelList?.length}개
             </Text>
           </FormLabel>
           <TableContainer>
@@ -65,7 +62,7 @@ export const FingerprintExcelList = () => {
                 </Tr>
               </Thead>
               <Tbody>
-                {selectedExcelList.map((v: any, i) => (
+                {selectedExcelList?.map((v: any, i) => (
                   <Tr key={i}>
                     <Td>{i + 1}</Td>
                     <Td>{v.nId}</Td>

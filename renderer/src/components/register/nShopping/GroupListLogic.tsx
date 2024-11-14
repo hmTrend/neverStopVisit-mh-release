@@ -2,7 +2,6 @@ import { GroupList } from "@/components/register/_commons/GroupList";
 import { useGetNShoppingGroupList } from "@/hook/nShopping/useGetNShoppingGroupList";
 import { useEffect, useState } from "react";
 import { useDeleteNShoppingGroup } from "@/hook/nShopping/useDeleteNShoppingGroup";
-import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 import { storeNShopping } from "@/valtio/nShopping.register.valtio";
 
 export const GroupListLogic = ({ selectedGroupName, selectedExcelList }) => {

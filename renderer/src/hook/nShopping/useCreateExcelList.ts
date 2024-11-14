@@ -1,9 +1,9 @@
 import { useMutation } from "@apollo/client";
 import { useToast } from "@chakra-ui/react";
-import { gqlCreateExcelList } from "@/lib/graphql/n-shopping-apollo";
+import { gqlCreateNShoppingExcelList } from "@/lib/graphql/n-shopping-apollo";
 
 export const useCreateExcelList = () => {
-  const [CreateExcelList] = useMutation(gqlCreateExcelList);
+  const [CreateExcelList] = useMutation(gqlCreateNShoppingExcelList);
   const toast = useToast();
 
   const createExcelList = async ({ input }) => {

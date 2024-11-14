@@ -95,8 +95,6 @@ export const FingerprintCreateExcel = () => {
     const { data } = await createExcelList({
       input: inputList,
     });
-    console.log("data 99999");
-    console.log(data);
     storeFingerPrintRegister.selectedExcelList = getExcelList;
   };
 

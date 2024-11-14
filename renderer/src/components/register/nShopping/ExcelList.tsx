@@ -46,8 +46,8 @@ export const ExcelList = ({ selectedGroupName, selectedExcelList }) => {
                     <Td>{v.nvMid}</Td>
                     <Td>{v.views}</Td>
                     <Td>
-                      {v.query.map((v) => (
-                        <Text>{v}</Text>
+                      {v.query.map((v, i) => (
+                        <Text key={i}>{v}</Text>
                       ))}
                     </Td>
                   </Tr>
