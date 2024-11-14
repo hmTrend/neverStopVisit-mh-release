@@ -2,6 +2,7 @@ import { Box, Flex, Select, Text } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 import { storeStart } from "@/valtio/start.valtio";
+import { nShoppingStorage } from "@/util/localStorage";
 
 export const FingerPrintSelect = ({ selectProgram }) => {
   const { groupList } = useSnapshot(storeFingerPrintRegister);
@@ -16,7 +17,15 @@ export const FingerPrintSelect = ({ selectProgram }) => {
     console.log("groupName");
     console.log(groupName);
     storeStart.nShopping.fingerPrint = { groupId, groupName };
+    nShoppingStorage.updateField("fingerPrint", { groupId, groupName });
   };
+
+  const getInitialValue = () => {
+    const savedState = nShoppingStorage.loadState();
+    return savedState.fingerPrint || { groupName: "", groupId: "" };
+  };
+
+  const initialValue = getInitialValue();
 
   return (
     <Flex gap={3} alignItems={"center"} wrap={"nowrap"}>
@@ -25,6 +34,7 @@ export const FingerPrintSelect = ({ selectProgram }) => {
         <Select
           placeholder="작업할 지문선택"
           onChange={(e) => handleSelectChange(e, selectProgram.title)}
+          defaultValue={initialValue.groupId || ""}
         >
           {groupList.map((v: any, i) => (
             <option key={i} value={v._id}>

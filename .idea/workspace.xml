@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.20.0 + 시작 &gt; 그룹네임, 그룹아이디 설정완료">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.20.1 + 시작 &gt; 지문 설정 완료">
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/start/ConcurrentBrowserCount.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/start/StartStateSwitch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/util/localStorage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/start/FingerPrintSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/FingerPrintSelect.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -58,7 +62,7 @@
     "TypeScript.initialize.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/valtio",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/start",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,11 +78,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/renderer/src/components/start" />
       <recent name="$PROJECT_DIR$/renderer/src/valtio" />
       <recent name="$PROJECT_DIR$/renderer/src/hook/nShopping" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/_commons" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/nShopping" />
-      <recent name="$PROJECT_DIR$/renderer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
@@ -167,15 +171,7 @@
       <workItem from="1730562685900" duration="7897000" />
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
-      <workItem from="1731419482161" duration="41833000" />
-    </task>
-    <task id="LOCAL-00006" summary="v0.0.6 넥스트론 타이틀 변경">
-      <option name="closed" value="true" />
-      <created>1729522888677</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1729522888677</updated>
+      <workItem from="1731419482161" duration="44058000" />
     </task>
     <task id="LOCAL-00007" summary="v0.0.7 옵션 / 등록 UI 추가">
       <option name="closed" value="true" />
@@ -561,7 +557,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731566893043</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="v0.20.1 + 시작 &gt; 지문 설정 완료">
+      <option name="closed" value="true" />
+      <created>1731567187441</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1731567187441</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,7 +596,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.8.0 + 지문 &gt; 엑셀 &gt; 파일 가져오기 성공" />
     <MESSAGE value="v0.8.1 + 지문 &gt; 엑셀 &gt; 가져온 엑셀비우기" />
     <MESSAGE value="v0.8.2 + 지문리스트 &gt; **** 비번에 별4개 추가" />
     <MESSAGE value="v0.8.3 + 엑셀파일 리스트 등록" />
@@ -617,6 +620,7 @@
     <MESSAGE value="v0.18.0 + 동적으로 작업할 그룹 선택 가능" />
     <MESSAGE value="v0.19.0 + 시작버튼에 옵션 + 등록 연동" />
     <MESSAGE value="v0.20.0 + 시작 &gt; 그룹네임, 그룹아이디 설정완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.20.0 + 시작 &gt; 그룹네임, 그룹아이디 설정완료" />
+    <MESSAGE value="v0.20.1 + 시작 &gt; 지문 설정 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.20.1 + 시작 &gt; 지문 설정 완료" />
   </component>
 </project>

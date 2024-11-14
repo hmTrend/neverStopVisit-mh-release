@@ -4,29 +4,35 @@ import { SelectProgramForStart } from "@/components/start/SelectProgramForStart"
 import { useSnapshot } from "valtio/react";
 import { storeNShopping } from "@/valtio/nShopping.register.valtio";
 import { storeStart } from "@/valtio/start.valtio";
+import { nShoppingStorage } from "@/util/localStorage";
 
 export const SelectProgramForStartLogic = () => {
-  const { groupList } = useSnapshot(storeNShopping);
-  const { nShopping } = useSnapshot(storeStart);
+  const { groupList: nShoppingGroupList } = useSnapshot(storeNShopping);
 
-  const handleSelectChange = (e) => {
+  const handleSelectChangeNShopping = (e) => {
     const selectedId = e.target.value;
-    const selectedOption = e.target.options[e.target.selectedIndex];
-    const selectedGroupName = selectedOption.text; // 선택된 option의 텍스트(groupName) 가져오기
+    // groupList에서 선택된 그룹 찾기
+    const selectedGroup: any = nShoppingGroupList.find(
+      (group: any) => group._id === selectedId,
+    );
 
-    console.log("groupId:", selectedId);
-    console.log("groupName:", selectedGroupName);
+    if (selectedGroup) {
+      const newSelectedGroup = {
+        groupName: selectedGroup.groupName,
+        groupId: selectedGroup._id,
+      };
 
-    storeStart.nShopping.selectedGroup = {
-      groupName: selectedGroupName,
-      groupId: selectedId,
-    };
+      // valtio store 업데이트
+      storeStart.nShopping.selectedGroup = newSelectedGroup;
+      // localStorage 업데이트
+      nShoppingStorage.updateField("selectedGroup", newSelectedGroup);
+    }
   };
 
   return (
     <SelectProgramForStart
-      groupList={groupList}
-      handleSelectChange={handleSelectChange}
+      groupList={nShoppingGroupList}
+      handleSelectChange={handleSelectChangeNShopping}
       selectProgram={"nShopping"}
     />
   );
