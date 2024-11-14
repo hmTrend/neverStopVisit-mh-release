@@ -1,5 +1,10 @@
-import { Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
+import { SelectProgramForStart } from "@/components/start/SelectProgramForStart";
 
 export const App = () => {
-  return <Flex>시작</Flex>;
+  return (
+    <Flex>
+      <SelectProgramForStart />
+    </Flex>
+  );
 };

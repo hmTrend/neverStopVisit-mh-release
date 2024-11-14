@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.16.0 + 엑셀 쇼핑리스트 클릭시 쇼핑 리스트에 반영">
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nShopping/useGetExcelList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nShopping/useGetExcelList.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.16.1 + log 삭제">
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,15 +167,7 @@
       <workItem from="1730562685900" duration="7897000" />
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
-      <workItem from="1731419482161" duration="25704000" />
-    </task>
-    <task id="LOCAL-00001" summary="v0.0.1 차크라 pro black &amp; white 스타일 탑재">
-      <option name="closed" value="true" />
-      <created>1729518142591</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1729518142591</updated>
+      <workItem from="1731419482161" duration="27518000" />
     </task>
     <task id="LOCAL-00002" summary="v0.0.2 메인 옵션 시작 UI 추가">
       <option name="closed" value="true" />
@@ -560,7 +553,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731547451897</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="v0.16.1 + log 삭제">
+      <option name="closed" value="true" />
+      <created>1731547702725</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1731547702727</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.6.5 + 생성된 그룹리스트" />
     <MESSAGE value="v0.6.6 + 지문 &gt; 그룹 &gt; 삭제 모달추가" />
     <MESSAGE value="v0.7.0 + 지문 &gt; 그룹 &gt; 삭제셋팅" />
     <MESSAGE value="v0.7.1 + 지문 &gt; 리스트 그룹 이름 표시 셋팅" />
@@ -616,6 +616,7 @@
     <MESSAGE value="v0.15.2 + 등록 &gt; 쇼핑리스트 퀴리 리스트 한줄씩 정렬" />
     <MESSAGE value="v0.15.3 + 등록 &gt; 쇼핑리스트 퀴리 리스트 원래 갯수만 등록" />
     <MESSAGE value="v0.16.0 + 엑셀 쇼핑리스트 클릭시 쇼핑 리스트에 반영" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.16.0 + 엑셀 쇼핑리스트 클릭시 쇼핑 리스트에 반영" />
+    <MESSAGE value="v0.16.1 + log 삭제" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.16.1 + log 삭제" />
   </component>
 </project>
