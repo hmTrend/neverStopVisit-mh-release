@@ -1,38 +1,41 @@
 import { Box, Flex, Select, Text } from "@chakra-ui/react";
+import { Fragment } from "react";
+import { FingerPrintSelect } from "@/components/start/FingerPrintSelect";
 
 export const SelectProgramForStart = ({
   selectProgram,
-  getSavedValue,
   handleSelectChange,
+  groupList,
 }) => {
   return (
     <Flex direction={"column"} gap={3}>
-      {selectProgram.map((v: any, i) => (
-        <TargetSelect
-          key={i}
-          selectProgram={v}
-          getSavedValue={getSavedValue}
-          handleSelectChange={handleSelectChange}
-        />
-      ))}
+      <Fragment>
+        <Flex gap={6}>
+          <TargetSelect
+            selectProgram={selectProgram}
+            groupList={groupList}
+            handleSelectChange={handleSelectChange}
+          />
+          <FingerPrintSelect
+            selectProgram={selectProgram}
+            groupList={groupList}
+          />
+        </Flex>
+      </Fragment>
     </Flex>
   );
 };
 
-function TargetSelect({ getSavedValue, selectProgram, handleSelectChange }) {
+function TargetSelect({ selectProgram, handleSelectChange, groupList }) {
   return (
     <Flex gap={3} alignItems={"center"} wrap={"nowrap"}>
-      <Text whiteSpace={"nowrap"}>{selectProgram.title}</Text>
+      <Text whiteSpace={"nowrap"}>{selectProgram}</Text>
       <Box>
         <Select
           placeholder="작업할 그룹선택"
-          defaultValue={getSavedValue(
-            selectProgram.title,
-            selectProgram.groupList,
-          )}
-          onChange={(e) => handleSelectChange(e, selectProgram.title)}
+          onChange={(e) => handleSelectChange(e)}
         >
-          {selectProgram.groupList.map((v: any, i) => (
+          {groupList.map((v: any, i) => (
             <option key={i} value={v._id}>
               {v.groupName}
             </option>

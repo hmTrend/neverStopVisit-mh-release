@@ -1,25 +1,26 @@
 import { proxy } from "valtio/vanilla";
 
 class StartValtio {
-  selectProgram: [
-    {
-      title: string;
-      groupList: [
-        {
-          _id: string;
-          groupName: string;
-          memberFid: string;
-          createdAt: string;
-          updatedAt: string;
-        },
-      ];
-    },
-  ];
-  option: any;
+  common: { memberFid: string; networkConnectType: string };
+  nShopping: {
+    selectedGroup: { groupName: string; groupId: string };
+    fingerPrint: { groupName: string; groupId: string };
+    concurrentBrowserCount: number;
+  };
 
   constructor() {
-    this.selectProgram = [];
-    this.option = [];
+    this.common = {};
+    this.nShopping = {
+      selectedGroup: {
+        groupName: "",
+        groupId: "",
+      },
+      fingerPrint: {
+        groupName: "",
+        groupId: "",
+      },
+      concurrentBrowserCount: 1,
+    };
   }
 }
 

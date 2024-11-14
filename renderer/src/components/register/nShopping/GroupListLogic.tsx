@@ -3,7 +3,6 @@ import { useGetNShoppingGroupList } from "@/hook/nShopping/useGetNShoppingGroupL
 import { useEffect, useState } from "react";
 import { useDeleteNShoppingGroup } from "@/hook/nShopping/useDeleteNShoppingGroup";
 import { storeNShopping } from "@/valtio/nShopping.register.valtio";
-import { storeStart } from "@/valtio/start.valtio";
 
 export const GroupListLogic = ({ selectedGroupName, selectedExcelList }) => {
   const { getNShoppingGroupList } = useGetNShoppingGroupList();
@@ -15,7 +14,7 @@ export const GroupListLogic = ({ selectedGroupName, selectedExcelList }) => {
     setGroupList(data);
     console.log("data 123123");
     console.log(data);
-    storeStart.selectProgram[0] = { title: "쇼핑", groupList: data };
+    storeNShopping.groupList = data;
   };
 
   useEffect(() => {

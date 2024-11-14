@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 import { FingerprintGroupListModal } from "@/components/register/fingerprint/FingerprintGroupList.modal";
+import { storeStart } from "@/valtio/start.valtio";
 
 export const FingerprintGroupList = () => {
   const { data, error } = useSuspenseQuery(gqlGetFingerPrintGroupList, {
@@ -34,6 +35,7 @@ export const FingerprintGroupList = () => {
       });
       return;
     }
+    storeStart.fingerPrintGroupList = data.getFingerPrintGroupList.data;
     storeFingerPrintRegister.groupList = data.getFingerPrintGroupList.data;
   }, []);
 
