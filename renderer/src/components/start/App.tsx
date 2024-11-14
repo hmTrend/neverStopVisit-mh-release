@@ -1,10 +1,10 @@
 import { Box, Flex } from "@chakra-ui/react";
-import { SelectProgramForStart } from "@/components/start/SelectProgramForStart";
+import { SelectProgramForStartLogic } from "@/components/start/SelectProgramForStartLogic";
 
 export const App = () => {
   return (
     <Flex>
-      <SelectProgramForStart />
+      <SelectProgramForStartLogic />
     </Flex>
   );
 };
