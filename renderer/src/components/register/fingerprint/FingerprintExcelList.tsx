@@ -16,7 +16,7 @@ import {
 import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 import { CommonUtil } from "@/util/common.util";
-import CopyToClipboardButton from "@/components/commons/CopyToClipboardButton";
+import CopyToClipboardButton from "@/components/_commons/CopyToClipboardButton";
 import { useEffect } from "react";
 import { useGetExcelList } from "@/hook/fingerPrint/useGetExcelList";
 

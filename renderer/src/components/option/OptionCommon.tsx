@@ -11,10 +11,10 @@ import {
   RadioGroup,
 } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
-import { storeOptionValtio } from "@/valtio/option.valtio";
+import { storeOption } from "@/valtio/option.valtio";
 
 export const OptionCommon = () => {
-  const { common } = useSnapshot(storeOptionValtio);
+  const { common } = useSnapshot(storeOption);
 
   return (
     <Flex>

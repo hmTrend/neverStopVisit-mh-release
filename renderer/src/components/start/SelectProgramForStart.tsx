@@ -1,4 +1,4 @@
-import { Flex, Select, Text } from "@chakra-ui/react";
+import { Box, Flex, Select, Text } from "@chakra-ui/react";
 
 export const SelectProgramForStart = ({
   selectProgram,
@@ -20,25 +20,25 @@ export const SelectProgramForStart = ({
 };
 
 function TargetSelect({ getSavedValue, selectProgram, handleSelectChange }) {
-  console.log("getSavedValue() 11111");
-  console.log(getSavedValue());
   return (
     <Flex gap={3} alignItems={"center"} wrap={"nowrap"}>
       <Text whiteSpace={"nowrap"}>{selectProgram.title}</Text>
-      <Select
-        placeholder="작업할 그룹선택"
-        defaultValue={getSavedValue(
-          selectProgram.title,
-          selectProgram.groupList,
-        )}
-        onChange={(e) => handleSelectChange(e, selectProgram.title)}
-      >
-        {selectProgram.groupList.map((v: any, i) => (
-          <option key={i} value={v._id}>
-            {v.groupName}
-          </option>
-        ))}
-      </Select>
+      <Box>
+        <Select
+          placeholder="작업할 그룹선택"
+          defaultValue={getSavedValue(
+            selectProgram.title,
+            selectProgram.groupList,
+          )}
+          onChange={(e) => handleSelectChange(e, selectProgram.title)}
+        >
+          {selectProgram.groupList.map((v: any, i) => (
+            <option key={i} value={v._id}>
+              {v.groupName}
+            </option>
+          ))}
+        </Select>
+      </Box>
     </Flex>
   );
 }
