@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.24.2 + 모든 작업 완료 추가">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v0.24.3 + 줄맞추기 등록 엑셀 추가 완료">
+      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nShopping/useCreateExcelListAlignFlat.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/excel.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/excel.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/excel/processExcelData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/excel/processExcelData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateExcel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateExcel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateExcel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateExcel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nShopping/useCreateExcelList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nShopping/useCreateExcelList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/lib/graphql/n-shopping-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/n-shopping-apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/nShopping.register.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/nShopping.register.valtio.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
     "TypeScript.initialize.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/start",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/hook/nShopping",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -77,9 +77,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/renderer/src/hook/nShopping" />
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
       <recent name="$PROJECT_DIR$/renderer/src/valtio" />
-      <recent name="$PROJECT_DIR$/renderer/src/hook/nShopping" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/_commons" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/nShopping" />
     </key>
@@ -170,15 +170,7 @@
       <workItem from="1730562685900" duration="7897000" />
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
-      <workItem from="1731419482161" duration="55107000" />
-    </task>
-    <task id="LOCAL-00014" summary="v0.5.2 + 로그인 여부 체크 &gt; 쿠키적용">
-      <option name="closed" value="true" />
-      <created>1731213986261</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1731213986261</updated>
+      <workItem from="1731419482161" duration="58884000" />
     </task>
     <task id="LOCAL-00015" summary="v0.5.3 + 로그인 기능 제작중">
       <option name="closed" value="true" />
@@ -564,7 +556,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731583399180</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="v0.24.3 + 줄맞추기 등록 엑셀 추가 완료">
+      <option name="closed" value="true" />
+      <created>1731633198927</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1731633198927</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +595,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.10.2 + 엑셀 등록하기 클릭시 모달창 오픈" />
     <MESSAGE value="v0.11.0 + 쇼핑 등록 UI" />
     <MESSAGE value="v0.11.1 + 쇼핑 &gt; 그룹이름 만들기 성공" />
     <MESSAGE value="v0.11.2 + 그룹이름 중복일경우 에러처리" />
@@ -620,6 +619,7 @@
     <MESSAGE value="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감" />
     <MESSAGE value="v0.24.1 + 쇼핑 팝업창 있을시 대응" />
     <MESSAGE value="v0.24.2 + 모든 작업 완료 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.24.2 + 모든 작업 완료 추가" />
+    <MESSAGE value="v0.24.3 + 줄맞추기 등록 엑셀 추가 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.24.3 + 줄맞추기 등록 엑셀 추가 완료" />
   </component>
 </project>

@@ -10,7 +10,7 @@ export const useCreateExcelList = () => {
     const { data, errors } = await CreateExcelList({ variables: { input } });
     if (errors) {
       toast({
-        title: "엑셀지문 만들기 실패",
+        title: "쇼핑엑셀 만들기 실패",
         isClosable: true,
         duration: 3000,
         status: "error",
@@ -18,7 +18,7 @@ export const useCreateExcelList = () => {
       throw Error("ERR > createExcelList");
     }
     toast({
-      title: "엑셀지문 만들기 성공",
+      title: "쇼핑엑셀 만들기 성공",
       isClosable: true,
       duration: 3000,
       status: "success",

@@ -4,8 +4,9 @@ class NShoppingRegisterValtio {
   selectedGroupName: string;
   groupList: [];
   selectedExcelList: any[];
-  getExcelList: any[];
   selectedGroupId: string;
+  getExcelList: any[];
+  getExcelListAlignFlat: any[];
 
   constructor() {
     this.selectedGroupName = "";
@@ -13,6 +14,7 @@ class NShoppingRegisterValtio {
     this.selectedExcelList = [];
     this.selectedGroupId = "";
     this.getExcelList = [];
+    this.getExcelListAlignFlat = [];
   }
 }
 

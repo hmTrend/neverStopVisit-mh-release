@@ -4,6 +4,7 @@ import { useSnapshot } from "valtio/react";
 import { CreateExcel } from "@/components/register/_commons/CreateExcel";
 import { storeNShopping } from "@/valtio/nShopping.register.valtio";
 import { useCreateExcelList } from "@/hook/nShopping/useCreateExcelList";
+import { useCreateExcelListAlignFlat } from "@/hook/nShopping/useCreateExcelListAlignFlat";
 
 export const CreateExcelLogic = () => {
   const toast = useToast();
@@ -12,10 +13,11 @@ export const CreateExcelLogic = () => {
   const {
     selectedGroupName,
     getExcelList,
-    selectedExcelList,
+    getExcelListAlignFlat,
     selectedGroupId,
   } = useSnapshot(storeNShopping);
   const { createExcelList } = useCreateExcelList();
+  const { createExcelListAlignFlat } = useCreateExcelListAlignFlat();
 
   const handleFileSelect = async (event) => {
     const file = event.target.files[0];
@@ -56,6 +58,7 @@ export const CreateExcelLogic = () => {
       console.log("result 333");
       console.log(result3);
       storeNShopping.getExcelList = result.data;
+      storeNShopping.getExcelListAlignFlat = result3;
 
       // 파일 선택 성공 메시지
       toast({
@@ -97,6 +100,18 @@ export const CreateExcelLogic = () => {
       input: inputList,
     });
     storeNShopping.selectedExcelList = inputList;
+
+    const inputList2 = getExcelListAlignFlat.map((v) => ({
+      ...v,
+      groupFid: selectedGroupId,
+      catalog: v.catalog.toString(),
+      nvMid: v.nvMid.toString(),
+    }));
+    const { data: data2 } = await createExcelListAlignFlat({
+      input: inputList2,
+    });
+    console.log("data2 333");
+    console.log(data2);
   };
 
   const handleClearExcelList = () => {

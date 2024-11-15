@@ -87,3 +87,25 @@ export const gqlGetNShoppingExcelList = gql`
     }
   }
 `;
+
+export const gqlCreateNShoppingExcelListAlignFlatMap = gql`
+  mutation CreateNShoppingExcelListAlignFlatMap(
+    $input: [CreateNShoppingExcelListAlignFlatMapInput!]!
+  ) {
+    createNShoppingExcelListAlignFlatMap(input: $input) {
+      data {
+        _id
+        groupFid
+        title
+        catalog
+        nvMid
+        views
+        query
+        createdAt
+        updatedAt
+      }
+      error
+      message
+    }
+  }
+`;
