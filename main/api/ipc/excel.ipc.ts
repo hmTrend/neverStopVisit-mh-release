@@ -2,6 +2,8 @@ import { ipcMain } from "electron";
 import {
   processExcelData,
   processNShoppingExcelData,
+  processNShoppingExcelDataWithAlign,
+  processNShoppingExcelDataWithAlignFlatMap,
 } from "../../services/commons/excel/processExcelData";
 
 export const excelIpc = () => {
@@ -41,4 +43,38 @@ export const excelIpc = () => {
       };
     }
   });
+
+  ipcMain.handle(
+    "process-excel-file-n-shopping-data-with-align",
+    (e, filePath) => {
+      try {
+        const result = processNShoppingExcelDataWithAlign({ filePath });
+        return result;
+      } catch (e) {
+        console.error("Error processing excel file:", e);
+        return {
+          data: [],
+          success: false,
+          message: e.message,
+        };
+      }
+    },
+  );
+
+  ipcMain.handle(
+    "process-excel-file-n-shopping-data-with-align-flat-map",
+    (e, filePath) => {
+      try {
+        const result = processNShoppingExcelDataWithAlignFlatMap({ filePath });
+        return result;
+      } catch (e) {
+        console.error("Error processing excel file:", e);
+        return {
+          data: [],
+          success: false,
+          message: e.message,
+        };
+      }
+    },
+  );
 };

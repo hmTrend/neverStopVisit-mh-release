@@ -55,7 +55,7 @@ export const CreateExcel = forwardRef(
                   accept=".xlsx,.xls"
                   style={{ display: "none" }}
                 />
-                <Button onClick={handleExcelButtonClick}>엑셀 생성</Button>
+                <Button onClick={handleExcelButtonClick}>쇼핑 엑셀 생성</Button>
               </Box>
               <Button variant={"outline"}>기존엑셀 다운받기</Button>
             </Flex>

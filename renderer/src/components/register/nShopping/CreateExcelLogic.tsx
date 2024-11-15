@@ -39,6 +39,22 @@ export const CreateExcelLogic = () => {
         "process-excel-file-n-shopping",
         file.path,
       );
+      console.log("result 222");
+      console.log(result);
+
+      const result2 = await window.ipc.invoke(
+        "process-excel-file-n-shopping-data-with-align",
+        file.path,
+      );
+      console.log("result 222 222");
+      console.log(result2);
+
+      const result3 = await window.ipc.invoke(
+        "process-excel-file-n-shopping-data-with-align-flat-map",
+        file.path,
+      );
+      console.log("result 333");
+      console.log(result3);
       storeNShopping.getExcelList = result.data;
 
       // 파일 선택 성공 메시지
