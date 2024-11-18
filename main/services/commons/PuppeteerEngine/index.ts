@@ -9,6 +9,7 @@ export class PuppeteerEngine {
   targetCookie;
   targetCookieId: string;
   query;
+  nvMid: string;
 
   constructor() {
     this.chromiumEngine = chromium; // chromium 초기화

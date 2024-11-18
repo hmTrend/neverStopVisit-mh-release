@@ -2,25 +2,24 @@ import { PuppeteerEngine } from "../commons/PuppeteerEngine";
 import { goToShopping } from "./goToShopping";
 import wait from "waait";
 import { goToKeyword } from "./goToKeyword";
-import { keywordSearch } from "./keywordSearch";
 import { loggedInCheck } from "../commons/naver/loggedInCheck";
-import { CreateNShoppingExcelListAlignFlatMap } from "../../lib/apollo/n-shopping-apollo";
+import { GetNShoppingExcelAlignFlatTargetOne } from "../../lib/apollo/n-shopping-apollo";
 import { GetFingerPrintTargetExcelOne } from "../../lib/apollo/finger-print.apollo";
 import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
+import { plusStoreToComparePricing } from "./plusStoreToComparePricing";
+import { searchNVMID } from "./searchNVMID";
 
 export class NShopping extends PuppeteerEngine {
   async start({ nShopping }): Promise<void> {
     try {
-      const { data: excelData } = await CreateNShoppingExcelListAlignFlatMap({
+      const { data: excelData } = await GetNShoppingExcelAlignFlatTargetOne({
         groupFid: nShopping.selectedGroup.groupId,
       });
-      console.log("excelData 2222");
-      console.log(excelData);
-      const { query } = excelData;
+      const { query, nvMid } = excelData;
       {
         this.query = query;
+        this.nvMid = nvMid;
       }
-
       const { data: fingerPrintData } = await GetFingerPrintTargetExcelOne({
         groupFid: nShopping.fingerPrint.groupId,
       });
@@ -43,8 +42,30 @@ export class NShopping extends PuppeteerEngine {
         });
         this.page = page;
       }
-      await keywordSearch({ page: this.page });
-      // await cookieNstateSave({ page, _id, nState: "미로그인" });
+      {
+        const { page } = await plusStoreToComparePricing({
+          page: this.page,
+        });
+        this.page = page;
+      }
+      {
+        const { page, isFindNvMid } = await searchNVMID({
+          page: this.page,
+          nvMid: this.nvMid,
+        });
+        this.page = page;
+      }
+      {
+        const { page } = await cookieNstateSave({
+          page: this.page,
+          _id: this.targetCookieId,
+          nState: "정상",
+        });
+        await wait(3000);
+        this.page = page;
+        const browser = this.page.context().browser();
+        await browser.close();
+      }
     } catch (e) {
       console.error(e.message);
     }

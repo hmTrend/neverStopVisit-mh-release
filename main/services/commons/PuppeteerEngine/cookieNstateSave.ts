@@ -16,4 +16,5 @@ export const cookieNstateSave = async ({
     cookie: JSON.stringify(cookies),
     nState,
   });
+  return { page };
 };

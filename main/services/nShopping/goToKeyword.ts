@@ -9,7 +9,7 @@ export const goToKeyword = async ({
   query: string;
 }) => {
   try {
-    await clickSwipeCoachMark({ page, query }); // 팝업창 있을시 대응
+    await clickSwipeCoachMark({ page }); // 팝업창 있을시 대응
     await page.getByRole("button", { name: "상품, 브랜드 입력" }).click();
     await page.locator("#input_text").fill(query);
     await page
@@ -24,7 +24,7 @@ export const goToKeyword = async ({
 };
 
 // 팝업창 좌우로 스와이프해서 다른 탭으로 이동해보세요!
-async function clickSwipeCoachMark({ page, query }) {
+async function clickSwipeCoachMark({ page }) {
   await page.evaluate(() => {
     const element = document.querySelector(
       ".swipeCoachMarkMobile_swipe_coach_mark_mobile__2BVtK",

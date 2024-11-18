@@ -4,7 +4,8 @@ import { NShopping } from "../../services/nShopping";
 export const startProgramIpc = () => {
   ipcMain.handle("start-program", async (event, args) => {
     const data = JSON.parse(args);
-    console.log("oksk");
+    console.log("oksk nShopping");
+    console.log(data);
     const { nShopping } = data;
 
     let startProgramList = [];

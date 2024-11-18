@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가">
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가">
+      <change afterPath="$PROJECT_DIR$/main/services/nShopping/plusStoreToComparePricing.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/services/nShopping/searchNVMID.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/keywordSearch.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,14 +194,6 @@
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
       <workItem from="1731419482161" duration="58884000" />
-    </task>
-    <task id="LOCAL-00021" summary="v0.6.0 + graphql 추가">
-      <option name="closed" value="true" />
-      <created>1731288833740</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1731288833740</updated>
     </task>
     <task id="LOCAL-00022" summary="v0.6.2 + FingerprintCreateGroup.tsx &gt; 로딩추가">
       <option name="closed" value="true" />
@@ -578,7 +579,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731932069817</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가">
+      <option name="closed" value="true" />
+      <created>1731932327189</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1731932327189</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +618,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.14.1 + 쇼핑 &gt; 엑셀생성 가능" />
     <MESSAGE value="v0.15.0 + 등록 &gt; 쇼핑 셋팅" />
     <MESSAGE value="v0.15.1 + 등록 &gt; 쇼핑리스트 엑셀 등록" />
     <MESSAGE value="v0.15.2 + 등록 &gt; 쇼핑리스트 퀴리 리스트 한줄씩 정렬" />
@@ -634,6 +642,7 @@
     <MESSAGE value="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅" />
     <MESSAGE value="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅&#10;+ 로그인 값 없을시 즉시종료 및 쿠키 저장" />
     <MESSAGE value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가" />
+    <MESSAGE value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가" />
   </component>
 </project>

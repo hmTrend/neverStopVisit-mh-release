@@ -93,8 +93,8 @@ export const CreateExcelLogic = () => {
     const inputList = getExcelList.map((v) => ({
       ...v,
       groupFid: selectedGroupId,
-      catalog: v.catalog.toString(),
-      nvMid: v.nvMid.toString(),
+      catalog: v.catalog?.toString(),
+      nvMid: v.nvMid?.toString(),
     }));
     const { data } = await createExcelList({
       input: inputList,
@@ -104,8 +104,8 @@ export const CreateExcelLogic = () => {
     const inputList2 = getExcelListAlignFlat.map((v) => ({
       ...v,
       groupFid: selectedGroupId,
-      catalog: v.catalog.toString(),
-      nvMid: v.nvMid.toString(),
+      catalog: v.catalog?.toString(),
+      nvMid: v.nvMid?.toString(),
     }));
     const { data: data2 } = await createExcelListAlignFlat({
       input: inputList2,
