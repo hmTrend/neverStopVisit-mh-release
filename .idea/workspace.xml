@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅&#10;+ 로그인 값 없을시 즉시종료 및 쿠키 저장">
-      <change afterPath="$PROJECT_DIR$/main/lib/proxy/getNextProxy.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가">
       <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +29,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "applepykim"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;applepykim&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -69,31 +64,31 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TypeScript.index.ts (1).executor": "Run",
-    "TypeScript.index.ts (2).executor": "Run",
-    "TypeScript.index.ts.executor": "Run",
-    "TypeScript.initialize.ts.executor": "Run",
-    "eslint.code.style.apply.dismiss": "true",
-    "git-widget-placeholder": "develop",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TypeScript.index.ts (1).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts (2).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
+    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/lib" />
@@ -190,14 +185,6 @@
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
       <workItem from="1731419482161" duration="58884000" />
-    </task>
-    <task id="LOCAL-00020" summary="v0.5.7 + nPlace 껍데기 추가">
-      <option name="closed" value="true" />
-      <created>1731243706946</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1731243706946</updated>
     </task>
     <task id="LOCAL-00021" summary="v0.6.0 + graphql 추가">
       <option name="closed" value="true" />
@@ -583,7 +570,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731921908450</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가">
+      <option name="closed" value="true" />
+      <created>1731932069817</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1731932069817</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,7 +609,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.14.0 + 쇼핑 &gt; 엑셀만들기" />
     <MESSAGE value="v0.14.1 + 쇼핑 &gt; 엑셀생성 가능" />
     <MESSAGE value="v0.15.0 + 등록 &gt; 쇼핑 셋팅" />
     <MESSAGE value="v0.15.1 + 등록 &gt; 쇼핑리스트 엑셀 등록" />
@@ -639,6 +633,7 @@
     <MESSAGE value="NSV-3 + 시작시 지문 정보 1개 가져오기&#10;+ 동작시 로그인 체크" />
     <MESSAGE value="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅" />
     <MESSAGE value="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅&#10;+ 로그인 값 없을시 즉시종료 및 쿠키 저장" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅&#10;+ 로그인 값 없을시 즉시종료 및 쿠키 저장" />
+    <MESSAGE value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가" />
   </component>
 </project>
