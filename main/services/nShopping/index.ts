@@ -5,13 +5,23 @@ import { goToKeyword } from "./goToKeyword";
 import { keywordSearch } from "./keywordSearch";
 import { sampleCookieNaverLoggedIn } from "./mockData";
 import { loggedInCheck } from "../commons/naver/loggedInCheck";
+import { CreateNShoppingExcelListAlignFlatMap } from "../../lib/apollo/n-shopping-apollo";
+import { GetFingerPrintTargetExcelOne } from "../../lib/apollo/finger-print.apollo";
 
 export class NShopping extends PuppeteerEngine {
-  async start(): Promise<void> {
+  async start({ nShopping }): Promise<void> {
     try {
+      const { data: excelData } = await CreateNShoppingExcelListAlignFlatMap({
+        groupFid: nShopping.selectedGroup.groupId,
+      });
+      console.log("excelData 2222");
+      console.log(excelData);
+      const { data: fingerPrintData } = await GetFingerPrintTargetExcelOne({
+        groupFid: nShopping.fingerPrint.groupId,
+      });
       await super.initialize({
         url: "https://www.naver.com/",
-        cookie: sampleCookieNaverLoggedIn,
+        cookie: JSON.parse(fingerPrintData.cookie),
       });
       await loggedInCheck({ page: this.page });
       {

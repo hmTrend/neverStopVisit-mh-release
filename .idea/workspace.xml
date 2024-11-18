@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-3 v0.24.6 + 타겟정보 1개 가져오기">
-      <change afterPath="$PROJECT_DIR$/main/.env.development" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/.env.production" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/lib/apollo/apollo-provider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-4 v0.25.0 + 시작시 타겟 작업 정보 1개 가져오기">
+      <change afterPath="$PROJECT_DIR$/main/lib/apollo/finger-print.apollo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +26,27 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "applepykim"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="99b0a7e8-1c49-4672-ac4a-db38dd784cbd" />
+        <option name="url" value="https://github.com/hmTrend/neverStopVisit-b.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -63,7 +79,7 @@
     "TypeScript.index.ts.executor": "Run",
     "TypeScript.initialize.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "develop",
     "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/apollo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -174,14 +190,6 @@
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
       <workItem from="1731419482161" duration="58884000" />
-    </task>
-    <task id="LOCAL-00016" summary="v0.5.4 + 쿠키 로그인 반영 성공">
-      <option name="closed" value="true" />
-      <created>1731242511260</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1731242511260</updated>
     </task>
     <task id="LOCAL-00017" summary="v0.5.5 + loggedInCheck">
       <option name="closed" value="true" />
@@ -567,7 +575,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731883530898</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="NSV-4 v0.25.0 + 시작시 타겟 작업 정보 1개 가져오기">
+      <option name="closed" value="true" />
+      <created>1731886156202</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1731886156203</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,7 +600,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -598,7 +614,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.11.1 + 쇼핑 &gt; 그룹이름 만들기 성공" />
     <MESSAGE value="v0.11.2 + 그룹이름 중복일경우 에러처리" />
     <MESSAGE value="v0.12.0 + 쇼핑 &gt; 생성된 그룹리스트" />
     <MESSAGE value="v0.13.0 + 쇼핑 &gt; 생성된 그룹 삭제로직 추가" />
@@ -623,6 +638,7 @@
     <MESSAGE value="v0.24.2 + 모든 작업 완료 추가" />
     <MESSAGE value="v0.24.3 + 줄맞추기 등록 엑셀 추가 완료" />
     <MESSAGE value="NSV-3 v0.24.6 + 타겟정보 1개 가져오기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-3 v0.24.6 + 타겟정보 1개 가져오기" />
+    <MESSAGE value="NSV-4 v0.25.0 + 시작시 타겟 작업 정보 1개 가져오기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-4 v0.25.0 + 시작시 타겟 작업 정보 1개 가져오기" />
   </component>
 </project>

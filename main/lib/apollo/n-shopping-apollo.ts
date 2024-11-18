@@ -24,8 +24,6 @@ const gqlGetNShoppingExcelAlignFlatTargetOne = gql`
 `;
 
 export const CreateNShoppingExcelListAlignFlatMap = async ({ groupFid }) => {
-  console.log("groupFid 555");
-  console.log(groupFid);
   const { data, error } = await client.query({
     query: gqlGetNShoppingExcelAlignFlatTargetOne,
     variables: {
@@ -44,7 +42,7 @@ export const CreateNShoppingExcelListAlignFlatMap = async ({ groupFid }) => {
     };
   }
   return {
-    data,
+    data: data.getNShoppingExcelAlignFlatTargetOne.data,
     message: "OK > CreateNShoppingExcelListAlignFlatMap ",
     error: "",
   };
