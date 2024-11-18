@@ -1,5 +1,6 @@
 import { Browser, Page, chromium, devices } from "playwright";
 import { formatCookiesForPlaywright } from "./formatCookiesForPlaywright";
+import { getNextProxy } from "../../../lib/proxy/getNextProxy";
 
 export const initialize = async ({
   url,
@@ -16,7 +17,11 @@ export const initialize = async ({
   pages: Page[];
   cookie;
 }) => {
-  browser = await chromiumEngine.launch({ headless: false });
+  const proxySettings = getNextProxy();
+  browser = await chromiumEngine.launch({
+    headless: false,
+    proxy: { server: proxySettings },
+  });
   const context = await browser.newContext(devices["iPhone 15 Pro Max"]);
   if (cookie && cookie.length > 0) {
     const formattedCookies = formatCookiesForPlaywright(cookie);

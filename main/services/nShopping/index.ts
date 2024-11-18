@@ -6,6 +6,7 @@ import { keywordSearch } from "./keywordSearch";
 import { loggedInCheck } from "../commons/naver/loggedInCheck";
 import { CreateNShoppingExcelListAlignFlatMap } from "../../lib/apollo/n-shopping-apollo";
 import { GetFingerPrintTargetExcelOne } from "../../lib/apollo/finger-print.apollo";
+import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
 
 export class NShopping extends PuppeteerEngine {
   async start({ nShopping }): Promise<void> {
@@ -15,6 +16,10 @@ export class NShopping extends PuppeteerEngine {
       });
       console.log("excelData 2222");
       console.log(excelData);
+      const { query } = excelData;
+      {
+        this.query = query;
+      }
 
       const { data: fingerPrintData } = await GetFingerPrintTargetExcelOne({
         groupFid: nShopping.fingerPrint.groupId,
@@ -24,7 +29,7 @@ export class NShopping extends PuppeteerEngine {
         url: "https://www.naver.com/",
         cookie: this.targetCookie,
       });
-      await loggedInCheck({ page: this.page, _id: this.targetCookieId });
+      // await loggedInCheck({ page: this.page, _id: this.targetCookieId });
       {
         const { page } = await goToShopping({
           page: this.page,
@@ -34,10 +39,12 @@ export class NShopping extends PuppeteerEngine {
       {
         const { page } = await goToKeyword({
           page: this.page,
+          query: this.query,
         });
         this.page = page;
       }
       await keywordSearch({ page: this.page });
+      // await cookieNstateSave({ page, _id, nState: "미로그인" });
     } catch (e) {
       console.error(e.message);
     }
