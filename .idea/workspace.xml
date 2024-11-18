@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-4 v0.25.0 + 시작시 타겟 작업 정보 1개 가져오기">
-      <change afterPath="$PROJECT_DIR$/main/lib/apollo/finger-print.apollo.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅">
+      <change afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/cookieNstateSave.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/apollo/finger-print.apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/finger-print.apollo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
     </list>
@@ -190,22 +189,6 @@
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
       <workItem from="1731419482161" duration="58884000" />
-    </task>
-    <task id="LOCAL-00017" summary="v0.5.5 + loggedInCheck">
-      <option name="closed" value="true" />
-      <created>1731243175923</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1731243175923</updated>
-    </task>
-    <task id="LOCAL-00018" summary="v0.5.5 + 블록 나누기">
-      <option name="closed" value="true" />
-      <created>1731243276523</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1731243276523</updated>
     </task>
     <task id="LOCAL-00019" summary="v0.5.6 + Promise all로 멀티구동 성공">
       <option name="closed" value="true" />
@@ -583,7 +566,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731886156203</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="NSV-3 + 시작시 지문 정보 1개 가져오기&#10;+ 동작시 로그인 체크">
+      <option name="closed" value="true" />
+      <created>1731916949730</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1731916949730</updated>
+    </task>
+    <task id="LOCAL-00067" summary="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅">
+      <option name="closed" value="true" />
+      <created>1731918575596</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1731918575596</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,8 +613,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.11.2 + 그룹이름 중복일경우 에러처리" />
-    <MESSAGE value="v0.12.0 + 쇼핑 &gt; 생성된 그룹리스트" />
     <MESSAGE value="v0.13.0 + 쇼핑 &gt; 생성된 그룹 삭제로직 추가" />
     <MESSAGE value="v0.14.0 + 쇼핑 &gt; 엑셀만들기" />
     <MESSAGE value="v0.14.1 + 쇼핑 &gt; 엑셀생성 가능" />
@@ -639,6 +636,8 @@
     <MESSAGE value="v0.24.3 + 줄맞추기 등록 엑셀 추가 완료" />
     <MESSAGE value="NSV-3 v0.24.6 + 타겟정보 1개 가져오기" />
     <MESSAGE value="NSV-4 v0.25.0 + 시작시 타겟 작업 정보 1개 가져오기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-4 v0.25.0 + 시작시 타겟 작업 정보 1개 가져오기" />
+    <MESSAGE value="NSV-3 + 시작시 지문 정보 1개 가져오기&#10;+ 동작시 로그인 체크" />
+    <MESSAGE value="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅" />
   </component>
 </project>

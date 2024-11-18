@@ -3,7 +3,6 @@ import { goToShopping } from "./goToShopping";
 import wait from "waait";
 import { goToKeyword } from "./goToKeyword";
 import { keywordSearch } from "./keywordSearch";
-import { sampleCookieNaverLoggedIn } from "./mockData";
 import { loggedInCheck } from "../commons/naver/loggedInCheck";
 import { CreateNShoppingExcelListAlignFlatMap } from "../../lib/apollo/n-shopping-apollo";
 import { GetFingerPrintTargetExcelOne } from "../../lib/apollo/finger-print.apollo";
@@ -16,14 +15,16 @@ export class NShopping extends PuppeteerEngine {
       });
       console.log("excelData 2222");
       console.log(excelData);
+
       const { data: fingerPrintData } = await GetFingerPrintTargetExcelOne({
         groupFid: nShopping.fingerPrint.groupId,
       });
+      this.targetCookieId = fingerPrintData._id;
       await super.initialize({
         url: "https://www.naver.com/",
-        cookie: JSON.parse(fingerPrintData.cookie),
+        cookie: this.targetCookie,
       });
-      await loggedInCheck({ page: this.page });
+      await loggedInCheck({ page: this.page, _id: this.targetCookieId });
       {
         const { page } = await goToShopping({
           page: this.page,
