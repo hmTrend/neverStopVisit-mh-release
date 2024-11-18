@@ -11,7 +11,7 @@ import {
 import { storeStart } from "@/valtio/start.valtio";
 import { nShoppingStorage } from "@/util/localStorage";
 
-export const ConcurrentBrowserCount = () => {
+export const ConcurrentOneLineWork = () => {
   const handleChange = (valueString, valueNumber) => {
     console.log("Number Value:", valueNumber);
     storeStart.nShopping.concurrentBrowserCount = valueNumber;
@@ -20,7 +20,7 @@ export const ConcurrentBrowserCount = () => {
 
   return (
     <Flex gap={3} alignItems={"center"} wrap={"nowrap"}>
-      <Text whiteSpace={"nowrap"}>{"멀티"}</Text>
+      <Text whiteSpace={"nowrap"}>{"한줄"}</Text>
       <Box>
         <NumberInput
           defaultValue={nShoppingStorage.loadState().concurrentBrowserCount}

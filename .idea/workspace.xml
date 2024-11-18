@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가">
-      <change afterPath="$PROJECT_DIR$/main/services/nShopping/plusStoreToComparePricing.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/services/nShopping/searchNVMID.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShopping/keywordSearch.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-17 한줄작업 로직만들기&#10;+ UI 셋팅 완료">
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,38 +64,38 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TypeScript.index.ts (1).executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.index.ts (2).executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.index.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
-    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TypeScript.index.ts (1).executor": "Run",
+    "TypeScript.index.ts (2).executor": "Run",
+    "TypeScript.index.ts.executor": "Run",
+    "TypeScript.initialize.ts.executor": "Run",
+    "eslint.code.style.apply.dismiss": "true",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/start",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/renderer/src/components/start" />
       <recent name="$PROJECT_DIR$/main/lib" />
       <recent name="$PROJECT_DIR$/main/lib/apollo" />
       <recent name="$PROJECT_DIR$/main" />
       <recent name="$PROJECT_DIR$/renderer/src/hook/nShopping" />
-      <recent name="$PROJECT_DIR$/renderer/src/components/start" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
@@ -194,22 +185,6 @@
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
       <workItem from="1731419482161" duration="58884000" />
-    </task>
-    <task id="LOCAL-00022" summary="v0.6.2 + FingerprintCreateGroup.tsx &gt; 로딩추가">
-      <option name="closed" value="true" />
-      <created>1731303963073</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1731303963073</updated>
-    </task>
-    <task id="LOCAL-00023" summary="v0.6.3 + 그룹생성">
-      <option name="closed" value="true" />
-      <created>1731304113859</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1731304113859</updated>
     </task>
     <task id="LOCAL-00024" summary="v0.6.4 + 서버 그룹 리스트 가져오기">
       <option name="closed" value="true" />
@@ -587,7 +562,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731932327189</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가&#10;+ 타겟 url 클릭까지 완료">
+      <option name="closed" value="true" />
+      <created>1731967038145</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1731967038145</updated>
+    </task>
+    <task id="LOCAL-00072" summary="NSV-17 한줄작업 로직만들기&#10;+ UI 셋팅 완료">
+      <option name="closed" value="true" />
+      <created>1731973794645</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1731973794645</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,8 +609,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.15.0 + 등록 &gt; 쇼핑 셋팅" />
-    <MESSAGE value="v0.15.1 + 등록 &gt; 쇼핑리스트 엑셀 등록" />
     <MESSAGE value="v0.15.2 + 등록 &gt; 쇼핑리스트 퀴리 리스트 한줄씩 정렬" />
     <MESSAGE value="v0.15.3 + 등록 &gt; 쇼핑리스트 퀴리 리스트 원래 갯수만 등록" />
     <MESSAGE value="v0.16.0 + 엑셀 쇼핑리스트 클릭시 쇼핑 리스트에 반영" />
@@ -643,6 +632,8 @@
     <MESSAGE value="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅&#10;+ 로그인 값 없을시 즉시종료 및 쿠키 저장" />
     <MESSAGE value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가" />
     <MESSAGE value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가" />
+    <MESSAGE value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가&#10;+ 타겟 url 클릭까지 완료" />
+    <MESSAGE value="NSV-17 한줄작업 로직만들기&#10;+ UI 셋팅 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-17 한줄작업 로직만들기&#10;+ UI 셋팅 완료" />
   </component>
 </project>

@@ -4,6 +4,7 @@ import { FingerPrintSelect } from "@/components/start/FingerPrintSelect";
 import { StartStateSwitch } from "@/components/start/StartStateSwitch";
 import { ConcurrentBrowserCount } from "@/components/start/ConcurrentBrowserCount";
 import { nShoppingStorage } from "@/util/localStorage";
+import { ConcurrentOneLineWork } from "@/components/start/ConcurrentOneLineWork";
 
 export const SelectProgramForStart = ({
   selectProgram,
@@ -24,6 +25,7 @@ export const SelectProgramForStart = ({
             selectProgram={selectProgram}
             groupList={groupList}
           />
+          {/*<ConcurrentOneLineWork />*/}
           <ConcurrentBrowserCount />
         </Flex>
       </Fragment>
