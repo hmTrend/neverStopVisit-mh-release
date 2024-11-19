@@ -3,13 +3,32 @@
   "name": "never-stop-visit",
   "description": "never-stop-visit",
   "version": "1.0.0",
-  "author": "Ketan Patel",
+  "author": "apk",
   "main": "app/background.js",
   "scripts": {
     "dev": "nextron",
     "build": "nextron build",
     "postinstall": "electron-builder install-app-deps",
     "lint": "eslint ."
+  },
+  "build": {
+    "extraResources": [
+      {
+        "from": "./main/.env.production",
+        "to": "main/.env.production"
+      },
+      {
+        "from": "./main/.env.development",
+        "to": "main/.env.development"
+      }
+    ],
+    "appId": "co.kr.neverStopVisit",
+    "productName": "네버스탑비지트",
+    "icon": "assets/icons/win/nsvLogo.ico"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hmTrend/neverStopVisit-release"
   },
   "dependencies": {
     "@apollo/client": "^3.11.9",
