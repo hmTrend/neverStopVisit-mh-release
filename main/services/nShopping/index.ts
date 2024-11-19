@@ -24,11 +24,12 @@ export class NShopping extends PuppeteerEngine {
         groupFid: nShopping.fingerPrint.groupId,
       });
       this.targetCookieId = fingerPrintData._id;
+      this.targetCookie = JSON.parse(fingerPrintData.cookie);
       await super.initialize({
         url: "https://www.naver.com/",
         cookie: this.targetCookie,
       });
-      // await loggedInCheck({ page: this.page, _id: this.targetCookieId });
+      await loggedInCheck({ page: this.page, _id: this.targetCookieId });
       {
         const { page } = await goToShopping({
           page: this.page,

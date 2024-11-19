@@ -45,3 +45,7 @@ ipcMain.on("message", async (event, arg) => {
 excelIpc();
 startProgramIpc();
 fingerPrintBrowserIpc();
+
+ipcMain.on("app:quit", () => {
+  app.quit();
+});
