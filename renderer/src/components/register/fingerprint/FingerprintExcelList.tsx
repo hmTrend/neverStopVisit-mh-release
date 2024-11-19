@@ -13,6 +13,7 @@ import {
   TableContainer,
   Text,
   Button,
+  useToast,
 } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
@@ -22,6 +23,7 @@ import { useEffect } from "react";
 import { useGetExcelList } from "@/hook/fingerPrint/useGetExcelList";
 
 export const FingerprintExcelList = () => {
+  const toast = useToast();
   const { selectedGroupName, selectedExcelList, selectedGroupId } = useSnapshot(
     storeFingerPrintRegister,
   );
@@ -38,10 +40,21 @@ export const FingerprintExcelList = () => {
   }, [selectedGroupName]);
 
   const fingerprintExcelList = async ({ _id, cookie }) => {
-    const result = await window.ipc.invoke("finger-print-browser-open", {
-      _id,
-      cookie,
-    });
+    try {
+      const result = await window.ipc.invoke("finger-print-browser-open", {
+        _id,
+        cookie,
+      });
+    } catch (e) {
+      console.error(e.message);
+      toast({
+        title: "지문열기 실패",
+        description: `${e.message.includes("initialize") ? "쿠키 검증 실패" : e.message.includes("valid JSON") ? "쿠키값 형식 오류" : "기타 오픈실패"}`,
+        isClosable: true,
+        duration: 3000,
+        status: "error",
+      });
+    }
   };
 
   return (

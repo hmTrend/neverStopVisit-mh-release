@@ -55,6 +55,8 @@ export class NShopping extends PuppeteerEngine {
           nvMid: this.nvMid,
         });
         this.page = page;
+
+        await wait(9999 * 10000);
       }
       {
         const { page } = await cookieNstateSave({
@@ -64,11 +66,15 @@ export class NShopping extends PuppeteerEngine {
         });
         await wait(3000);
         this.page = page;
-        const browser = this.page.context().browser();
-        await browser.close();
+        await this.browser.close();
       }
     } catch (e) {
       console.error(e.message);
+      const browser = await this.page?.context()?.browser();
+      if (browser) {
+        await browser.close();
+      }
+      await wait(10 * 1000);
     }
   }
 

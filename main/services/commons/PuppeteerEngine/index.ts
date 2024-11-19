@@ -19,15 +19,16 @@ export class PuppeteerEngine {
 
   async initialize({ url, cookie }) {
     try {
-      const { page } = await initialize({
+      const { page, browser } = await initialize({
         url,
         chromiumEngine: this.chromiumEngine,
-        browser: this.browser,
         page: this.page,
         pages: this.pages,
+        browser: this.browser,
         cookie,
       });
       this.page = page;
+      this.browser = browser;
     } catch (e) {
       console.error(e.message);
       throw Error("initialize");
