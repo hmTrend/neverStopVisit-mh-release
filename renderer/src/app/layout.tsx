@@ -8,6 +8,7 @@ import MainTopMenu from "@/components/layout/MainTopMenu";
 import { Footer } from "@/components/layout/Footer";
 import { client } from "@/lib/graphql/apollo-provider";
 import { ApolloProvider } from "@apollo/client";
+import { WithLoginCheck } from "@/components/layout/WithLoginCheck";
 
 const proTheme = extendTheme(theme);
 const extenstion = {
@@ -27,7 +28,7 @@ export default function RootLayout({
           <ChakraProvider theme={myTheme}>
             <Flex direction={"column"} gap={6}>
               <MainTopMenu />
-              {children}
+              <WithLoginCheck>{children}</WithLoginCheck>
               <Footer />
             </Flex>
           </ChakraProvider>

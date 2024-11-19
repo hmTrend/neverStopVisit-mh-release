@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가&#10;+ makeAPurchase / race로 먼저찾는거 클릭하기">
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/layout/LoginApp.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/layout/WithLoginCheck.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShopping/expandProductDetails.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/expandProductDetails.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShopping/makeAPurchase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/makeAPurchase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/member.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/member.valtio.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -188,14 +190,6 @@
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
       <workItem from="1731419482161" duration="58884000" />
-    </task>
-    <task id="LOCAL-00039" summary="v0.11.1 + 쇼핑 &gt; 그룹이름 만들기 성공">
-      <option name="closed" value="true" />
-      <created>1731421852512</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1731421852512</updated>
     </task>
     <task id="LOCAL-00040" summary="v0.11.2 + 그룹이름 중복일경우 에러처리">
       <option name="closed" value="true" />
@@ -581,7 +575,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732023730515</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가&#10;+ makeAPurchase / race로 먼저찾는거 클릭하기">
+      <option name="closed" value="true" />
+      <created>1732026313168</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1732026313168</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +614,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.23.0 + 옵션 삭제" />
     <MESSAGE value="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감" />
     <MESSAGE value="v0.24.1 + 쇼핑 팝업창 있을시 대응" />
     <MESSAGE value="v0.24.2 + 모든 작업 완료 추가" />
@@ -637,6 +638,7 @@
     <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간" />
     <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결" />
     <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가" />
+    <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가&#10;+ makeAPurchase / race로 먼저찾는거 클릭하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가&#10;+ makeAPurchase / race로 먼저찾는거 클릭하기" />
   </component>
 </project>

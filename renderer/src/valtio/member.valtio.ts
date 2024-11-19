@@ -1,11 +1,11 @@
 import { proxy } from "valtio/vanilla";
 
-class MemberValtio {
-  id: string;
+class AuthValtio {
+  userId: boolean;
 
   constructor() {
-    this.id = "67315a7130d6d4d2bb26e38a";
+    this.userId = false;
   }
 }
 
-export const storeMember = proxy(new MemberValtio());
+export const storeAuth = proxy(new AuthValtio());
