@@ -2,6 +2,7 @@ import { proxy } from "valtio/vanilla";
 
 class StartValtio {
   common: {
+    isStart: boolean;
     ip: "STATIC" | "TETHERING" | "ROUTER" | "LOCAL";
     memberFid: string;
   };
@@ -13,7 +14,7 @@ class StartValtio {
   };
 
   constructor() {
-    this.common = { ip: "STATIC", memberFid: "" };
+    this.common = { isStart: false, ip: "STATIC", memberFid: "" };
     this.nShopping = {
       isStart: false,
       selectedGroup: {
