@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가">
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/validateCookie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/validateCookie.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/expandProductDetails.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/expandProductDetails.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/makeAPurchase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/makeAPurchase.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,38 +188,6 @@
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
       <workItem from="1731419482161" duration="58884000" />
-    </task>
-    <task id="LOCAL-00035" summary="v0.10.0 + 지문 리스트 가져오기 성공">
-      <option name="closed" value="true" />
-      <created>1731408330746</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1731408330746</updated>
-    </task>
-    <task id="LOCAL-00036" summary="v0.10.1 + 엑셀 삭제버튼 클릭시 빈배열 리스트">
-      <option name="closed" value="true" />
-      <created>1731409996129</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1731409996129</updated>
-    </task>
-    <task id="LOCAL-00037" summary="v0.10.2 + 엑셀 등록하기 클릭시 모달창 오픈">
-      <option name="closed" value="true" />
-      <created>1731410476590</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1731410476590</updated>
-    </task>
-    <task id="LOCAL-00038" summary="v0.11.0 + 쇼핑 등록 UI">
-      <option name="closed" value="true" />
-      <created>1731411936997</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1731411936997</updated>
     </task>
     <task id="LOCAL-00039" summary="v0.11.1 + 쇼핑 &gt; 그룹이름 만들기 성공">
       <option name="closed" value="true" />
@@ -578,7 +549,39 @@
       <option name="project" value="LOCAL" />
       <updated>1732012785735</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가&#10;+ 불필요한 유효기간 체크 제거&#10;+ 안전하지 않은 쿠키 검증 제거">
+      <option name="closed" value="true" />
+      <created>1732013131486</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1732013131486</updated>
+    </task>
+    <task id="LOCAL-00085" summary="NSV-22 타겟쇼핑페이지 체류시간">
+      <option name="closed" value="true" />
+      <created>1732015182268</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1732015182268</updated>
+    </task>
+    <task id="LOCAL-00086" summary="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결">
+      <option name="closed" value="true" />
+      <created>1732015740665</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1732015740665</updated>
+    </task>
+    <task id="LOCAL-00087" summary="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가">
+      <option name="closed" value="true" />
+      <created>1732023730515</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1732023730515</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,10 +612,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.20.0 + 시작 &gt; 그룹네임, 그룹아이디 설정완료" />
-    <MESSAGE value="v0.20.1 + 시작 &gt; 지문 설정 완료" />
-    <MESSAGE value="v0.21.0 + nShopping 옵션 저장하기 성공" />
-    <MESSAGE value="v0.22.0 + 라우터 시작에 적용" />
     <MESSAGE value="v0.23.0 + 옵션 삭제" />
     <MESSAGE value="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감" />
     <MESSAGE value="v0.24.1 + 쇼핑 팝업창 있을시 대응" />
@@ -634,6 +633,10 @@
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ this.browser 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가" />
+    <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가&#10;+ 불필요한 유효기간 체크 제거&#10;+ 안전하지 않은 쿠키 검증 제거" />
+    <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간" />
+    <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결" />
+    <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가" />
   </component>
 </project>

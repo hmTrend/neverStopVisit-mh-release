@@ -8,6 +8,8 @@ import { GetFingerPrintTargetExcelOne } from "../../lib/apollo/finger-print.apol
 import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
 import { plusStoreToComparePricing } from "./plusStoreToComparePricing";
 import { searchNVMID } from "./searchNVMID";
+import { expandProductDetails } from "./expandProductDetails";
+import { makeAPurchase } from "./makeAPurchase";
 
 export class NShopping extends PuppeteerEngine {
   async start({ nShopping }): Promise<void> {
@@ -56,7 +58,16 @@ export class NShopping extends PuppeteerEngine {
         });
         this.page = page;
 
-        await wait(9999 * 10000);
+        if (isFindNvMid) {
+          const { page } = await expandProductDetails({ page: this.page });
+          this.page = page;
+          await wait(20 * 1000);
+          {
+            const { page } = await makeAPurchase({ page: this.page });
+            console.log(4);
+            this.page = page;
+          }
+        }
       }
       {
         const { page } = await cookieNstateSave({
@@ -66,7 +77,8 @@ export class NShopping extends PuppeteerEngine {
         });
         await wait(3000);
         this.page = page;
-        await this.browser.close();
+        await this.page.context().close();
+        await wait(3000);
       }
     } catch (e) {
       console.error(e.message);
