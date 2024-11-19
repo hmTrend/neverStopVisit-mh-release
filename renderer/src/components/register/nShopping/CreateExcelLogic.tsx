@@ -41,22 +41,16 @@ export const CreateExcelLogic = () => {
         "process-excel-file-n-shopping",
         file.path,
       );
-      console.log("result 222");
-      console.log(result);
 
       const result2 = await window.ipc.invoke(
         "process-excel-file-n-shopping-data-with-align",
         file.path,
       );
-      console.log("result 222 222");
-      console.log(result2);
 
       const result3 = await window.ipc.invoke(
         "process-excel-file-n-shopping-data-with-align-flat-map",
         file.path,
       );
-      console.log("result 333");
-      console.log(result3);
       storeNShopping.getExcelList = result.data;
       storeNShopping.getExcelListAlignFlat = result3;
 
@@ -110,8 +104,6 @@ export const CreateExcelLogic = () => {
     const { data: data2 } = await createExcelListAlignFlat({
       input: inputList2,
     });
-    console.log("data2 333");
-    console.log(data2);
   };
 
   const handleClearExcelList = () => {

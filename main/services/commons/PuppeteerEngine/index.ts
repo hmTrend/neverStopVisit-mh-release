@@ -1,15 +1,16 @@
 import { initialize } from "./initialize";
-import { Browser, Page, chromium } from "playwright";
+import { Browser, Page, chromium, BrowserContext } from "playwright";
 
 export class PuppeteerEngine {
   chromiumEngine: typeof chromium; // 'typeof chromium'으로 수정
   page: Page;
   pages: Page[];
   browser: Browser;
-  targetCookie;
+  targetCookie: any;
   targetCookieId: string;
-  query;
+  query: string;
   nvMid: string;
+  context: BrowserContext;
 
   constructor() {
     this.chromiumEngine = chromium; // chromium 초기화

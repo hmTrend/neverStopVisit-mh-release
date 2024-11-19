@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-17 한줄작업 로직만들기&#10;+ UI 셋팅 완료">
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-20 실전 지문 등록 및 반영">
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateExcelLogic.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,30 +186,6 @@
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
       <workItem from="1731419482161" duration="58884000" />
-    </task>
-    <task id="LOCAL-00024" summary="v0.6.4 + 서버 그룹 리스트 가져오기">
-      <option name="closed" value="true" />
-      <created>1731308695945</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1731308695945</updated>
-    </task>
-    <task id="LOCAL-00025" summary="v0.6.5 + 생성된 그룹리스트">
-      <option name="closed" value="true" />
-      <created>1731310086106</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1731310086106</updated>
-    </task>
-    <task id="LOCAL-00026" summary="v0.6.6 + 지문 &gt; 그룹 &gt; 삭제 모달추가">
-      <option name="closed" value="true" />
-      <created>1731310748727</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1731310748727</updated>
     </task>
     <task id="LOCAL-00027" summary="v0.7.0 + 지문 &gt; 그룹 &gt; 삭제셋팅">
       <option name="closed" value="true" />
@@ -578,7 +555,31 @@
       <option name="project" value="LOCAL" />
       <updated>1731973794645</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="NSV-17 한줄작업 로직만들기&#10;+ UI 셋팅 완료">
+      <option name="closed" value="true" />
+      <created>1731973897234</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1731973897234</updated>
+    </task>
+    <task id="LOCAL-00074" summary="NSV-20 실전 지문 등록 및 반영">
+      <option name="closed" value="true" />
+      <created>1731991942194</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1731991942194</updated>
+    </task>
+    <task id="LOCAL-00075" summary="NSV-20 실전 지문 등록 및 반영">
+      <option name="closed" value="true" />
+      <created>1731991999408</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1731991999408</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +610,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.15.2 + 등록 &gt; 쇼핑리스트 퀴리 리스트 한줄씩 정렬" />
     <MESSAGE value="v0.15.3 + 등록 &gt; 쇼핑리스트 퀴리 리스트 원래 갯수만 등록" />
     <MESSAGE value="v0.16.0 + 엑셀 쇼핑리스트 클릭시 쇼핑 리스트에 반영" />
     <MESSAGE value="v0.16.1 + log 삭제" />
@@ -634,6 +634,7 @@
     <MESSAGE value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가" />
     <MESSAGE value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가&#10;+ 타겟 url 클릭까지 완료" />
     <MESSAGE value="NSV-17 한줄작업 로직만들기&#10;+ UI 셋팅 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-17 한줄작업 로직만들기&#10;+ UI 셋팅 완료" />
+    <MESSAGE value="NSV-20 실전 지문 등록 및 반영" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-20 실전 지문 등록 및 반영" />
   </component>
 </project>

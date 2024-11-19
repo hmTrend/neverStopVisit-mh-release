@@ -7,7 +7,16 @@ export const useCreateExcelList = () => {
   const toast = useToast();
 
   const createExcelList = async ({ input }) => {
-    const { data, errors } = await CreateExcelList({ variables: { input } });
+    console.log("input 333");
+    console.log(input);
+    const fixInput = input.map((v) => ({
+      ...v,
+      nId: v.nId?.toString(),
+      phoneNumber: v.phoneNumber?.toString(),
+    }));
+    const { data, errors } = await CreateExcelList({
+      variables: { input: fixInput },
+    });
     if (errors) {
       toast({
         title: "엑셀지문 만들기 실패",

@@ -4,6 +4,7 @@ import serve from "electron-serve";
 import { createWindow } from "./helpers";
 import { excelIpc } from "./api/ipc/excel.ipc";
 import { startProgramIpc } from "./api/ipc/startProgram.ipc";
+import { fingerPrintBrowserIpc } from "./api/ipc/fingerPrintBrowser.ipc";
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -43,3 +44,4 @@ ipcMain.on("message", async (event, arg) => {
 
 excelIpc();
 startProgramIpc();
+fingerPrintBrowserIpc();

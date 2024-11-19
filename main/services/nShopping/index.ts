@@ -70,6 +70,16 @@ export class NShopping extends PuppeteerEngine {
       console.error(e.message);
     }
   }
+
+  async stop() {
+    try {
+      if (this.page) await this.page.close();
+      if (this.context) await this.context.close();
+      if (this.browser) await this.browser.close();
+    } catch (error) {
+      console.error("브라우저 종료 중 오류:", error);
+    }
+  }
 }
 
 // const instanceOne = new NShopping();

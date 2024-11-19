@@ -12,6 +12,7 @@ import {
   TableCaption,
   TableContainer,
   Text,
+  Button,
 } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
@@ -36,6 +37,13 @@ export const FingerprintExcelList = () => {
     });
   }, [selectedGroupName]);
 
+  const fingerprintExcelList = async ({ _id, cookie }) => {
+    const result = await window.ipc.invoke("finger-print-browser-open", {
+      _id,
+      cookie,
+    });
+  };
+
   return (
     <Flex>
       <Box>
@@ -59,6 +67,7 @@ export const FingerprintExcelList = () => {
                   <Th>아이피</Th>
                   <Th>쿠키</Th>
                   <Th>폰번호</Th>
+                  <Th>지문열기</Th>
                 </Tr>
               </Thead>
               <Tbody>
@@ -76,6 +85,17 @@ export const FingerprintExcelList = () => {
                       <CopyToClipboardButton value={v.cookie} />
                     </Td>
                     <Td>{v.phoneNumber}</Td>
+                    <Td>
+                      <Button
+                        onClick={() =>
+                          fingerprintExcelList({ _id: v._id, cookie: v.cookie })
+                        }
+                        fontSize={"xs"}
+                        variant={"link"}
+                      >
+                        OPEN
+                      </Button>
+                    </Td>
                   </Tr>
                 ))}
               </Tbody>
