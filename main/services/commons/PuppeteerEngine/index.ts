@@ -1,5 +1,6 @@
 import { initialize } from "./initialize";
-import { Browser, Page, chromium, BrowserContext } from "playwright";
+import { Browser, Page, BrowserContext } from "playwright";
+import { chromium } from "playwright-extra";
 
 export class PuppeteerEngine {
   chromiumEngine: typeof chromium; // 'typeof chromium'으로 수정

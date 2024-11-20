@@ -25,8 +25,6 @@ export class NShopping extends PuppeteerEngine {
       const { data: fingerPrintData } = await GetFingerPrintTargetExcelOne({
         groupFid: nShopping.fingerPrint.groupId,
       });
-      console.log("nShopping 4433");
-      console.log(nShopping);
       this.targetCookieId = fingerPrintData._id;
       this.targetCookie = JSON.parse(fingerPrintData.cookie);
       await super.initialize({
@@ -59,14 +57,11 @@ export class NShopping extends PuppeteerEngine {
           nvMid: this.nvMid,
         });
         this.page = page;
-
         if (isFindNvMid) {
           const { page } = await expandProductDetails({ page: this.page });
           this.page = page;
-          await wait(20 * 1000);
           {
             const { page } = await makeAPurchase({ page: this.page });
-            console.log(4);
             this.page = page;
           }
         }
@@ -83,8 +78,8 @@ export class NShopping extends PuppeteerEngine {
         await wait(3000);
       }
     } catch (e) {
-      console.error(e.message);
       const browser = await this.page?.context()?.browser();
+      console.error(e.message);
       if (browser) {
         await browser.close();
       }

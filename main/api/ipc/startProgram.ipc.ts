@@ -2,6 +2,7 @@ import { ipcMain } from "electron";
 import { NShopping } from "../../services/nShopping";
 import { networkIpChange } from "../../services/commons/network";
 import { monitorNetworkAndStart } from "../../services/commons/network/network.local";
+import wait from "waait";
 
 export const startProgramIpc = () => {
   let currentNShoppingInstance = null;
@@ -58,15 +59,12 @@ async function executeInChunks(
 
       // 현재 청크 실행
       for (let i = 0; i < currentChunkSize; i++) {
-        await networkIpChange({ common });
-        await monitorNetworkAndStart();
+        await wait(3 * 1000);
         let startProgramList = [];
         currentNShoppingInstance = new NShopping();
-
         if (nShopping.isStart) {
           startProgramList.push(currentNShoppingInstance.start({ nShopping }));
         }
-
         const result = await Promise.all([...startProgramList]);
         completedCount++;
 
@@ -76,6 +74,10 @@ async function executeInChunks(
             `진행률: ${completedCount}/${totalCount} (${((completedCount / totalCount) * 100).toFixed(1)}%)`,
           );
         }
+
+        await networkIpChange({ common });
+        await monitorNetworkAndStart();
+        await wait(20 * 1000);
       }
 
       // 청크 완료 후 잠시 대기 (선택사항)

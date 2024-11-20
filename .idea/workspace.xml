@@ -74,9 +74,10 @@
     "TypeScript.index.ts (2).executor": "Run",
     "TypeScript.index.ts.executor": "Run",
     "TypeScript.initialize.ts.executor": "Run",
+    "TypeScript.network.router.edu.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
-    "last_opened_file_path": "C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/network",
+    "last_opened_file_path": "C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/commons/PuppeteerEngine",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -99,11 +100,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\services\commons\PuppeteerEngine" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\lib\network" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\services\commons\network" />
       <recent name="$PROJECT_DIR$/renderer/src/hook/fingerPrint" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/fingerprint" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/icons/win" />
@@ -113,7 +114,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/register/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.index.ts (1)">
+  <component name="RunManager" selected="TypeScript.network.router.edu.ts">
     <configuration name="index.ts (1)" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -166,8 +167,23 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="network.router.edu.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/network" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/network/network.router.edu.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.network.router.edu.ts" />
         <item itemvalue="TypeScript.index.ts (1)" />
         <item itemvalue="TypeScript.initialize.ts" />
         <item itemvalue="TypeScript.index.ts (2)" />
@@ -201,15 +217,7 @@
       <workItem from="1731374161692" duration="9969000" />
       <workItem from="1731419482161" duration="58884000" />
       <workItem from="1732062337588" duration="9180000" />
-      <workItem from="1732077946893" duration="3269000" />
-    </task>
-    <task id="LOCAL-00055" summary="v0.20.1 + 시작 &gt; 지문 설정 완료">
-      <option name="closed" value="true" />
-      <created>1731567187441</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1731567187441</updated>
+      <workItem from="1732077946893" duration="15635000" />
     </task>
     <task id="LOCAL-00056" summary="v0.21.0 + nShopping 옵션 저장하기 성공">
       <option name="closed" value="true" />
@@ -595,7 +603,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732081095213</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="NSV-31 userAgent 모바일용 1만개 추가">
+      <option name="closed" value="true" />
+      <created>1732081291857</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1732081291857</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,7 +642,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-20 실전 지문 등록 및 반영" />
     <MESSAGE value="NSV-21 프로그램 종료버튼 만들기" />
     <MESSAGE value="작업 시작시 로딩버튼 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기" />
@@ -651,6 +666,7 @@
     <MESSAGE value="NSV-29 유효기간 추가하기" />
     <MESSAGE value="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬" />
     <MESSAGE value="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬&#10;+ back 네트워크 타입 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬&#10;+ back 네트워크 타입 추가" />
+    <MESSAGE value="NSV-31 userAgent 모바일용 1만개 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-31 userAgent 모바일용 1만개 추가" />
   </component>
 </project>

@@ -5,6 +5,7 @@ import os from "os";
 import dns from "dns";
 import waait from "waait";
 import macAddress from "mac-address";
+import { checkInternetConnection } from "./checkInternetConnection";
 
 function generateRandomMac(): string {
   return Array.from({ length: 6 }, () =>
@@ -122,7 +123,7 @@ export async function getMacAddress({
 const dnsLookup = promisify(dns.lookup);
 
 let previousMac = "";
-const checkInterval = 3000; // 5초마다 확인
+const checkInterval = 3000; // 3초마다 확인
 
 function getLocalMacAddress(): string | null {
   const networkInterfaces = os.networkInterfaces();
@@ -139,14 +140,14 @@ function getLocalMacAddress(): string | null {
   return null;
 }
 
-async function checkInternetConnection(): Promise<boolean> {
-  try {
-    await dnsLookup("google.com");
-    return true;
-  } catch (error) {
-    return false;
-  }
-}
+// async function checkInternetConnection(): Promise<boolean> {
+//   try {
+//     await dnsLookup("google.com");
+//     return true;
+//   } catch (error) {
+//     return false;
+//   }
+// }
 
 async function checkNetworkStatus(): Promise<boolean> {
   const currentMac = getLocalMacAddress();
@@ -167,8 +168,8 @@ async function checkNetworkStatus(): Promise<boolean> {
 export async function monitorNetworkAndStart(): Promise<void> {
   console.log("network connection monitoring start...");
   while (true) {
-    const shouldStart = await checkNetworkStatus();
-    if (shouldStart) {
+    const isConnected = await checkInternetConnection();
+    if (isConnected) {
       break; // 작업 시작 후 루프 종료
     }
     await waait(checkInterval);
