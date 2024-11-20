@@ -6,6 +6,7 @@ import { excelIpc } from "./api/ipc/excel.ipc";
 import { startProgramIpc } from "./api/ipc/startProgram.ipc";
 import { fingerPrintBrowserIpc } from "./api/ipc/fingerPrintBrowser.ipc";
 import { autoUpdateIpc } from "./api/ipc/autoUpdate.ipc";
+import { MainUtil } from "./services/commons/main/main.util";
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -33,6 +34,7 @@ if (isProd) {
 
   if (isProd) {
     await mainWindow.loadURL("app://.");
+    await MainUtil.programUsagePeriod({ mainWindow });
     if (!isUpdateChecked) {
       await autoUpdateIpc({ mainWindow });
       isUpdateChecked = true;
@@ -56,6 +58,6 @@ excelIpc();
 startProgramIpc();
 fingerPrintBrowserIpc();
 
-ipcMain.on("app:quit", () => {
+ipcMain.on("main:quit", () => {
   app.quit();
 });

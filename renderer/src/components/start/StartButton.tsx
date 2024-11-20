@@ -5,7 +5,7 @@ import { useSnapshot } from "valtio/react";
 export const StartButton = ({ fn }) => {
   const snapStore = useSnapshot(storeStart);
   const handleProgramClose = () => {
-    window.ipc.send("app:quit", "");
+    window.ipc.send("main:quit", "");
   };
 
   return (
