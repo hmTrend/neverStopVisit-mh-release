@@ -14,7 +14,7 @@ export const makeAPurchase = async ({ page }: { page: Page }) => {
       ),
     );
     await firstLocator.click();
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState("load");
     await wait(5 * 1000);
     return { page };
   } catch (e) {

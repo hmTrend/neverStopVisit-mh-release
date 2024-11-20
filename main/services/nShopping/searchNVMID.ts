@@ -16,7 +16,7 @@ export const searchNVMID = async ({
           return { page, isFindNvMid: true };
         }
         await page.keyboard.press("End");
-        await page.waitForLoadState("networkidle");
+        await page.waitForLoadState("load");
         await wait(1000);
       }
       await nextNumberClick({ page });
@@ -45,7 +45,7 @@ async function findNvMid({ page, nvMid }) {
         })
         .first();
       await productLocator.click();
-      await page.waitForLoadState("networkidle");
+      await page.waitForLoadState("load");
       return { page, isFindNvMid: true };
     }
     return { page, isFindNvMid: false };
@@ -60,7 +60,7 @@ async function nextNumberClick({ page }) {
     const nextButton = page.locator("button.paginator_btn_next__3fcZx");
     await nextButton.click();
     await wait(2000);
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState("load");
     return { page };
   } catch (e) {
     console.error(e.message);

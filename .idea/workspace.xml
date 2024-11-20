@@ -77,7 +77,7 @@
     "TypeScript.network.router.edu.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
-    "last_opened_file_path": "C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/commons/PuppeteerEngine",
+    "last_opened_file_path": "C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/network",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -100,8 +100,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\services\commons\PuppeteerEngine" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\lib\network" />
+      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\services\commons\PuppeteerEngine" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\services\commons\network" />
       <recent name="$PROJECT_DIR$/renderer/src/hook/fingerPrint" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/fingerprint" />
@@ -217,15 +217,7 @@
       <workItem from="1731374161692" duration="9969000" />
       <workItem from="1731419482161" duration="58884000" />
       <workItem from="1732062337588" duration="9180000" />
-      <workItem from="1732077946893" duration="15635000" />
-    </task>
-    <task id="LOCAL-00056" summary="v0.21.0 + nShopping 옵션 저장하기 성공">
-      <option name="closed" value="true" />
-      <created>1731569410986</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1731569410986</updated>
+      <workItem from="1732077946893" duration="18076000" />
     </task>
     <task id="LOCAL-00057" summary="v0.22.0 + 라우터 시작에 적용">
       <option name="closed" value="true" />
@@ -611,7 +603,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732081291857</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="국산 라우터 설정 완료">
+      <option name="closed" value="true" />
+      <created>1732094935046</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1732094935046</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,7 +642,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-21 프로그램 종료버튼 만들기" />
     <MESSAGE value="작업 시작시 로딩버튼 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ this.browser 추가" />
@@ -667,6 +666,7 @@
     <MESSAGE value="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬" />
     <MESSAGE value="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬&#10;+ back 네트워크 타입 추가" />
     <MESSAGE value="NSV-31 userAgent 모바일용 1만개 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-31 userAgent 모바일용 1만개 추가" />
+    <MESSAGE value="국산 라우터 설정 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="국산 라우터 설정 완료" />
   </component>
 </project>
