@@ -11,6 +11,8 @@ export const StartButtonLogic = () => {
 
   const handleStartProgram = async () => {
     storeStart.common.isStart = true;
+    console.log("snapStart 221133");
+    console.log(snapStart);
     const data = JSON.stringify(snapStart);
     await window.ipc.invoke("start-program", data);
     toast({

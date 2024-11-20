@@ -25,6 +25,8 @@ export class NShopping extends PuppeteerEngine {
       const { data: fingerPrintData } = await GetFingerPrintTargetExcelOne({
         groupFid: nShopping.fingerPrint.groupId,
       });
+      console.log("nShopping 4433");
+      console.log(nShopping);
       this.targetCookieId = fingerPrintData._id;
       this.targetCookie = JSON.parse(fingerPrintData.cookie);
       await super.initialize({

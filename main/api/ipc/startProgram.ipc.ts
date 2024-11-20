@@ -1,14 +1,21 @@
 import { ipcMain } from "electron";
 import { NShopping } from "../../services/nShopping";
+import { networkIpChange } from "../../services/commons/network";
 
 export const startProgramIpc = () => {
   let currentNShoppingInstance = null;
 
   ipcMain.handle("start-program", async (event, args) => {
     const data = JSON.parse(args);
-    const { nShopping } = data;
+    const { nShopping, common } = data;
 
-    await executeInChunks(10000, 100, nShopping, currentNShoppingInstance);
+    await executeInChunks(
+      10000,
+      100,
+      nShopping,
+      currentNShoppingInstance,
+      common,
+    );
 
     return { message: "OK" };
   });
@@ -32,6 +39,7 @@ async function executeInChunks(
   chunkSize = 100,
   nShopping,
   currentNShoppingInstance,
+  common,
 ) {
   try {
     const totalChunks = Math.ceil(totalCount / chunkSize);
@@ -49,6 +57,7 @@ async function executeInChunks(
 
       // 현재 청크 실행
       for (let i = 0; i < currentChunkSize; i++) {
+        networkIpChange({ common });
         let startProgramList = [];
         currentNShoppingInstance = new NShopping();
 

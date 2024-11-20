@@ -55,6 +55,7 @@
   <component name="ProjectId" id="2nkR5r2SQ8zWLE9oCCcMDupeYap" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
   </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -75,7 +76,7 @@
     "TypeScript.initialize.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/hook/fingerPrint",
+    "last_opened_file_path": "C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/commons/network",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -83,19 +84,19 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
+    "ts.external.directory.path": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\services\commons\network" />
       <recent name="$PROJECT_DIR$/renderer/src/hook/fingerPrint" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/fingerprint" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/main/api/ipc" />
-      <recent name="$PROJECT_DIR$/renderer/src/components/start" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/icons/win" />
@@ -167,6 +168,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -186,6 +194,7 @@
       <workItem from="1731374161692" duration="9969000" />
       <workItem from="1731419482161" duration="58884000" />
       <workItem from="1732062337588" duration="9180000" />
+      <workItem from="1732077946893" duration="2067000" />
     </task>
     <task id="LOCAL-00052" summary="v0.18.0 + 동적으로 작업할 그룹 선택 가능">
       <option name="closed" value="true" />
