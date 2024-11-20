@@ -2,6 +2,7 @@ import { Browser, Page, chromium, devices } from "playwright";
 import { formatCookiesForPlaywright } from "./formatCookiesForPlaywright";
 import { getNextProxy } from "../../../lib/proxy/getNextProxy";
 import { validateCookie } from "./validateCookie";
+import { getNextCreateUserAgentWithRealMobileList } from "../../../lib/network/userAgentWithRealMobile";
 
 export const initialize = async ({
   url,
@@ -19,8 +20,7 @@ export const initialize = async ({
   browser: Browser;
 }) => {
   const proxySettings = getNextProxy();
-  const userAgent =
-    "Mozilla/5.0 (Linux; Android 13; SM-S911N Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.189 Whale/1.0.0.0 Crosswalk/27.102.0.18 Mobile Safari/537.36)/4.0 Chrome/84.0.4368.53 Mobile Safari/537.36 Maxthon/3248";
+  const userAgent = getNextCreateUserAgentWithRealMobileList();
   browser = await chromiumEngine.launch({
     headless: false,
     // proxy: { server: proxySettings },
