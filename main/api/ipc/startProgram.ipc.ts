@@ -1,6 +1,7 @@
 import { ipcMain } from "electron";
 import { NShopping } from "../../services/nShopping";
 import { networkIpChange } from "../../services/commons/network";
+import { monitorNetworkAndStart } from "../../services/commons/network/network.local";
 
 export const startProgramIpc = () => {
   let currentNShoppingInstance = null;
@@ -57,7 +58,8 @@ async function executeInChunks(
 
       // 현재 청크 실행
       for (let i = 0; i < currentChunkSize; i++) {
-        networkIpChange({ common });
+        await networkIpChange({ common });
+        await monitorNetworkAndStart();
         let startProgramList = [];
         currentNShoppingInstance = new NShopping();
 

@@ -1,4 +1,6 @@
 import { networkRouterEdu } from "./network.router.edu";
+import { TetheringMode } from "./network.tethering";
+import { changeMacAddress, getMacAddress } from "./network.local";
 
 export const networkIpChange = async ({ common }) => {
   switch (common.ip) {
@@ -7,13 +9,36 @@ export const networkIpChange = async ({ common }) => {
       return;
     case "TETHERING":
       console.log("TETHERING");
-      await networkRouterEdu();
+      const checkAdbConnectionResult = await TetheringMode.checkAdbConnection();
+      if (
+        !checkAdbConnectionResult ||
+        typeof checkAdbConnectionResult !== "string"
+      ) {
+        throw new Error("Tethering cannot be changed");
+      }
+      await TetheringMode.phoneIpChange(checkAdbConnectionResult);
       return;
     case "ROUTER":
       console.log("ROUTER");
+      await networkRouterEdu({ chromeHeadless: "Close" });
       return;
     case "LOCAL":
       console.log("LOCAL");
+      for (let i = 0; i < 5; i++) {
+        try {
+          const GetMacAddress = await getMacAddress();
+          await changeMacAddress({
+            nowMacAddress: GetMacAddress,
+            networkAdapterName: "이더넷",
+          });
+          break;
+        } catch (e) {
+          console.error(e.message);
+          if (i >= 4) {
+            throw Error("ERR > macAddress is not changed");
+          }
+        }
+      }
       return;
     default:
       return;
