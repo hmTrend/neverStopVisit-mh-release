@@ -4,6 +4,7 @@ import { FingerprintGroupList } from "@/components/register/fingerprint/Fingerpr
 import { FingerprintCreateExcel } from "@/components/register/fingerprint/FingerprintCreateExcel";
 import { FingerprintExcelList } from "@/components/register/fingerprint/FingerprintExcelList";
 import { Suspense } from "react";
+import { FingerprintExcelDownload } from "@/components/register/fingerprint/FingerprintExcelDownload";
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
         <FingerprintGroupList />
       </Suspense>
       <FingerprintCreateExcel />
+      <FingerprintExcelDownload />
       <FingerprintExcelList />
     </Flex>
   );

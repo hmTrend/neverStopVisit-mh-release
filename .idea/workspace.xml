@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-6 자동 업데이트 만들기">
-      <change afterPath="$PROJECT_DIR$/assets/icons/win/naverGoingUp.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/win/naverGoingUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/win/yoodoo.ico" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ back 엑셀 추가등록 성공&#10;+ front 그룹지문 엑셀다운받기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelDownload.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelDownload.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +76,7 @@
     "TypeScript.initialize.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/hook/fingerPrint",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -96,18 +92,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/renderer/src/hook/fingerPrint" />
+      <recent name="$PROJECT_DIR$/renderer/src/components/register/fingerprint" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/main/api/ipc" />
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
-      <recent name="$PROJECT_DIR$/main/lib" />
-      <recent name="$PROJECT_DIR$/main/lib/apollo" />
-      <recent name="$PROJECT_DIR$/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/icons/win" />
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/nShopping" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/_commons" />
-      <recent name="$PROJECT_DIR$/renderer/src/components/main" />
     </key>
   </component>
   <component name="RunManager" selected="TypeScript.index.ts (1)">
@@ -190,47 +186,7 @@
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
       <workItem from="1731419482161" duration="58884000" />
-      <workItem from="1732062337588" duration="1059000" />
-    </task>
-    <task id="LOCAL-00045" summary="v0.15.0 + 등록 &gt; 쇼핑 셋팅">
-      <option name="closed" value="true" />
-      <created>1731491040788</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1731491040788</updated>
-    </task>
-    <task id="LOCAL-00046" summary="v0.15.1 + 등록 &gt; 쇼핑리스트 엑셀 등록">
-      <option name="closed" value="true" />
-      <created>1731508310660</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1731508310660</updated>
-    </task>
-    <task id="LOCAL-00047" summary="v0.15.2 + 등록 &gt; 쇼핑리스트 퀴리 리스트 한줄씩 정렬">
-      <option name="closed" value="true" />
-      <created>1731509626569</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1731509626569</updated>
-    </task>
-    <task id="LOCAL-00048" summary="v0.15.3 + 등록 &gt; 쇼핑리스트 퀴리 리스트 원래 갯수만 등록">
-      <option name="closed" value="true" />
-      <created>1731509793177</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1731509793177</updated>
-    </task>
-    <task id="LOCAL-00049" summary="v0.16.0 + 엑셀 쇼핑리스트 클릭시 쇼핑 리스트에 반영">
-      <option name="closed" value="true" />
-      <created>1731547451897</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1731547451897</updated>
+      <workItem from="1732062337588" duration="6131000" />
     </task>
     <task id="LOCAL-00050" summary="v0.16.1 + log 삭제">
       <option name="closed" value="true" />
@@ -584,7 +540,47 @@
       <option name="project" value="LOCAL" />
       <updated>1732032430360</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="NSV-6 자동 업데이트 만들기&#10;+ 프로그램 실행 로고추가">
+      <option name="closed" value="true" />
+      <created>1732063580578</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1732063580578</updated>
+    </task>
+    <task id="LOCAL-00095" summary="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록">
+      <option name="closed" value="true" />
+      <created>1732065638892</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1732065638892</updated>
+    </task>
+    <task id="LOCAL-00096" summary="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ 엑셀 추가등록 성공">
+      <option name="closed" value="true" />
+      <created>1732066713925</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1732066713925</updated>
+    </task>
+    <task id="LOCAL-00097" summary="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ 엑셀 추가등록 성공">
+      <option name="closed" value="true" />
+      <created>1732066730450</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1732066730450</updated>
+    </task>
+    <task id="LOCAL-00098" summary="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ back 엑셀 추가등록 성공&#10;+ front 그룹지문 엑셀다운받기">
+      <option name="closed" value="true" />
+      <created>1732068169472</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1732068169472</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,10 +611,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-4 v0.25.0 + 시작시 타겟 작업 정보 1개 가져오기" />
-    <MESSAGE value="NSV-3 + 시작시 지문 정보 1개 가져오기&#10;+ 동작시 로그인 체크" />
-    <MESSAGE value="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅" />
-    <MESSAGE value="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅&#10;+ 로그인 값 없을시 즉시종료 및 쿠키 저장" />
     <MESSAGE value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가" />
     <MESSAGE value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가" />
     <MESSAGE value="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가&#10;+ 타겟 url 클릭까지 완료" />
@@ -640,6 +632,10 @@
     <MESSAGE value="NSV-11 구동시 창은 1개만 열리게 하기&#10;+ 오토업데이트 백엔드 로직 완료0" />
     <MESSAGE value="NSV-11 구동시 창은 1개만 열리게 하기&#10;+ 오토업데이트 백엔드 로직 완료" />
     <MESSAGE value="NSV-6 자동 업데이트 만들기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-6 자동 업데이트 만들기" />
+    <MESSAGE value="NSV-6 자동 업데이트 만들기&#10;+ 프로그램 실행 로고추가" />
+    <MESSAGE value="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록" />
+    <MESSAGE value="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ 엑셀 추가등록 성공" />
+    <MESSAGE value="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ back 엑셀 추가등록 성공&#10;+ front 그룹지문 엑셀다운받기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ back 엑셀 추가등록 성공&#10;+ front 그룹지문 엑셀다운받기" />
   </component>
 </project>

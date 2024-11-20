@@ -84,3 +84,27 @@ export const gqlGetExcelList = gql`
     }
   }
 `;
+
+export const gqlPatchFingerPrintExcelList = gql`
+  mutation PatchFingerPrintExcelList(
+    $input: [CreateFingerPrintExcelListInput!]!
+  ) {
+    patchFingerPrintExcelList(input: $input) {
+      data {
+        _id
+        groupFid
+        nId
+        nPw
+        bPw
+        nState
+        createdAt
+        ip
+        cookie
+        phoneNumber
+        updatedAt
+      }
+      message
+      error
+    }
+  }
+`;

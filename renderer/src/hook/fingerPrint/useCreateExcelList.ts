@@ -7,8 +7,6 @@ export const useCreateExcelList = () => {
   const toast = useToast();
 
   const createExcelList = async ({ input }) => {
-    console.log("input 333");
-    console.log(input);
     const fixInput = input.map((v) => ({
       ...v,
       nId: v.nId?.toString(),
@@ -32,7 +30,7 @@ export const useCreateExcelList = () => {
       duration: 3000,
       status: "success",
     });
-    return { data };
+    return { data: data.createExcelList.data };
   };
   return { createExcelList };
 };
