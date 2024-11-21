@@ -27,8 +27,9 @@ export const initialize = async ({
   // const userAgent =
   //   "Mozilla/5.0 (Linux; Android 10; SM-A908N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Whale/1.0.0.0 Crosswalk/28.114.0.23 Mobile Safari/537.36";
   // const userAgent = getNextCreateUserAgentWithProgramKoreaList();
-  // const userAgent = getNextCreateUserAgentWithRealMobileList();
-  const userAgent = getNextCreateUserAgentWithAllUpMobileList();
+  const userAgent = getNextCreateUserAgentWithRealMobileList();
+  // const userAgent = get
+  // NextCreateUserAgentWithAllUpMobileList();
   console.log("userAgent 333");
   console.log(userAgent);
   for (let i = 0; i < 2; i++) {
@@ -36,10 +37,10 @@ export const initialize = async ({
       chromiumEngine.use(StealthPlugin());
       browser = await chromiumEngine.launch({
         headless: false,
-        // executablePath: getChromePath({
-        //   pathStep: i,
-        //   isChromiumMode: false,
-        // }),
+        executablePath: getChromePath({
+          pathStep: i,
+          isChromiumMode: true,
+        }),
         ignoreDefaultArgs: ["--enable-automation"],
         args: ["--disable-blink-features=AutomationControlled"],
         // proxy: { server: proxySettings },
