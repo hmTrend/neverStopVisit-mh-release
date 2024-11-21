@@ -10,13 +10,11 @@ import {
   Radio,
   RadioGroup,
 } from "@chakra-ui/react";
-import { commonStorage } from "@/util/localStorage";
 import { storeStart } from "@/valtio/start.valtio";
 
 export const OptionCommon = () => {
   const handleChange = (value) => {
     storeStart.common.ip = value;
-    commonStorage.updateField("ip", value);
   };
 
   return (
@@ -26,10 +24,7 @@ export const OptionCommon = () => {
           <FormLabel as="legend" fontSize={"xl"}>
             IP 교체방식
           </FormLabel>
-          <RadioGroup
-            defaultValue={commonStorage.loadState().ip}
-            onChange={handleChange}
-          >
+          <RadioGroup onChange={handleChange}>
             <HStack spacing="24px">
               <Radio value="STATIC">고정</Radio>
               <Radio value="TETHERING">테더링</Radio>

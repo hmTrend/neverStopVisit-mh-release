@@ -4,7 +4,6 @@ import { SelectProgramForStart } from "@/components/start/SelectProgramForStart"
 import { useSnapshot } from "valtio/react";
 import { storeNShopping } from "@/valtio/nShopping.register.valtio";
 import { storeStart } from "@/valtio/start.valtio";
-import { nShoppingStorage } from "@/util/localStorage";
 
 export const SelectProgramForStartLogic = () => {
   const { groupList: nShoppingGroupList } = useSnapshot(storeNShopping);
@@ -25,7 +24,6 @@ export const SelectProgramForStartLogic = () => {
       // valtio store 업데이트
       storeStart.nShopping.selectedGroup = newSelectedGroup;
       // localStorage 업데이트
-      nShoppingStorage.updateField("selectedGroup", newSelectedGroup);
     }
   };
 
