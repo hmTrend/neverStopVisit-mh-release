@@ -28,7 +28,7 @@ export class NShopping extends PuppeteerEngine {
       this.targetCookieId = fingerPrintData._id;
       this.targetCookie = JSON.parse(fingerPrintData.cookie);
       await super.initialize({
-        url: "https://www.naver.com/",
+        url: "https://m.naver.com/",
         cookie: this.targetCookie,
       });
       await loggedInCheck({ page: this.page, _id: this.targetCookieId });

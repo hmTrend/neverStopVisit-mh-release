@@ -218,15 +218,7 @@
       <workItem from="1731419482161" duration="58884000" />
       <workItem from="1732062337588" duration="9180000" />
       <workItem from="1732077946893" duration="18076000" />
-      <workItem from="1732173915085" duration="406000" />
-    </task>
-    <task id="LOCAL-00061" summary="v0.24.2 + 모든 작업 완료 추가">
-      <option name="closed" value="true" />
-      <created>1731583340446</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1731583340446</updated>
+      <workItem from="1732173915085" duration="3018000" />
     </task>
     <task id="LOCAL-00062" summary="v0.24.2 + 모든 작업 완료 추가">
       <option name="closed" value="true" />
@@ -612,7 +604,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732173955936</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="크롬으로 작업변경">
+      <option name="closed" value="true" />
+      <created>1732174603190</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1732174603190</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +643,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가&#10;+ 불필요한 유효기간 체크 제거&#10;+ 안전하지 않은 쿠키 검증 제거" />
     <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간" />
     <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결" />
@@ -668,6 +667,7 @@
     <MESSAGE value="일단 동작은 함&#10;+ executablePath X" />
     <MESSAGE value="yarn build" />
     <MESSAGE value="back graphql 연동" />
-    <option name="LAST_COMMIT_MESSAGE" value="back graphql 연동" />
+    <MESSAGE value="크롬으로 작업변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="크롬으로 작업변경" />
   </component>
 </project>

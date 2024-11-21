@@ -6,7 +6,7 @@ export const fingerPrintBrowserIpc = async () => {
     const { cookie } = args;
     const engine = new PuppeteerEngine();
     await engine.initialize({
-      url: "https://www.naver.com/",
+      url: "https://m.naver.com/",
       cookie: JSON.parse(cookie),
     });
   });
