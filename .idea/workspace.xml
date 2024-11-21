@@ -218,14 +218,6 @@
       <workItem from="1732062337588" duration="9180000" />
       <workItem from="1732077946893" duration="18076000" />
     </task>
-    <task id="LOCAL-00059" summary="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감">
-      <option name="closed" value="true" />
-      <created>1731580569937</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1731580569937</updated>
-    </task>
     <task id="LOCAL-00060" summary="v0.24.1 + 쇼핑 팝업창 있을시 대응">
       <option name="closed" value="true" />
       <created>1731582967193</created>
@@ -610,7 +602,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732170834514</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="yarn build">
+      <option name="closed" value="true" />
+      <created>1732172007066</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1732172007066</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +641,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ this.browser 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가&#10;+ 불필요한 유효기간 체크 제거&#10;+ 안전하지 않은 쿠키 검증 제거" />
@@ -666,6 +665,7 @@
     <MESSAGE value="국산 라우터 설정 완료" />
     <MESSAGE value="일단 동작은 함" />
     <MESSAGE value="일단 동작은 함&#10;+ executablePath X" />
-    <option name="LAST_COMMIT_MESSAGE" value="일단 동작은 함&#10;+ executablePath X" />
+    <MESSAGE value="yarn build" />
+    <option name="LAST_COMMIT_MESSAGE" value="yarn build" />
   </component>
 </project>
