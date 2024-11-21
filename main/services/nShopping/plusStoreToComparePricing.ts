@@ -6,8 +6,11 @@ export const plusStoreToComparePricing = async ({ page }: { page: Page }) => {
     const shoppingButton = page.locator(
       'a[data-shp-contents-dtl*="가격비교 검색결과 전환"]',
     );
+
+    // 요소 대기 및 클릭
+    await shoppingButton.waitFor({ state: "visible" });
     await shoppingButton.click();
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState("load");
     await wait(1500);
   } catch (e) {
     console.error(e.message);
