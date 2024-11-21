@@ -9,21 +9,28 @@ import {
 } from "@chakra-ui/react";
 import { forwardRef } from "react";
 
-export const CreateGroup = forwardRef(({ fn, loading }, ref) => {
-  return (
-    <Flex>
-      <Box>
-        <FormControl>
-          <FormLabel>그룹 만들기</FormLabel>
-          <Box display={"flex"}>
-            <Input type="email" ref={ref} />
-            <Button onClick={fn} isLoading={loading}>
-              그룹생성
-            </Button>
-          </Box>
-          <FormHelperText>새로운 그룹을 생성합니다.</FormHelperText>
-        </FormControl>
-      </Box>
-    </Flex>
-  );
-});
+interface CreateGroupProps {
+  fn: () => void; // 그룹 생성 함수
+  loading?: boolean; // 로딩 상태
+}
+
+export const CreateGroup = forwardRef<HTMLInputElement, CreateGroupProps>(
+  ({ fn, loading }, ref) => {
+    return (
+      <Flex>
+        <Box>
+          <FormControl>
+            <FormLabel>그룹 만들기</FormLabel>
+            <Box display={"flex"}>
+              <Input type="email" ref={ref} />
+              <Button onClick={fn} isLoading={loading}>
+                그룹생성
+              </Button>
+            </Box>
+            <FormHelperText>새로운 그룹을 생성합니다.</FormHelperText>
+          </FormControl>
+        </Box>
+      </Flex>
+    );
+  },
+);

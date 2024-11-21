@@ -9,26 +9,18 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { storeStart } from "@/valtio/start.valtio";
-import { nShoppingStorage } from "@/util/localStorage";
 
 export const ConcurrentOneLineWork = () => {
   const handleChange = (valueString, valueNumber) => {
     console.log("Number Value:", valueNumber);
     storeStart.nShopping.concurrentBrowserCount = valueNumber;
-    nShoppingStorage.updateField("concurrentBrowserCount", valueNumber);
   };
 
   return (
     <Flex gap={3} alignItems={"center"} wrap={"nowrap"}>
       <Text whiteSpace={"nowrap"}>{"한줄"}</Text>
       <Box>
-        <NumberInput
-          defaultValue={nShoppingStorage.loadState().concurrentBrowserCount}
-          min={1}
-          max={1}
-          w={"75px"}
-          onChange={handleChange}
-        >
+        <NumberInput min={1} max={1} w={"75px"} onChange={handleChange}>
           <NumberInputField />
           <NumberInputStepper>
             <NumberIncrementStepper />

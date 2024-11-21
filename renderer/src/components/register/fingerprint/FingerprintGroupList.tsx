@@ -34,7 +34,8 @@ export const FingerprintGroupList = () => {
       });
       return;
     }
-    storeFingerPrintRegister.groupList = data.getFingerPrintGroupList.data;
+    const getData: any = data;
+    storeFingerPrintRegister.groupList = getData.getFingerPrintGroupList.data;
   }, []);
 
   const handleSelectGroup = ({ groupId, groupName }) => {

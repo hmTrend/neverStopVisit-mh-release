@@ -15,7 +15,6 @@ export const App = () => {
     <Flex direction={"column"} gap={3}>
       <CreateGroupLogic id={userId} selectedGroupName={selectedGroupName} />
       <GroupListLogic
-        groupList={groupList}
         selectedGroupName={selectedGroupName}
         selectedExcelList={selectedExcelList}
       />

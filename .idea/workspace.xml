@@ -218,22 +218,6 @@
       <workItem from="1732062337588" duration="9180000" />
       <workItem from="1732077946893" duration="18076000" />
     </task>
-    <task id="LOCAL-00057" summary="v0.22.0 + 라우터 시작에 적용">
-      <option name="closed" value="true" />
-      <created>1731579752356</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1731579752356</updated>
-    </task>
-    <task id="LOCAL-00058" summary="v0.23.0 + 옵션 삭제">
-      <option name="closed" value="true" />
-      <created>1731579842576</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1731579842576</updated>
-    </task>
     <task id="LOCAL-00059" summary="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감">
       <option name="closed" value="true" />
       <created>1731580569937</created>
@@ -610,7 +594,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732094935046</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="일단 동작은 함">
+      <option name="closed" value="true" />
+      <created>1732170819128</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1732170819128</updated>
+    </task>
+    <task id="LOCAL-00107" summary="일단 동작은 함&#10;+ executablePath X">
+      <option name="closed" value="true" />
+      <created>1732170834514</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1732170834514</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,8 +641,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="작업 시작시 로딩버튼 추가" />
-    <MESSAGE value="NSV-25 쿠키 검증 만들기" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ this.browser 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가" />
@@ -666,6 +664,8 @@
     <MESSAGE value="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬&#10;+ back 네트워크 타입 추가" />
     <MESSAGE value="NSV-31 userAgent 모바일용 1만개 추가" />
     <MESSAGE value="국산 라우터 설정 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="국산 라우터 설정 완료" />
+    <MESSAGE value="일단 동작은 함" />
+    <MESSAGE value="일단 동작은 함&#10;+ executablePath X" />
+    <option name="LAST_COMMIT_MESSAGE" value="일단 동작은 함&#10;+ executablePath X" />
   </component>
 </project>

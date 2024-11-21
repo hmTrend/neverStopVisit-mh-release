@@ -12,7 +12,7 @@ import {
   Code,
   Flex,
 } from "@chakra-ui/react";
-import { version } from "../../../../package.json";
+import packageList from "../../../../package.json";
 import { useEffect, useState } from "react";
 
 export const Info = () => {
@@ -43,7 +43,7 @@ export const Info = () => {
         <Tbody>
           <Tr>
             <Td>네버스탑비지트</Td>
-            <Td>v{version}</Td>
+            <Td>v{packageList.version}</Td>
           </Tr>
           <Tr>
             <Td>제품</Td>

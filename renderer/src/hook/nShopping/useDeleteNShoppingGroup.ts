@@ -22,7 +22,9 @@ export const useDeleteNShoppingGroup = () => {
       });
       throw Error("ERR > deleteFingerPrintGroup");
     }
-    storeNShopping.groupList = groupList.filter((v: any) => v._id !== groupFid);
+    storeNShopping.groupList = groupList.filter(
+      (v: any) => v._id !== groupFid,
+    ) as any;
     toast({
       title: "그룹삭제 성공",
       isClosable: true,
