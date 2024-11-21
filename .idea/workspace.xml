@@ -219,23 +219,7 @@
       <workItem from="1731419482161" duration="58884000" />
       <workItem from="1732062337588" duration="9180000" />
       <workItem from="1732077946893" duration="18076000" />
-      <workItem from="1732173915085" duration="8778000" />
-    </task>
-    <task id="LOCAL-00065" summary="NSV-4 v0.25.0 + 시작시 타겟 작업 정보 1개 가져오기">
-      <option name="closed" value="true" />
-      <created>1731886156202</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1731886156203</updated>
-    </task>
-    <task id="LOCAL-00066" summary="NSV-3 + 시작시 지문 정보 1개 가져오기&#10;+ 동작시 로그인 체크">
-      <option name="closed" value="true" />
-      <created>1731916949730</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1731916949730</updated>
+      <workItem from="1732173915085" duration="10247000" />
     </task>
     <task id="LOCAL-00067" summary="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅">
       <option name="closed" value="true" />
@@ -613,7 +597,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732182292866</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="v1.1.2 가격비교 버튼 클릭요소 추가">
+      <option name="closed" value="true" />
+      <created>1732183005590</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1732183005590</updated>
+    </task>
+    <task id="LOCAL-00115" summary="v1.1.2 가격비교 버튼 클릭요소 추가">
+      <option name="closed" value="true" />
+      <created>1732183037031</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1732183037031</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,7 +644,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가" />
     <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가&#10;+ makeAPurchase / race로 먼저찾는거 클릭하기" />
     <MESSAGE value="NSV-19 로그인 만들기" />
     <MESSAGE value="NSV-11 구동시 창은 1개만 열리게 하기" />
@@ -669,6 +668,7 @@
     <MESSAGE value="크롬 작업 셋팅 성공" />
     <MESSAGE value="v1.1.0 설치 크로미움으로 변경" />
     <MESSAGE value="v1.1.1 가격비교 networkIdle 딜레이로 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.1.1 가격비교 networkIdle 딜레이로 변경" />
+    <MESSAGE value="v1.1.2 가격비교 버튼 클릭요소 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.1.2 가격비교 버튼 클릭요소 추가" />
   </component>
 </project>
