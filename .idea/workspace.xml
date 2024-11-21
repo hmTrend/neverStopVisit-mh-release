@@ -115,7 +115,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/register/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.network.router.edu.ts">
+  <component name="RunManager" selected="TypeScript.index.ts (2)">
     <configuration name="index.ts (1)" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -140,6 +140,7 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="index.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -183,10 +184,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.index.ts (2)" />
         <item itemvalue="TypeScript.network.router.edu.ts" />
         <item itemvalue="TypeScript.index.ts (1)" />
         <item itemvalue="TypeScript.initialize.ts" />
-        <item itemvalue="TypeScript.index.ts (2)" />
         <item itemvalue="TypeScript.index.ts" />
       </list>
     </recent_temporary>
@@ -218,31 +219,7 @@
       <workItem from="1731419482161" duration="58884000" />
       <workItem from="1732062337588" duration="9180000" />
       <workItem from="1732077946893" duration="18076000" />
-      <workItem from="1732173915085" duration="3018000" />
-    </task>
-    <task id="LOCAL-00062" summary="v0.24.2 + 모든 작업 완료 추가">
-      <option name="closed" value="true" />
-      <created>1731583399180</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1731583399180</updated>
-    </task>
-    <task id="LOCAL-00063" summary="v0.24.3 + 줄맞추기 등록 엑셀 추가 완료">
-      <option name="closed" value="true" />
-      <created>1731633198927</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1731633198927</updated>
-    </task>
-    <task id="LOCAL-00064" summary="NSV-3 v0.24.6 + 타겟정보 1개 가져오기">
-      <option name="closed" value="true" />
-      <created>1731883530898</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1731883530898</updated>
+      <workItem from="1732173915085" duration="8778000" />
     </task>
     <task id="LOCAL-00065" summary="NSV-4 v0.25.0 + 시작시 타겟 작업 정보 1개 가져오기">
       <option name="closed" value="true" />
@@ -612,7 +589,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732174603190</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="크롬 작업 셋팅 성공">
+      <option name="closed" value="true" />
+      <created>1732178877519</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1732178877519</updated>
+    </task>
+    <task id="LOCAL-00112" summary="v1.1.0 설치 크로미움으로 변경">
+      <option name="closed" value="true" />
+      <created>1732180328078</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1732180328078</updated>
+    </task>
+    <task id="LOCAL-00113" summary="v1.1.1 가격비교 networkIdle 딜레이로 변경">
+      <option name="closed" value="true" />
+      <created>1732182292866</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1732182292866</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,9 +644,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가&#10;+ 불필요한 유효기간 체크 제거&#10;+ 안전하지 않은 쿠키 검증 제거" />
-    <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간" />
-    <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결" />
     <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가" />
     <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가&#10;+ makeAPurchase / race로 먼저찾는거 클릭하기" />
     <MESSAGE value="NSV-19 로그인 만들기" />
@@ -668,6 +666,9 @@
     <MESSAGE value="yarn build" />
     <MESSAGE value="back graphql 연동" />
     <MESSAGE value="크롬으로 작업변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="크롬으로 작업변경" />
+    <MESSAGE value="크롬 작업 셋팅 성공" />
+    <MESSAGE value="v1.1.0 설치 크로미움으로 변경" />
+    <MESSAGE value="v1.1.1 가격비교 networkIdle 딜레이로 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.1.1 가격비교 networkIdle 딜레이로 변경" />
   </component>
 </project>
