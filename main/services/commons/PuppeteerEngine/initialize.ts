@@ -1,130 +1,74 @@
-import { Browser, Page } from "playwright";
+import { Browser, Page, devices } from "playwright";
 import { formatCookiesForPlaywright } from "./formatCookiesForPlaywright";
 import { getNextProxy } from "../../../lib/proxy/getNextProxy";
 import { validateCookie } from "./validateCookie";
+import { getNextCreateUserAgentWithRealMobileList } from "../../../lib/network/userAgentWithRealMobile";
+import { getChromePath } from "./getChromePath";
+import StealthPlugin from "puppeteer-extra-plugin-stealth";
+import { getNextCreateUserAgentWithProgramKoreaList } from "../../../lib/network/userAgentWithProgramKorea";
 
 export const initialize = async ({
   url,
   page,
   pages,
-  firefoxEngine,
+  chromiumEngine,
   cookie,
   browser,
 }: {
   url: string;
   page: Page;
-  firefoxEngine: any;
+  chromiumEngine: any;
   pages: Page[];
   cookie;
   browser: Browser;
 }) => {
   const proxySettings = getNextProxy();
-  const userAgent =
-    "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Mobile/15E148 Safari/604.1";
-
-  try {
-    browser = await firefoxEngine.launch({
-      headless: false,
-      args: [
-        "--disable-blink-features=AutomationControlled",
-        "--no-sandbox",
-        "--disable-setuid-sandbox",
-        "--disable-web-security",
-        "--disable-features=IsolateOrigins,site-per-process",
-      ],
-      firefoxUserPrefs: {
-        "media.navigator.streams.fake": true,
-        "permissions.default.geo": 1,
-        "dom.webnotifications.enabled": false,
-        "general.useragent.override": userAgent,
-        "privacy.trackingprotection.enabled": false,
-        "network.http.sendRefererHeader": 2,
-        "network.cookie.cookieBehavior": 0,
-      },
-    });
-
-    const context = await browser.newContext({
-      viewport: { width: 375, height: 812 },
-      userAgent: userAgent,
-      deviceScaleFactor: 2,
-      ignoreHTTPSErrors: true,
-      extraHTTPHeaders: {
-        "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
-        Accept:
-          "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-        "Accept-Encoding": "gzip, deflate, br",
-        Connection: "keep-alive",
-        "Upgrade-Insecure-Requests": "1",
-        "Sec-Fetch-Site": "none",
-        "Sec-Fetch-Mode": "navigate",
-        "Sec-Fetch-User": "?1",
-        "Sec-Fetch-Dest": "document",
-      },
-    });
-
-    // 자동화 감지 방지를 위한 스크립트 주입
-    await context.addInitScript(() => {
-      Object.defineProperty(navigator, "webdriver", { get: () => undefined });
-      Object.defineProperty(navigator, "plugins", {
-        get: () => [1, 2, 3, 4, 5],
+  // const userAgent =
+  //   "Mozilla/5.0 (Linux; Android 10; SM-A908N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Whale/1.0.0.0 Crosswalk/28.114.0.23 Mobile Safari/537.36";
+  // const userAgent = getNextCreateUserAgentWithProgramKoreaList();
+  const userAgent = getNextCreateUserAgentWithRealMobileList();
+  console.log("userAgent 333");
+  console.log(userAgent);
+  for (let i = 0; i < 2; i++) {
+    try {
+      chromiumEngine.use(StealthPlugin());
+      browser = await chromiumEngine.launch({
+        headless: false,
+        // executablePath: getChromePath({
+        //   pathStep: i,
+        //   isChromiumMode: false,
+        // }),
+        ignoreDefaultArgs: ["--enable-automation"],
+        args: ["--disable-blink-features=AutomationControlled"],
+        // proxy: { server: proxySettings },
       });
-      Object.defineProperty(navigator, "languages", {
-        get: () => ["ko-KR", "ko", "en-US", "en"],
+      const context = await browser.newContext({
+        userAgent: userAgent,
+        viewport: { width: 412, height: 915 },
+        isMobile: true,
+        hasTouch: true,
       });
-
-      // permissions.query 수정된 버전
-      const originalQuery = window.navigator.permissions.query;
-      window.navigator.permissions.query = (
-        parameters: any,
-      ): Promise<PermissionStatus> => {
-        if (parameters.name === "notifications") {
-          return Promise.resolve({
-            state: Notification.permission,
-            name: "notifications",
-            onchange: null,
-            addEventListener: function () {},
-            removeEventListener: function () {},
-            dispatchEvent: function () {
-              return true;
-            },
-          } as PermissionStatus);
+      if (cookie && cookie.length > 0) {
+        if (validateCookie(cookie)) {
+          const formattedCookies = formatCookiesForPlaywright(cookie);
+          await context.addCookies(formattedCookies);
+          console.log("쿠키가 성공적으로 추가됨");
+        } else {
+          if (browser) {
+            await browser.close();
+            console.log("쿠키 검증 실패로 브라우저가 종료됨");
+          }
+          throw Error("쿠키 검증 실패");
         }
-        return originalQuery.call(window.navigator.permissions, parameters);
-      };
-    });
-
-    // 쿠키 설정
-    if (cookie && cookie.length > 0) {
-      if (validateCookie(cookie)) {
-        const formattedCookies = formatCookiesForPlaywright(cookie);
-        await context.addCookies(formattedCookies);
-        console.log("쿠키가 성공적으로 추가됨");
       }
+      page = await context.newPage();
+      await page.goto(url, { waitUntil: "networkidle" });
+      break;
+    } catch (e) {
+      console.log("ERR > executablePath");
+      console.error(e.message);
     }
-
-    page = await context.newPage();
-
-    // 랜덤 지연 시간 추가
-    const randomDelay = Math.floor(Math.random() * 2000) + 1000;
-    await page.waitForTimeout(randomDelay);
-
-    await page.setDefaultTimeout(30000);
-    await page.setDefaultNavigationTimeout(30000);
-
-    // 네이버 접속
-    await page.goto(url, {
-      waitUntil: "networkidle",
-      timeout: 30000,
-    });
-
-    await page.waitForTimeout(2000);
-
-    return { page, browser };
-  } catch (e) {
-    console.error("초기화 오류:", e.message);
-    if (browser) {
-      await browser.close();
-    }
-    throw new Error("initialize failed: " + e.message);
   }
+
+  return { page, browser };
 };

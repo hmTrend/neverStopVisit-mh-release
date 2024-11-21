@@ -1,9 +1,9 @@
 import { initialize } from "./initialize";
 import { Browser, Page, BrowserContext } from "playwright";
-import { firefox } from "playwright-extra";
+import { chromium } from "playwright-extra";
 
 export class PuppeteerEngine {
-  firefoxEngine: typeof firefox; // 'typeof chromium'으로 수정
+  chromiumEngine: typeof chromium; // 'typeof chromium'으로 수정
   page: Page;
   pages: Page[];
   browser: Browser;
@@ -14,7 +14,7 @@ export class PuppeteerEngine {
   context: BrowserContext;
 
   constructor() {
-    this.firefoxEngine = firefox; // chromium 초기화
+    this.chromiumEngine = chromium; // chromium 초기화
     this.pages = []; // pages 배열 초기화
   }
 
@@ -22,7 +22,7 @@ export class PuppeteerEngine {
     try {
       const { page, browser } = await initialize({
         url,
-        firefoxEngine: this.firefoxEngine,
+        chromiumEngine: this.chromiumEngine,
         page: this.page,
         pages: this.pages,
         browser: this.browser,
