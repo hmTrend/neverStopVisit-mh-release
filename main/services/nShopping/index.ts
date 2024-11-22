@@ -14,13 +14,28 @@ import { makeAPurchase } from "./makeAPurchase";
 export class NShopping extends PuppeteerEngine {
   async start({ nShopping }): Promise<void> {
     try {
-      const { data: excelData } = await GetNShoppingExcelAlignFlatTargetOne({
-        groupFid: nShopping.selectedGroup.groupId,
-      });
-      const { query, nvMid } = excelData;
-      {
-        this.query = query;
-        this.nvMid = nvMid;
+      for (let i = 0; i <= 3; i++) {
+        try {
+          const { data: excelData } = await GetNShoppingExcelAlignFlatTargetOne(
+            {
+              groupFid: nShopping.selectedGroup.groupId,
+            },
+          );
+          const { query, nvMid } = excelData;
+          {
+            this.query = query;
+            this.nvMid = nvMid;
+          }
+          break;
+        } catch (e) {
+          await wait(3 * 1000);
+          console.error(e.message);
+          if (i === 3) {
+            return console.error(
+              "More than 3 errors > GetNShoppingExcelAlignFlatTargetOne",
+            );
+          }
+        }
       }
       const { data: fingerPrintData } = await GetFingerPrintTargetExcelOne({
         groupFid: nShopping.fingerPrint.groupId,

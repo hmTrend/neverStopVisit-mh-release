@@ -65,40 +65,40 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TypeScript.index.ts (1).executor": "Run",
-    "TypeScript.index.ts (2).executor": "Run",
-    "TypeScript.index.ts.executor": "Run",
-    "TypeScript.initialize.ts.executor": "Run",
-    "TypeScript.network.router.edu.ts.executor": "Run",
-    "eslint.code.style.apply.dismiss": "true",
-    "git-widget-placeholder": "develop",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/network",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TypeScript.index.ts (1).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts (2).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.network.router.edu.ts.executor&quot;: &quot;Run&quot;,
+    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/network&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\lib\network" />
@@ -132,7 +132,7 @@
     <configuration name="index.ts (2)" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine" />
@@ -140,7 +140,6 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="index.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -219,23 +218,9 @@
       <workItem from="1731419482161" duration="58884000" />
       <workItem from="1732062337588" duration="9180000" />
       <workItem from="1732077946893" duration="18076000" />
-      <workItem from="1732173915085" duration="10247000" />
-    </task>
-    <task id="LOCAL-00067" summary="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅">
-      <option name="closed" value="true" />
-      <created>1731918575596</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1731918575596</updated>
-    </task>
-    <task id="LOCAL-00068" summary="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅&#10;+ 로그인 값 없을시 즉시종료 및 쿠키 저장">
-      <option name="closed" value="true" />
-      <created>1731921908450</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1731921908450</updated>
+      <workItem from="1732173915085" duration="12530000" />
+      <workItem from="1732233720951" duration="383000" />
+      <workItem from="1732234361964" duration="5168000" />
     </task>
     <task id="LOCAL-00069" summary="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가">
       <option name="closed" value="true" />
@@ -613,7 +598,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732183037031</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="v1.1.2 가격비교 버튼 대기추가">
+      <option name="closed" value="true" />
+      <created>1732186804450</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1732186804450</updated>
+    </task>
+    <task id="LOCAL-00117" summary="NSV-32 테더링 이후 끊김시 데이터 가져올수 있도록 에러처리 보강">
+      <option name="closed" value="true" />
+      <created>1732241472231</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1732241472231</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,8 +645,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가&#10;+ makeAPurchase / race로 먼저찾는거 클릭하기" />
-    <MESSAGE value="NSV-19 로그인 만들기" />
     <MESSAGE value="NSV-11 구동시 창은 1개만 열리게 하기" />
     <MESSAGE value="NSV-11 구동시 창은 1개만 열리게 하기&#10;+ 오토업데이트 백엔드 로직 완료0" />
     <MESSAGE value="NSV-11 구동시 창은 1개만 열리게 하기&#10;+ 오토업데이트 백엔드 로직 완료" />
@@ -669,6 +668,8 @@
     <MESSAGE value="v1.1.0 설치 크로미움으로 변경" />
     <MESSAGE value="v1.1.1 가격비교 networkIdle 딜레이로 변경" />
     <MESSAGE value="v1.1.2 가격비교 버튼 클릭요소 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.1.2 가격비교 버튼 클릭요소 추가" />
+    <MESSAGE value="v1.1.2 가격비교 버튼 대기추가" />
+    <MESSAGE value="NSV-32 테더링 이후 끊김시 데이터 가져올수 있도록 에러처리 보강" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-32 테더링 이후 끊김시 데이터 가져올수 있도록 에러처리 보강" />
   </component>
 </project>
