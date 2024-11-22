@@ -20,7 +20,7 @@ export const networkIpChange = async ({ common }) => {
       return;
     case "ROUTER":
       console.log("ROUTER");
-      await networkRouterEdu({ chromeHeadless: "Open" });
+      await networkRouterEdu({ chromeHeadless: "Close" });
       return;
     case "LOCAL":
       console.log("LOCAL");

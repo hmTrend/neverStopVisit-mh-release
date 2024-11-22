@@ -10,19 +10,18 @@ import { plusStoreToComparePricing } from "./plusStoreToComparePricing";
 import { searchNVMID } from "./searchNVMID";
 import { expandProductDetails } from "./expandProductDetails";
 import { makeAPurchase } from "./makeAPurchase";
+import { isPopup } from "./isPopup";
 
 export class NShopping extends PuppeteerEngine {
   async start({ nShopping }): Promise<void> {
     try {
       for (let i = 0; i <= 5; i++) {
         try {
-          console.log(1);
           const { data: excelData } = await GetNShoppingExcelAlignFlatTargetOne(
             {
               groupFid: nShopping.selectedGroup.groupId,
             },
           );
-          console.log(2);
           console.log("excelData 334455");
           console.log(excelData);
           const { query, nvMid } = excelData;
@@ -30,7 +29,6 @@ export class NShopping extends PuppeteerEngine {
             this.query = query;
             this.nvMid = nvMid;
           }
-          console.log(3);
           break;
         } catch (e) {
           await wait(3 * 1000);
@@ -59,10 +57,16 @@ export class NShopping extends PuppeteerEngine {
             );
           }
         }
-        await super.initialize({
-          url: "https://m.naver.com/",
-          cookie: this.targetCookie,
+      }
+      await super.initialize({
+        url: "https://m.naver.com/",
+        cookie: this.targetCookie,
+      });
+      {
+        const { page } = await isPopup({
+          page: this.page,
         });
+        this.page = page;
       }
       await loggedInCheck({ page: this.page, _id: this.targetCookieId });
       {
@@ -71,6 +75,7 @@ export class NShopping extends PuppeteerEngine {
         });
         this.page = page;
       }
+
       {
         const { page } = await goToKeyword({
           page: this.page,

@@ -3,7 +3,7 @@ import wait from "waait";
 
 export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
   const browser = await chromium.launch({
-    headless: false,
+    headless: chromeHeadless === "Close",
   });
 
   try {
