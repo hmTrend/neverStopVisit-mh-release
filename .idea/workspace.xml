@@ -221,15 +221,7 @@
       <workItem from="1732173915085" duration="12530000" />
       <workItem from="1732233720951" duration="383000" />
       <workItem from="1732234361964" duration="14521000" />
-      <workItem from="1732271759050" duration="127000" />
-    </task>
-    <task id="LOCAL-00073" summary="NSV-17 한줄작업 로직만들기&#10;+ UI 셋팅 완료">
-      <option name="closed" value="true" />
-      <created>1731973897234</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1731973897234</updated>
+      <workItem from="1732271759050" duration="3928000" />
     </task>
     <task id="LOCAL-00074" summary="NSV-20 실전 지문 등록 및 반영">
       <option name="closed" value="true" />
@@ -615,7 +607,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732249641307</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="기존엑셀 다운받기 버튼 삭제">
+      <option name="closed" value="true" />
+      <created>1732271899440</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1732271899440</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -646,7 +646,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-6 자동 업데이트 만들기&#10;+ 프로그램 실행 로고추가" />
     <MESSAGE value="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록" />
     <MESSAGE value="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ 엑셀 추가등록 성공" />
     <MESSAGE value="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ back 엑셀 추가등록 성공&#10;+ front 그룹지문 엑셀다운받기" />
@@ -671,6 +670,7 @@
     <MESSAGE value="NSV-34 userAgent 쇼핑용 추가하기" />
     <MESSAGE value="NSV-35 작동중 오클릭 발생시 3번 try하기" />
     <MESSAGE value="NSV-35 v1.2.0 / 작동중 오클릭 발생시 3번 try하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-35 v1.2.0 / 작동중 오클릭 발생시 3번 try하기" />
+    <MESSAGE value="기존엑셀 다운받기 버튼 삭제" />
+    <option name="LAST_COMMIT_MESSAGE" value="기존엑셀 다운받기 버튼 삭제" />
   </component>
 </project>

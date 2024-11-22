@@ -14,7 +14,7 @@ import { makeAPurchase } from "./makeAPurchase";
 export class NShopping extends PuppeteerEngine {
   async start({ nShopping }): Promise<void> {
     try {
-      for (let i = 0; i <= 3; i++) {
+      for (let i = 0; i <= 5; i++) {
         try {
           console.log(1);
           const { data: excelData } = await GetNShoppingExcelAlignFlatTargetOne(
@@ -42,15 +42,28 @@ export class NShopping extends PuppeteerEngine {
           }
         }
       }
-      const { data: fingerPrintData } = await GetFingerPrintTargetExcelOne({
-        groupFid: nShopping.fingerPrint.groupId,
-      });
-      this.targetCookieId = fingerPrintData._id;
-      this.targetCookie = JSON.parse(fingerPrintData.cookie);
-      await super.initialize({
-        url: "https://m.naver.com/",
-        cookie: this.targetCookie,
-      });
+      for (let i = 0; i <= 5; i++) {
+        try {
+          const { data: fingerPrintData } = await GetFingerPrintTargetExcelOne({
+            groupFid: nShopping.fingerPrint.groupId,
+          });
+          this.targetCookieId = fingerPrintData._id;
+          this.targetCookie = JSON.parse(fingerPrintData.cookie);
+          break;
+        } catch (e) {
+          await wait(3 * 1000);
+          console.error(e.message);
+          if (i === 3) {
+            return console.error(
+              "More than 3 errors > GetFingerPrintTargetExcelOne",
+            );
+          }
+        }
+        await super.initialize({
+          url: "https://m.naver.com/",
+          cookie: this.targetCookie,
+        });
+      }
       await loggedInCheck({ page: this.page, _id: this.targetCookieId });
       {
         const { page } = await goToShopping({

@@ -3,7 +3,7 @@ import wait from "waait";
 
 export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
   const browser = await chromium.launch({
-    headless: true,
+    headless: false,
   });
 
   try {
@@ -11,34 +11,34 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
     const page = await context.newPage();
 
     // Resource interception setup
-    await page.route("**/*", async (route) => {
-      const request = route.request();
-      const resourceType = request.resourceType();
-
-      if (resourceType === "image") {
-        try {
-          const response = await fetch(request.url(), { method: "HEAD" });
-          const contentLength = response.headers.get("content-length");
-
-          if (contentLength) {
-            const size = parseInt(contentLength, 10);
-            if (size > 11 * 1024) {
-              await route.abort();
-              return;
-            }
-          }
-          await route.continue();
-        } catch (error) {
-          console.error("Error checking image size:", error);
-          await route.continue();
-        }
-      } else if (resourceType === "media") {
-        console.log(`Blocked video: ${request.url()}`);
-        await route.abort();
-      } else {
-        await route.continue();
-      }
-    });
+    // await page.route("**/*", async (route) => {
+    //   const request = route.request();
+    //   const resourceType = request.resourceType();
+    //
+    //   if (resourceType === "image") {
+    //     try {
+    //       const response = await fetch(request.url(), { method: "HEAD" });
+    //       const contentLength = response.headers.get("content-length");
+    //
+    //       if (contentLength) {
+    //         const size = parseInt(contentLength, 10);
+    //         if (size > 11 * 1024) {
+    //           await route.abort();
+    //           return;
+    //         }
+    //       }
+    //       await route.continue();
+    //     } catch (error) {
+    //       console.error("Error checking image size:", error);
+    //       await route.continue();
+    //     }
+    //   } else if (resourceType === "media") {
+    //     console.log(`Blocked video: ${request.url()}`);
+    //     await route.abort();
+    //   } else {
+    //     await route.continue();
+    //   }
+    // });
 
     // Locators 정의
     const locators = {
@@ -67,11 +67,11 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
       // 또는: page.locator('//div[contains(@class, "main-content")]//a'),
     };
     console.log(33);
-
-    await page.goto("http://192.168.8.1/index.html#band");
-    await page.waitForLoadState("load");
+    await page.goto("http://192.168.8.1/index.html#band", {
+      waitUntil: "domcontentloaded",
+      timeout: 30000,
+    });
     console.log(22);
-
     // 비밀번호 입력 또는 IP 변경 버튼 대기
     const [passwordVisible, ipChangeVisible] = await Promise.all([
       locators.passwordInput.isVisible().catch(() => false),
@@ -101,17 +101,18 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
     // 적용 버튼 대기 및 클릭
     await locators.applyButton.waitFor({ state: "visible" });
     await locators.applyButton.click();
-    await page.waitForLoadState("load");
-
+    await wait(3000);
     // 메인 페이지로 이동
-    await page.goto("http://192.168.8.1/", {
-      waitUntil: "load",
+    await page.goto("http://192.168.8.1/index.html#home");
+    await wait(2000);
+    await page.waitForSelector("span#wifi_status img", {
+      state: "visible",
+      timeout: 30000,
     });
-
     // 리소스 정리
     await context.close();
     await browser.close();
-    await wait(2000);
+    await wait(5000);
 
     return { message: "Edu Router Connect SUCCESS" };
   } catch (e) {
