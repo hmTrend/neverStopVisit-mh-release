@@ -24,12 +24,11 @@ export const initialize = async ({
   browser: Browser;
 }) => {
   const proxySettings = getNextProxy();
+  // const userAgent = getNextCreateUserAgentWithProgramKoreaList();
   // const userAgent =
   //   "Mozilla/5.0 (Linux; Android 10; SM-A908N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Whale/1.0.0.0 Crosswalk/28.114.0.23 Mobile Safari/537.36";
-  // const userAgent = getNextCreateUserAgentWithProgramKoreaList();
-  const userAgent = getNextCreateUserAgentWithRealMobileList();
-  // const userAgent = get
-  // NextCreateUserAgentWithAllUpMobileList();
+  // const userAgent = getNextCreateUserAgentWithRealMobileList();
+  const userAgent = getNextCreateUserAgentWithAllUpMobileList();
   console.log("userAgent 333");
   console.log(userAgent);
   for (let i = 0; i < 2; i++) {

@@ -220,15 +220,7 @@
       <workItem from="1732077946893" duration="18076000" />
       <workItem from="1732173915085" duration="12530000" />
       <workItem from="1732233720951" duration="383000" />
-      <workItem from="1732234361964" duration="5168000" />
-    </task>
-    <task id="LOCAL-00069" summary="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가">
-      <option name="closed" value="true" />
-      <created>1731932069817</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1731932069817</updated>
+      <workItem from="1732234361964" duration="5898000" />
     </task>
     <task id="LOCAL-00070" summary="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가">
       <option name="closed" value="true" />
@@ -614,7 +606,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732241472231</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="NSV-32 테더링 이후 끊김시 데이터 가져올수 있도록 에러처리 보강&#10;+ 에러3회까지 재시도 로직 GetNShoppingExcelAlignFlatTargetOne">
+      <option name="closed" value="true" />
+      <created>1732244321918</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1732244321918</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,7 +645,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 구동시 창은 1개만 열리게 하기" />
     <MESSAGE value="NSV-11 구동시 창은 1개만 열리게 하기&#10;+ 오토업데이트 백엔드 로직 완료0" />
     <MESSAGE value="NSV-11 구동시 창은 1개만 열리게 하기&#10;+ 오토업데이트 백엔드 로직 완료" />
     <MESSAGE value="NSV-6 자동 업데이트 만들기" />
@@ -670,6 +669,7 @@
     <MESSAGE value="v1.1.2 가격비교 버튼 클릭요소 추가" />
     <MESSAGE value="v1.1.2 가격비교 버튼 대기추가" />
     <MESSAGE value="NSV-32 테더링 이후 끊김시 데이터 가져올수 있도록 에러처리 보강" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-32 테더링 이후 끊김시 데이터 가져올수 있도록 에러처리 보강" />
+    <MESSAGE value="NSV-32 테더링 이후 끊김시 데이터 가져올수 있도록 에러처리 보강&#10;+ 에러3회까지 재시도 로직 GetNShoppingExcelAlignFlatTargetOne" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-32 테더링 이후 끊김시 데이터 가져올수 있도록 에러처리 보강&#10;+ 에러3회까지 재시도 로직 GetNShoppingExcelAlignFlatTargetOne" />
   </component>
 </project>
