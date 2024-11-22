@@ -20,7 +20,7 @@ const httpLink = new HttpLink({
 });
 
 export const client = new ApolloClient({
-  link: ApolloLink.from([retryLink, errorLink, httpLink]),
+  link: ApolloLink.from([httpLink]),
   cache: new InMemoryCache(),
   defaultOptions: {
     query: {

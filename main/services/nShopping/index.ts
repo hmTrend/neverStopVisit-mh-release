@@ -16,16 +16,21 @@ export class NShopping extends PuppeteerEngine {
     try {
       for (let i = 0; i <= 3; i++) {
         try {
+          console.log(1);
           const { data: excelData } = await GetNShoppingExcelAlignFlatTargetOne(
             {
               groupFid: nShopping.selectedGroup.groupId,
             },
           );
+          console.log(2);
+          console.log("excelData 334455");
+          console.log(excelData);
           const { query, nvMid } = excelData;
           {
             this.query = query;
             this.nvMid = nvMid;
           }
+          console.log(3);
           break;
         } catch (e) {
           await wait(3 * 1000);
@@ -75,6 +80,7 @@ export class NShopping extends PuppeteerEngine {
         if (isFindNvMid) {
           const { page } = await expandProductDetails({ page: this.page });
           this.page = page;
+          await wait(20 * 1000); // 찾았을시 20초 대기
           {
             const { page } = await makeAPurchase({ page: this.page });
             this.page = page;

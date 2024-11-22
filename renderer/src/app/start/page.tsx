@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { App } from "@/components/start/App";
 
 export const metadata: Metadata = {
-  title: "NSV - 등록",
+  title: "NSV - 시작",
 };
 
 export default function Page() {
