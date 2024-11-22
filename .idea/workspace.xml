@@ -220,23 +220,8 @@
       <workItem from="1732077946893" duration="18076000" />
       <workItem from="1732173915085" duration="12530000" />
       <workItem from="1732233720951" duration="383000" />
-      <workItem from="1732234361964" duration="10181000" />
-    </task>
-    <task id="LOCAL-00071" summary="NSV-15 쇼핑 로직 완성하기&#10;+ userAgent 임시추가&#10;+ 모바일 viewport 추가&#10;+ 타겟 url 클릭까지 완료">
-      <option name="closed" value="true" />
-      <created>1731967038145</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1731967038145</updated>
-    </task>
-    <task id="LOCAL-00072" summary="NSV-17 한줄작업 로직만들기&#10;+ UI 셋팅 완료">
-      <option name="closed" value="true" />
-      <created>1731973794645</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1731973794645</updated>
+      <workItem from="1732234361964" duration="14521000" />
+      <workItem from="1732271759050" duration="127000" />
     </task>
     <task id="LOCAL-00073" summary="NSV-17 한줄작업 로직만들기&#10;+ UI 셋팅 완료">
       <option name="closed" value="true" />
@@ -614,7 +599,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732245059303</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="NSV-35 작동중 오클릭 발생시 3번 try하기">
+      <option name="closed" value="true" />
+      <created>1732249623977</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1732249623977</updated>
+    </task>
+    <task id="LOCAL-00121" summary="NSV-35 v1.2.0 / 작동중 오클릭 발생시 3번 try하기">
+      <option name="closed" value="true" />
+      <created>1732249641307</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1732249641307</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,8 +646,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 구동시 창은 1개만 열리게 하기&#10;+ 오토업데이트 백엔드 로직 완료" />
-    <MESSAGE value="NSV-6 자동 업데이트 만들기" />
     <MESSAGE value="NSV-6 자동 업데이트 만들기&#10;+ 프로그램 실행 로고추가" />
     <MESSAGE value="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록" />
     <MESSAGE value="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ 엑셀 추가등록 성공" />
@@ -670,6 +669,8 @@
     <MESSAGE value="NSV-32 테더링 이후 끊김시 데이터 가져올수 있도록 에러처리 보강" />
     <MESSAGE value="NSV-32 테더링 이후 끊김시 데이터 가져올수 있도록 에러처리 보강&#10;+ 에러3회까지 재시도 로직 GetNShoppingExcelAlignFlatTargetOne" />
     <MESSAGE value="NSV-34 userAgent 쇼핑용 추가하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-34 userAgent 쇼핑용 추가하기" />
+    <MESSAGE value="NSV-35 작동중 오클릭 발생시 3번 try하기" />
+    <MESSAGE value="NSV-35 v1.2.0 / 작동중 오클릭 발생시 3번 try하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-35 v1.2.0 / 작동중 오클릭 발생시 3번 try하기" />
   </component>
 </project>

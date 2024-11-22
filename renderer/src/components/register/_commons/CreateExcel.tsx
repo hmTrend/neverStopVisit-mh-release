@@ -56,7 +56,6 @@ export const CreateExcel = (
               />
               <Button onClick={handleExcelButtonClick}>쇼핑 엑셀 생성</Button>
             </Box>
-            <Button variant={"outline"}>기존엑셀 다운받기</Button>
           </Flex>
           <FormHelperText>새로운 엑셀리스트를 가져옵니다.</FormHelperText>
         </FormControl>
