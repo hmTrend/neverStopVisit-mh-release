@@ -18,5 +18,12 @@ export const CreateGroupLogic = ({ id, selectedGroupName }) => {
       console.error(e.message);
     }
   };
-  return <CreateGroup fn={handleCreateGroup} ref={inputRef} loading={false} />;
+  return (
+    <CreateGroup
+      fn={handleCreateGroup}
+      ref={inputRef}
+      loading={false}
+      title={"쇼핑"}
+    />
+  );
 };

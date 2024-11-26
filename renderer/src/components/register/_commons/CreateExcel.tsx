@@ -7,14 +7,8 @@ import {
   FormHelperText,
   FormLabel,
   Input,
-  Kbd,
-  useToast,
 } from "@chakra-ui/react";
-import { forwardRef, useRef, useState } from "react";
-import { useSnapshot } from "valtio/react";
-import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
-import { useCreateExcelList } from "@/hook/fingerPrint/useCreateExcelList";
-import { FingerprintCreateExcelModal } from "@/components/register/fingerprint/FingerprintCreateExcel.modal";
+import { forwardRef, useRef } from "react";
 import { CreateExcelModal } from "@/components/register/_commons/CreateExcel.modal";
 
 export const CreateExcel = (

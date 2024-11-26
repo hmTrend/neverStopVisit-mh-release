@@ -15,7 +15,7 @@ interface CreateGroupProps {
 }
 
 export const CreateGroup = forwardRef<HTMLInputElement, CreateGroupProps>(
-  ({ fn, loading }, ref) => {
+  ({ fn, loading, title }, ref) => {
     return (
       <Flex>
         <Box>
@@ -24,7 +24,7 @@ export const CreateGroup = forwardRef<HTMLInputElement, CreateGroupProps>(
             <Box display={"flex"}>
               <Input type="email" ref={ref} />
               <Button onClick={fn} isLoading={loading}>
-                그룹생성
+                {title} 그룹생성
               </Button>
             </Box>
             <FormHelperText>새로운 그룹을 생성합니다.</FormHelperText>

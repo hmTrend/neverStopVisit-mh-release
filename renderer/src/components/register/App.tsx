@@ -3,6 +3,7 @@
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { App as AppFingerprint } from "@/components/register/fingerprint/App";
 import { App as AppNShopping } from "@/components/register/nShopping/App";
+import { App as AppNPlace } from "@/components/register/nPlace/App";
 
 export const App = () => {
   return (
@@ -17,7 +18,9 @@ export const App = () => {
         <TabPanel>
           <AppFingerprint />
         </TabPanel>
-        <TabPanel>c</TabPanel>
+        <TabPanel>
+          <AppNPlace />
+        </TabPanel>
         <TabPanel>
           <AppNShopping />
         </TabPanel>
