@@ -20,14 +20,14 @@ export const CreateGroup = forwardRef<HTMLInputElement, CreateGroupProps>(
       <Flex>
         <Box>
           <FormControl>
-            <FormLabel>그룹 만들기</FormLabel>
+            <FormLabel>{title} 그룹 만들기</FormLabel>
             <Box display={"flex"}>
               <Input type="email" ref={ref} />
               <Button onClick={fn} isLoading={loading}>
                 {title} 그룹생성
               </Button>
             </Box>
-            <FormHelperText>새로운 그룹을 생성합니다.</FormHelperText>
+            <FormHelperText>새로운 {title} 그룹을 생성합니다.</FormHelperText>
           </FormControl>
         </Box>
       </Flex>

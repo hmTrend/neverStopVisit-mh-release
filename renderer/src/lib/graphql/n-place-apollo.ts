@@ -18,7 +18,7 @@ export const gqlCreateNPlaceGroup = gql`
 
 export const gqlGetNPlaceGroupList = gql`
   query GetNPlaceGroupList($input: GetFingerPrintInput!) {
-    getNPlaceGroupList(input: $input) {
+    GetNPlaceGroupList(input: $input) {
       data {
         _id
         memberFid

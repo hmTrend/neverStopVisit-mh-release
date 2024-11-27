@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-29 유효기간 추가하기">
-      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/CreateGroupLogic.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nPlace/useCreateExcelList.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nPlace/useCreateExcelListAlignFlat.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nPlace/useCreateNPlaceeGroup.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nPlace/useDeleteNShoppingGroup.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nPlace/useGetExcelList.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nPlace/useGetNShoppingGroupList.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/n-place-apollo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderer/src/valtio/nPlace.register.valtio.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기">
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/GroupListLogic.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateExcel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateExcel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateGroup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateGroup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateGroupLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/CreateGroupLogic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/member.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/member.valtio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nPlace/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nPlace/useDeleteNShoppingGroup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nPlace/useDeleteNPlaceGroup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nPlace/useGetNShoppingGroupList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nPlace/useGetNPlaceGroupList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/lib/graphql/n-place-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/n-place-apollo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +83,7 @@
     "TypeScript.network.router.edu.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/lib/graphql",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/register/nPlace",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -116,10 +106,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/renderer/src/components/register/nPlace" />
       <recent name="$PROJECT_DIR$/renderer/src/lib/graphql" />
       <recent name="$PROJECT_DIR$/renderer/src/valtio" />
       <recent name="$PROJECT_DIR$/renderer/src/hook" />
-      <recent name="$PROJECT_DIR$/renderer/src/components/register/nPlace" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\lib\network" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -226,15 +216,7 @@
       <workItem from="1731419482161" duration="58884000" />
       <workItem from="1732062337588" duration="9180000" />
       <workItem from="1732077946893" duration="18076000" />
-      <workItem from="1732537211686" duration="6685000" />
-    </task>
-    <task id="LOCAL-00057" summary="v0.22.0 + 라우터 시작에 적용">
-      <option name="closed" value="true" />
-      <created>1731579752356</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1731579752356</updated>
+      <workItem from="1732537211686" duration="10532000" />
     </task>
     <task id="LOCAL-00058" summary="v0.23.0 + 옵션 삭제">
       <option name="closed" value="true" />
@@ -620,7 +602,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732094935046</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기">
+      <option name="closed" value="true" />
+      <created>1732630936202</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1732630936202</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +641,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="작업 시작시 로딩버튼 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ this.browser 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가" />
@@ -676,6 +665,7 @@
     <MESSAGE value="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬&#10;+ back 네트워크 타입 추가" />
     <MESSAGE value="NSV-31 userAgent 모바일용 1만개 추가" />
     <MESSAGE value="국산 라우터 설정 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="국산 라우터 설정 완료" />
+    <MESSAGE value="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기" />
   </component>
 </project>

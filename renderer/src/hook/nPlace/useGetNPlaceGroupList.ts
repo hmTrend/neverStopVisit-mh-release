@@ -1,19 +1,22 @@
-import { useLazyQuery, useSuspenseQuery } from "@apollo/client";
-import { gqlGetNShoppingGroupList } from "@/lib/graphql/n-shopping-apollo";
+import { useLazyQuery } from "@apollo/client";
+import { gqlGetNPlaceGroupList } from "@/lib/graphql/n-place-apollo";
 import { useToast } from "@chakra-ui/react";
 
-export const useGetNShoppingGroupList = () => {
-  const [GetNShoppingGroupList] = useLazyQuery(gqlGetNShoppingGroupList, {
+export const useGetNPlaceGroupList = () => {
+  const [GetNPlaceGroupList] = useLazyQuery(gqlGetNPlaceGroupList, {
     variables: { input: { memberFid: "67315a7130d6d4d2bb26e38a" } },
     fetchPolicy: "no-cache",
   });
   const toast = useToast();
 
-  const getNShoppingGroupList = async () => {
-    const { data, error } = await GetNShoppingGroupList({
+  const getNPlaceGroupList = async () => {
+    const { data, error } = await GetNPlaceGroupList({
       variables: { input: { memberFid: "67315a7130d6d4d2bb26e38a" } },
       fetchPolicy: "no-cache",
     });
+
+    console.log("place data gogo");
+    console.log(data);
 
     if (error) {
       toast({
@@ -27,8 +30,8 @@ export const useGetNShoppingGroupList = () => {
     if (!data) {
       return;
     }
-    return { data: data.getNShoppingGroupList.data };
+    return { data: data.GetNPlaceGroupList?.data };
   };
 
-  return { getNShoppingGroupList };
+  return { getNPlaceGroupList };
 };

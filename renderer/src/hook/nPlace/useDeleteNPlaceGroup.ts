@@ -1,16 +1,16 @@
 import { useMutation } from "@apollo/client";
 import { useToast } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
-import { gqlDeleteNShoppingGroup } from "@/lib/graphql/n-shopping-apollo";
-import { storeNShopping } from "@/valtio/nShopping.register.valtio";
+import { gqlDeleteNPlaceGroup } from "@/lib/graphql/n-place-apollo";
+import { storeNPlace } from "@/valtio/nPlace.register.valtio";
 
-export const useDeleteNShoppingGroup = () => {
-  const [DeleteNShoppingGroup] = useMutation(gqlDeleteNShoppingGroup);
+export const useDeleteNPlaceGroup = () => {
+  const [DeleteNPlaceGroup] = useMutation(gqlDeleteNPlaceGroup);
   const toast = useToast();
-  const { groupList } = useSnapshot(storeNShopping);
+  const { groupList } = useSnapshot(storeNPlace);
 
-  const deleteNShoppingGroup = async ({ groupFid }) => {
-    const { errors } = await DeleteNShoppingGroup({
+  const deleteNPlaceGroup = async ({ groupFid }) => {
+    const { errors } = await DeleteNPlaceGroup({
       variables: { input: { groupFid } },
     });
     if (errors) {
@@ -22,7 +22,7 @@ export const useDeleteNShoppingGroup = () => {
       });
       throw Error("ERR > deleteFingerPrintGroup");
     }
-    storeNShopping.groupList = groupList.filter(
+    storeNPlace.groupList = groupList.filter(
       (v: any) => v._id !== groupFid,
     ) as any;
     toast({
@@ -32,5 +32,5 @@ export const useDeleteNShoppingGroup = () => {
       status: "success",
     });
   };
-  return { deleteNShoppingGroup };
+  return { deleteNPlaceGroup };
 };
