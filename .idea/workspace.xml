@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기">
-      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/GroupListLogic.tsx" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기 2">
+      <change afterPath="$PROJECT_DIR$/main/services/commons/excel/processExcelDataNPlace.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/CreateExcelLogic.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateGroup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/api/ipc/excel.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/excel.ipc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateExcel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateExcel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nPlace/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nPlace/useDeleteNShoppingGroup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nPlace/useDeleteNPlaceGroup.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nPlace/useGetNShoppingGroupList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nPlace/useGetNPlaceGroupList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/lib/graphql/n-place-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/n-place-apollo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
     "TypeScript.network.router.edu.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/register/nPlace",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/commons/excel",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -106,11 +105,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/services/commons/excel" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/nPlace" />
       <recent name="$PROJECT_DIR$/renderer/src/lib/graphql" />
       <recent name="$PROJECT_DIR$/renderer/src/valtio" />
       <recent name="$PROJECT_DIR$/renderer/src/hook" />
-      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\lib\network" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/icons/win" />
@@ -216,15 +215,7 @@
       <workItem from="1731419482161" duration="58884000" />
       <workItem from="1732062337588" duration="9180000" />
       <workItem from="1732077946893" duration="18076000" />
-      <workItem from="1732537211686" duration="10532000" />
-    </task>
-    <task id="LOCAL-00058" summary="v0.23.0 + 옵션 삭제">
-      <option name="closed" value="true" />
-      <created>1731579842576</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1731579842576</updated>
+      <workItem from="1732537211686" duration="12392000" />
     </task>
     <task id="LOCAL-00059" summary="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감">
       <option name="closed" value="true" />
@@ -610,7 +601,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732630936202</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기 2">
+      <option name="closed" value="true" />
+      <created>1732671508137</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1732671508137</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +640,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-25 쿠키 검증 만들기" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ this.browser 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가" />
     <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가" />
@@ -666,6 +664,7 @@
     <MESSAGE value="NSV-31 userAgent 모바일용 1만개 추가" />
     <MESSAGE value="국산 라우터 설정 완료" />
     <MESSAGE value="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기" />
+    <MESSAGE value="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기 2" />
   </component>
 </project>
