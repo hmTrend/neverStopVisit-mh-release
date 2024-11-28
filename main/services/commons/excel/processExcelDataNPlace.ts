@@ -8,35 +8,56 @@ const __dirname = dirname(__filename);
 
 export function processExcelDataNPlace({ filePath, sheetName = "" }) {
   try {
-    // Excel 파일 읽기
+    // Read the Excel file
     const workbook = xlsx.readFile(filePath);
+    const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
 
-    // 시트 이름이 지정되지 않은 경우 첫 번째 시트 사용
-    const sheet = sheetName
-      ? workbook.Sheets[sheetName]
-      : workbook.Sheets[workbook.SheetNames[0]];
+    // Convert the sheet to JSON
+    const data = xlsx.utils.sheet_to_json(firstSheet, { header: 1 });
 
-    // Excel 데이터를 JSON으로 변환
-    const rawData = xlsx.utils.sheet_to_json(sheet, {
-      header: [
-        "nId",
-        "nPw",
-        "bPw",
-        "nState",
-        "createdAt",
-        "ip",
-        "cookie",
-        "phoneNumber",
-        "updatedAt",
-      ],
-    });
+    // Get column headers (B column values)
+    const headers = {};
+    for (let i = 0; i < data.length; i++) {
+      if (data[i][1] && data[i][1] !== "") {
+        headers[data[i][1]] = i;
+      }
+    }
 
-    // 헤더 행 제거
-    rawData.shift();
+    // Initialize result array
+    const result = [];
 
-    return rawData;
+    // Process each column starting from C
+    for (let colIndex = 2; colIndex < data[0].length; colIndex++) {
+      const columnData = {
+        keyword: data[headers["keyword"]][colIndex],
+        delayTime: data[headers["delayTime"]][colIndex],
+        placeName: data[headers["placeName"]][colIndex],
+        placeNumber: data[headers["placeNumber"]][colIndex],
+        dayCount: data[headers["dayCount"]][colIndex],
+        subKeywords: [],
+      };
+
+      // Process subKeywordList
+      const startRow = headers["subKeywordList"];
+      for (let row = startRow; row < data.length; row++) {
+        if (data[row][colIndex]) {
+          const parts = data[row][colIndex].split("==");
+          if (parts.length >= 3) {
+            columnData.subKeywords.push({
+              dayCount: parseInt(parts[0]),
+              targetKeyword: parts[1],
+              targetBlog: parts[2],
+            });
+          }
+        }
+      }
+
+      result.push(columnData);
+    }
+
+    return result;
   } catch (error) {
-    console.error("Excel 처리 중 오류 발생:", error);
+    console.error("Error processing Excel file:", error);
     throw error;
   }
 }
