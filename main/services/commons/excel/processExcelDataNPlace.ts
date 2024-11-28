@@ -261,8 +261,8 @@ export function processNPlaceExcelDataWithAlignFlatMap({
           delayTime: item.delayTime,
           placeName: item.placeName,
           placeNumber: item.placeNumber,
-          dayCount: item.dayCount,
-          subKeywordList: [subKeyword], // 단일 항목 배열로 변환
+          totalDayCount: item.dayCount,
+          ...subKeyword, // 단일 항목 배열로 변환
         });
       });
     });

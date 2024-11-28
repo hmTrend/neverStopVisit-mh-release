@@ -87,13 +87,18 @@ export const CreateExcelLogic = () => {
       input: inputList,
     });
     storeNPlace.selectedExcelList = inputList;
-    console.log("getExcelListAlignFlat 1111111111");
-    console.log(getExcelListAlignFlat);
+
+    const createExcelListAlignFlatInputList = getExcelListAlignFlat.map(
+      (v) => ({
+        ...v,
+        groupFid: selectedGroupId,
+        placeNumber: v.placeNumber?.toString(),
+      }),
+    );
+
     const { data: data2 } = await createExcelListAlignFlat({
-      input: getExcelListAlignFlat,
+      input: createExcelListAlignFlatInputList,
     });
-    console.log("data2 222222222");
-    console.log(data2);
   };
 
   const handleClearExcelList = () => {
