@@ -250,8 +250,6 @@ export function processNPlaceExcelDataWithAlignFlatMap({
   data: any;
   sheetName?: string;
 }) {
-  console.log("data 333222111");
-  console.log(data);
   try {
     const result = [];
 

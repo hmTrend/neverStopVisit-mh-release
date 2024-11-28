@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="CreateNPlaceExcelListAlignFlatMap">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="플레이스 &gt; ExcelList">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nPlace/CreateExcelLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/CreateExcelLogic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nPlace/ExcelList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/ExcelList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/excel/processExcelDataNPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/excel/processExcelDataNPlace.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nPlace/ExcelListLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/ExcelListLogic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nPlace/useGetExcelList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nPlace/useGetExcelList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/lib/graphql/n-place-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/n-place-apollo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,15 +213,7 @@
       <workItem from="1732062337588" duration="9180000" />
       <workItem from="1732077946893" duration="18076000" />
       <workItem from="1732537211686" duration="13649000" />
-      <workItem from="1732771660426" duration="13656000" />
-    </task>
-    <task id="LOCAL-00064" summary="NSV-3 v0.24.6 + 타겟정보 1개 가져오기">
-      <option name="closed" value="true" />
-      <created>1731883530898</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1731883530898</updated>
+      <workItem from="1732771660426" duration="13718000" />
     </task>
     <task id="LOCAL-00065" summary="NSV-4 v0.25.0 + 시작시 타겟 작업 정보 1개 가져오기">
       <option name="closed" value="true" />
@@ -610,7 +599,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732792375278</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="플레이스 &gt; ExcelList">
+      <option name="closed" value="true" />
+      <created>1732793761175</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1732793761175</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +638,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결" />
     <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가" />
     <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가&#10;+ makeAPurchase / race로 먼저찾는거 클릭하기" />
     <MESSAGE value="NSV-19 로그인 만들기" />
@@ -666,6 +662,7 @@
     <MESSAGE value="NSV-44 엑셀 만들기&#10;+ createExcelList" />
     <MESSAGE value="콘솔로그 추가" />
     <MESSAGE value="CreateNPlaceExcelListAlignFlatMap" />
-    <option name="LAST_COMMIT_MESSAGE" value="CreateNPlaceExcelListAlignFlatMap" />
+    <MESSAGE value="플레이스 &gt; ExcelList" />
+    <option name="LAST_COMMIT_MESSAGE" value="플레이스 &gt; ExcelList" />
   </component>
 </project>
