@@ -43,6 +43,8 @@ export const GetNShoppingExcelAlignFlatTargetOne = async ({ groupFid }) => {
       error: error.message,
     };
   }
+  console.log("data 555777");
+  console.log(data);
   return {
     data: data.getNShoppingExcelAlignFlatTargetOne.data,
     message: "OK > CreateNShoppingExcelListAlignFlatMap ",

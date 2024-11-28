@@ -60,6 +60,7 @@ export class NShopping extends PuppeteerEngine {
       }
       await super.initialize({
         url: "https://m.naver.com/",
+        // url: "https://google.com/",
         cookie: this.targetCookie,
       });
       {
