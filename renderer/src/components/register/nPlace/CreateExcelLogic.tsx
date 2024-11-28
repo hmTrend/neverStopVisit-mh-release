@@ -42,11 +42,15 @@ export const CreateExcelLogic = () => {
         file.path,
       );
 
+      console.log("result 555444333");
+      console.log(result.data);
       const result3 = await window.ipc.invoke(
-        "process-excel-file-n-shopping-data-with-align-flat-map",
-        file.path,
+        "process-excel-file-n-place-data-with-align-flat-map",
+        { data: JSON.stringify(result.data) },
       );
       storeNPlace.getExcelList = result.data;
+      console.log("result3 33332222111");
+      console.log(result3);
       storeNPlace.getExcelListAlignFlat = result3;
 
       console.log("storeNPlace.getExcelList");
@@ -90,16 +94,13 @@ export const CreateExcelLogic = () => {
       input: inputList,
     });
     storeNPlace.selectedExcelList = inputList;
-
-    const inputList2 = getExcelListAlignFlat.map((v) => ({
-      ...v,
-      groupFid: selectedGroupId,
-      catalog: v.catalog?.toString(),
-      nvMid: v.nvMid?.toString(),
-    }));
+    console.log("getExcelListAlignFlat 1111111111");
+    console.log(getExcelListAlignFlat);
     const { data: data2 } = await createExcelListAlignFlat({
-      input: inputList2,
+      input: getExcelListAlignFlat,
     });
+    console.log("data2 222222222");
+    console.log(data2);
   };
 
   const handleClearExcelList = () => {

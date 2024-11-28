@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-44 엑셀 만들기&#10;+ createExcelList">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="콘솔로그 추가">
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/ExcelList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/ExcelListLogic.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/api/ipc/excel.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/excel.ipc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/excel/processExcelDataNPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/excel/processExcelDataNPlace.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nPlace/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nPlace/CreateExcelLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/CreateExcelLogic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nPlace/GroupListLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/GroupListLogic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/ExcelList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/ExcelList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShopping/GroupListLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShopping/GroupListLogic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nPlace/useGetNPlaceGroupList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nPlace/useGetNPlaceGroupList.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,43 +75,43 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TypeScript.index.ts (1).executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.index.ts (2).executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.index.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.network.router.edu.ts.executor&quot;: &quot;Run&quot;,
-    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/commons/excel&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TypeScript.index.ts (1).executor": "Run",
+    "TypeScript.index.ts (2).executor": "Run",
+    "TypeScript.index.ts.executor": "Run",
+    "TypeScript.initialize.ts.executor": "Run",
+    "TypeScript.network.router.edu.ts.executor": "Run",
+    "eslint.code.style.apply.dismiss": "true",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/register/nPlace",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/main/services/commons/excel" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/nPlace" />
+      <recent name="$PROJECT_DIR$/main/services/commons/excel" />
       <recent name="$PROJECT_DIR$/renderer/src/lib/graphql" />
       <recent name="$PROJECT_DIR$/renderer/src/valtio" />
       <recent name="$PROJECT_DIR$/renderer/src/hook" />
@@ -213,15 +221,7 @@
       <workItem from="1732062337588" duration="9180000" />
       <workItem from="1732077946893" duration="18076000" />
       <workItem from="1732537211686" duration="13649000" />
-      <workItem from="1732771660426" duration="7722000" />
-    </task>
-    <task id="LOCAL-00062" summary="v0.24.2 + 모든 작업 완료 추가">
-      <option name="closed" value="true" />
-      <created>1731583399180</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1731583399180</updated>
+      <workItem from="1732771660426" duration="12205000" />
     </task>
     <task id="LOCAL-00063" summary="v0.24.3 + 줄맞추기 등록 엑셀 추가 완료">
       <option name="closed" value="true" />
@@ -607,7 +607,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732781687303</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="콘솔로그 추가">
+      <option name="closed" value="true" />
+      <created>1732787559801</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1732787559801</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +646,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가&#10;+ 불필요한 유효기간 체크 제거&#10;+ 안전하지 않은 쿠키 검증 제거" />
     <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간" />
     <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결" />
     <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가" />
@@ -663,6 +670,7 @@
     <MESSAGE value="NSV-44 엑셀 만들기.." />
     <MESSAGE value="NSV-44 엑셀 만들기&#10;+ 엑셀 생성시 리스트 만들어짐" />
     <MESSAGE value="NSV-44 엑셀 만들기&#10;+ createExcelList" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-44 엑셀 만들기&#10;+ createExcelList" />
+    <MESSAGE value="콘솔로그 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="콘솔로그 추가" />
   </component>
 </project>

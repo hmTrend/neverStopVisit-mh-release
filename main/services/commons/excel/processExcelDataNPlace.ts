@@ -243,109 +243,31 @@ export function processNShoppingExcelDataWithAlign({
   }
 }
 
-export function processNShoppingExcelDataWithAlignFlatMap({
-  filePath,
+export function processNPlaceExcelDataWithAlignFlatMap({
+  data,
   sheetName = "",
 }: {
-  filePath: string;
+  data: any;
   sheetName?: string;
 }) {
+  console.log("data 333222111");
+  console.log(data);
   try {
-    const workbook = xlsx.readFile(filePath);
+    const result = [];
 
-    const sheet = sheetName
-      ? workbook.Sheets[sheetName]
-      : workbook.Sheets[workbook.SheetNames[0]];
-
-    // Excel 데이터를 JSON으로 변환 (A열을 헤더로 사용)
-    const rawData = xlsx.utils.sheet_to_json<RawExcelRow>(sheet, {
-      header: "A",
-    });
-
-    // 1번째 행(타이틀) 제거
-    rawData.shift();
-
-    // 모든 열 키 찾기 (A 제외)
-    const columns = Object.keys(rawData[0] || {}).filter((key) => key !== "A");
-    const columnCount = columns.length;
-
-    // 임시로 각 열의 query 배열을 저장할 객체
-    const queryArrays: QueryArrays = {};
-
-    // 각 열의 query 배열 수집
-    columns.forEach((col) => {
-      queryArrays[col] = [];
-      const queryIndex = rawData.findIndex((r) => r.A === "query");
-
-      // query 행부터 시작하여 값 수집
-      if (queryIndex !== -1 && rawData[queryIndex][col]) {
-        queryArrays[col].push(rawData[queryIndex][col] as string);
-      }
-
-      // query 다음 행들의 값 수집
-      for (let i = queryIndex + 1; i < rawData.length; i++) {
-        if (rawData[i][col]) {
-          queryArrays[col].push(rawData[i][col] as string);
-        }
-      }
-    });
-
-    // [QUERY 줄맞추기] 가장 긴 query 배열의 길이 찾기
-    const maxQueryLength = Math.max(
-      ...Object.values(queryArrays).map((arr) => arr.length),
-    );
-
-    // [QUERY 줄맞추기] query 배열 길이 맞추기
-    Object.keys(queryArrays).forEach((col) => {
-      const originalArray = queryArrays[col];
-      if (originalArray.length < maxQueryLength) {
-        const newArray: string[] = [];
-        for (let i = 0; i < maxQueryLength; i++) {
-          newArray[i] = originalArray[i % originalArray.length];
-        }
-        queryArrays[col] = newArray;
-      }
-    });
-
-    // 기존 결과 생성
-    const intermediateResult = columns.map((col) => {
-      const obj: ProcessedData = {
-        query: [],
-      };
-
-      // 기본 필드 처리
-      rawData.forEach((row) => {
-        const key = row.A;
-        if (key && key !== "query") {
-          obj[key] = row[col] || null;
-        }
+    data.forEach((item) => {
+      // subKeywordList의 각 항목에 대해 새로운 객체 생성
+      item.subKeywordList.forEach((subKeyword) => {
+        result.push({
+          keyword: item.keyword,
+          delayTime: item.delayTime,
+          placeName: item.placeName,
+          placeNumber: item.placeNumber,
+          dayCount: item.dayCount,
+          subKeywordList: [subKeyword], // 단일 항목 배열로 변환
+        });
       });
-
-      // query 배열 추가
-      obj.query = queryArrays[col];
-
-      return obj;
     });
-
-    // 결과를 원하는 순서로 재정렬
-    const result: any[] = [];
-    const totalQueries = maxQueryLength * columnCount; // 전체 쿼리 개수
-
-    for (let i = 0; i < totalQueries; i++) {
-      // 현재 위치에 해당하는 열의 인덱스 계산
-      const colIndex = i % columnCount;
-      // 현재 위치에 해당하는 query 인덱스 계산
-      const queryIndex = Math.floor(i / columnCount);
-
-      const item = intermediateResult[colIndex];
-      result.push({
-        query: item.query[queryIndex],
-        title: item.title,
-        catalog: item.catalog,
-        nvMid: item.nvMid,
-        views: item.views,
-      });
-    }
 
     return result;
   } catch (error) {

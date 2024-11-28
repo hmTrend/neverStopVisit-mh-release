@@ -12,8 +12,6 @@ export const GroupListLogic = ({ selectedGroupName, selectedExcelList }) => {
   const GetNPlaceGroupList = async () => {
     const { data } = await getNPlaceGroupList();
     setGroupList(data);
-    console.log("place data 123123@@@");
-    console.log(data);
     storeNPlace.groupList = data;
   };
 

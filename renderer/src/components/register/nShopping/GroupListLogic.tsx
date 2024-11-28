@@ -12,8 +12,6 @@ export const GroupListLogic = ({ selectedGroupName, selectedExcelList }) => {
   const GetNShoppingGroupList = async () => {
     const { data } = await getNShoppingGroupList();
     setGroupList(data);
-    console.log("data 123123");
-    console.log(data);
     storeNShopping.groupList = data;
   };
 

@@ -15,9 +15,6 @@ export const useGetNPlaceGroupList = () => {
       fetchPolicy: "no-cache",
     });
 
-    console.log("place data gogo");
-    console.log(data);
-
     if (error) {
       toast({
         title: "그룹리스트 가져오기 실패",
