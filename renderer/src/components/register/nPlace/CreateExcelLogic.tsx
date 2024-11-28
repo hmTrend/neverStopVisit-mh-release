@@ -84,8 +84,7 @@ export const CreateExcelLogic = () => {
     const inputList = getExcelList.map((v) => ({
       ...v,
       groupFid: selectedGroupId,
-      catalog: v.catalog?.toString(),
-      nvMid: v.nvMid?.toString(),
+      placeNumber: v.placeNumber?.toString(),
     }));
     const { data } = await createExcelList({
       input: inputList,

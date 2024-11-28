@@ -54,11 +54,16 @@ export const gqlCreateNPlaceExcelList = gql`
       data {
         _id
         groupFid
-        title
-        catalog
-        nvMid
-        views
-        query
+        keyword
+        delayTime
+        placeName
+        placeNumber
+        dayCount
+        subKeywordList {
+          dayCount
+          targetBlog
+          targetKeyword
+        }
         createdAt
         updatedAt
       }

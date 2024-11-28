@@ -1,23 +1,20 @@
 import { useMutation } from "@apollo/client";
 import { useToast } from "@chakra-ui/react";
-import {
-  gqlCreateNShoppingExcelList,
-  gqlCreateNShoppingExcelListAlignFlatMap,
-} from "@/lib/graphql/n-shopping-apollo";
+import { gqlCreateNPlaceExcelListAlignFlatMap } from "@/lib/graphql/n-place-apollo";
 
 export const useCreateExcelListAlignFlat = () => {
-  const [CreateNShoppingExcelListAlignFlatMap] = useMutation(
-    gqlCreateNShoppingExcelListAlignFlatMap,
+  const [CreateNPlaceExcelListAlignFlatMap] = useMutation(
+    gqlCreateNPlaceExcelListAlignFlatMap,
   );
   const toast = useToast();
 
   const createExcelListAlignFlat = async ({ input }) => {
-    const { data, errors } = await CreateNShoppingExcelListAlignFlatMap({
+    const { data, errors } = await CreateNPlaceExcelListAlignFlatMap({
       variables: { input },
     });
     if (errors) {
       toast({
-        title: "쇼핑엑셀각각 만들기 실패",
+        title: "플레이스엑셀각각 만들기 실패",
         isClosable: true,
         duration: 3000,
         status: "error",
@@ -25,7 +22,7 @@ export const useCreateExcelListAlignFlat = () => {
       throw Error("ERR > createExcelListAlignFlat");
     }
     toast({
-      title: "쇼핑엑셀각각 만들기 성공",
+      title: "플레이스엑셀각각 만들기 성공",
       isClosable: true,
       duration: 3000,
       status: "success",

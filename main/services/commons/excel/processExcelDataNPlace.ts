@@ -34,7 +34,7 @@ export function processExcelDataNPlace({ filePath, sheetName = "" }) {
         placeName: data[headers["placeName"]][colIndex],
         placeNumber: data[headers["placeNumber"]][colIndex],
         dayCount: data[headers["dayCount"]][colIndex],
-        subKeywords: [],
+        subKeywordList: [],
       };
 
       // Process subKeywordList
@@ -43,7 +43,7 @@ export function processExcelDataNPlace({ filePath, sheetName = "" }) {
         if (data[row][colIndex]) {
           const parts = data[row][colIndex].split("==");
           if (parts.length >= 3) {
-            columnData.subKeywords.push({
+            columnData.subKeywordList.push({
               dayCount: parseInt(parts[0]),
               targetKeyword: parts[1],
               targetBlog: parts[2],
