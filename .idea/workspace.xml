@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="콘솔 로그 삭제">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="createExcelListAlignFlatInputList 인풋셋팅">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/excel/processExcelDataNPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/excel/processExcelDataNPlace.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nPlace/CreateExcelLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/CreateExcelLogic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/lib/graphql/n-place-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/n-place-apollo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,15 +213,7 @@
       <workItem from="1732077946893" duration="18076000" />
       <workItem from="1732537211686" duration="13649000" />
       <workItem from="1732771660426" duration="14479000" />
-      <workItem from="1732805323211" duration="2343000" />
-    </task>
-    <task id="LOCAL-00066" summary="NSV-3 + 시작시 지문 정보 1개 가져오기&#10;+ 동작시 로그인 체크">
-      <option name="closed" value="true" />
-      <created>1731916949730</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1731916949730</updated>
+      <workItem from="1732805323211" duration="2689000" />
     </task>
     <task id="LOCAL-00067" summary="NSV-14 아이디 로그인 실패시 nSate와 cookie값 저장하기&#10;+ this 값 셋팅">
       <option name="closed" value="true" />
@@ -608,7 +599,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732793799689</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="createExcelListAlignFlatInputList 인풋셋팅">
+      <option name="closed" value="true" />
+      <created>1732837458196</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1732837458197</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +638,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가&#10;+ makeAPurchase / race로 먼저찾는거 클릭하기" />
     <MESSAGE value="NSV-19 로그인 만들기" />
     <MESSAGE value="NSV-11 구동시 창은 1개만 열리게 하기" />
     <MESSAGE value="NSV-11 구동시 창은 1개만 열리게 하기&#10;+ 오토업데이트 백엔드 로직 완료0" />
@@ -664,6 +662,7 @@
     <MESSAGE value="CreateNPlaceExcelListAlignFlatMap" />
     <MESSAGE value="플레이스 &gt; ExcelList" />
     <MESSAGE value="콘솔 로그 삭제" />
-    <option name="LAST_COMMIT_MESSAGE" value="콘솔 로그 삭제" />
+    <MESSAGE value="createExcelListAlignFlatInputList 인풋셋팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="createExcelListAlignFlatInputList 인풋셋팅" />
   </component>
 </project>

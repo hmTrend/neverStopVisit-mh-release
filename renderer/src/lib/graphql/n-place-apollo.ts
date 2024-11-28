@@ -106,16 +106,19 @@ export const gqlCreateNPlaceExcelListAlignFlatMap = gql`
       data {
         _id
         groupFid
-        title
-        catalog
-        nvMid
-        views
-        query
+        keyword
+        delayTime
+        placeName
+        placeNumber
+        dayCount
+        totalDayCount
+        targetBlog
+        targetKeyword
         createdAt
         updatedAt
       }
-      error
       message
+      error
     }
   }
 `;
