@@ -12,6 +12,8 @@ import {
   TableCaption,
   TableContainer,
   Text,
+  Code,
+  Kbd,
 } from "@chakra-ui/react";
 
 export const ExcelList = ({ selectedGroupName, selectedExcelList }) => {
@@ -49,7 +51,11 @@ export const ExcelList = ({ selectedGroupName, selectedExcelList }) => {
                     <Td>{v.dayCount}</Td>
                     <Td>
                       {v.subKeywordList.map((v, i) => (
-                        <Text key={i}>{v}</Text>
+                        <Flex key={i} gap={1}>
+                          <Text>{v?.dayCount}</Text>
+                          <Kbd fontSize={"sm"}>{v?.targetKeyword}</Kbd>
+                          <Text>{v?.targetBlog}</Text>
+                        </Flex>
                       ))}
                     </Td>
                   </Tr>

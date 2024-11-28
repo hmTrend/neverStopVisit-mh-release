@@ -1,9 +1,9 @@
 import { useLazyQuery } from "@apollo/client";
 import { useToast } from "@chakra-ui/react";
-import { gqlGetNShoppingExcelList } from "@/lib/graphql/n-shopping-apollo";
+import { gqlGetNPlaceExcelList } from "@/lib/graphql/n-place-apollo";
 
 export const useGetExcelList = () => {
-  const [GetExcelList] = useLazyQuery(gqlGetNShoppingExcelList);
+  const [GetExcelList] = useLazyQuery(gqlGetNPlaceExcelList);
   const toast = useToast();
 
   const getExcelList = async ({ groupFid }) => {
@@ -20,7 +20,7 @@ export const useGetExcelList = () => {
       });
       throw Error("ERR > getExcelList");
     }
-    return { data: data.getNShoppingExcelList.data };
+    return { data: data.getNPlaceExcelList.data };
   };
   return { getExcelList };
 };

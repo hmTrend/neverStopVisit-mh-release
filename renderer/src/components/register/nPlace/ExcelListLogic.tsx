@@ -11,6 +11,8 @@ export const ExcelListLogic = () => {
 
   const GetExcelList = async () => {
     const { data } = await getExcelList({ groupFid: selectedGroupId });
+    console.log("data 33322211");
+    console.log(data);
     return { data };
   };
   useEffect(() => {

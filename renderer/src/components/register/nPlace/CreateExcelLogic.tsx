@@ -42,19 +42,12 @@ export const CreateExcelLogic = () => {
         file.path,
       );
 
-      console.log("result 555444333");
-      console.log(result.data);
       const result3 = await window.ipc.invoke(
         "process-excel-file-n-place-data-with-align-flat-map",
         { data: JSON.stringify(result.data) },
       );
       storeNPlace.getExcelList = result.data;
-      console.log("result3 33332222111");
-      console.log(result3);
       storeNPlace.getExcelListAlignFlat = result3;
-
-      console.log("storeNPlace.getExcelList");
-      console.log(result);
       // 파일 선택 성공 메시지
       toast({
         title: result.success ? "성공" : "오류",
