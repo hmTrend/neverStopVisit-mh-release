@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-46 타겟 그룹 삭제하기 + 최종반영">
-      <change afterPath="$PROJECT_DIR$/main/lib/apollo/n-place-apollo.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-49 작업 타겟 리스트 1개 가져오기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,15 +214,7 @@
       <workItem from="1732077946893" duration="18076000" />
       <workItem from="1732537211686" duration="13649000" />
       <workItem from="1732771660426" duration="14479000" />
-      <workItem from="1732805323211" duration="7140000" />
-    </task>
-    <task id="LOCAL-00072" summary="NSV-17 한줄작업 로직만들기&#10;+ UI 셋팅 완료">
-      <option name="closed" value="true" />
-      <created>1731973794645</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1731973794645</updated>
+      <workItem from="1732805323211" duration="11593000" />
     </task>
     <task id="LOCAL-00073" summary="NSV-17 한줄작업 로직만들기&#10;+ UI 셋팅 완료">
       <option name="closed" value="true" />
@@ -608,7 +600,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732842918804</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="NSV-49 작업 타겟 리스트 1개 가져오기">
+      <option name="closed" value="true" />
+      <created>1732850278265</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1732850278265</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-6 자동 업데이트 만들기&#10;+ 프로그램 실행 로고추가" />
     <MESSAGE value="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록" />
     <MESSAGE value="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ 엑셀 추가등록 성공" />
     <MESSAGE value="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ back 엑셀 추가등록 성공&#10;+ front 그룹지문 엑셀다운받기" />
@@ -664,7 +663,8 @@
     <MESSAGE value="NSV-46 타겟 그룹 삭제하기&#10;+ 최종반영됨" />
     <MESSAGE value="NSV-46 타겟 그룹 삭제하기" />
     <MESSAGE value="NSV-46 타겟 그룹 삭제하기 + 최종반영" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-46 타겟 그룹 삭제하기 + 최종반영" />
+    <MESSAGE value="NSV-49 작업 타겟 리스트 1개 가져오기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-49 작업 타겟 리스트 1개 가져오기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

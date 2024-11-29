@@ -24,10 +24,6 @@ export const initialize = async ({
   browser: Browser;
 }) => {
   const proxySettings = getNextProxy();
-  // const userAgent = getNextCreateUserAgentWithProgramKoreaList();
-  // const userAgent =
-  //   "Mozilla/5.0 (Linux; Android 10; SM-A908N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Whale/1.0.0.0 Crosswalk/28.114.0.23 Mobile Safari/537.36";
-  // const userAgent = getNextCreateUserAgentWithRealMobileList();
   const userAgent = getNextCreateUserAgentWithAllUpMobileList();
   console.log("userAgent 333");
   console.log(userAgent);
@@ -45,7 +41,15 @@ export const initialize = async ({
         // proxy: { server: proxySettings },
       });
       const context = await browser.newContext({
-        userAgent: userAgent,
+        // userAgent: userAgent,
+        userAgent:
+          "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/27.0 Chrome/125.0.0.0 Mobile Safari/537.36",
+        extraHTTPHeaders: {
+          "sec-ch-ua":
+            '"Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"',
+          "sec-ch-ua-mobile": "?1",
+          "sec-ch-ua-platform": '"Android"',
+        },
         viewport: { width: 412, height: 915 },
         isMobile: true,
         hasTouch: true,
