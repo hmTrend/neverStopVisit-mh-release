@@ -4,14 +4,16 @@ import { useEffect, useState } from "react";
 import { storeNPlace } from "@/valtio/nPlace.register.valtio";
 import { useDeleteNPlaceGroup } from "@/hook/nPlace/useDeleteNPlaceGroup";
 
-export const GroupListLogic = ({ selectedGroupName, selectedExcelList }) => {
+export const GroupListLogic = ({
+  selectedGroupName,
+  selectedExcelList,
+  groupList,
+}) => {
   const { getNPlaceGroupList } = useGetNPlaceGroupList();
-  const [groupList, setGroupList] = useState([]);
   const { deleteNPlaceGroup } = useDeleteNPlaceGroup();
 
   const GetNPlaceGroupList = async () => {
     const { data } = await getNPlaceGroupList();
-    setGroupList(data);
     storeNPlace.groupList = data;
   };
 

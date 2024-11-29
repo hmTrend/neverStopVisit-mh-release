@@ -11,10 +11,6 @@ export const CreateGroupLogic = ({ id, selectedGroupName }) => {
 
   const handleCreateGroup = async () => {
     try {
-      console.log("id");
-      console.log(id);
-      console.log("selectedGroupName");
-      console.log(inputRef.current.value);
       const { data } = await createNPlaceGroup({
         groupName: inputRef.current.value,
         memberFid: id,

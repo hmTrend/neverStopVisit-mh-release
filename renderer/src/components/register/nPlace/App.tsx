@@ -17,6 +17,7 @@ export const App = () => {
       <GroupListLogic
         selectedGroupName={selectedGroupName}
         selectedExcelList={selectedExcelList}
+        groupList={groupList}
       />
       <CreateExcelLogic />
       <ExcelListLogic />

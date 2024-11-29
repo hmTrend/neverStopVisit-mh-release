@@ -20,7 +20,7 @@ export const useDeleteNPlaceGroup = () => {
         duration: 3000,
         status: "error",
       });
-      throw Error("ERR > deleteFingerPrintGroup");
+      throw Error("ERR > deleteNPlaceGroup");
     }
     storeNPlace.groupList = groupList.filter(
       (v: any) => v._id !== groupFid,
