@@ -33,7 +33,7 @@ export const gqlGetNPlaceGroupList = gql`
 `;
 
 export const gqlDeleteNPlaceGroup = gql`
-  mutation DeleteNPlaceGroup($input: DeleteFingerPrintInput!) {
+  mutation DeleteNPlaceGroup($input: DeleteNPlaceInput!) {
     deleteNPlaceGroup(input: $input) {
       data {
         _id
