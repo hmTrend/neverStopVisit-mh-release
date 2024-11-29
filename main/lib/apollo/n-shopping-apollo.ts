@@ -39,7 +39,7 @@ export const GetNShoppingExcelAlignFlatTargetOne = async ({ groupFid }) => {
     console.error(error.message);
     return {
       data,
-      message: "ERR > CreateNShoppingExcelListAlignFlatMap ",
+      message: "ERR > GetNShoppingExcelAlignFlatTargetOne ",
       error: error.message,
     };
   }
@@ -47,7 +47,7 @@ export const GetNShoppingExcelAlignFlatTargetOne = async ({ groupFid }) => {
   console.log(data);
   return {
     data: data.getNShoppingExcelAlignFlatTargetOne.data,
-    message: "OK > CreateNShoppingExcelListAlignFlatMap ",
+    message: "OK > GetNShoppingExcelAlignFlatTargetOne ",
     error: "",
   };
 };
