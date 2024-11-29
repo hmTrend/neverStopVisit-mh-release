@@ -10,11 +10,6 @@ export const FingerPrintSelect = ({ selectProgram }) => {
     const groupId = e.target.value;
     const selectedOption = e.target.options[e.target.selectedIndex];
     const groupName = selectedOption.text; // 선택된 option의 텍스트(groupName) 가져오기
-
-    console.log("groupId");
-    console.log(groupId);
-    console.log("groupName");
-    console.log(groupName);
     storeStart.nShopping.fingerPrint = { groupId, groupName };
   };
 

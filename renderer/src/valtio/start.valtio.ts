@@ -12,10 +12,28 @@ class StartValtio {
     fingerPrint: { groupName: string; groupId: string };
     concurrentBrowserCount: number;
   };
+  nPlace: {
+    isStart: boolean;
+    selectedGroup: { groupName: string; groupId: string };
+    fingerPrint: { groupName: string; groupId: string };
+    concurrentBrowserCount: number;
+  };
 
   constructor() {
     this.common = { isStart: false, ip: "STATIC", memberFid: "" };
     this.nShopping = {
+      isStart: false,
+      selectedGroup: {
+        groupName: "",
+        groupId: "",
+      },
+      fingerPrint: {
+        groupName: "",
+        groupId: "",
+      },
+      concurrentBrowserCount: 1,
+    };
+    this.nPlace = {
       isStart: false,
       selectedGroup: {
         groupName: "",

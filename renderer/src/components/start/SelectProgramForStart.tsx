@@ -13,7 +13,7 @@ export const SelectProgramForStart = ({
     <Flex direction={"column"} gap={3}>
       <Fragment>
         <Flex gap={6}>
-          <StartStateSwitch />
+          <StartStateSwitch selectProgram={selectProgram} />
           <TargetSelect
             selectProgram={selectProgram}
             groupList={groupList}

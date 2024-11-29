@@ -5,9 +5,11 @@ import { useSnapshot } from "valtio/react";
 import { storeNShopping } from "@/valtio/nShopping.register.valtio";
 import { storeStart } from "@/valtio/start.valtio";
 import { Flex } from "@chakra-ui/react";
+import { storeNPlace } from "@/valtio/nPlace.register.valtio";
 
 export const SelectProgramForStartLogic = () => {
   const { groupList: nShoppingGroupList } = useSnapshot(storeNShopping);
+  const { groupList: nPlaceGroupList } = useSnapshot(storeNPlace);
 
   const handleSelectChangeNShopping = (e) => {
     const selectedId = e.target.value;
@@ -31,7 +33,7 @@ export const SelectProgramForStartLogic = () => {
   const handleSelectChangeNPlace = (e) => {
     const selectedId = e.target.value;
     // groupList에서 선택된 그룹 찾기
-    const selectedGroup: any = nShoppingGroupList.find(
+    const selectedGroup: any = nPlaceGroupList.find(
       (group: any) => group._id === selectedId,
     );
 
@@ -42,7 +44,7 @@ export const SelectProgramForStartLogic = () => {
       };
 
       // valtio store 업데이트
-      storeStart.nShopping.selectedGroup = newSelectedGroup;
+      storeStart.nPlace.selectedGroup = newSelectedGroup;
       // localStorage 업데이트
     }
   };
@@ -55,7 +57,7 @@ export const SelectProgramForStartLogic = () => {
         selectProgram={"nShopping"}
       />
       <SelectProgramForStart
-        groupList={nShoppingGroupList}
+        groupList={nPlaceGroupList}
         handleSelectChange={handleSelectChangeNPlace}
         selectProgram={"nPlace"}
       />

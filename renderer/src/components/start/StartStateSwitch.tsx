@@ -1,15 +1,15 @@
 import { Stack, Switch } from "@chakra-ui/react";
 import { storeStart } from "@/valtio/start.valtio";
 
-export const StartStateSwitch = () => {
+export const StartStateSwitch = ({ selectProgram }) => {
   const handleChange = (e) => {
     const checked = e.target.checked;
     console.log("Switch is:", checked ? "ON" : "OFF");
     if (checked) {
-      storeStart.nShopping.isStart = true;
+      storeStart[selectProgram].isStart = true;
       return;
     }
-    storeStart.nShopping.isStart = false;
+    storeStart[selectProgram].isStart = false;
   };
 
   return (

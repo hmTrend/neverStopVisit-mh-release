@@ -25,11 +25,8 @@ export const initialize = async ({
 }) => {
   const proxySettings = getNextProxy();
   const userAgent = getNextCreateUserAgentWithAllUpMobileList();
-  console.log("userAgent 333");
-  console.log(userAgent);
   for (let i = 0; i < 2; i++) {
     try {
-      chromiumEngine.use(StealthPlugin());
       browser = await chromiumEngine.launch({
         headless: false,
         executablePath: getChromePath({
@@ -41,18 +38,18 @@ export const initialize = async ({
         // proxy: { server: proxySettings },
       });
       const context = await browser.newContext({
-        // userAgent: userAgent,
         userAgent:
-          "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/27.0 Chrome/125.0.0.0 Mobile Safari/537.36",
-        extraHTTPHeaders: {
-          "sec-ch-ua":
-            '"Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"',
-          "sec-ch-ua-mobile": "?1",
-          "sec-ch-ua-platform": '"Android"',
-        },
+          // "Mozilla/5.0 (Linux; Android 14; SM-S928N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.108 Mobile Safari/537.36 KAKAOTALK/11.2.2 (INAPP)",
+          "Mozilla/5.0 (iPhone; CPU iPhone OS 18_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/604.1 OPT/5.1.1",
+        // extraHTTPHeaders: {
+        //   "sec-fetch-site": "cross-site",
+        //   "sec-fetch-mode": "navigate",
+        //   "sec-fetch-dest": "document",
+        // },
         viewport: { width: 412, height: 915 },
         isMobile: true,
         hasTouch: true,
+        deviceScaleFactor: 2.625, // 모바일 디바이스의 스케일 팩터 추가
       });
       if (cookie && cookie.length > 0) {
         if (validateCookie(cookie)) {
