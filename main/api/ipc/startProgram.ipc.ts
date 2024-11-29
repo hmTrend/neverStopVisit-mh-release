@@ -3,19 +3,22 @@ import { NShopping } from "../../services/nShopping";
 import { networkIpChange } from "../../services/commons/network";
 import { monitorNetworkAndStart } from "../../services/commons/network/network.local";
 import wait from "waait";
+import { NPlace } from "../../services/nPlace";
 
 export const startProgramIpc = () => {
   let currentNShoppingInstance = null;
+  let currentNPlaceInstance = null;
 
   ipcMain.handle("start-program", async (event, args) => {
     const data = JSON.parse(args);
-    const { nShopping, common } = data;
-
+    const { nShopping, common, nPlace } = data;
     await executeInChunks(
       10000,
       100,
+      nPlace,
       nShopping,
       currentNShoppingInstance,
+      currentNPlaceInstance,
       common,
     );
 
@@ -39,8 +42,10 @@ export const startProgramIpc = () => {
 async function executeInChunks(
   totalCount = 10000,
   chunkSize = 100,
+  nPlace,
   nShopping,
   currentNShoppingInstance,
+  currentNPlaceInstance,
   common,
 ) {
   try {
@@ -63,8 +68,12 @@ async function executeInChunks(
         await monitorNetworkAndStart();
         let startProgramList = [];
         currentNShoppingInstance = new NShopping();
+        currentNPlaceInstance = new NPlace();
         if (nShopping.isStart) {
           startProgramList.push(currentNShoppingInstance.start({ nShopping }));
+        }
+        if (nPlace.isStart) {
+          startProgramList.push(currentNPlaceInstance.start({ nPlace }));
         }
         const result = await Promise.all([...startProgramList]);
         completedCount++;

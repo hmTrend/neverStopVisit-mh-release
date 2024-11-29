@@ -12,6 +12,7 @@ export class PuppeteerEngine {
   query: string;
   nvMid: string;
   context: BrowserContext;
+  placeNumber: number;
 
   constructor() {
     this.chromiumEngine = chromium; // chromium 초기화
