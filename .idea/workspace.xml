@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-40 작업 시작하기 / 작동되게 하기">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/FingerPrintSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/FingerPrintSelect.tsx" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가">
+      <change beforePath="$PROJECT_DIR$/main/lib/userAgent/mobile.userAgent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/userAgent/mobile.userAgent.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +74,7 @@
     "TypeScript.index.ts (2).executor": "Run",
     "TypeScript.index.ts.executor": "Run",
     "TypeScript.initialize.ts.executor": "Run",
+    "TypeScript.mobile.userAgent.ts.executor": "Run",
     "TypeScript.network.router.edu.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
@@ -118,20 +115,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/register/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.network.router.edu.ts">
-    <configuration name="index.ts (1)" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShopping" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nShopping/index.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TypeScript.mobile.userAgent.ts">
     <configuration name="index.ts (2)" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -171,6 +155,20 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="mobile.userAgent.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/lib/userAgent" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/lib/userAgent/mobile.userAgent.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
     <configuration name="network.router.edu.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -186,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.mobile.userAgent.ts" />
         <item itemvalue="TypeScript.network.router.edu.ts" />
         <item itemvalue="TypeScript.initialize.ts" />
         <item itemvalue="TypeScript.index.ts" />
         <item itemvalue="TypeScript.index.ts (2)" />
-        <item itemvalue="TypeScript.index.ts (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -216,23 +214,8 @@
       <workItem from="1732077946893" duration="18076000" />
       <workItem from="1732537211686" duration="13649000" />
       <workItem from="1732771660426" duration="14479000" />
-      <workItem from="1732805323211" duration="21223000" />
-    </task>
-    <task id="LOCAL-00075" summary="NSV-20 실전 지문 등록 및 반영">
-      <option name="closed" value="true" />
-      <created>1731991999408</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1731991999408</updated>
-    </task>
-    <task id="LOCAL-00076" summary="NSV-20 실전 지문 등록 및 반영">
-      <option name="closed" value="true" />
-      <created>1731992516430</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1731992516430</updated>
+      <workItem from="1732805323211" duration="22234000" />
+      <workItem from="1732927595546" duration="3419000" />
     </task>
     <task id="LOCAL-00077" summary="NSV-21 프로그램 종료버튼 만들기">
       <option name="closed" value="true" />
@@ -610,7 +593,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732876723547</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="NSV-40 작동로직 블로그 방문용 만들기&#10;+ 시작시 구글 접속 가능">
+      <option name="closed" value="true" />
+      <created>1732889966138</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1732889966138</updated>
+    </task>
+    <task id="LOCAL-00125" summary="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가">
+      <option name="closed" value="true" />
+      <created>1732931006269</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1732931006269</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,8 +640,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ back 엑셀 추가등록 성공&#10;+ front 그룹지문 엑셀다운받기" />
-    <MESSAGE value="NSV-27 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ back 엑셀 추가등록 성공&#10;+ front 그룹지문 엑셀다운받기&#10;+ 정상지문 엑셀다운받기" />
     <MESSAGE value="NSV-29 유효기간 추가하기" />
     <MESSAGE value="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬" />
     <MESSAGE value="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬&#10;+ back 네트워크 타입 추가" />
@@ -666,7 +663,9 @@
     <MESSAGE value="NSV-49 작업 타겟 리스트 1개 가져오기" />
     <MESSAGE value="userAgent와 시큐리티헤더 설정" />
     <MESSAGE value="NSV-40 작업 시작하기 / 작동되게 하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-40 작업 시작하기 / 작동되게 하기" />
+    <MESSAGE value="NSV-40 작동로직 블로그 방문용 만들기&#10;+ 시작시 구글 접속 가능" />
+    <MESSAGE value="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -674,7 +673,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/renderer/src/hook/nShopping/useDeleteNShoppingGroup.ts</url>
           <line>24</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

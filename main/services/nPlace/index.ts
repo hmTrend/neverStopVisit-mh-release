@@ -3,6 +3,7 @@ import wait from "waait";
 import { GetFingerPrintTargetExcelOne } from "../../lib/apollo/finger-print.apollo";
 import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
 import { GetNPlaceExcelAlignFlatTargetOne } from "../../lib/apollo/n-place-apollo";
+import { loggedInCheck } from "../commons/naver/loggedInCheck";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace }): Promise<void> {
@@ -54,9 +55,8 @@ export class NPlace extends PuppeteerEngine {
         url: "https://www.google.com/",
         cookie: this.targetCookie,
       });
-      await wait(1000 * 1000);
       {
-        console.log("ymca");
+        await loggedInCheck({ page: this.page, _id: this.targetCookieId });
       }
       {
         const { page } = await cookieNstateSave({
