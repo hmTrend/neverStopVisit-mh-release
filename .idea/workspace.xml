@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="findTargetBlog">
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlaceInTargetBlog.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +72,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TypeScript.findTargetBlog.ts.executor": "Run",
+    "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
     "TypeScript.index.ts (1).executor": "Run",
     "TypeScript.index.ts (2).executor": "Run",
     "TypeScript.index.ts.executor": "Run",
@@ -117,7 +119,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/register/nShopping" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.targetKeywordSearch.ts">
+  <component name="RunManager" selected="TypeScript.findTargetPlaceInTargetBlog.ts">
     <configuration name="findTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -132,17 +134,18 @@
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
-    <configuration name="initialize.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="findTargetPlaceInTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetPlaceInTargetBlog.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="mobile.userAgent.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -188,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.findTargetPlaceInTargetBlog.ts" />
         <item itemvalue="TypeScript.targetKeywordSearch.ts" />
         <item itemvalue="TypeScript.findTargetBlog.ts" />
         <item itemvalue="TypeScript.mobile.userAgent.ts" />
         <item itemvalue="TypeScript.network.router.edu.ts" />
-        <item itemvalue="TypeScript.initialize.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -219,15 +222,7 @@
       <workItem from="1732537211686" duration="13649000" />
       <workItem from="1732771660426" duration="14479000" />
       <workItem from="1732805323211" duration="22234000" />
-      <workItem from="1732927595546" duration="20907000" />
-    </task>
-    <task id="LOCAL-00087" summary="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가">
-      <option name="closed" value="true" />
-      <created>1732023730515</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1732023730515</updated>
+      <workItem from="1732927595546" duration="21655000" />
     </task>
     <task id="LOCAL-00088" summary="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가&#10;+ makeAPurchase / race로 먼저찾는거 클릭하기">
       <option name="closed" value="true" />
@@ -613,7 +608,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733000629447</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="findTargetBlog">
+      <option name="closed" value="true" />
+      <created>1733000644630</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1733000644630</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
