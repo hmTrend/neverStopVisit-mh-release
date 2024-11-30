@@ -11,4 +11,5 @@ export const googleToNaver = async ({ page }: { page: Page }) => {
     page.waitForLoadState("networkidle"),
     page.locator('a[href="https://www.naver.com/"]').click(),
   ]);
+  return { page };
 };

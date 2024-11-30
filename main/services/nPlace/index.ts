@@ -5,6 +5,7 @@ import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
 import { GetNPlaceExcelAlignFlatTargetOne } from "../../lib/apollo/n-place-apollo";
 import { loggedInCheck } from "../commons/naver/loggedInCheck";
 import { googleToNaver } from "./googleToNaver";
+import { targetKeywordSearch } from "./targetKeywordSearch";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace }): Promise<void> {
@@ -57,7 +58,15 @@ export class NPlace extends PuppeteerEngine {
         cookie: this.targetCookie,
       });
       {
-        await googleToNaver({ page: this.page });
+        const { page } = await googleToNaver({ page: this.page });
+        this.page = page;
+      }
+      {
+        const { page } = await targetKeywordSearch({
+          page: this.page,
+          targetKeyword: "수분크림",
+        });
+        this.page = page;
       }
       await wait(1000 * 1000);
       {

@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="valtio 전역변수 셋팅&#10;+ 새로고침시 반영2">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="멀티 숫자 각 프로그램 연동">
+      <change afterPath="$PROJECT_DIR$/main/services/nPlace/targetKeywordSearch.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/ConcurrentBrowserCount.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/ConcurrentBrowserCount.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/googleToNaver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/googleToNaver.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +79,7 @@
     "TypeScript.initialize.ts.executor": "Run",
     "TypeScript.mobile.userAgent.ts.executor": "Run",
     "TypeScript.network.router.edu.ts.executor": "Run",
+    "TypeScript.targetKeywordSearch.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/start",
@@ -117,20 +119,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/register/nShopping" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.mobile.userAgent.ts">
-    <configuration name="index.ts (2)" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TypeScript.targetKeywordSearch.ts">
     <configuration name="index.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -184,13 +173,27 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="targetKeywordSearch.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/targetKeywordSearch.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.targetKeywordSearch.ts" />
         <item itemvalue="TypeScript.mobile.userAgent.ts" />
         <item itemvalue="TypeScript.network.router.edu.ts" />
         <item itemvalue="TypeScript.initialize.ts" />
         <item itemvalue="TypeScript.index.ts" />
-        <item itemvalue="TypeScript.index.ts (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -217,15 +220,7 @@
       <workItem from="1732537211686" duration="13649000" />
       <workItem from="1732771660426" duration="14479000" />
       <workItem from="1732805323211" duration="22234000" />
-      <workItem from="1732927595546" duration="18613000" />
-    </task>
-    <task id="LOCAL-00083" summary="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가">
-      <option name="closed" value="true" />
-      <created>1732012785735</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1732012785735</updated>
+      <workItem from="1732927595546" duration="20021000" />
     </task>
     <task id="LOCAL-00084" summary="NSV-25 쿠키 검증 만들기&#10;+ 에러로그 추가&#10;+ this.browser 추가&#10;+ 불필요한 유효기간 체크 제거&#10;+ 안전하지 않은 쿠키 검증 제거">
       <option name="closed" value="true" />
@@ -611,7 +606,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732954002932</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="멀티 숫자 각 프로그램 연동">
+      <option name="closed" value="true" />
+      <created>1732998532830</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1732998532830</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,7 +645,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기" />
     <MESSAGE value="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기 2" />
     <MESSAGE value="NSV-44 엑셀 만들기.." />
     <MESSAGE value="NSV-44 엑셀 만들기&#10;+ 엑셀 생성시 리스트 만들어짐" />
@@ -667,7 +669,8 @@
     <MESSAGE value="googleToNaver.ts / 추가완료" />
     <MESSAGE value="valtio 전역변수 셋팅&#10;+ 새로고침시 반영" />
     <MESSAGE value="valtio 전역변수 셋팅&#10;+ 새로고침시 반영2" />
-    <option name="LAST_COMMIT_MESSAGE" value="valtio 전역변수 셋팅&#10;+ 새로고침시 반영2" />
+    <MESSAGE value="멀티 숫자 각 프로그램 연동" />
+    <option name="LAST_COMMIT_MESSAGE" value="멀티 숫자 각 프로그램 연동" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
