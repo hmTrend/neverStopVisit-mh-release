@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="userAgentWithRealMobile.ts &gt; 쇼핑 작업가능한 수준으로 변경완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/lib/network/userAgentWithRealMobile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/network/userAgentWithRealMobile.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/userAgent/mobile.userAgent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/network/userAgentWithSecretHeaderMobile.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,15 +217,7 @@
       <workItem from="1732537211686" duration="13649000" />
       <workItem from="1732771660426" duration="14479000" />
       <workItem from="1732805323211" duration="22234000" />
-      <workItem from="1732927595546" duration="8538000" />
-    </task>
-    <task id="LOCAL-00078" summary="작업 시작시 로딩버튼 추가">
-      <option name="closed" value="true" />
-      <created>1732007572827</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1732007572827</updated>
+      <workItem from="1732927595546" duration="13571000" />
     </task>
     <task id="LOCAL-00079" summary="NSV-25 쿠키 검증 만들기">
       <option name="closed" value="true" />
@@ -612,7 +603,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732931026305</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="userAgentWithRealMobile.ts &gt; 쇼핑 작업가능한 수준으로 변경완료">
+      <option name="closed" value="true" />
+      <created>1732936323462</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1732936323462</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +642,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-29 유효기간 추가하기" />
     <MESSAGE value="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬" />
     <MESSAGE value="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬&#10;+ back 네트워크 타입 추가" />
     <MESSAGE value="NSV-31 userAgent 모바일용 1만개 추가" />
@@ -668,7 +666,8 @@
     <MESSAGE value="NSV-40 작업 시작하기 / 작동되게 하기" />
     <MESSAGE value="NSV-40 작동로직 블로그 방문용 만들기&#10;+ 시작시 구글 접속 가능" />
     <MESSAGE value="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가" />
+    <MESSAGE value="userAgentWithRealMobile.ts &gt; 쇼핑 작업가능한 수준으로 변경완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="userAgentWithRealMobile.ts &gt; 쇼핑 작업가능한 수준으로 변경완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

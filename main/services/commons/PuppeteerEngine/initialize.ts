@@ -36,9 +36,9 @@ export const initialize = async ({
       });
       const context = await browser.newContext({
         userAgent:
-          "Mozilla/5.0 (Linux; U; Android 6.0.1; en-us; OPPO A57t Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 HeyTapBrowser/10.7.4.2",
+          "Mozilla/5.0 (Linux; U; Android 11; ru-ru; Mi 9T Pro Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.10.1-gn",
         extraHTTPHeaders: {
-          "sec-ch-ua": '"Chromium";v="68", "Google Chrome";v="68"',
+          "sec-ch-ua": '"Chromium";v="112", "Google Chrome";v="112"',
           "sec-ch-ua-platform": '"Android"',
           "sec-ch-ua-mobile": "?1",
         },
