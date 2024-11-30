@@ -23,7 +23,7 @@ export const SelectProgramForStart = ({
           />
           <FingerPrintSelect selectProgram={selectProgram} />
           {/*<ConcurrentOneLineWork />*/}
-          <ConcurrentBrowserCount />
+          <ConcurrentBrowserCount selectProgram={selectProgram} />
         </Flex>
       </Fragment>
     </Flex>
