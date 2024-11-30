@@ -4,6 +4,7 @@ import { GetFingerPrintTargetExcelOne } from "../../lib/apollo/finger-print.apol
 import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
 import { GetNPlaceExcelAlignFlatTargetOne } from "../../lib/apollo/n-place-apollo";
 import { loggedInCheck } from "../commons/naver/loggedInCheck";
+import { googleToNaver } from "./googleToNaver";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace }): Promise<void> {
@@ -55,6 +56,10 @@ export class NPlace extends PuppeteerEngine {
         url: "https://www.google.com/",
         cookie: this.targetCookie,
       });
+      {
+        await googleToNaver({ page: this.page });
+      }
+      await wait(1000 * 1000);
       {
         await loggedInCheck({ page: this.page, _id: this.targetCookieId });
       }
