@@ -11,8 +11,10 @@ import {
   RadioGroup,
 } from "@chakra-ui/react";
 import { storeStart } from "@/valtio/start.valtio";
+import { useSnapshot } from "valtio/react";
 
 export const OptionCommon = () => {
+  const snapStart = useSnapshot(storeStart);
   const handleChange = (value) => {
     storeStart.common.ip = value;
   };
@@ -26,7 +28,7 @@ export const OptionCommon = () => {
           </FormLabel>
           <RadioGroup
             onChange={handleChange}
-            defaultValue={storeStart.common.ip}
+            defaultValue={snapStart.common.ip}
           >
             <HStack spacing="24px">
               <Radio value="STATIC">고정</Radio>
