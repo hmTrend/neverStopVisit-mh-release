@@ -4,7 +4,7 @@ import { PuppeteerEngine } from "../commons/PuppeteerEngine";
 export const targetKeywordSearch = async ({
   page = undefined,
   targetKeyword = "수분크림",
-  isTest = true,
+  isTest = false,
 }: {
   page?: Page;
   targetKeyword?: string;
@@ -41,4 +41,4 @@ export const targetKeywordSearch = async ({
   return { page };
 };
 
-targetKeywordSearch();
+// targetKeywordSearch();

@@ -6,6 +6,7 @@ import { GetNPlaceExcelAlignFlatTargetOne } from "../../lib/apollo/n-place-apoll
 import { loggedInCheck } from "../commons/naver/loggedInCheck";
 import { googleToNaver } from "./googleToNaver";
 import { targetKeywordSearch } from "./targetKeywordSearch";
+import { findTargetBlog } from "./findTargetBlog";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace }): Promise<void> {
@@ -65,6 +66,13 @@ export class NPlace extends PuppeteerEngine {
         const { page } = await targetKeywordSearch({
           page: this.page,
           targetKeyword: "수분크림",
+        });
+        this.page = page;
+      }
+      {
+        const { page } = await findTargetBlog({
+          page: this.page,
+          targetBlog: "강남역 신논현역 파스타 치킨 맛집 “치스타리에 강남역점”",
         });
         this.page = page;
       }

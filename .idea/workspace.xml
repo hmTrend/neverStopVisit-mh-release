@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="targetKeywordSearch">
-      <change afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="findTargetBlog">
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,23 +219,7 @@
       <workItem from="1732537211686" duration="13649000" />
       <workItem from="1732771660426" duration="14479000" />
       <workItem from="1732805323211" duration="22234000" />
-      <workItem from="1732927595546" duration="20600000" />
-    </task>
-    <task id="LOCAL-00085" summary="NSV-22 타겟쇼핑페이지 체류시간">
-      <option name="closed" value="true" />
-      <created>1732015182268</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1732015182268</updated>
-    </task>
-    <task id="LOCAL-00086" summary="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결">
-      <option name="closed" value="true" />
-      <created>1732015740665</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1732015740665</updated>
+      <workItem from="1732927595546" duration="20907000" />
     </task>
     <task id="LOCAL-00087" summary="NSV-22 타겟쇼핑페이지 체류시간&#10;+ this.page 오류해결&#10;+ 다음작업 끊김현상으로 종료후 초수 추가">
       <option name="closed" value="true" />
@@ -614,7 +597,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732999839500</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="findTargetBlog">
+      <option name="closed" value="true" />
+      <created>1733000510379</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1733000510379</updated>
+    </task>
+    <task id="LOCAL-00135" summary="findTargetBlog">
+      <option name="closed" value="true" />
+      <created>1733000629447</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1733000629447</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,7 +644,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-44 엑셀 만들기.." />
     <MESSAGE value="NSV-44 엑셀 만들기&#10;+ 엑셀 생성시 리스트 만들어짐" />
     <MESSAGE value="NSV-44 엑셀 만들기&#10;+ createExcelList" />
     <MESSAGE value="콘솔로그 추가" />
@@ -670,7 +668,8 @@
     <MESSAGE value="valtio 전역변수 셋팅&#10;+ 새로고침시 반영2" />
     <MESSAGE value="멀티 숫자 각 프로그램 연동" />
     <MESSAGE value="targetKeywordSearch" />
-    <option name="LAST_COMMIT_MESSAGE" value="targetKeywordSearch" />
+    <MESSAGE value="findTargetBlog" />
+    <option name="LAST_COMMIT_MESSAGE" value="findTargetBlog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

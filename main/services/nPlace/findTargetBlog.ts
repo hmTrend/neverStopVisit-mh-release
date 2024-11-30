@@ -4,7 +4,7 @@ import { PuppeteerEngine } from "../commons/PuppeteerEngine";
 export const findTargetBlog = async ({
   page = undefined,
   targetBlog = "강남역 신논현역 파스타 치킨 맛집 “치스타리에 강남역점”",
-  isTest = true,
+  isTest = false,
 }: {
   page?: Page;
   targetBlog?: string;
@@ -26,7 +26,7 @@ export const findTargetBlog = async ({
       // 링크가 있는지 확인하고 클릭
       await link.waitFor({ state: "visible", timeout: 5000 });
       await Promise.all([
-        page.waitForLoadState("networkidle"), // 네트워크 요청이 완료될 때까지 대기
+        page.waitForLoadState("networkidle"),
         await link.click(),
       ]);
     } catch (error) {
@@ -40,4 +40,4 @@ export const findTargetBlog = async ({
   return { page };
 };
 
-findTargetBlog();
+// findTargetBlog();
