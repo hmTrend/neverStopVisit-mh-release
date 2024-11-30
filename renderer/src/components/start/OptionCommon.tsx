@@ -24,7 +24,10 @@ export const OptionCommon = () => {
           <FormLabel as="legend" fontSize={"xl"}>
             IP 교체방식
           </FormLabel>
-          <RadioGroup onChange={handleChange}>
+          <RadioGroup
+            onChange={handleChange}
+            defaultValue={storeStart.common.ip}
+          >
             <HStack spacing="24px">
               <Radio value="STATIC">고정</Radio>
               <Radio value="TETHERING">테더링</Radio>
