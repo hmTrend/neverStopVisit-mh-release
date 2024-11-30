@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가">
-      <change beforePath="$PROJECT_DIR$/main/lib/userAgent/mobile.userAgent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/userAgent/mobile.userAgent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/network/userAgentWithRealMobile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/network/userAgentWithRealMobile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/userAgent/mobile.userAgent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/network/userAgentWithSecretHeaderMobile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,11 +111,11 @@
       <recent name="$PROJECT_DIR$/renderer/src/lib/graphql" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/lib/network" />
       <recent name="$PROJECT_DIR$/assets/icons/win" />
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/nShopping" />
-      <recent name="$PROJECT_DIR$/renderer/src/components/register/_commons" />
     </key>
   </component>
   <component name="RunManager" selected="TypeScript.mobile.userAgent.ts">
@@ -215,15 +218,7 @@
       <workItem from="1732537211686" duration="13649000" />
       <workItem from="1732771660426" duration="14479000" />
       <workItem from="1732805323211" duration="22234000" />
-      <workItem from="1732927595546" duration="3419000" />
-    </task>
-    <task id="LOCAL-00077" summary="NSV-21 프로그램 종료버튼 만들기">
-      <option name="closed" value="true" />
-      <created>1732007307496</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1732007307496</updated>
+      <workItem from="1732927595546" duration="8538000" />
     </task>
     <task id="LOCAL-00078" summary="작업 시작시 로딩버튼 추가">
       <option name="closed" value="true" />
@@ -609,7 +604,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732931006269</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가">
+      <option name="closed" value="true" />
+      <created>1732931026305</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1732931026305</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,11 +1,8 @@
-import { Browser, Page, devices } from "playwright";
+import { Browser, Page } from "playwright";
 import { formatCookiesForPlaywright } from "./formatCookiesForPlaywright";
 import { getNextProxy } from "../../../lib/proxy/getNextProxy";
 import { validateCookie } from "./validateCookie";
-import { getNextCreateUserAgentWithRealMobileList } from "../../../lib/network/userAgentWithRealMobile";
 import { getChromePath } from "./getChromePath";
-import StealthPlugin from "puppeteer-extra-plugin-stealth";
-import { getNextCreateUserAgentWithProgramKoreaList } from "../../../lib/network/userAgentWithProgramKorea";
 import { getNextCreateUserAgentWithAllUpMobileList } from "../../../lib/network/userAgentWithAllUpMobile";
 
 export const initialize = async ({
@@ -39,13 +36,12 @@ export const initialize = async ({
       });
       const context = await browser.newContext({
         userAgent:
-          // "Mozilla/5.0 (Linux; Android 14; SM-S928N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.108 Mobile Safari/537.36 KAKAOTALK/11.2.2 (INAPP)",
-          "Mozilla/5.0 (iPhone; CPU iPhone OS 18_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/604.1 OPT/5.1.1",
-        // extraHTTPHeaders: {
-        //   "sec-fetch-site": "cross-site",
-        //   "sec-fetch-mode": "navigate",
-        //   "sec-fetch-dest": "document",
-        // },
+          "Mozilla/5.0 (Linux; U; Android 6.0.1; en-us; OPPO A57t Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 HeyTapBrowser/10.7.4.2",
+        extraHTTPHeaders: {
+          "sec-ch-ua": '"Chromium";v="68", "Google Chrome";v="68"',
+          "sec-ch-ua-platform": '"Android"',
+          "sec-ch-ua-mobile": "?1",
+        },
         viewport: { width: 412, height: 915 },
         isMobile: true,
         hasTouch: true,

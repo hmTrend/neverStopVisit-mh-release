@@ -1,4 +1,4 @@
-const mobileUserAgent = [
+const userAgentWithSecretHeaderMobile = [
   {
     userAgent:
       "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/27.0 Chrome/125.0.0.0 Mobile Safari/537.36",
@@ -860,7 +860,7 @@ const mobileUserAgent = [
   },
 ];
 
-// let uniqueUserAgents = mobileUserAgent.filter((value, index, array) => {
+// let uniqueUserAgents = userAgentWithSecretHeaderMobile.filter((value, index, array) => {
 //   if (value.headers["sec-ch-ua-platform"] === "Windows") {
 //     return false;
 //   }
