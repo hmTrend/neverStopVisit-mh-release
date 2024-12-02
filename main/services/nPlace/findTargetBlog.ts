@@ -1,9 +1,10 @@
 import { Page } from "playwright";
 import { PuppeteerEngine } from "../commons/PuppeteerEngine";
+import wait from "waait";
 
 export const findTargetBlog = async ({
   page = undefined,
-  targetBlog = "강남역 신논현역 파스타 치킨 맛집 “치스타리에 강남역점”",
+  targetBlog = "https://m.blog.naver.com/summr1213/223632753687",
   isTest = false,
 }: {
   page?: Page;
@@ -14,32 +15,31 @@ export const findTargetBlog = async ({
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({
-        url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EA%B0%95%EB%82%A8%EB%A7%9B%EC%A7%91+%EC%B9%98%EC%8A%A4%ED%83%80%EB%A6%AC%EC%97%90+%EA%B0%95%EB%82%A8%EC%97%AD%EC%A0%90",
+        url: "https://m.search.naver.com/search.naver?sm=tab_hty.top&where=m&ssc=tab.m.all&query=%EC%B9%98%EC%8A%A4%ED%83%80%EB%A6%AC%EC%97%90+%EA%B0%95%EB%82%A8%EC%97%AD%EC%A0%90&oquery=%EA%B8%B0%EC%9E%A5%EA%B5%90%ED%86%B5%EC%82%AC%EA%B3%A0%ED%95%9C%EC%9D%98%EC%9B%90&tqi=i02IAsqo1SCsscDsTyNssssstw8-478383",
         cookie: "",
       });
       page = test.page;
     }
 
     try {
-      const link = page.locator(`a:has-text("${targetBlog}")`);
-
-      // 링크가 있는지 확인하고 클릭
-      await link.waitFor({ state: "visible", timeout: 5000 });
-      await Promise.all([
-        page.waitForLoadState("networkidle"),
-        await link.click(),
-      ]);
+      await page.evaluate((url) => {
+        const links = Array.from(document.querySelectorAll("a"));
+        const targetLink = links.find((link) => link.href.includes(url));
+        if (targetLink) targetLink.click();
+        else throw new Error("링크를 찾을 수 없습니다");
+      }, targetBlog);
+      await page.waitForLoadState("networkidle");
     } catch (error) {
       throw new Error(
         `findTargetBlog > "${targetBlog}" 링크를 찾을 수 없습니다.`,
       );
     }
   } catch (e) {
-    console.error(e.message);
-    throw Error("ERR > targetKeywordSearch");
+    console.error(e);
+    throw Error("ERR > findTargetBlog");
   }
 
   return { page };
 };
 
-// findTargetBlog();
+findTargetBlog();

@@ -64,7 +64,6 @@ export class NShopping extends PuppeteerEngine {
         // url: "https://google.com/",
         cookie: this.targetCookie,
       });
-      await wait(1000 * 1000);
       {
         const { page } = await isPopup({
           page: this.page,

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="등록된 데이터 리스트에서 작업 진행 가능">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="플레이스 동작 완성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +120,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/register/nShopping" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.findTargetPlaceInTargetBlog.ts">
+  <component name="RunManager" selected="TypeScript.findTargetBlog.ts">
     <configuration name="findTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -192,9 +192,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.findTargetBlog.ts" />
         <item itemvalue="TypeScript.findTargetPlaceInTargetBlog.ts" />
         <item itemvalue="TypeScript.targetKeywordSearch.ts" />
-        <item itemvalue="TypeScript.findTargetBlog.ts" />
         <item itemvalue="TypeScript.mobile.userAgent.ts" />
         <item itemvalue="TypeScript.network.router.edu.ts" />
       </list>
@@ -223,15 +223,7 @@
       <workItem from="1732537211686" duration="13649000" />
       <workItem from="1732771660426" duration="14479000" />
       <workItem from="1732805323211" duration="22234000" />
-      <workItem from="1732927595546" duration="32072000" />
-    </task>
-    <task id="LOCAL-00095" summary="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록">
-      <option name="closed" value="true" />
-      <created>1732065638892</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1732065638892</updated>
+      <workItem from="1732927595546" duration="37946000" />
     </task>
     <task id="LOCAL-00096" summary="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ 엑셀 추가등록 성공">
       <option name="closed" value="true" />
@@ -617,7 +609,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733134241991</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="플레이스 동작 완성">
+      <option name="closed" value="true" />
+      <created>1733135987847</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1733135987847</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,7 +648,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="콘솔 로그 삭제" />
     <MESSAGE value="createExcelListAlignFlatInputList 인풋셋팅" />
     <MESSAGE value="createNPlaceExcelListAlignFlatMap 셋팅완료" />
     <MESSAGE value="nPlace 시작 UI 만드는중.." />
@@ -673,7 +672,8 @@
     <MESSAGE value="locaStorage에서 isStart 값만 제외 하고 저장하기" />
     <MESSAGE value="실제 시작시 플레이스 로직으로 1바퀴 돌기 성공" />
     <MESSAGE value="등록된 데이터 리스트에서 작업 진행 가능" />
-    <option name="LAST_COMMIT_MESSAGE" value="등록된 데이터 리스트에서 작업 진행 가능" />
+    <MESSAGE value="플레이스 동작 완성" />
+    <option name="LAST_COMMIT_MESSAGE" value="플레이스 동작 완성" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
