@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="등록된 데이터 리스트에서 작업 진행 가능" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="등록된 데이터 리스트에서 작업 진행 가능">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,15 +223,7 @@
       <workItem from="1732537211686" duration="13649000" />
       <workItem from="1732771660426" duration="14479000" />
       <workItem from="1732805323211" duration="22234000" />
-      <workItem from="1732927595546" duration="30340000" />
-    </task>
-    <task id="LOCAL-00094" summary="NSV-6 자동 업데이트 만들기&#10;+ 프로그램 실행 로고추가">
-      <option name="closed" value="true" />
-      <created>1732063580578</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1732063580578</updated>
+      <workItem from="1732927595546" duration="32072000" />
     </task>
     <task id="LOCAL-00095" summary="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록">
       <option name="closed" value="true" />
@@ -613,7 +609,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733133915571</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="등록된 데이터 리스트에서 작업 진행 가능">
+      <option name="closed" value="true" />
+      <created>1733134241991</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1733134241991</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

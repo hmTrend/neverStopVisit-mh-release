@@ -24,6 +24,7 @@ export class NShopping extends PuppeteerEngine {
           );
           console.log("excelData 334455");
           console.log(excelData);
+          var ExcelData = excelData;
           const { query, nvMid } = excelData;
           {
             this.query = query;
@@ -113,7 +114,7 @@ export class NShopping extends PuppeteerEngine {
           _id: this.targetCookieId,
           nState: "정상",
         });
-        await wait(3000);
+        await wait(20 * 1000); // 성공이후 마무리 딜레이 타임
         this.page = page;
         await this.page.context().close();
         await wait(3000);
@@ -124,7 +125,7 @@ export class NShopping extends PuppeteerEngine {
       if (browser) {
         await browser.close();
       }
-      await wait(10 * 1000);
+      await wait(30 * 1000);
     }
   }
 

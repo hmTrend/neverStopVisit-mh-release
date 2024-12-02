@@ -94,7 +94,7 @@ export class NPlace extends PuppeteerEngine {
           _id: this.targetCookieId,
           nState: "정상",
         });
-        await wait(3000);
+        await wait(EcelData.delayTime * 1000);
         this.page = page;
         await this.page.context().close();
         await wait(3000);
@@ -105,7 +105,7 @@ export class NPlace extends PuppeteerEngine {
       if (browser) {
         await browser.close();
       }
-      await wait(10 * 1000);
+      await wait(30 * 1000);
     }
   }
 
