@@ -26,7 +26,7 @@ export const targetKeywordSearch = async ({
       await searchInput.click();
       await wait(1000);
       const queryInput = page.locator("#query");
-      await queryInput.fill("강남맛집 치스타리에 강남역점");
+      await queryInput.fill(targetKeyword);
       await wait(500);
     } else {
       console.log("검색 입력창을 찾을 수 없습니다.");

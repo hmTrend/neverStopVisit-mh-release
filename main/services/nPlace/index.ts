@@ -19,6 +19,7 @@ export class NPlace extends PuppeteerEngine {
           });
           console.log("excelData 334455");
           console.log(excelData);
+          var EcelData = excelData;
           const { targetKeyword, targetBlog, placeNumber } = excelData;
           {
             this.query = targetKeyword;
@@ -69,25 +70,24 @@ export class NPlace extends PuppeteerEngine {
       {
         const { page } = await targetKeywordSearch({
           page: this.page,
-          targetKeyword: "수분크림",
+          targetKeyword: EcelData.targetKeyword,
         });
         this.page = page;
       }
       {
         const { page } = await findTargetBlog({
           page: this.page,
-          targetBlog: "강남역 신논현역 파스타 치킨 맛집 “치스타리에 강남역점”",
+          targetBlog: EcelData.targetBlog,
         });
         this.page = page;
       }
       {
         const { page } = await findTargetPlaceInTargetBlog({
           page: this.page,
-          targetPlace: "1443081237",
+          targetPlace: EcelData.placeNumber,
         });
         this.page = page;
       }
-      await wait(1000 * 1000);
       {
         const { page } = await cookieNstateSave({
           page: this.page,
