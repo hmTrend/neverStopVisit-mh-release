@@ -4,7 +4,7 @@ import wait from "waait";
 
 export const findTargetBlog = async ({
   page = undefined,
-  targetBlog = "https://m.blog.naver.com/summr1213/223632753687",
+  targetBlog = "https://m.blog.naver.com/me_ong_/223540312584",
   isTest = false,
 }: {
   page?: Page;
@@ -15,20 +15,17 @@ export const findTargetBlog = async ({
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({
-        url: "https://m.search.naver.com/search.naver?sm=tab_hty.top&where=m&ssc=tab.m.all&query=%EC%B9%98%EC%8A%A4%ED%83%80%EB%A6%AC%EC%97%90+%EA%B0%95%EB%82%A8%EC%97%AD%EC%A0%90&oquery=%EA%B8%B0%EC%9E%A5%EA%B5%90%ED%86%B5%EC%82%AC%EA%B3%A0%ED%95%9C%EC%9D%98%EC%9B%90&tqi=i02IAsqo1SCsscDsTyNssssstw8-478383",
+        url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EA%B0%95%EB%82%A8%EB%A7%9B%EC%A7%91+%EC%B9%98%EC%8A%A4%ED%83%80%EB%A6%AC%EC%97%90&tqi=i03c%2FdprfAlssDuT3clssssstiG-455837&query=%EA%B0%95%EB%82%A8%EC%97%AD%EB%A7%9B%EC%A7%91+%EC%B9%98%EC%8A%A4%ED%83%80%EB%A6%AC%EC%97%90",
         cookie: "",
       });
       page = test.page;
     }
 
     try {
-      await page.evaluate((url) => {
-        const links = Array.from(document.querySelectorAll("a"));
-        const targetLink = links.find((link) => link.href.includes(url));
-        if (targetLink) targetLink.click();
-        else throw new Error("링크를 찾을 수 없습니다");
-      }, targetBlog);
-      await page.waitForLoadState("networkidle");
+      await wait(1000);
+      const link = page.locator(`[href="${targetBlog}"]`).first();
+      await link.waitFor({ state: "visible", timeout: 5000 });
+      await Promise.all([link.click(), page.waitForLoadState("networkidle")]);
     } catch (error) {
       throw new Error(
         `findTargetBlog > "${targetBlog}" 링크를 찾을 수 없습니다.`,
@@ -42,4 +39,4 @@ export const findTargetBlog = async ({
   return { page };
 };
 
-findTargetBlog();
+// findTargetBlog();

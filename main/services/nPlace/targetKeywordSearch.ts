@@ -36,7 +36,10 @@ export const targetKeywordSearch = async ({
     try {
       // 검색 버튼이 나타날 때까지 대기하고 클릭
       await searchButton.waitFor({ state: "visible" });
-      await searchButton.click();
+      await Promise.all([
+        searchButton.click(),
+        page.waitForLoadState("networkidle"),
+      ]);
     } catch (error) {
       console.log("검색 버튼을 찾을 수 없습니다:", error);
       throw Error("ERR > targetKeywordSearch > 검색 버튼을 찾을 수 없습니다");
