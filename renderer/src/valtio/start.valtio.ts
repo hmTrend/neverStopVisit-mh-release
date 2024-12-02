@@ -62,6 +62,11 @@ export const storeStart = proxy(new StartValtio());
 
 if (typeof window !== "undefined") {
   subscribe(storeStart, () => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(storeStart));
+    const dataToSave = {
+      ...storeStart,
+      common: { ...storeStart.common, isStart: false },
+    };
+
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(dataToSave));
   });
 }

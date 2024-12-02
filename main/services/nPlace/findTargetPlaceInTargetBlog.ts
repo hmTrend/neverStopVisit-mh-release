@@ -48,4 +48,4 @@ export const findTargetPlaceInTargetBlog = async ({
   return { page };
 };
 
-findTargetPlaceInTargetBlog();
+// findTargetPlaceInTargetBlog();
