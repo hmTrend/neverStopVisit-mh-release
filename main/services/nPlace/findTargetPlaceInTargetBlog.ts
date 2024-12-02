@@ -33,11 +33,15 @@ export const findTargetPlaceInTargetBlog = async ({
           await mapLink.click();
         } else {
           console.log("placeId가 일치하지 않습니다.");
+          throw new Error(
+            "findTargetPlaceInTargetBlog > 지도 정보를 찾을 수 없거나 클릭할 수 없습니다: ",
+          );
         }
       }
     } catch (error) {
       throw new Error(
-        "지도 정보를 찾을 수 없거나 클릭할 수 없습니다: " + error.message,
+        "findTargetPlaceInTargetBlog > 지도 정보를 찾을 수 없거나 클릭할 수 없습니다: " +
+          error.message,
       );
     }
   } catch (e) {

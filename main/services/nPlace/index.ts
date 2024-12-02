@@ -7,6 +7,7 @@ import { loggedInCheck } from "../commons/naver/loggedInCheck";
 import { googleToNaver } from "./googleToNaver";
 import { targetKeywordSearch } from "./targetKeywordSearch";
 import { findTargetBlog } from "./findTargetBlog";
+import { findTargetPlaceInTargetBlog } from "./findTargetPlaceInTargetBlog";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace }): Promise<void> {
@@ -62,6 +63,9 @@ export class NPlace extends PuppeteerEngine {
         const { page } = await googleToNaver({ page: this.page });
         this.page = page;
       }
+      // {
+      //   await loggedInCheck({ page: this.page, _id: this.targetCookieId });
+      // }
       {
         const { page } = await targetKeywordSearch({
           page: this.page,
@@ -76,10 +80,14 @@ export class NPlace extends PuppeteerEngine {
         });
         this.page = page;
       }
-      await wait(1000 * 1000);
       {
-        await loggedInCheck({ page: this.page, _id: this.targetCookieId });
+        const { page } = await findTargetPlaceInTargetBlog({
+          page: this.page,
+          targetPlace: "1443081237",
+        });
+        this.page = page;
       }
+      await wait(1000 * 1000);
       {
         const { page } = await cookieNstateSave({
           page: this.page,

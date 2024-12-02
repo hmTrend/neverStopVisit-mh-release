@@ -30,7 +30,9 @@ export const findTargetBlog = async ({
         await link.click(),
       ]);
     } catch (error) {
-      throw new Error(`"${targetBlog}" 링크를 찾을 수 없습니다.`);
+      throw new Error(
+        `findTargetBlog > "${targetBlog}" 링크를 찾을 수 없습니다.`,
+      );
     }
   } catch (e) {
     console.error(e.message);
