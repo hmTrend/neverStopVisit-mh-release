@@ -8,6 +8,7 @@ import { googleToNaver } from "./googleToNaver";
 import { targetKeywordSearch } from "./targetKeywordSearch";
 import { findTargetBlog } from "./findTargetBlog";
 import { findTargetPlaceInTargetBlog } from "./findTargetPlaceInTargetBlog";
+import { clickNearbyAttractions } from "./clickNearbyAttractions";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace }): Promise<void> {
@@ -88,13 +89,17 @@ export class NPlace extends PuppeteerEngine {
         });
         this.page = page;
       }
+      await wait(EcelData.delayTime * 1000);
+      {
+        const { page } = clickNearbyAttractions({ page: this.page });
+        this.page = page;
+      }
       {
         const { page } = await cookieNstateSave({
           page: this.page,
           _id: this.targetCookieId,
           nState: "정상",
         });
-        await wait(EcelData.delayTime * 1000);
         this.page = page;
         await this.page.context().close();
         await wait(3000);

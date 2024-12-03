@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="findTargetBlog &gt; url로 찾아서 클릭하기">
+      <change afterPath="$PROJECT_DIR$/main/services/nPlace/clickNearbyAttractions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_25_24,_9_20 PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_25_24__9_20PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/targetKeywordSearch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/targetKeywordSearch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -72,6 +75,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TypeScript.clickNearbyAttractions.tsx.executor": "Run",
     "TypeScript.findTargetBlog.ts.executor": "Run",
     "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
     "TypeScript.index.ts (1).executor": "Run",
@@ -120,11 +124,25 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/register/nShopping" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.findTargetBlog.ts">
-    <configuration name="findTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+  <component name="RunManager" selected="TypeScript.clickNearbyAttractions.tsx">
+    <configuration name="clickNearbyAttractions.tsx" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
       <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/clickNearbyAttractions.tsx" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
+    <configuration name="findTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
@@ -132,13 +150,12 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="findTargetPlaceInTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
@@ -146,13 +163,12 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetPlaceInTargetBlog.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="mobile.userAgent.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/lib/userAgent" />
@@ -160,26 +176,12 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/lib/userAgent/mobile.userAgent.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <method v="2" />
-    </configuration>
-    <configuration name="network.router.edu.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/network" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/network/network.router.edu.ts" />
-      <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
     <configuration name="targetKeywordSearch.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
@@ -187,16 +189,15 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/targetKeywordSearch.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.clickNearbyAttractions.tsx" />
         <item itemvalue="TypeScript.findTargetBlog.ts" />
         <item itemvalue="TypeScript.findTargetPlaceInTargetBlog.ts" />
         <item itemvalue="TypeScript.targetKeywordSearch.ts" />
         <item itemvalue="TypeScript.mobile.userAgent.ts" />
-        <item itemvalue="TypeScript.network.router.edu.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -223,15 +224,8 @@
       <workItem from="1732537211686" duration="13649000" />
       <workItem from="1732771660426" duration="14479000" />
       <workItem from="1732805323211" duration="22234000" />
-      <workItem from="1732927595546" duration="42464000" />
-    </task>
-    <task id="LOCAL-00097" summary="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ 엑셀 추가등록 성공">
-      <option name="closed" value="true" />
-      <created>1732066730450</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1732066730450</updated>
+      <workItem from="1732927595546" duration="42730000" />
+      <workItem from="1733183247794" duration="2986000" />
     </task>
     <task id="LOCAL-00098" summary="NSV-26 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ back 엑셀 추가등록 성공&#10;+ front 그룹지문 엑셀다운받기">
       <option name="closed" value="true" />
@@ -617,7 +611,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733149953681</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="findTargetBlog &gt; url로 찾아서 클릭하기">
+      <option name="closed" value="true" />
+      <created>1733183025429</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1733183025429</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

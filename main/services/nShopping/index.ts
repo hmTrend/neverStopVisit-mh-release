@@ -70,7 +70,7 @@ export class NShopping extends PuppeteerEngine {
         });
         this.page = page;
       }
-      await loggedInCheck({ page: this.page, _id: this.targetCookieId });
+      // await loggedInCheck({ page: this.page, _id: this.targetCookieId });
       {
         const { page } = await goToShopping({
           page: this.page,
@@ -113,7 +113,6 @@ export class NShopping extends PuppeteerEngine {
           _id: this.targetCookieId,
           nState: "정상",
         });
-        await wait(20 * 1000); // 성공이후 마무리 딜레이 타임
         this.page = page;
         await this.page.context().close();
         await wait(3000);
@@ -124,7 +123,7 @@ export class NShopping extends PuppeteerEngine {
       if (browser) {
         await browser.close();
       }
-      await wait(30 * 1000);
+      await wait(20 * 1000);
     }
   }
 
