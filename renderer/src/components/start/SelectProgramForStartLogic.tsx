@@ -8,8 +8,10 @@ import { Flex } from "@chakra-ui/react";
 import { storeNPlace } from "@/valtio/nPlace.register.valtio";
 
 export const SelectProgramForStartLogic = () => {
-  const { groupList: nShoppingGroupList } = useSnapshot(storeNShopping);
-  const { groupList: nPlaceGroupList } = useSnapshot(storeNPlace);
+  const { groupList: nShoppingGroupList, logicType: nShoppingLogicType } =
+    useSnapshot(storeNShopping);
+  const { groupList: nPlaceGroupList, logicType: nPlaceLogicType } =
+    useSnapshot(storeNPlace);
 
   const handleSelectChangeNShopping = (e) => {
     const selectedId = e.target.value;
@@ -55,11 +57,13 @@ export const SelectProgramForStartLogic = () => {
         groupList={nShoppingGroupList}
         handleSelectChange={handleSelectChangeNShopping}
         selectProgram={"nShopping"}
+        logicType={nPlaceLogicType}
       />
       <SelectProgramForStart
         groupList={nPlaceGroupList}
         handleSelectChange={handleSelectChangeNPlace}
         selectProgram={"nPlace"}
+        logicType={nShoppingLogicType}
       />
     </Flex>
   );

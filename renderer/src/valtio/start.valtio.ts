@@ -11,12 +11,14 @@ const getInitialData = () => {
       selectedGroup: { groupName: "", groupId: "" },
       fingerPrint: { groupName: "", groupId: "" },
       concurrentBrowserCount: 1,
+      logicType: "NAVER",
     },
     nPlace: {
       isStart: false,
       selectedGroup: { groupName: "", groupId: "" },
       fingerPrint: { groupName: "", groupId: "" },
       concurrentBrowserCount: 1,
+      logicType: "NAVER",
     },
   };
 
@@ -40,12 +42,14 @@ class StartValtio {
     selectedGroup: { groupName: string; groupId: string };
     fingerPrint: { groupName: string; groupId: string };
     concurrentBrowserCount: number;
+    logicType: "NAVER" | "GOOGLE";
   };
   nPlace: {
     isStart: boolean;
     selectedGroup: { groupName: string; groupId: string };
     fingerPrint: { groupName: string; groupId: string };
     concurrentBrowserCount: number;
+    logicType: "NAVER" | "GOOGLE";
   };
 
   constructor() {
@@ -66,7 +70,6 @@ if (typeof window !== "undefined") {
       ...storeStart,
       common: { ...storeStart.common, isStart: false },
     };
-
     localStorage.setItem(STORAGE_KEY, JSON.stringify(dataToSave));
   });
 }

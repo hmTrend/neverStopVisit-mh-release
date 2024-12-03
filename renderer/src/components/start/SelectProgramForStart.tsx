@@ -1,5 +1,13 @@
-import { Box, Flex, Select, Text } from "@chakra-ui/react";
-import { Fragment } from "react";
+import {
+  Box,
+  Flex,
+  Select,
+  Text,
+  Radio,
+  RadioGroup,
+  Stack,
+} from "@chakra-ui/react";
+import { Fragment, useState } from "react";
 import { FingerPrintSelect } from "@/components/start/FingerPrintSelect";
 import { StartStateSwitch } from "@/components/start/StartStateSwitch";
 import { ConcurrentBrowserCount } from "@/components/start/ConcurrentBrowserCount";
@@ -10,6 +18,7 @@ export const SelectProgramForStart = ({
   selectProgram,
   handleSelectChange,
   groupList,
+  logicType,
 }) => {
   return (
     <Flex direction={"column"} gap={3}>
@@ -25,6 +34,7 @@ export const SelectProgramForStart = ({
           {/*<ConcurrentOneLineWork />*/}
           <ConcurrentBrowserCount selectProgram={selectProgram} />
         </Flex>
+        <LogicType logicType={logicType} selectProgram={selectProgram} />
       </Fragment>
     </Flex>
   );
@@ -50,5 +60,29 @@ function TargetSelect({ selectProgram, handleSelectChange, groupList }) {
         </Select>
       </Box>
     </Flex>
+  );
+}
+
+function LogicType({ logicType, selectProgram }) {
+  const snap = useSnapshot(storeStart);
+
+  const handleChange = (value) => {
+    storeStart[selectProgram].logicType = value;
+  };
+  return (
+    <RadioGroup
+      onChange={handleChange}
+      defaultValue={snap[selectProgram].logicType}
+    >
+      <Stack direction="row" gap={6}>
+        {logicType.map((v, i) => (
+          <Fragment key={i}>
+            <Radio value={v}>
+              로직{i + 1}({v})
+            </Radio>
+          </Fragment>
+        ))}
+      </Stack>
+    </RadioGroup>
   );
 }
