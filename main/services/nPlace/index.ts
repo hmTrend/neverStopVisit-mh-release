@@ -4,11 +4,11 @@ import { GetFingerPrintTargetExcelOne } from "../../lib/apollo/finger-print.apol
 import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
 import { GetNPlaceExcelAlignFlatTargetOne } from "../../lib/apollo/n-place-apollo";
 import { loggedInCheck } from "../commons/naver/loggedInCheck";
-import { googleToNaver } from "./googleToNaver";
 import { targetKeywordSearch } from "./targetKeywordSearch";
 import { findTargetBlog } from "./findTargetBlog";
 import { findTargetPlaceInTargetBlog } from "./findTargetPlaceInTargetBlog";
 import { clickNearbyAttractions } from "./clickNearbyAttractions";
+import { googleToNaver } from "../commons/naver/googleToNaver";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace }): Promise<void> {
@@ -58,12 +58,17 @@ export class NPlace extends PuppeteerEngine {
         }
       }
       await super.initialize({
-        url: "https://www.google.com/",
+        url:
+          nPlace.logicType === "NAVER"
+            ? "https://www.naver.com/"
+            : "https://www.google.com/",
         cookie: this.targetCookie,
       });
       {
-        const { page } = await googleToNaver({ page: this.page });
-        this.page = page;
+        if (nPlace.logicType === "GOOGLE") {
+          const { page } = await googleToNaver({ page: this.page });
+          this.page = page;
+        }
       }
       // {
       //   await loggedInCheck({ page: this.page, _id: this.targetCookieId });

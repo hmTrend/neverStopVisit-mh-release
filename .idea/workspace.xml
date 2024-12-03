@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="clickNearbyAttractions : 주변 &gt; 명소 클릭">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="LogicType : localStorage 저장가능">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/nPlace.register.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/nPlace.register.valtio.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/nShopping.register.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/nShopping.register.valtio.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/googleToNaver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/googleToNaver.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,11 +115,11 @@
       <recent name="$PROJECT_DIR$/renderer/src/lib/graphql" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/services/commons/naver" />
       <recent name="$PROJECT_DIR$/main/lib/network" />
       <recent name="$PROJECT_DIR$/assets/icons/win" />
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
-      <recent name="$PROJECT_DIR$/renderer/src/components/register/nShopping" />
     </key>
   </component>
   <component name="RunManager" selected="TypeScript.clickNearbyAttractions.tsx">
@@ -225,15 +223,7 @@
       <workItem from="1732771660426" duration="14479000" />
       <workItem from="1732805323211" duration="22234000" />
       <workItem from="1732927595546" duration="42730000" />
-      <workItem from="1733183247794" duration="8175000" />
-    </task>
-    <task id="LOCAL-00099" summary="NSV-27 엑셀 등록방식 2가지 &gt; 신규등록, 추가등록&#10;+ back 엑셀 추가등록 성공&#10;+ front 그룹지문 엑셀다운받기&#10;+ 정상지문 엑셀다운받기">
-      <option name="closed" value="true" />
-      <created>1732068757386</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1732068757386</updated>
+      <workItem from="1733183247794" duration="10054000" />
     </task>
     <task id="LOCAL-00100" summary="NSV-29 유효기간 추가하기">
       <option name="closed" value="true" />
@@ -619,7 +609,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733187152280</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="LogicType : localStorage 저장가능">
+      <option name="closed" value="true" />
+      <created>1733198197608</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1733198197609</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,7 +648,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="nPlace 시작 UI 만드는중.." />
     <MESSAGE value="NSV-46 타겟 그룹 삭제하기&#10;+ 최종반영됨" />
     <MESSAGE value="NSV-46 타겟 그룹 삭제하기" />
     <MESSAGE value="NSV-46 타겟 그룹 삭제하기 + 최종반영" />
@@ -675,7 +672,8 @@
     <MESSAGE value="플레이스 동작 완성" />
     <MESSAGE value="findTargetBlog &gt; url로 찾아서 클릭하기" />
     <MESSAGE value="clickNearbyAttractions : 주변 &gt; 명소 클릭" />
-    <option name="LAST_COMMIT_MESSAGE" value="clickNearbyAttractions : 주변 &gt; 명소 클릭" />
+    <MESSAGE value="LogicType : localStorage 저장가능" />
+    <option name="LAST_COMMIT_MESSAGE" value="LogicType : localStorage 저장가능" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

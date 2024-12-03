@@ -11,6 +11,7 @@ import { searchNVMID } from "./searchNVMID";
 import { expandProductDetails } from "./expandProductDetails";
 import { makeAPurchase } from "./makeAPurchase";
 import { isPopup } from "./isPopup";
+import { googleToNaver } from "../commons/naver/googleToNaver";
 
 export class NShopping extends PuppeteerEngine {
   async start({ nShopping }): Promise<void> {
@@ -59,11 +60,21 @@ export class NShopping extends PuppeteerEngine {
           }
         }
       }
+      console.log("nShopping gogogo >>>");
+      console.log(nShopping);
       await super.initialize({
-        url: "https://m.naver.com/",
-        // url: "https://google.com/",
+        url:
+          nShopping.logicType === "NAVER"
+            ? "https://www.naver.com/"
+            : "https://www.google.com/",
         cookie: this.targetCookie,
       });
+      {
+        if (nShopping.logicType === "GOOGLE") {
+          const { page } = await googleToNaver({ page: this.page });
+          this.page = page;
+        }
+      }
       {
         const { page } = await isPopup({
           page: this.page,
