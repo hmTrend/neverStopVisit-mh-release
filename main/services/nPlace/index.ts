@@ -96,7 +96,7 @@ export class NPlace extends PuppeteerEngine {
       }
       await wait(EcelData.delayTime * 1000);
       {
-        const { page } = clickNearbyAttractions({ page: this.page });
+        const { page } = await clickNearbyAttractions({ page: this.page });
         this.page = page;
       }
       {
@@ -106,6 +106,7 @@ export class NPlace extends PuppeteerEngine {
           nState: "정상",
         });
         this.page = page;
+        await wait(2000);
         await this.page.context().close();
         await wait(3000);
       }

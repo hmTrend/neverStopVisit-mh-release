@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="쇼핑 &amp; 플레이스 &gt; 네이버로직 &amp; 구글로직 셋팅완료">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="로그인 체크 기능 삽입">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/clickNearbyAttractions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/clickNearbyAttractions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlaceInTargetBlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlaceInTargetBlog.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,15 +223,7 @@
       <workItem from="1732805323211" duration="22234000" />
       <workItem from="1732927595546" duration="42730000" />
       <workItem from="1733183247794" duration="14655000" />
-      <workItem from="1733382539189" duration="1191000" />
-    </task>
-    <task id="LOCAL-00101" summary="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬">
-      <option name="closed" value="true" />
-      <created>1732080138238</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1732080138238</updated>
+      <workItem from="1733382539189" duration="5546000" />
     </task>
     <task id="LOCAL-00102" summary="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬&#10;+ back 네트워크 타입 추가">
       <option name="closed" value="true" />
@@ -617,7 +609,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733222416822</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="로그인 체크 기능 삽입">
+      <option name="closed" value="true" />
+      <created>1733387182219</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1733387182219</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,7 +648,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-46 타겟 그룹 삭제하기" />
     <MESSAGE value="NSV-46 타겟 그룹 삭제하기 + 최종반영" />
     <MESSAGE value="NSV-49 작업 타겟 리스트 1개 가져오기" />
     <MESSAGE value="userAgent와 시큐리티헤더 설정" />
@@ -673,7 +672,8 @@
     <MESSAGE value="clickNearbyAttractions : 주변 &gt; 명소 클릭" />
     <MESSAGE value="LogicType : localStorage 저장가능" />
     <MESSAGE value="쇼핑 &amp; 플레이스 &gt; 네이버로직 &amp; 구글로직 셋팅완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="쇼핑 &amp; 플레이스 &gt; 네이버로직 &amp; 구글로직 셋팅완료" />
+    <MESSAGE value="로그인 체크 기능 삽입" />
+    <option name="LAST_COMMIT_MESSAGE" value="로그인 체크 기능 삽입" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,7 +4,7 @@ import wait from "waait";
 
 export async function clickNearbyAttractions({
   page,
-  isTest = true,
+  isTest = false,
 }: {
   page?: Page;
   isTest?: boolean;
@@ -29,11 +29,11 @@ export async function clickNearbyAttractions({
       await button.waitFor({ state: "visible", timeout: 5000 });
       await Promise.all([button.click(), page.waitForLoadState("networkidle")]);
     }
+    return { page };
   } catch (e) {
     console.error(e.message);
     throw Error("ERR > clickNearbyAttractions");
   }
-  return { page };
 }
 
 // clickNearbyAttractions();

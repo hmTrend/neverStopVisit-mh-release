@@ -23,14 +23,22 @@ export const findTargetPlaceInTargetBlog = async ({
     const mapLink = page.locator("a.se-map-info");
 
     try {
-      // data-linkdata 속성에서 placeId 값 추출
       const linkData = await mapLink.getAttribute("data-linkdata");
       if (linkData) {
         const placeInfo = JSON.parse(linkData);
-
-        // placeId가 1443081237와 일치하는지 확인
         if (placeInfo.placeId === targetPlace) {
+          // pagePromise를 먼저 생성
+          const pagePromise = page.context().waitForEvent("page");
+          // 클릭 수행
           await mapLink.click();
+          // 새 페이지 가져오기
+          const newPage = await pagePromise;
+
+          // 새 탭이 로드될 때까지 기다림
+          await newPage.waitForLoadState("load");
+
+          // 새 탭으로 page 변수를 업데이트
+          page = newPage;
         } else {
           console.log("placeId가 일치하지 않습니다.");
           throw new Error(
