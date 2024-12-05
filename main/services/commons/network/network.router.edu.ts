@@ -55,7 +55,7 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
       // 또는: page.locator('//div[contains(@class, "status-area")]//img'),
 
       // 적용 버튼
-      applyButton: page.locator('span[data-trans="apply"]'),
+      applyButton: page.locator('span:has-text("적용")').first(),
       // 또는: page.locator('//label//span//span[contains(text(), "적용")]'),
 
       // 로그인 버튼
@@ -66,45 +66,32 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
       mainDataLink: page.locator("div.main-content a"),
       // 또는: page.locator('//div[contains(@class, "main-content")]//a'),
     };
-    console.log(33);
     await page.goto("http://192.168.8.1/index.html#band", {
       waitUntil: "domcontentloaded",
       timeout: 30000,
     });
-    console.log(22);
     // 비밀번호 입력 또는 IP 변경 버튼 대기
     const [passwordVisible, ipChangeVisible] = await Promise.all([
       locators.passwordInput.isVisible().catch(() => false),
       locators.ipChangeButton.isVisible().catch(() => false),
     ]);
-    console.log("passwordVisible 5555");
-    console.log(passwordVisible);
-    console.log(11);
     if (passwordVisible) {
       // 비밀번호 입력
-      console.log(1);
       await locators.passwordInput.fill("12345678");
-      console.log(4);
-      // 또는 다른 입력 방법들:
-      // await locators.passwordInput.fill("12345678");
-      // await page.evaluate(pass => document.querySelector('input[type="password"]').value = pass, "12345678");
-      // 로그인 버튼 클릭
-      await locators.loginButton.click();
-      console.log(5);
-      await page.waitForLoadState("networkidle");
+      await Promise.all([
+        locators.loginButton.click(),
+        page.waitForLoadState("networkidle"),
+      ]);
       // 페이지 새로고침
       await page.goto("http://192.168.8.1/index.html#band", {
         waitUntil: "networkidle",
       });
     }
-
     // 적용 버튼 대기 및 클릭
     await locators.applyButton.waitFor({ state: "visible" });
     await locators.applyButton.click();
-    await wait(3000);
     // 메인 페이지로 이동
     await page.goto("http://192.168.8.1/index.html#home");
-    await wait(2000);
     await page.waitForSelector("span#wifi_status img", {
       state: "visible",
       timeout: 30000,
@@ -112,7 +99,7 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
     // 리소스 정리
     await context.close();
     await browser.close();
-    await wait(5000);
+    await wait(2000);
 
     return { message: "Edu Router Connect SUCCESS" };
   } catch (e) {
