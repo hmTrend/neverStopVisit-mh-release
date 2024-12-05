@@ -10,8 +10,9 @@ import {
 import { forwardRef } from "react";
 
 interface CreateGroupProps {
-  fn: () => void; // 그룹 생성 함수
-  loading?: boolean; // 로딩 상태
+  fn: () => void; // 클릭 이벤트 함수
+  loading: boolean; // 로딩 상태
+  title: string; // 그룹 제목 - 이 부분이 누락되어 있었습니다
 }
 
 export const CreateGroup = forwardRef<HTMLInputElement, CreateGroupProps>(

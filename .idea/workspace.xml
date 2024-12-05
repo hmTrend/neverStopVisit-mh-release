@@ -230,22 +230,7 @@
       <workItem from="1733183247794" duration="14655000" />
       <workItem from="1733382539189" duration="5546000" />
       <workItem from="1733391703649" duration="3108000" />
-    </task>
-    <task id="LOCAL-00103" summary="NSV-30 네트워크 연결 &gt; 테더링 / 라우터 / 로컬&#10;+ back 네트워크 타입 추가">
-      <option name="closed" value="true" />
-      <created>1732081095213</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1732081095213</updated>
-    </task>
-    <task id="LOCAL-00104" summary="NSV-31 userAgent 모바일용 1만개 추가">
-      <option name="closed" value="true" />
-      <created>1732081291857</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1732081291857</updated>
+      <workItem from="1733394858012" duration="406000" />
     </task>
     <task id="LOCAL-00105" summary="국산 라우터 설정 완료">
       <option name="closed" value="true" />
@@ -623,7 +608,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733394727802</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="v1.4.0 yarn build">
+      <option name="closed" value="true" />
+      <created>1733395089305</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1733395089306</updated>
+    </task>
+    <task id="LOCAL-00153" summary="v1.4.1 + userId boolean &gt; string">
+      <option name="closed" value="true" />
+      <created>1733395250237</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1733395250237</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,8 +663,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-49 작업 타겟 리스트 1개 가져오기" />
-    <MESSAGE value="userAgent와 시큐리티헤더 설정" />
     <MESSAGE value="NSV-40 작업 시작하기 / 작동되게 하기" />
     <MESSAGE value="NSV-40 작동로직 블로그 방문용 만들기&#10;+ 시작시 구글 접속 가능" />
     <MESSAGE value="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가" />
@@ -687,7 +686,9 @@
     <MESSAGE value="쇼핑 &amp; 플레이스 &gt; 네이버로직 &amp; 구글로직 셋팅완료" />
     <MESSAGE value="로그인 체크 기능 삽입" />
     <MESSAGE value="라우터 기능 정상작동 픽스" />
-    <option name="LAST_COMMIT_MESSAGE" value="라우터 기능 정상작동 픽스" />
+    <MESSAGE value="v1.4.0 yarn build" />
+    <MESSAGE value="v1.4.1 + userId boolean &gt; string" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.4.1 + userId boolean &gt; string" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
