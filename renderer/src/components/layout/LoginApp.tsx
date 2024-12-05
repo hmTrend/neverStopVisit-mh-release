@@ -27,7 +27,7 @@ export const LoginApp = () => {
     if (email === "qwas10040@gmail.com" && password === "ccuba2320@") {
       localStorage.setItem("userEmail", email);
       localStorage.setItem("password", password);
-      storeAuth.userId = true;
+      storeAuth.userId = "67315a7130d6d4d2bb26e38a";
       toast({
         title: "로그인 성공",
         status: "success",
@@ -35,7 +35,7 @@ export const LoginApp = () => {
     } else {
       localStorage.setItem("userId", "");
       localStorage.setItem("userEmail", "");
-      storeAuth.userId = false;
+      storeAuth.userId = "";
       toast({
         title: "로그인 실패",
         status: "error",
