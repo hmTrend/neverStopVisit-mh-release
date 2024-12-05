@@ -60,8 +60,6 @@ export class NShopping extends PuppeteerEngine {
           }
         }
       }
-      console.log("nShopping gogogo >>>");
-      console.log(nShopping);
       await super.initialize({
         url:
           nShopping.logicType === "NAVER"
@@ -81,7 +79,7 @@ export class NShopping extends PuppeteerEngine {
         });
         this.page = page;
       }
-      // await loggedInCheck({ page: this.page, _id: this.targetCookieId });
+      await loggedInCheck({ page: this.page, _id: this.targetCookieId });
       {
         const { page } = await goToShopping({
           page: this.page,

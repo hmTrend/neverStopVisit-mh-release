@@ -70,9 +70,9 @@ export class NPlace extends PuppeteerEngine {
           this.page = page;
         }
       }
-      // {
-      //   await loggedInCheck({ page: this.page, _id: this.targetCookieId });
-      // }
+      {
+        await loggedInCheck({ page: this.page, _id: this.targetCookieId });
+      }
       {
         const { page } = await targetKeywordSearch({
           page: this.page,

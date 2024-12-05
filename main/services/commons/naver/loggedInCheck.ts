@@ -1,5 +1,6 @@
 import { Page } from "playwright";
 import { cookieNstateSave } from "../PuppeteerEngine/cookieNstateSave";
+import wait from "waait";
 
 export const loggedInCheck = async ({
   page,
@@ -9,6 +10,7 @@ export const loggedInCheck = async ({
   _id: string;
 }) => {
   try {
+    await wait(2000);
     const logoutButton = await page
       .locator("[data-fclk='fotcontlogout']")
       .isVisible();
