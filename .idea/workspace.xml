@@ -230,15 +230,7 @@
       <workItem from="1733183247794" duration="14655000" />
       <workItem from="1733382539189" duration="5546000" />
       <workItem from="1733391703649" duration="3108000" />
-      <workItem from="1733394858012" duration="406000" />
-    </task>
-    <task id="LOCAL-00105" summary="국산 라우터 설정 완료">
-      <option name="closed" value="true" />
-      <created>1732094935046</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1732094935046</updated>
+      <workItem from="1733394858012" duration="1111000" />
     </task>
     <task id="LOCAL-00106" summary="NSV-39 플레이스 등록 리스트 만들기 + 그룹 만들기">
       <option name="closed" value="true" />
@@ -624,7 +616,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733395250237</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="v1.4.2 + bug &gt; CreateGroup.tsx &gt; title">
+      <option name="closed" value="true" />
+      <created>1733395459678</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1733395459678</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +663,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-40 작업 시작하기 / 작동되게 하기" />
     <MESSAGE value="NSV-40 작동로직 블로그 방문용 만들기&#10;+ 시작시 구글 접속 가능" />
     <MESSAGE value="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가" />
     <MESSAGE value="userAgentWithRealMobile.ts &gt; 쇼핑 작업가능한 수준으로 변경완료" />
@@ -688,7 +687,8 @@
     <MESSAGE value="라우터 기능 정상작동 픽스" />
     <MESSAGE value="v1.4.0 yarn build" />
     <MESSAGE value="v1.4.1 + userId boolean &gt; string" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.4.1 + userId boolean &gt; string" />
+    <MESSAGE value="v1.4.2 + bug &gt; CreateGroup.tsx &gt; title" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.4.2 + bug &gt; CreateGroup.tsx &gt; title" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
