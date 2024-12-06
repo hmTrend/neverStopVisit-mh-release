@@ -1,9 +1,14 @@
 import { chromium } from "playwright";
 import wait from "waait";
+import { getChromePath } from "../PuppeteerEngine/getChromePath";
 
 export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
   const browser = await chromium.launch({
     headless: chromeHeadless === "Close",
+    executablePath: getChromePath({
+      pathStep: 0,
+      isChromiumMode: true,
+    }),
   });
 
   try {
