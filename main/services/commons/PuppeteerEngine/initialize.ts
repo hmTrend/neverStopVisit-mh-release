@@ -4,6 +4,7 @@ import { getNextProxy } from "../../../lib/proxy/getNextProxy";
 import { validateCookie } from "./validateCookie";
 import { getChromePath } from "./getChromePath";
 import { getNextCreateUserAgentWithAllUpMobileList } from "../../../lib/network/userAgentWithAllUpMobile";
+import { getNextCreateUserAgentWithRealMobileList } from "../../../lib/network/userAgentWithRealMobile";
 
 export const initialize = async ({
   url,
@@ -34,19 +35,9 @@ export const initialize = async ({
         args: ["--disable-blink-features=AutomationControlled"],
         // proxy: { server: proxySettings },
       });
-      const context = await browser.newContext({
-        userAgent:
-          "Mozilla/5.0 (Linux; U; Android 11; ru-ru; Mi 9T Pro Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.10.1-gn",
-        extraHTTPHeaders: {
-          "sec-ch-ua": '"Chromium";v="112", "Google Chrome";v="112"',
-          "sec-ch-ua-platform": '"Android"',
-          "sec-ch-ua-mobile": "?1",
-        },
-        viewport: { width: 412, height: 915 },
-        isMobile: true,
-        hasTouch: true,
-        deviceScaleFactor: 2.625, // 모바일 디바이스의 스케일 팩터 추가
-      });
+
+      const { context } = await createMobileContext({ browser });
+
       if (cookie && cookie.length > 0) {
         if (validateCookie(cookie)) {
           const formattedCookies = formatCookiesForPlaywright(cookie);
@@ -71,3 +62,28 @@ export const initialize = async ({
 
   return { page, browser };
 };
+
+async function createMobileContext({ browser }: { browser: Browser }) {
+  const userAgent = getNextCreateUserAgentWithRealMobileList(); // 동적 user agent
+  const chromeVersion = extractChromeVersion(userAgent);
+
+  const context = await browser.newContext({
+    userAgent: userAgent,
+    extraHTTPHeaders: {
+      "sec-ch-ua": `"Not A(Brand";v="99", "Google Chrome";v="${chromeVersion}", "Chromium";v="${chromeVersion}"`,
+      "sec-ch-ua-platform": '"Android"',
+      "sec-ch-ua-mobile": "?1",
+    },
+    viewport: { width: 412, height: 915 },
+    isMobile: true,
+    hasTouch: true,
+    deviceScaleFactor: 2.625,
+  });
+
+  return { context };
+}
+
+function extractChromeVersion(userAgent: string): string {
+  const match = userAgent.match(/Chrome\/(\d+)/);
+  return match ? match[1] : "112";
+}

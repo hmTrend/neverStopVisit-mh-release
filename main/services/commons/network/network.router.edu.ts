@@ -72,7 +72,7 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
       // 또는: page.locator('//div[contains(@class, "main-content")]//a'),
     };
     await page.goto("http://192.168.8.1/index.html#band", {
-      waitUntil: "domcontentloaded",
+      waitUntil: "networkidle",
       timeout: 30000,
     });
     // 비밀번호 입력 또는 IP 변경 버튼 대기
