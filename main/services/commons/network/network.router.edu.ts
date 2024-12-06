@@ -73,7 +73,7 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
     };
     await page.goto("http://192.168.8.1/index.html#band", {
       waitUntil: "networkidle",
-      timeout: 30000,
+      timeout: 120 * 1000,
     });
     // 비밀번호 입력 또는 IP 변경 버튼 대기
     const [passwordVisible, ipChangeVisible] = await Promise.all([
@@ -90,6 +90,7 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
       // 페이지 새로고침
       await page.goto("http://192.168.8.1/index.html#band", {
         waitUntil: "networkidle",
+        timeout: 120 * 1000,
       });
     }
     // 적용 버튼 대기 및 클릭
@@ -99,7 +100,7 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
     await page.goto("http://192.168.8.1/index.html#home");
     await page.waitForSelector("span#wifi_status img", {
       state: "visible",
-      timeout: 30000,
+      timeout: 90 * 1000,
     });
     // 리소스 정리
     await context.close();
