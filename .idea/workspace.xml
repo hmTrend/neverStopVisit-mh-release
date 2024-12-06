@@ -230,23 +230,7 @@
       <workItem from="1733183247794" duration="14655000" />
       <workItem from="1733382539189" duration="5546000" />
       <workItem from="1733391703649" duration="3108000" />
-      <workItem from="1733394858012" duration="27495000" />
-    </task>
-    <task id="LOCAL-00117" summary="nPlace 시작 UI 만드는중..">
-      <option name="closed" value="true" />
-      <created>1732841090599</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1732841090600</updated>
-    </task>
-    <task id="LOCAL-00118" summary="NSV-46 타겟 그룹 삭제하기">
-      <option name="closed" value="true" />
-      <created>1732841925106</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1732841925106</updated>
+      <workItem from="1733394858012" duration="28346000" />
     </task>
     <task id="LOCAL-00119" summary="NSV-46 타겟 그룹 삭제하기">
       <option name="closed" value="true" />
@@ -624,7 +608,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733467813461</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="v1.9.0 라우터 버전 미로그인시에도 작동가능">
+      <option name="closed" value="true" />
+      <created>1733471681712</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1733471681712</updated>
+    </task>
+    <task id="LOCAL-00167" summary="v1.9.0 라우터 버전 미로그인시에도 작동가능">
+      <option name="closed" value="true" />
+      <created>1733471701337</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1733471701337</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +663,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="valtio 전역변수 셋팅&#10;+ 새로고침시 반영" />
     <MESSAGE value="valtio 전역변수 셋팅&#10;+ 새로고침시 반영2" />
     <MESSAGE value="멀티 숫자 각 프로그램 연동" />
     <MESSAGE value="targetKeywordSearch" />
@@ -688,7 +687,8 @@
     <MESSAGE value="v1.6.1 라우터 대기시간 2분으로 늘림" />
     <MESSAGE value="v1.7.0 지문 리스트 쿠키 삭제 + 총갯수 가져오는 db카운터 추가" />
     <MESSAGE value="v1.8.0 라우터 실시간 통신흐름으로 인한 domcontentloaded" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.8.0 라우터 실시간 통신흐름으로 인한 domcontentloaded" />
+    <MESSAGE value="v1.9.0 라우터 버전 미로그인시에도 작동가능" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.9.0 라우터 버전 미로그인시에도 작동가능" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
