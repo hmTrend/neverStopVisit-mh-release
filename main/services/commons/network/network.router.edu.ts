@@ -4,7 +4,7 @@ import { getChromePath } from "../PuppeteerEngine/getChromePath";
 
 export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
   const browser = await chromium.launch({
-    headless: chromeHeadless === "Close",
+    headless: chromeHeadless === "Open",
     executablePath: getChromePath({
       pathStep: 0,
       isChromiumMode: true,
@@ -75,55 +75,35 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
       waitUntil: "domcontentloaded",
       timeout: 120 * 1000,
     });
+    await wait(3 * 1000);
+    const finalUrl = page.url();
+    console.log("finalUrl 333222");
+    console.log(finalUrl);
     // 비밀번호 입력 또는 IP 변경 버튼 대기
-    const [passwordVisible, ipChangeVisible] = await Promise.all([
-      locators.passwordInput.isVisible().catch(() => false),
-      locators.ipChangeButton.isVisible().catch(() => false),
-    ]);
-    if (passwordVisible) {
+    const isPassVisible = await page
+      .waitForSelector("#txtPwd", {
+        state: "visible", // visible 대신 state: 'visible' 사용
+        timeout: 3000,
+      })
+      .then(() => true)
+      .catch(() => false);
+    if (isPassVisible) {
       // 비밀번호 입력
       await locators.passwordInput.fill("12345678");
       await Promise.all([
         locators.loginButton.click(),
         page.waitForLoadState("domcontentloaded"),
       ]);
+      console.log(111);
       // 페이지 새로고침
       await page.goto("http://192.168.8.1/index.html#band", {
         waitUntil: "domcontentloaded",
         timeout: 120 * 1000,
       });
+      console.log(222);
     }
-    // 적용 버튼 대기 및 클릭
-    const clickPromise = Promise.race([
-      page
-        .click('span[data-trans="apply"]')
-        .catch((e) => console.log("데이터 속성 선택자 실패:", e)),
-      page
-        .click('span.button_center[data-trans="apply"]')
-        .catch((e) => console.log("클래스+데이터 속성 선택자 실패:", e)),
-      page
-        .click('span:has-text("적용")')
-        .catch((e) => console.log("텍스트 선택자 실패:", e)),
-      page
-        .click('.button_wrapper .button_center[data-trans="apply"]')
-        .catch((e) => console.log("중첩 클래스 선택자 실패:", e)),
-      page
-        .click(".button_center")
-        .catch((e) => console.log("단일 클래스 선택자 실패:", e)),
-      page
-        .click(".button_wrapper")
-        .catch((e) => console.log("래퍼 클래스 선택자 실패:", e)),
-    ]);
-
-    const timeoutPromise = new Promise((_, reject) => {
-      setTimeout(() => reject(new Error("클릭 시도 타임아웃")), 30 * 1000);
-    });
-    console.log(1);
-    await Promise.race([clickPromise, timeoutPromise]).catch((error) => {
-      console.error("클릭 작업 실패:", error);
-      throw error;
-    });
-    console.log(2);
+    await locators.applyButton.waitFor({ state: "visible" });
+    await locators.applyButton.click();
     // 메인 페이지로 이동
     await page.goto("http://192.168.8.1/index.html#home", {
       waitUntil: "domcontentloaded",
