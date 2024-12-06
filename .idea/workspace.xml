@@ -230,15 +230,7 @@
       <workItem from="1733183247794" duration="14655000" />
       <workItem from="1733382539189" duration="5546000" />
       <workItem from="1733391703649" duration="3108000" />
-      <workItem from="1733394858012" duration="18557000" />
-    </task>
-    <task id="LOCAL-00113" summary="플레이스 &gt; ExcelList">
-      <option name="closed" value="true" />
-      <created>1732793761175</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1732793761175</updated>
+      <workItem from="1733394858012" duration="23798000" />
     </task>
     <task id="LOCAL-00114" summary="콘솔 로그 삭제">
       <option name="closed" value="true" />
@@ -624,7 +616,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733447300506</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="v1.7.0 지문 리스트 쿠키 삭제 + 총갯수 가져오는 db카운터 추가">
+      <option name="closed" value="true" />
+      <created>1733461100580</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1733461100580</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +663,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="userAgentWithRealMobile.ts &gt; 쇼핑 작업가능한 수준으로 변경완료 2" />
     <MESSAGE value="googleToNaver.ts / 추가완료" />
     <MESSAGE value="valtio 전역변수 셋팅&#10;+ 새로고침시 반영" />
     <MESSAGE value="valtio 전역변수 셋팅&#10;+ 새로고침시 반영2" />
@@ -688,7 +687,8 @@
     <MESSAGE value="v1.5.0 라우터 가상에서 작동 가능 / 패스추가" />
     <MESSAGE value="v1.6.0 라우터 작동 확인" />
     <MESSAGE value="v1.6.1 라우터 대기시간 2분으로 늘림" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.6.1 라우터 대기시간 2분으로 늘림" />
+    <MESSAGE value="v1.7.0 지문 리스트 쿠키 삭제 + 총갯수 가져오는 db카운터 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.7.0 지문 리스트 쿠키 삭제 + 총갯수 가져오는 db카운터 추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

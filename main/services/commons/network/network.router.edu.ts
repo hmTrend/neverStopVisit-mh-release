@@ -72,7 +72,7 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
       // 또는: page.locator('//div[contains(@class, "main-content")]//a'),
     };
     await page.goto("http://192.168.8.1/index.html#band", {
-      waitUntil: "networkidle",
+      waitUntil: "domcontentloaded",
       timeout: 120 * 1000,
     });
     // 비밀번호 입력 또는 IP 변경 버튼 대기
@@ -85,27 +85,59 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
       await locators.passwordInput.fill("12345678");
       await Promise.all([
         locators.loginButton.click(),
-        page.waitForLoadState("networkidle"),
+        page.waitForLoadState("domcontentloaded"),
       ]);
       // 페이지 새로고침
       await page.goto("http://192.168.8.1/index.html#band", {
-        waitUntil: "networkidle",
+        waitUntil: "domcontentloaded",
         timeout: 120 * 1000,
       });
     }
     // 적용 버튼 대기 및 클릭
-    await locators.applyButton.waitFor({ state: "visible" });
-    await locators.applyButton.click();
+    const clickPromise = Promise.race([
+      page
+        .click('span[data-trans="apply"]')
+        .catch((e) => console.log("데이터 속성 선택자 실패:", e)),
+      page
+        .click('span.button_center[data-trans="apply"]')
+        .catch((e) => console.log("클래스+데이터 속성 선택자 실패:", e)),
+      page
+        .click('span:has-text("적용")')
+        .catch((e) => console.log("텍스트 선택자 실패:", e)),
+      page
+        .click('.button_wrapper .button_center[data-trans="apply"]')
+        .catch((e) => console.log("중첩 클래스 선택자 실패:", e)),
+      page
+        .click(".button_center")
+        .catch((e) => console.log("단일 클래스 선택자 실패:", e)),
+      page
+        .click(".button_wrapper")
+        .catch((e) => console.log("래퍼 클래스 선택자 실패:", e)),
+    ]);
+
+    const timeoutPromise = new Promise((_, reject) => {
+      setTimeout(() => reject(new Error("클릭 시도 타임아웃")), 30 * 1000);
+    });
+    console.log(1);
+    await Promise.race([clickPromise, timeoutPromise]).catch((error) => {
+      console.error("클릭 작업 실패:", error);
+      throw error;
+    });
+    console.log(2);
     // 메인 페이지로 이동
-    await page.goto("http://192.168.8.1/index.html#home");
+    await page.goto("http://192.168.8.1/index.html#home", {
+      waitUntil: "domcontentloaded",
+    });
+    console.log(3);
     await page.waitForSelector("span#wifi_status img", {
       state: "visible",
       timeout: 90 * 1000,
     });
+    console.log(4);
     // 리소스 정리
+    await wait(3000);
     await context.close();
     await browser.close();
-    await wait(2000);
 
     return { message: "Edu Router Connect SUCCESS" };
   } catch (e) {
