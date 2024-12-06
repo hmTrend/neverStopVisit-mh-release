@@ -230,15 +230,7 @@
       <workItem from="1733183247794" duration="14655000" />
       <workItem from="1733382539189" duration="5546000" />
       <workItem from="1733391703649" duration="3108000" />
-      <workItem from="1733394858012" duration="28346000" />
-    </task>
-    <task id="LOCAL-00119" summary="NSV-46 타겟 그룹 삭제하기">
-      <option name="closed" value="true" />
-      <created>1732842902455</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1732842902455</updated>
+      <workItem from="1733394858012" duration="28663000" />
     </task>
     <task id="LOCAL-00120" summary="NSV-46 타겟 그룹 삭제하기 + 최종반영">
       <option name="closed" value="true" />
@@ -624,7 +616,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733471701337</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="v1.9.1 라우터 버전 미로그인시에도 작동가능 close">
+      <option name="closed" value="true" />
+      <created>1733472532217</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1733472532217</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +663,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="valtio 전역변수 셋팅&#10;+ 새로고침시 반영2" />
     <MESSAGE value="멀티 숫자 각 프로그램 연동" />
     <MESSAGE value="targetKeywordSearch" />
     <MESSAGE value="findTargetBlog" />
@@ -688,7 +687,8 @@
     <MESSAGE value="v1.7.0 지문 리스트 쿠키 삭제 + 총갯수 가져오는 db카운터 추가" />
     <MESSAGE value="v1.8.0 라우터 실시간 통신흐름으로 인한 domcontentloaded" />
     <MESSAGE value="v1.9.0 라우터 버전 미로그인시에도 작동가능" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.9.0 라우터 버전 미로그인시에도 작동가능" />
+    <MESSAGE value="v1.9.1 라우터 버전 미로그인시에도 작동가능 close" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.9.1 라우터 버전 미로그인시에도 작동가능 close" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
