@@ -230,23 +230,7 @@
       <workItem from="1733183247794" duration="14655000" />
       <workItem from="1733382539189" duration="5546000" />
       <workItem from="1733391703649" duration="3108000" />
-      <workItem from="1733394858012" duration="34270000" />
-    </task>
-    <task id="LOCAL-00123" summary="NSV-40 작업 시작하기 / 작동되게 하기">
-      <option name="closed" value="true" />
-      <created>1732876723547</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1732876723547</updated>
-    </task>
-    <task id="LOCAL-00124" summary="NSV-40 작동로직 블로그 방문용 만들기&#10;+ 시작시 구글 접속 가능">
-      <option name="closed" value="true" />
-      <created>1732889966138</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1732889966138</updated>
+      <workItem from="1733394858012" duration="35843000" />
     </task>
     <task id="LOCAL-00125" summary="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가">
       <option name="closed" value="true" />
@@ -624,7 +608,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733479930454</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="v1.10.2 close">
+      <option name="closed" value="true" />
+      <created>1733480077987</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1733480077987</updated>
+    </task>
+    <task id="LOCAL-00173" summary="v1.10.2 close">
+      <option name="closed" value="true" />
+      <created>1733480086923</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1733480086923</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +663,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="findTargetPlaceInTargetBlog" />
     <MESSAGE value="userAgentWithRealMobile.ts &gt; Mobile 100% 추가" />
     <MESSAGE value="locaStorage에서 isStart 값만 제외 하고 저장하기" />
     <MESSAGE value="실제 시작시 플레이스 로직으로 1바퀴 돌기 성공" />
@@ -688,7 +687,8 @@
     <MESSAGE value="v1.9.2 라우터 버전 미로그인시에도 작동가능 close" />
     <MESSAGE value="v1.10.0 라우터 버그 박멸" />
     <MESSAGE value="v1.10.1 새페이지 오픈후 1.5초 대기후 진행" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.10.1 새페이지 오픈후 1.5초 대기후 진행" />
+    <MESSAGE value="v1.10.2 close" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.10.2 close" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

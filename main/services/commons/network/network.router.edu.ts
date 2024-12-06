@@ -101,6 +101,7 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
             state: "visible",
             timeout: 90 * 1000,
           });
+          await wait(3 * 1000);
           // 페이지 새로고침
           await page.goto("http://192.168.8.1/index.html#band", {
             waitUntil: "domcontentloaded",
