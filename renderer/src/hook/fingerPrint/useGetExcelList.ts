@@ -20,7 +20,10 @@ export const useGetExcelList = () => {
       });
       throw Error("ERR > getExcelList");
     }
-    return { data: data.getExcelList.data };
+    return {
+      data: data.getExcelList.data,
+      listTotalCount: data.getExcelList.listTotalCount,
+    };
   };
   return { getExcelList };
 };

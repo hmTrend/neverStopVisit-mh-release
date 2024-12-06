@@ -230,39 +230,7 @@
       <workItem from="1733183247794" duration="14655000" />
       <workItem from="1733382539189" duration="5546000" />
       <workItem from="1733391703649" duration="3108000" />
-      <workItem from="1733394858012" duration="8096000" />
-    </task>
-    <task id="LOCAL-00109" summary="NSV-44 엑셀 만들기&#10;+ 엑셀 생성시 리스트 만들어짐">
-      <option name="closed" value="true" />
-      <created>1732776792135</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1732776792136</updated>
-    </task>
-    <task id="LOCAL-00110" summary="NSV-44 엑셀 만들기&#10;+ createExcelList">
-      <option name="closed" value="true" />
-      <created>1732781687303</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1732781687303</updated>
-    </task>
-    <task id="LOCAL-00111" summary="콘솔로그 추가">
-      <option name="closed" value="true" />
-      <created>1732787559801</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1732787559801</updated>
-    </task>
-    <task id="LOCAL-00112" summary="CreateNPlaceExcelListAlignFlatMap">
-      <option name="closed" value="true" />
-      <created>1732792375278</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1732792375278</updated>
+      <workItem from="1733394858012" duration="18557000" />
     </task>
     <task id="LOCAL-00113" summary="플레이스 &gt; ExcelList">
       <option name="closed" value="true" />
@@ -624,7 +592,39 @@
       <option name="project" value="LOCAL" />
       <updated>1733446576738</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="v1.6.0 라우터 작동 확인">
+      <option name="closed" value="true" />
+      <created>1733446595441</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1733446595441</updated>
+    </task>
+    <task id="LOCAL-00159" summary="v1.6.0 라우터 작동 확인">
+      <option name="closed" value="true" />
+      <created>1733446615246</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1733446615246</updated>
+    </task>
+    <task id="LOCAL-00160" summary="v1.6.1 라우터 대기시간 2분으로 늘림">
+      <option name="closed" value="true" />
+      <created>1733447284281</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1733447284281</updated>
+    </task>
+    <task id="LOCAL-00161" summary="v1.6.1 라우터 대기시간 2분으로 늘림">
+      <option name="closed" value="true" />
+      <created>1733447300506</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1733447300506</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +663,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="userAgentWithRealMobile.ts &gt; 쇼핑 작업가능한 수준으로 변경완료" />
     <MESSAGE value="userAgentWithRealMobile.ts &gt; 쇼핑 작업가능한 수준으로 변경완료 2" />
     <MESSAGE value="googleToNaver.ts / 추가완료" />
     <MESSAGE value="valtio 전역변수 셋팅&#10;+ 새로고침시 반영" />
@@ -688,7 +687,8 @@
     <MESSAGE value="v1.4.2 + bug &gt; CreateGroup.tsx &gt; title" />
     <MESSAGE value="v1.5.0 라우터 가상에서 작동 가능 / 패스추가" />
     <MESSAGE value="v1.6.0 라우터 작동 확인" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.6.0 라우터 작동 확인" />
+    <MESSAGE value="v1.6.1 라우터 대기시간 2분으로 늘림" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.6.1 라우터 대기시간 2분으로 늘림" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

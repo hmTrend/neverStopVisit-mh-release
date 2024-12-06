@@ -75,10 +75,10 @@ export const gqlGetExcelList = gql`
         nState
         createdAt
         ip
-        cookie
         phoneNumber
         updatedAt
       }
+      listTotalCount
       message
       error
     }

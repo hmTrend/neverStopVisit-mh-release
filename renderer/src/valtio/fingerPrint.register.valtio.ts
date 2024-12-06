@@ -6,6 +6,7 @@ class FingerPrintRegisterValtio {
   selectedGroupName: string;
   selectedExcelList: any[];
   getExcelList: any[];
+  listTotalCount: number;
 
   constructor() {
     this.groupList = [];
@@ -13,6 +14,7 @@ class FingerPrintRegisterValtio {
     this.selectedGroupName = "";
     this.selectedExcelList = [];
     this.getExcelList = [];
+    this.listTotalCount = 0;
   }
 }
 

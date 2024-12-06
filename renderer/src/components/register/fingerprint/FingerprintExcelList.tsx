@@ -24,18 +24,24 @@ import { useGetExcelList } from "@/hook/fingerPrint/useGetExcelList";
 
 export const FingerprintExcelList = () => {
   const toast = useToast();
-  const { selectedGroupName, selectedExcelList, selectedGroupId } = useSnapshot(
-    storeFingerPrintRegister,
-  );
+  const {
+    selectedGroupName,
+    selectedExcelList,
+    selectedGroupId,
+    listTotalCount,
+  } = useSnapshot(storeFingerPrintRegister);
   const { getExcelList } = useGetExcelList();
 
   const GetExcelList = async () => {
-    const { data } = await getExcelList({ groupFid: selectedGroupId });
-    return { data };
+    const { data, listTotalCount } = await getExcelList({
+      groupFid: selectedGroupId,
+    });
+    return { data, listTotalCount };
   };
   useEffect(() => {
     GetExcelList().then((v: any) => {
       storeFingerPrintRegister.selectedExcelList = v.data;
+      storeFingerPrintRegister.listTotalCount = v.listTotalCount;
     });
   }, [selectedGroupName]);
 
@@ -57,13 +63,30 @@ export const FingerprintExcelList = () => {
     }
   };
 
+  const fingerprintBrowserClose = async ({ _id }) => {
+    try {
+      const result = await window.ipc.invoke("finger-print-browser-close", {
+        _id,
+      });
+    } catch (e) {
+      console.error(e.message);
+      toast({
+        title: "지문닫기 실패",
+        description: `${e.message.includes("initialize") ? "쿠키 검증 실패" : e.message.includes("valid JSON") ? "쿠키값 형식 오류" : "기타 닫기실패"}`,
+        isClosable: true,
+        duration: 3000,
+        status: "error",
+      });
+    }
+  };
+
   return (
     <Flex>
       <Box>
         <FormControl>
           <FormLabel>
             <Text>
-              {selectedGroupName} 지문 리스트 {selectedExcelList?.length}개
+              {selectedGroupName} 지문 리스트 {listTotalCount}개
             </Text>
           </FormLabel>
           <TableContainer>
@@ -78,9 +101,9 @@ export const FingerprintExcelList = () => {
                   <Th>상태</Th>
                   <Th>생성일</Th>
                   <Th>아이피</Th>
-                  <Th>쿠키</Th>
                   <Th>폰번호</Th>
                   <Th>지문열기</Th>
+                  <Th>지문닫기</Th>
                 </Tr>
               </Thead>
               <Tbody>
@@ -93,10 +116,6 @@ export const FingerprintExcelList = () => {
                     <Td>{v.nState}</Td>
                     <Td>{v.createdAt}</Td>
                     <Td>{v.ip}</Td>
-                    <Td>
-                      {" "}
-                      <CopyToClipboardButton value={v.cookie} />
-                    </Td>
                     <Td>{v.phoneNumber}</Td>
                     <Td>
                       <Button
@@ -107,6 +126,15 @@ export const FingerprintExcelList = () => {
                         variant={"link"}
                       >
                         OPEN
+                      </Button>
+                    </Td>
+                    <Td>
+                      <Button
+                        onClick={() => fingerprintBrowserClose({ _id: v._id })}
+                        fontSize={"xs"}
+                        variant={"link"}
+                      >
+                        CLOSE
                       </Button>
                     </Td>
                   </Tr>
