@@ -4,7 +4,7 @@ import { getChromePath } from "../PuppeteerEngine/getChromePath";
 
 export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
   const browser = await chromium.launch({
-    headless: chromeHeadless === "Close",
+    headless: chromeHeadless === "Open",
     executablePath: getChromePath({
       pathStep: 0,
       isChromiumMode: true,
@@ -75,35 +75,51 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
       waitUntil: "domcontentloaded",
       timeout: 120 * 1000,
     });
-    await wait(3 * 1000);
-    const finalUrl = page.url();
-    console.log("finalUrl 333222");
-    console.log(finalUrl);
-    // 비밀번호 입력 또는 IP 변경 버튼 대기
-    const isPassVisible = await page
-      .waitForSelector("#txtPwd", {
-        state: "visible", // visible 대신 state: 'visible' 사용
-        timeout: 3000,
-      })
-      .then(() => true)
-      .catch(() => false);
-    if (isPassVisible) {
-      // 비밀번호 입력
-      await locators.passwordInput.fill("12345678");
-      await Promise.all([
-        locators.loginButton.click(),
-        page.waitForLoadState("domcontentloaded"),
-      ]);
-      console.log(111);
-      // 페이지 새로고침
-      await page.goto("http://192.168.8.1/index.html#band", {
-        waitUntil: "domcontentloaded",
-        timeout: 120 * 1000,
-      });
-      console.log(222);
+    for (let i = 0; i < 3; i++) {
+      try {
+        await wait(5 * 1000);
+        const finalUrl = page.url();
+        console.log("finalUrl 333222");
+        console.log(finalUrl);
+        // 비밀번호 입력 또는 IP 변경 버튼 대기
+        const isPassVisible = await page
+          .waitForSelector("#txtPwd", {
+            state: "visible", // visible 대신 state: 'visible' 사용
+            timeout: 3000,
+          })
+          .then(() => true)
+          .catch(() => false);
+        if (isPassVisible) {
+          // 비밀번호 입력
+          await locators.passwordInput.fill("12345678");
+          await Promise.all([
+            locators.loginButton.click(),
+            page.waitForLoadState("load"),
+          ]);
+          console.log(111);
+          await page.waitForSelector("span#wifi_status img", {
+            state: "visible",
+            timeout: 90 * 1000,
+          });
+          // 페이지 새로고침
+          await page.goto("http://192.168.8.1/index.html#band", {
+            waitUntil: "domcontentloaded",
+            timeout: 120 * 1000,
+          });
+          console.log(222);
+        }
+        await wait(3 * 1000);
+        console.log("aaa");
+        await locators.applyButton.waitFor({ state: "visible" });
+        console.log("bbb");
+        await locators.applyButton.click({ delay: 1500 });
+        console.log("ccc");
+        break;
+      } catch (e) {
+        console.error(e.message);
+      }
     }
-    await locators.applyButton.waitFor({ state: "visible" });
-    await locators.applyButton.click();
+    console.log(4);
     // 메인 페이지로 이동
     await page.goto("http://192.168.8.1/index.html#home", {
       waitUntil: "domcontentloaded",
@@ -113,12 +129,14 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
       state: "visible",
       timeout: 90 * 1000,
     });
-    console.log(4);
     // 리소스 정리
     await wait(3000);
-    await context.close();
-    await browser.close();
-
+    try {
+      await context.close();
+      await browser.close();
+    } catch (error) {
+      console.error("paige cloaging ERROR:", error);
+    }
     return { message: "Edu Router Connect SUCCESS" };
   } catch (e) {
     console.error(e.message);
