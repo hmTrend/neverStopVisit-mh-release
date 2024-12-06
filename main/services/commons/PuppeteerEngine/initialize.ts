@@ -5,6 +5,7 @@ import { validateCookie } from "./validateCookie";
 import { getChromePath } from "./getChromePath";
 import { getNextCreateUserAgentWithAllUpMobileList } from "../../../lib/network/userAgentWithAllUpMobile";
 import { getNextCreateUserAgentWithRealMobileList } from "../../../lib/network/userAgentWithRealMobile";
+import wait from "waait";
 
 export const initialize = async ({
   url,
@@ -53,6 +54,7 @@ export const initialize = async ({
       }
       page = await context.newPage();
       await page.goto(url, { waitUntil: "networkidle" });
+      await wait(1500);
       break;
     } catch (e) {
       console.log("ERR > executablePath");
