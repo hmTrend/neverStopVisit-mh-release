@@ -233,23 +233,7 @@
       <workItem from="1733382539189" duration="5546000" />
       <workItem from="1733391703649" duration="3108000" />
       <workItem from="1733394858012" duration="37408000" />
-      <workItem from="1733531634240" duration="5899000" />
-    </task>
-    <task id="LOCAL-00129" summary="googleToNaver.ts / 추가완료">
-      <option name="closed" value="true" />
-      <created>1732951984014</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1732951984014</updated>
-    </task>
-    <task id="LOCAL-00130" summary="valtio 전역변수 셋팅&#10;+ 새로고침시 반영">
-      <option name="closed" value="true" />
-      <created>1732953163160</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1732953163160</updated>
+      <workItem from="1733531634240" duration="6452000" />
     </task>
     <task id="LOCAL-00131" summary="valtio 전역변수 셋팅&#10;+ 새로고침시 반영2">
       <option name="closed" value="true" />
@@ -627,7 +611,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733536655492</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="v1.11.2 군더더기 없이 깔끔한 LTE 라우터 전환">
+      <option name="closed" value="true" />
+      <created>1733538512491</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1733538512491</updated>
+    </task>
+    <task id="LOCAL-00179" summary="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환">
+      <option name="closed" value="true" />
+      <created>1733538723463</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1733538723463</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -672,8 +672,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="등록된 데이터 리스트에서 작업 진행 가능" />
-    <MESSAGE value="플레이스 동작 완성" />
     <MESSAGE value="findTargetBlog &gt; url로 찾아서 클릭하기" />
     <MESSAGE value="clickNearbyAttractions : 주변 &gt; 명소 클릭" />
     <MESSAGE value="LogicType : localStorage 저장가능" />
@@ -697,7 +695,9 @@
     <MESSAGE value="v1.10.4 close" />
     <MESSAGE value="v1.11.0 playwright 엔진 새로 셋팅 함수형" />
     <MESSAGE value="v1.11.1 라우터 로그인여부 체크" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.11.1 라우터 로그인여부 체크" />
+    <MESSAGE value="v1.11.2 군더더기 없이 깔끔한 LTE 라우터 전환" />
+    <MESSAGE value="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

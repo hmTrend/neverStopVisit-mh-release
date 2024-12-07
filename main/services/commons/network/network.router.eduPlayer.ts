@@ -15,7 +15,7 @@ export const networkRouterEduPlayer = async () => {
 
 async function playwrightEngineStart() {
   const browser = await chromium.launch({
-    headless: false,
+    headless: true,
     executablePath: getChromePath({
       pathStep: 0,
       isChromiumMode: true,
