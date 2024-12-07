@@ -233,15 +233,7 @@
       <workItem from="1733382539189" duration="5546000" />
       <workItem from="1733391703649" duration="3108000" />
       <workItem from="1733394858012" duration="37408000" />
-      <workItem from="1733531634240" duration="6452000" />
-    </task>
-    <task id="LOCAL-00131" summary="valtio 전역변수 셋팅&#10;+ 새로고침시 반영2">
-      <option name="closed" value="true" />
-      <created>1732954002932</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1732954002932</updated>
+      <workItem from="1733531634240" duration="8219000" />
     </task>
     <task id="LOCAL-00132" summary="멀티 숫자 각 프로그램 연동">
       <option name="closed" value="true" />
@@ -627,7 +619,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733538723463</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환">
+      <option name="closed" value="true" />
+      <created>1733539260947</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1733539260947</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">

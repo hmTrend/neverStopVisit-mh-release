@@ -7,7 +7,7 @@ export const googleToNaver = async ({ page }: { page: Page }) => {
     page.keyboard.press("Enter"),
   ]);
   await Promise.all([
-    page.locator('a[href="https://www.naver.com/"]').click(),
+    await page.locator('a[href*="naver.com"]').first().click(),
     page.waitForLoadState("networkidle"),
   ]);
   return { page };
