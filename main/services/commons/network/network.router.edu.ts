@@ -15,36 +15,6 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
     const context = await browser.newContext();
     const page = await context.newPage();
 
-    // Resource interception setup
-    // await page.route("**/*", async (route) => {
-    //   const request = route.request();
-    //   const resourceType = request.resourceType();
-    //
-    //   if (resourceType === "image") {
-    //     try {
-    //       const response = await fetch(request.url(), { method: "HEAD" });
-    //       const contentLength = response.headers.get("content-length");
-    //
-    //       if (contentLength) {
-    //         const size = parseInt(contentLength, 10);
-    //         if (size > 11 * 1024) {
-    //           await route.abort();
-    //           return;
-    //         }
-    //       }
-    //       await route.continue();
-    //     } catch (error) {
-    //       console.error("Error checking image size:", error);
-    //       await route.continue();
-    //     }
-    //   } else if (resourceType === "media") {
-    //     console.log(`Blocked video: ${request.url()}`);
-    //     await route.abort();
-    //   } else {
-    //     await route.continue();
-    //   }
-    // });
-
     // Locators 정의
     const locators = {
       // 비밀번호 입력 필드

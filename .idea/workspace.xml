@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -65,45 +65,45 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TypeScript.clickNearbyAttractions.tsx.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.findTargetBlog.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.findTargetPlaceInTargetBlog.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.index.ts (1).executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.index.ts (2).executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.index.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.mobile.userAgent.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.network.router.edu.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.targetKeywordSearch.ts.executor&quot;: &quot;Run&quot;,
-    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/start&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TypeScript.clickNearbyAttractions.tsx.executor": "Run",
+    "TypeScript.findTargetBlog.ts.executor": "Run",
+    "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
+    "TypeScript.index.ts (1).executor": "Run",
+    "TypeScript.index.ts (2).executor": "Run",
+    "TypeScript.index.ts.executor": "Run",
+    "TypeScript.initialize.ts.executor": "Run",
+    "TypeScript.mobile.userAgent.ts.executor": "Run",
+    "TypeScript.network.router.edu.ts.executor": "Run",
+    "TypeScript.targetKeywordSearch.ts.executor": "Run",
+    "eslint.code.style.apply.dismiss": "true",
+    "git-widget-placeholder": "develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/start",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
@@ -120,7 +120,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.clickNearbyAttractions.tsx">
+  <component name="RunManager" selected="TypeScript.network.router.eduPlayer.ts">
     <configuration name="clickNearbyAttractions.tsx" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -160,17 +160,18 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mobile.userAgent.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="network.router.eduPlayer.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/lib/userAgent" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/network" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/lib/userAgent/mobile.userAgent.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/network/network.router.eduPlayer.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="targetKeywordSearch.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -188,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.network.router.eduPlayer.ts" />
         <item itemvalue="TypeScript.clickNearbyAttractions.tsx" />
         <item itemvalue="TypeScript.findTargetBlog.ts" />
         <item itemvalue="TypeScript.findTargetPlaceInTargetBlog.ts" />
         <item itemvalue="TypeScript.targetKeywordSearch.ts" />
-        <item itemvalue="TypeScript.mobile.userAgent.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -230,23 +231,8 @@
       <workItem from="1733183247794" duration="14655000" />
       <workItem from="1733382539189" duration="5546000" />
       <workItem from="1733391703649" duration="3108000" />
-      <workItem from="1733394858012" duration="35843000" />
-    </task>
-    <task id="LOCAL-00125" summary="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가">
-      <option name="closed" value="true" />
-      <created>1732931006269</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1732931006269</updated>
-    </task>
-    <task id="LOCAL-00126" summary="NSV-47 시큐리티 헤더 설정필요 + fullUserAgent 88개 추가">
-      <option name="closed" value="true" />
-      <created>1732931026305</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1732931026305</updated>
+      <workItem from="1733394858012" duration="37408000" />
+      <workItem from="1733531634240" duration="872000" />
     </task>
     <task id="LOCAL-00127" summary="userAgentWithRealMobile.ts &gt; 쇼핑 작업가능한 수준으로 변경완료">
       <option name="closed" value="true" />
@@ -624,7 +610,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733480086923</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="v1.10.4 close">
+      <option name="closed" value="true" />
+      <created>1733481693730</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1733481693730</updated>
+    </task>
+    <task id="LOCAL-00175" summary="v1.10.4 close">
+      <option name="closed" value="true" />
+      <created>1733481700726</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1733481700726</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +665,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="userAgentWithRealMobile.ts &gt; Mobile 100% 추가" />
     <MESSAGE value="locaStorage에서 isStart 값만 제외 하고 저장하기" />
     <MESSAGE value="실제 시작시 플레이스 로직으로 1바퀴 돌기 성공" />
     <MESSAGE value="등록된 데이터 리스트에서 작업 진행 가능" />
@@ -688,7 +689,8 @@
     <MESSAGE value="v1.10.0 라우터 버그 박멸" />
     <MESSAGE value="v1.10.1 새페이지 오픈후 1.5초 대기후 진행" />
     <MESSAGE value="v1.10.2 close" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.10.2 close" />
+    <MESSAGE value="v1.10.4 close" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.10.4 close" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
