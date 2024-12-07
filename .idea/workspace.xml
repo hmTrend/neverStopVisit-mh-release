@@ -233,15 +233,7 @@
       <workItem from="1733382539189" duration="5546000" />
       <workItem from="1733391703649" duration="3108000" />
       <workItem from="1733394858012" duration="37408000" />
-      <workItem from="1733531634240" duration="10995000" />
-    </task>
-    <task id="LOCAL-00134" summary="findTargetBlog">
-      <option name="closed" value="true" />
-      <created>1733000510379</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1733000510379</updated>
+      <workItem from="1733531634240" duration="11284000" />
     </task>
     <task id="LOCAL-00135" summary="findTargetBlog">
       <option name="closed" value="true" />
@@ -627,7 +619,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733545861975</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="v1.12.0 inapp 모두제거">
+      <option name="closed" value="true" />
+      <created>1733547642516</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1733547642516</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -672,7 +672,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="LogicType : localStorage 저장가능" />
     <MESSAGE value="쇼핑 &amp; 플레이스 &gt; 네이버로직 &amp; 구글로직 셋팅완료" />
     <MESSAGE value="로그인 체크 기능 삽입" />
     <MESSAGE value="라우터 기능 정상작동 픽스" />
@@ -697,7 +696,8 @@
     <MESSAGE value="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환" />
     <MESSAGE value="v1.11.4 구글에서 네이버 찾을시 클릭하기" />
     <MESSAGE value="v1.11.5 로그아웃인지 체크하는 방식을 count로 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.11.5 로그아웃인지 체크하는 방식을 count로 변경" />
+    <MESSAGE value="v1.12.0 inapp 모두제거" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.12.0 inapp 모두제거" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
