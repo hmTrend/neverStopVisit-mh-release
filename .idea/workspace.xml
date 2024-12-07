@@ -79,6 +79,7 @@
     "TypeScript.initialize.ts.executor": "Run",
     "TypeScript.mobile.userAgent.ts.executor": "Run",
     "TypeScript.network.router.edu.ts.executor": "Run",
+    "TypeScript.network.router.eduPlayer.ts.executor": "Run",
     "TypeScript.targetKeywordSearch.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
@@ -92,7 +93,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "terminal",
     "ts.external.directory.path": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -232,15 +233,7 @@
       <workItem from="1733382539189" duration="5546000" />
       <workItem from="1733391703649" duration="3108000" />
       <workItem from="1733394858012" duration="37408000" />
-      <workItem from="1733531634240" duration="872000" />
-    </task>
-    <task id="LOCAL-00127" summary="userAgentWithRealMobile.ts &gt; 쇼핑 작업가능한 수준으로 변경완료">
-      <option name="closed" value="true" />
-      <created>1732936323462</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1732936323462</updated>
+      <workItem from="1733531634240" duration="4397000" />
     </task>
     <task id="LOCAL-00128" summary="userAgentWithRealMobile.ts &gt; 쇼핑 작업가능한 수준으로 변경완료 2">
       <option name="closed" value="true" />
@@ -626,8 +619,22 @@
       <option name="project" value="LOCAL" />
       <updated>1733481700726</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="v1.11.0 playwright 엔진 새로 셋팅 함수형">
+      <option name="closed" value="true" />
+      <created>1733532630460</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1733532630460</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="LANG" value="ko_KR.UTF-8" />
+      <env key="PYTHONIOENCODING" value="utf-8" />
+    </envs>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -665,7 +672,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="locaStorage에서 isStart 값만 제외 하고 저장하기" />
     <MESSAGE value="실제 시작시 플레이스 로직으로 1바퀴 돌기 성공" />
     <MESSAGE value="등록된 데이터 리스트에서 작업 진행 가능" />
     <MESSAGE value="플레이스 동작 완성" />
@@ -690,7 +696,8 @@
     <MESSAGE value="v1.10.1 새페이지 오픈후 1.5초 대기후 진행" />
     <MESSAGE value="v1.10.2 close" />
     <MESSAGE value="v1.10.4 close" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.10.4 close" />
+    <MESSAGE value="v1.11.0 playwright 엔진 새로 셋팅 함수형" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.11.0 playwright 엔진 새로 셋팅 함수형" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
