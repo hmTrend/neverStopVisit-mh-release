@@ -145,4 +145,4 @@ async function goToIndexPage({ page }: { page: Page }) {
   await waitForLastImageWithLogIn({ page });
 }
 
-networkRouterEduPlayer();
+// networkRouterEduPlayer();

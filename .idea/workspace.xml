@@ -233,15 +233,7 @@
       <workItem from="1733382539189" duration="5546000" />
       <workItem from="1733391703649" duration="3108000" />
       <workItem from="1733394858012" duration="37408000" />
-      <workItem from="1733531634240" duration="8219000" />
-    </task>
-    <task id="LOCAL-00132" summary="멀티 숫자 각 프로그램 연동">
-      <option name="closed" value="true" />
-      <created>1732998532830</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1732998532830</updated>
+      <workItem from="1733531634240" duration="9550000" />
     </task>
     <task id="LOCAL-00133" summary="targetKeywordSearch">
       <option name="closed" value="true" />
@@ -627,7 +619,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733539260947</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="v1.11.4 구글에서 네이버 찾을시 클릭하기">
+      <option name="closed" value="true" />
+      <created>1733543197104</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1733543197104</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -672,7 +672,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="findTargetBlog &gt; url로 찾아서 클릭하기" />
     <MESSAGE value="clickNearbyAttractions : 주변 &gt; 명소 클릭" />
     <MESSAGE value="LogicType : localStorage 저장가능" />
     <MESSAGE value="쇼핑 &amp; 플레이스 &gt; 네이버로직 &amp; 구글로직 셋팅완료" />
@@ -697,7 +696,8 @@
     <MESSAGE value="v1.11.1 라우터 로그인여부 체크" />
     <MESSAGE value="v1.11.2 군더더기 없이 깔끔한 LTE 라우터 전환" />
     <MESSAGE value="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환" />
+    <MESSAGE value="v1.11.4 구글에서 네이버 찾을시 클릭하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.11.4 구글에서 네이버 찾을시 클릭하기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
