@@ -3,9 +3,8 @@ import { formatCookiesForPlaywright } from "./formatCookiesForPlaywright";
 import { getNextProxy } from "../../../lib/proxy/getNextProxy";
 import { validateCookie } from "./validateCookie";
 import { getChromePath } from "./getChromePath";
-import { getNextCreateUserAgentWithAllUpMobileList } from "../../../lib/network/userAgentWithAllUpMobile";
-import { getNextCreateUserAgentWithRealMobileList } from "../../../lib/network/userAgentWithRealMobile";
 import wait from "waait";
+import { getNextCreateUserAgentWithDRSoftKorea241207 } from "../../../lib/network/userAgentWithDRSoftKorea";
 
 export const initialize = async ({
   url,
@@ -23,7 +22,7 @@ export const initialize = async ({
   browser: Browser;
 }) => {
   const proxySettings = getNextProxy();
-  const userAgent = getNextCreateUserAgentWithAllUpMobileList();
+  const userAgent = getNextCreateUserAgentWithDRSoftKorea241207();
   for (let i = 0; i < 2; i++) {
     try {
       browser = await chromiumEngine.launch({
@@ -66,16 +65,14 @@ export const initialize = async ({
 };
 
 async function createMobileContext({ browser }: { browser: Browser }) {
-  const userAgent = getNextCreateUserAgentWithRealMobileList(); // 동적 user agent
-  const chromeVersion = extractChromeVersion(userAgent);
+  const userAgent: any = getNextCreateUserAgentWithDRSoftKorea241207(); // 동적 user agent
+  // const chromeVersion = extractChromeVersion(userAgent);
 
+  console.log("userAgent 000000");
+  console.log(userAgent);
   const context = await browser.newContext({
-    userAgent: userAgent,
-    extraHTTPHeaders: {
-      "sec-ch-ua": `"Not A(Brand";v="99", "Google Chrome";v="${chromeVersion}", "Chromium";v="${chromeVersion}"`,
-      "sec-ch-ua-platform": '"Android"',
-      "sec-ch-ua-mobile": "?1",
-    },
+    userAgent: userAgent.userAgent,
+    extraHTTPHeaders: userAgent.headers,
     viewport: { width: 412, height: 915 },
     isMobile: true,
     hasTouch: true,
