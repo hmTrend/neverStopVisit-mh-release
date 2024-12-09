@@ -71,9 +71,9 @@ async function createMobileContext({ browser }: { browser: Browser }) {
   console.log("userAgent 000000");
   console.log(userAgent);
   const context = await browser.newContext({
-    // userAgent: userAgent.userAgent,
-    userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_3; rv:114.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
+    userAgent: userAgent.userAgent,
+    // userAgent:
+    //   "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Mobile/15E148 Safari/605.1",
     extraHTTPHeaders: userAgent.headers,
     viewport: { width: 412, height: 915 },
     isMobile: true,
