@@ -1,11 +1,11 @@
 import { exec } from "child_process";
 import { promisify } from "util";
-const execAsync = promisify(exec);
 import os from "os";
 import dns from "dns";
 import waait from "waait";
 import macAddress from "mac-address";
 import { checkInternetConnection } from "./checkInternetConnection";
+const execAsync = promisify(exec);
 
 function generateRandomMac(): string {
   return Array.from({ length: 6 }, () =>

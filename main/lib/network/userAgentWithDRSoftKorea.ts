@@ -303,7 +303,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X; rv:104.0) Gecko/20100101 Firefox/104.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X; rv:104.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -315,7 +315,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X; rv:105.0) Gecko/20100101 Firefox/105.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X; rv:105.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -352,7 +352,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_1 like Mac OS X; rv:95.0) Gecko/20100101 Firefox/95.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_1 like Mac OS X; rv:95.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -413,7 +413,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X; rv:112.0) Gecko/20100101 Firefox/112.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X; rv:112.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -425,7 +425,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X; rv:107.0) Gecko/20100101 Firefox/107.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X; rv:107.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -800,7 +800,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X; rv:102.0) Gecko/20100101 Firefox/102.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X; rv:102.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -861,7 +861,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X; rv:112.0) Gecko/20100101 Firefox/112.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X; rv:112.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -1008,7 +1008,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X; rv:91.0) Gecko/20100101 Firefox/91.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X; rv:91.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -1408,7 +1408,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X; rv:111.0) Gecko/20100101 Firefox/111.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X; rv:111.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -1493,7 +1493,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X; rv:108.0) Gecko/20100101 Firefox/108.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X; rv:108.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -1529,7 +1529,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X; rv:94.0) Gecko/20100101 Firefox/94.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X; rv:94.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -1541,7 +1541,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X; rv:103.0) Gecko/20100101 Firefox/103.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X; rv:103.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -1553,7 +1553,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_0 like Mac OS X; rv:99.0) Gecko/20100101 Firefox/99.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_0 like Mac OS X; rv:99.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -1725,7 +1725,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X; rv:90.0) Gecko/20100101 Firefox/90.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X; rv:90.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -1848,7 +1848,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X; rv:90.0) Gecko/20100101 Firefox/90.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X; rv:90.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -2166,7 +2166,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X; rv:108.0) Gecko/20100101 Firefox/108.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X; rv:108.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -2288,7 +2288,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X; rv:99.0) Gecko/20100101 Firefox/99.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X; rv:99.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -2463,7 +2463,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X; rv:110.0) Gecko/20100101 Firefox/110.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X; rv:110.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -2610,7 +2610,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X; rv:114.0) Gecko/20100101 Firefox/114.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X; rv:114.0) Mozilla/5.0 (iPhone; CPU iPhone OS 16_3; rv:114.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -2781,7 +2781,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X; rv:119.0) Gecko/20100101 Firefox/119.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X; rv:119.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -2805,7 +2805,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X; rv:103.0) Gecko/20100101 Firefox/103.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X; rv:103.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -2878,7 +2878,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X; rv:103.0) Gecko/20100101 Firefox/103.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X; rv:103.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -2890,7 +2890,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_1 like Mac OS X; rv:99.0) Gecko/20100101 Firefox/99.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_1 like Mac OS X; rv:99.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -2914,7 +2914,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X; rv:116.0) Gecko/20100101 Firefox/116.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X; rv:116.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -2989,7 +2989,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X; rv:114.0) Gecko/20100101 Firefox/114.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X; rv:114.0) Mozilla/5.0 (iPhone; CPU iPhone OS 16_3; rv:114.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -3415,7 +3415,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X; rv:95.0) Gecko/20100101 Firefox/95.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X; rv:95.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -3514,7 +3514,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_1 like Mac OS X; rv:117.0) Gecko/20100101 Firefox/117.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_1 like Mac OS X; rv:117.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -4094,7 +4094,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_0 like Mac OS X; rv:94.0) Gecko/20100101 Firefox/94.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_0 like Mac OS X; rv:94.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -4665,7 +4665,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X; rv:117.0) Gecko/20100101 Firefox/117.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X; rv:117.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -4829,7 +4829,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X; rv:97.0) Gecko/20100101 Firefox/97.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X; rv:97.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -5580,7 +5580,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X; rv:114.0) Gecko/20100101 Firefox/114.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X; rv:114.0) Mozilla/5.0 (iPhone; CPU iPhone OS 16_3; rv:114.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -5704,7 +5704,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_4 like Mac OS X; rv:103.0) Gecko/20100101 Firefox/103.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_4 like Mac OS X; rv:103.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -5870,7 +5870,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X; rv:96.0) Gecko/20100101 Firefox/96.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X; rv:96.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -6017,7 +6017,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X; rv:118.0) Gecko/20100101 Firefox/118.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X; rv:118.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -6041,7 +6041,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X; rv:95.0) Gecko/20100101 Firefox/95.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X; rv:95.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -6140,7 +6140,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X; rv:97.0) Gecko/20100101 Firefox/97.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X; rv:97.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -6839,7 +6839,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X; rv:114.0) Gecko/20100101 Firefox/114.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X; rv:114.0) Mozilla/5.0 (iPhone; CPU iPhone OS 16_3; rv:114.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -8529,7 +8529,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X; rv:113.0) Gecko/20100101 Firefox/113.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X; rv:113.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -20500,7 +20500,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X; rv:98.0) Gecko/20100101 Firefox/98.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X; rv:98.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -21251,7 +21251,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_1 like Mac OS X; rv:114.0) Gecko/20100101 Firefox/114.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 14_1 like Mac OS X; rv:114.0) Mozilla/5.0 (iPhone; CPU iPhone OS 16_3; rv:114.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
@@ -23768,7 +23768,7 @@ const userAgentWithDRSoftKorea241207 = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2 like Mac OS X; rv:94.0) Gecko/20100101 Firefox/94.0",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2 like Mac OS X; rv:94.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1",
     headers: {
       "sec-ch-ua": "",
       "sec-ch-ua-mobile": "0",
