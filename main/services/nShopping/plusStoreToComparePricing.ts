@@ -18,6 +18,10 @@ export const plusStoreToComparePricing = async ({ page }: { page: Page }) => {
           );
           await elementLocator.waitFor({ state: "visible", timeout: 1000 });
           await elementLocator.click();
+        } finally {
+          await page
+            .locator('div.product_info_count__PSSO1 span:has-text("찜")')
+            .count();
         }
       },
     });
