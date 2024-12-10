@@ -100,11 +100,13 @@ export const FingerprintExcelList = () => {
                   <Th>현재비번</Th>
                   <Th>이전비번</Th>
                   <Th>상태</Th>
+                  <Th>쿠키</Th>
                   <Th>생성일</Th>
                   <Th>아이피</Th>
                   <Th>폰번호</Th>
                   <Th>지문열기</Th>
                   <Th>지문닫기</Th>
+                  <Th>삭제여부</Th>
                 </Tr>
               </Thead>
               <Tbody>
@@ -116,6 +118,15 @@ export const FingerprintExcelList = () => {
                     <Td>{CommonUtil.maskLast4Digits(v.nPw)}</Td>
                     <Td>{CommonUtil.maskLast4Digits(v.bPw)}</Td>
                     <Td>{v.nState}</Td>
+                    <Td>
+                      <Button
+                        fontSize={"xs"}
+                        variant={"link"}
+                        fontWeight={"light"}
+                      >
+                        쿠키굽기
+                      </Button>
+                    </Td>
                     <Td>{v.createdAt}</Td>
                     <Td>{v.ip}</Td>
                     <Td>{v.phoneNumber}</Td>
@@ -137,6 +148,16 @@ export const FingerprintExcelList = () => {
                         variant={"link"}
                       >
                         CLOSE
+                      </Button>
+                    </Td>
+                    <Td>
+                      <Button
+                        onClick={() => fingerprintBrowserClose({ _id: v._id })}
+                        fontSize={"xs"}
+                        variant={"link"}
+                        fontWeight={"light"}
+                      >
+                        삭제
                       </Button>
                     </Td>
                   </Tr>
