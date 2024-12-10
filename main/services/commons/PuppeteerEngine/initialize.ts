@@ -42,13 +42,13 @@ export const initialize = async ({
         if (validateCookie(cookie)) {
           const formattedCookies = formatCookiesForPlaywright(cookie);
           await context.addCookies(formattedCookies);
-          console.log("쿠키가 성공적으로 추가됨");
+          console.log("Cookie successfully added");
         } else {
           if (browser) {
             await browser.close();
-            console.log("쿠키 검증 실패로 브라우저가 종료됨");
+            console.log("Browser exited due to failed cookie validation");
           }
-          throw Error("쿠키 검증 실패");
+          throw Error("Cookie validation failure ended");
         }
       }
       page = await context.newPage();

@@ -46,11 +46,10 @@ export const FingerprintExcelList = () => {
     });
   }, [selectedGroupName]);
 
-  const fingerprintExcelList = async ({ _id, cookie }) => {
+  const fingerprintExcelList = async ({ _id }) => {
     try {
       const result = await window.ipc.invoke("finger-print-browser-open", {
         _id,
-        cookie,
       });
     } catch (e) {
       console.error(e.message);
@@ -132,9 +131,7 @@ export const FingerprintExcelList = () => {
                     <Td>{v.phoneNumber}</Td>
                     <Td>
                       <Button
-                        onClick={() =>
-                          fingerprintExcelList({ _id: v._id, cookie: v.cookie })
-                        }
+                        onClick={() => fingerprintExcelList({ _id: v._id })}
                         fontSize={"xs"}
                         variant={"link"}
                       >

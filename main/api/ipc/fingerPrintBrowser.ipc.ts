@@ -1,6 +1,7 @@
 import { ipcMain } from "electron";
 import { PuppeteerEngine } from "../../services/commons/PuppeteerEngine";
 import { cookieNstateSave } from "../../services/commons/PuppeteerEngine/cookieNstateSave";
+import { GetFingerPrintTargetExcelOneFromId } from "../../lib/apollo/finger-print.apollo";
 
 export const fingerPrintBrowserIpc = async () => {
   let engine;
@@ -8,10 +9,11 @@ export const fingerPrintBrowserIpc = async () => {
     let parsedCookie = []; // 기본값 설정
 
     try {
-      const { cookie } = args;
+      const { _id } = args;
+      const { data } = await GetFingerPrintTargetExcelOneFromId({ _id });
       // cookie가 존재하고 빈 문자열이 아닐 때만 파싱 시도
-      if (cookie && cookie.trim()) {
-        parsedCookie = JSON.parse(cookie);
+      if (data && data.cookie.trim()) {
+        parsedCookie = JSON.parse(data.cookie);
       }
 
       engine = new PuppeteerEngine();

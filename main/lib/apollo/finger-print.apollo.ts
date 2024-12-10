@@ -100,3 +100,53 @@ export const FetchFingerPrintTargetExcelOne = async ({
     error: "",
   };
 };
+
+const gqlGetFingerPrintTargetExcelOneFromId = gql`
+  query GetFingerPrintTargetExcelOneFromId(
+    $input: GetFingerPrintExcelListFromIdInput!
+  ) {
+    getFingerPrintTargetExcelOneFromId(input: $input) {
+      data {
+        _id
+        groupFid
+        nId
+        nPw
+        bPw
+        nState
+        createdAt
+        ip
+        cookie
+        phoneNumber
+        updatedAt
+        type
+      }
+      message
+      error
+    }
+  }
+`;
+
+export const GetFingerPrintTargetExcelOneFromId = async ({ _id }) => {
+  const { data, error } = await client.query({
+    query: gqlGetFingerPrintTargetExcelOneFromId,
+    variables: {
+      input: {
+        _id,
+      },
+    },
+    fetchPolicy: "no-cache",
+  });
+  if (error) {
+    console.error(error.message);
+    return {
+      data: "",
+      message: "ERR > GetFingerPrintTargetExcelOneFromId ",
+      error: error.message,
+    };
+  }
+  return {
+    data: data.getFingerPrintTargetExcelOneFromId.data,
+    message: "OK > GetFingerPrintTargetExcelOneFromId ",
+    error: "",
+  };
+};
