@@ -78,6 +78,7 @@ export const gqlGetExcelList = gql`
         ip
         phoneNumber
         updatedAt
+        type
       }
       listTotalCount
       message

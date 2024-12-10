@@ -21,6 +21,7 @@ import { CommonUtil } from "@/util/common.util";
 import CopyToClipboardButton from "@/components/_commons/CopyToClipboardButton";
 import { useEffect } from "react";
 import { useGetExcelList } from "@/hook/fingerPrint/useGetExcelList";
+import { FingerprintCookeCook } from "@/components/register/fingerprint/FingerprintCookeCook";
 
 export const FingerprintExcelList = () => {
   const toast = useToast();
@@ -119,13 +120,11 @@ export const FingerprintExcelList = () => {
                     <Td>{CommonUtil.maskLast4Digits(v.bPw)}</Td>
                     <Td>{v.nState}</Td>
                     <Td>
-                      <Button
-                        fontSize={"xs"}
-                        variant={"link"}
-                        fontWeight={"light"}
-                      >
-                        쿠키굽기
-                      </Button>
+                      <FingerprintCookeCook
+                        nId={v.nId}
+                        indexNum={i}
+                        type={v.type}
+                      />
                     </Td>
                     <Td>{v.createdAt}</Td>
                     <Td>{v.ip}</Td>
