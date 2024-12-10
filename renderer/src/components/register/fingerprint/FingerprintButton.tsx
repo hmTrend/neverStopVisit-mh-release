@@ -7,6 +7,7 @@ const openBrowsers = new Map();
 export const FingerprintButton = ({ _id }) => {
   const [isOpen, setIsOpen] = useState(openBrowsers.has(_id));
   const toast = useToast();
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     // 브라우저 닫힘 이벤트 리스너
@@ -22,10 +23,12 @@ export const FingerprintButton = ({ _id }) => {
 
   const handleOpenBrowser = async () => {
     try {
+      setIsLoading(true);
       const result = await window.ipc.invoke("finger-print-browser-open", {
         _id,
       });
       openBrowsers.set(_id, true);
+      setIsLoading(false);
       setIsOpen(true);
     } catch (error) {
       console.error("Failed to open browser:", error);
@@ -71,7 +74,12 @@ export const FingerprintButton = ({ _id }) => {
           창닫기
         </Button>
       ) : (
-        <Button onClick={handleOpenBrowser} fontSize={"xs"} variant="link">
+        <Button
+          isLoading={isLoading}
+          onClick={handleOpenBrowser}
+          fontSize={"xs"}
+          variant="link"
+        >
           OPEN
         </Button>
       )}
