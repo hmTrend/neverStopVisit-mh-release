@@ -13,6 +13,7 @@ import {
   Textarea,
   Flex,
   Code,
+  useToast,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/icons";
 import { useFetchTargetExcelOneCookie } from "@/hook/fingerPrint/useFetchTargetExcelOneCookie";
@@ -22,6 +23,7 @@ export function FingerprintCookeCook({ nId, indexNum, type, _id }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { fetchFingerPrintTargetExcelOne } = useFetchTargetExcelOneCookie();
   const cookieRef = useRef(null);
+  const toast = useToast();
 
   return (
     <>
@@ -65,12 +67,20 @@ export function FingerprintCookeCook({ nId, indexNum, type, _id }) {
             <Button
               variant="ghost"
               onClick={async () => {
-                console.log(cookieRef.current.value);
+                if (cookieRef.current.value === "") {
+                  toast({
+                    title: "쿠키값 미입력",
+                    duration: 3000,
+                    status: "error",
+                  });
+                  return;
+                }
                 await fetchFingerPrintTargetExcelOne({
                   _id,
                   cookie: cookieRef.current.value,
                   nState: "쿠키",
                 });
+                onClose();
               }}
             >
               수정하기
