@@ -15,9 +15,14 @@ import {
   Code,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/icons";
+import { useFetchTargetExcelOneCookie } from "@/hook/fingerPrint/useFetchTargetExcelOneCookie";
+import { useRef } from "react";
 
-export function FingerprintCookeCook({ nId, indexNum, type }) {
+export function FingerprintCookeCook({ nId, indexNum, type, _id }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { fetchFingerPrintTargetExcelOne } = useFetchTargetExcelOneCookie();
+  const cookieRef = useRef(null);
+
   return (
     <>
       <Button
@@ -48,7 +53,7 @@ export function FingerprintCookeCook({ nId, indexNum, type }) {
               </Box>
               <Box display={"flex"} gap={3}>
                 <Text width="100px">쿠키입력</Text>
-                <Textarea height={"300px"} fontSize={"xs"} />
+                <Textarea ref={cookieRef} height={"300px"} fontSize={"xs"} />
               </Box>
             </Flex>
           </ModalBody>
@@ -57,7 +62,19 @@ export function FingerprintCookeCook({ nId, indexNum, type }) {
             <Button colorScheme="blue" mr={3} onClick={onClose}>
               닫기
             </Button>
-            <Button variant="ghost">수정하기</Button>
+            <Button
+              variant="ghost"
+              onClick={async () => {
+                console.log(cookieRef.current.value);
+                await fetchFingerPrintTargetExcelOne({
+                  _id,
+                  cookie: cookieRef.current.value,
+                  nState: "쿠키",
+                });
+              }}
+            >
+              수정하기
+            </Button>
           </ModalFooter>
         </ModalContent>
       </Modal>

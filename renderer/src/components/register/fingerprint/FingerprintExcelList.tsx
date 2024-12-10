@@ -121,6 +121,7 @@ export const FingerprintExcelList = () => {
                     <Td>{v.nState}</Td>
                     <Td>
                       <FingerprintCookeCook
+                        _id={v._id}
                         nId={v.nId}
                         indexNum={i}
                         type={v.type}

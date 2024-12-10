@@ -110,3 +110,26 @@ export const gqlPatchFingerPrintExcelList = gql`
     }
   }
 `;
+
+export const gqlFetchFingerPrintTargetExcelOne = gql`
+  mutation FetchFingerPrintTargetExcelOne($input: FetchFingerPrintInput!) {
+    fetchFingerPrintTargetExcelOne(input: $input) {
+      data {
+        _id
+        groupFid
+        nId
+        nPw
+        bPw
+        nState
+        createdAt
+        ip
+        cookie
+        phoneNumber
+        updatedAt
+        type
+      }
+      message
+      error
+    }
+  }
+`;

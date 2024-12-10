@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -235,15 +235,7 @@
       <workItem from="1733531634240" duration="18627000" />
       <workItem from="1733712975058" duration="454000" />
       <workItem from="1733723900557" duration="8097000" />
-      <workItem from="1733797336690" duration="6132000" />
-    </task>
-    <task id="LOCAL-00142" summary="등록된 데이터 리스트에서 작업 진행 가능">
-      <option name="closed" value="true" />
-      <created>1733133915571</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1733133915571</updated>
+      <workItem from="1733797336690" duration="7673000" />
     </task>
     <task id="LOCAL-00143" summary="등록된 데이터 리스트에서 작업 진행 가능">
       <option name="closed" value="true" />
@@ -629,7 +621,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733806186954</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="v1.16.0 쿠키값 수정 UI 추가">
+      <option name="closed" value="true" />
+      <created>1733816144223</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1733816144223</updated>
+    </task>
+    <option name="localTasksCounter" value="192" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -674,7 +674,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.5.0 라우터 가상에서 작동 가능 / 패스추가" />
     <MESSAGE value="v1.6.0 라우터 작동 확인" />
     <MESSAGE value="v1.6.1 라우터 대기시간 2분으로 늘림" />
     <MESSAGE value="v1.7.0 지문 리스트 쿠키 삭제 + 총갯수 가져오는 db카운터 추가" />
@@ -699,7 +698,8 @@
     <MESSAGE value="v1.14.0 스토어 &gt; 가격비교 : 찜 보일때까지 기다리기" />
     <MESSAGE value="v1.15.0 타입 쿠팡 추가" />
     <MESSAGE value="v1.15.1 삭제여부 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.15.1 삭제여부 추가" />
+    <MESSAGE value="v1.16.0 쿠키값 수정 UI 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.16.0 쿠키값 수정 UI 추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
