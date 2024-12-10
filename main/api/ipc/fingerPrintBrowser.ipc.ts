@@ -11,7 +11,9 @@ export const fingerPrintBrowserIpc = async () => {
     let parsedCookie = [];
 
     try {
-      const { _id } = args;
+      console.log("args 333121111");
+      console.log(args);
+      const { _id, type } = args;
       const { data } = await GetFingerPrintTargetExcelOneFromId({ _id });
 
       if (data && data.cookie.trim()) {
@@ -21,8 +23,10 @@ export const fingerPrintBrowserIpc = async () => {
       // 새로운 engine 인스턴스 생성
       const newEngine = new PuppeteerEngine();
       await newEngine.initialize({
-        url: "https://m.naver.com/",
-        cookie: parsedCookie,
+        url:
+          type === "coupang" ? "https://coupang.com/" : "https://m.naver.com",
+        cookie: parsedCookie ?? "",
+        type,
       });
 
       newEngine.page.on("dialog", async (dialog) => {

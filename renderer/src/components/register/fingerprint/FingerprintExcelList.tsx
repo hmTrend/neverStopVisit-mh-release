@@ -131,7 +131,7 @@ export const FingerprintExcelList = () => {
                     <Td>{v.ip}</Td>
                     <Td>{v.phoneNumber}</Td>
                     <Td>
-                      <FingerprintButton _id={v._id} />
+                      <FingerprintButton _id={v._id} type={v.type} />
                     </Td>
                     <Td>
                       <Button

@@ -4,7 +4,7 @@ import { Button, useToast } from "@chakra-ui/react";
 // 열린 브라우저를 추적하기 위한 Map
 const openBrowsers = new Map();
 
-export const FingerprintButton = ({ _id }) => {
+export const FingerprintButton = ({ _id, type }) => {
   const [isOpen, setIsOpen] = useState(openBrowsers.has(_id));
   const toast = useToast();
   const [isLoading, setIsLoading] = useState(false);
@@ -26,6 +26,7 @@ export const FingerprintButton = ({ _id }) => {
       setIsLoading(true);
       const result = await window.ipc.invoke("finger-print-browser-open", {
         _id,
+        type,
       });
       openBrowsers.set(_id, true);
       setIsLoading(false);

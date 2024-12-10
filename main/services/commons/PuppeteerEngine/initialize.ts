@@ -13,6 +13,7 @@ export const initialize = async ({
   chromiumEngine,
   cookie,
   browser,
+  type = "",
 }: {
   url: string;
   page: Page;
@@ -20,6 +21,7 @@ export const initialize = async ({
   pages: Page[];
   cookie;
   browser: Browser;
+  type?: string;
 }) => {
   const proxySettings = getNextProxy();
   const userAgent = getNextCreateUserAgentWithDRSoftKorea241207();

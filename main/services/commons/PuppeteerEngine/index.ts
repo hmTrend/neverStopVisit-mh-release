@@ -19,7 +19,7 @@ export class PuppeteerEngine {
     this.pages = []; // pages 배열 초기화
   }
 
-  async initialize({ url, cookie }) {
+  async initialize({ url, cookie, type = "" }) {
     try {
       const { page, browser } = await initialize({
         url,
@@ -28,6 +28,7 @@ export class PuppeteerEngine {
         pages: this.pages,
         browser: this.browser,
         cookie,
+        type,
       });
       this.page = page;
       this.browser = browser;
