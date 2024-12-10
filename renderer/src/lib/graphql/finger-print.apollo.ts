@@ -56,6 +56,7 @@ export const gqlCreateExcelList = gql`
         cookie
         phoneNumber
         updatedAt
+        type
       }
       message
       error

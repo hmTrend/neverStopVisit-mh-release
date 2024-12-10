@@ -95,6 +95,7 @@ export const FingerprintExcelList = () => {
               <Thead>
                 <Tr>
                   <Th>번호</Th>
+                  <Th>타입</Th>
                   <Th>아이디</Th>
                   <Th>현재비번</Th>
                   <Th>이전비번</Th>
@@ -110,6 +111,7 @@ export const FingerprintExcelList = () => {
                 {selectedExcelList?.map((v: any, i) => (
                   <Tr key={i}>
                     <Td>{i + 1}</Td>
+                    <Td>{v.type}</Td>
                     <Td>{v.nId}</Td>
                     <Td>{CommonUtil.maskLast4Digits(v.nPw)}</Td>
                     <Td>{CommonUtil.maskLast4Digits(v.bPw)}</Td>

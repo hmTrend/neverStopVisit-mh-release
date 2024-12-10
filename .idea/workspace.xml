@@ -234,15 +234,8 @@
       <workItem from="1733394858012" duration="37408000" />
       <workItem from="1733531634240" duration="18627000" />
       <workItem from="1733712975058" duration="454000" />
-      <workItem from="1733723900557" duration="6396000" />
-    </task>
-    <task id="LOCAL-00139" summary="locaStorage에서 isStart 값만 제외 하고 저장하기">
-      <option name="closed" value="true" />
-      <created>1733106216846</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1733106216846</updated>
+      <workItem from="1733723900557" duration="8097000" />
+      <workItem from="1733797336690" duration="2838000" />
     </task>
     <task id="LOCAL-00140" summary="locaStorage에서 isStart 값만 제외 하고 저장하기">
       <option name="closed" value="true" />
@@ -628,7 +621,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733729382069</updated>
     </task>
-    <option name="localTasksCounter" value="188" />
+    <task id="LOCAL-00188" summary="v1.14.0 스토어 &gt; 가격비교 : 찜 보일때까지 기다리기">
+      <option name="closed" value="true" />
+      <created>1733731153869</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1733731153869</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -673,7 +674,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.4.0 yarn build" />
     <MESSAGE value="v1.4.1 + userId boolean &gt; string" />
     <MESSAGE value="v1.4.2 + bug &gt; CreateGroup.tsx &gt; title" />
     <MESSAGE value="v1.5.0 라우터 가상에서 작동 가능 / 패스추가" />
@@ -698,7 +698,8 @@
     <MESSAGE value="v1.12.0 yarn build" />
     <MESSAGE value="v1.12.1 PC로 뜨는 모바일 유저에이전트 수정완료&#10;41개 /&#10;&#10;'Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X; rv:114.0) Gecko/20100101 Firefox/114.0'&#10;&gt;&#10;Mozilla/5.0 (iPhone; CPU iPhone OS 16_3; rv:114.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1" />
     <MESSAGE value="v1.13.0 아이폰 유저정보 803개 수정완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.13.0 아이폰 유저정보 803개 수정완료" />
+    <MESSAGE value="v1.14.0 스토어 &gt; 가격비교 : 찜 보일때까지 기다리기" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.14.0 스토어 &gt; 가격비교 : 찜 보일때까지 기다리기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
