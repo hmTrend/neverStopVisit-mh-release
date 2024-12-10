@@ -19,9 +19,11 @@ import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 import { CommonUtil } from "@/util/common.util";
 import CopyToClipboardButton from "@/components/_commons/CopyToClipboardButton";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useGetExcelList } from "@/hook/fingerPrint/useGetExcelList";
 import { FingerprintCookeCook } from "@/components/register/fingerprint/FingerprintCookeCook";
+import FingerprintButton from "@/components/register/fingerprint/FingerprintButton";
+const openBrowsers = new Map();
 
 export const FingerprintExcelList = () => {
   const toast = useToast();
@@ -105,7 +107,6 @@ export const FingerprintExcelList = () => {
                   <Th>아이피</Th>
                   <Th>폰번호</Th>
                   <Th>지문열기</Th>
-                  <Th>지문닫기</Th>
                   <Th>삭제여부</Th>
                 </Tr>
               </Thead>
@@ -130,22 +131,7 @@ export const FingerprintExcelList = () => {
                     <Td>{v.ip}</Td>
                     <Td>{v.phoneNumber}</Td>
                     <Td>
-                      <Button
-                        onClick={() => fingerprintExcelList({ _id: v._id })}
-                        fontSize={"xs"}
-                        variant={"link"}
-                      >
-                        OPEN
-                      </Button>
-                    </Td>
-                    <Td>
-                      <Button
-                        onClick={() => fingerprintBrowserClose({ _id: v._id })}
-                        fontSize={"xs"}
-                        variant={"link"}
-                      >
-                        CLOSE
-                      </Button>
+                      <FingerprintButton _id={v._id} />
                     </Td>
                     <Td>
                       <Button

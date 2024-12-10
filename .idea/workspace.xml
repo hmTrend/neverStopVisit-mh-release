@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -236,15 +236,7 @@
       <workItem from="1733712975058" duration="454000" />
       <workItem from="1733723900557" duration="8097000" />
       <workItem from="1733797336690" duration="8143000" />
-      <workItem from="1733819504633" duration="2395000" />
-    </task>
-    <task id="LOCAL-00145" summary="findTargetBlog &gt; url로 찾아서 클릭하기">
-      <option name="closed" value="true" />
-      <created>1733149953681</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1733149953681</updated>
+      <workItem from="1733819504633" duration="7419000" />
     </task>
     <task id="LOCAL-00146" summary="findTargetBlog &gt; url로 찾아서 클릭하기">
       <option name="closed" value="true" />
@@ -630,7 +622,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733821339346</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="v1.16.4 쿠키값 미입력 대응완료">
+      <option name="closed" value="true" />
+      <created>1733821944613</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1733821944613</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -675,7 +675,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.7.0 지문 리스트 쿠키 삭제 + 총갯수 가져오는 db카운터 추가" />
     <MESSAGE value="v1.8.0 라우터 실시간 통신흐름으로 인한 domcontentloaded" />
     <MESSAGE value="v1.9.0 라우터 버전 미로그인시에도 작동가능" />
     <MESSAGE value="v1.9.1 라우터 버전 미로그인시에도 작동가능 close" />
@@ -700,7 +699,8 @@
     <MESSAGE value="v1.16.0 쿠키값 수정 UI 추가" />
     <MESSAGE value="v1.16.2 그래프ql 추가 + 쿠키굽기성공" />
     <MESSAGE value="v1.16.3 쿠팡 쿠키 적용완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.16.3 쿠팡 쿠키 적용완료" />
+    <MESSAGE value="v1.16.4 쿠키값 미입력 대응완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.16.4 쿠키값 미입력 대응완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
