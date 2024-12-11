@@ -238,23 +238,7 @@
       <workItem from="1733723900557" duration="8097000" />
       <workItem from="1733797336690" duration="8143000" />
       <workItem from="1733819504633" duration="9409000" />
-      <workItem from="1733904498557" duration="2449000" />
-    </task>
-    <task id="LOCAL-00154" summary="v1.4.2 + bug &gt; CreateGroup.tsx &gt; title">
-      <option name="closed" value="true" />
-      <created>1733395459678</created>
-      <option name="number" value="00154" />
-      <option name="presentableId" value="LOCAL-00154" />
-      <option name="project" value="LOCAL" />
-      <updated>1733395459678</updated>
-    </task>
-    <task id="LOCAL-00155" summary="v1.4.2 + bug &gt; CreateGroup.tsx &gt; title">
-      <option name="closed" value="true" />
-      <created>1733396019472</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1733396019472</updated>
+      <workItem from="1733904498557" duration="3264000" />
     </task>
     <task id="LOCAL-00156" summary="v1.5.0 라우터 가상에서 작동 가능 / 패스추가">
       <option name="closed" value="true" />
@@ -632,7 +616,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733904647679</updated>
     </task>
-    <option name="localTasksCounter" value="203" />
+    <task id="LOCAL-00203" summary="v1.17.2 쇼핑 / 플레이스 작업가능">
+      <option name="closed" value="true" />
+      <created>1733907115224</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1733907115224</updated>
+    </task>
+    <task id="LOCAL-00204" summary="v1.17.2 쇼핑 / 플레이스 작업가능">
+      <option name="closed" value="true" />
+      <created>1733907357837</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1733907357837</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -677,7 +677,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.11.0 playwright 엔진 새로 셋팅 함수형" />
     <MESSAGE value="v1.11.1 라우터 로그인여부 체크" />
     <MESSAGE value="v1.11.2 군더더기 없이 깔끔한 LTE 라우터 전환" />
     <MESSAGE value="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환" />
@@ -702,7 +701,8 @@
     <MESSAGE value="getExcelList &gt; dataListCount 갯수 추가" />
     <MESSAGE value="v1.17.0 쿠팡지문 완성" />
     <MESSAGE value="v1.17.1 크로미움 오픈버전" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.17.1 크로미움 오픈버전" />
+    <MESSAGE value="v1.17.2 쇼핑 / 플레이스 작업가능" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.17.2 쇼핑 / 플레이스 작업가능" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
