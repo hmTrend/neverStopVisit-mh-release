@@ -10,9 +10,9 @@ export const useFetchTargetExcelOneCookie = () => {
   const toast = useToast();
 
   const fetchFingerPrintTargetExcelOne = async ({ _id, cookie, nState }) => {
-    const { cookieData,isCACT } = PlaywrighterUtil.extractCTATCookie(cookie);
-    let cookieTemplate = cookieData
-    if(isCACT){
+    const { cookieData, isCACT } = PlaywrighterUtil.extractCTATCookie(cookie);
+    let cookieTemplate = cookieData;
+    if (isCACT) {
       cookieTemplate = [
         {
           name: "CT_AT",
@@ -26,7 +26,7 @@ export const useFetchTargetExcelOneCookie = () => {
         },
       ];
     }
-    
+
     const { data, errors } = await FetchFingerPrintTargetExcelOne({
       variables: {
         input: { _id, cookie: JSON.stringify(cookieTemplate), nState },

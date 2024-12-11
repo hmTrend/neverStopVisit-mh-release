@@ -7,8 +7,8 @@ export class PlaywrighterUtil {
     );
     // If CT_AT cookie is not found, return empty array
     if (!ctAtCookie) {
-      return { cookieData:cookiesArrayParse, isCACT:false };
+      return { cookieData: cookiesArrayParse, isCACT: false };
     }
-    return { cookieData:ctAtCookie.value, isCACT:true };
+    return { cookieData: ctAtCookie.value, isCACT: true };
   }
 }
