@@ -39,7 +39,7 @@ export const initialize = async ({
       });
       let getContext;
       if (type === "coupang") {
-        const { context } = await createDesktopContext({ browser });
+        const { context } = await createMobileContext({ browser });
         getContext = context;
       } else {
         const { context } = await createMobileContext({ browser });

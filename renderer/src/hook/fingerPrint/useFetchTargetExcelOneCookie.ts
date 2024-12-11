@@ -1,6 +1,7 @@
 import { gqlFetchFingerPrintTargetExcelOne } from "@/lib/graphql/finger-print.apollo";
 import { useMutation } from "@apollo/client";
 import { useToast } from "@chakra-ui/react";
+import { PlaywrighterUtil } from "@/util/playwrighter.util";
 
 export const useFetchTargetExcelOneCookie = () => {
   const [FetchFingerPrintTargetExcelOne] = useMutation(
@@ -9,8 +10,23 @@ export const useFetchTargetExcelOneCookie = () => {
   const toast = useToast();
 
   const fetchFingerPrintTargetExcelOne = async ({ _id, cookie, nState }) => {
+    const CTATCookieValue = PlaywrighterUtil.extractCTATCookie(cookie);
+    const cookieTemplate = [
+      {
+        name: "CT_AT",
+        value: CTATCookieValue,
+        domain: ".coupang.com",
+        path: "/",
+        expires: -1,
+        httpOnly: true,
+        secure: true,
+        sameSite: "lax",
+      },
+    ];
     const { data, errors } = await FetchFingerPrintTargetExcelOne({
-      variables: { input: { _id, cookie, nState } },
+      variables: {
+        input: { _id, cookie: JSON.stringify(cookieTemplate), nState },
+      },
     });
     if (errors) {
       console.log(errors[0].message);
