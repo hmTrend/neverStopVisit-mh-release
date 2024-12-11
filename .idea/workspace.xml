@@ -77,6 +77,7 @@
     &quot;TypeScript.index.ts (2).executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.index.ts.executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initializeFireFox.ts.executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.mobile.userAgent.ts.executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.network.router.edu.ts.executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.network.router.eduPlayer.ts.executor&quot;: &quot;Run&quot;,
@@ -121,7 +122,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.network.router.eduPlayer.ts">
+  <component name="RunManager" selected="TypeScript.initializeFireFox.ts">
     <configuration name="clickNearbyAttractions.tsx" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -161,6 +162,19 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="initializeFireFox.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeFireFox.ts" />
+      <option name="programParameters" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="network.router.eduPlayer.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -174,26 +188,13 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="targetKeywordSearch.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/targetKeywordSearch.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.initializeFireFox.ts" />
         <item itemvalue="TypeScript.network.router.eduPlayer.ts" />
         <item itemvalue="TypeScript.clickNearbyAttractions.tsx" />
         <item itemvalue="TypeScript.findTargetBlog.ts" />
         <item itemvalue="TypeScript.findTargetPlaceInTargetBlog.ts" />
-        <item itemvalue="TypeScript.targetKeywordSearch.ts" />
       </list>
     </recent_temporary>
   </component>

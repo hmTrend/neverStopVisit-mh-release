@@ -24,14 +24,13 @@ export const initialize = async ({
   type?: string;
 }) => {
   const proxySettings = getNextProxy();
-  const userAgent = getNextCreateUserAgentWithDRSoftKorea241207();
   for (let i = 0; i < 2; i++) {
     try {
       browser = await chromiumEngine.launch({
         headless: false,
         executablePath: getChromePath({
           pathStep: i,
-          isChromiumMode: false,
+          isChromiumMode: true,
         }),
         ignoreDefaultArgs: ["--enable-automation"],
         args: ["--disable-blink-features=AutomationControlled"],
@@ -74,7 +73,6 @@ export const initialize = async ({
 
 async function createMobileContext({ browser }: { browser: Browser }) {
   const userAgent: any = getNextCreateUserAgentWithDRSoftKorea241207(); // 동적 user agent
-  // const chromeVersion = extractChromeVersion(userAgent);
 
   console.log("userAgent 000000");
   console.log(userAgent);
