@@ -238,14 +238,6 @@
       <workItem from="1733797336690" duration="8143000" />
       <workItem from="1733819504633" duration="9409000" />
     </task>
-    <task id="LOCAL-00152" summary="v1.4.0 yarn build">
-      <option name="closed" value="true" />
-      <created>1733395089305</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1733395089306</updated>
-    </task>
     <task id="LOCAL-00153" summary="v1.4.1 + userId boolean &gt; string">
       <option name="closed" value="true" />
       <created>1733395250237</created>
@@ -630,7 +622,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733896260640</updated>
     </task>
-    <option name="localTasksCounter" value="201" />
+    <task id="LOCAL-00201" summary="v1.17.0 쿠팡지문 완성">
+      <option name="closed" value="true" />
+      <created>1733897600304</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1733897600304</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -675,7 +675,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.10.2 close" />
     <MESSAGE value="v1.10.4 close" />
     <MESSAGE value="v1.11.0 playwright 엔진 새로 셋팅 함수형" />
     <MESSAGE value="v1.11.1 라우터 로그인여부 체크" />
@@ -700,7 +699,8 @@
     <MESSAGE value="쿠키데이터 삽입 가능" />
     <MESSAGE value="쿠키데이터 CT_AT 여부에 따른 상황설정완료" />
     <MESSAGE value="getExcelList &gt; dataListCount 갯수 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="getExcelList &gt; dataListCount 갯수 추가" />
+    <MESSAGE value="v1.17.0 쿠팡지문 완성" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.17.0 쿠팡지문 완성" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
