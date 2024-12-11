@@ -238,14 +238,6 @@
       <workItem from="1733797336690" duration="8143000" />
       <workItem from="1733819504633" duration="9409000" />
     </task>
-    <task id="LOCAL-00151" summary="라우터 기능 정상작동 픽스">
-      <option name="closed" value="true" />
-      <created>1733394727802</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1733394727802</updated>
-    </task>
     <task id="LOCAL-00152" summary="v1.4.0 yarn build">
       <option name="closed" value="true" />
       <created>1733395089305</created>
@@ -630,7 +622,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733895599141</updated>
     </task>
-    <option name="localTasksCounter" value="200" />
+    <task id="LOCAL-00200" summary="getExcelList &gt; dataListCount 갯수 추가">
+      <option name="closed" value="true" />
+      <created>1733896260640</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1733896260640</updated>
+    </task>
+    <option name="localTasksCounter" value="201" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -675,7 +675,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.10.1 새페이지 오픈후 1.5초 대기후 진행" />
     <MESSAGE value="v1.10.2 close" />
     <MESSAGE value="v1.10.4 close" />
     <MESSAGE value="v1.11.0 playwright 엔진 새로 셋팅 함수형" />
@@ -700,7 +699,8 @@
     <MESSAGE value="쿠키값 정제기능 추가완료 &gt; CT_AT만 정제" />
     <MESSAGE value="쿠키데이터 삽입 가능" />
     <MESSAGE value="쿠키데이터 CT_AT 여부에 따른 상황설정완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="쿠키데이터 CT_AT 여부에 따른 상황설정완료" />
+    <MESSAGE value="getExcelList &gt; dataListCount 갯수 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="getExcelList &gt; dataListCount 갯수 추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

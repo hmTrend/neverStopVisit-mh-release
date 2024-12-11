@@ -23,6 +23,7 @@ import { useEffect, useState } from "react";
 import { useGetExcelList } from "@/hook/fingerPrint/useGetExcelList";
 import { FingerprintCookeCook } from "@/components/register/fingerprint/FingerprintCookeCook";
 import FingerprintButton from "@/components/register/fingerprint/FingerprintButton";
+import { FingerprintExcelListDataListCount } from "@/components/register/fingerprint/FingerprintExcelListDataListCount";
 const openBrowsers = new Map();
 
 export const FingerprintExcelList = () => {
@@ -35,14 +36,15 @@ export const FingerprintExcelList = () => {
   } = useSnapshot(storeFingerPrintRegister);
   const { getExcelList } = useGetExcelList();
 
-  const GetExcelList = async () => {
+  const GetExcelList = async ({ dataListCount }) => {
     const { data, listTotalCount } = await getExcelList({
       groupFid: selectedGroupId,
+      dataListCount,
     });
     return { data, listTotalCount };
   };
   useEffect(() => {
-    GetExcelList().then((v: any) => {
+    GetExcelList({ dataListCount: 100 }).then((v: any) => {
       storeFingerPrintRegister.selectedExcelList = v.data;
       storeFingerPrintRegister.listTotalCount = v.listTotalCount;
     });
@@ -82,14 +84,27 @@ export const FingerprintExcelList = () => {
     }
   };
 
+  const handleCountChange = (value) => {
+    console.log("Selected count:", value);
+    GetExcelList({ dataListCount: parseInt(value) }).then((v: any) => {
+      storeFingerPrintRegister.selectedExcelList = v.data;
+      storeFingerPrintRegister.listTotalCount = v.listTotalCount;
+    });
+  };
+
   return (
     <Flex>
       <Box>
         <FormControl>
           <FormLabel>
-            <Text>
-              {selectedGroupName} 지문 리스트 {listTotalCount}개
-            </Text>
+            <Flex gap={6}>
+              <Text>
+                {selectedGroupName} 지문 리스트 {listTotalCount}개
+              </Text>
+              <FingerprintExcelListDataListCount
+                onCountChange={handleCountChange}
+              />
+            </Flex>
           </FormLabel>
           <TableContainer>
             <Table variant="striped" colorScheme="gray" size={"sm"}>
