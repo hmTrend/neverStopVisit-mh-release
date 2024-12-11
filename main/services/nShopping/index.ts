@@ -67,7 +67,6 @@ export class NShopping extends PuppeteerEngine {
             : "https://www.google.com/",
         cookie: this.targetCookie,
       });
-      await wait(10001000);
       {
         if (nShopping.logicType === "GOOGLE") {
           const { page } = await googleToNaver({ page: this.page });

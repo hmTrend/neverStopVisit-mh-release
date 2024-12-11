@@ -37,14 +37,15 @@ export const initialize = async ({
         // proxy: { server: proxySettings },
       });
       let getContext;
-      if (type === "coupang") {
-        const { context } = await createMobileContext({ browser });
-        getContext = context;
-      } else {
-        const { context } = await createMobileContext({ browser });
-        getContext = context;
-      }
-
+      // if (type === "coupang") {
+      //   const { context } = await createMobileContext({ browser });
+      //   getContext = context;
+      // } else {
+      //   const { context } = await createMobileContext({ browser });
+      //   getContext = context;
+      // }
+      const { context } = await createMobileContext({ browser });
+      getContext = context;
       if (cookie && cookie.length > 0) {
         if (validateCookie(cookie)) {
           const formattedCookies = formatCookiesForPlaywright(cookie);
