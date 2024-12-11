@@ -238,22 +238,6 @@
       <workItem from="1733797336690" duration="8143000" />
       <workItem from="1733819504633" duration="9409000" />
     </task>
-    <task id="LOCAL-00149" summary="쇼핑 &amp; 플레이스 &gt; 네이버로직 &amp; 구글로직 셋팅완료">
-      <option name="closed" value="true" />
-      <created>1733222416822</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1733222416822</updated>
-    </task>
-    <task id="LOCAL-00150" summary="로그인 체크 기능 삽입">
-      <option name="closed" value="true" />
-      <created>1733387182219</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1733387182219</updated>
-    </task>
     <task id="LOCAL-00151" summary="라우터 기능 정상작동 픽스">
       <option name="closed" value="true" />
       <created>1733394727802</created>
@@ -630,7 +614,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733895210064</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="쿠키데이터 삽입 가능">
+      <option name="closed" value="true" />
+      <created>1733895576012</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1733895576012</updated>
+    </task>
+    <task id="LOCAL-00199" summary="쿠키데이터 CT_AT 여부에 따른 상황설정완료">
+      <option name="closed" value="true" />
+      <created>1733895599141</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1733895599141</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -675,8 +675,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.9.2 라우터 버전 미로그인시에도 작동가능 close" />
-    <MESSAGE value="v1.10.0 라우터 버그 박멸" />
     <MESSAGE value="v1.10.1 새페이지 오픈후 1.5초 대기후 진행" />
     <MESSAGE value="v1.10.2 close" />
     <MESSAGE value="v1.10.4 close" />
@@ -700,7 +698,9 @@
     <MESSAGE value="v1.16.5 지문 열고닫기 성공" />
     <MESSAGE value="v1.16.6 isLoading 추가" />
     <MESSAGE value="쿠키값 정제기능 추가완료 &gt; CT_AT만 정제" />
-    <option name="LAST_COMMIT_MESSAGE" value="쿠키값 정제기능 추가완료 &gt; CT_AT만 정제" />
+    <MESSAGE value="쿠키데이터 삽입 가능" />
+    <MESSAGE value="쿠키데이터 CT_AT 여부에 따른 상황설정완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="쿠키데이터 CT_AT 여부에 따른 상황설정완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
