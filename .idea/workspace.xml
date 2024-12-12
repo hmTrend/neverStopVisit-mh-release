@@ -94,7 +94,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -173,6 +173,7 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeFireFox.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="network.router.eduPlayer.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -238,15 +239,9 @@
       <workItem from="1733723900557" duration="8097000" />
       <workItem from="1733797336690" duration="8143000" />
       <workItem from="1733819504633" duration="9409000" />
-      <workItem from="1733904498557" duration="3264000" />
-    </task>
-    <task id="LOCAL-00156" summary="v1.5.0 라우터 가상에서 작동 가능 / 패스추가">
-      <option name="closed" value="true" />
-      <created>1733444485144</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1733444485144</updated>
+      <workItem from="1733904498557" duration="5323000" />
+      <workItem from="1733910495386" duration="827000" />
+      <workItem from="1733911349465" duration="8182000" />
     </task>
     <task id="LOCAL-00157" summary="v1.6.0 라우터 작동 확인">
       <option name="closed" value="true" />
@@ -632,7 +627,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733907357837</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="v1.17.3 yarn build">
+      <option name="closed" value="true" />
+      <created>1733907948449</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1733907948450</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -677,7 +680,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.11.1 라우터 로그인여부 체크" />
     <MESSAGE value="v1.11.2 군더더기 없이 깔끔한 LTE 라우터 전환" />
     <MESSAGE value="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환" />
     <MESSAGE value="v1.11.4 구글에서 네이버 찾을시 클릭하기" />
@@ -702,7 +704,8 @@
     <MESSAGE value="v1.17.0 쿠팡지문 완성" />
     <MESSAGE value="v1.17.1 크로미움 오픈버전" />
     <MESSAGE value="v1.17.2 쇼핑 / 플레이스 작업가능" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.17.2 쇼핑 / 플레이스 작업가능" />
+    <MESSAGE value="v1.17.3 yarn build" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.17.3 yarn build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
