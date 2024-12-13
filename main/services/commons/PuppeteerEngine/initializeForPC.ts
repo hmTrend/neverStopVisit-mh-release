@@ -1,12 +1,11 @@
 import { Browser, Page } from "playwright";
 import { formatCookiesForPlaywright } from "./formatCookiesForPlaywright";
-import { getNextProxy } from "../../../lib/proxy/getNextProxy";
 import { validateCookie } from "./validateCookie";
 import { getChromePath } from "./getChromePath";
 import wait from "waait";
 import { LaunchOptions } from "playwright-core";
-import { getNextCreateUserAgentWithDRSoftKorea241207 } from "../../../lib/network/userAgentWithDRSoftKorea";
 import { getNextCreateUserAgentWithPC } from "../../../lib/network/userAgentWithPC";
+import { getNextProxyDynamicProxy } from "../../../lib/proxy/getNextProxyDynamicProxy";
 
 export const initializeForPC = async ({
   url,
@@ -25,7 +24,7 @@ export const initializeForPC = async ({
   browser: Browser;
   type?: string;
 }) => {
-  const proxySettings = getNextProxy();
+  const proxySettings = getNextProxyDynamicProxy();
   for (let i = 0; i < 2; i++) {
     try {
       const browserOptions: LaunchOptions = {

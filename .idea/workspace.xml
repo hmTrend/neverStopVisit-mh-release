@@ -242,15 +242,7 @@
       <workItem from="1733904498557" duration="5323000" />
       <workItem from="1733910495386" duration="827000" />
       <workItem from="1733911349465" duration="18108000" />
-      <workItem from="1734057163779" duration="7657000" />
-    </task>
-    <task id="LOCAL-00162" summary="v1.7.0 지문 리스트 쿠키 삭제 + 총갯수 가져오는 db카운터 추가">
-      <option name="closed" value="true" />
-      <created>1733461100580</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1733461100580</updated>
+      <workItem from="1734057163779" duration="8034000" />
     </task>
     <task id="LOCAL-00163" summary="v1.8.0 라우터 실시간 통신흐름으로 인한 domcontentloaded">
       <option name="closed" value="true" />
@@ -636,7 +628,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734066197916</updated>
     </task>
-    <option name="localTasksCounter" value="211" />
+    <task id="LOCAL-00211" summary="v1.19.0 쿠팡 쿠키값 오류해결 + 네이버 지문셋팅">
+      <option name="closed" value="true" />
+      <created>1734066397162</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1734066397162</updated>
+    </task>
+    <option name="localTasksCounter" value="212" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">

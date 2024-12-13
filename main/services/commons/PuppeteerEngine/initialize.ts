@@ -23,7 +23,7 @@ export const initialize = async ({
   browser: Browser;
   type?: string;
 }) => {
-  const proxySettings = getNextProxy();
+  // const proxySettings = getNextProxy();
   for (let i = 0; i < 2; i++) {
     try {
       browser = await chromiumEngine.launch({
