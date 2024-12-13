@@ -1,6 +1,7 @@
 import { initialize } from "./initialize";
 import { Browser, Page, BrowserContext } from "playwright";
 import { chromium } from "playwright-extra";
+import { initializeForPC } from "./initializeForPC";
 
 export class PuppeteerEngine {
   chromiumEngine: typeof chromium; // 'typeof chromium'으로 수정
@@ -22,6 +23,26 @@ export class PuppeteerEngine {
   async initialize({ url, cookie, type = "" }) {
     try {
       const { page, browser } = await initialize({
+        url,
+        chromiumEngine: this.chromiumEngine,
+        page: this.page,
+        pages: this.pages,
+        browser: this.browser,
+        cookie,
+        type,
+      });
+      console.log("aaa");
+      this.page = page;
+      this.browser = browser;
+    } catch (e) {
+      console.error(e.message);
+      throw Error("initialize");
+    }
+  }
+
+  async initializeForPC({ url, cookie, type = "" }) {
+    try {
+      const { page, browser } = await initializeForPC({
         url,
         chromiumEngine: this.chromiumEngine,
         page: this.page,

@@ -16,15 +16,18 @@ export const fingerPrintBrowserIpc = async () => {
       const { _id, type } = args;
       const { data } = await GetFingerPrintTargetExcelOneFromId({ _id });
 
-      if (data && data.cookie.trim()) {
-        parsedCookie = JSON.parse(data.cookie);
+      try {
+        if (data && data.cookie.trim()) {
+          parsedCookie = JSON.parse(data.cookie);
+        }
+      } catch (e) {
+        console.error(e.message);
       }
 
       // 새로운 engine 인스턴스 생성
       const newEngine = new PuppeteerEngine();
-      await newEngine.initialize({
-        url:
-          type === "coupang" ? "https://coupang.com/" : "https://m.naver.com",
+      await newEngine.initializeForPC({
+        url: type === "coupang" ? "https://coupang.com/" : "https://naver.com",
         cookie: parsedCookie ?? "",
         type,
       });
@@ -52,13 +55,15 @@ export const fingerPrintBrowserIpc = async () => {
         const engine = engineMap.get(_id);
 
         if (engine) {
-          await cookieNstateSave({
-            page: engine.page,
-            _id,
-            nState: "쿠키",
-          });
-          engineMap.delete(_id);
-          await engine.browser.close();
+          if (type !== "coupang") {
+            await cookieNstateSave({
+              page: engine.page,
+              _id,
+              nState: "쿠키",
+            });
+            engineMap.delete(_id);
+            await engine.browser.close();
+          }
         }
       });
     } catch (error) {
@@ -74,17 +79,19 @@ export const fingerPrintBrowserIpc = async () => {
   });
 
   ipcMain.handle("finger-print-browser-close", async (event, args) => {
-    const { _id } = args;
+    const { _id, type } = args;
     const engine = engineMap.get(_id);
 
     if (engine) {
-      await cookieNstateSave({
-        page: engine.page,
-        _id,
-        nState: "쿠키",
-      });
-      engineMap.delete(_id);
-      await engine.browser.close();
+      if (type !== "coupang") {
+        await cookieNstateSave({
+          page: engine.page,
+          _id,
+          nState: "쿠키",
+        });
+        engineMap.delete(_id);
+        await engine.browser.close();
+      }
     }
   });
 };

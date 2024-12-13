@@ -67,10 +67,11 @@ export const FingerprintExcelList = () => {
     }
   };
 
-  const fingerprintBrowserClose = async ({ _id }) => {
+  const fingerprintBrowserClose = async ({ _id, type }) => {
     try {
       const result = await window.ipc.invoke("finger-print-browser-close", {
         _id,
+        type,
       });
     } catch (e) {
       console.error(e.message);
@@ -150,7 +151,9 @@ export const FingerprintExcelList = () => {
                     </Td>
                     <Td>
                       <Button
-                        onClick={() => fingerprintBrowserClose({ _id: v._id })}
+                        onClick={() =>
+                          fingerprintBrowserClose({ _id: v._id, type: v.type })
+                        }
                         fontSize={"xs"}
                         variant={"link"}
                         fontWeight={"light"}

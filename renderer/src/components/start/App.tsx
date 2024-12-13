@@ -4,7 +4,6 @@ import { Flex } from "@chakra-ui/react";
 import { SelectProgramForStartLogic } from "@/components/start/SelectProgramForStartLogic";
 import { StartButtonLogic } from "@/components/start/StartButtonLogic";
 import { OptionCommon } from "@/components/start/OptionCommon";
-import { useEffect } from "react";
 
 export const App = () => {
   return (

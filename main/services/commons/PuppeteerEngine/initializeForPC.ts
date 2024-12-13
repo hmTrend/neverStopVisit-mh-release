@@ -4,9 +4,11 @@ import { getNextProxy } from "../../../lib/proxy/getNextProxy";
 import { validateCookie } from "./validateCookie";
 import { getChromePath } from "./getChromePath";
 import wait from "waait";
+import { LaunchOptions } from "playwright-core";
 import { getNextCreateUserAgentWithDRSoftKorea241207 } from "../../../lib/network/userAgentWithDRSoftKorea";
+import { getNextCreateUserAgentWithPC } from "../../../lib/network/userAgentWithPC";
 
-export const initialize = async ({
+export const initializeForPC = async ({
   url,
   page,
   pages,
@@ -26,7 +28,7 @@ export const initialize = async ({
   const proxySettings = getNextProxy();
   for (let i = 0; i < 2; i++) {
     try {
-      browser = await chromiumEngine.launch({
+      const browserOptions: LaunchOptions = {
         headless: false,
         executablePath: getChromePath({
           pathStep: i,
@@ -34,8 +36,14 @@ export const initialize = async ({
         }),
         ignoreDefaultArgs: ["--enable-automation"],
         args: ["--disable-blink-features=AutomationControlled"],
-        // proxy: { server: proxySettings },
-      });
+      };
+
+      // type이 coupang일 경우에만 proxy 설정 추가
+      if (type === "coupang") {
+        browserOptions.proxy = { server: proxySettings };
+      }
+
+      browser = await chromiumEngine.launch(browserOptions);
       let getContext;
       // if (type === "coupang") {
       //   const { context } = await createMobileContext({ browser });
@@ -73,17 +81,17 @@ export const initialize = async ({
 };
 
 async function createMobileContext({ browser }: { browser: Browser }) {
-  const userAgent: any = getNextCreateUserAgentWithDRSoftKorea241207(); // 동적 user agent
+  const userAgent: any = getNextCreateUserAgentWithPC(); // 동적 user agent
 
   console.log("userAgent 000000");
   console.log(userAgent);
   const context = await browser.newContext({
-    // userAgent: userAgent.userAgent,
-    userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-S921N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Mobile Safari/537.36 coupangapp/1.0",
+    userAgent: userAgent.userAgent,
     // userAgent:
-    //   "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Mobile/15E148 Safari/605.1",
-    // extraHTTPHeaders: userAgent.headers,
+    //   "Mozilla/5.0 (Linux; Android 14; SM-S921N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Mobile Safari/537.36 coupangapp/1.0",
+    // userAgent:
+    //   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    extraHTTPHeaders: userAgent.headers,
     // viewport: { width: 412, height: 915 },
     // isMobile: true,
     // hasTouch: true,

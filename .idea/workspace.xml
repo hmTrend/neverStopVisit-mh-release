@@ -86,7 +86,7 @@
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/start",
+    "last_opened_file_path": "C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/network",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -109,11 +109,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\lib\network" />
+      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\services\commons\PuppeteerEngine" />
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
       <recent name="$PROJECT_DIR$/main/lib/apollo" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register/nPlace" />
-      <recent name="$PROJECT_DIR$/main/services/commons/excel" />
-      <recent name="$PROJECT_DIR$/renderer/src/lib/graphql" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/services/commons/naver" />
@@ -153,7 +153,7 @@
     <configuration name="initializeAndroid.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine" />
@@ -161,7 +161,6 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeAndroid.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="initializeFireFox.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -175,7 +174,6 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeFireFox.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="network.router.eduPlayer.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -243,15 +241,8 @@
       <workItem from="1733819504633" duration="9409000" />
       <workItem from="1733904498557" duration="5323000" />
       <workItem from="1733910495386" duration="827000" />
-      <workItem from="1733911349465" duration="17719000" />
-    </task>
-    <task id="LOCAL-00160" summary="v1.6.1 라우터 대기시간 2분으로 늘림">
-      <option name="closed" value="true" />
-      <created>1733447284281</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1733447284281</updated>
+      <workItem from="1733911349465" duration="18108000" />
+      <workItem from="1734057163779" duration="7352000" />
     </task>
     <task id="LOCAL-00161" summary="v1.6.1 라우터 대기시간 2분으로 늘림">
       <option name="closed" value="true" />
@@ -637,7 +628,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734054256784</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="v1.18.1 userAgent 원복 + 피씨 페이지 추가">
+      <option name="closed" value="true" />
+      <created>1734056473843</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1734056473843</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -682,7 +681,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.11.5 로그아웃인지 체크하는 방식을 count로 변경" />
     <MESSAGE value="v1.12.0 inapp 모두제거" />
     <MESSAGE value="v1.12.0 yarn build" />
     <MESSAGE value="v1.12.1 PC로 뜨는 모바일 유저에이전트 수정완료&#10;41개 /&#10;&#10;'Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X; rv:114.0) Gecko/20100101 Firefox/114.0'&#10;&gt;&#10;Mozilla/5.0 (iPhone; CPU iPhone OS 16_3; rv:114.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1" />
@@ -707,7 +705,8 @@
     <MESSAGE value="v1.17.4 안드로이드 쿠팡 접속 코드 테스트 시작" />
     <MESSAGE value="v1.18.0 쿠팡앱 앱피아 연동" />
     <MESSAGE value="v1.18.0 쿠팡앱 앱피아 연동 - 쿠키가져오기 실패" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.18.0 쿠팡앱 앱피아 연동 - 쿠키가져오기 실패" />
+    <MESSAGE value="v1.18.1 userAgent 원복 + 피씨 페이지 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.18.1 userAgent 원복 + 피씨 페이지 추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
