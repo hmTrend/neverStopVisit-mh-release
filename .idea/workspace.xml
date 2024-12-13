@@ -242,15 +242,7 @@
       <workItem from="1733904498557" duration="5323000" />
       <workItem from="1733910495386" duration="827000" />
       <workItem from="1733911349465" duration="18108000" />
-      <workItem from="1734057163779" duration="7352000" />
-    </task>
-    <task id="LOCAL-00161" summary="v1.6.1 라우터 대기시간 2분으로 늘림">
-      <option name="closed" value="true" />
-      <created>1733447300506</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1733447300506</updated>
+      <workItem from="1734057163779" duration="7657000" />
     </task>
     <task id="LOCAL-00162" summary="v1.7.0 지문 리스트 쿠키 삭제 + 총갯수 가져오는 db카운터 추가">
       <option name="closed" value="true" />
@@ -636,7 +628,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734056473843</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="v1.19.0 쿠팡 쿠키값 오류해결 + 네이버 지문셋팅">
+      <option name="closed" value="true" />
+      <created>1734066197916</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1734066197916</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -681,7 +681,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.12.0 inapp 모두제거" />
     <MESSAGE value="v1.12.0 yarn build" />
     <MESSAGE value="v1.12.1 PC로 뜨는 모바일 유저에이전트 수정완료&#10;41개 /&#10;&#10;'Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X; rv:114.0) Gecko/20100101 Firefox/114.0'&#10;&gt;&#10;Mozilla/5.0 (iPhone; CPU iPhone OS 16_3; rv:114.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1" />
     <MESSAGE value="v1.13.0 아이폰 유저정보 803개 수정완료" />
@@ -706,7 +705,8 @@
     <MESSAGE value="v1.18.0 쿠팡앱 앱피아 연동" />
     <MESSAGE value="v1.18.0 쿠팡앱 앱피아 연동 - 쿠키가져오기 실패" />
     <MESSAGE value="v1.18.1 userAgent 원복 + 피씨 페이지 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.18.1 userAgent 원복 + 피씨 페이지 추가" />
+    <MESSAGE value="v1.19.0 쿠팡 쿠키값 오류해결 + 네이버 지문셋팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.19.0 쿠팡 쿠키값 오류해결 + 네이버 지문셋팅" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
