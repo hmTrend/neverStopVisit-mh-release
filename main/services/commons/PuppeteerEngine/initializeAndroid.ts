@@ -29,15 +29,15 @@ async function launchCoupangWithCookie() {
       {
         name: "CT_AT",
         value:
-          "eyJraWQiOiJjMjM3NDM1OC1lYzZlLTRkNjgtOTFlNS0zMjVkM2I4YjVkMmMiLCJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJleHQiOnsiTFNJRCI6IjdiM2JhNWM5LWZjMjQtNDE2ZS1hODE1LTU4MjFhNDU2OTkyZSIsIk5PTkNFIjoiMTVkYTIyM2RiN2RjMGI2NDU2NTg4MzMwNTQ5NTc3NWMiLCJmaWF0IjoxLjcyMDQwNTgzOUU5LCJGQUdFIjoiNiJ9LCJzdWIiOiIxNTg1NTEzNjUiLCJhdWQiOlsiaHR0cHM6Ly93d3cuY291cGFuZy5jb20iLCItIl0sInNjcCI6WyJvcGVuaWQiLCJvZmZsaW5lIiwiY29yZSIsImNvcmUtc2hhcmVkIiwicGF5Il0sIm5iZiI6MTczMDY4NjM5OSwiaXNzIjoiaHR0cHM6Ly9tYXV0aC5jb3VwYW5nLmNvbS8iLCJleHAiOjE3MzA3MDA3OTksImlhdCI6MTczMDY4NjM5OSwianRpIjoiZjM1ZTAwNTctYzg4Ni00NWFjLThmOTUtNzRlZWYzNGRkOGRkIiwiY2xpZW50X2lkIjoiNGUyZTAyYzgtNzQ1Ni00YmQ0LTljNzUtNWI5OGYyMDU4MzgyIn0.Erle9uM1OjGq8NxkTjL7hSbM9VkyBIXJj_BIaLnYcBjNyJQAQtTONkUumFSStebsieuLyBxWCwTfixFxO8SPBw",
+          "eyJraWQiOiJjMjM3NDM1OC1lYzZlLTRkNjgtOTFlNS0zMjVkM2I4YjVkMmMiLCJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJleHQiOnsiTFNJRCI6IjM3N2EzYzU4LTU0ZjMtNDIzYS1iYTkwLTcyNmQwOTEzYjJjNiIsIk5PTkNFIjoiYzgzMGI1NmIyNjY1MjgzNDhmMjdlNjIwY2VjN2ZiNjUiLCJmaWF0IjoxLjcyMDQwMDc4NkU5LCJGQUdFIjoiMTYifSwic3ViIjoiMTU4NTUwNzU3IiwiYXVkIjpbImh0dHBzOi8vd3d3LmNvdXBhbmcuY29tIiwiLSJdLCJzY3AiOlsib3BlbmlkIiwib2ZmbGluZSIsImNvcmUiLCJjb3JlLXNoYXJlZCIsInBheSJdLCJuYmYiOjE3MzM4MTc0MDQsImlzcyI6Imh0dHBzOi8vbWF1dGguY291cGFuZy5jb20vIiwiZXhwIjoxNzMzODMxODA0LCJpYXQiOjE3MzM4MTc0MDQsImp0aSI6IjRlMDhjNGNjLWQxNmUtNGYzMS1iMjEwLTQ5NzlmM2ViNTM3ZiIsImNsaWVudF9pZCI6IjRlMmUwMmM4LTc0NTYtNGJkNC05Yzc1LTViOThmMjA1ODM4MiJ9.OjOtcVBHXkQqQ-QQa2q-KxuoGVt2JU-db-rR5uyLzzGLyDQ5-s8nG-umtahKWJt5MD8JheU1Tvn48zLZ1SdJtg",
         domain: ".coupang.com",
         path: "/",
         httpOnly: true,
         secure: true,
+        sameSite: "lax",
+        expiry: -1,
       },
     ];
-    // 앱이 완전히 로드될 때까지 기다림
-    await new Promise((resolve) => setTimeout(resolve, 3000));
     console.log("Getting available contexts...");
     const contexts = await driver.getContexts();
     console.log("Available contexts:", contexts);
@@ -50,16 +50,31 @@ async function launchCoupangWithCookie() {
       console.log("Switching to WebView context...");
       await driver.switchContext(String(webviewContextStr));
 
-      console.log("Setting authentication cookies...");
-      await driver.setCookies(cookies);
       // 특정 URL로 이동
-      const productUrl =
-        "https://m.coupang.com/vm/products/7650471045?vendorItemId=915909722944";
-      console.log("Navigating to product page...");
-      await driver.url(productUrl);
+      // const productUrl =
+      //   "https://m.coupang.com/vm/products/7650471045?vendorItemId=915909722944";
+      // console.log("Navigating to product page...");
+      // await driver.url(productUrl);
+      console.log("Setting authentication cookies...");
+      // await driver.setCookies(cookies);
 
+      console.log("Switching to WebView context...");
+      await driver.switchContext(String(webviewContextStr));
+
+      // 특정 URL로 이동
+      // const productUrl =
+      //   "https://m.coupang.com/vm/products/7650471045?vendorItemId=915909722944";
+      // console.log("Navigating to product page...");
+      // await driver.url(productUrl);
+      // 쿠키 설정
+      console.log("cookie list comming...");
+      const cookies = await driver.getAllCookies();
+      console.log("now cookie infomation:", JSON.stringify(cookies, null, 2));
+
+      //
       console.log("Switching back to native context...");
       await driver.switchContext("NATIVE_APP");
+      await dumpSharedPreferences(driver);
     }
     console.log("Coupang app launched successfully");
 
@@ -82,6 +97,18 @@ async function launchCoupangWithCookie() {
     await new Promise((resolve) => setTimeout(resolve, 5000));
   } catch (error) {
     console.error("Error occurred:", error);
+  }
+}
+
+async function dumpSharedPreferences(driver) {
+  try {
+    // SharedPreferences 덤프
+    const preferenceDump = await driver.execute("mobile: shell", {
+      command: "cat /data/data/com.coupang.mobile/shared_prefs/*",
+    });
+    console.log("SharedPreferences Contents:", preferenceDump);
+  } catch (error) {
+    console.error("Error dumping SharedPreferences:", error);
   }
 }
 
