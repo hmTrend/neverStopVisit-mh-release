@@ -78,16 +78,16 @@ async function createMobileContext({ browser }: { browser: Browser }) {
   console.log("userAgent 000000");
   console.log(userAgent);
   const context = await browser.newContext({
-    userAgent: userAgent.userAgent,
-    // userAgent:
-    //   "Mozilla/5.0 (Linux; Android 14; SM-S921N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Mobile Safari/537.36 coupangapp/1.0",
+    // userAgent: userAgent.userAgent,
+    userAgent:
+      "Mozilla/5.0 (Linux; Android 14; SM-S921N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Mobile Safari/537.36 coupangapp/1.0",
     // userAgent:
     //   "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Mobile/15E148 Safari/605.1",
-    extraHTTPHeaders: userAgent.headers,
-    viewport: { width: 412, height: 915 },
-    isMobile: true,
-    hasTouch: true,
-    deviceScaleFactor: 2.625,
+    // extraHTTPHeaders: userAgent.headers,
+    // viewport: { width: 412, height: 915 },
+    // isMobile: true,
+    // hasTouch: true,
+    // deviceScaleFactor: 2.625,
   });
 
   return { context };

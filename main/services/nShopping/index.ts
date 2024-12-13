@@ -127,7 +127,9 @@ export class NShopping extends PuppeteerEngine {
         await wait(3000);
       }
     } catch (e) {
-      const browser = await this.page?.context()?.browser();
+      const browser = this.page?.context()?.browser();
+      await this.page.close();
+      await this.page.context().close();
       console.error(e.message);
       if (browser) {
         await browser.close();

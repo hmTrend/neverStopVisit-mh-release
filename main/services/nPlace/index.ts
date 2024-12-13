@@ -111,8 +111,10 @@ export class NPlace extends PuppeteerEngine {
         await wait(3000);
       }
     } catch (e) {
-      const browser = await this.page?.context()?.browser();
+      const browser = this.page?.context()?.browser();
       console.error(e.message);
+      await this.page.close();
+      await this.page.context().close();
       if (browser) {
         await browser.close();
       }
