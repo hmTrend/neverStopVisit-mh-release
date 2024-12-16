@@ -243,30 +243,7 @@
       <workItem from="1733910495386" duration="827000" />
       <workItem from="1733911349465" duration="18108000" />
       <workItem from="1734057163779" duration="9248000" />
-    </task>
-    <task id="LOCAL-00168" summary="v1.9.1 라우터 버전 미로그인시에도 작동가능 close">
-      <option name="closed" value="true" />
-      <created>1733472532217</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1733472532217</updated>
-    </task>
-    <task id="LOCAL-00169" summary="v1.9.2 라우터 버전 미로그인시에도 작동가능 close">
-      <option name="closed" value="true" />
-      <created>1733472722530</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1733472722530</updated>
-    </task>
-    <task id="LOCAL-00170" summary="v1.10.0 라우터 버그 박멸">
-      <option name="closed" value="true" />
-      <created>1733479783700</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1733479783700</updated>
+      <workItem from="1734328327792" duration="2723000" />
     </task>
     <task id="LOCAL-00171" summary="v1.10.1 새페이지 오픈후 1.5초 대기후 진행">
       <option name="closed" value="true" />
@@ -636,7 +613,31 @@
       <option name="project" value="LOCAL" />
       <updated>1734323683690</updated>
     </task>
-    <option name="localTasksCounter" value="217" />
+    <task id="LOCAL-00217" summary="v2.1.1 브라우저 종료 보강">
+      <option name="closed" value="true" />
+      <created>1734329571301</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1734329571301</updated>
+    </task>
+    <task id="LOCAL-00218" summary="v2.1.2 오류시 창 닫기 강화">
+      <option name="closed" value="true" />
+      <created>1734330432434</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1734330432434</updated>
+    </task>
+    <task id="LOCAL-00219" summary="v2.1.2 yarn build">
+      <option name="closed" value="true" />
+      <created>1734330478517</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1734330478517</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -681,9 +682,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.15.0 타입 쿠팡 추가" />
-    <MESSAGE value="v1.15.1 삭제여부 추가" />
-    <MESSAGE value="v1.16.0 쿠키값 수정 UI 추가" />
     <MESSAGE value="v1.16.2 그래프ql 추가 + 쿠키굽기성공" />
     <MESSAGE value="v1.16.3 쿠팡 쿠키 적용완료" />
     <MESSAGE value="v1.16.4 쿠키값 미입력 대응완료" />
@@ -706,7 +704,10 @@
     <MESSAGE value="v2.0.2 북마크추가" />
     <MESSAGE value="v2.1.0 chrome 브라우저 열린 브라우저 모두 닫기" />
     <MESSAGE value="v2.1.0 yarn build" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.1.0 yarn build" />
+    <MESSAGE value="v2.1.1 브라우저 종료 보강" />
+    <MESSAGE value="v2.1.2 오류시 창 닫기 강화" />
+    <MESSAGE value="v2.1.2 yarn build" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.1.2 yarn build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
