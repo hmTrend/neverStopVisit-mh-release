@@ -36,7 +36,7 @@ export class PuppeteerEngine {
       this.browser = browser;
     } catch (e) {
       console.error(e.message);
-      throw Error("initialize");
+      throw Error(`initialize > ${e.message}`);
     }
   }
 

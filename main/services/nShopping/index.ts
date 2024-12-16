@@ -142,6 +142,9 @@ export class NShopping extends PuppeteerEngine {
       await this.page.context().close();
       await this.browser.close();
     } catch (error) {
+      await this.page.close();
+      await this.page.context().close();
+      await this.browser.close();
       console.error("브라우저 종료 중 오류:", error);
     }
   }

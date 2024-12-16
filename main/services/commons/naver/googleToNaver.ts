@@ -13,6 +13,7 @@ export const googleToNaver = async ({ page }: { page: Page }) => {
     await page.locator('a[href*="naver.com"]').first().click(),
     page.waitForLoadState("networkidle"),
   ]);
+  throw new Error("err > targetKeywordSearch >>>> gogogo");
   return { page };
 };
 

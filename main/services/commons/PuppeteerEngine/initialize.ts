@@ -42,10 +42,6 @@ export const initialize = async ({
           await getContext.addCookies(formattedCookies);
           console.log("Cookie successfully added");
         } else {
-          if (browser) {
-            await browser.close();
-            console.log("Browser exited due to failed cookie validation");
-          }
           throw Error("Cookie validation failure ended");
         }
       }
