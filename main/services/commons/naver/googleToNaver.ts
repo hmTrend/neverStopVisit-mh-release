@@ -16,7 +16,7 @@ export const googleToNaver = async ({ page }: { page: Page }) => {
     ]);
     return { page };
   } catch (e) {
-   throw new Error("ERR > googleToNaver");
+    throw new Error("ERR > googleToNaver");
   }
 };
 
