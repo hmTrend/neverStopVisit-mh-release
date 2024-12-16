@@ -244,14 +244,6 @@
       <workItem from="1733911349465" duration="18108000" />
       <workItem from="1734057163779" duration="9248000" />
     </task>
-    <task id="LOCAL-00165" summary="v1.8.0 라우터 실시간 통신흐름으로 인한 domcontentloaded">
-      <option name="closed" value="true" />
-      <created>1733467813461</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1733467813461</updated>
-    </task>
     <task id="LOCAL-00166" summary="v1.9.0 라우터 버전 미로그인시에도 작동가능">
       <option name="closed" value="true" />
       <created>1733471681712</created>
@@ -636,7 +628,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734067207431</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <task id="LOCAL-00214" summary="v2.0.2 북마크추가">
+      <option name="closed" value="true" />
+      <created>1734071157538</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1734071157538</updated>
+    </task>
+    <option name="localTasksCounter" value="215" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -681,7 +681,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.12.1 PC로 뜨는 모바일 유저에이전트 수정완료&#10;41개 /&#10;&#10;'Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X; rv:114.0) Gecko/20100101 Firefox/114.0'&#10;&gt;&#10;Mozilla/5.0 (iPhone; CPU iPhone OS 16_3; rv:114.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1" />
     <MESSAGE value="v1.13.0 아이폰 유저정보 803개 수정완료" />
     <MESSAGE value="v1.14.0 스토어 &gt; 가격비교 : 찜 보일때까지 기다리기" />
     <MESSAGE value="v1.15.0 타입 쿠팡 추가" />
@@ -706,7 +705,8 @@
     <MESSAGE value="v1.18.1 userAgent 원복 + 피씨 페이지 추가" />
     <MESSAGE value="v1.19.0 쿠팡 쿠키값 오류해결 + 네이버 지문셋팅" />
     <MESSAGE value="v2.0.0 쿠팡지문 가구매용" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.0.0 쿠팡지문 가구매용" />
+    <MESSAGE value="v2.0.2 북마크추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.0.2 북마크추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

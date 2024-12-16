@@ -1,10 +1,9 @@
 import { Browser, Page } from "playwright";
 import { formatCookiesForPlaywright } from "./formatCookiesForPlaywright";
-import { getNextProxy } from "../../../lib/proxy/getNextProxy";
 import { validateCookie } from "./validateCookie";
 import { getChromePath } from "./getChromePath";
 import wait from "waait";
-import { getNextCreateUserAgentWithDRSoftKorea241207 } from "../../../lib/network/userAgentWithDRSoftKorea";
+import { getNextCreateUserAgentWithDRSoftKorea241207WithOutIPhone } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhone";
 
 export const initialize = async ({
   url,
@@ -23,7 +22,6 @@ export const initialize = async ({
   browser: Browser;
   type?: string;
 }) => {
-  // const proxySettings = getNextProxy();
   for (let i = 0; i < 2; i++) {
     try {
       browser = await chromiumEngine.launch({
@@ -34,16 +32,8 @@ export const initialize = async ({
         }),
         ignoreDefaultArgs: ["--enable-automation"],
         args: ["--disable-blink-features=AutomationControlled"],
-        // proxy: { server: proxySettings },
       });
       let getContext;
-      // if (type === "coupang") {
-      //   const { context } = await createMobileContext({ browser });
-      //   getContext = context;
-      // } else {
-      //   const { context } = await createMobileContext({ browser });
-      //   getContext = context;
-      // }
       const { context } = await createMobileContext({ browser });
       getContext = context;
       if (cookie && cookie.length > 0) {
@@ -73,7 +63,8 @@ export const initialize = async ({
 };
 
 async function createMobileContext({ browser }: { browser: Browser }) {
-  const userAgent: any = getNextCreateUserAgentWithDRSoftKorea241207(); // 동적 user agent
+  const userAgent: any =
+    getNextCreateUserAgentWithDRSoftKorea241207WithOutIPhone(); // 동적 user agent
 
   console.log("userAgent 000000");
   console.log(userAgent);

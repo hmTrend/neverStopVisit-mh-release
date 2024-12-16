@@ -123,26 +123,24 @@ export class NShopping extends PuppeteerEngine {
           nState: "정상",
         });
         this.page = page;
+        await this.page.close();
         await this.page.context().close();
+        await this.browser.close();
         await wait(3000);
       }
     } catch (e) {
-      const browser = this.page?.context()?.browser();
       await this.page.close();
       await this.page.context().close();
-      console.error(e.message);
-      if (browser) {
-        await browser.close();
-      }
+      await this.browser.close();
       await wait(20 * 1000);
     }
   }
 
   async stop() {
     try {
-      if (this.page) await this.page.close();
-      if (this.context) await this.context.close();
-      if (this.browser) await this.browser.close();
+      await this.page.close();
+      await this.page.context().close();
+      await this.browser.close();
     } catch (error) {
       console.error("브라우저 종료 중 오류:", error);
     }

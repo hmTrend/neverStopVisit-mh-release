@@ -107,17 +107,16 @@ export class NPlace extends PuppeteerEngine {
         });
         this.page = page;
         await wait(2000);
+        await this.page.close();
         await this.page.context().close();
+        await this.browser.close();
         await wait(3000);
       }
     } catch (e) {
-      const browser = this.page?.context()?.browser();
       console.error(e.message);
       await this.page.close();
       await this.page.context().close();
-      if (browser) {
-        await browser.close();
-      }
+      await this.browser.close();
       await wait(30 * 1000);
     }
   }
