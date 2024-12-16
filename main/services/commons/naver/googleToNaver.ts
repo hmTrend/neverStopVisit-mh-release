@@ -1,20 +1,23 @@
 import { Page } from "playwright";
 
 export const googleToNaver = async ({ page }: { page: Page }) => {
-  console.log(11);
-  await inputTypeCheck({ page });
-  console.log(22);
-  await Promise.all([
-    page.waitForLoadState("networkidle"),
-    page.keyboard.press("Enter"),
-  ]);
-  console.log(33);
-  await Promise.all([
-    await page.locator('a[href*="naver.com"]').first().click(),
-    page.waitForLoadState("networkidle"),
-  ]);
-  throw new Error("err > targetKeywordSearch >>>> gogogo");
-  return { page };
+  try {
+    console.log(11);
+    await inputTypeCheck({ page });
+    console.log(22);
+    await Promise.all([
+      page.waitForLoadState("networkidle"),
+      page.keyboard.press("Enter"),
+    ]);
+    console.log(33);
+    await Promise.all([
+      await page.locator('a[href*="naver.com"]').first().click(),
+      page.waitForLoadState("networkidle"),
+    ]);
+    return { page };
+  } catch (e) {
+   throw new Error("ERR > googleToNaver");
+  }
 };
 
 async function inputTypeCheck({ page }) {

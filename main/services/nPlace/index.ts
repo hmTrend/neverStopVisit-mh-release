@@ -30,11 +30,11 @@ export class NPlace extends PuppeteerEngine {
           break;
         } catch (e) {
           await wait(3 * 1000);
-          console.error(e.message);
-          if (i === 3) {
-            return console.error(
-              "More than 3 errors > GetNPlaceExcelAlignFlatTargetOne",
-            );
+          console.error(
+            "More than 3 errors > GetFingerPrintTargetExcelOne",
+          );
+          if (i === 5) {
+            throw Error('More than 3 errors > GetNPlaceExcelAlignFlatTargetOne')
           }
         }
       }
@@ -51,9 +51,10 @@ export class NPlace extends PuppeteerEngine {
           await wait(3 * 1000);
           console.error(e.message);
           if (i === 3) {
-            return console.error(
+            console.error(
               "More than 3 errors > GetFingerPrintTargetExcelOne",
             );
+            throw Error('More than 3 errors > GetFingerPrintTargetExcelOne')
           }
         }
       }

@@ -54,7 +54,6 @@ export const initialize = async ({
       console.error(e.message);
     }
   }
-
   return { page, browser };
 };
 
