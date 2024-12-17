@@ -21,16 +21,41 @@ export const googleToNaver = async ({ page }: { page: Page }) => {
 };
 
 async function inputTypeCheck({ page }) {
-  const textareaInput = page.locator("textarea.gLFyf");
-  const mibInput = page.locator("#mib");
+  const MAX_RETRIES = 3;
 
-  if ((await textareaInput.count()) > 0) {
-    console.log("Found textarea.gLFyf input");
-    await textareaInput.fill("네이버");
-  } else if ((await mibInput.count()) > 0) {
-    console.log("Found #mib input");
-    await mibInput.fill("네이버");
-  } else {
-    console.log("No search input found");
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      // 두 input 요소에 대한 Promise 생성
+      const textareaPromise = page
+        .waitForSelector("textarea.gLFyf")
+        .then((element) => ({ type: "textarea", element }))
+        .catch(() => null);
+
+      const mibPromise = page
+        .waitForSelector("#mib")
+        .then((element) => ({ type: "mib", element }))
+        .catch(() => null);
+
+      // Promise.race로 먼저 나타나는 요소 찾기
+      const result = await Promise.race([textareaPromise, mibPromise]);
+
+      if (result) {
+        console.log(`Found ${result.type} input on attempt ${attempt}`);
+        await result.element.fill("네이버");
+        break; // 성공하면 루프 종료
+      } else {
+        throw new Error("No search input found");
+      }
+    } catch (error) {
+      console.error(`Attempt ${attempt} failed:`, error.message);
+
+      if (attempt === MAX_RETRIES) {
+        console.error("Max retries reached. Operation failed.");
+        throw error; // 최대 시도 횟수 도달 시 에러 발생
+      }
+
+      // 다음 시도 전 잠시 대기 (지연 시간을 점진적으로 증가)
+      await page.waitForTimeout(1000 * attempt);
+    }
   }
 }

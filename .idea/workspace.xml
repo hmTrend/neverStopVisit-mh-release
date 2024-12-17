@@ -244,22 +244,7 @@
       <workItem from="1733911349465" duration="18108000" />
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
-    </task>
-    <task id="LOCAL-00171" summary="v1.10.1 새페이지 오픈후 1.5초 대기후 진행">
-      <option name="closed" value="true" />
-      <created>1733479930454</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1733479930454</updated>
-    </task>
-    <task id="LOCAL-00172" summary="v1.10.2 close">
-      <option name="closed" value="true" />
-      <created>1733480077987</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1733480077987</updated>
+      <workItem from="1734332569381" duration="65000" />
     </task>
     <task id="LOCAL-00173" summary="v1.10.2 close">
       <option name="closed" value="true" />
@@ -637,7 +622,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734330478517</updated>
     </task>
-    <option name="localTasksCounter" value="220" />
+    <task id="LOCAL-00220" summary="v2.2.0 피씨 유저에이전트 삭제완료">
+      <option name="closed" value="true" />
+      <created>1734332607157</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1734332607157</updated>
+    </task>
+    <task id="LOCAL-00221" summary="v2.2.0 피씨 유저에이전트 삭제완료">
+      <option name="closed" value="true" />
+      <created>1734332618272</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1734332618272</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -682,7 +683,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.16.2 그래프ql 추가 + 쿠키굽기성공" />
     <MESSAGE value="v1.16.3 쿠팡 쿠키 적용완료" />
     <MESSAGE value="v1.16.4 쿠키값 미입력 대응완료" />
     <MESSAGE value="v1.16.5 지문 열고닫기 성공" />
@@ -707,7 +707,8 @@
     <MESSAGE value="v2.1.1 브라우저 종료 보강" />
     <MESSAGE value="v2.1.2 오류시 창 닫기 강화" />
     <MESSAGE value="v2.1.2 yarn build" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.1.2 yarn build" />
+    <MESSAGE value="v2.2.0 피씨 유저에이전트 삭제완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.2.0 피씨 유저에이전트 삭제완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
