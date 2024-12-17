@@ -10,6 +10,8 @@ export const StartButtonLogic = () => {
   const toast = useToast();
 
   const handleStartProgram = async () => {
+    storeStart.common.isStart = true;
+    console.log("snapStart 221133");
     console.log(snapStart);
     const data = JSON.stringify(snapStart);
     await window.ipc.invoke("start-program", data);
@@ -18,6 +20,7 @@ export const StartButtonLogic = () => {
       isClosable: true,
       status: "success",
     });
+    storeStart.common.isStart = false;
   };
   return <StartButton fn={handleStartProgram} />;
 };

@@ -56,6 +56,7 @@ export const gqlCreateExcelList = gql`
         cookie
         phoneNumber
         updatedAt
+        type
       }
       message
       error
@@ -75,9 +76,57 @@ export const gqlGetExcelList = gql`
         nState
         createdAt
         ip
+        phoneNumber
+        updatedAt
+        type
+      }
+      listTotalCount
+      message
+      error
+    }
+  }
+`;
+
+export const gqlPatchFingerPrintExcelList = gql`
+  mutation PatchFingerPrintExcelList(
+    $input: [CreateFingerPrintExcelListInput!]!
+  ) {
+    patchFingerPrintExcelList(input: $input) {
+      data {
+        _id
+        groupFid
+        nId
+        nPw
+        bPw
+        nState
+        createdAt
+        ip
         cookie
         phoneNumber
         updatedAt
+      }
+      message
+      error
+    }
+  }
+`;
+
+export const gqlFetchFingerPrintTargetExcelOne = gql`
+  mutation FetchFingerPrintTargetExcelOne($input: FetchFingerPrintInput!) {
+    fetchFingerPrintTargetExcelOne(input: $input) {
+      data {
+        _id
+        groupFid
+        nId
+        nPw
+        bPw
+        nState
+        createdAt
+        ip
+        cookie
+        phoneNumber
+        updatedAt
+        type
       }
       message
       error

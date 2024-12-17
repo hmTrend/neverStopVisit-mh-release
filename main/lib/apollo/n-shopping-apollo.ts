@@ -23,8 +23,8 @@ const gqlGetNShoppingExcelAlignFlatTargetOne = gql`
   }
 `;
 
-export const CreateNShoppingExcelListAlignFlatMap = async ({ groupFid }) => {
-  console.log("groupFid 555");
+export const GetNShoppingExcelAlignFlatTargetOne = async ({ groupFid }) => {
+  console.log("groupFid 222333");
   console.log(groupFid);
   const { data, error } = await client.query({
     query: gqlGetNShoppingExcelAlignFlatTargetOne,
@@ -39,13 +39,15 @@ export const CreateNShoppingExcelListAlignFlatMap = async ({ groupFid }) => {
     console.error(error.message);
     return {
       data,
-      message: "ERR > CreateNShoppingExcelListAlignFlatMap ",
+      message: "ERR > GetNShoppingExcelAlignFlatTargetOne ",
       error: error.message,
     };
   }
+  console.log("data 555777");
+  console.log(data);
   return {
-    data,
-    message: "OK > CreateNShoppingExcelListAlignFlatMap ",
+    data: data.getNShoppingExcelAlignFlatTargetOne.data,
+    message: "OK > GetNShoppingExcelAlignFlatTargetOne ",
     error: "",
   };
 };

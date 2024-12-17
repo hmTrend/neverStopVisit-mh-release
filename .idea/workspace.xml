@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-3 v0.24.6 + 타겟정보 1개 가져오기">
-      <change afterPath="$PROJECT_DIR$/main/.env.development" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/.env.production" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/lib/apollo/apollo-provider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/lib/apollo/n-shopping-apollo.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="로그인 체크 기능 삽입">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +21,27 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;applepykim&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="99b0a7e8-1c49-4672-ac4a-db38dd784cbd" />
+        <option name="url" value="https://github.com/hmTrend/neverStopVisit-b.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,6 +55,7 @@
   <component name="ProjectId" id="2nkR5r2SQ8zWLE9oCCcMDupeYap" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
   </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -53,108 +65,146 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TypeScript.index.ts (1).executor": "Run",
-    "TypeScript.index.ts (2).executor": "Run",
-    "TypeScript.index.ts.executor": "Run",
-    "TypeScript.initialize.ts.executor": "Run",
-    "eslint.code.style.apply.dismiss": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/apollo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TypeScript.clickNearbyAttractions.tsx.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetBlog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetPlaceInTargetBlog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts (1).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts (2).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initializeAndroid.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initializeFireFox.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.mobile.userAgent.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.network.router.edu.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.network.router.eduPlayer.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.targetKeywordSearch.ts.executor&quot;: &quot;Run&quot;,
+    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/network&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/main/lib/apollo" />
-      <recent name="$PROJECT_DIR$/main" />
-      <recent name="$PROJECT_DIR$/main/lib" />
-      <recent name="$PROJECT_DIR$/renderer/src/hook/nShopping" />
+      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\lib\network" />
+      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\services\commons\PuppeteerEngine" />
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
+      <recent name="$PROJECT_DIR$/main/lib/apollo" />
+      <recent name="$PROJECT_DIR$/renderer/src/components/register/nPlace" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/services/commons/naver" />
+      <recent name="$PROJECT_DIR$/main/lib/network" />
+      <recent name="$PROJECT_DIR$/assets/icons/win" />
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
-      <recent name="$PROJECT_DIR$/renderer/src/components/register/nShopping" />
-      <recent name="$PROJECT_DIR$/renderer/src/components/register/_commons" />
-      <recent name="$PROJECT_DIR$/renderer/src/components/main" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.index.ts (1)">
-    <configuration name="index.ts (1)" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+  <component name="RunManager" selected="TypeScript.initializeAndroid.ts">
+    <configuration name="clickNearbyAttractions.tsx" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
       <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShopping" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nShopping/index.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/clickNearbyAttractions.tsx" />
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="index.ts (2)" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="findTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
       <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" />
+      <option name="programParameters" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="initializeAndroid.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeAndroid.ts" />
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="index.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="initializeFireFox.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/puppeteer" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/puppeteer/index.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="initialize.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeFireFox.ts" />
+      <option name="programParameters" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="network.router.eduPlayer.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/network" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/network/network.router.eduPlayer.ts" />
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TypeScript.index.ts (1)" />
-        <item itemvalue="TypeScript.initialize.ts" />
-        <item itemvalue="TypeScript.index.ts (2)" />
-        <item itemvalue="TypeScript.index.ts" />
+        <item itemvalue="TypeScript.initializeAndroid.ts" />
+        <item itemvalue="TypeScript.initializeFireFox.ts" />
+        <item itemvalue="TypeScript.network.router.eduPlayer.ts" />
+        <item itemvalue="TypeScript.clickNearbyAttractions.tsx" />
+        <item itemvalue="TypeScript.findTargetBlog.ts" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -174,404 +224,439 @@
       <workItem from="1730992352376" duration="24377000" />
       <workItem from="1731374161692" duration="9969000" />
       <workItem from="1731419482161" duration="58884000" />
+      <workItem from="1732062337588" duration="9180000" />
+      <workItem from="1732077946893" duration="18076000" />
+      <workItem from="1732537211686" duration="13649000" />
+      <workItem from="1732771660426" duration="14479000" />
+      <workItem from="1732805323211" duration="22234000" />
+      <workItem from="1732927595546" duration="42730000" />
+      <workItem from="1733183247794" duration="14655000" />
+      <workItem from="1733382539189" duration="5546000" />
+      <workItem from="1733391703649" duration="3108000" />
+      <workItem from="1733394858012" duration="37408000" />
+      <workItem from="1733531634240" duration="18627000" />
+      <workItem from="1733712975058" duration="454000" />
+      <workItem from="1733723900557" duration="8097000" />
+      <workItem from="1733797336690" duration="8143000" />
+      <workItem from="1733819504633" duration="9409000" />
+      <workItem from="1733904498557" duration="5323000" />
+      <workItem from="1733910495386" duration="827000" />
+      <workItem from="1733911349465" duration="18108000" />
+      <workItem from="1734057163779" duration="9248000" />
+      <workItem from="1734328327792" duration="2723000" />
+      <workItem from="1734332569381" duration="65000" />
     </task>
-    <task id="LOCAL-00016" summary="v0.5.4 + 쿠키 로그인 반영 성공">
+    <task id="LOCAL-00173" summary="v1.10.2 close">
       <option name="closed" value="true" />
-      <created>1731242511260</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
+      <created>1733480086923</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
       <option name="project" value="LOCAL" />
-      <updated>1731242511260</updated>
+      <updated>1733480086923</updated>
     </task>
-    <task id="LOCAL-00017" summary="v0.5.5 + loggedInCheck">
+    <task id="LOCAL-00174" summary="v1.10.4 close">
       <option name="closed" value="true" />
-      <created>1731243175923</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
+      <created>1733481693730</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
       <option name="project" value="LOCAL" />
-      <updated>1731243175923</updated>
+      <updated>1733481693730</updated>
     </task>
-    <task id="LOCAL-00018" summary="v0.5.5 + 블록 나누기">
+    <task id="LOCAL-00175" summary="v1.10.4 close">
       <option name="closed" value="true" />
-      <created>1731243276523</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
+      <created>1733481700726</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
       <option name="project" value="LOCAL" />
-      <updated>1731243276523</updated>
+      <updated>1733481700726</updated>
     </task>
-    <task id="LOCAL-00019" summary="v0.5.6 + Promise all로 멀티구동 성공">
+    <task id="LOCAL-00176" summary="v1.11.0 playwright 엔진 새로 셋팅 함수형">
       <option name="closed" value="true" />
-      <created>1731243519861</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
+      <created>1733532630460</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
       <option name="project" value="LOCAL" />
-      <updated>1731243519861</updated>
+      <updated>1733532630460</updated>
     </task>
-    <task id="LOCAL-00020" summary="v0.5.7 + nPlace 껍데기 추가">
+    <task id="LOCAL-00177" summary="v1.11.1 라우터 로그인여부 체크">
       <option name="closed" value="true" />
-      <created>1731243706946</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
+      <created>1733536655492</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
       <option name="project" value="LOCAL" />
-      <updated>1731243706946</updated>
+      <updated>1733536655492</updated>
     </task>
-    <task id="LOCAL-00021" summary="v0.6.0 + graphql 추가">
+    <task id="LOCAL-00178" summary="v1.11.2 군더더기 없이 깔끔한 LTE 라우터 전환">
       <option name="closed" value="true" />
-      <created>1731288833740</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
+      <created>1733538512491</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
       <option name="project" value="LOCAL" />
-      <updated>1731288833740</updated>
+      <updated>1733538512491</updated>
     </task>
-    <task id="LOCAL-00022" summary="v0.6.2 + FingerprintCreateGroup.tsx &gt; 로딩추가">
+    <task id="LOCAL-00179" summary="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환">
       <option name="closed" value="true" />
-      <created>1731303963073</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
+      <created>1733538723463</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
       <option name="project" value="LOCAL" />
-      <updated>1731303963073</updated>
+      <updated>1733538723463</updated>
     </task>
-    <task id="LOCAL-00023" summary="v0.6.3 + 그룹생성">
+    <task id="LOCAL-00180" summary="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환">
       <option name="closed" value="true" />
-      <created>1731304113859</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
+      <created>1733539260947</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
       <option name="project" value="LOCAL" />
-      <updated>1731304113859</updated>
+      <updated>1733539260947</updated>
     </task>
-    <task id="LOCAL-00024" summary="v0.6.4 + 서버 그룹 리스트 가져오기">
+    <task id="LOCAL-00181" summary="v1.11.4 구글에서 네이버 찾을시 클릭하기">
       <option name="closed" value="true" />
-      <created>1731308695945</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
+      <created>1733543197104</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
       <option name="project" value="LOCAL" />
-      <updated>1731308695945</updated>
+      <updated>1733543197104</updated>
     </task>
-    <task id="LOCAL-00025" summary="v0.6.5 + 생성된 그룹리스트">
+    <task id="LOCAL-00182" summary="v1.11.5 로그아웃인지 체크하는 방식을 count로 변경">
       <option name="closed" value="true" />
-      <created>1731310086106</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
+      <created>1733545861975</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
       <option name="project" value="LOCAL" />
-      <updated>1731310086106</updated>
+      <updated>1733545861975</updated>
     </task>
-    <task id="LOCAL-00026" summary="v0.6.6 + 지문 &gt; 그룹 &gt; 삭제 모달추가">
+    <task id="LOCAL-00183" summary="v1.12.0 inapp 모두제거">
       <option name="closed" value="true" />
-      <created>1731310748727</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
+      <created>1733547642516</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
       <option name="project" value="LOCAL" />
-      <updated>1731310748727</updated>
+      <updated>1733547642516</updated>
     </task>
-    <task id="LOCAL-00027" summary="v0.7.0 + 지문 &gt; 그룹 &gt; 삭제셋팅">
+    <task id="LOCAL-00184" summary="v1.12.0 yarn build">
       <option name="closed" value="true" />
-      <created>1731321403636</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
+      <created>1733548299727</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
       <option name="project" value="LOCAL" />
-      <updated>1731321403636</updated>
+      <updated>1733548299727</updated>
     </task>
-    <task id="LOCAL-00028" summary="v0.7.1 + 지문 &gt; 리스트 그룹 이름 표시 셋팅">
+    <task id="LOCAL-00185" summary="v1.12.1 PC로 뜨는 모바일 유저에이전트 수정완료&#10;41개 /&#10;&#10;'Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X; rv:114.0) Gecko/20100101 Firefox/114.0'&#10;&gt;&#10;Mozilla/5.0 (iPhone; CPU iPhone OS 16_3; rv:114.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/605.1">
       <option name="closed" value="true" />
-      <created>1731321857864</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
+      <created>1733702769550</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
       <option name="project" value="LOCAL" />
-      <updated>1731321857864</updated>
+      <updated>1733702769550</updated>
     </task>
-    <task id="LOCAL-00029" summary="v0.7.1 + 지문 &gt; 리스트 2">
+    <task id="LOCAL-00186" summary="v1.13.0 아이폰 유저정보 803개 수정완료">
       <option name="closed" value="true" />
-      <created>1731321964023</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
+      <created>1733729196696</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
       <option name="project" value="LOCAL" />
-      <updated>1731321964023</updated>
+      <updated>1733729196696</updated>
     </task>
-    <task id="LOCAL-00030" summary="v0.8.0 + 지문 &gt; 엑셀 &gt; 파일 가져오기 성공">
+    <task id="LOCAL-00187" summary="v1.13.0 아이폰 유저정보 803개 수정완료">
       <option name="closed" value="true" />
-      <created>1731327432590</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
+      <created>1733729382069</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
       <option name="project" value="LOCAL" />
-      <updated>1731327432590</updated>
+      <updated>1733729382069</updated>
     </task>
-    <task id="LOCAL-00031" summary="v0.8.1 + 지문 &gt; 엑셀 &gt; 가져온 엑셀비우기">
+    <task id="LOCAL-00188" summary="v1.14.0 스토어 &gt; 가격비교 : 찜 보일때까지 기다리기">
       <option name="closed" value="true" />
-      <created>1731328966034</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
+      <created>1733731153869</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
       <option name="project" value="LOCAL" />
-      <updated>1731328966034</updated>
+      <updated>1733731153869</updated>
     </task>
-    <task id="LOCAL-00032" summary="v0.8.2 + 지문리스트 &gt; **** 비번에 별4개 추가">
+    <task id="LOCAL-00189" summary="v1.15.0 타입 쿠팡 추가">
       <option name="closed" value="true" />
-      <created>1731330726972</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
+      <created>1733805711932</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
       <option name="project" value="LOCAL" />
-      <updated>1731330726972</updated>
+      <updated>1733805711932</updated>
     </task>
-    <task id="LOCAL-00033" summary="v0.8.3 + 엑셀파일 리스트 등록">
+    <task id="LOCAL-00190" summary="v1.15.1 삭제여부 추가">
       <option name="closed" value="true" />
-      <created>1731332286842</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
+      <created>1733806186954</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
       <option name="project" value="LOCAL" />
-      <updated>1731332286842</updated>
+      <updated>1733806186954</updated>
     </task>
-    <task id="LOCAL-00034" summary="v0.9.0 + 지문 엑셀리스트 등록 성공">
+    <task id="LOCAL-00191" summary="v1.16.0 쿠키값 수정 UI 추가">
       <option name="closed" value="true" />
-      <created>1731406392130</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
+      <created>1733816144223</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
       <option name="project" value="LOCAL" />
-      <updated>1731406392130</updated>
+      <updated>1733816144223</updated>
     </task>
-    <task id="LOCAL-00035" summary="v0.10.0 + 지문 리스트 가져오기 성공">
+    <task id="LOCAL-00192" summary="v1.16.2 그래프ql 추가 + 쿠키굽기성공">
       <option name="closed" value="true" />
-      <created>1731408330746</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
+      <created>1733817732639</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
       <option name="project" value="LOCAL" />
-      <updated>1731408330746</updated>
+      <updated>1733817732639</updated>
     </task>
-    <task id="LOCAL-00036" summary="v0.10.1 + 엑셀 삭제버튼 클릭시 빈배열 리스트">
+    <task id="LOCAL-00193" summary="v1.16.3 쿠팡 쿠키 적용완료">
       <option name="closed" value="true" />
-      <created>1731409996129</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
+      <created>1733821339346</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
       <option name="project" value="LOCAL" />
-      <updated>1731409996129</updated>
+      <updated>1733821339346</updated>
     </task>
-    <task id="LOCAL-00037" summary="v0.10.2 + 엑셀 등록하기 클릭시 모달창 오픈">
+    <task id="LOCAL-00194" summary="v1.16.4 쿠키값 미입력 대응완료">
       <option name="closed" value="true" />
-      <created>1731410476590</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
+      <created>1733821944613</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
       <option name="project" value="LOCAL" />
-      <updated>1731410476590</updated>
+      <updated>1733821944613</updated>
     </task>
-    <task id="LOCAL-00038" summary="v0.11.0 + 쇼핑 등록 UI">
+    <task id="LOCAL-00195" summary="v1.16.5 지문 열고닫기 성공">
       <option name="closed" value="true" />
-      <created>1731411936997</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
+      <created>1733827024259</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
       <option name="project" value="LOCAL" />
-      <updated>1731411936997</updated>
+      <updated>1733827024259</updated>
     </task>
-    <task id="LOCAL-00039" summary="v0.11.1 + 쇼핑 &gt; 그룹이름 만들기 성공">
+    <task id="LOCAL-00196" summary="v1.16.6 isLoading 추가">
       <option name="closed" value="true" />
-      <created>1731421852512</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
+      <created>1733827308289</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
       <option name="project" value="LOCAL" />
-      <updated>1731421852512</updated>
+      <updated>1733827308289</updated>
     </task>
-    <task id="LOCAL-00040" summary="v0.11.2 + 그룹이름 중복일경우 에러처리">
+    <task id="LOCAL-00197" summary="쿠키값 정제기능 추가완료 &gt; CT_AT만 정제">
       <option name="closed" value="true" />
-      <created>1731422379817</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
+      <created>1733895210064</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
       <option name="project" value="LOCAL" />
-      <updated>1731422379817</updated>
+      <updated>1733895210064</updated>
     </task>
-    <task id="LOCAL-00041" summary="v0.12.0 + 쇼핑 &gt; 생성된 그룹리스트">
+    <task id="LOCAL-00198" summary="쿠키데이터 삽입 가능">
       <option name="closed" value="true" />
-      <created>1731459537731</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
+      <created>1733895576012</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
       <option name="project" value="LOCAL" />
-      <updated>1731459537731</updated>
+      <updated>1733895576012</updated>
     </task>
-    <task id="LOCAL-00042" summary="v0.13.0 + 쇼핑 &gt; 생성된 그룹 삭제로직 추가">
+    <task id="LOCAL-00199" summary="쿠키데이터 CT_AT 여부에 따른 상황설정완료">
       <option name="closed" value="true" />
-      <created>1731470085070</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
+      <created>1733895599141</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
       <option name="project" value="LOCAL" />
-      <updated>1731470085070</updated>
+      <updated>1733895599141</updated>
     </task>
-    <task id="LOCAL-00043" summary="v0.14.0 + 쇼핑 &gt; 엑셀만들기">
+    <task id="LOCAL-00200" summary="getExcelList &gt; dataListCount 갯수 추가">
       <option name="closed" value="true" />
-      <created>1731480970369</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
+      <created>1733896260640</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
       <option name="project" value="LOCAL" />
-      <updated>1731480970369</updated>
+      <updated>1733896260640</updated>
     </task>
-    <task id="LOCAL-00044" summary="v0.14.1 + 쇼핑 &gt; 엑셀생성 가능">
+    <task id="LOCAL-00201" summary="v1.17.0 쿠팡지문 완성">
       <option name="closed" value="true" />
-      <created>1731483544741</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
+      <created>1733897600304</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
       <option name="project" value="LOCAL" />
-      <updated>1731483544741</updated>
+      <updated>1733897600304</updated>
     </task>
-    <task id="LOCAL-00045" summary="v0.15.0 + 등록 &gt; 쇼핑 셋팅">
+    <task id="LOCAL-00202" summary="v1.17.1 크로미움 오픈버전">
       <option name="closed" value="true" />
-      <created>1731491040788</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
+      <created>1733904647679</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
       <option name="project" value="LOCAL" />
-      <updated>1731491040788</updated>
+      <updated>1733904647679</updated>
     </task>
-    <task id="LOCAL-00046" summary="v0.15.1 + 등록 &gt; 쇼핑리스트 엑셀 등록">
+    <task id="LOCAL-00203" summary="v1.17.2 쇼핑 / 플레이스 작업가능">
       <option name="closed" value="true" />
-      <created>1731508310660</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
+      <created>1733907115224</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
       <option name="project" value="LOCAL" />
-      <updated>1731508310660</updated>
+      <updated>1733907115224</updated>
     </task>
-    <task id="LOCAL-00047" summary="v0.15.2 + 등록 &gt; 쇼핑리스트 퀴리 리스트 한줄씩 정렬">
+    <task id="LOCAL-00204" summary="v1.17.2 쇼핑 / 플레이스 작업가능">
       <option name="closed" value="true" />
-      <created>1731509626569</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
+      <created>1733907357837</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
       <option name="project" value="LOCAL" />
-      <updated>1731509626569</updated>
+      <updated>1733907357837</updated>
     </task>
-    <task id="LOCAL-00048" summary="v0.15.3 + 등록 &gt; 쇼핑리스트 퀴리 리스트 원래 갯수만 등록">
+    <task id="LOCAL-00205" summary="v1.17.3 yarn build">
       <option name="closed" value="true" />
-      <created>1731509793177</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
+      <created>1733907948449</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
       <option name="project" value="LOCAL" />
-      <updated>1731509793177</updated>
+      <updated>1733907948450</updated>
     </task>
-    <task id="LOCAL-00049" summary="v0.16.0 + 엑셀 쇼핑리스트 클릭시 쇼핑 리스트에 반영">
+    <task id="LOCAL-00206" summary="v1.17.4 안드로이드 쿠팡 접속 코드 테스트 시작">
       <option name="closed" value="true" />
-      <created>1731547451897</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
+      <created>1733983414369</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
       <option name="project" value="LOCAL" />
-      <updated>1731547451897</updated>
+      <updated>1733983414369</updated>
     </task>
-    <task id="LOCAL-00050" summary="v0.16.1 + log 삭제">
+    <task id="LOCAL-00207" summary="v1.18.0 쿠팡앱 앱피아 연동">
       <option name="closed" value="true" />
-      <created>1731547702725</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
+      <created>1733991934338</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
       <option name="project" value="LOCAL" />
-      <updated>1731547702727</updated>
+      <updated>1733991934338</updated>
     </task>
-    <task id="LOCAL-00051" summary="v0.17.0 + 시작 UI 옵션">
+    <task id="LOCAL-00208" summary="v1.18.0 쿠팡앱 앱피아 연동 - 쿠키가져오기 실패">
       <option name="closed" value="true" />
-      <created>1731549456423</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
+      <created>1734054256784</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
       <option name="project" value="LOCAL" />
-      <updated>1731549456423</updated>
+      <updated>1734054256784</updated>
     </task>
-    <task id="LOCAL-00052" summary="v0.18.0 + 동적으로 작업할 그룹 선택 가능">
+    <task id="LOCAL-00209" summary="v1.18.1 userAgent 원복 + 피씨 페이지 추가">
       <option name="closed" value="true" />
-      <created>1731555244904</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
+      <created>1734056473843</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
       <option name="project" value="LOCAL" />
-      <updated>1731555244904</updated>
+      <updated>1734056473843</updated>
     </task>
-    <task id="LOCAL-00053" summary="v0.19.0 + 시작버튼에 옵션 + 등록 연동">
+    <task id="LOCAL-00210" summary="v1.19.0 쿠팡 쿠키값 오류해결 + 네이버 지문셋팅">
       <option name="closed" value="true" />
-      <created>1731561042051</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
+      <created>1734066197916</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
       <option name="project" value="LOCAL" />
-      <updated>1731561042052</updated>
+      <updated>1734066197916</updated>
     </task>
-    <task id="LOCAL-00054" summary="v0.20.0 + 시작 &gt; 그룹네임, 그룹아이디 설정완료">
+    <task id="LOCAL-00211" summary="v1.19.0 쿠팡 쿠키값 오류해결 + 네이버 지문셋팅">
       <option name="closed" value="true" />
-      <created>1731566893043</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
+      <created>1734066397162</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
       <option name="project" value="LOCAL" />
-      <updated>1731566893043</updated>
+      <updated>1734066397162</updated>
     </task>
-    <task id="LOCAL-00055" summary="v0.20.1 + 시작 &gt; 지문 설정 완료">
+    <task id="LOCAL-00212" summary="v2.0.0 쿠팡지문 가구매용">
       <option name="closed" value="true" />
-      <created>1731567187441</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
+      <created>1734067177785</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
       <option name="project" value="LOCAL" />
-      <updated>1731567187441</updated>
+      <updated>1734067177785</updated>
     </task>
-    <task id="LOCAL-00056" summary="v0.21.0 + nShopping 옵션 저장하기 성공">
+    <task id="LOCAL-00213" summary="v2.0.0 쿠팡지문 가구매용">
       <option name="closed" value="true" />
-      <created>1731569410986</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
+      <created>1734067207431</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
       <option name="project" value="LOCAL" />
-      <updated>1731569410986</updated>
+      <updated>1734067207431</updated>
     </task>
-    <task id="LOCAL-00057" summary="v0.22.0 + 라우터 시작에 적용">
+    <task id="LOCAL-00214" summary="v2.0.2 북마크추가">
       <option name="closed" value="true" />
-      <created>1731579752356</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
+      <created>1734071157538</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
       <option name="project" value="LOCAL" />
-      <updated>1731579752356</updated>
+      <updated>1734071157538</updated>
     </task>
-    <task id="LOCAL-00058" summary="v0.23.0 + 옵션 삭제">
+    <task id="LOCAL-00215" summary="v2.1.0 chrome 브라우저 열린 브라우저 모두 닫기">
       <option name="closed" value="true" />
-      <created>1731579842576</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
+      <created>1734323663376</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
       <option name="project" value="LOCAL" />
-      <updated>1731579842576</updated>
+      <updated>1734323663376</updated>
     </task>
-    <task id="LOCAL-00059" summary="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감">
+    <task id="LOCAL-00216" summary="v2.1.0 yarn build">
       <option name="closed" value="true" />
-      <created>1731580569937</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
+      <created>1734323683689</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
       <option name="project" value="LOCAL" />
-      <updated>1731580569937</updated>
+      <updated>1734323683690</updated>
     </task>
-    <task id="LOCAL-00060" summary="v0.24.1 + 쇼핑 팝업창 있을시 대응">
+    <task id="LOCAL-00217" summary="v2.1.1 브라우저 종료 보강">
       <option name="closed" value="true" />
-      <created>1731582967193</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
+      <created>1734329571301</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
       <option name="project" value="LOCAL" />
-      <updated>1731582967193</updated>
+      <updated>1734329571301</updated>
     </task>
-    <task id="LOCAL-00061" summary="v0.24.2 + 모든 작업 완료 추가">
+    <task id="LOCAL-00218" summary="v2.1.2 오류시 창 닫기 강화">
       <option name="closed" value="true" />
-      <created>1731583340446</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
+      <created>1734330432434</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
       <option name="project" value="LOCAL" />
-      <updated>1731583340446</updated>
+      <updated>1734330432434</updated>
     </task>
-    <task id="LOCAL-00062" summary="v0.24.2 + 모든 작업 완료 추가">
+    <task id="LOCAL-00219" summary="v2.1.2 yarn build">
       <option name="closed" value="true" />
-      <created>1731583399180</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
+      <created>1734330478517</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
       <option name="project" value="LOCAL" />
-      <updated>1731583399180</updated>
+      <updated>1734330478517</updated>
     </task>
-    <task id="LOCAL-00063" summary="v0.24.3 + 줄맞추기 등록 엑셀 추가 완료">
+    <task id="LOCAL-00220" summary="v2.2.0 피씨 유저에이전트 삭제완료">
       <option name="closed" value="true" />
-      <created>1731633198927</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
+      <created>1734332607157</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
       <option name="project" value="LOCAL" />
-      <updated>1731633198927</updated>
+      <updated>1734332607157</updated>
     </task>
-    <task id="LOCAL-00064" summary="NSV-3 v0.24.6 + 타겟정보 1개 가져오기">
+    <task id="LOCAL-00221" summary="v2.2.0 피씨 유저에이전트 삭제완료">
       <option name="closed" value="true" />
-      <created>1731883530898</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
+      <created>1734332618272</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
       <option name="project" value="LOCAL" />
-      <updated>1731883530898</updated>
+      <updated>1734332618272</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <option name="localTasksCounter" value="222" />
     <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="LANG" value="ko_KR.UTF-8" />
+      <env key="PYTHONIOENCODING" value="utf-8" />
+    </envs>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="javascript:npm:react" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:prettier" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:graphql" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:next" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -584,7 +669,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -598,31 +683,42 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v0.11.1 + 쇼핑 &gt; 그룹이름 만들기 성공" />
-    <MESSAGE value="v0.11.2 + 그룹이름 중복일경우 에러처리" />
-    <MESSAGE value="v0.12.0 + 쇼핑 &gt; 생성된 그룹리스트" />
-    <MESSAGE value="v0.13.0 + 쇼핑 &gt; 생성된 그룹 삭제로직 추가" />
-    <MESSAGE value="v0.14.0 + 쇼핑 &gt; 엑셀만들기" />
-    <MESSAGE value="v0.14.1 + 쇼핑 &gt; 엑셀생성 가능" />
-    <MESSAGE value="v0.15.0 + 등록 &gt; 쇼핑 셋팅" />
-    <MESSAGE value="v0.15.1 + 등록 &gt; 쇼핑리스트 엑셀 등록" />
-    <MESSAGE value="v0.15.2 + 등록 &gt; 쇼핑리스트 퀴리 리스트 한줄씩 정렬" />
-    <MESSAGE value="v0.15.3 + 등록 &gt; 쇼핑리스트 퀴리 리스트 원래 갯수만 등록" />
-    <MESSAGE value="v0.16.0 + 엑셀 쇼핑리스트 클릭시 쇼핑 리스트에 반영" />
-    <MESSAGE value="v0.16.1 + log 삭제" />
-    <MESSAGE value="v0.17.0 + 시작 UI 옵션" />
-    <MESSAGE value="v0.18.0 + 동적으로 작업할 그룹 선택 가능" />
-    <MESSAGE value="v0.19.0 + 시작버튼에 옵션 + 등록 연동" />
-    <MESSAGE value="v0.20.0 + 시작 &gt; 그룹네임, 그룹아이디 설정완료" />
-    <MESSAGE value="v0.20.1 + 시작 &gt; 지문 설정 완료" />
-    <MESSAGE value="v0.21.0 + nShopping 옵션 저장하기 성공" />
-    <MESSAGE value="v0.22.0 + 라우터 시작에 적용" />
-    <MESSAGE value="v0.23.0 + 옵션 삭제" />
-    <MESSAGE value="v0.24.0 + 시작 옵션 등록후 새로고침해서 시작하기 하면 값이 들어감" />
-    <MESSAGE value="v0.24.1 + 쇼핑 팝업창 있을시 대응" />
-    <MESSAGE value="v0.24.2 + 모든 작업 완료 추가" />
-    <MESSAGE value="v0.24.3 + 줄맞추기 등록 엑셀 추가 완료" />
-    <MESSAGE value="NSV-3 v0.24.6 + 타겟정보 1개 가져오기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-3 v0.24.6 + 타겟정보 1개 가져오기" />
+    <MESSAGE value="v1.16.3 쿠팡 쿠키 적용완료" />
+    <MESSAGE value="v1.16.4 쿠키값 미입력 대응완료" />
+    <MESSAGE value="v1.16.5 지문 열고닫기 성공" />
+    <MESSAGE value="v1.16.6 isLoading 추가" />
+    <MESSAGE value="쿠키값 정제기능 추가완료 &gt; CT_AT만 정제" />
+    <MESSAGE value="쿠키데이터 삽입 가능" />
+    <MESSAGE value="쿠키데이터 CT_AT 여부에 따른 상황설정완료" />
+    <MESSAGE value="getExcelList &gt; dataListCount 갯수 추가" />
+    <MESSAGE value="v1.17.0 쿠팡지문 완성" />
+    <MESSAGE value="v1.17.1 크로미움 오픈버전" />
+    <MESSAGE value="v1.17.2 쇼핑 / 플레이스 작업가능" />
+    <MESSAGE value="v1.17.3 yarn build" />
+    <MESSAGE value="v1.17.4 안드로이드 쿠팡 접속 코드 테스트 시작" />
+    <MESSAGE value="v1.18.0 쿠팡앱 앱피아 연동" />
+    <MESSAGE value="v1.18.0 쿠팡앱 앱피아 연동 - 쿠키가져오기 실패" />
+    <MESSAGE value="v1.18.1 userAgent 원복 + 피씨 페이지 추가" />
+    <MESSAGE value="v1.19.0 쿠팡 쿠키값 오류해결 + 네이버 지문셋팅" />
+    <MESSAGE value="v2.0.0 쿠팡지문 가구매용" />
+    <MESSAGE value="v2.0.2 북마크추가" />
+    <MESSAGE value="v2.1.0 chrome 브라우저 열린 브라우저 모두 닫기" />
+    <MESSAGE value="v2.1.0 yarn build" />
+    <MESSAGE value="v2.1.1 브라우저 종료 보강" />
+    <MESSAGE value="v2.1.2 오류시 창 닫기 강화" />
+    <MESSAGE value="v2.1.2 yarn build" />
+    <MESSAGE value="v2.2.0 피씨 유저에이전트 삭제완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.2.0 피씨 유저에이전트 삭제완료" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/renderer/src/hook/nShopping/useDeleteNShoppingGroup.ts</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

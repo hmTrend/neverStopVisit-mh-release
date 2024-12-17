@@ -6,9 +6,9 @@ export const useGetExcelList = () => {
   const [GetExcelList] = useLazyQuery(gqlGetExcelList);
   const toast = useToast();
 
-  const getExcelList = async ({ groupFid }) => {
+  const getExcelList = async ({ groupFid, dataListCount }) => {
     const { data, error } = await GetExcelList({
-      variables: { input: { groupFid } },
+      variables: { input: { groupFid, dataListCount } },
       fetchPolicy: "no-cache",
     });
     if (error) {
@@ -20,7 +20,10 @@ export const useGetExcelList = () => {
       });
       throw Error("ERR > getExcelList");
     }
-    return { data: data.getExcelList.data };
+    return {
+      data: data.getExcelList.data,
+      listTotalCount: data.getExcelList.listTotalCount,
+    };
   };
   return { getExcelList };
 };

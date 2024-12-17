@@ -1,9 +1,21 @@
 import { Page } from "playwright";
+import wait from "waait";
 
-export const goToKeyword = async ({ page }: { page: Page }) => {
+export const goToKeyword = async ({
+  page,
+  query,
+}: {
+  page: Page;
+  query: string;
+}) => {
   try {
     await clickSwipeCoachMark({ page }); // 팝업창 있을시 대응
     await page.getByRole("button", { name: "상품, 브랜드 입력" }).click();
+    await page.locator("#input_text").fill(query);
+    await page
+      .locator("button._searchInput_button_search_pA3ap")
+      .click({ delay: 1000 });
+    await page.waitForLoadState("networkidle");
     return { page };
   } catch (e) {
     console.error(e.message);

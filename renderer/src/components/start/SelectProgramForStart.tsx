@@ -1,44 +1,47 @@
-import { Box, Flex, Select, Text } from "@chakra-ui/react";
-import { Fragment } from "react";
+import {
+  Box,
+  Flex,
+  Select,
+  Text,
+  Radio,
+  RadioGroup,
+  Stack,
+} from "@chakra-ui/react";
+import { Fragment, useState } from "react";
 import { FingerPrintSelect } from "@/components/start/FingerPrintSelect";
 import { StartStateSwitch } from "@/components/start/StartStateSwitch";
 import { ConcurrentBrowserCount } from "@/components/start/ConcurrentBrowserCount";
-import { nShoppingStorage } from "@/util/localStorage";
+import { useSnapshot } from "valtio/react";
+import { storeStart } from "@/valtio/start.valtio";
 
 export const SelectProgramForStart = ({
   selectProgram,
   handleSelectChange,
   groupList,
+  logicType,
 }) => {
   return (
     <Flex direction={"column"} gap={3}>
       <Fragment>
         <Flex gap={6}>
-          <StartStateSwitch />
+          <StartStateSwitch selectProgram={selectProgram} />
           <TargetSelect
             selectProgram={selectProgram}
             groupList={groupList}
             handleSelectChange={handleSelectChange}
           />
-          <FingerPrintSelect
-            selectProgram={selectProgram}
-            groupList={groupList}
-          />
-          <ConcurrentBrowserCount />
+          <FingerPrintSelect selectProgram={selectProgram} />
+          {/*<ConcurrentOneLineWork />*/}
+          <ConcurrentBrowserCount selectProgram={selectProgram} />
         </Flex>
+        <LogicType logicType={logicType} selectProgram={selectProgram} />
       </Fragment>
     </Flex>
   );
 };
 
 function TargetSelect({ selectProgram, handleSelectChange, groupList }) {
-  const getInitialValue = () => {
-    const savedState = nShoppingStorage.loadState();
-    return savedState.selectedGroup || { groupName: "", groupId: "" };
-  };
-
-  // 저장된 값 가져오기
-  const initialValue = getInitialValue();
+  const snap = useSnapshot(storeStart);
 
   return (
     <Flex gap={3} alignItems={"center"} wrap={"nowrap"}>
@@ -47,7 +50,7 @@ function TargetSelect({ selectProgram, handleSelectChange, groupList }) {
         <Select
           placeholder="작업할 그룹선택"
           onChange={handleSelectChange}
-          defaultValue={initialValue.groupId || ""}
+          defaultValue={snap[selectProgram].selectedGroup.groupId}
         >
           {groupList.map((v: any, i) => (
             <option key={i} value={v._id}>
@@ -57,5 +60,29 @@ function TargetSelect({ selectProgram, handleSelectChange, groupList }) {
         </Select>
       </Box>
     </Flex>
+  );
+}
+
+function LogicType({ logicType, selectProgram }) {
+  const snap = useSnapshot(storeStart);
+
+  const handleChange = (value) => {
+    storeStart[selectProgram].logicType = value;
+  };
+  return (
+    <RadioGroup
+      onChange={handleChange}
+      defaultValue={snap[selectProgram].logicType}
+    >
+      <Stack direction="row" gap={6}>
+        {logicType.map((v, i) => (
+          <Fragment key={i}>
+            <Radio value={v}>
+              로직{i + 1}({v})
+            </Radio>
+          </Fragment>
+        ))}
+      </Stack>
+    </RadioGroup>
   );
 }

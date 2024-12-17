@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { App } from "@/components/register/App";
 
 export const metadata: Metadata = {
-  title: "My kkk Title",
+  title: "NSV - 등록",
 };
 
 export default function Page() {

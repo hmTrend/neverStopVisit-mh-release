@@ -44,7 +44,7 @@ export const FingerprintCreateGroup = () => {
           <Box display={"flex"}>
             <Input type="email" ref={groupNameRef} />
             <Button onClick={handleSubmit} isLoading={loading}>
-              그룹생성
+              지문 그룹생성
             </Button>
           </Box>
           <FormHelperText>새로운 그룹을 생성합니다.</FormHelperText>

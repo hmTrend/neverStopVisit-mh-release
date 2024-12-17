@@ -15,6 +15,8 @@ import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 import { useCreateExcelList } from "@/hook/fingerPrint/useCreateExcelList";
 import { FingerprintCreateExcelModal } from "@/components/register/fingerprint/FingerprintCreateExcel.modal";
+import { FingerprintPatchExcelModal } from "@/components/register/fingerprint/FingerprintPatchExcel.modal";
+import { usePatchExcelList } from "@/hook/fingerPrint/usePatchExcelList";
 
 export const FingerprintCreateExcel = () => {
   const fileInputRef = useRef(null);
@@ -27,6 +29,7 @@ export const FingerprintCreateExcel = () => {
     selectedGroupId,
   } = useSnapshot(storeFingerPrintRegister);
   const { createExcelList } = useCreateExcelList();
+  const { patchExcelList } = usePatchExcelList();
 
   const handleExcelButtonClick = () => {
     if (fileInputRef.current) {
@@ -92,7 +95,36 @@ export const FingerprintCreateExcel = () => {
     const { data } = await createExcelList({
       input: inputList,
     });
-    storeFingerPrintRegister.selectedExcelList = getExcelList;
+    storeFingerPrintRegister.selectedExcelList = data;
+  };
+
+  const handlePatchExcelList = async () => {
+    if (getExcelList.length === 0) {
+      toast({
+        title: "추가된 엑셀없음",
+        isClosable: true,
+        duration: 3000,
+        status: "error",
+      });
+      return;
+    }
+    if (!selectedGroupName) {
+      toast({
+        title: "추가된 그룹없음",
+        isClosable: true,
+        duration: 3000,
+        status: "error",
+      });
+      return;
+    }
+    const inputList = getExcelList.map((v) => ({
+      ...v,
+      groupFid: selectedGroupId,
+    }));
+    const { data } = await patchExcelList({
+      input: inputList,
+    });
+    storeFingerPrintRegister.selectedExcelList = data;
   };
 
   const handleClearExcelList = () => {
@@ -126,7 +158,6 @@ export const FingerprintCreateExcel = () => {
               />
               <Button onClick={handleExcelButtonClick}>지문 엑셀 생성</Button>
             </Box>
-            <Button variant={"outline"}>기존엑셀 다운받기</Button>
           </Flex>
           <FormHelperText>새로운 엑셀리스트를 가져옵니다.</FormHelperText>
         </FormControl>
@@ -141,6 +172,10 @@ export const FingerprintCreateExcel = () => {
               </Code>
               <FingerprintCreateExcelModal
                 fn={handleCreateExcelList}
+                selectedGroupName={selectedGroupName}
+              />
+              <FingerprintPatchExcelModal
+                fn={handlePatchExcelList}
                 selectedGroupName={selectedGroupName}
               />
             </Box>

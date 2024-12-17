@@ -7,7 +7,7 @@ Black 'n White theme is a premium theme, that brings your chakra-ui experience o
 1. Create or open a chakra-ui react app project
 
    ```bash
-   yarn create react-app my-chakra-app --template @chakra-ui/typescript && cd my-chakra-app/
+   yarn create react-main my-chakra-main --template @chakra-ui/typescript && cd my-chakra-main/
    ```
 
    ⚠️ Currently there are (issues with the create-react-app)[https://github.com/chakra-ui/chakra-ui/issues/5804] in combination with react 18. If you have problems starting the app, you can add `// @ts-nocheck` to the first line of the `index.ts` file. This might solve the problems until react 18 works in the CRA for chakra-ui with typescript.

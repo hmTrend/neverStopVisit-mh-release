@@ -1,6 +1,6 @@
-appId: com.example.nextron
-productName: My Nextron App
-copyright: Copyright © 2018 Yoshihide Shiono
+appId: com.neverStopVisit
+productName: neverStopVisit
+copyright: Copyright © 2024 apk
 directories:
   output: dist
   buildResources: resources

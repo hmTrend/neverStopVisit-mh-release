@@ -9,13 +9,13 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { storeStart } from "@/valtio/start.valtio";
-import { nShoppingStorage } from "@/util/localStorage";
+import { useSnapshot } from "valtio/react";
 
-export const ConcurrentBrowserCount = () => {
+export const ConcurrentBrowserCount = ({ selectProgram }) => {
+  const snapStart = useSnapshot(storeStart);
   const handleChange = (valueString, valueNumber) => {
     console.log("Number Value:", valueNumber);
-    storeStart.nShopping.concurrentBrowserCount = valueNumber;
-    nShoppingStorage.updateField("concurrentBrowserCount", valueNumber);
+    storeStart[selectProgram].concurrentBrowserCount = valueNumber;
   };
 
   return (
@@ -23,11 +23,11 @@ export const ConcurrentBrowserCount = () => {
       <Text whiteSpace={"nowrap"}>{"멀티"}</Text>
       <Box>
         <NumberInput
-          defaultValue={nShoppingStorage.loadState().concurrentBrowserCount}
           min={1}
-          max={2}
+          max={1}
           w={"75px"}
           onChange={handleChange}
+          defaultValue={snapStart[selectProgram].concurrentBrowserCount}
         >
           <NumberInputField />
           <NumberInputStepper>

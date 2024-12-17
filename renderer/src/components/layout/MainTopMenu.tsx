@@ -16,10 +16,10 @@ export default function MainTopMenu() {
   return (
     <Box>
       <input
-        style={{ width: "240px" }}
+        style={{ width: "180px" }}
         type="range"
         min="0"
-        max="3"
+        max="2"
         value={tabIndex}
         onChange={handleSliderChange}
       />

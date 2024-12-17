@@ -20,9 +20,11 @@ export const useDeleteNShoppingGroup = () => {
         duration: 3000,
         status: "error",
       });
-      throw Error("ERR > deleteFingerPrintGroup");
+      throw Error("ERR > deleteNShoppingGroup");
     }
-    storeNShopping.groupList = groupList.filter((v: any) => v._id !== groupFid);
+    storeNShopping.groupList = groupList.filter(
+      (v: any) => v._id !== groupFid,
+    ) as any;
     toast({
       title: "그룹삭제 성공",
       isClosable: true,

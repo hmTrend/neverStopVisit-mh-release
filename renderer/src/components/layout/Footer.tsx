@@ -1,10 +1,10 @@
 import { Flex, Text } from "@chakra-ui/react";
-import { version } from "../../../../package.json";
+import packageList from "../../../../package.json";
 
 export const Footer = () => {
   return (
     <Flex mx={6}>
-      <Text fontSize={"sm"}>v{version}</Text>
+      <Text fontSize={"sm"}>v{packageList.version}</Text>
     </Flex>
   );
 };

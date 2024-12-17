@@ -26,7 +26,7 @@ export const ExcelList = ({ selectedGroupName, selectedExcelList }) => {
           </FormLabel>
           <TableContainer>
             <Table variant="striped" colorScheme="gray" size={"sm"}>
-              <TableCaption>선택된 지문 리스트</TableCaption>
+              <TableCaption>선택된 쇼핑 리스트</TableCaption>
               <Thead>
                 <Tr>
                   <Th>num</Th>
