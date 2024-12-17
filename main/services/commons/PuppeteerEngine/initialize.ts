@@ -22,7 +22,7 @@ export const initialize = async ({
   browser: Browser;
   type?: string;
 }) => {
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 3; i++) {
     try {
       browser = await chromiumEngine.launch({
         headless: false,
@@ -52,6 +52,9 @@ export const initialize = async ({
     } catch (e) {
       console.log("ERR > executablePath");
       console.error(e.message);
+      if (i === 2) {
+        throw Error("Cookie validation failure ended");
+      }
     }
   }
   return { page, browser };
