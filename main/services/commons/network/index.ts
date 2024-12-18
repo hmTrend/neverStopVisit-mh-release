@@ -1,6 +1,7 @@
 import { TetheringMode } from "./network.tethering";
 import { changeMacAddress, getMacAddress } from "./network.local";
 import { networkRouterEduPlayer } from "./network.router.eduPlayer";
+import { networkRouterEdu } from "./network.router.edu.puppeteer";
 
 export const networkIpChange = async ({ common }) => {
   switch (common.ip) {
@@ -20,7 +21,8 @@ export const networkIpChange = async ({ common }) => {
       return;
     case "ROUTER":
       console.log("ROUTER");
-      await networkRouterEduPlayer();
+      // await networkRouterEduPlayer();
+      await networkRouterEdu();
       return;
     case "LOCAL":
       console.log("LOCAL");
