@@ -246,23 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="14263000" />
-    </task>
-    <task id="LOCAL-00179" summary="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환">
-      <option name="closed" value="true" />
-      <created>1733538723463</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1733538723463</updated>
-    </task>
-    <task id="LOCAL-00180" summary="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환">
-      <option name="closed" value="true" />
-      <created>1733539260947</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1733539260947</updated>
+      <workItem from="1734434604970" duration="16031000" />
     </task>
     <task id="LOCAL-00181" summary="v1.11.4 구글에서 네이버 찾을시 클릭하기">
       <option name="closed" value="true" />
@@ -640,7 +624,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734501885736</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <task id="LOCAL-00228" summary="NSV-10 / v2.4.4 접힌 플레이스 클릭가능">
+      <option name="closed" value="true" />
+      <created>1734504689842</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1734504689842</updated>
+    </task>
+    <task id="LOCAL-00229" summary="NSV-10 / v2.4.4 접힌 플레이스 클릭가능">
+      <option name="closed" value="true" />
+      <created>1734504729389</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1734504729389</updated>
+    </task>
+    <option name="localTasksCounter" value="230" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -671,7 +671,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -685,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="쿠키데이터 CT_AT 여부에 따른 상황설정완료" />
     <MESSAGE value="getExcelList &gt; dataListCount 갯수 추가" />
     <MESSAGE value="v1.17.0 쿠팡지문 완성" />
     <MESSAGE value="v1.17.1 크로미움 오픈버전" />
@@ -710,7 +709,8 @@
     <MESSAGE value="v2.3.1 initialize에 재시도작업에 한계치일때 throw Error 던지기" />
     <MESSAGE value="NSVIT-14 / v2.4.0 전연 브라우저 리스트 관리 만들기 완료" />
     <MESSAGE value="NSVIT-14 / v2.4.2 전연 브라우저 리스트 관리 만들기 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-14 / v2.4.2 전연 브라우저 리스트 관리 만들기 완료" />
+    <MESSAGE value="NSV-10 / v2.4.4 접힌 플레이스 클릭가능" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-10 / v2.4.4 접힌 플레이스 클릭가능" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

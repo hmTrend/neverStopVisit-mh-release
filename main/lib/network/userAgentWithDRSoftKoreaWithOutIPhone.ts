@@ -12187,7 +12187,7 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F946N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;IABMV/1;]",
+      "Mozilla/5.0 (Linux; Android 14; SM-F946N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;IABMV/1;]",
     headers: {
       "sec-ch-ua":
         '"Android WebView";v="131", "Chromium";v="131", "Not_A Brand";v="24"',

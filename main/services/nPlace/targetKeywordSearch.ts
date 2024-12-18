@@ -12,6 +12,7 @@ export const targetKeywordSearch = async ({
   isTest?: boolean;
 } = {}) => {
   try {
+    throw new Error("eeeeeeeeeeee");
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({ url: "https://www.naver.com/", cookie: "" });
