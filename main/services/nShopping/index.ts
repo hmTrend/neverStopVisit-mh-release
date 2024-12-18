@@ -123,16 +123,9 @@ export class NShopping extends PuppeteerEngine {
           nState: "정상",
         });
         this.page = page;
-        await this.page.close();
-        await this.page.context().close();
-        await this.browser.close();
-        await wait(3000);
       }
     } catch (e) {
-      await this.page.close();
-      await this.page.context().close();
-      await this.browser.close();
-      await wait(20 * 1000);
+      throw Error(e.message);
     }
   }
 

@@ -2,8 +2,9 @@ import { ipcMain } from "electron";
 import { NShopping } from "../../services/nShopping";
 import { networkIpChange } from "../../services/commons/network";
 import { monitorNetworkAndStart } from "../../services/commons/network/network.local";
-import wait from "waait";
 import { NPlace } from "../../services/nPlace";
+import { closeAllBrowsers } from "../../services/commons/PuppeteerEngine/BrowserManager";
+import wait from "waait";
 
 export const startProgramIpc = () => {
   let currentNShoppingInstance = null;
@@ -69,14 +70,24 @@ async function executeInChunks(
         let startProgramList = [];
         currentNShoppingInstance = new NShopping();
         currentNPlaceInstance = new NPlace();
-        if (nShopping.isStart) {
-          startProgramList.push(currentNShoppingInstance.start({ nShopping }));
+        try {
+          if (nShopping.isStart) {
+            startProgramList.push(
+              currentNShoppingInstance.start({ nShopping }),
+            );
+          }
+          if (nPlace.isStart) {
+            startProgramList.push(currentNPlaceInstance.start({ nPlace }));
+          }
+          const result = await Promise.all([...startProgramList]);
+          completedCount++;
+          await closeAllBrowsers();
+          await wait(5000);
+        } catch (e) {
+          await closeAllBrowsers();
+          await wait(20 * 1000);
+          console.error(e.message);
         }
-        if (nPlace.isStart) {
-          startProgramList.push(currentNPlaceInstance.start({ nPlace }));
-        }
-        const result = await Promise.all([...startProgramList]);
-        completedCount++;
 
         // 진행상황 로깅 (10%마다)
         if (completedCount % Math.ceil(chunkSize / 10) === 0) {

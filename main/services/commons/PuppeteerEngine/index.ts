@@ -2,6 +2,7 @@ import { initialize } from "./initialize";
 import { Browser, Page, BrowserContext } from "playwright";
 import { chromium } from "playwright-extra";
 import { initializeForPC } from "./initializeForPC";
+import { globalBrowsers } from "../../../lib/const/constVar";
 
 export class PuppeteerEngine {
   chromiumEngine: typeof chromium; // 'typeof chromium'으로 수정
@@ -34,6 +35,7 @@ export class PuppeteerEngine {
       console.log("aaa");
       this.page = page;
       this.browser = browser;
+      globalBrowsers.browsers.push(browser);
     } catch (e) {
       console.error(e.message);
       throw Error(`initialize > ${e.message}`);

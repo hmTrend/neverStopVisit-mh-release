@@ -245,38 +245,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-    </task>
-    <task id="LOCAL-00173" summary="v1.10.2 close">
-      <option name="closed" value="true" />
-      <created>1733480086923</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1733480086923</updated>
-    </task>
-    <task id="LOCAL-00174" summary="v1.10.4 close">
-      <option name="closed" value="true" />
-      <created>1733481693730</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1733481693730</updated>
-    </task>
-    <task id="LOCAL-00175" summary="v1.10.4 close">
-      <option name="closed" value="true" />
-      <created>1733481700726</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1733481700726</updated>
-    </task>
-    <task id="LOCAL-00176" summary="v1.11.0 playwright 엔진 새로 셋팅 함수형">
-      <option name="closed" value="true" />
-      <created>1733532630460</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1733532630460</updated>
+      <workItem from="1734434604970" duration="9310000" />
     </task>
     <task id="LOCAL-00177" summary="v1.11.1 라우터 로그인여부 체크">
       <option name="closed" value="true" />
@@ -638,7 +607,39 @@
       <option name="project" value="LOCAL" />
       <updated>1734332618272</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="[NSVIT-14] v2.3.0 구글 창열렸을때 가만 있지말고, 재시도 로직3번하고 안되면 에러터뜨리기">
+      <option name="closed" value="true" />
+      <created>1734435127636</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1734435127636</updated>
+    </task>
+    <task id="LOCAL-00223" summary="yarn build">
+      <option name="closed" value="true" />
+      <created>1734435416688</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1734435416688</updated>
+    </task>
+    <task id="LOCAL-00224" summary="v2.2.1 initialize에 재시도작업에 한계치일때 throw Error 던지기">
+      <option name="closed" value="true" />
+      <created>1734474966836</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1734474966836</updated>
+    </task>
+    <task id="LOCAL-00225" summary="v2.3.1 initialize에 재시도작업에 한계치일때 throw Error 던지기">
+      <option name="closed" value="true" />
+      <created>1734474989479</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1734474989479</updated>
+    </task>
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -669,7 +670,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -683,10 +684,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.16.3 쿠팡 쿠키 적용완료" />
-    <MESSAGE value="v1.16.4 쿠키값 미입력 대응완료" />
-    <MESSAGE value="v1.16.5 지문 열고닫기 성공" />
-    <MESSAGE value="v1.16.6 isLoading 추가" />
     <MESSAGE value="쿠키값 정제기능 추가완료 &gt; CT_AT만 정제" />
     <MESSAGE value="쿠키데이터 삽입 가능" />
     <MESSAGE value="쿠키데이터 CT_AT 여부에 따른 상황설정완료" />
@@ -708,7 +705,11 @@
     <MESSAGE value="v2.1.2 오류시 창 닫기 강화" />
     <MESSAGE value="v2.1.2 yarn build" />
     <MESSAGE value="v2.2.0 피씨 유저에이전트 삭제완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.2.0 피씨 유저에이전트 삭제완료" />
+    <MESSAGE value="[NSVIT-14] v2.3.0 구글 창열렸을때 가만 있지말고, 재시도 로직3번하고 안되면 에러터뜨리기" />
+    <MESSAGE value="yarn build" />
+    <MESSAGE value="v2.2.1 initialize에 재시도작업에 한계치일때 throw Error 던지기" />
+    <MESSAGE value="v2.3.1 initialize에 재시도작업에 한계치일때 throw Error 던지기" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.3.1 initialize에 재시도작업에 한계치일때 throw Error 던지기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

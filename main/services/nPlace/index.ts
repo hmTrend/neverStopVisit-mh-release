@@ -105,18 +105,9 @@ export class NPlace extends PuppeteerEngine {
           nState: "정상",
         });
         this.page = page;
-        await wait(2000);
-        await this.page.close();
-        await this.page.context().close();
-        await this.browser.close();
-        await wait(3000);
       }
     } catch (e) {
       console.error(e.message);
-      await this.page.close();
-      await this.page.context().close();
-      await this.browser.close();
-      await wait(30 * 1000);
     }
   }
 
