@@ -245,15 +245,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="9310000" />
-    </task>
-    <task id="LOCAL-00177" summary="v1.11.1 라우터 로그인여부 체크">
-      <option name="closed" value="true" />
-      <created>1733536655492</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1733536655492</updated>
+      <workItem from="1734434604970" duration="11638000" />
     </task>
     <task id="LOCAL-00178" summary="v1.11.2 군더더기 없이 깔끔한 LTE 라우터 전환">
       <option name="closed" value="true" />
@@ -639,7 +631,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734474989479</updated>
     </task>
-    <option name="localTasksCounter" value="226" />
+    <task id="LOCAL-00226" summary="NSVIT-14 / v2.4.0 전연 브라우저 리스트 관리 만들기 완료">
+      <option name="closed" value="true" />
+      <created>1734499402705</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1734499402705</updated>
+    </task>
+    <option name="localTasksCounter" value="227" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -684,7 +684,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="쿠키값 정제기능 추가완료 &gt; CT_AT만 정제" />
     <MESSAGE value="쿠키데이터 삽입 가능" />
     <MESSAGE value="쿠키데이터 CT_AT 여부에 따른 상황설정완료" />
     <MESSAGE value="getExcelList &gt; dataListCount 갯수 추가" />
@@ -709,7 +708,8 @@
     <MESSAGE value="yarn build" />
     <MESSAGE value="v2.2.1 initialize에 재시도작업에 한계치일때 throw Error 던지기" />
     <MESSAGE value="v2.3.1 initialize에 재시도작업에 한계치일때 throw Error 던지기" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.3.1 initialize에 재시도작업에 한계치일때 throw Error 던지기" />
+    <MESSAGE value="NSVIT-14 / v2.4.0 전연 브라우저 리스트 관리 만들기 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-14 / v2.4.0 전연 브라우저 리스트 관리 만들기 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

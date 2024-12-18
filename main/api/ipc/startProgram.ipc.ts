@@ -81,6 +81,7 @@ async function executeInChunks(
           }
           const result = await Promise.all([...startProgramList]);
           completedCount++;
+          await wait(3000);
           await closeAllBrowsers();
           await wait(5000);
         } catch (e) {

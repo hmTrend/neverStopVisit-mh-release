@@ -1,5 +1,6 @@
 import { Page } from "playwright";
 import { PuppeteerEngine } from "../commons/PuppeteerEngine";
+import wait from "waait";
 
 export const findTargetPlaceInTargetBlog = async ({
   page = undefined,
@@ -30,6 +31,9 @@ export const findTargetPlaceInTargetBlog = async ({
           // pagePromise를 먼저 생성
           const pagePromise = page.context().waitForEvent("page");
           // 클릭 수행
+          await wait(1000);
+          await mapLink.scrollIntoViewIfNeeded();
+          await wait(1500);
           await mapLink.click();
           // 새 페이지 가져오기
           const newPage = await pagePromise;
@@ -40,16 +44,13 @@ export const findTargetPlaceInTargetBlog = async ({
           // 새 탭으로 page 변수를 업데이트
           page = newPage;
         } else {
-          console.log("placeId가 일치하지 않습니다.");
-          throw new Error(
-            "findTargetPlaceInTargetBlog > 지도 정보를 찾을 수 없거나 클릭할 수 없습니다: ",
-          );
+          console.log("placeId is not find");
+          throw new Error("findTargetPlaceInTargetBlog > placeId is not find ");
         }
       }
     } catch (error) {
       throw new Error(
-        "findTargetPlaceInTargetBlog > 지도 정보를 찾을 수 없거나 클릭할 수 없습니다: " +
-          error.message,
+        "findTargetPlaceInTargetBlog > placeId is not find" + error.message,
       );
     }
   } catch (e) {
