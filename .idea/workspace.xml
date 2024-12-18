@@ -123,7 +123,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.initializeAndroid.ts">
+  <component name="RunManager" selected="TypeScript.findTargetPlaceInTargetBlog.ts">
     <configuration name="clickNearbyAttractions.tsx" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -137,17 +137,18 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="findTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="findTargetPlaceInTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetPlaceInTargetBlog.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="initializeAndroid.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -191,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.findTargetPlaceInTargetBlog.ts" />
         <item itemvalue="TypeScript.initializeAndroid.ts" />
         <item itemvalue="TypeScript.initializeFireFox.ts" />
         <item itemvalue="TypeScript.network.router.eduPlayer.ts" />
         <item itemvalue="TypeScript.clickNearbyAttractions.tsx" />
-        <item itemvalue="TypeScript.findTargetBlog.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -245,15 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="11638000" />
-    </task>
-    <task id="LOCAL-00178" summary="v1.11.2 군더더기 없이 깔끔한 LTE 라우터 전환">
-      <option name="closed" value="true" />
-      <created>1733538512491</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1733538512491</updated>
+      <workItem from="1734434604970" duration="14263000" />
     </task>
     <task id="LOCAL-00179" summary="v1.11.3 군더더기 없이 깔끔한 LTE 라우터 전환">
       <option name="closed" value="true" />
@@ -639,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734499402705</updated>
     </task>
-    <option name="localTasksCounter" value="227" />
+    <task id="LOCAL-00227" summary="NSVIT-14 / v2.4.2 전연 브라우저 리스트 관리 만들기 완료">
+      <option name="closed" value="true" />
+      <created>1734501885736</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1734501885736</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -684,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="쿠키데이터 삽입 가능" />
     <MESSAGE value="쿠키데이터 CT_AT 여부에 따른 상황설정완료" />
     <MESSAGE value="getExcelList &gt; dataListCount 갯수 추가" />
     <MESSAGE value="v1.17.0 쿠팡지문 완성" />
@@ -709,7 +709,8 @@
     <MESSAGE value="v2.2.1 initialize에 재시도작업에 한계치일때 throw Error 던지기" />
     <MESSAGE value="v2.3.1 initialize에 재시도작업에 한계치일때 throw Error 던지기" />
     <MESSAGE value="NSVIT-14 / v2.4.0 전연 브라우저 리스트 관리 만들기 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-14 / v2.4.0 전연 브라우저 리스트 관리 만들기 완료" />
+    <MESSAGE value="NSVIT-14 / v2.4.2 전연 브라우저 리스트 관리 만들기 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-14 / v2.4.2 전연 브라우저 리스트 관리 만들기 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
