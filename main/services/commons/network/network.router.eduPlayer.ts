@@ -55,14 +55,14 @@ async function isLoggedCheck({ page }: { page: Page }) {
 async function waitForLastImageWithLogIn({ page }) {
   await page.waitForSelector('img[src="./img_mifi/unread_message.gif"]', {
     state: "visible",
-    timeout: 30 * 1000, // 10초 타임아웃
+    timeout: 90 * 1000, // 10초 타임아웃
   });
 }
 
 async function waitForLoggedCheckWithLogOut({ page }) {
   await page.waitForSelector('span[data-trans="home"]', {
     state: "visible",
-    timeout: 30 * 1000, // 10초 타임아웃
+    timeout: 90 * 1000, // 10초 타임아웃
   });
 }
 

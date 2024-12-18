@@ -1,10 +1,7 @@
 import os from "os";
 import path from "path";
 
-export const getChromePath = ({
-  pathStep = 0,
-  isChromiumMode = false,
-} = {}) => {
+export const getChromePath = ({ pathStep = 0, isChromiumMode = true } = {}) => {
   const platform = os.platform();
   if (platform === "win32") {
     if (isChromiumMode) {
