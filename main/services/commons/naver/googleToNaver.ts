@@ -3,14 +3,19 @@ import { Page } from "playwright";
 export const googleToNaver = async ({ page }: { page: Page }) => {
   try {
     await inputTypeCheck({ page });
+
+    // Enter 키 입력 후 navigation 대기
     await Promise.all([
-      page.waitForLoadState("networkidle"),
+      page.waitForNavigation({ waitUntil: "load" }), // networkidle 대신 load 사용
       page.keyboard.press("Enter"),
     ]);
+
+    // 네이버 링크 클릭 후 navigation 대기
     await Promise.all([
-      await page.locator('a[href*="naver.com"]').first().click(),
-      page.waitForLoadState("networkidle"),
+      page.waitForNavigation({ waitUntil: "load" }),
+      page.locator('a[href*="naver.com"]').first().click(),
     ]);
+
     return { page };
   } catch (e) {
     throw new Error("ERR > googleToNaver");
