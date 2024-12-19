@@ -108,7 +108,6 @@ export class NPlace extends PuppeteerEngine {
       }
     } catch (e) {
       console.error(e.message);
-      throw Error(e.message);
     }
   }
 

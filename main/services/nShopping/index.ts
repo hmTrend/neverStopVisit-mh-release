@@ -125,7 +125,7 @@ export class NShopping extends PuppeteerEngine {
         this.page = page;
       }
     } catch (e) {
-      throw Error(e.message);
+      console.error(e.message);
     }
   }
 
