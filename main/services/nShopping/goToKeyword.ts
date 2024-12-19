@@ -11,6 +11,8 @@ export const goToKeyword = async ({
   try {
     await clickSwipeCoachMark({ page }); // 팝업창 있을시 대응
     await page.getByRole("button", { name: "상품, 브랜드 입력" }).click();
+    await wait(1000);
+    await page.getByRole("button", { name: "상품, 브랜드 입력" }).click();
     await page.locator("#input_text").fill(query);
     await page
       .locator("button._searchInput_button_search_pA3ap")
