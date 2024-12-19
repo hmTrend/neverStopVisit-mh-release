@@ -24,16 +24,14 @@ export const findTargetBlog = async ({
     try {
       await wait(1000);
       const link = page.locator(`[href="${targetBlog}"]`).first();
-      await link.waitFor({ state: "visible", timeout: 5000 });
+      await link.waitFor({ state: "visible", timeout: 10 * 1000 });
       await Promise.all([link.click(), page.waitForLoadState("load")]);
-    } catch (error) {
-      throw new Error(
-        `findTargetBlog > "${targetBlog}" 링크를 찾을 수 없습니다.`,
-      );
+    } catch (e) {
+      throw new Error(`${e.message}`);
     }
   } catch (e) {
     console.error(e);
-    throw Error("ERR > findTargetBlog");
+    throw Error(`findTargetBlog > ${e.message}`);
   }
 
   return { page };

@@ -45,7 +45,7 @@ async function inputTypeCheck({ page }) {
       if (result) {
         console.log(`Found ${result.type} input on attempt ${attempt}`);
         await result.element.click();
-        await wait(1500)
+        await wait(1500);
         await result.element.fill("네이버");
         break; // 성공하면 루프 종료
       } else {
