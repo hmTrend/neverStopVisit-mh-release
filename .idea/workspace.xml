@@ -246,23 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="40923000" />
-    </task>
-    <task id="LOCAL-00212" summary="v2.0.0 쿠팡지문 가구매용">
-      <option name="closed" value="true" />
-      <created>1734067177785</created>
-      <option name="number" value="00212" />
-      <option name="presentableId" value="LOCAL-00212" />
-      <option name="project" value="LOCAL" />
-      <updated>1734067177785</updated>
-    </task>
-    <task id="LOCAL-00213" summary="v2.0.0 쿠팡지문 가구매용">
-      <option name="closed" value="true" />
-      <created>1734067207431</created>
-      <option name="number" value="00213" />
-      <option name="presentableId" value="LOCAL-00213" />
-      <option name="project" value="LOCAL" />
-      <updated>1734067207431</updated>
+      <workItem from="1734434604970" duration="41534000" />
     </task>
     <task id="LOCAL-00214" summary="v2.0.2 북마크추가">
       <option name="closed" value="true" />
@@ -640,7 +624,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734587396278</updated>
     </task>
-    <option name="localTasksCounter" value="261" />
+    <task id="LOCAL-00261" summary="NSV-11 / await 상품명 입력후 1.5초 대기">
+      <option name="closed" value="true" />
+      <created>1734589542472</created>
+      <option name="number" value="00261" />
+      <option name="presentableId" value="LOCAL-00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1734589542472</updated>
+    </task>
+    <task id="LOCAL-00262" summary="NSV-11 / v2.8.7">
+      <option name="closed" value="true" />
+      <created>1734589556412</created>
+      <option name="number" value="00262" />
+      <option name="presentableId" value="LOCAL-00262" />
+      <option name="project" value="LOCAL" />
+      <updated>1734589556412</updated>
+    </task>
+    <option name="localTasksCounter" value="263" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,8 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v2.4.5 userAgent 모바일 추가" />
-    <MESSAGE value="v2.4.6 naver들어간후 못클릭할시 재시도2회 추가" />
     <MESSAGE value="v2.5.0 라우터 IP 변경안됨 이슈" />
     <MESSAGE value="NSVIT-15 / v2.5.0 라우터 IP 변경안됨 이슈" />
     <MESSAGE value="NSVIT-15 / v2.6.0 퍼페티어 코어 설치" />
@@ -710,6 +708,8 @@
     <MESSAGE value="NSV-11 / v2.8.5" />
     <MESSAGE value="NSV-11 / goToKeyword &gt; 에러 정리 / 로직강화" />
     <MESSAGE value="NSV-11 / v2.8.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / v2.8.6" />
+    <MESSAGE value="NSV-11 / await 상품명 입력후 1.5초 대기" />
+    <MESSAGE value="NSV-11 / v2.8.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / v2.8.7" />
   </component>
 </project>

@@ -15,8 +15,10 @@ export const searchNVMID = async ({
         if (isFindNvMid) {
           return { page, isFindNvMid: true };
         }
-        await page.keyboard.press("End");
-        await page.waitForLoadState("load");
+        await Promise.all([
+          page.waitForLoadState("load"),
+          page.keyboard.press("End"),
+        ]);
         await wait(1000);
       }
       await nextNumberClick({ page });
