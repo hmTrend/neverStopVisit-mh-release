@@ -60,9 +60,7 @@ async function findNvMid({ page, nvMid }) {
 async function nextNumberClick({ page }) {
   try {
     const nextButton = page.locator("button.paginator_btn_next__3fcZx");
-    await nextButton.click();
-    await wait(2000);
-    await page.waitForLoadState("load");
+    await Promise.all([nextButton.click(), page.waitForLoadState("load")]);
     return { page };
   } catch (e) {
     console.error(e.message);
