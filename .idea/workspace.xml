@@ -246,15 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="53855000" />
-    </task>
-    <task id="LOCAL-00231" summary="v2.4.6 naver들어간후 못클릭할시 재시도2회 추가">
-      <option name="closed" value="true" />
-      <created>1734507181077</created>
-      <option name="number" value="00231" />
-      <option name="presentableId" value="LOCAL-00231" />
-      <option name="project" value="LOCAL" />
-      <updated>1734507181077</updated>
+      <workItem from="1734434604970" duration="55044000" />
     </task>
     <task id="LOCAL-00232" summary="v2.4.6 naver들어간후 못클릭할시 재시도2회 추가">
       <option name="closed" value="true" />
@@ -640,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734606727447</updated>
     </task>
-    <option name="localTasksCounter" value="280" />
+    <task id="LOCAL-00280" summary="NSV-11 / targetKeywordSearch / 에러메시지 강화">
+      <option name="closed" value="true" />
+      <created>1734606961029</created>
+      <option name="number" value="00280" />
+      <option name="presentableId" value="LOCAL-00280" />
+      <option name="project" value="LOCAL" />
+      <updated>1734606961029</updated>
+    </task>
+    <option name="localTasksCounter" value="281" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / goToShopping 이슈 처리" />
     <MESSAGE value="NSV-11 / 쇼핑 / 스토어 / 상품명 클릭못함 / 하루동안 열지않기 팝업창 뜨면서 오류 / 1초후 한번더 클릭" />
     <MESSAGE value="NSV-11 / v2.8.3" />
     <MESSAGE value="NSV-11 / goToKeyword.ts / 오류 대응" />
@@ -710,6 +709,7 @@
     <MESSAGE value="NSV-11 / clickNearbyAttractions &gt; 명소 에러시 메시지 추가" />
     <MESSAGE value="NSV-11 / findTargetBlog / 재작업 에러로직 강화" />
     <MESSAGE value="NSV-11 / findTargetPlaceInTargetBlog / 에러메시지 강화" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / findTargetPlaceInTargetBlog / 에러메시지 강화" />
+    <MESSAGE value="NSV-11 / targetKeywordSearch / 에러메시지 강화" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / targetKeywordSearch / 에러메시지 강화" />
   </component>
 </project>

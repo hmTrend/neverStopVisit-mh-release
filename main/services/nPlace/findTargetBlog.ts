@@ -29,16 +29,17 @@ export const findTargetBlog = async ({
       try {
         await wait(1000);
         const blogId = getBlogId(targetBlog);
-        const link = page.locator(`[href$="${blogId}"]`).first();
-        await link.waitFor({ state: "visible", timeout: 5 * 1000 });
+        const link = page.locator(`a[href*="${blogId}"]`).first();
+        await link.waitFor({ state: "visible", timeout: 10 * 1000 });
         await link.scrollIntoViewIfNeeded();
-        await wait(1000);
+        await wait(1500);
         await Promise.all([link.click(), page.waitForLoadState("load")]);
         break;
       } catch (e) {
         if (i === 2) {
           throw new Error(`${e.message}`);
         }
+        await wait(3 * 1000);
       }
     }
   } catch (e) {
