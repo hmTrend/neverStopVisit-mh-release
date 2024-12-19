@@ -246,15 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="41861000" />
-    </task>
-    <task id="LOCAL-00215" summary="v2.1.0 chrome 브라우저 열린 브라우저 모두 닫기">
-      <option name="closed" value="true" />
-      <created>1734323663376</created>
-      <option name="number" value="00215" />
-      <option name="presentableId" value="LOCAL-00215" />
-      <option name="project" value="LOCAL" />
-      <updated>1734323663376</updated>
+      <workItem from="1734434604970" duration="42285000" />
     </task>
     <task id="LOCAL-00216" summary="v2.1.0 yarn build">
       <option name="closed" value="true" />
@@ -640,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734590263966</updated>
     </task>
-    <option name="localTasksCounter" value="264" />
+    <task id="LOCAL-00264" summary="NSV-11 / nextNumberClick &gt; promise all">
+      <option name="closed" value="true" />
+      <created>1734590396811</created>
+      <option name="number" value="00264" />
+      <option name="presentableId" value="LOCAL-00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1734590396811</updated>
+    </task>
+    <option name="localTasksCounter" value="265" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-15 / v2.5.0 라우터 IP 변경안됨 이슈" />
     <MESSAGE value="NSVIT-15 / v2.6.0 퍼페티어 코어 설치" />
     <MESSAGE value="에러시 다른작업 대기하기" />
     <MESSAGE value="NSV-11 / 에러시 프론트전달" />
@@ -710,6 +709,7 @@
     <MESSAGE value="NSV-11 / await 상품명 입력후 1.5초 대기" />
     <MESSAGE value="NSV-11 / v2.8.7" />
     <MESSAGE value="NSV-11 / searchNVMID &gt; load 추가 안정화" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / searchNVMID &gt; load 추가 안정화" />
+    <MESSAGE value="NSV-11 / nextNumberClick &gt; promise all" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / nextNumberClick &gt; promise all" />
   </component>
 </project>
