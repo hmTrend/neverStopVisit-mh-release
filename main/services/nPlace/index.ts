@@ -9,9 +9,10 @@ import { findTargetBlog } from "./findTargetBlog";
 import { findTargetPlaceInTargetBlog } from "./findTargetPlaceInTargetBlog";
 import { clickNearbyAttractions } from "./clickNearbyAttractions";
 import { googleToNaver } from "../commons/naver/googleToNaver";
+import { errorToFront } from "../commons/error/errorToFront";
 
 export class NPlace extends PuppeteerEngine {
-  async start({ nPlace }): Promise<void> {
+  async start({ nPlace, mainWindow }): Promise<void> {
     try {
       for (let i = 0; i <= 5; i++) {
         try {
@@ -107,6 +108,7 @@ export class NPlace extends PuppeteerEngine {
         this.page = page;
       }
     } catch (e) {
+      errorToFront({ mainWindow, errorMessage: e.message, workType: "NPlace" });
       console.error(e.message);
     }
   }

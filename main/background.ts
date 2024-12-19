@@ -44,6 +44,7 @@ if (isProd) {
     await mainWindow.loadURL(`http://localhost:${port}`);
     mainWindow.webContents.openDevTools();
   }
+  startProgramIpc({ mainWindow });
 })();
 
 app.on("window-all-closed", () => {
@@ -55,7 +56,7 @@ ipcMain.on("message", async (event, arg) => {
 });
 
 excelIpc();
-startProgramIpc();
+
 fingerPrintBrowserIpc();
 
 ipcMain.on("main:quit", () => {

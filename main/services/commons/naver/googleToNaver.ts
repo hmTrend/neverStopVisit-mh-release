@@ -2,14 +2,11 @@ import { Page } from "playwright";
 
 export const googleToNaver = async ({ page }: { page: Page }) => {
   try {
-    console.log(11);
     await inputTypeCheck({ page });
-    console.log(22);
     await Promise.all([
       page.waitForLoadState("networkidle"),
       page.keyboard.press("Enter"),
     ]);
-    console.log(33);
     await Promise.all([
       await page.locator('a[href*="naver.com"]').first().click(),
       page.waitForLoadState("networkidle"),

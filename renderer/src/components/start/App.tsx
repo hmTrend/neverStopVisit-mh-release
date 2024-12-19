@@ -4,6 +4,7 @@ import { Flex } from "@chakra-ui/react";
 import { SelectProgramForStartLogic } from "@/components/start/SelectProgramForStartLogic";
 import { StartButtonLogic } from "@/components/start/StartButtonLogic";
 import { OptionCommon } from "@/components/start/OptionCommon";
+import { WorkCompletedList } from "@/components/start/WorkCompletedList";
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
       <OptionCommon />
       <SelectProgramForStartLogic />
       <StartButtonLogic />
+      <WorkCompletedList />
     </Flex>
   );
 };

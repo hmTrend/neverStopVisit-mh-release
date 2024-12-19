@@ -19,7 +19,6 @@ export const loggedInCheck = async ({
       throw Error("this is not loggedIn");
     }
 
-    console.log(44);
     return { page };
   } catch (e) {
     console.error(e.message);

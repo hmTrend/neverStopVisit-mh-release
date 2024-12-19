@@ -12,9 +12,10 @@ import { expandProductDetails } from "./expandProductDetails";
 import { makeAPurchase } from "./makeAPurchase";
 import { isPopup } from "./isPopup";
 import { googleToNaver } from "../commons/naver/googleToNaver";
+import { errorToFront } from "../commons/error/errorToFront";
 
 export class NShopping extends PuppeteerEngine {
-  async start({ nShopping }): Promise<void> {
+  async start({ nShopping, mainWindow }): Promise<void> {
     try {
       for (let i = 0; i <= 5; i++) {
         try {
@@ -125,6 +126,11 @@ export class NShopping extends PuppeteerEngine {
         this.page = page;
       }
     } catch (e) {
+      errorToFront({
+        mainWindow,
+        errorMessage: e.message,
+        workType: "NShopping",
+      });
       console.error(e.message);
     }
   }

@@ -6,7 +6,7 @@ import { NPlace } from "../../services/nPlace";
 import { closeAllBrowsers } from "../../services/commons/PuppeteerEngine/BrowserManager";
 import wait from "waait";
 
-export const startProgramIpc = () => {
+export const startProgramIpc = ({ mainWindow }) => {
   let currentNShoppingInstance = null;
   let currentNPlaceInstance = null;
 
@@ -21,6 +21,7 @@ export const startProgramIpc = () => {
       currentNShoppingInstance,
       currentNPlaceInstance,
       common,
+      mainWindow,
     );
 
     return { message: "OK" };
@@ -48,6 +49,7 @@ async function executeInChunks(
   currentNShoppingInstance,
   currentNPlaceInstance,
   common,
+  mainWindow,
 ) {
   try {
     const totalChunks = Math.ceil(totalCount / chunkSize);
@@ -73,11 +75,13 @@ async function executeInChunks(
         try {
           if (nShopping.isStart) {
             startProgramList.push(
-              currentNShoppingInstance.start({ nShopping }),
+              currentNShoppingInstance.start({ nShopping, mainWindow }),
             );
           }
           if (nPlace.isStart) {
-            startProgramList.push(currentNPlaceInstance.start({ nPlace }));
+            startProgramList.push(
+              currentNPlaceInstance.start({ nPlace, mainWindow }),
+            );
           }
           const result = await Promise.all([...startProgramList]);
           completedCount++;
