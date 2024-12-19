@@ -56,7 +56,7 @@ export const targetKeywordSearch = async ({
     }
   } catch (e) {
     console.error(e.message);
-    throw Error("ERR > targetKeywordSearch");
+    throw Error(`targetKeywordSearch > ${e.message}`);
   }
 
   return { page };
