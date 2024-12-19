@@ -110,7 +110,6 @@ export class NShopping extends PuppeteerEngine {
         if (isFindNvMid) {
           const { page } = await expandProductDetails({ page: this.page });
           this.page = page;
-          await wait(20 * 1000); // 찾았을시 20초 대기
           {
             const { page } = await makeAPurchase({ page: this.page });
             this.page = page;

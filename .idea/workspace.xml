@@ -246,23 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="33806000" />
-    </task>
-    <task id="LOCAL-00200" summary="getExcelList &gt; dataListCount 갯수 추가">
-      <option name="closed" value="true" />
-      <created>1733896260640</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1733896260640</updated>
-    </task>
-    <task id="LOCAL-00201" summary="v1.17.0 쿠팡지문 완성">
-      <option name="closed" value="true" />
-      <created>1733897600304</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1733897600304</updated>
+      <workItem from="1734434604970" duration="35178000" />
     </task>
     <task id="LOCAL-00202" summary="v1.17.1 크로미움 오픈버전">
       <option name="closed" value="true" />
@@ -640,7 +624,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734579653431</updated>
     </task>
-    <option name="localTasksCounter" value="249" />
+    <task id="LOCAL-00249" summary="NSV-11 / 로그아웃 버튼과 로그인 버튼 보는것으로 변경">
+      <option name="closed" value="true" />
+      <created>1734581102953</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1734581102953</updated>
+    </task>
+    <task id="LOCAL-00250" summary="NSV-11 / 2.8.1">
+      <option name="closed" value="true" />
+      <created>1734581139672</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1734581139672</updated>
+    </task>
+    <option name="localTasksCounter" value="251" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,8 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v2.1.0 yarn build" />
-    <MESSAGE value="v2.1.1 브라우저 종료 보강" />
     <MESSAGE value="v2.1.2 오류시 창 닫기 강화" />
     <MESSAGE value="v2.1.2 yarn build" />
     <MESSAGE value="v2.2.0 피씨 유저에이전트 삭제완료" />
@@ -710,7 +708,9 @@
     <MESSAGE value="NSV-11 / googleToNaver 로직강화" />
     <MESSAGE value="NSV-11 / networkIdle &gt; load" />
     <MESSAGE value="NSV-11 / v2.8.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / v2.8.0" />
+    <MESSAGE value="NSV-11 / 로그아웃 버튼과 로그인 버튼 보는것으로 변경" />
+    <MESSAGE value="NSV-11 / 2.8.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / 2.8.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
