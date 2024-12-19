@@ -20,7 +20,8 @@ export const goToKeyword = async ({
       const searchInput = page.locator("#input_text");
       await searchInput.waitFor({ state: "visible" });
       await searchInput.fill(query);
-
+      await wait(1500);
+      
       // 검색 실행 및 결과 페이지 로드 대기
       const searchExecuteButton = page.locator(
         "button._searchInput_button_search_pA3ap",
