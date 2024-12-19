@@ -9,19 +9,31 @@ export const goToKeyword = async ({
   query: string;
 }) => {
   try {
-    await clickSwipeCoachMark({ page }); // 팝업창 있을시 대응
-    await page.getByRole("button", { name: "상품, 브랜드 입력" }).click();
+    // 팝업창 대응
+    await clickSwipeCoachMark({ page });
+    
+    // 검색 버튼 클릭 - 두번 클릭하는 부분은 의도된 것 같아 유지
+    const searchButton = page.getByRole("button", { name: "상품, 브랜드 입력" });
+    await searchButton.waitFor({ state: 'visible' });
+    await searchButton.click();
     await wait(1000);
-    await page.getByRole("button", { name: "상품, 브랜드 입력" }).click();
-    await page.locator("#input_text").fill(query);
-    await page
-      .locator("button._searchInput_button_search_pA3ap")
-      .click({ delay: 1000 });
-    await page.waitForLoadState("load");
+    await searchButton.click();
+    
+    // 검색어 입력
+    const searchInput = page.locator("#input_text");
+    await searchInput.waitFor({ state: 'visible' });
+    await searchInput.fill(query);
+    
+    // 검색 실행 및 결과 페이지 로드 대기
+    const searchExecuteButton = page.locator("button._searchInput_button_search_pA3ap");
+    await Promise.all([
+      page.waitForLoadState('load'),
+      searchExecuteButton.click()
+    ]);
     return { page };
   } catch (e) {
     console.error(e.message);
-    throw Error("goToKeyword");
+    throw Error(`goToKeyword > ${e.message}`);
   }
 };
 
