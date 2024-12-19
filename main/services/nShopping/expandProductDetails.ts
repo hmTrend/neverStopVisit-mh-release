@@ -9,7 +9,7 @@ export const expandProductDetails = async ({ page }: { page: Page }) => {
     const context = page.context();
     const allPages = context.pages();
     newPage = allPages[allPages.length - 1]; // 가장 최근에 열린 탭
-
+    await wait(1000);
     await newPage.keyboard.press("End");
     await wait(2000);
     await newPage.locator('button[data-shp-inventory="detailitm"]').click();

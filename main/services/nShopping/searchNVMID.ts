@@ -46,8 +46,10 @@ async function findNvMid({ page, nvMid }) {
           hasNot: page.locator('span.blind:text-is("광고")'),
         })
         .first();
-      await productLocator.click();
-      await page.waitForLoadState("load");
+      await Promise.all([
+        productLocator.click(),
+        page.waitForLoadState("load"),
+      ]);
       return { page, isFindNvMid: true };
     }
     return { page, isFindNvMid: false };
