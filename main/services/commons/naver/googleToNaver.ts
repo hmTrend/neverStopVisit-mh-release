@@ -1,4 +1,5 @@
 import { Page } from "playwright";
+import wait from "waait";
 
 export const googleToNaver = async ({ page }: { page: Page }) => {
   try {
@@ -18,7 +19,7 @@ export const googleToNaver = async ({ page }: { page: Page }) => {
 
     return { page };
   } catch (e) {
-    throw new Error("ERR > googleToNaver");
+    throw new Error(`googleToNaver ${e.message}`);
   }
 };
 
@@ -43,6 +44,8 @@ async function inputTypeCheck({ page }) {
 
       if (result) {
         console.log(`Found ${result.type} input on attempt ${attempt}`);
+        await result.element.click();
+        await wait(1500)
         await result.element.fill("네이버");
         break; // 성공하면 루프 종료
       } else {

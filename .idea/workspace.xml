@@ -246,23 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="45539000" />
-    </task>
-    <task id="LOCAL-00221" summary="v2.2.0 피씨 유저에이전트 삭제완료">
-      <option name="closed" value="true" />
-      <created>1734332618272</created>
-      <option name="number" value="00221" />
-      <option name="presentableId" value="LOCAL-00221" />
-      <option name="project" value="LOCAL" />
-      <updated>1734332618272</updated>
-    </task>
-    <task id="LOCAL-00222" summary="[NSVIT-14] v2.3.0 구글 창열렸을때 가만 있지말고, 재시도 로직3번하고 안되면 에러터뜨리기">
-      <option name="closed" value="true" />
-      <created>1734435127636</created>
-      <option name="number" value="00222" />
-      <option name="presentableId" value="LOCAL-00222" />
-      <option name="project" value="LOCAL" />
-      <updated>1734435127636</updated>
+      <workItem from="1734434604970" duration="49819000" />
     </task>
     <task id="LOCAL-00223" summary="yarn build">
       <option name="closed" value="true" />
@@ -640,7 +624,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734593361765</updated>
     </task>
-    <option name="localTasksCounter" value="270" />
+    <task id="LOCAL-00270" summary="NSV-11 / 쇼핑 더보기 클릭 로직 변경">
+      <option name="closed" value="true" />
+      <created>1734594434091</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1734594434091</updated>
+    </task>
+    <task id="LOCAL-00271" summary="NSV-11 / v2.8.10">
+      <option name="closed" value="true" />
+      <created>1734594458639</created>
+      <option name="number" value="00271" />
+      <option name="presentableId" value="LOCAL-00271" />
+      <option name="project" value="LOCAL" />
+      <updated>1734594458639</updated>
+    </task>
+    <option name="localTasksCounter" value="272" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,8 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / v2.7.0" />
-    <MESSAGE value="NSV-11 / 에러처리시 타겟키워드 추가" />
     <MESSAGE value="NSV-11 / googleToNaver 로직강화" />
     <MESSAGE value="NSV-11 / networkIdle &gt; load" />
     <MESSAGE value="NSV-11 / v2.8.0" />
@@ -710,6 +708,8 @@
     <MESSAGE value="NSV-11 / v2.8.8" />
     <MESSAGE value="NSV-11 / 홈&gt;스토어 / load 속도느려서 domcontentloaded / 변경됨" />
     <MESSAGE value="NSV-11 / 2.8.9" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / 2.8.9" />
+    <MESSAGE value="NSV-11 / 쇼핑 더보기 클릭 로직 변경" />
+    <MESSAGE value="NSV-11 / v2.8.10" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / v2.8.10" />
   </component>
 </project>
