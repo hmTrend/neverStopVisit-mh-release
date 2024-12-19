@@ -11,24 +11,28 @@ export const goToKeyword = async ({
   try {
     // 팝업창 대응
     await clickSwipeCoachMark({ page });
-    
+
     // 검색 버튼 클릭 - 두번 클릭하는 부분은 의도된 것 같아 유지
-    const searchButton = page.getByRole("button", { name: "상품, 브랜드 입력" });
-    await searchButton.waitFor({ state: 'visible' });
+    const searchButton = page.getByRole("button", {
+      name: "상품, 브랜드 입력",
+    });
+    await searchButton.waitFor({ state: "visible" });
     await searchButton.click();
     await wait(1000);
     await searchButton.click();
-    
+
     // 검색어 입력
     const searchInput = page.locator("#input_text");
-    await searchInput.waitFor({ state: 'visible' });
+    await searchInput.waitFor({ state: "visible" });
     await searchInput.fill(query);
-    
+
     // 검색 실행 및 결과 페이지 로드 대기
-    const searchExecuteButton = page.locator("button._searchInput_button_search_pA3ap");
+    const searchExecuteButton = page.locator(
+      "button._searchInput_button_search_pA3ap",
+    );
     await Promise.all([
-      page.waitForLoadState('load'),
-      searchExecuteButton.click()
+      page.waitForLoadState("load"),
+      searchExecuteButton.click(),
     ]);
     return { page };
   } catch (e) {
