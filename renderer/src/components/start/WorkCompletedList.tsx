@@ -22,6 +22,7 @@ export function WorkCompletedList() {
       {completedList?.map((v, i) => (
         <Box display={"flex"} gap={3} key={i}>
           <Text>{i + 1}</Text>
+          <Text>{v?.targetKeyword}</Text>
           <Text>{v?.workType}</Text>
           <Text>{v?.errorMessage}</Text>
         </Box>

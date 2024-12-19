@@ -108,7 +108,12 @@ export class NPlace extends PuppeteerEngine {
         this.page = page;
       }
     } catch (e) {
-      errorToFront({ mainWindow, errorMessage: e.message, workType: "NPlace" });
+      errorToFront({
+        targetKeyword: this.query,
+        mainWindow,
+        errorMessage: e.message,
+        workType: "NPlace",
+      });
       console.error(e.message);
     }
   }

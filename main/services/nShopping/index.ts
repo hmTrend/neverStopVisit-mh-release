@@ -127,6 +127,7 @@ export class NShopping extends PuppeteerEngine {
       }
     } catch (e) {
       errorToFront({
+        targetKeyword: this.query,
         mainWindow,
         errorMessage: e.message,
         workType: "NShopping",
