@@ -246,23 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="44720000" />
-    </task>
-    <task id="LOCAL-00219" summary="v2.1.2 yarn build">
-      <option name="closed" value="true" />
-      <created>1734330478517</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1734330478517</updated>
-    </task>
-    <task id="LOCAL-00220" summary="v2.2.0 피씨 유저에이전트 삭제완료">
-      <option name="closed" value="true" />
-      <created>1734332607157</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
-      <option name="project" value="LOCAL" />
-      <updated>1734332607157</updated>
+      <workItem from="1734434604970" duration="45539000" />
     </task>
     <task id="LOCAL-00221" summary="v2.2.0 피씨 유저에이전트 삭제완료">
       <option name="closed" value="true" />
@@ -640,7 +624,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734592030433</updated>
     </task>
-    <option name="localTasksCounter" value="268" />
+    <task id="LOCAL-00268" summary="NSV-11 / 2.8.9">
+      <option name="closed" value="true" />
+      <created>1734593355292</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1734593355292</updated>
+    </task>
+    <task id="LOCAL-00269" summary="NSV-11 / 2.8.9">
+      <option name="closed" value="true" />
+      <created>1734593361765</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1734593361765</updated>
+    </task>
+    <option name="localTasksCounter" value="270" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / 에러 연동완료" />
     <MESSAGE value="NSV-11 / v2.7.0" />
     <MESSAGE value="NSV-11 / 에러처리시 타겟키워드 추가" />
     <MESSAGE value="NSV-11 / googleToNaver 로직강화" />
@@ -710,6 +709,7 @@
     <MESSAGE value="NSV-11 / makeAPurchase &gt; promise all" />
     <MESSAGE value="NSV-11 / v2.8.8" />
     <MESSAGE value="NSV-11 / 홈&gt;스토어 / load 속도느려서 domcontentloaded / 변경됨" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / 홈&gt;스토어 / load 속도느려서 domcontentloaded / 변경됨" />
+    <MESSAGE value="NSV-11 / 2.8.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / 2.8.9" />
   </component>
 </project>
