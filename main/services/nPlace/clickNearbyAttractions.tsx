@@ -20,19 +20,25 @@ export async function clickNearbyAttractions({
     }
     {
       const link = page.getByRole("tab").filter({ hasText: "주변" });
-      await link.waitFor({ state: "visible", timeout: 5000 });
-      await Promise.all([link.click(), page.waitForLoadState("load")]);
+      await link.waitFor({ state: "visible", timeout: 10 * 1000 });
+      await Promise.all([
+        link.click(),
+        page.waitForLoadState("domcontentloaded"),
+      ]);
     }
     await wait(1500);
     {
       const button = page.getByRole("button", { name: "명소", exact: true });
-      await button.waitFor({ state: "visible", timeout: 5000 });
-      await Promise.all([button.click(), page.waitForLoadState("load")]);
+      await button.waitFor({ state: "visible", timeout: 10 * 1000 });
+      await Promise.all([
+        button.click(),
+        page.waitForLoadState("domcontentloaded"),
+      ]);
     }
     return { page };
   } catch (e) {
     console.error(e.message);
-    throw Error("ERR > clickNearbyAttractions");
+    throw Error(`clickNearbyAttractions > ${e.message}`);
   }
 }
 
