@@ -12,15 +12,15 @@ export const goToKeyword = async ({
     try {
       // 팝업창 대응
       await clickSwipeCoachMark({ page });
-      
+
       await page.getByRole("button", { name: "상품, 브랜드 입력" }).click();
       await wait(1500);
-      
+
       // 검색어 입력
       const searchInput = page.locator("#input_text");
       await searchInput.waitFor({ state: "visible" });
       await searchInput.fill(query);
-      
+
       // 검색 실행 및 결과 페이지 로드 대기
       const searchExecuteButton = page.locator(
         "button._searchInput_button_search_pA3ap",
@@ -32,10 +32,10 @@ export const goToKeyword = async ({
       return { page };
     } catch (e) {
       console.error(e.message);
-      if (i===2) {
+      if (i === 2) {
         throw Error(`goToKeyword > ${e.message}`);
       }
-      await wait(3*1000);
+      await wait(3 * 1000);
     }
   }
 };
