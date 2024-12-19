@@ -1,9 +1,9 @@
 import { proxy } from "valtio/vanilla";
 
 class WorkValtio {
-  completedList: [{ workType: string; errorMessage: string }];
+  completedList: any[];
   constructor() {
-    this.completedList = [{ workType: "", errorMessage: "" }];
+    this.completedList = [];
   }
 }
 

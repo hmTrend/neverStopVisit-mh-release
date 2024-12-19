@@ -3,6 +3,8 @@ import { Page } from "playwright";
 export const googleToNaver = async ({ page }: { page: Page }) => {
   try {
     await inputTypeCheck({ page });
+    throw new Error("ERR > googleToNaver");
+
     await Promise.all([
       page.waitForLoadState("networkidle"),
       page.keyboard.press("Enter"),

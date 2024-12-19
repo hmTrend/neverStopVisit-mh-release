@@ -246,15 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="28159000" />
-    </task>
-    <task id="LOCAL-00190" summary="v1.15.1 삭제여부 추가">
-      <option name="closed" value="true" />
-      <created>1733806186954</created>
-      <option name="number" value="00190" />
-      <option name="presentableId" value="LOCAL-00190" />
-      <option name="project" value="LOCAL" />
-      <updated>1733806186954</updated>
+      <workItem from="1734434604970" duration="29739000" />
     </task>
     <task id="LOCAL-00191" summary="v1.16.0 쿠키값 수정 UI 추가">
       <option name="closed" value="true" />
@@ -640,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734567093043</updated>
     </task>
-    <option name="localTasksCounter" value="239" />
+    <task id="LOCAL-00239" summary="NSV-11 / 에러시 프론트전달">
+      <option name="closed" value="true" />
+      <created>1734572132677</created>
+      <option name="number" value="00239" />
+      <option name="presentableId" value="LOCAL-00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1734572132677</updated>
+    </task>
+    <option name="localTasksCounter" value="240" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v1.18.0 쿠팡앱 앱피아 연동" />
     <MESSAGE value="v1.18.0 쿠팡앱 앱피아 연동 - 쿠키가져오기 실패" />
     <MESSAGE value="v1.18.1 userAgent 원복 + 피씨 페이지 추가" />
     <MESSAGE value="v1.19.0 쿠팡 쿠키값 오류해결 + 네이버 지문셋팅" />
@@ -710,7 +709,8 @@
     <MESSAGE value="NSVIT-15 / v2.5.0 라우터 IP 변경안됨 이슈" />
     <MESSAGE value="NSVIT-15 / v2.6.0 퍼페티어 코어 설치" />
     <MESSAGE value="에러시 다른작업 대기하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="에러시 다른작업 대기하기" />
+    <MESSAGE value="NSV-11 / 에러시 프론트전달" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / 에러시 프론트전달" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
