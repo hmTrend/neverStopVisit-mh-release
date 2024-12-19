@@ -246,15 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="51191000" />
-    </task>
-    <task id="LOCAL-00224" summary="v2.2.1 initialize에 재시도작업에 한계치일때 throw Error 던지기">
-      <option name="closed" value="true" />
-      <created>1734474966836</created>
-      <option name="number" value="00224" />
-      <option name="presentableId" value="LOCAL-00224" />
-      <option name="project" value="LOCAL" />
-      <updated>1734474966836</updated>
+      <workItem from="1734434604970" duration="51566000" />
     </task>
     <task id="LOCAL-00225" summary="v2.3.1 initialize에 재시도작업에 한계치일때 throw Error 던지기">
       <option name="closed" value="true" />
@@ -640,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734603982677</updated>
     </task>
-    <option name="localTasksCounter" value="273" />
+    <task id="LOCAL-00273" summary="NSV-11 / googleToNaver / 에러강화">
+      <option name="closed" value="true" />
+      <created>1734604341002</created>
+      <option name="number" value="00273" />
+      <option name="presentableId" value="LOCAL-00273" />
+      <option name="project" value="LOCAL" />
+      <updated>1734604341002</updated>
+    </task>
+    <option name="localTasksCounter" value="274" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">

@@ -20,10 +20,16 @@ export const findTargetBlog = async ({
       });
       page = test.page;
     }
+    const getBlogId = (url: string) => {
+      // 마지막 '/' 이후의 숫자만 추출
+      const match = url.match(/\/(\d+)$/);
+      return match ? match[1] : "";
+    };
 
     try {
       await wait(1000);
-      const link = page.locator(`[href="${targetBlog}"]`).first();
+      const blogId = getBlogId(targetBlog);
+      const link = page.locator(`[href$="${blogId}"]`).first();
       await link.waitFor({ state: "visible", timeout: 10 * 1000 });
       await Promise.all([link.click(), page.waitForLoadState("load")]);
     } catch (e) {
