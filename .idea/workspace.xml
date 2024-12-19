@@ -246,23 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="42285000" />
-    </task>
-    <task id="LOCAL-00216" summary="v2.1.0 yarn build">
-      <option name="closed" value="true" />
-      <created>1734323683689</created>
-      <option name="number" value="00216" />
-      <option name="presentableId" value="LOCAL-00216" />
-      <option name="project" value="LOCAL" />
-      <updated>1734323683690</updated>
-    </task>
-    <task id="LOCAL-00217" summary="v2.1.1 브라우저 종료 보강">
-      <option name="closed" value="true" />
-      <created>1734329571301</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1734329571301</updated>
+      <workItem from="1734434604970" duration="43327000" />
     </task>
     <task id="LOCAL-00218" summary="v2.1.2 오류시 창 닫기 강화">
       <option name="closed" value="true" />
@@ -640,7 +624,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734590396811</updated>
     </task>
-    <option name="localTasksCounter" value="265" />
+    <task id="LOCAL-00265" summary="NSV-11 / makeAPurchase &gt; promise all">
+      <option name="closed" value="true" />
+      <created>1734590860905</created>
+      <option name="number" value="00265" />
+      <option name="presentableId" value="LOCAL-00265" />
+      <option name="project" value="LOCAL" />
+      <updated>1734590860905</updated>
+    </task>
+    <task id="LOCAL-00266" summary="NSV-11 / v2.8.8">
+      <option name="closed" value="true" />
+      <created>1734591624249</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1734591624249</updated>
+    </task>
+    <option name="localTasksCounter" value="267" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,8 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-15 / v2.6.0 퍼페티어 코어 설치" />
-    <MESSAGE value="에러시 다른작업 대기하기" />
     <MESSAGE value="NSV-11 / 에러시 프론트전달" />
     <MESSAGE value="NSV-11 / 에러 연동완료" />
     <MESSAGE value="NSV-11 / v2.7.0" />
@@ -710,6 +708,8 @@
     <MESSAGE value="NSV-11 / v2.8.7" />
     <MESSAGE value="NSV-11 / searchNVMID &gt; load 추가 안정화" />
     <MESSAGE value="NSV-11 / nextNumberClick &gt; promise all" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / nextNumberClick &gt; promise all" />
+    <MESSAGE value="NSV-11 / makeAPurchase &gt; promise all" />
+    <MESSAGE value="NSV-11 / v2.8.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / v2.8.8" />
   </component>
 </project>

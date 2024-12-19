@@ -27,7 +27,7 @@ export const goToKeyword = async ({
         "button._searchInput_button_search_pA3ap",
       );
       await Promise.all([
-        page.waitForLoadState("load"),
+        page.waitForLoadState("domcontentloaded"),
         searchExecuteButton.click(),
       ]);
       return { page };
