@@ -246,23 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="38721000" />
-    </task>
-    <task id="LOCAL-00208" summary="v1.18.0 쿠팡앱 앱피아 연동 - 쿠키가져오기 실패">
-      <option name="closed" value="true" />
-      <created>1734054256784</created>
-      <option name="number" value="00208" />
-      <option name="presentableId" value="LOCAL-00208" />
-      <option name="project" value="LOCAL" />
-      <updated>1734054256784</updated>
-    </task>
-    <task id="LOCAL-00209" summary="v1.18.1 userAgent 원복 + 피씨 페이지 추가">
-      <option name="closed" value="true" />
-      <created>1734056473843</created>
-      <option name="number" value="00209" />
-      <option name="presentableId" value="LOCAL-00209" />
-      <option name="project" value="LOCAL" />
-      <updated>1734056473843</updated>
+      <workItem from="1734434604970" duration="39684000" />
     </task>
     <task id="LOCAL-00210" summary="v1.19.0 쿠팡 쿠키값 오류해결 + 네이버 지문셋팅">
       <option name="closed" value="true" />
@@ -640,7 +624,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734585535485</updated>
     </task>
-    <option name="localTasksCounter" value="257" />
+    <task id="LOCAL-00257" summary="NSV-11 / goToKeyword &gt; 에러로 인한 찾기 강화">
+      <option name="closed" value="true" />
+      <created>1734586338949</created>
+      <option name="number" value="00257" />
+      <option name="presentableId" value="LOCAL-00257" />
+      <option name="project" value="LOCAL" />
+      <updated>1734586338949</updated>
+    </task>
+    <task id="LOCAL-00258" summary="NSV-11 / v2.8.5">
+      <option name="closed" value="true" />
+      <created>1734586352320</created>
+      <option name="number" value="00258" />
+      <option name="presentableId" value="LOCAL-00258" />
+      <option name="project" value="LOCAL" />
+      <updated>1734586352320</updated>
+    </task>
+    <option name="localTasksCounter" value="259" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,8 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v2.3.1 initialize에 재시도작업에 한계치일때 throw Error 던지기" />
-    <MESSAGE value="NSVIT-14 / v2.4.0 전연 브라우저 리스트 관리 만들기 완료" />
     <MESSAGE value="NSVIT-14 / v2.4.2 전연 브라우저 리스트 관리 만들기 완료" />
     <MESSAGE value="NSV-10 / v2.4.4 접힌 플레이스 클릭가능" />
     <MESSAGE value="v2.4.5 userAgent 모바일 추가" />
@@ -710,6 +708,8 @@
     <MESSAGE value="NSV-11 / v2.8.3" />
     <MESSAGE value="NSV-11 / goToKeyword.ts / 오류 대응" />
     <MESSAGE value="NSV-11 / v2.8.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / v2.8.4" />
+    <MESSAGE value="NSV-11 / goToKeyword &gt; 에러로 인한 찾기 강화" />
+    <MESSAGE value="NSV-11 / v2.8.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / v2.8.5" />
   </component>
 </project>
