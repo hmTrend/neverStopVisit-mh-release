@@ -246,15 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="51566000" />
-    </task>
-    <task id="LOCAL-00225" summary="v2.3.1 initialize에 재시도작업에 한계치일때 throw Error 던지기">
-      <option name="closed" value="true" />
-      <created>1734474989479</created>
-      <option name="number" value="00225" />
-      <option name="presentableId" value="LOCAL-00225" />
-      <option name="project" value="LOCAL" />
-      <updated>1734474989479</updated>
+      <workItem from="1734434604970" duration="51947000" />
     </task>
     <task id="LOCAL-00226" summary="NSVIT-14 / v2.4.0 전연 브라우저 리스트 관리 만들기 완료">
       <option name="closed" value="true" />
@@ -640,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734604341002</updated>
     </task>
-    <option name="localTasksCounter" value="274" />
+    <task id="LOCAL-00274" summary="NSV-11 / findTargetBlog / id로 블로그 찾아 클릭하기">
+      <option name="closed" value="true" />
+      <created>1734604754091</created>
+      <option name="number" value="00274" />
+      <option name="presentableId" value="LOCAL-00274" />
+      <option name="project" value="LOCAL" />
+      <updated>1734604754091</updated>
+    </task>
+    <option name="localTasksCounter" value="275" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / networkIdle &gt; load" />
     <MESSAGE value="NSV-11 / v2.8.0" />
     <MESSAGE value="NSV-11 / 로그아웃 버튼과 로그인 버튼 보는것으로 변경" />
     <MESSAGE value="NSV-11 / 2.8.1" />
@@ -710,6 +709,7 @@
     <MESSAGE value="NSV-11 / 쇼핑 더보기 클릭 로직 변경" />
     <MESSAGE value="NSV-11 / v2.8.10" />
     <MESSAGE value="NSV-11 / googleToNaver / 에러강화" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / googleToNaver / 에러강화" />
+    <MESSAGE value="NSV-11 / findTargetBlog / id로 블로그 찾아 클릭하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / findTargetBlog / id로 블로그 찾아 클릭하기" />
   </component>
 </project>
