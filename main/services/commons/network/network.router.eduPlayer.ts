@@ -26,7 +26,7 @@ async function playwrightEngineStart() {
     const page = await context.newPage();
 
     await page.goto("http://192.168.8.1/index.html#band", {
-      waitUntil: "domcontentloaded",
+      waitUntil: "load",
       timeout: 120 * 1000,
     });
     return { page, browser };

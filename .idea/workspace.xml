@@ -246,23 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="38031000" />
-    </task>
-    <task id="LOCAL-00206" summary="v1.17.4 안드로이드 쿠팡 접속 코드 테스트 시작">
-      <option name="closed" value="true" />
-      <created>1733983414369</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
-      <option name="project" value="LOCAL" />
-      <updated>1733983414369</updated>
-    </task>
-    <task id="LOCAL-00207" summary="v1.18.0 쿠팡앱 앱피아 연동">
-      <option name="closed" value="true" />
-      <created>1733991934338</created>
-      <option name="number" value="00207" />
-      <option name="presentableId" value="LOCAL-00207" />
-      <option name="project" value="LOCAL" />
-      <updated>1733991934338</updated>
+      <workItem from="1734434604970" duration="38721000" />
     </task>
     <task id="LOCAL-00208" summary="v1.18.0 쿠팡앱 앱피아 연동 - 쿠키가져오기 실패">
       <option name="closed" value="true" />
@@ -640,7 +624,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734584653511</updated>
     </task>
-    <option name="localTasksCounter" value="255" />
+    <task id="LOCAL-00255" summary="NSV-11 / goToKeyword.ts / 오류 대응">
+      <option name="closed" value="true" />
+      <created>1734585515766</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1734585515766</updated>
+    </task>
+    <task id="LOCAL-00256" summary="NSV-11 / v2.8.4">
+      <option name="closed" value="true" />
+      <created>1734585535485</created>
+      <option name="number" value="00256" />
+      <option name="presentableId" value="LOCAL-00256" />
+      <option name="project" value="LOCAL" />
+      <updated>1734585535485</updated>
+    </task>
+    <option name="localTasksCounter" value="257" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,8 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="yarn build" />
-    <MESSAGE value="v2.2.1 initialize에 재시도작업에 한계치일때 throw Error 던지기" />
     <MESSAGE value="v2.3.1 initialize에 재시도작업에 한계치일때 throw Error 던지기" />
     <MESSAGE value="NSVIT-14 / v2.4.0 전연 브라우저 리스트 관리 만들기 완료" />
     <MESSAGE value="NSVIT-14 / v2.4.2 전연 브라우저 리스트 관리 만들기 완료" />
@@ -710,6 +708,8 @@
     <MESSAGE value="NSV-11 / goToShopping 이슈 처리" />
     <MESSAGE value="NSV-11 / 쇼핑 / 스토어 / 상품명 클릭못함 / 하루동안 열지않기 팝업창 뜨면서 오류 / 1초후 한번더 클릭" />
     <MESSAGE value="NSV-11 / v2.8.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / v2.8.3" />
+    <MESSAGE value="NSV-11 / goToKeyword.ts / 오류 대응" />
+    <MESSAGE value="NSV-11 / v2.8.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / v2.8.4" />
   </component>
 </project>

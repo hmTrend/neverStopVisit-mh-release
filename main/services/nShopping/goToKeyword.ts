@@ -12,14 +12,46 @@ export const goToKeyword = async ({
     // 팝업창 대응
     await clickSwipeCoachMark({ page });
 
-    // 검색 버튼 클릭 - 두번 클릭하는 부분은 의도된 것 같아 유지
-    const searchButton = page.getByRole("button", {
-      name: "상품, 브랜드 입력",
-    });
-    await searchButton.waitFor({ state: "visible" });
-    await searchButton.click();
-    await wait(1000);
-    await searchButton.click();
+    const element = await Promise.race([
+      // 1. role과 name으로 찾기
+      page
+        .getByRole("button", { name: "상품, 브랜드 입력" })
+        .waitFor({ state: "visible", timeout: 5000 })
+        .then(async () =>
+          page.getByRole("button", { name: "상품, 브랜드 입력" }),
+        ),
+
+      // 2. 클래스명으로 찾기
+      page
+        .locator("button._shoppingHomeSearch_button_gXyNO")
+        .waitFor({ state: "visible", timeout: 5000 })
+        .then(async () =>
+          page.locator("button._shoppingHomeSearch_button_gXyNO"),
+        ),
+
+      // 3. SVG를 포함한 버튼 찾기
+      page
+        .locator('button:has(svg[class*="shoppingHomeSearch_icon"])')
+        .waitFor({ state: "visible", timeout: 5000 })
+        .then(async () =>
+          page.locator('button:has(svg[class*="shoppingHomeSearch_icon"])'),
+        ),
+
+      // 4. 텍스트 내용으로 찾기
+      page
+        .locator('button:has-text("상품, 브랜드 입력")')
+        .waitFor({ state: "visible", timeout: 5000 })
+        .then(async () => page.locator('button:has-text("상품, 브랜드 입력")')),
+
+      // 5. data attribute로 찾기
+      page
+        .locator('button[N="a:gnb.allsearch"]')
+        .waitFor({ state: "visible", timeout: 5000 })
+        .then(async () => page.locator('button[N="a:gnb.allsearch"]')),
+    ]);
+
+    await element.click();
+    await wait(1500);
 
     // 검색어 입력
     const searchInput = page.locator("#input_text");
