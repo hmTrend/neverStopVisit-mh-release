@@ -95,7 +95,7 @@ export const findTargetPlaceInTargetBlog = async ({
     }
   } catch (e) {
     console.error(e.message);
-    throw Error("ERR > targetKeywordSearch");
+    throw Error(`findTargetPlaceInTargetBlog > ${e.message}`);
   }
 
   return { page };
