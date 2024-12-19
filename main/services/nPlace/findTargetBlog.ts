@@ -25,15 +25,21 @@ export const findTargetBlog = async ({
       const match = url.match(/\/(\d+)$/);
       return match ? match[1] : "";
     };
-
-    try {
-      await wait(1000);
-      const blogId = getBlogId(targetBlog);
-      const link = page.locator(`[href$="${blogId}"]`).first();
-      await link.waitFor({ state: "visible", timeout: 10 * 1000 });
-      await Promise.all([link.click(), page.waitForLoadState("load")]);
-    } catch (e) {
-      throw new Error(`${e.message}`);
+    for (let i = 0; i < 3; i++) {
+      try {
+        await wait(1000);
+        const blogId = getBlogId(targetBlog);
+        const link = page.locator(`[href$="${blogId}"]`).first();
+        await link.waitFor({ state: "visible", timeout: 5 * 1000 });
+        await link.scrollIntoViewIfNeeded();
+        await wait(1000);
+        await Promise.all([link.click(), page.waitForLoadState("load")]);
+        break;
+      } catch (e) {
+        if (i === 2) {
+          throw new Error(`${e.message}`);
+        }
+      }
     }
   } catch (e) {
     console.error(e);

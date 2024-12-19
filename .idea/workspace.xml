@@ -246,15 +246,7 @@
       <workItem from="1734057163779" duration="9248000" />
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
-      <workItem from="1734434604970" duration="53177000" />
-    </task>
-    <task id="LOCAL-00227" summary="NSVIT-14 / v2.4.2 전연 브라우저 리스트 관리 만들기 완료">
-      <option name="closed" value="true" />
-      <created>1734501885736</created>
-      <option name="number" value="00227" />
-      <option name="presentableId" value="LOCAL-00227" />
-      <option name="project" value="LOCAL" />
-      <updated>1734501885736</updated>
+      <workItem from="1734434604970" duration="53550000" />
     </task>
     <task id="LOCAL-00228" summary="NSV-10 / v2.4.4 접힌 플레이스 클릭가능">
       <option name="closed" value="true" />
@@ -640,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734604790459</updated>
     </task>
-    <option name="localTasksCounter" value="276" />
+    <task id="LOCAL-00276" summary="NSV-11 / clickNearbyAttractions &gt; 명소 에러시 메시지 추가">
+      <option name="closed" value="true" />
+      <created>1734606110312</created>
+      <option name="number" value="00276" />
+      <option name="presentableId" value="LOCAL-00276" />
+      <option name="project" value="LOCAL" />
+      <updated>1734606110312</updated>
+    </task>
+    <option name="localTasksCounter" value="277" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / 로그아웃 버튼과 로그인 버튼 보는것으로 변경" />
     <MESSAGE value="NSV-11 / 2.8.1" />
     <MESSAGE value="NSV-11 / 2.8.2" />
     <MESSAGE value="NSV-11 / goToShopping 이슈 처리" />
@@ -710,6 +709,7 @@
     <MESSAGE value="NSV-11 / googleToNaver / 에러강화" />
     <MESSAGE value="NSV-11 / findTargetBlog / id로 블로그 찾아 클릭하기" />
     <MESSAGE value="NSV-11 / v2.8.11" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / v2.8.11" />
+    <MESSAGE value="NSV-11 / clickNearbyAttractions &gt; 명소 에러시 메시지 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / clickNearbyAttractions &gt; 명소 에러시 메시지 추가" />
   </component>
 </project>
