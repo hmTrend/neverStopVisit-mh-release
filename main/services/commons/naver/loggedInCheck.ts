@@ -10,10 +10,20 @@ export const loggedInCheck = async ({
   _id: string;
 }) => {
   try {
-    await naverMainPageCompletedLoadingCheck({ page });
-    const logoutExists =
-      (await page.locator("[data-fclk='fotcontlogout']").count()) > 0;
-
+    const logoutExists = await Promise.race([
+      // 로그아웃 버튼 찾기
+      page
+        .locator('a[data-fclk="fot.logout"]')
+        .waitFor({ state: "visible", timeout: 30 * 1000 })
+        .then(() => true)
+        .catch(() => false),
+      // 로그인 버튼 찾기
+      page
+        .locator('a[data-fclk="fot.login"]')
+        .waitFor({ state: "visible", timeout: 30 * 1000 })
+        .then(() => false)
+        .catch(() => false),
+    ]);
     if (!logoutExists) {
       await cookieNstateSave({ page, _id, nState: "미로그인" });
       throw Error("this is not loggedIn");
@@ -22,7 +32,7 @@ export const loggedInCheck = async ({
     return { page };
   } catch (e) {
     console.error(e.message);
-    throw Error("loggedInCheck");
+    throw Error(`loggedInCheck > ${e.message}`);
   }
 };
 
