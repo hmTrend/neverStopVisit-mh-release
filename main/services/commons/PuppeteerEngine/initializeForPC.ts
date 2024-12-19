@@ -59,7 +59,7 @@ export const initializeForPC = async ({
         }
       }
       page = await getContext.newPage();
-      await page.goto(url, { waitUntil: "networkidle" });
+      await page.goto(url, { waitUntil: "load" });
       await wait(1500);
       break;
     } catch (e) {

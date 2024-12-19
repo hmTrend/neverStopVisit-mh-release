@@ -15,7 +15,7 @@ export const goToKeyword = async ({
     await page
       .locator("button._searchInput_button_search_pA3ap")
       .click({ delay: 1000 });
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState("load");
     return { page };
   } catch (e) {
     console.error(e.message);

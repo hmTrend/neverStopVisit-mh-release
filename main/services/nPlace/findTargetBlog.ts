@@ -25,7 +25,7 @@ export const findTargetBlog = async ({
       await wait(1000);
       const link = page.locator(`[href="${targetBlog}"]`).first();
       await link.waitFor({ state: "visible", timeout: 5000 });
-      await Promise.all([link.click(), page.waitForLoadState("networkidle")]);
+      await Promise.all([link.click(), page.waitForLoadState("load")]);
     } catch (error) {
       throw new Error(
         `findTargetBlog > "${targetBlog}" 링크를 찾을 수 없습니다.`,
