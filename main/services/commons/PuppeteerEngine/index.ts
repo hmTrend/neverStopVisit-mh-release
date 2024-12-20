@@ -42,7 +42,7 @@ export class PuppeteerEngine {
     }
   }
 
-  async initializeForPC({ url, cookie, type = "" }) {
+  async initializeForPC({ url, cookie, type = "", fingerPrintNetworkType }) {
     try {
       const { page, browser } = await initializeForPC({
         url,
@@ -52,6 +52,7 @@ export class PuppeteerEngine {
         browser: this.browser,
         cookie,
         type,
+        fingerPrintNetworkType,
       });
       console.log("aaa");
       this.page = page;

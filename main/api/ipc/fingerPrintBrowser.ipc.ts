@@ -30,6 +30,7 @@ export const fingerPrintBrowserIpc = async () => {
         url: type === "coupang" ? "https://coupang.com/" : "https://naver.com",
         cookie: parsedCookie ?? "",
         type,
+        fingerPrintNetworkType,
       });
 
       newEngine.page.on("dialog", async (dialog) => {

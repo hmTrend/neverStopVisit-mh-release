@@ -14,6 +14,7 @@ export const initializeForPC = async ({
   cookie,
   browser,
   type = "",
+  fingerPrintNetworkType,
 }: {
   url: string;
   page: Page;
@@ -22,6 +23,7 @@ export const initializeForPC = async ({
   cookie;
   browser: Browser;
   type?: string;
+  fingerPrintNetworkType: string;
 }) => {
   // const proxySettings = getNextProxyDynamicProxy();
   const proxySettings = getNextProxyYoodooProxy();
@@ -38,7 +40,7 @@ export const initializeForPC = async ({
       };
 
       // type이 coupang일 경우에만 proxy 설정 추가
-      if (type === "coupang") {
+      if (fingerPrintNetworkType === "YOODOOPROXY") {
         browserOptions.proxy = { server: proxySettings };
       }
 
