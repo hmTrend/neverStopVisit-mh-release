@@ -246,31 +246,7 @@
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
-      <workItem from="1734658664182" duration="7053000" />
-    </task>
-    <task id="LOCAL-00240" summary="NSV-11 / 에러 연동완료">
-      <option name="closed" value="true" />
-      <created>1734573845325</created>
-      <option name="number" value="00240" />
-      <option name="presentableId" value="LOCAL-00240" />
-      <option name="project" value="LOCAL" />
-      <updated>1734573845325</updated>
-    </task>
-    <task id="LOCAL-00241" summary="NSV-11 / 에러 연동완료">
-      <option name="closed" value="true" />
-      <created>1734573889591</created>
-      <option name="number" value="00241" />
-      <option name="presentableId" value="LOCAL-00241" />
-      <option name="project" value="LOCAL" />
-      <updated>1734573889591</updated>
-    </task>
-    <task id="LOCAL-00242" summary="NSV-11 / v2.7.0">
-      <option name="closed" value="true" />
-      <created>1734574124930</created>
-      <option name="number" value="00242" />
-      <option name="presentableId" value="LOCAL-00242" />
-      <option name="project" value="LOCAL" />
-      <updated>1734574124930</updated>
+      <workItem from="1734658664182" duration="7767000" />
     </task>
     <task id="LOCAL-00243" summary="NSV-11 / 에러처리시 타겟키워드 추가">
       <option name="closed" value="true" />
@@ -640,7 +616,31 @@
       <option name="project" value="LOCAL" />
       <updated>1734678817630</updated>
     </task>
-    <option name="localTasksCounter" value="289" />
+    <task id="LOCAL-00289" summary="NSV-12 / 하루 동안 보지 않기 - 하단 레이어창">
+      <option name="closed" value="true" />
+      <created>1734678991609</created>
+      <option name="number" value="00289" />
+      <option name="presentableId" value="LOCAL-00289" />
+      <option name="project" value="LOCAL" />
+      <updated>1734678991609</updated>
+    </task>
+    <task id="LOCAL-00290" summary="NSV-12 / 20~30초 랜덤 초수 추가">
+      <option name="closed" value="true" />
+      <created>1734679180110</created>
+      <option name="number" value="00290" />
+      <option name="presentableId" value="LOCAL-00290" />
+      <option name="project" value="LOCAL" />
+      <updated>1734679180110</updated>
+    </task>
+    <task id="LOCAL-00291" summary="NSV-12 / 20~30초 랜덤 초수 추가">
+      <option name="closed" value="true" />
+      <created>1734679223757</created>
+      <option name="number" value="00291" />
+      <option name="presentableId" value="LOCAL-00291" />
+      <option name="project" value="LOCAL" />
+      <updated>1734679223757</updated>
+    </task>
+    <option name="localTasksCounter" value="292" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,8 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / goToKeyword &gt; 에러 정리 / 로직강화" />
-    <MESSAGE value="NSV-11 / v2.8.6" />
     <MESSAGE value="NSV-11 / await 상품명 입력후 1.5초 대기" />
     <MESSAGE value="NSV-11 / v2.8.7" />
     <MESSAGE value="NSV-11 / searchNVMID &gt; load 추가 안정화" />
@@ -710,6 +708,8 @@
     <MESSAGE value="NSV-12 / 로컬 / 너두프록시 완료" />
     <MESSAGE value="NSV-12 / v2.9.0" />
     <MESSAGE value="NSV-12 / expandProductDetails / 상세상품보기 클릭하기 없을시 5초 대기하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-12 / expandProductDetails / 상세상품보기 클릭하기 없을시 5초 대기하기" />
+    <MESSAGE value="NSV-12 / 하루 동안 보지 않기 - 하단 레이어창" />
+    <MESSAGE value="NSV-12 / 20~30초 랜덤 초수 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-12 / 20~30초 랜덤 초수 추가" />
   </component>
 </project>

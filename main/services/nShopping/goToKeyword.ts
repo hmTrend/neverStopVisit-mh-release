@@ -11,7 +11,9 @@ export const goToKeyword = async ({
   for (let i = 0; i < 3; i++) {
     try {
       // 팝업창 대응
+      await wait(1000);
       await clickSwipeCoachMark({ page });
+      await wait(1000);
       await avoidViewingForADayLayer({ page });
       await page.getByRole("button", { name: "상품, 브랜드 입력" }).click();
       await wait(1500);
