@@ -246,15 +246,7 @@
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
-      <workItem from="1734658664182" duration="13254000" />
-    </task>
-    <task id="LOCAL-00252" summary="NSV-11 / goToShopping 이슈 처리">
-      <option name="closed" value="true" />
-      <created>1734584456557</created>
-      <option name="number" value="00252" />
-      <option name="presentableId" value="LOCAL-00252" />
-      <option name="project" value="LOCAL" />
-      <updated>1734584456557</updated>
+      <workItem from="1734658664182" duration="14018000" />
     </task>
     <task id="LOCAL-00253" summary="NSV-11 / 쇼핑 / 스토어 / 상품명 클릭못함 / 하루동안 열지않기 팝업창 뜨면서 오류 / 1초후 한번더 클릭">
       <option name="closed" value="true" />
@@ -640,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734685355050</updated>
     </task>
-    <option name="localTasksCounter" value="301" />
+    <task id="LOCAL-00301" summary="NSV-14 / v2.10.2">
+      <option name="closed" value="true" />
+      <created>1734685437686</created>
+      <option name="number" value="00301" />
+      <option name="presentableId" value="LOCAL-00301" />
+      <option name="project" value="LOCAL" />
+      <updated>1734685437686</updated>
+    </task>
+    <option name="localTasksCounter" value="302" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / 2.8.9" />
     <MESSAGE value="NSV-11 / 쇼핑 더보기 클릭 로직 변경" />
     <MESSAGE value="NSV-11 / v2.8.10" />
     <MESSAGE value="NSV-11 / googleToNaver / 에러강화" />
@@ -710,6 +709,7 @@
     <MESSAGE value="NSV-14 / 블로그에서 플레이스창 느리게 열릴시 대응" />
     <MESSAGE value="NSV-14 / v2.10.0" />
     <MESSAGE value="NSV-14 / v2.10.1 LTE" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 / v2.10.1 LTE" />
+    <MESSAGE value="NSV-14 / v2.10.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 / v2.10.2" />
   </component>
 </project>

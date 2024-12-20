@@ -66,6 +66,15 @@ export const findTargetPlaceInTargetBlog = async ({
       const result = await Promise.race([seMapPromise, locationDivPromise]);
 
       if (result) {
+        if (result.type === "se-map") {
+          await page.waitForSelector(
+            "button.se-placesMap-additional-button.se-placesMap-button-bookmark",
+            {
+              state: "visible",
+              timeout: 30 * 1000,
+            },
+          );
+        }
         // 유효성 검사
         const isValid = await result.validate();
         if (!isValid) {
@@ -76,13 +85,6 @@ export const findTargetPlaceInTargetBlog = async ({
 
         // 새 페이지 열림 대기를 위한 Promise 미리 생성
         const pagePromise = page.context().waitForEvent("page");
-        await page.waitForSelector(
-          "button.se-placesMap-additional-button.se-placesMap-button-bookmark",
-          {
-            state: "visible",
-            timeout: 30 * 1000,
-          },
-        );
         // 스크롤 및 클릭 수행
         await result.element.scrollIntoViewIfNeeded();
         await page.waitForTimeout(1500); // 스크롤 후 안정화 대기
