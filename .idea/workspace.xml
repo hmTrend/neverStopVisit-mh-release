@@ -246,23 +246,7 @@
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
-      <workItem from="1734658664182" duration="3971000" />
-    </task>
-    <task id="LOCAL-00236" summary="NSVIT-15 / v2.6.0 퍼페티어 코어 설치">
-      <option name="closed" value="true" />
-      <created>1734515544225</created>
-      <option name="number" value="00236" />
-      <option name="presentableId" value="LOCAL-00236" />
-      <option name="project" value="LOCAL" />
-      <updated>1734515544225</updated>
-    </task>
-    <task id="LOCAL-00237" summary="NSVIT-15 / v2.6.0 퍼페티어 코어 설치">
-      <option name="closed" value="true" />
-      <created>1734515555823</created>
-      <option name="number" value="00237" />
-      <option name="presentableId" value="LOCAL-00237" />
-      <option name="project" value="LOCAL" />
-      <updated>1734515555823</updated>
+      <workItem from="1734658664182" duration="6683000" />
     </task>
     <task id="LOCAL-00238" summary="에러시 다른작업 대기하기">
       <option name="closed" value="true" />
@@ -640,7 +624,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734662275349</updated>
     </task>
-    <option name="localTasksCounter" value="285" />
+    <task id="LOCAL-00285" summary="NSV-12 / 로컬 / 너두프록시 완료">
+      <option name="closed" value="true" />
+      <created>1734662677296</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
+      <option name="project" value="LOCAL" />
+      <updated>1734662677296</updated>
+    </task>
+    <task id="LOCAL-00286" summary="NSV-12 / v2.9.0">
+      <option name="closed" value="true" />
+      <created>1734662705124</created>
+      <option name="number" value="00286" />
+      <option name="presentableId" value="LOCAL-00286" />
+      <option name="project" value="LOCAL" />
+      <updated>1734662705124</updated>
+    </task>
+    <option name="localTasksCounter" value="287" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,8 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / v2.8.4" />
-    <MESSAGE value="NSV-11 / goToKeyword &gt; 에러로 인한 찾기 강화" />
     <MESSAGE value="NSV-11 / v2.8.5" />
     <MESSAGE value="NSV-11 / goToKeyword &gt; 에러 정리 / 로직강화" />
     <MESSAGE value="NSV-11 / v2.8.6" />
@@ -710,6 +708,8 @@
     <MESSAGE value="NSV-11 / 쿠팡 url 에러로 인한 기존 너두프록시 다시 추가" />
     <MESSAGE value="NSV-12 / 로컬 / 너두프록시 UI" />
     <MESSAGE value="NSV-12 / 네트워크타입 백으로 보내기 성공" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-12 / 네트워크타입 백으로 보내기 성공" />
+    <MESSAGE value="NSV-12 / 로컬 / 너두프록시 완료" />
+    <MESSAGE value="NSV-12 / v2.9.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-12 / v2.9.0" />
   </component>
 </project>
