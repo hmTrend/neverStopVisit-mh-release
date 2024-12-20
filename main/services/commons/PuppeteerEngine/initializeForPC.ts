@@ -5,7 +5,7 @@ import { getChromePath } from "./getChromePath";
 import wait from "waait";
 import { LaunchOptions } from "playwright-core";
 import { getNextCreateUserAgentWithPC } from "../../../lib/network/userAgentWithPC";
-import { getNextProxyDynamicProxy } from "../../../lib/proxy/getNextProxyDynamicProxy";
+import { getNextProxyYoodooProxy } from "../../../lib/proxy/getNextProxyYoodooProxy";
 
 export const initializeForPC = async ({
   url,
@@ -23,7 +23,8 @@ export const initializeForPC = async ({
   browser: Browser;
   type?: string;
 }) => {
-  const proxySettings = getNextProxyDynamicProxy();
+  // const proxySettings = getNextProxyDynamicProxy();
+  const proxySettings = getNextProxyYoodooProxy();
   for (let i = 0; i < 2; i++) {
     try {
       const browserOptions: LaunchOptions = {
