@@ -12,7 +12,7 @@ export const goToKeyword = async ({
     try {
       // 팝업창 대응
       await clickSwipeCoachMark({ page });
-
+      await avoidViewingForADayLayer({ page });
       await page.getByRole("button", { name: "상품, 브랜드 입력" }).click();
       await wait(1500);
 
@@ -51,4 +51,27 @@ async function clickSwipeCoachMark({ page }) {
       (element as HTMLElement).click();
     }
   });
+}
+
+// 하루 동안 보지 않기 - 하단 레이어창
+async function avoidViewingForADayLayer({ page }) {
+  try {
+    // 텍스트가 정확히 일치하는 버튼 찾기
+    const button = await page.locator('button:has-text("하루 동안 보지 않기")');
+
+    // 버튼이 존재하는지 확인
+    const isVisible = await button.isVisible();
+
+    if (isVisible) {
+      // 버튼이 존재하면 클릭
+      await button.click();
+      return true;
+    } else {
+      // 버튼이 없으면 false 반환
+      return false;
+    }
+  } catch (error) {
+    console.error("Error processing a button :", error);
+    return false;
+  }
 }
