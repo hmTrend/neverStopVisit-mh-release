@@ -65,55 +65,55 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TypeScript.clickNearbyAttractions.tsx.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.findTargetBlog.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.findTargetPlaceInTargetBlog.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.index.ts (1).executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.index.ts (2).executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.index.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.initializeAndroid.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.initializeFireFox.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.mobile.userAgent.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.network.router.edu.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.network.router.eduPlayer.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.targetKeywordSearch.ts.executor&quot;: &quot;Run&quot;,
-    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/commons/network&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TypeScript.clickNearbyAttractions.tsx.executor": "Run",
+    "TypeScript.findTargetBlog.ts.executor": "Run",
+    "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
+    "TypeScript.index.ts (1).executor": "Run",
+    "TypeScript.index.ts (2).executor": "Run",
+    "TypeScript.index.ts.executor": "Run",
+    "TypeScript.initialize.ts.executor": "Run",
+    "TypeScript.initializeAndroid.ts.executor": "Run",
+    "TypeScript.initializeFireFox.ts.executor": "Run",
+    "TypeScript.mobile.userAgent.ts.executor": "Run",
+    "TypeScript.network.router.edu.ts.executor": "Run",
+    "TypeScript.network.router.eduPlayer.ts.executor": "Run",
+    "TypeScript.targetKeywordSearch.ts.executor": "Run",
+    "eslint.code.style.apply.dismiss": "true",
+    "git-widget-placeholder": "develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/proxy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\lib\proxy" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\services\commons\network" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\lib\network" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\services\commons\PuppeteerEngine" />
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
-      <recent name="$PROJECT_DIR$/main/lib/apollo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/services/commons/naver" />
@@ -246,15 +246,7 @@
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
-      <workItem from="1734658664182" duration="765000" />
-    </task>
-    <task id="LOCAL-00232" summary="v2.4.6 naver들어간후 못클릭할시 재시도2회 추가">
-      <option name="closed" value="true" />
-      <created>1734507247882</created>
-      <option name="number" value="00232" />
-      <option name="presentableId" value="LOCAL-00232" />
-      <option name="project" value="LOCAL" />
-      <updated>1734507247882</updated>
+      <workItem from="1734658664182" duration="3199000" />
     </task>
     <task id="LOCAL-00233" summary="v2.5.0 라우터 IP 변경안됨 이슈">
       <option name="closed" value="true" />
@@ -640,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734606961029</updated>
     </task>
-    <option name="localTasksCounter" value="281" />
+    <task id="LOCAL-00281" summary="NSV-11 / 쿠팡 url 에러로 인한 기존 너두프록시 다시 추가">
+      <option name="closed" value="true" />
+      <created>1734660554675</created>
+      <option name="number" value="00281" />
+      <option name="presentableId" value="LOCAL-00281" />
+      <option name="project" value="LOCAL" />
+      <updated>1734660554676</updated>
+    </task>
+    <option name="localTasksCounter" value="282" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / 쇼핑 / 스토어 / 상품명 클릭못함 / 하루동안 열지않기 팝업창 뜨면서 오류 / 1초후 한번더 클릭" />
     <MESSAGE value="NSV-11 / v2.8.3" />
     <MESSAGE value="NSV-11 / goToKeyword.ts / 오류 대응" />
     <MESSAGE value="NSV-11 / v2.8.4" />
@@ -710,6 +709,7 @@
     <MESSAGE value="NSV-11 / findTargetBlog / 재작업 에러로직 강화" />
     <MESSAGE value="NSV-11 / findTargetPlaceInTargetBlog / 에러메시지 강화" />
     <MESSAGE value="NSV-11 / targetKeywordSearch / 에러메시지 강화" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / targetKeywordSearch / 에러메시지 강화" />
+    <MESSAGE value="NSV-11 / 쿠팡 url 에러로 인한 기존 너두프록시 다시 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / 쿠팡 url 에러로 인한 기존 너두프록시 다시 추가" />
   </component>
 </project>

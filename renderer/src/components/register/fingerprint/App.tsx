@@ -5,6 +5,7 @@ import { FingerprintCreateExcel } from "@/components/register/fingerprint/Finger
 import { FingerprintExcelList } from "@/components/register/fingerprint/FingerprintExcelList";
 import { Suspense } from "react";
 import { FingerprintExcelDownload } from "@/components/register/fingerprint/FingerprintExcelDownload";
+import { NetworkType } from "@/components/register/fingerprint/NetworkType";
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
       </Suspense>
       <FingerprintCreateExcel />
       <FingerprintExcelDownload />
+      <NetworkType />
       <FingerprintExcelList />
     </Flex>
   );

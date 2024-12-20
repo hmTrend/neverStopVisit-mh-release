@@ -7,6 +7,7 @@ class FingerPrintRegisterValtio {
   selectedExcelList: any[];
   getExcelList: any[];
   listTotalCount: number;
+  fingerPrintNetworkType: "LOCAL" | "YOODOOPROXY";
 
   constructor() {
     this.groupList = [];
@@ -15,6 +16,7 @@ class FingerPrintRegisterValtio {
     this.selectedExcelList = [];
     this.getExcelList = [];
     this.listTotalCount = 0;
+    this.fingerPrintNetworkType = "LOCAL";
   }
 }
 
