@@ -246,15 +246,7 @@
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
-      <workItem from="1734658664182" duration="11319000" />
-    </task>
-    <task id="LOCAL-00248" summary="NSV-11 / v2.8.0">
-      <option name="closed" value="true" />
-      <created>1734579653431</created>
-      <option name="number" value="00248" />
-      <option name="presentableId" value="LOCAL-00248" />
-      <option name="project" value="LOCAL" />
-      <updated>1734579653431</updated>
+      <workItem from="1734658664182" duration="12621000" />
     </task>
     <task id="LOCAL-00249" summary="NSV-11 / 로그아웃 버튼과 로그인 버튼 보는것으로 변경">
       <option name="closed" value="true" />
@@ -640,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734682392262</updated>
     </task>
-    <option name="localTasksCounter" value="297" />
+    <task id="LOCAL-00297" summary="NSV-14 / 네이버 메인페이지 접속시 느릴시에도 대응">
+      <option name="closed" value="true" />
+      <created>1734683424080</created>
+      <option name="number" value="00297" />
+      <option name="presentableId" value="LOCAL-00297" />
+      <option name="project" value="LOCAL" />
+      <updated>1734683424080</updated>
+    </task>
+    <option name="localTasksCounter" value="298" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / nextNumberClick &gt; promise all" />
     <MESSAGE value="NSV-11 / makeAPurchase &gt; promise all" />
     <MESSAGE value="NSV-11 / v2.8.8" />
     <MESSAGE value="NSV-11 / 홈&gt;스토어 / load 속도느려서 domcontentloaded / 변경됨" />
@@ -709,6 +708,7 @@
     <MESSAGE value="NSV-12 / 20~30초 랜덤 초수 추가" />
     <MESSAGE value="NSV-14 / 오늘하루열지않기 로직 강화" />
     <MESSAGE value="NSV-14 / userAgent &gt; sec-ch-ua-mobile&quot;: &quot;?0 &gt; ?1" />
+    <MESSAGE value="NSV-14 / 블로그에서 플레이스가 눈에 보이면 스크롤후 클릭하기" />
     <MESSAGE value="NSV-14 / 네이버 메인페이지 접속시 느릴시에도 대응" />
     <option name="LAST_COMMIT_MESSAGE" value="NSV-14 / 네이버 메인페이지 접속시 느릴시에도 대응" />
   </component>

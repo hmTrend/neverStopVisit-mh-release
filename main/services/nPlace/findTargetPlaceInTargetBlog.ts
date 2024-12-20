@@ -31,7 +31,7 @@ export const findTargetPlaceInTargetBlog = async ({
       const seMapPromise = page
         .waitForSelector("a.se-map-info", {
           state: "visible",
-          timeout: 60 * 1000,
+          timeout: 90 * 1000,
         })
         .then(async (element) => ({
           type: "se-map",
@@ -48,7 +48,7 @@ export const findTargetPlaceInTargetBlog = async ({
       const locationDivPromise = page
         .waitForSelector("div.location_component a", {
           state: "visible",
-          timeout: 60 * 1000,
+          timeout: 90 * 1000,
         })
         .then(async (element) => ({
           type: "location-component",
@@ -76,7 +76,13 @@ export const findTargetPlaceInTargetBlog = async ({
 
         // 새 페이지 열림 대기를 위한 Promise 미리 생성
         const pagePromise = page.context().waitForEvent("page");
-
+        await page.waitForSelector(
+          "button.se-placesMap-additional-button.se-placesMap-button-bookmark",
+          {
+            state: "visible",
+            timeout: 30 * 1000,
+          },
+        );
         // 스크롤 및 클릭 수행
         await result.element.scrollIntoViewIfNeeded();
         await page.waitForTimeout(1500); // 스크롤 후 안정화 대기
@@ -96,7 +102,7 @@ export const findTargetPlaceInTargetBlog = async ({
       }
     } catch (error) {
       throw new Error(
-        "findTargetPlaceInTargetBlog > placeId is not find" + error.message,
+        "findTargetPlaceInTargetBlog > placeId is not find > " + error.message,
       );
     }
   } catch (e) {
