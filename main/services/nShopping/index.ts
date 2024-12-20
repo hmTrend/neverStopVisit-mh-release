@@ -110,6 +110,8 @@ export class NShopping extends PuppeteerEngine {
         if (isFindNvMid) {
           const { page } = await expandProductDetails({ page: this.page });
           this.page = page;
+          const waitTime = getRandomTime(); // 20~30초
+          await wait(waitTime * 1000);
           {
             const { page } = await makeAPurchase({ page: this.page });
             this.page = page;
@@ -147,6 +149,16 @@ export class NShopping extends PuppeteerEngine {
       console.error("브라우저 종료 중 오류:", error);
     }
   }
+}
+
+function getRandomTime() {
+  // 20초(20000ms)에서 30초(30000ms) 사이의 랜덤 시간 생성
+  const randomMs = Math.floor(Math.random() * (30000 - 20000 + 1)) + 20000;
+
+  // 밀리초를 초로 변환
+  const randomSeconds = randomMs / 1000;
+
+  return randomSeconds;
 }
 
 // const instanceOne = new NShopping();
