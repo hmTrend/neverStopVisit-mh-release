@@ -55,7 +55,7 @@ export const initialize = async ({
         await client.send("Network.emulateNetworkConditions", {
           offline: false,
           latency: 100, // 지연시간 (ms)
-          downloadThroughput: (450 * 1024) / 8, // bytes/s
+          downloadThroughput: (550 * 1024) / 8, // bytes/s
           uploadThroughput: (250 * 1024) / 8, // bytes/s
         });
       }

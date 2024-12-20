@@ -246,31 +246,7 @@
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
-      <workItem from="1734658664182" duration="9210000" />
-    </task>
-    <task id="LOCAL-00245" summary="NSV-11 / googleToNaver 로직강화">
-      <option name="closed" value="true" />
-      <created>1734575571104</created>
-      <option name="number" value="00245" />
-      <option name="presentableId" value="LOCAL-00245" />
-      <option name="project" value="LOCAL" />
-      <updated>1734575571104</updated>
-    </task>
-    <task id="LOCAL-00246" summary="NSV-11 / googleToNaver 로직강화">
-      <option name="closed" value="true" />
-      <created>1734575580556</created>
-      <option name="number" value="00246" />
-      <option name="presentableId" value="LOCAL-00246" />
-      <option name="project" value="LOCAL" />
-      <updated>1734575580556</updated>
-    </task>
-    <task id="LOCAL-00247" summary="NSV-11 / networkIdle &gt; load">
-      <option name="closed" value="true" />
-      <created>1734579621198</created>
-      <option name="number" value="00247" />
-      <option name="presentableId" value="LOCAL-00247" />
-      <option name="project" value="LOCAL" />
-      <updated>1734579621198</updated>
+      <workItem from="1734658664182" duration="11319000" />
     </task>
     <task id="LOCAL-00248" summary="NSV-11 / v2.8.0">
       <option name="closed" value="true" />
@@ -640,7 +616,31 @@
       <option name="project" value="LOCAL" />
       <updated>1734679898402</updated>
     </task>
-    <option name="localTasksCounter" value="294" />
+    <task id="LOCAL-00294" summary="NSV-14 / userAgent &gt; sec-ch-ua-mobile&quot;: &quot;?0 &gt; ?1">
+      <option name="closed" value="true" />
+      <created>1734681626366</created>
+      <option name="number" value="00294" />
+      <option name="presentableId" value="LOCAL-00294" />
+      <option name="project" value="LOCAL" />
+      <updated>1734681626366</updated>
+    </task>
+    <task id="LOCAL-00295" summary="NSV-14 / userAgent &gt; sec-ch-ua-mobile&quot;: &quot;?0 &gt; ?1">
+      <option name="closed" value="true" />
+      <created>1734681630817</created>
+      <option name="number" value="00295" />
+      <option name="presentableId" value="LOCAL-00295" />
+      <option name="project" value="LOCAL" />
+      <updated>1734681630817</updated>
+    </task>
+    <task id="LOCAL-00296" summary="NSV-14 / 네이버 메인페이지 접속시 느릴시에도 대응">
+      <option name="closed" value="true" />
+      <created>1734682392261</created>
+      <option name="number" value="00296" />
+      <option name="presentableId" value="LOCAL-00296" />
+      <option name="project" value="LOCAL" />
+      <updated>1734682392262</updated>
+    </task>
+    <option name="localTasksCounter" value="297" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,8 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / v2.8.7" />
-    <MESSAGE value="NSV-11 / searchNVMID &gt; load 추가 안정화" />
     <MESSAGE value="NSV-11 / nextNumberClick &gt; promise all" />
     <MESSAGE value="NSV-11 / makeAPurchase &gt; promise all" />
     <MESSAGE value="NSV-11 / v2.8.8" />
@@ -710,6 +708,8 @@
     <MESSAGE value="NSV-12 / 하루 동안 보지 않기 - 하단 레이어창" />
     <MESSAGE value="NSV-12 / 20~30초 랜덤 초수 추가" />
     <MESSAGE value="NSV-14 / 오늘하루열지않기 로직 강화" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 / 오늘하루열지않기 로직 강화" />
+    <MESSAGE value="NSV-14 / userAgent &gt; sec-ch-ua-mobile&quot;: &quot;?0 &gt; ?1" />
+    <MESSAGE value="NSV-14 / 네이버 메인페이지 접속시 느릴시에도 대응" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 / 네이버 메인페이지 접속시 느릴시에도 대응" />
   </component>
 </project>

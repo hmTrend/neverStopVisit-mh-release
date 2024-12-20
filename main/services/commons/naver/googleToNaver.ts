@@ -7,13 +7,16 @@ export const googleToNaver = async ({ page }: { page: Page }) => {
 
     // Enter 키 입력 후 navigation 대기
     await Promise.all([
-      page.waitForNavigation({ waitUntil: "load" }), // networkidle 대신 load 사용
+      page.waitForNavigation({ waitUntil: "domcontentloaded" }), // networkidle 대신 load 사용
       page.keyboard.press("Enter"),
     ]);
 
     // 네이버 링크 클릭 후 navigation 대기
     await Promise.all([
-      page.waitForNavigation({ waitUntil: "load" }),
+      page.waitForNavigation({
+        waitUntil: "domcontentloaded",
+        timeout: 60 * 1000,
+      }),
       page.locator('a[href*="naver.com"]').first().click(),
     ]);
 

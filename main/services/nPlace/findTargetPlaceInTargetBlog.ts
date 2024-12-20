@@ -29,7 +29,10 @@ export const findTargetPlaceInTargetBlog = async ({
 
       // 두 요소에 대한 Promise 생성
       const seMapPromise = page
-        .waitForSelector("a.se-map-info")
+        .waitForSelector("a.se-map-info", {
+          state: "visible",
+          timeout: 60 * 1000,
+        })
         .then(async (element) => ({
           type: "se-map",
           element,
@@ -43,7 +46,10 @@ export const findTargetPlaceInTargetBlog = async ({
         .catch(() => null);
 
       const locationDivPromise = page
-        .waitForSelector("div.location_component a")
+        .waitForSelector("div.location_component a", {
+          state: "visible",
+          timeout: 60 * 1000,
+        })
         .then(async (element) => ({
           type: "location-component",
           element,
