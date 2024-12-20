@@ -13,6 +13,7 @@ export const initialize = async ({
   cookie,
   browser,
   type = "",
+  networkSpeed = "3G",
 }: {
   url: string;
   page: Page;
@@ -21,6 +22,7 @@ export const initialize = async ({
   cookie;
   browser: Browser;
   type?: string;
+  networkSpeed: "LTE" | "3G";
 }) => {
   for (let i = 0; i < 3; i++) {
     try {
@@ -46,6 +48,18 @@ export const initialize = async ({
         }
       }
       page = await getContext.newPage();
+
+      if (networkSpeed === "3G") {
+        const client = await context.newCDPSession(page);
+        await client.send("Network.enable");
+        await client.send("Network.emulateNetworkConditions", {
+          offline: false,
+          latency: 100, // 지연시간 (ms)
+          downloadThroughput: (450 * 1024) / 8, // bytes/s
+          uploadThroughput: (250 * 1024) / 8, // bytes/s
+        });
+      }
+
       await page.goto(url, { waitUntil: "load" });
       await wait(1500);
       break;
@@ -62,7 +76,6 @@ export const initialize = async ({
 
 async function createMobileContext({
   browser,
-  networkSpeed = "LTE",
 }: {
   browser: Browser;
   networkSpeed?: string;
@@ -79,15 +92,7 @@ async function createMobileContext({
     isMobile: true,
     hasTouch: true,
     deviceScaleFactor: 2.625,
-    ...(networkSpeed === "3gMode" && {
-      networkThrottling: {
-        downloadSpeed: (750 * 1024) / 8, // 750 kb/s
-        uploadSpeed: (250 * 1024) / 8, // 250 kb/s
-        latency: 100, // 100ms RTT
-      },
-    }),
   });
-
   return { context };
 }
 
