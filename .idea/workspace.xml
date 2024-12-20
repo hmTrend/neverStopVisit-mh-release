@@ -246,23 +246,7 @@
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
-      <workItem from="1734658664182" duration="3199000" />
-    </task>
-    <task id="LOCAL-00233" summary="v2.5.0 라우터 IP 변경안됨 이슈">
-      <option name="closed" value="true" />
-      <created>1734514087966</created>
-      <option name="number" value="00233" />
-      <option name="presentableId" value="LOCAL-00233" />
-      <option name="project" value="LOCAL" />
-      <updated>1734514087966</updated>
-    </task>
-    <task id="LOCAL-00234" summary="NSVIT-15 / v2.5.0 라우터 IP 변경안됨 이슈">
-      <option name="closed" value="true" />
-      <created>1734514165593</created>
-      <option name="number" value="00234" />
-      <option name="presentableId" value="LOCAL-00234" />
-      <option name="project" value="LOCAL" />
-      <updated>1734514165593</updated>
+      <workItem from="1734658664182" duration="3541000" />
     </task>
     <task id="LOCAL-00235" summary="NSVIT-15 / v2.6.0 퍼페티어 코어 설치">
       <option name="closed" value="true" />
@@ -640,7 +624,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734660554676</updated>
     </task>
-    <option name="localTasksCounter" value="282" />
+    <task id="LOCAL-00282" summary="NSV-12 / 로컬 / 너두프록시 UI">
+      <option name="closed" value="true" />
+      <created>1734661967660</created>
+      <option name="number" value="00282" />
+      <option name="presentableId" value="LOCAL-00282" />
+      <option name="project" value="LOCAL" />
+      <updated>1734661967660</updated>
+    </task>
+    <task id="LOCAL-00283" summary="NSV-12 / 로컬 / 너두프록시 UI">
+      <option name="closed" value="true" />
+      <created>1734661987999</created>
+      <option name="number" value="00283" />
+      <option name="presentableId" value="LOCAL-00283" />
+      <option name="project" value="LOCAL" />
+      <updated>1734661987999</updated>
+    </task>
+    <option name="localTasksCounter" value="284" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / v2.8.3" />
     <MESSAGE value="NSV-11 / goToKeyword.ts / 오류 대응" />
     <MESSAGE value="NSV-11 / v2.8.4" />
     <MESSAGE value="NSV-11 / goToKeyword &gt; 에러로 인한 찾기 강화" />
@@ -710,6 +709,7 @@
     <MESSAGE value="NSV-11 / findTargetPlaceInTargetBlog / 에러메시지 강화" />
     <MESSAGE value="NSV-11 / targetKeywordSearch / 에러메시지 강화" />
     <MESSAGE value="NSV-11 / 쿠팡 url 에러로 인한 기존 너두프록시 다시 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-11 / 쿠팡 url 에러로 인한 기존 너두프록시 다시 추가" />
+    <MESSAGE value="NSV-12 / 로컬 / 너두프록시 UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-12 / 로컬 / 너두프록시 UI" />
   </component>
 </project>

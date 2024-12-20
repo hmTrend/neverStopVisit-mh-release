@@ -33,6 +33,7 @@ export const FingerprintExcelList = () => {
     selectedExcelList,
     selectedGroupId,
     listTotalCount,
+    fingerPrintNetworkType,
   } = useSnapshot(storeFingerPrintRegister);
   const { getExcelList } = useGetExcelList();
 
@@ -147,7 +148,11 @@ export const FingerprintExcelList = () => {
                     <Td>{v.ip}</Td>
                     <Td>{v.phoneNumber}</Td>
                     <Td>
-                      <FingerprintButton _id={v._id} type={v.type} />
+                      <FingerprintButton
+                        _id={v._id}
+                        type={v.type}
+                        fingerPrintNetworkType={fingerPrintNetworkType}
+                      />
                     </Td>
                     <Td>
                       <Button
