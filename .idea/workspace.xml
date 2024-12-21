@@ -123,18 +123,19 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.findTargetPlaceInTargetBlog.ts">
-    <configuration name="clickNearbyAttractions.tsx" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+  <component name="RunManager" selected="TypeScript.findTargetBlog.ts">
+    <configuration name="findTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/clickNearbyAttractions.tsx" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="findTargetPlaceInTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -191,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.findTargetBlog.ts" />
         <item itemvalue="TypeScript.findTargetPlaceInTargetBlog.ts" />
         <item itemvalue="TypeScript.initializeAndroid.ts" />
         <item itemvalue="TypeScript.initializeFireFox.ts" />
         <item itemvalue="TypeScript.network.router.eduPlayer.ts" />
-        <item itemvalue="TypeScript.clickNearbyAttractions.tsx" />
       </list>
     </recent_temporary>
   </component>
@@ -246,23 +247,7 @@
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
-      <workItem from="1734658664182" duration="18240000" />
-    </task>
-    <task id="LOCAL-00257" summary="NSV-11 / goToKeyword &gt; 에러로 인한 찾기 강화">
-      <option name="closed" value="true" />
-      <created>1734586338949</created>
-      <option name="number" value="00257" />
-      <option name="presentableId" value="LOCAL-00257" />
-      <option name="project" value="LOCAL" />
-      <updated>1734586338949</updated>
-    </task>
-    <task id="LOCAL-00258" summary="NSV-11 / v2.8.5">
-      <option name="closed" value="true" />
-      <created>1734586352320</created>
-      <option name="number" value="00258" />
-      <option name="presentableId" value="LOCAL-00258" />
-      <option name="project" value="LOCAL" />
-      <updated>1734586352320</updated>
+      <workItem from="1734658664182" duration="20295000" />
     </task>
     <task id="LOCAL-00259" summary="NSV-11 / goToKeyword &gt; 에러 정리 / 로직강화">
       <option name="closed" value="true" />
@@ -640,7 +625,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734763320863</updated>
     </task>
-    <option name="localTasksCounter" value="306" />
+    <task id="LOCAL-00306" summary="NSV-14 / networkSpeed / LTE | 3G">
+      <option name="closed" value="true" />
+      <created>1734764274297</created>
+      <option name="number" value="00306" />
+      <option name="presentableId" value="LOCAL-00306" />
+      <option name="project" value="LOCAL" />
+      <updated>1734764274297</updated>
+    </task>
+    <task id="LOCAL-00307" summary="NSV-14 / v2.11.0">
+      <option name="closed" value="true" />
+      <created>1734764293781</created>
+      <option name="number" value="00307" />
+      <option name="presentableId" value="LOCAL-00307" />
+      <option name="project" value="LOCAL" />
+      <updated>1734764293781</updated>
+    </task>
+    <option name="localTasksCounter" value="308" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,8 +686,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / v2.8.11" />
-    <MESSAGE value="NSV-11 / clickNearbyAttractions &gt; 명소 에러시 메시지 추가" />
     <MESSAGE value="NSV-11 / findTargetBlog / 재작업 에러로직 강화" />
     <MESSAGE value="NSV-11 / findTargetPlaceInTargetBlog / 에러메시지 강화" />
     <MESSAGE value="NSV-11 / targetKeywordSearch / 에러메시지 강화" />
@@ -710,6 +709,8 @@
     <MESSAGE value="NSV-14 / 접힌 플레이스 대응 + waitForSelector / 열린 플레이스만 적용" />
     <MESSAGE value="NSV-14 / v2.10.3" />
     <MESSAGE value="NSV-14 / 네이버 첫페이지 진입시 이메일 이미지 나타나는지 기다리기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 / 네이버 첫페이지 진입시 이메일 이미지 나타나는지 기다리기" />
+    <MESSAGE value="NSV-14 / networkSpeed / LTE | 3G" />
+    <MESSAGE value="NSV-14 / v2.11.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 / v2.11.0" />
   </component>
 </project>

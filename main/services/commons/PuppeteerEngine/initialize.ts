@@ -13,7 +13,7 @@ export const initialize = async ({
   cookie,
   browser,
   type = "",
-  networkSpeed = "LTE",
+  networkSpeed = "3G",
 }: {
   url: string;
   page: Page;
@@ -60,7 +60,10 @@ export const initialize = async ({
         });
       }
 
-      await page.goto(url, { waitUntil: "load" });
+      await page.goto(url, {
+        waitUntil: "domcontentloaded",
+        timeout: 90 * 1000,
+      });
       await wait(1500);
       break;
     } catch (e) {
