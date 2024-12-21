@@ -2,7 +2,7 @@
   "private": true,
   "name": "never-stop-visit",
   "description": "never-stop-visit",
-  "version": "2.11.1",
+  "version": "2.11.2",
   "author": "apk",
   "main": "app/background.js",
   "scripts": {
