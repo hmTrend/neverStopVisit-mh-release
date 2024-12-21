@@ -3,7 +3,7 @@ import { Page } from "playwright";
 export const goToShopping = async ({ page }: { page: Page }) => {
   try {
     await Promise.all([
-      page.waitForLoadState("load"),
+      page.waitForLoadState("domcontentloaded"),
       page.getByRole("link", { name: "스토어" }).first().click(),
     ]);
     return { page };

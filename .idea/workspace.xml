@@ -248,55 +248,7 @@
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
-      <workItem from="1734658664182" duration="20934000" />
-    </task>
-    <task id="LOCAL-00260" summary="NSV-11 / v2.8.6">
-      <option name="closed" value="true" />
-      <created>1734587396278</created>
-      <option name="number" value="00260" />
-      <option name="presentableId" value="LOCAL-00260" />
-      <option name="project" value="LOCAL" />
-      <updated>1734587396278</updated>
-    </task>
-    <task id="LOCAL-00261" summary="NSV-11 / await 상품명 입력후 1.5초 대기">
-      <option name="closed" value="true" />
-      <created>1734589542472</created>
-      <option name="number" value="00261" />
-      <option name="presentableId" value="LOCAL-00261" />
-      <option name="project" value="LOCAL" />
-      <updated>1734589542472</updated>
-    </task>
-    <task id="LOCAL-00262" summary="NSV-11 / v2.8.7">
-      <option name="closed" value="true" />
-      <created>1734589556412</created>
-      <option name="number" value="00262" />
-      <option name="presentableId" value="LOCAL-00262" />
-      <option name="project" value="LOCAL" />
-      <updated>1734589556412</updated>
-    </task>
-    <task id="LOCAL-00263" summary="NSV-11 / searchNVMID &gt; load 추가 안정화">
-      <option name="closed" value="true" />
-      <created>1734590263966</created>
-      <option name="number" value="00263" />
-      <option name="presentableId" value="LOCAL-00263" />
-      <option name="project" value="LOCAL" />
-      <updated>1734590263966</updated>
-    </task>
-    <task id="LOCAL-00264" summary="NSV-11 / nextNumberClick &gt; promise all">
-      <option name="closed" value="true" />
-      <created>1734590396811</created>
-      <option name="number" value="00264" />
-      <option name="presentableId" value="LOCAL-00264" />
-      <option name="project" value="LOCAL" />
-      <updated>1734590396811</updated>
-    </task>
-    <task id="LOCAL-00265" summary="NSV-11 / makeAPurchase &gt; promise all">
-      <option name="closed" value="true" />
-      <created>1734590860905</created>
-      <option name="number" value="00265" />
-      <option name="presentableId" value="LOCAL-00265" />
-      <option name="project" value="LOCAL" />
-      <updated>1734590860905</updated>
+      <workItem from="1734658664182" duration="21260000" />
     </task>
     <task id="LOCAL-00266" summary="NSV-11 / v2.8.8">
       <option name="closed" value="true" />
@@ -642,7 +594,55 @@
       <option name="project" value="LOCAL" />
       <updated>1734766336276</updated>
     </task>
-    <option name="localTasksCounter" value="309" />
+    <task id="LOCAL-00309" summary="NSV-14 / findTargetBlog / domcontentloaded 로 변경 load 너무느림">
+      <option name="closed" value="true" />
+      <created>1734767103243</created>
+      <option name="number" value="00309" />
+      <option name="presentableId" value="LOCAL-00309" />
+      <option name="project" value="LOCAL" />
+      <updated>1734767103243</updated>
+    </task>
+    <task id="LOCAL-00310" summary="NSV-14 / findTargetBlog / domcontentloaded 로 변경 load 너무느림">
+      <option name="closed" value="true" />
+      <created>1734767108625</created>
+      <option name="number" value="00310" />
+      <option name="presentableId" value="LOCAL-00310" />
+      <option name="project" value="LOCAL" />
+      <updated>1734767108625</updated>
+    </task>
+    <task id="LOCAL-00311" summary="NSV-14 / findTargetBlog / domcontentloaded 로 변경 load 너무느림">
+      <option name="closed" value="true" />
+      <created>1734767119793</created>
+      <option name="number" value="00311" />
+      <option name="presentableId" value="LOCAL-00311" />
+      <option name="project" value="LOCAL" />
+      <updated>1734767119793</updated>
+    </task>
+    <task id="LOCAL-00312" summary="NSV-14 / yarn build">
+      <option name="closed" value="true" />
+      <created>1734767234395</created>
+      <option name="number" value="00312" />
+      <option name="presentableId" value="LOCAL-00312" />
+      <option name="project" value="LOCAL" />
+      <updated>1734767234395</updated>
+    </task>
+    <task id="LOCAL-00313" summary="NSV-14 / yarn build">
+      <option name="closed" value="true" />
+      <created>1734767253222</created>
+      <option name="number" value="00313" />
+      <option name="presentableId" value="LOCAL-00313" />
+      <option name="project" value="LOCAL" />
+      <updated>1734767253222</updated>
+    </task>
+    <task id="LOCAL-00314" summary="NSV-14 / yarn build">
+      <option name="closed" value="true" />
+      <created>1734767259092</created>
+      <option name="number" value="00314" />
+      <option name="presentableId" value="LOCAL-00314" />
+      <option name="project" value="LOCAL" />
+      <updated>1734767259092</updated>
+    </task>
+    <option name="localTasksCounter" value="315" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -687,8 +687,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / findTargetPlaceInTargetBlog / 에러메시지 강화" />
-    <MESSAGE value="NSV-11 / targetKeywordSearch / 에러메시지 강화" />
     <MESSAGE value="NSV-11 / 쿠팡 url 에러로 인한 기존 너두프록시 다시 추가" />
     <MESSAGE value="NSV-12 / 로컬 / 너두프록시 UI" />
     <MESSAGE value="NSV-12 / 네트워크타입 백으로 보내기 성공" />
@@ -712,6 +710,8 @@
     <MESSAGE value="NSV-14 / networkSpeed / LTE | 3G" />
     <MESSAGE value="NSV-14 / v2.11.0" />
     <MESSAGE value="NSV-14 / initialize / 대기시간 30 &gt; 90" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 / initialize / 대기시간 30 &gt; 90" />
+    <MESSAGE value="NSV-14 / findTargetBlog / domcontentloaded 로 변경 load 너무느림" />
+    <MESSAGE value="NSV-14 / yarn build" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 / yarn build" />
   </component>
 </project>
