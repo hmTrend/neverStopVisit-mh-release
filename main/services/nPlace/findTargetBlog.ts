@@ -5,7 +5,7 @@ import wait from "waait";
 export const findTargetBlog = async ({
   page = undefined,
   targetBlog = "https://m.blog.naver.com/minidaoyou/223627474798",
-  isTest = true,
+  isTest = false,
 }: {
   page?: Page;
   targetBlog?: string;
@@ -34,7 +34,10 @@ export const findTargetBlog = async ({
         await link.waitFor({ state: "visible", timeout: 10 * 1000 });
         await link.scrollIntoViewIfNeeded();
         await wait(1500);
-        await Promise.all([link.click(), page.waitForLoadState("load")]);
+        await Promise.all([
+          link.click(),
+          page.waitForLoadState("domcontentloaded"),
+        ]);
         break;
       } catch (e) {
         if (i === 2) {
@@ -51,4 +54,4 @@ export const findTargetBlog = async ({
   return { page };
 };
 
-findTargetBlog();
+// findTargetBlog();

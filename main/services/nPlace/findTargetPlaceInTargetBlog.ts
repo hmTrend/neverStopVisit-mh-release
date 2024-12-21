@@ -54,6 +54,8 @@ export const findTargetPlaceInTargetBlog = async ({
           type: "location-component",
           element,
           async validate() {
+            const isClickable = await element.isEnabled();
+            if (!isClickable) return false;
             const href = await element.getAttribute("href");
             if (!href) return false;
             const placeId = extractPlaceId(href);
@@ -71,9 +73,12 @@ export const findTargetPlaceInTargetBlog = async ({
             "button.se-placesMap-additional-button.se-placesMap-button-bookmark",
             {
               state: "visible",
-              timeout: 30 * 1000,
+              timeout: 60 * 1000,
             },
           );
+        }
+        if (result.type === "location-component") {
+          await wait(3 * 1000);
         }
         // 유효성 검사
         const isValid = await result.validate();

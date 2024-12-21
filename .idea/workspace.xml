@@ -149,6 +149,7 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetPlaceInTargetBlog.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="initializeAndroid.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -247,15 +248,7 @@
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
-      <workItem from="1734658664182" duration="20295000" />
-    </task>
-    <task id="LOCAL-00259" summary="NSV-11 / goToKeyword &gt; 에러 정리 / 로직강화">
-      <option name="closed" value="true" />
-      <created>1734587379729</created>
-      <option name="number" value="00259" />
-      <option name="presentableId" value="LOCAL-00259" />
-      <option name="project" value="LOCAL" />
-      <updated>1734587379729</updated>
+      <workItem from="1734658664182" duration="20934000" />
     </task>
     <task id="LOCAL-00260" summary="NSV-11 / v2.8.6">
       <option name="closed" value="true" />
@@ -641,7 +634,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734764293781</updated>
     </task>
-    <option name="localTasksCounter" value="308" />
+    <task id="LOCAL-00308" summary="NSV-14 / initialize / 대기시간 30 &gt; 90">
+      <option name="closed" value="true" />
+      <created>1734766336276</created>
+      <option name="number" value="00308" />
+      <option name="presentableId" value="LOCAL-00308" />
+      <option name="project" value="LOCAL" />
+      <updated>1734766336276</updated>
+    </task>
+    <option name="localTasksCounter" value="309" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -686,7 +687,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / findTargetBlog / 재작업 에러로직 강화" />
     <MESSAGE value="NSV-11 / findTargetPlaceInTargetBlog / 에러메시지 강화" />
     <MESSAGE value="NSV-11 / targetKeywordSearch / 에러메시지 강화" />
     <MESSAGE value="NSV-11 / 쿠팡 url 에러로 인한 기존 너두프록시 다시 추가" />
@@ -711,6 +711,7 @@
     <MESSAGE value="NSV-14 / 네이버 첫페이지 진입시 이메일 이미지 나타나는지 기다리기" />
     <MESSAGE value="NSV-14 / networkSpeed / LTE | 3G" />
     <MESSAGE value="NSV-14 / v2.11.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 / v2.11.0" />
+    <MESSAGE value="NSV-14 / initialize / 대기시간 30 &gt; 90" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 / initialize / 대기시간 30 &gt; 90" />
   </component>
 </project>
