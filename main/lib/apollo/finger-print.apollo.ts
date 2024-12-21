@@ -75,7 +75,7 @@ export const FetchFingerPrintTargetExcelOne = async ({
   cookie,
   nState,
 }) => {
-  const { data, error } = await client.mutate({
+  const { data, errors } = await client.mutate({
     mutation: gqlFetchFingerPrintTargetExcelOne,
     variables: {
       input: {
@@ -86,12 +86,12 @@ export const FetchFingerPrintTargetExcelOne = async ({
     },
     fetchPolicy: "no-cache",
   });
-  if (error) {
-    console.error(error.message);
+  if (errors) {
+    console.error(errors[0].message);
     return {
       data: "",
       message: "ERR > FetchFingerPrintTargetExcelOne ",
-      error: error.message,
+      error: errors[0].message,
     };
   }
   return {
