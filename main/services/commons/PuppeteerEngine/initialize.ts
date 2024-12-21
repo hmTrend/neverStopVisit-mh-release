@@ -13,7 +13,7 @@ export const initialize = async ({
   cookie,
   browser,
   type = "",
-  networkSpeed = "3G",
+  networkSpeed = "LTE",
 }: {
   url: string;
   page: Page;
@@ -22,7 +22,7 @@ export const initialize = async ({
   cookie;
   browser: Browser;
   type?: string;
-  networkSpeed: "LTE" | "3G";
+  networkSpeed?: "LTE" | "3G";
 }) => {
   for (let i = 0; i < 3; i++) {
     try {
@@ -55,7 +55,7 @@ export const initialize = async ({
         await client.send("Network.emulateNetworkConditions", {
           offline: false,
           latency: 100, // 지연시간 (ms)
-          downloadThroughput: (350 * 1024) / 8, // bytes/s
+          downloadThroughput: (750 * 1024) / 8, // bytes/s
           uploadThroughput: (250 * 1024) / 8, // bytes/s
         });
       }

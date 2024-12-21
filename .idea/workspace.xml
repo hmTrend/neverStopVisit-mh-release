@@ -246,15 +246,7 @@
       <workItem from="1734328327792" duration="2723000" />
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
-      <workItem from="1734658664182" duration="17009000" />
-    </task>
-    <task id="LOCAL-00256" summary="NSV-11 / v2.8.4">
-      <option name="closed" value="true" />
-      <created>1734585535485</created>
-      <option name="number" value="00256" />
-      <option name="presentableId" value="LOCAL-00256" />
-      <option name="project" value="LOCAL" />
-      <updated>1734585535485</updated>
+      <workItem from="1734658664182" duration="18240000" />
     </task>
     <task id="LOCAL-00257" summary="NSV-11 / goToKeyword &gt; 에러로 인한 찾기 강화">
       <option name="closed" value="true" />
@@ -640,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734686406495</updated>
     </task>
-    <option name="localTasksCounter" value="305" />
+    <task id="LOCAL-00305" summary="NSV-14 / 네이버 첫페이지 진입시 이메일 이미지 나타나는지 기다리기">
+      <option name="closed" value="true" />
+      <created>1734763320863</created>
+      <option name="number" value="00305" />
+      <option name="presentableId" value="LOCAL-00305" />
+      <option name="project" value="LOCAL" />
+      <updated>1734763320863</updated>
+    </task>
+    <option name="localTasksCounter" value="306" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -685,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-11 / findTargetBlog / id로 블로그 찾아 클릭하기" />
     <MESSAGE value="NSV-11 / v2.8.11" />
     <MESSAGE value="NSV-11 / clickNearbyAttractions &gt; 명소 에러시 메시지 추가" />
     <MESSAGE value="NSV-11 / findTargetBlog / 재작업 에러로직 강화" />
@@ -710,6 +709,7 @@
     <MESSAGE value="NSV-14 / 접힌 플레이스 대응" />
     <MESSAGE value="NSV-14 / 접힌 플레이스 대응 + waitForSelector / 열린 플레이스만 적용" />
     <MESSAGE value="NSV-14 / v2.10.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 / v2.10.3" />
+    <MESSAGE value="NSV-14 / 네이버 첫페이지 진입시 이메일 이미지 나타나는지 기다리기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-14 / 네이버 첫페이지 진입시 이메일 이미지 나타나는지 기다리기" />
   </component>
 </project>

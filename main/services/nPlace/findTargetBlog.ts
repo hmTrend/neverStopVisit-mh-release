@@ -25,6 +25,7 @@ export const findTargetBlog = async ({
       const match = url.match(/\/(\d+)$/);
       return match ? match[1] : "";
     };
+
     for (let i = 0; i < 3; i++) {
       try {
         await wait(1000);
