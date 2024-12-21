@@ -123,7 +123,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.findTargetBlog.ts">
+  <component name="RunManager" selected="TypeScript.findTargetPlaceInTargetBlog.ts">
     <configuration name="findTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -193,8 +193,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TypeScript.findTargetBlog.ts" />
         <item itemvalue="TypeScript.findTargetPlaceInTargetBlog.ts" />
+        <item itemvalue="TypeScript.findTargetBlog.ts" />
         <item itemvalue="TypeScript.initializeAndroid.ts" />
         <item itemvalue="TypeScript.initializeFireFox.ts" />
         <item itemvalue="TypeScript.network.router.eduPlayer.ts" />
