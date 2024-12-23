@@ -247,15 +247,7 @@
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
       <workItem from="1734658664182" duration="24228000" />
-      <workItem from="1734941796436" duration="4086000" />
-    </task>
-    <task id="LOCAL-00270" summary="NSV-11 / 쇼핑 더보기 클릭 로직 변경">
-      <option name="closed" value="true" />
-      <created>1734594434091</created>
-      <option name="number" value="00270" />
-      <option name="presentableId" value="LOCAL-00270" />
-      <option name="project" value="LOCAL" />
-      <updated>1734594434091</updated>
+      <workItem from="1734941796436" duration="6926000" />
     </task>
     <task id="LOCAL-00271" summary="NSV-11 / v2.8.10">
       <option name="closed" value="true" />
@@ -641,7 +633,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734946353724</updated>
     </task>
-    <option name="localTasksCounter" value="319" />
+    <task id="LOCAL-00319" summary="NSV-15 / console.log 삭제">
+      <option name="closed" value="true" />
+      <created>1734946944921</created>
+      <option name="number" value="00319" />
+      <option name="presentableId" value="LOCAL-00319" />
+      <option name="project" value="LOCAL" />
+      <updated>1734946944921</updated>
+    </task>
+    <option name="localTasksCounter" value="320" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -686,7 +686,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-12 / v2.9.0" />
     <MESSAGE value="NSV-12 / expandProductDetails / 상세상품보기 클릭하기 없을시 5초 대기하기" />
     <MESSAGE value="NSV-12 / 하루 동안 보지 않기 - 하단 레이어창" />
     <MESSAGE value="NSV-12 / 20~30초 랜덤 초수 추가" />
@@ -711,6 +710,7 @@
     <MESSAGE value="NSV-14 / FetchFingerPrintTargetExcelOne &gt; 에러일경우 error &gt; errors 로 변경" />
     <MESSAGE value="NSV-14 / v2.11.2" />
     <MESSAGE value="NSV-15 / v2.12.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-15 / v2.12.0" />
+    <MESSAGE value="NSV-15 / console.log 삭제" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-15 / console.log 삭제" />
   </component>
 </project>
