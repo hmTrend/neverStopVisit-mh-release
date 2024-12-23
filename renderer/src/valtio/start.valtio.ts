@@ -1,11 +1,12 @@
 import { proxy, subscribe } from "valtio/vanilla";
+import { IpChangeCount } from "@/components/start/IpChangeCount";
 
 const STORAGE_KEY = "start_store";
 
 const getInitialData = () => {
   // 기본값 정의
   const defaultData = {
-    common: { isStart: false, ip: "STATIC", memberFid: "" },
+    common: { isStart: false, ip: "STATIC", memberFid: "", ipChangeCount: 1 },
     nShopping: {
       isStart: false,
       selectedGroup: { groupName: "", groupId: "" },
@@ -36,6 +37,7 @@ class StartValtio {
     isStart: boolean;
     ip: "STATIC" | "TETHERING" | "ROUTER" | "LOCAL";
     memberFid: string;
+    ipChangeCount: number;
   };
   nShopping: {
     isStart: boolean;
