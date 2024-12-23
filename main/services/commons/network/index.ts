@@ -4,6 +4,8 @@ import { networkRouterEduPlayer } from "./network.router.eduPlayer";
 import { networkRouterEdu } from "./network.router.edu.puppeteer";
 
 export const networkIpChange = async ({ common }) => {
+  console.log("common.ipChangeCount 3333");
+  console.log(common.ipChangeCount);
   switch (common.ip) {
     case "STATIC":
       console.log("STATIC");

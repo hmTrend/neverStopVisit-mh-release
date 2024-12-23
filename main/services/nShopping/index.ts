@@ -24,8 +24,6 @@ export class NShopping extends PuppeteerEngine {
               groupFid: nShopping.selectedGroup.groupId,
             },
           );
-          console.log("excelData 334455");
-          console.log(excelData);
           var ExcelData = excelData;
           const { query, nvMid } = excelData;
           {

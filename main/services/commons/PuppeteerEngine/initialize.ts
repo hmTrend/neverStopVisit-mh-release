@@ -86,8 +86,6 @@ async function createMobileContext({
   const userAgent: any =
     getNextCreateUserAgentWithDRSoftKorea241207WithOutIPhone(); // 동적 user agent
 
-  console.log("userAgent 000000");
-  console.log(userAgent);
   const context = await browser.newContext({
     userAgent: userAgent.userAgent,
     extraHTTPHeaders: userAgent.headers,

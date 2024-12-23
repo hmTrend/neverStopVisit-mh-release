@@ -19,8 +19,6 @@ export class NPlace extends PuppeteerEngine {
           const { data: excelData } = await GetNPlaceExcelAlignFlatTargetOne({
             groupFid: nPlace.selectedGroup.groupId,
           });
-          console.log("excelData 334455");
-          console.log(excelData);
           var EcelData = excelData;
           const { targetKeyword, targetBlog, placeNumber } = excelData;
           {

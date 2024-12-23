@@ -77,8 +77,6 @@ export const initializeForPC = async ({
 async function createMobileContext({ browser }: { browser: Browser }) {
   const userAgent: any = getNextCreateUserAgentWithPC(); // 동적 user agent
 
-  console.log("userAgent 000000");
-  console.log(userAgent);
   const context = await browser.newContext({
     userAgent: userAgent.userAgent,
     extraHTTPHeaders: userAgent.headers,
