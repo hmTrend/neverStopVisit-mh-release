@@ -67,6 +67,9 @@ export const initialize = async ({
       await wait(1500);
       break;
     } catch (e) {
+      if (browser) {
+        await browser.close(); // 에러 발생 시 브라우저 닫기
+      }
       console.log("ERR > executablePath");
       console.error(e.message);
       if (i === 2) {

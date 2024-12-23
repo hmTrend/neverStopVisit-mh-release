@@ -247,23 +247,7 @@
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
       <workItem from="1734658664182" duration="24228000" />
-      <workItem from="1734941796436" duration="6926000" />
-    </task>
-    <task id="LOCAL-00271" summary="NSV-11 / v2.8.10">
-      <option name="closed" value="true" />
-      <created>1734594458639</created>
-      <option name="number" value="00271" />
-      <option name="presentableId" value="LOCAL-00271" />
-      <option name="project" value="LOCAL" />
-      <updated>1734594458639</updated>
-    </task>
-    <task id="LOCAL-00272" summary="NSV-11 / googleToNaver / 에러강화">
-      <option name="closed" value="true" />
-      <created>1734603982677</created>
-      <option name="number" value="00272" />
-      <option name="presentableId" value="LOCAL-00272" />
-      <option name="project" value="LOCAL" />
-      <updated>1734603982677</updated>
+      <workItem from="1734941796436" duration="7229000" />
     </task>
     <task id="LOCAL-00273" summary="NSV-11 / googleToNaver / 에러강화">
       <option name="closed" value="true" />
@@ -641,7 +625,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734946944921</updated>
     </task>
-    <option name="localTasksCounter" value="320" />
+    <task id="LOCAL-00320" summary="NSV-15 / nowCount % common.ipChangeCount !== 0">
+      <option name="closed" value="true" />
+      <created>1734949562446</created>
+      <option name="number" value="00320" />
+      <option name="presentableId" value="LOCAL-00320" />
+      <option name="project" value="LOCAL" />
+      <updated>1734949562446</updated>
+    </task>
+    <task id="LOCAL-00321" summary="NSV-15 / 증가되는 카운트를 설정된 카운트로 나누기">
+      <option name="closed" value="true" />
+      <created>1734949580513</created>
+      <option name="number" value="00321" />
+      <option name="presentableId" value="LOCAL-00321" />
+      <option name="project" value="LOCAL" />
+      <updated>1734949580513</updated>
+    </task>
+    <option name="localTasksCounter" value="322" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -686,8 +686,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-12 / expandProductDetails / 상세상품보기 클릭하기 없을시 5초 대기하기" />
-    <MESSAGE value="NSV-12 / 하루 동안 보지 않기 - 하단 레이어창" />
     <MESSAGE value="NSV-12 / 20~30초 랜덤 초수 추가" />
     <MESSAGE value="NSV-14 / 오늘하루열지않기 로직 강화" />
     <MESSAGE value="NSV-14 / userAgent &gt; sec-ch-ua-mobile&quot;: &quot;?0 &gt; ?1" />
@@ -711,6 +709,8 @@
     <MESSAGE value="NSV-14 / v2.11.2" />
     <MESSAGE value="NSV-15 / v2.12.0" />
     <MESSAGE value="NSV-15 / console.log 삭제" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-15 / console.log 삭제" />
+    <MESSAGE value="NSV-15 / nowCount % common.ipChangeCount !== 0" />
+    <MESSAGE value="NSV-15 / 증가되는 카운트를 설정된 카운트로 나누기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-15 / 증가되는 카운트를 설정된 카운트로 나누기" />
   </component>
 </project>
