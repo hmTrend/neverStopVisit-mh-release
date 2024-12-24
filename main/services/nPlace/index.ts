@@ -114,7 +114,7 @@ export class NPlace extends PuppeteerEngine {
         targetKeyword: this.query,
         mainWindow,
         errorMessage: "",
-        workType: "NShopping",
+        workType: "NPlace",
         myIp,
         createdAt,
       });
