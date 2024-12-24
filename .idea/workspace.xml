@@ -250,15 +250,7 @@
       <workItem from="1734434604970" duration="55044000" />
       <workItem from="1734658664182" duration="24228000" />
       <workItem from="1734941796436" duration="8333000" />
-      <workItem from="1734996690798" duration="1433000" />
-    </task>
-    <task id="LOCAL-00274" summary="NSV-11 / findTargetBlog / id로 블로그 찾아 클릭하기">
-      <option name="closed" value="true" />
-      <created>1734604754091</created>
-      <option name="number" value="00274" />
-      <option name="presentableId" value="LOCAL-00274" />
-      <option name="project" value="LOCAL" />
-      <updated>1734604754091</updated>
+      <workItem from="1734996690798" duration="2129000" />
     </task>
     <task id="LOCAL-00275" summary="NSV-11 / v2.8.11">
       <option name="closed" value="true" />
@@ -644,7 +636,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734950025851</updated>
     </task>
-    <option name="localTasksCounter" value="323" />
+    <task id="LOCAL-00323" summary="NSV-17 / errorToFront 백엔드 설치 완료 + 아이피 추가 +">
+      <option name="closed" value="true" />
+      <created>1734998452557</created>
+      <option name="number" value="00323" />
+      <option name="presentableId" value="LOCAL-00323" />
+      <option name="project" value="LOCAL" />
+      <updated>1734998452557</updated>
+    </task>
+    <option name="localTasksCounter" value="324" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -689,7 +689,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-14 / 오늘하루열지않기 로직 강화" />
     <MESSAGE value="NSV-14 / userAgent &gt; sec-ch-ua-mobile&quot;: &quot;?0 &gt; ?1" />
     <MESSAGE value="NSV-14 / 블로그에서 플레이스가 눈에 보이면 스크롤후 클릭하기" />
     <MESSAGE value="NSV-14 / 네이버 메인페이지 접속시 느릴시에도 대응" />
@@ -714,6 +713,7 @@
     <MESSAGE value="NSV-15 / nowCount % common.ipChangeCount !== 0" />
     <MESSAGE value="NSV-15 / 증가되는 카운트를 설정된 카운트로 나누기" />
     <MESSAGE value="NSV-15 / v2.12.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-15 / v2.12.1" />
+    <MESSAGE value="NSV-17 / errorToFront 백엔드 설치 완료 + 아이피 추가 +" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-17 / errorToFront 백엔드 설치 완료 + 아이피 추가 +" />
   </component>
 </project>
