@@ -250,23 +250,7 @@
       <workItem from="1734434604970" duration="55044000" />
       <workItem from="1734658664182" duration="24228000" />
       <workItem from="1734941796436" duration="8333000" />
-      <workItem from="1734996690798" duration="3862000" />
-    </task>
-    <task id="LOCAL-00277" summary="NSV-11 / findTargetBlog / 재작업 에러로직 강화">
-      <option name="closed" value="true" />
-      <created>1734606570359</created>
-      <option name="number" value="00277" />
-      <option name="presentableId" value="LOCAL-00277" />
-      <option name="project" value="LOCAL" />
-      <updated>1734606570359</updated>
-    </task>
-    <task id="LOCAL-00278" summary="NSV-11 / findTargetBlog / 재작업 에러로직 강화">
-      <option name="closed" value="true" />
-      <created>1734606583227</created>
-      <option name="number" value="00278" />
-      <option name="presentableId" value="LOCAL-00278" />
-      <option name="project" value="LOCAL" />
-      <updated>1734606583227</updated>
+      <workItem from="1734996690798" duration="4946000" />
     </task>
     <task id="LOCAL-00279" summary="NSV-11 / findTargetPlaceInTargetBlog / 에러메시지 강화">
       <option name="closed" value="true" />
@@ -644,7 +628,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734999092333</updated>
     </task>
-    <option name="localTasksCounter" value="326" />
+    <task id="LOCAL-00326" summary="NSV-17 / 백엔드 errorToFront 적용">
+      <option name="closed" value="true" />
+      <created>1735000953210</created>
+      <option name="number" value="00326" />
+      <option name="presentableId" value="LOCAL-00326" />
+      <option name="project" value="LOCAL" />
+      <updated>1735000953210</updated>
+    </task>
+    <task id="LOCAL-00327" summary="NSV-17 / 백엔드 errorToFront 적용">
+      <option name="closed" value="true" />
+      <created>1735000958957</created>
+      <option name="number" value="00327" />
+      <option name="presentableId" value="LOCAL-00327" />
+      <option name="project" value="LOCAL" />
+      <updated>1735000958957</updated>
+    </task>
+    <option name="localTasksCounter" value="328" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -689,7 +689,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-14 / 네이버 메인페이지 접속시 느릴시에도 대응" />
     <MESSAGE value="NSV-14 / 블로그에서 플레이스창 느리게 열릴시 대응" />
     <MESSAGE value="NSV-14 / v2.10.0" />
     <MESSAGE value="NSV-14 / v2.10.1 LTE" />
@@ -714,6 +713,7 @@
     <MESSAGE value="NSV-17 / errorToFront 백엔드 설치 완료 + 아이피 추가 +" />
     <MESSAGE value="NSV-17 / 프론트에 100개만 유지" />
     <MESSAGE value="NSV-17 / v2.13.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-17 / v2.13.0" />
+    <MESSAGE value="NSV-17 / 백엔드 errorToFront 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-17 / 백엔드 errorToFront 적용" />
   </component>
 </project>

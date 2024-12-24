@@ -14,6 +14,8 @@ import { isPopup } from "./isPopup";
 import { googleToNaver } from "../commons/naver/googleToNaver";
 import { errorToFront } from "../commons/error/errorToFront";
 import { globalBrowsers } from "../../lib/const/constVar";
+import { UtilNetwork } from "../../lib/util/util.network";
+import { UtilDate } from "../../lib/util/util.date";
 
 export class NShopping extends PuppeteerEngine {
   async start({ nShopping, mainWindow }): Promise<void> {
@@ -125,22 +127,26 @@ export class NShopping extends PuppeteerEngine {
         });
         this.page = page;
       }
+      const myIp = await UtilNetwork.getIpAddress();
+      const createdAt = UtilDate.getCurrentDate();
       errorToFront({
         targetKeyword: this.query,
         mainWindow,
         errorMessage: "",
         workType: "NShopping",
-        myIp: globalBrowsers.myIp,
-        createdAt: globalBrowsers.createdAt,
+        myIp,
+        createdAt,
       });
     } catch (e) {
+      const myIp = await UtilNetwork.getIpAddress();
+      const createdAt = UtilDate.getCurrentDate();
       errorToFront({
         targetKeyword: this.query,
         mainWindow,
         errorMessage: e.message,
         workType: "NShopping",
-        myIp: globalBrowsers.myIp,
-        createdAt: globalBrowsers.createdAt,
+        myIp,
+        createdAt,
       });
       console.error(e.message);
     }

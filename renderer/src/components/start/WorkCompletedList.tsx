@@ -8,7 +8,7 @@ export function WorkCompletedList() {
 
   useEffect(() => {
     const cleanup = window.ipc.on("error-to-front-result", (args: any) => {
-      storeWork.completedList = [...completedList, args].slice(-100);
+      storeWork.addToCompletedList(args);
     });
     return cleanup;
   }, []);
@@ -26,7 +26,7 @@ export function WorkCompletedList() {
       {completedList?.map((v, i) => (
         <Box display={"flex"} gap={3} key={i}>
           <Text>{i + 1}</Text>
-          <Text>{v?.workType === "nShopping" ? "쇼핑" : "플레이스"}</Text>
+          <Text>{v?.workType === "NShopping" ? "쇼핑" : "플레이스"}</Text>
           <Text>{v?.targetKeyword}</Text>
           <Text>{v?.myIp}</Text>
           <Text>{v?.createdAt}</Text>

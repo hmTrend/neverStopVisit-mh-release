@@ -115,8 +115,8 @@ export class NPlace extends PuppeteerEngine {
         mainWindow,
         errorMessage: "",
         workType: "NShopping",
-        myIp: myIp,
-        createdAt: createdAt,
+        myIp,
+        createdAt,
       });
     } catch (e) {
       const myIp = await UtilNetwork.getIpAddress();
@@ -126,8 +126,8 @@ export class NPlace extends PuppeteerEngine {
         mainWindow,
         errorMessage: e.message,
         workType: "NPlace",
-        myIp: myIp,
-        createdAt: createdAt,
+        myIp,
+        createdAt,
       });
       console.error(e.message);
     }
