@@ -6,6 +6,7 @@ export const errorToFront = ({
   myIp,
   createdAt,
 }) => {
+  console.log("errorToFront >>>>>> 222222222");
   mainWindow.webContents.send("error-to-front-result", {
     workType,
     errorMessage,
