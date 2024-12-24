@@ -10,6 +10,7 @@ import { findTargetPlaceInTargetBlog } from "./findTargetPlaceInTargetBlog";
 import { clickNearbyAttractions } from "./clickNearbyAttractions";
 import { googleToNaver } from "../commons/naver/googleToNaver";
 import { errorToFront } from "../commons/error/errorToFront";
+import { globalBrowsers } from "../../lib/const/constVar";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace, mainWindow }): Promise<void> {
@@ -105,12 +106,22 @@ export class NPlace extends PuppeteerEngine {
         });
         this.page = page;
       }
+      errorToFront({
+        targetKeyword: this.query,
+        mainWindow,
+        errorMessage: "",
+        workType: "NShopping",
+        myIp: globalBrowsers.myIp,
+        createdAt: globalBrowsers.createdAt,
+      });
     } catch (e) {
       errorToFront({
         targetKeyword: this.query,
         mainWindow,
         errorMessage: e.message,
         workType: "NPlace",
+        myIp: globalBrowsers.myIp,
+        createdAt: globalBrowsers.createdAt,
       });
       console.error(e.message);
     }

@@ -83,6 +83,7 @@
     "TypeScript.network.router.edu.ts.executor": "Run",
     "TypeScript.network.router.eduPlayer.ts.executor": "Run",
     "TypeScript.targetKeywordSearch.ts.executor": "Run",
+    "TypeScript.util.network.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
@@ -123,7 +124,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.findTargetPlaceInTargetBlog.ts">
+  <component name="RunManager" selected="TypeScript.util.network.ts">
     <configuration name="findTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -176,26 +177,27 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="network.router.eduPlayer.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="util.network.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
+      <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/network" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/lib/util" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/network/network.router.eduPlayer.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/lib/util/util.network.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.util.network.ts" />
         <item itemvalue="TypeScript.findTargetPlaceInTargetBlog.ts" />
         <item itemvalue="TypeScript.findTargetBlog.ts" />
         <item itemvalue="TypeScript.initializeAndroid.ts" />
         <item itemvalue="TypeScript.initializeFireFox.ts" />
-        <item itemvalue="TypeScript.network.router.eduPlayer.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -247,15 +249,8 @@
       <workItem from="1734332569381" duration="65000" />
       <workItem from="1734434604970" duration="55044000" />
       <workItem from="1734658664182" duration="24228000" />
-      <workItem from="1734941796436" duration="7229000" />
-    </task>
-    <task id="LOCAL-00273" summary="NSV-11 / googleToNaver / 에러강화">
-      <option name="closed" value="true" />
-      <created>1734604341002</created>
-      <option name="number" value="00273" />
-      <option name="presentableId" value="LOCAL-00273" />
-      <option name="project" value="LOCAL" />
-      <updated>1734604341002</updated>
+      <workItem from="1734941796436" duration="8333000" />
+      <workItem from="1734996690798" duration="1433000" />
     </task>
     <task id="LOCAL-00274" summary="NSV-11 / findTargetBlog / id로 블로그 찾아 클릭하기">
       <option name="closed" value="true" />
@@ -641,7 +636,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734949580513</updated>
     </task>
-    <option name="localTasksCounter" value="322" />
+    <task id="LOCAL-00322" summary="NSV-15 / v2.12.1">
+      <option name="closed" value="true" />
+      <created>1734950025851</created>
+      <option name="number" value="00322" />
+      <option name="presentableId" value="LOCAL-00322" />
+      <option name="project" value="LOCAL" />
+      <updated>1734950025851</updated>
+    </task>
+    <option name="localTasksCounter" value="323" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -686,7 +689,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-12 / 20~30초 랜덤 초수 추가" />
     <MESSAGE value="NSV-14 / 오늘하루열지않기 로직 강화" />
     <MESSAGE value="NSV-14 / userAgent &gt; sec-ch-ua-mobile&quot;: &quot;?0 &gt; ?1" />
     <MESSAGE value="NSV-14 / 블로그에서 플레이스가 눈에 보이면 스크롤후 클릭하기" />
@@ -711,6 +713,7 @@
     <MESSAGE value="NSV-15 / console.log 삭제" />
     <MESSAGE value="NSV-15 / nowCount % common.ipChangeCount !== 0" />
     <MESSAGE value="NSV-15 / 증가되는 카운트를 설정된 카운트로 나누기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-15 / 증가되는 카운트를 설정된 카운트로 나누기" />
+    <MESSAGE value="NSV-15 / v2.12.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-15 / v2.12.1" />
   </component>
 </project>
