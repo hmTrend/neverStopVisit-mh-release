@@ -65,49 +65,49 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TypeScript.clickNearbyAttractions.tsx.executor": "Run",
-    "TypeScript.findTargetBlog.ts.executor": "Run",
-    "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
-    "TypeScript.index.ts (1).executor": "Run",
-    "TypeScript.index.ts (2).executor": "Run",
-    "TypeScript.index.ts.executor": "Run",
-    "TypeScript.initialize.ts.executor": "Run",
-    "TypeScript.initializeAndroid.ts.executor": "Run",
-    "TypeScript.initializeFireFox.ts.executor": "Run",
-    "TypeScript.mobile.userAgent.ts.executor": "Run",
-    "TypeScript.network.router.edu.ts.executor": "Run",
-    "TypeScript.network.router.eduPlayer.ts.executor": "Run",
-    "TypeScript.targetKeywordSearch.ts.executor": "Run",
-    "TypeScript.util.network.ts.executor": "Run",
-    "eslint.code.style.apply.dismiss": "true",
-    "git-widget-placeholder": "develop",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/start",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TypeScript.clickNearbyAttractions.tsx.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetBlog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetPlaceInTargetBlog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts (1).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts (2).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initializeAndroid.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initializeFireFox.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.mobile.userAgent.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.network.router.edu.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.network.router.eduPlayer.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.targetKeywordSearch.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.util.network.ts.executor&quot;: &quot;Run&quot;,
+    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/components/start&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\renderer\src\components\start" />
@@ -180,7 +180,7 @@
     <configuration name="util.network.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/lib/util" />
@@ -188,7 +188,6 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/lib/util/util.network.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -250,15 +249,10 @@
       <workItem from="1734434604970" duration="55044000" />
       <workItem from="1734658664182" duration="24228000" />
       <workItem from="1734941796436" duration="8333000" />
-      <workItem from="1734996690798" duration="7368000" />
-    </task>
-    <task id="LOCAL-00280" summary="NSV-11 / targetKeywordSearch / 에러메시지 강화">
-      <option name="closed" value="true" />
-      <created>1734606961029</created>
-      <option name="number" value="00280" />
-      <option name="presentableId" value="LOCAL-00280" />
-      <option name="project" value="LOCAL" />
-      <updated>1734606961029</updated>
+      <workItem from="1734996690798" duration="8278000" />
+      <workItem from="1735186902376" duration="63000" />
+      <workItem from="1735187009735" duration="2202000" />
+      <workItem from="1735297741007" duration="509000" />
     </task>
     <task id="LOCAL-00281" summary="NSV-11 / 쿠팡 url 에러로 인한 기존 너두프록시 다시 추가">
       <option name="closed" value="true" />
@@ -644,7 +638,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735001998606</updated>
     </task>
-    <option name="localTasksCounter" value="329" />
+    <task id="LOCAL-00329" summary="NSV-17 / v2.13.1">
+      <option name="closed" value="true" />
+      <created>1735032774948</created>
+      <option name="number" value="00329" />
+      <option name="presentableId" value="LOCAL-00329" />
+      <option name="project" value="LOCAL" />
+      <updated>1735032774948</updated>
+    </task>
+    <option name="localTasksCounter" value="330" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -689,7 +691,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-14 / v2.10.0" />
     <MESSAGE value="NSV-14 / v2.10.1 LTE" />
     <MESSAGE value="NSV-14 / v2.10.2" />
     <MESSAGE value="NSV-14 / 접힌 플레이스 대응" />
@@ -714,6 +715,7 @@
     <MESSAGE value="NSV-17 / v2.13.0" />
     <MESSAGE value="NSV-17 / 백엔드 errorToFront 적용" />
     <MESSAGE value="NSV-17 / 프론트 연결 최종완성" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-17 / 프론트 연결 최종완성" />
+    <MESSAGE value="NSV-17 / v2.13.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-17 / v2.13.1" />
   </component>
 </project>

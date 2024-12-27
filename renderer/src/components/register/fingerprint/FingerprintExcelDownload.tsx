@@ -25,7 +25,9 @@ export const FingerprintExcelDownload = () => {
         variant={"link"}
         onClick={() =>
           ExcelExportButton({
-            data: selectedExcelList.filter((v) => v.nState === "정상"),
+            data: selectedExcelList.filter(
+              (v) => v.nState === "정상" || v.nState === "쿠키",
+            ),
             selectedGroupName,
             type: "정상지문",
           })
