@@ -26,16 +26,11 @@ export const useGetExcelList = () => {
       ...data.getExcelList.data.map((v) => new Date(v.updatedAt).getTime()),
     );
 
-    console.log("latestDate 1111");
-    console.log(latestDate);
-
     const dataTransDate = data.getExcelList.data.map((item) => ({
       ...item,
       updatedAt: UtilDate.formatKoreanTime(item.updatedAt),
       isLatest: new Date(item.updatedAt).getTime() === latestDate,
     }));
-    console.log("dataTransDate 3333");
-    console.log(dataTransDate);
     return {
       data: dataTransDate,
       listTotalCount: data.getExcelList.listTotalCount,

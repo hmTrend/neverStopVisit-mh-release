@@ -256,15 +256,7 @@
       <workItem from="1735298799002" duration="845000" />
       <workItem from="1735802003441" duration="610000" />
       <workItem from="1735803913807" duration="2025000" />
-      <workItem from="1735830670764" duration="6350000" />
-    </task>
-    <task id="LOCAL-00283" summary="NSV-12 / 로컬 / 너두프록시 UI">
-      <option name="closed" value="true" />
-      <created>1734661987999</created>
-      <option name="number" value="00283" />
-      <option name="presentableId" value="LOCAL-00283" />
-      <option name="project" value="LOCAL" />
-      <updated>1734661987999</updated>
+      <workItem from="1735830670764" duration="8989000" />
     </task>
     <task id="LOCAL-00284" summary="NSV-12 / 네트워크타입 백으로 보내기 성공">
       <option name="closed" value="true" />
@@ -650,7 +642,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735870874969</updated>
     </task>
-    <option name="localTasksCounter" value="332" />
+    <task id="LOCAL-00332" summary="예쁘게 꾸미기 추가 완료">
+      <option name="closed" value="true" />
+      <created>1735872144845</created>
+      <option name="number" value="00332" />
+      <option name="presentableId" value="LOCAL-00332" />
+      <option name="project" value="LOCAL" />
+      <updated>1735872144845</updated>
+    </task>
+    <option name="localTasksCounter" value="333" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -695,7 +695,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-14 / 접힌 플레이스 대응" />
     <MESSAGE value="NSV-14 / 접힌 플레이스 대응 + waitForSelector / 열린 플레이스만 적용" />
     <MESSAGE value="NSV-14 / v2.10.3" />
     <MESSAGE value="NSV-14 / 네이버 첫페이지 진입시 이메일 이미지 나타나는지 기다리기" />
@@ -720,6 +719,7 @@
     <MESSAGE value="NSV-17 / v2.13.1" />
     <MESSAGE value="NSVIT-19 / 지문 &gt; 정상 / 쿠키 / 모두가져오기" />
     <MESSAGE value="dataTransDate" />
-    <option name="LAST_COMMIT_MESSAGE" value="dataTransDate" />
+    <MESSAGE value="예쁘게 꾸미기 추가 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="예쁘게 꾸미기 추가 완료" />
   </component>
 </project>
