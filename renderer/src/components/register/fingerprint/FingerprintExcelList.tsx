@@ -133,7 +133,17 @@ export const FingerprintExcelList = () => {
                   <Tr key={i}>
                     <Td>{i + 1}</Td>
                     <Td>{v.type}</Td>
-                    <Td>{v.updatedAt}</Td>
+                    <Td>
+                      <Text
+                        color={v.isLatest ? "red.500" : "inherit"}
+                        fontWeight={v.isLatest ? "bold" : "normal"}
+                        bg={v.isLatest ? "red.50" : "transparent"}
+                        p={v.isLatest ? 2 : 0}
+                        borderRadius={v.isLatest ? "md" : "none"}
+                      >
+                        {v.updatedAt}
+                      </Text>
+                    </Td>
                     <Td>
                       <FingerprintButton
                         _id={v._id}
