@@ -256,15 +256,7 @@
       <workItem from="1735298799002" duration="845000" />
       <workItem from="1735802003441" duration="610000" />
       <workItem from="1735803913807" duration="2025000" />
-      <workItem from="1735830670764" duration="9107000" />
-    </task>
-    <task id="LOCAL-00285" summary="NSV-12 / 로컬 / 너두프록시 완료">
-      <option name="closed" value="true" />
-      <created>1734662677296</created>
-      <option name="number" value="00285" />
-      <option name="presentableId" value="LOCAL-00285" />
-      <option name="project" value="LOCAL" />
-      <updated>1734662677296</updated>
+      <workItem from="1735830670764" duration="10981000" />
     </task>
     <task id="LOCAL-00286" summary="NSV-12 / v2.9.0">
       <option name="closed" value="true" />
@@ -650,7 +642,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735874807450</updated>
     </task>
-    <option name="localTasksCounter" value="334" />
+    <task id="LOCAL-00334" summary="storeFingerPrintRegister.selectedExcelList&#10;&#10;useEffect 제거">
+      <option name="closed" value="true" />
+      <created>1735874912405</created>
+      <option name="number" value="00334" />
+      <option name="presentableId" value="LOCAL-00334" />
+      <option name="project" value="LOCAL" />
+      <updated>1735874912405</updated>
+    </task>
+    <option name="localTasksCounter" value="335" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -695,7 +695,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-14 / v2.10.3" />
     <MESSAGE value="NSV-14 / 네이버 첫페이지 진입시 이메일 이미지 나타나는지 기다리기" />
     <MESSAGE value="NSV-14 / networkSpeed / LTE | 3G" />
     <MESSAGE value="NSV-14 / v2.11.0" />
@@ -720,6 +719,7 @@
     <MESSAGE value="dataTransDate" />
     <MESSAGE value="예쁘게 꾸미기 추가 완료" />
     <MESSAGE value="storeFingerPrintRegister.selectedExcelList&#10;&#10;추가완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="storeFingerPrintRegister.selectedExcelList&#10;&#10;추가완료" />
+    <MESSAGE value="storeFingerPrintRegister.selectedExcelList&#10;&#10;useEffect 제거" />
+    <option name="LAST_COMMIT_MESSAGE" value="storeFingerPrintRegister.selectedExcelList&#10;&#10;useEffect 제거" />
   </component>
 </project>

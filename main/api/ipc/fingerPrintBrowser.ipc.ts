@@ -24,12 +24,21 @@ export const fingerPrintBrowserIpc = async () => {
 
       // 새로운 engine 인스턴스 생성
       const newEngine = new PuppeteerEngine();
-      await newEngine.initializeForPC({
-        url: type === "coupang" ? "https://coupang.com/" : "https://naver.com",
-        cookie: parsedCookie ?? "",
-        type,
-        fingerPrintNetworkType,
-      });
+      if (type === "naverM") {
+        await newEngine.initialize({
+          url: "https://m.naver.com/",
+          cookie: parsedCookie ?? "",
+          type,
+        });
+      } else {
+        await newEngine.initializeForPC({
+          url:
+            type === "coupang" ? "https://coupang.com/" : "https://naver.com",
+          cookie: parsedCookie ?? "",
+          type,
+          fingerPrintNetworkType,
+        });
+      }
 
       newEngine.page.on("dialog", async (dialog) => {
         // 대화상자 종류 확인
