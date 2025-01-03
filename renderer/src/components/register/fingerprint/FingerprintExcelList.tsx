@@ -51,11 +51,6 @@ export const FingerprintExcelList = () => {
     });
   }, [selectedGroupName]);
 
-  useEffect(() => {
-    console.log("selectedExcelList 3333333");
-    console.log(selectedExcelList);
-  }, [selectedExcelList]);
-
   const fingerprintExcelList = async ({ _id }) => {
     try {
       const result = await window.ipc.invoke("finger-print-browser-open", {
