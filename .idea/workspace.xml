@@ -256,15 +256,7 @@
       <workItem from="1735298799002" duration="845000" />
       <workItem from="1735802003441" duration="610000" />
       <workItem from="1735803913807" duration="2025000" />
-      <workItem from="1735830670764" duration="10981000" />
-    </task>
-    <task id="LOCAL-00286" summary="NSV-12 / v2.9.0">
-      <option name="closed" value="true" />
-      <created>1734662705124</created>
-      <option name="number" value="00286" />
-      <option name="presentableId" value="LOCAL-00286" />
-      <option name="project" value="LOCAL" />
-      <updated>1734662705124</updated>
+      <workItem from="1735830670764" duration="11326000" />
     </task>
     <task id="LOCAL-00287" summary="NSV-12 / expandProductDetails / 상세상품보기 클릭하기 없을시 5초 대기하기">
       <option name="closed" value="true" />
@@ -650,7 +642,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735874912405</updated>
     </task>
-    <option name="localTasksCounter" value="335" />
+    <task id="LOCAL-00335" summary="naverM 모바일 오픈 셋팅완료">
+      <option name="closed" value="true" />
+      <created>1735878179247</created>
+      <option name="number" value="00335" />
+      <option name="presentableId" value="LOCAL-00335" />
+      <option name="project" value="LOCAL" />
+      <updated>1735878179247</updated>
+    </task>
+    <option name="localTasksCounter" value="336" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -695,7 +695,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-14 / 네이버 첫페이지 진입시 이메일 이미지 나타나는지 기다리기" />
     <MESSAGE value="NSV-14 / networkSpeed / LTE | 3G" />
     <MESSAGE value="NSV-14 / v2.11.0" />
     <MESSAGE value="NSV-14 / initialize / 대기시간 30 &gt; 90" />
@@ -720,6 +719,7 @@
     <MESSAGE value="예쁘게 꾸미기 추가 완료" />
     <MESSAGE value="storeFingerPrintRegister.selectedExcelList&#10;&#10;추가완료" />
     <MESSAGE value="storeFingerPrintRegister.selectedExcelList&#10;&#10;useEffect 제거" />
-    <option name="LAST_COMMIT_MESSAGE" value="storeFingerPrintRegister.selectedExcelList&#10;&#10;useEffect 제거" />
+    <MESSAGE value="naverM 모바일 오픈 셋팅완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="naverM 모바일 오픈 셋팅완료" />
   </component>
 </project>
