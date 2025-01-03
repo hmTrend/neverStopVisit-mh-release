@@ -252,15 +252,11 @@
       <workItem from="1734996690798" duration="8278000" />
       <workItem from="1735186902376" duration="63000" />
       <workItem from="1735187009735" duration="2202000" />
-      <workItem from="1735297741007" duration="509000" />
-    </task>
-    <task id="LOCAL-00281" summary="NSV-11 / 쿠팡 url 에러로 인한 기존 너두프록시 다시 추가">
-      <option name="closed" value="true" />
-      <created>1734660554675</created>
-      <option name="number" value="00281" />
-      <option name="presentableId" value="LOCAL-00281" />
-      <option name="project" value="LOCAL" />
-      <updated>1734660554676</updated>
+      <workItem from="1735297741007" duration="1042000" />
+      <workItem from="1735298799002" duration="845000" />
+      <workItem from="1735802003441" duration="610000" />
+      <workItem from="1735803913807" duration="2025000" />
+      <workItem from="1735830670764" duration="5083000" />
     </task>
     <task id="LOCAL-00282" summary="NSV-12 / 로컬 / 너두프록시 UI">
       <option name="closed" value="true" />
@@ -646,7 +642,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735032774948</updated>
     </task>
-    <option name="localTasksCounter" value="330" />
+    <task id="LOCAL-00330" summary="NSVIT-19 / 지문 &gt; 정상 / 쿠키 / 모두가져오기">
+      <option name="closed" value="true" />
+      <created>1735298417351</created>
+      <option name="number" value="00330" />
+      <option name="presentableId" value="LOCAL-00330" />
+      <option name="project" value="LOCAL" />
+      <updated>1735298417352</updated>
+    </task>
+    <option name="localTasksCounter" value="331" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -691,7 +695,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-14 / v2.10.1 LTE" />
     <MESSAGE value="NSV-14 / v2.10.2" />
     <MESSAGE value="NSV-14 / 접힌 플레이스 대응" />
     <MESSAGE value="NSV-14 / 접힌 플레이스 대응 + waitForSelector / 열린 플레이스만 적용" />
@@ -716,6 +719,7 @@
     <MESSAGE value="NSV-17 / 백엔드 errorToFront 적용" />
     <MESSAGE value="NSV-17 / 프론트 연결 최종완성" />
     <MESSAGE value="NSV-17 / v2.13.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-17 / v2.13.1" />
+    <MESSAGE value="NSVIT-19 / 지문 &gt; 정상 / 쿠키 / 모두가져오기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-19 / 지문 &gt; 정상 / 쿠키 / 모두가져오기" />
   </component>
 </project>
