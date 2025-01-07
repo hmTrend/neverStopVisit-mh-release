@@ -5,8 +5,8 @@ import { PuppeteerEngine } from "../commons/PuppeteerEngine";
 export const searchNVMID = async ({
   page = undefined,
   nvMid = "",
-  isTest = false,
-  plusStoreId = "6600986339",
+  isTest = true,
+  plusStoreId = "5613965202",
 }: {
   page?: Page;
   nvMid?: string;
@@ -22,6 +22,10 @@ export const searchNVMID = async ({
     page = test.page;
   }
   try {
+    await wait(1000);
+    const button = page.locator('button:has(span.blind:text-is("2단"))');
+    await button.waitFor({ state: "visible" });
+    await button.click();
     for (let i = 0; i < 4; i++) {
       for (let j = 0; j < 5; j++) {
         const { isFindNvMid } = await findProducts({ page, plusStoreId });
@@ -45,6 +49,7 @@ export const searchNVMID = async ({
 
 async function findProducts({ page, plusStoreId }) {
   try {
+    await wait(1000);
     const elements = await page
       .locator(
         `a[aria-labelledby="basic_product_card_information_${plusStoreId}"]`,
@@ -54,9 +59,6 @@ async function findProducts({ page, plusStoreId }) {
       })
       .count();
     if (elements > 0) {
-      console.log(11);
-      await page.locator('button:has(span.blind:text-is("2단"))').click();
-      await wait(1500);
       const productLocator = page.locator(
         `a[aria-labelledby="basic_product_card_information_${plusStoreId}"]`,
       );
@@ -77,8 +79,11 @@ async function findProducts({ page, plusStoreId }) {
 
 async function nextNumberClick({ page }) {
   try {
-    const nextButton = page.locator("button.paginator_btn_next__3fcZx");
-    await Promise.all([nextButton.click(), page.waitForLoadState("load")]);
+    await Promise.all([
+      page.keyboard.press("End"),
+      page.waitForLoadState("load"),
+    ]);
+    await wait(1000);
     return { page };
   } catch (e) {
     console.error(e.message);
@@ -86,4 +91,4 @@ async function nextNumberClick({ page }) {
   }
 }
 
-// searchNVMID();
+searchNVMID();
