@@ -7,6 +7,7 @@ import { UtilNetwork } from "../../lib/util/util.network";
 import { UtilDate } from "../../lib/util/util.date";
 import { logicTypeNAVER } from "./logicType-NAVER";
 import { logicTypeGOOGLE } from "./logicType-GOOGLE";
+import { logicTypePLUSSTORE } from "./logicType-PLUS-STORE";
 
 export class NShopping extends PuppeteerEngine {
   async start({ nShopping, mainWindow }): Promise<void> {
@@ -72,6 +73,19 @@ export class NShopping extends PuppeteerEngine {
           cookie: this.targetCookie,
         });
         await logicTypeGOOGLE({
+          getRandomTime,
+          page: this.page,
+          targetCookieId: this.targetCookieId,
+          nvMid: this.nvMid,
+          query: this.query,
+        });
+      }
+      if (nShopping.logicType === "+STORE") {
+        await super.initialize({
+          url: "https://www.google.com/",
+          cookie: this.targetCookie,
+        });
+        await logicTypePLUSSTORE({
           getRandomTime,
           page: this.page,
           targetCookieId: this.targetCookieId,

@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="쇼핑 &gt;">
-      <change afterPath="$PROJECT_DIR$/main/services/nShopping/logicType-GOOGLE.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/services/nShopping/logicType-NAVER.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="쇼핑 로직 함수 나누기 성공 / 로직1, 로직2">
+      <change afterPath="$PROJECT_DIR$/main/services/commons/naver/googleToNaverShopping.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/services/nShopping/logicType-PLUS-STORE.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/nPlace.register.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/nPlace.register.valtio.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/nShopping.register.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/nShopping.register.valtio.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +76,7 @@
     "TypeScript.clickNearbyAttractions.tsx.executor": "Run",
     "TypeScript.findTargetBlog.ts.executor": "Run",
     "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
+    "TypeScript.googleToNaverShopping.ts.executor": "Run",
     "TypeScript.index.ts (1).executor": "Run",
     "TypeScript.index.ts (2).executor": "Run",
     "TypeScript.index.ts.executor": "Run",
@@ -93,7 +91,7 @@
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/nShopping",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/commons/naver",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -116,11 +114,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/services/commons/naver" />
       <recent name="$PROJECT_DIR$/main/services/nShopping" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\renderer\src\components\start" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\lib\proxy" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\services\commons\network" />
-      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\lib\network" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/services/commons/naver" />
@@ -130,7 +128,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.util.network.ts">
+  <component name="RunManager" selected="TypeScript.googleToNaverShopping.ts">
     <configuration name="findTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -157,6 +155,20 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="googleToNaverShopping.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/naver" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/naver/googleToNaverShopping.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
     <configuration name="initializeAndroid.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -167,19 +179,6 @@
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeAndroid.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="initializeFireFox.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeFireFox.ts" />
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
@@ -198,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.googleToNaverShopping.ts" />
         <item itemvalue="TypeScript.util.network.ts" />
         <item itemvalue="TypeScript.findTargetPlaceInTargetBlog.ts" />
         <item itemvalue="TypeScript.findTargetBlog.ts" />
         <item itemvalue="TypeScript.initializeAndroid.ts" />
-        <item itemvalue="TypeScript.initializeFireFox.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -266,14 +265,6 @@
       <workItem from="1735884089462" duration="1000" />
       <workItem from="1736122953927" duration="4069000" />
       <workItem from="1736208952962" duration="66000" />
-    </task>
-    <task id="LOCAL-00289" summary="NSV-12 / 하루 동안 보지 않기 - 하단 레이어창">
-      <option name="closed" value="true" />
-      <created>1734678991609</created>
-      <option name="number" value="00289" />
-      <option name="presentableId" value="LOCAL-00289" />
-      <option name="project" value="LOCAL" />
-      <updated>1734678991609</updated>
     </task>
     <task id="LOCAL-00290" summary="NSV-12 / 20~30초 랜덤 초수 추가">
       <option name="closed" value="true" />
@@ -659,7 +650,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735878427106</updated>
     </task>
-    <option name="localTasksCounter" value="338" />
+    <task id="LOCAL-00338" summary="쇼핑 로직 함수 나누기 성공 / 로직1, 로직2">
+      <option name="closed" value="true" />
+      <created>1736241935361</created>
+      <option name="number" value="00338" />
+      <option name="presentableId" value="LOCAL-00338" />
+      <option name="project" value="LOCAL" />
+      <updated>1736241935361</updated>
+    </task>
+    <option name="localTasksCounter" value="339" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -704,7 +703,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-14 / v2.11.0" />
     <MESSAGE value="NSV-14 / initialize / 대기시간 30 &gt; 90" />
     <MESSAGE value="NSV-14 / findTargetBlog / domcontentloaded 로 변경 load 너무느림" />
     <MESSAGE value="NSV-14 / yarn build" />
@@ -729,6 +727,7 @@
     <MESSAGE value="storeFingerPrintRegister.selectedExcelList&#10;&#10;useEffect 제거" />
     <MESSAGE value="naverM 모바일 오픈 셋팅완료" />
     <MESSAGE value="v2.14.0 네스비 naverM 지문 연동" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2.14.0 네스비 naverM 지문 연동" />
+    <MESSAGE value="쇼핑 로직 함수 나누기 성공 / 로직1, 로직2" />
+    <option name="LAST_COMMIT_MESSAGE" value="쇼핑 로직 함수 나누기 성공 / 로직1, 로직2" />
   </component>
 </project>
