@@ -1,13 +1,25 @@
 import { Page } from "playwright";
 import wait from "waait";
+import { PuppeteerEngine } from "../commons/PuppeteerEngine";
 
 export const searchNVMID = async ({
-  page,
-  nvMid,
+  page = undefined,
+  nvMid = "",
+  isTest = true,
 }: {
-  page: Page;
-  nvMid: string;
-}) => {
+  page?: Page;
+  nvMid?: string;
+  isTest?: boolean;
+  products?: "6600986339";
+} = {}) => {
+  if (isTest) {
+    const test = new PuppeteerEngine();
+    await test.initialize({
+      url: "https://search.shopping.naver.com/ns/search?query=%EC%88%98%EB%B6%84%ED%81%AC%EB%A6%BC",
+      cookie: "",
+    });
+    page = test.page;
+  }
   try {
     for (let i = 0; i < 4; i++) {
       for (let j = 0; j < 5; j++) {

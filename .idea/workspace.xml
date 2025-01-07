@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="googleToNaverShopping">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="logicTypePLUSSTORE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/googleToNaverShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/googleToNaverShopping.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShopping/logicType-PLUS-STORE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/logicType-PLUS-STORE.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/searchNVMID.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/searchNVMID.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,14 +267,6 @@
       <workItem from="1735884089462" duration="1000" />
       <workItem from="1736122953927" duration="4069000" />
       <workItem from="1736208952962" duration="66000" />
-    </task>
-    <task id="LOCAL-00291" summary="NSV-12 / 20~30초 랜덤 초수 추가">
-      <option name="closed" value="true" />
-      <created>1734679223757</created>
-      <option name="number" value="00291" />
-      <option name="presentableId" value="LOCAL-00291" />
-      <option name="project" value="LOCAL" />
-      <updated>1734679223757</updated>
     </task>
     <task id="LOCAL-00292" summary="NSV-14 / 오늘하루열지않기 로직 강화">
       <option name="closed" value="true" />
@@ -660,7 +652,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736243533872</updated>
     </task>
-    <option name="localTasksCounter" value="340" />
+    <task id="LOCAL-00340" summary="logicTypePLUSSTORE">
+      <option name="closed" value="true" />
+      <created>1736246634266</created>
+      <option name="number" value="00340" />
+      <option name="presentableId" value="LOCAL-00340" />
+      <option name="project" value="LOCAL" />
+      <updated>1736246634266</updated>
+    </task>
+    <option name="localTasksCounter" value="341" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -705,7 +705,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-14 / findTargetBlog / domcontentloaded 로 변경 load 너무느림" />
     <MESSAGE value="NSV-14 / yarn build" />
     <MESSAGE value="NSV-14 / 쇼핑 &gt; goToShopping &gt; load &gt;&gt; documentloaded로 변경 너무 오래걸림" />
     <MESSAGE value="NSV-14 / FetchFingerPrintTargetExcelOne &gt; 에러일경우 error &gt; errors 로 변경" />
@@ -730,6 +729,7 @@
     <MESSAGE value="v2.14.0 네스비 naverM 지문 연동" />
     <MESSAGE value="쇼핑 로직 함수 나누기 성공 / 로직1, 로직2" />
     <MESSAGE value="googleToNaverShopping" />
-    <option name="LAST_COMMIT_MESSAGE" value="googleToNaverShopping" />
+    <MESSAGE value="logicTypePLUSSTORE" />
+    <option name="LAST_COMMIT_MESSAGE" value="logicTypePLUSSTORE" />
   </component>
 </project>
