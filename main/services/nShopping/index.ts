@@ -85,6 +85,7 @@ export class NShopping extends PuppeteerEngine {
           url: "https://www.google.com/",
           cookie: this.targetCookie,
         });
+        console.log("로직3");
         await logicTypePLUSSTORE({
           getRandomTime,
           page: this.page,

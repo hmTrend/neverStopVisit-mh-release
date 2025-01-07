@@ -17,14 +17,14 @@ export async function logicTypePLUSSTORE({
   targetCookieId,
   nvMid,
   query,
-  products,
+  plusStoreId,
 }: {
   getRandomTime?: any;
   page?: any;
   targetCookieId?: any;
   nvMid?: any;
   query?: any;
-  products?: any;
+  plusStoreId?: any;
 }) {
   let page = page1;
   {
@@ -43,7 +43,7 @@ export async function logicTypePLUSSTORE({
     const { page: page0, isFindNvMid } = await searchNVMID({
       page,
       nvMid,
-      products,
+      plusStoreId,
     });
     page = page0;
     if (isFindNvMid) {

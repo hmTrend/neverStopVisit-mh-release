@@ -5,7 +5,7 @@ import { PuppeteerEngine } from "../commons/PuppeteerEngine";
 export const goToKeyword = async ({
   page = undefined,
   query = "수분크림",
-  isTest = true,
+  isTest = false,
 }: {
   page?: Page;
   query?: string;
@@ -90,4 +90,4 @@ async function avoidViewingForADayLayer({ page }) {
   }
 }
 
-goToKeyword();
+// goToKeyword();

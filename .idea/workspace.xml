@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="logicTypePLUSSTORE">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="searchNVMID">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShopping/logicType-PLUS-STORE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/logicType-PLUS-STORE.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShopping/searchNVMID.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/searchNVMID.ts" afterDir="false" />
     </list>
@@ -87,6 +88,7 @@
     "TypeScript.mobile.userAgent.ts.executor": "Run",
     "TypeScript.network.router.edu.ts.executor": "Run",
     "TypeScript.network.router.eduPlayer.ts.executor": "Run",
+    "TypeScript.searchNVMID.ts.executor": "Run",
     "TypeScript.targetKeywordSearch.ts.executor": "Run",
     "TypeScript.util.network.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
@@ -129,20 +131,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.goToKeyword.ts">
-    <configuration name="findTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TypeScript.searchNVMID.ts">
     <configuration name="findTargetPlaceInTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -184,6 +173,20 @@
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
+    <configuration name="searchNVMID.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShopping" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nShopping/searchNVMID.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
     <configuration name="util.network.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -199,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.searchNVMID.ts" />
         <item itemvalue="TypeScript.goToKeyword.ts" />
         <item itemvalue="TypeScript.googleToNaverShopping.ts" />
         <item itemvalue="TypeScript.util.network.ts" />
         <item itemvalue="TypeScript.findTargetPlaceInTargetBlog.ts" />
-        <item itemvalue="TypeScript.findTargetBlog.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -267,14 +270,6 @@
       <workItem from="1735884089462" duration="1000" />
       <workItem from="1736122953927" duration="4069000" />
       <workItem from="1736208952962" duration="66000" />
-    </task>
-    <task id="LOCAL-00292" summary="NSV-14 / 오늘하루열지않기 로직 강화">
-      <option name="closed" value="true" />
-      <created>1734679892874</created>
-      <option name="number" value="00292" />
-      <option name="presentableId" value="LOCAL-00292" />
-      <option name="project" value="LOCAL" />
-      <updated>1734679892874</updated>
     </task>
     <task id="LOCAL-00293" summary="NSV-14 / 오늘하루열지않기 로직 강화">
       <option name="closed" value="true" />
@@ -660,7 +655,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736246634266</updated>
     </task>
-    <option name="localTasksCounter" value="341" />
+    <task id="LOCAL-00341" summary="searchNVMID">
+      <option name="closed" value="true" />
+      <created>1736256400364</created>
+      <option name="number" value="00341" />
+      <option name="presentableId" value="LOCAL-00341" />
+      <option name="project" value="LOCAL" />
+      <updated>1736256400364</updated>
+    </task>
+    <option name="localTasksCounter" value="342" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -705,7 +708,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-14 / yarn build" />
     <MESSAGE value="NSV-14 / 쇼핑 &gt; goToShopping &gt; load &gt;&gt; documentloaded로 변경 너무 오래걸림" />
     <MESSAGE value="NSV-14 / FetchFingerPrintTargetExcelOne &gt; 에러일경우 error &gt; errors 로 변경" />
     <MESSAGE value="NSV-14 / v2.11.2" />
@@ -730,6 +732,7 @@
     <MESSAGE value="쇼핑 로직 함수 나누기 성공 / 로직1, 로직2" />
     <MESSAGE value="googleToNaverShopping" />
     <MESSAGE value="logicTypePLUSSTORE" />
-    <option name="LAST_COMMIT_MESSAGE" value="logicTypePLUSSTORE" />
+    <MESSAGE value="searchNVMID" />
+    <option name="LAST_COMMIT_MESSAGE" value="searchNVMID" />
   </component>
 </project>

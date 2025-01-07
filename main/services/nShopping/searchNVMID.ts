@@ -5,12 +5,13 @@ import { PuppeteerEngine } from "../commons/PuppeteerEngine";
 export const searchNVMID = async ({
   page = undefined,
   nvMid = "",
-  isTest = true,
+  isTest = false,
+  plusStoreId = "6600986339",
 }: {
   page?: Page;
   nvMid?: string;
   isTest?: boolean;
-  products?: "6600986339";
+  plusStoreId?: string;
 } = {}) => {
   if (isTest) {
     const test = new PuppeteerEngine();
@@ -23,7 +24,7 @@ export const searchNVMID = async ({
   try {
     for (let i = 0; i < 4; i++) {
       for (let j = 0; j < 5; j++) {
-        const { isFindNvMid } = await findNvMid({ page, nvMid });
+        const { isFindNvMid } = await findProducts({ page, plusStoreId });
         if (isFindNvMid) {
           return { page, isFindNvMid: true };
         }
@@ -37,27 +38,30 @@ export const searchNVMID = async ({
     }
   } catch (e) {
     console.error(e.message);
-    throw Error("searchNVMID");
+    throw Error("search-products");
   }
   return { page, isFindNvMid: false };
 };
 
-async function findNvMid({ page, nvMid }) {
+async function findProducts({ page, plusStoreId }) {
   try {
     const elements = await page
-      .locator(`[data-shp-contents-id="${nvMid}"]`)
+      .locator(
+        `a[aria-labelledby="basic_product_card_information_${plusStoreId}"]`,
+      )
       .filter({
         hasNot: page.locator('span.blind:text-is("광고")'),
       })
       .count();
-
     if (elements > 0) {
-      const productLocator = page
-        .locator(`[data-shp-contents-id="${nvMid}"]`)
-        .filter({
-          hasNot: page.locator('span.blind:text-is("광고")'),
-        })
-        .first();
+      console.log(11);
+      await page.locator('button:has(span.blind:text-is("2단"))').click();
+      await wait(1500);
+      const productLocator = page.locator(
+        `a[aria-labelledby="basic_product_card_information_${plusStoreId}"]`,
+      );
+      await productLocator.scrollIntoViewIfNeeded();
+      await wait(1500);
       await Promise.all([
         productLocator.click(),
         page.waitForLoadState("load"),
@@ -81,3 +85,5 @@ async function nextNumberClick({ page }) {
     throw Error("nextNumberClick");
   }
 }
+
+// searchNVMID();
