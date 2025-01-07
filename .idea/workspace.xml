@@ -256,23 +256,10 @@
       <workItem from="1735298799002" duration="845000" />
       <workItem from="1735802003441" duration="610000" />
       <workItem from="1735803913807" duration="2025000" />
-      <workItem from="1735830670764" duration="11326000" />
-    </task>
-    <task id="LOCAL-00287" summary="NSV-12 / expandProductDetails / 상세상품보기 클릭하기 없을시 5초 대기하기">
-      <option name="closed" value="true" />
-      <created>1734678811497</created>
-      <option name="number" value="00287" />
-      <option name="presentableId" value="LOCAL-00287" />
-      <option name="project" value="LOCAL" />
-      <updated>1734678811497</updated>
-    </task>
-    <task id="LOCAL-00288" summary="NSV-12 / expandProductDetails / 상세상품보기 클릭하기 없을시 5초 대기하기">
-      <option name="closed" value="true" />
-      <created>1734678817630</created>
-      <option name="number" value="00288" />
-      <option name="presentableId" value="LOCAL-00288" />
-      <option name="project" value="LOCAL" />
-      <updated>1734678817630</updated>
+      <workItem from="1735830670764" duration="11637000" />
+      <workItem from="1735884089462" duration="1000" />
+      <workItem from="1736122953927" duration="4069000" />
+      <workItem from="1736208952962" duration="66000" />
     </task>
     <task id="LOCAL-00289" summary="NSV-12 / 하루 동안 보지 않기 - 하단 레이어창">
       <option name="closed" value="true" />
@@ -650,7 +637,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735878179247</updated>
     </task>
-    <option name="localTasksCounter" value="336" />
+    <task id="LOCAL-00336" summary="v2.14.0 네스비 naverM 지문 연동">
+      <option name="closed" value="true" />
+      <created>1735878421571</created>
+      <option name="number" value="00336" />
+      <option name="presentableId" value="LOCAL-00336" />
+      <option name="project" value="LOCAL" />
+      <updated>1735878421571</updated>
+    </task>
+    <task id="LOCAL-00337" summary="v2.14.0 네스비 naverM 지문 연동">
+      <option name="closed" value="true" />
+      <created>1735878427106</created>
+      <option name="number" value="00337" />
+      <option name="presentableId" value="LOCAL-00337" />
+      <option name="project" value="LOCAL" />
+      <updated>1735878427106</updated>
+    </task>
+    <option name="localTasksCounter" value="338" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -695,7 +698,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-14 / networkSpeed / LTE | 3G" />
     <MESSAGE value="NSV-14 / v2.11.0" />
     <MESSAGE value="NSV-14 / initialize / 대기시간 30 &gt; 90" />
     <MESSAGE value="NSV-14 / findTargetBlog / domcontentloaded 로 변경 load 너무느림" />
@@ -720,6 +722,7 @@
     <MESSAGE value="storeFingerPrintRegister.selectedExcelList&#10;&#10;추가완료" />
     <MESSAGE value="storeFingerPrintRegister.selectedExcelList&#10;&#10;useEffect 제거" />
     <MESSAGE value="naverM 모바일 오픈 셋팅완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="naverM 모바일 오픈 셋팅완료" />
+    <MESSAGE value="v2.14.0 네스비 naverM 지문 연동" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.14.0 네스비 naverM 지문 연동" />
   </component>
 </project>

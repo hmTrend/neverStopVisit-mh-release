@@ -2,11 +2,22 @@ import { Button, Flex } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
 import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
 import * as XLSX from "xlsx";
+import { useGetExcelList } from "@/hook/fingerPrint/useGetExcelList";
 
 export const FingerprintExcelDownload = () => {
-  const { selectedExcelList, selectedGroupName } = useSnapshot(
+  const { selectedExcelList, selectedGroupName, selectedGroupId } = useSnapshot(
     storeFingerPrintRegister,
   );
+  const { getExcelList } = useGetExcelList();
+
+  const GetExcelList = async ({ dataListCount }) => {
+    const { data, listTotalCount } = await getExcelList({
+      groupFid: selectedGroupId,
+      dataListCount,
+    });
+    return { data, listTotalCount };
+  };
+
   return (
     <Flex gap={9}>
       <Button
