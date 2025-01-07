@@ -1,15 +1,27 @@
 import { Page } from "playwright";
 import wait from "waait";
+import { PuppeteerEngine } from "../commons/PuppeteerEngine";
 
 export const goToKeyword = async ({
-  page,
-  query,
+  page = undefined,
+  query = "수분크림",
+  isTest = false,
 }: {
-  page: Page;
-  query: string;
-}) => {
+  page?: Page;
+  query?: string;
+  isTest?: boolean;
+} = {}) => {
   for (let i = 0; i < 3; i++) {
     try {
+      if (isTest) {
+        const test = new PuppeteerEngine();
+        await test.initialize({
+          url: "https://shopping.naver.com/ns/home",
+          cookie: "",
+        });
+        page = test.page;
+      }
+
       // 팝업창 대응
       await wait(1000);
       await clickSwipeCoachMark({ page });
@@ -77,3 +89,5 @@ async function avoidViewingForADayLayer({ page }) {
     return false;
   }
 }
+
+// goToKeyword();

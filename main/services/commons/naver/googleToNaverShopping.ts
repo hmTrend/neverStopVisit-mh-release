@@ -83,3 +83,5 @@ async function inputTypeCheck({ page }) {
     }
   }
 }
+
+// googleToNaverShopping();

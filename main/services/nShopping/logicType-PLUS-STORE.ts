@@ -30,12 +30,7 @@ export async function logicTypePLUSSTORE({
     });
     page = page0;
   }
-  {
-    const { page: page0 } = await plusStoreToComparePricing({
-      page,
-    });
-    page = page0;
-  }
+  // 여기서 부터 바로 플러스 스토어 검색모드로 가야됨
   {
     const { page: page0, isFindNvMid } = await searchNVMID({
       page,
