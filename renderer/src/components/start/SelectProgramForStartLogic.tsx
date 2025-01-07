@@ -57,13 +57,13 @@ export const SelectProgramForStartLogic = () => {
         groupList={nShoppingGroupList}
         handleSelectChange={handleSelectChangeNShopping}
         selectProgram={"nShopping"}
-        logicType={nPlaceLogicType}
+        logicType={nShoppingLogicType}
       />
       <SelectProgramForStart
         groupList={nPlaceGroupList}
         handleSelectChange={handleSelectChangeNPlace}
         selectProgram={"nPlace"}
-        logicType={nShoppingLogicType}
+        logicType={nPlaceLogicType}
       />
     </Flex>
   );

@@ -1,21 +1,12 @@
 import { PuppeteerEngine } from "../commons/PuppeteerEngine";
-import { goToShopping } from "./goToShopping";
 import wait from "waait";
-import { goToKeyword } from "./goToKeyword";
-import { loggedInCheck } from "../commons/naver/loggedInCheck";
 import { GetNShoppingExcelAlignFlatTargetOne } from "../../lib/apollo/n-shopping-apollo";
 import { GetFingerPrintTargetExcelOne } from "../../lib/apollo/finger-print.apollo";
-import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
-import { plusStoreToComparePricing } from "./plusStoreToComparePricing";
-import { searchNVMID } from "./searchNVMID";
-import { expandProductDetails } from "./expandProductDetails";
-import { makeAPurchase } from "./makeAPurchase";
-import { isPopup } from "./isPopup";
-import { googleToNaver } from "../commons/naver/googleToNaver";
 import { errorToFront } from "../commons/error/errorToFront";
-import { globalBrowsers } from "../../lib/const/constVar";
 import { UtilNetwork } from "../../lib/util/util.network";
 import { UtilDate } from "../../lib/util/util.date";
+import { logicTypeNAVER } from "./logicType-NAVER";
+import { logicTypeGOOGLE } from "./logicType-GOOGLE";
 
 export class NShopping extends PuppeteerEngine {
   async start({ nShopping, mainWindow }): Promise<void> {
@@ -62,70 +53,31 @@ export class NShopping extends PuppeteerEngine {
           }
         }
       }
-      await super.initialize({
-        url:
-          nShopping.logicType === "NAVER"
-            ? "https://www.naver.com/"
-            : "https://www.google.com/",
-        cookie: this.targetCookie,
-      });
-      {
-        if (nShopping.logicType === "GOOGLE") {
-          const { page } = await googleToNaver({ page: this.page });
-          this.page = page;
-        }
-      }
-      {
-        const { page } = await isPopup({
-          page: this.page,
+      if (nShopping.logicType === "NAVER") {
+        await super.initialize({
+          url: "https://www.naver.com/",
+          cookie: this.targetCookie,
         });
-        this.page = page;
-      }
-      await loggedInCheck({ page: this.page, _id: this.targetCookieId });
-      {
-        const { page } = await goToShopping({
+        await logicTypeNAVER({
+          getRandomTime,
           page: this.page,
-        });
-        this.page = page;
-      }
-
-      {
-        const { page } = await goToKeyword({
-          page: this.page,
+          targetCookieId: this.targetCookieId,
+          nvMid: this.nvMid,
           query: this.query,
         });
-        this.page = page;
       }
-      {
-        const { page } = await plusStoreToComparePricing({
-          page: this.page,
+      if (nShopping.logicType === "GOOGLE") {
+        await super.initialize({
+          url: "https://www.google.com/",
+          cookie: this.targetCookie,
         });
-        this.page = page;
-      }
-      {
-        const { page, isFindNvMid } = await searchNVMID({
+        await logicTypeGOOGLE({
+          getRandomTime,
           page: this.page,
+          targetCookieId: this.targetCookieId,
           nvMid: this.nvMid,
+          query: this.query,
         });
-        this.page = page;
-        if (isFindNvMid) {
-          const { page } = await expandProductDetails({ page: this.page });
-          this.page = page;
-          const waitTime = getRandomTime(); // 20~30초
-          await wait(waitTime * 1000);
-          {
-            const { page } = await makeAPurchase({ page: this.page });
-            this.page = page;
-          }
-        }
-      }
-      {
-        const { page } = await cookieNstateSave({
-          page: this.page,
-          _id: this.targetCookieId,
-          nState: "정상",
-        });
-        this.page = page;
       }
       const myIp = await UtilNetwork.getIpAddress();
       const createdAt = UtilDate.getCurrentDate();
