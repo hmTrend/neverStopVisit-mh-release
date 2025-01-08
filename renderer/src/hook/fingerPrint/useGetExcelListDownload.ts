@@ -1,0 +1,40 @@
+import { useLazyQuery } from "@apollo/client";
+import { useToast } from "@chakra-ui/react";
+import { gqlGetExcelListDownload } from "../../lib/graphql/finger-print.apollo";
+import { UtilDate } from "../../util/util.date";
+
+export const useGetExcelListDownload = () => {
+  const [GetExcelList] = useLazyQuery(gqlGetExcelListDownload);
+  const toast = useToast();
+
+  const getExcelList = async ({ groupFid, dataListCount }) => {
+    const { data, error } = await GetExcelList({
+      variables: { input: { groupFid, dataListCount } },
+      fetchPolicy: "no-cache",
+    });
+    if (error) {
+      toast({
+        title: "그룹엑셀리스트 가져오기 실패",
+        isClosable: true,
+        duration: 3000,
+        status: "error",
+      });
+      throw Error("ERR > getExcelList");
+    }
+
+    const latestDate = Math.max(
+      ...data.getExcelList.data.map((v) => new Date(v.updatedAt).getTime()),
+    );
+
+    const dataTransDate = data.getExcelList.data.map((item) => ({
+      ...item,
+      updatedAt: UtilDate.formatKoreanTime(item.updatedAt),
+      isLatest: new Date(item.updatedAt).getTime() === latestDate,
+    }));
+    return {
+      data: dataTransDate,
+      listTotalCount: data.getExcelList.listTotalCount,
+    };
+  };
+  return { getExcelList };
+};
