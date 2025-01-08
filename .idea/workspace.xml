@@ -268,14 +268,6 @@
       <workItem from="1736122953927" duration="4069000" />
       <workItem from="1736208952962" duration="66000" />
     </task>
-    <task id="LOCAL-00295" summary="NSV-14 / userAgent &gt; sec-ch-ua-mobile&quot;: &quot;?0 &gt; ?1">
-      <option name="closed" value="true" />
-      <created>1734681630817</created>
-      <option name="number" value="00295" />
-      <option name="presentableId" value="LOCAL-00295" />
-      <option name="project" value="LOCAL" />
-      <updated>1734681630817</updated>
-    </task>
     <task id="LOCAL-00296" summary="NSV-14 / 네이버 메인페이지 접속시 느릴시에도 대응">
       <option name="closed" value="true" />
       <created>1734682392261</created>
@@ -660,7 +652,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736279274117</updated>
     </task>
-    <option name="localTasksCounter" value="344" />
+    <task id="LOCAL-00344" summary="NSV-21 v2.17.0 지문 다운로드시 쿠키값 같이 다운로드">
+      <option name="closed" value="true" />
+      <created>1736310162156</created>
+      <option name="number" value="00344" />
+      <option name="presentableId" value="LOCAL-00344" />
+      <option name="project" value="LOCAL" />
+      <updated>1736310162156</updated>
+    </task>
+    <option name="localTasksCounter" value="345" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -705,7 +705,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-14 / v2.11.2" />
     <MESSAGE value="NSV-15 / v2.12.0" />
     <MESSAGE value="NSV-15 / console.log 삭제" />
     <MESSAGE value="NSV-15 / nowCount % common.ipChangeCount !== 0" />
@@ -730,7 +729,8 @@
     <MESSAGE value="searchNVMID" />
     <MESSAGE value="nShopping.logicType === &quot;+STORE&quot;" />
     <MESSAGE value="searchNVMID 하단에 있을시에도 서치후 찾기" />
-    <option name="LAST_COMMIT_MESSAGE" value="searchNVMID 하단에 있을시에도 서치후 찾기" />
+    <MESSAGE value="NSV-21 v2.17.0 지문 다운로드시 쿠키값 같이 다운로드" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-21 v2.17.0 지문 다운로드시 쿠키값 같이 다운로드" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -44,9 +44,6 @@ export const FingerprintExcelDownload = () => {
         phoneNumber: item.phoneNumber || "",
       }));
 
-    console.log("data 333333");
-    console.log(data);
-
     // Create worksheet
     const ws = XLSX.utils.json_to_sheet(transformedData);
 
