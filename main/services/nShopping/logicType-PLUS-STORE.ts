@@ -1,15 +1,11 @@
-import { googleToNaver } from "../commons/naver/googleToNaver";
-import { isPopup } from "./isPopup";
-import { loggedInCheck } from "../commons/naver/loggedInCheck";
-import { goToShopping } from "./goToShopping";
 import { goToKeyword } from "./goToKeyword";
-import { plusStoreToComparePricing } from "./plusStoreToComparePricing";
 import { searchNVMID } from "./searchNVMID";
 import { expandProductDetails } from "./expandProductDetails";
 import wait from "waait";
 import { makeAPurchase } from "./makeAPurchase";
 import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
 import { googleToNaverShopping } from "../commons/naver/googleToNaverShopping";
+import { searchNVMIDForPlusStore } from "./searchNVMIDForPlusStore";
 
 export async function logicTypePLUSSTORE({
   getRandomTime,
@@ -17,14 +13,12 @@ export async function logicTypePLUSSTORE({
   targetCookieId,
   nvMid,
   query,
-  plusStoreId,
 }: {
   getRandomTime?: any;
   page?: any;
   targetCookieId?: any;
   nvMid?: any;
   query?: any;
-  plusStoreId?: any;
 }) {
   let page = page1;
   {
@@ -40,10 +34,9 @@ export async function logicTypePLUSSTORE({
   }
   // 여기서 부터 바로 플러스 스토어 검색모드로 가야됨
   {
-    const { page: page0, isFindNvMid } = await searchNVMID({
+    const { page: page0, isFindNvMid } = await searchNVMIDForPlusStore({
       page,
       nvMid,
-      plusStoreId,
     });
     page = page0;
     if (isFindNvMid) {

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="nShopping.logicType === &quot;+STORE&quot;">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="searchNVMID 하단에 있을시에도 서치후 찾기">
+      <change afterPath="$PROJECT_DIR$/main/services/nShopping/searchNVMIDForPlusStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/logicType-PLUS-STORE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/logicType-PLUS-STORE.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShopping/searchNVMID.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/searchNVMID.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +94,7 @@
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/commons/naver",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/nShopping",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -114,8 +117,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/main/services/commons/naver" />
       <recent name="$PROJECT_DIR$/main/services/nShopping" />
+      <recent name="$PROJECT_DIR$/main/services/commons/naver" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\renderer\src\components\start" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\lib\proxy" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\services\commons\network" />
@@ -267,14 +270,6 @@
       <workItem from="1735884089462" duration="1000" />
       <workItem from="1736122953927" duration="4069000" />
       <workItem from="1736208952962" duration="66000" />
-    </task>
-    <task id="LOCAL-00294" summary="NSV-14 / userAgent &gt; sec-ch-ua-mobile&quot;: &quot;?0 &gt; ?1">
-      <option name="closed" value="true" />
-      <created>1734681626366</created>
-      <option name="number" value="00294" />
-      <option name="presentableId" value="LOCAL-00294" />
-      <option name="project" value="LOCAL" />
-      <updated>1734681626366</updated>
     </task>
     <task id="LOCAL-00295" summary="NSV-14 / userAgent &gt; sec-ch-ua-mobile&quot;: &quot;?0 &gt; ?1">
       <option name="closed" value="true" />
@@ -660,7 +655,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736278350282</updated>
     </task>
-    <option name="localTasksCounter" value="343" />
+    <task id="LOCAL-00343" summary="searchNVMID 하단에 있을시에도 서치후 찾기">
+      <option name="closed" value="true" />
+      <created>1736279274117</created>
+      <option name="number" value="00343" />
+      <option name="presentableId" value="LOCAL-00343" />
+      <option name="project" value="LOCAL" />
+      <updated>1736279274117</updated>
+    </task>
+    <option name="localTasksCounter" value="344" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -705,7 +708,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-14 / FetchFingerPrintTargetExcelOne &gt; 에러일경우 error &gt; errors 로 변경" />
     <MESSAGE value="NSV-14 / v2.11.2" />
     <MESSAGE value="NSV-15 / v2.12.0" />
     <MESSAGE value="NSV-15 / console.log 삭제" />
@@ -730,6 +732,7 @@
     <MESSAGE value="logicTypePLUSSTORE" />
     <MESSAGE value="searchNVMID" />
     <MESSAGE value="nShopping.logicType === &quot;+STORE&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="nShopping.logicType === &quot;+STORE&quot;" />
+    <MESSAGE value="searchNVMID 하단에 있을시에도 서치후 찾기" />
+    <option name="LAST_COMMIT_MESSAGE" value="searchNVMID 하단에 있을시에도 서치후 찾기" />
   </component>
 </project>

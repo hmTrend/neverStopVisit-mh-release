@@ -1,7 +1,7 @@
 import { Page } from "playwright";
 import wait from "waait";
 
-export const searchNVMID = async ({
+export const searchNVMIDForPlusStore = async ({
   page,
   nvMid,
 }: {
@@ -61,8 +61,11 @@ async function findNvMid({ page, nvMid }) {
 
 async function nextNumberClick({ page }) {
   try {
-    const nextButton = page.locator("button.paginator_btn_next__3fcZx");
-    await Promise.all([nextButton.click(), page.waitForLoadState("load")]);
+    await Promise.all([
+      page.waitForLoadState("load"),
+      page.keyboard.press("End"),
+    ]);
+    await wait(1000);
     return { page };
   } catch (e) {
     console.error(e.message);
