@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v2.18.2" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v2.18.2">
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nShoppingLogic4/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nShoppingLogic4/CreateExcelLogic4.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nShoppingLogic4/CreateGroupLogic4.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nShoppingLogic4/ExcelListLogic4.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nShoppingLogic4/GroupListLogic4.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/register/nShoppingLogic4/Logic4ExcelList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useCreateExcelList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useCreateExcelListAlignFlat.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useCreateNShoppingGroup.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useDeleteNShoppingGroup.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useGetExcelList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useGetNShoppingGroupList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/n-shoppingLogic4-apollo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/valtio/nShoppingLogic4.register.valtio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/_commons/CreateGroup.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +106,7 @@
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/apkWin/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/hook/fingerPrint",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/renderer/src/valtio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -98,7 +116,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/apk/WebstormProjects/neverStopVisit-ff/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -111,11 +129,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/renderer/src/valtio" />
+      <recent name="$PROJECT_DIR$/renderer/src/lib/graphql" />
+      <recent name="$PROJECT_DIR$/renderer/src/hook" />
+      <recent name="$PROJECT_DIR$/renderer/src/components/register" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\renderer\src\hook\fingerPrint" />
-      <recent name="$PROJECT_DIR$/main/services/nShopping" />
-      <recent name="$PROJECT_DIR$/main/services/commons/naver" />
-      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\renderer\src\components\start" />
-      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\lib\proxy" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/services/commons/naver" />
@@ -208,9 +226,9 @@
       </set>
     </attachedChunks>
   </component>
-  <component name="SpaceReviewFiltersPersistance"><![CDATA[{
-  "lastFilter": {}
-}]]></component>
+  <component name="SpaceReviewFiltersPersistance">{
+  &quot;lastFilter&quot;: {}
+}</component>
   <component name="SpaceReviewProjectSettings">
     <option name="selectedReviewProjectId" value="3sUgx03gguRk" />
   </component>
