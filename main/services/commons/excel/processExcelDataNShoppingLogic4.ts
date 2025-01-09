@@ -1,10 +1,4 @@
 import xlsx from "xlsx";
-import { fileURLToPath } from "url";
-import { dirname } from "path";
-
-// __dirname 대체를 위한 설정
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 export function processExcelDataNShoppingLogic4({ filePath, sheetName = "" }) {
   try {
@@ -13,7 +7,7 @@ export function processExcelDataNShoppingLogic4({ filePath, sheetName = "" }) {
     const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
 
     // 시트를 JSON으로 변환
-    const data = xlsx.utils.sheet_to_json(firstSheet, { header: 1 });
+    const data = xlsx.utils.sheet_to_json(firstSheet, { header: 1 }) as any[][];
 
     // 데이터 유효성 검사
     if (!data || data.length === 0) {
