@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useToast } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
 import { CreateExcel } from "@/components/register/_commons/CreateExcel";
-import { storeNShopping } from "@/valtio/nShopping.register.valtio";
-import { useCreateExcelList } from "@/hook/nShopping/useCreateExcelList";
-import { useCreateExcelListAlignFlat } from "@/hook/nShopping/useCreateExcelListAlignFlat";
+import { storeNShoppingLogic4 } from "@/valtio/nShoppingLogic4.register.valtio";
+import { useCreateExcelList } from "@/hook/nShoppingLogic4/useCreateExcelList";
+import { useCreateExcelListAlignFlat } from "@/hook/nShoppingLogic4/useCreateExcelListAlignFlat";
 
 export const CreateExcelLogic4 = () => {
   const toast = useToast();
@@ -15,7 +15,7 @@ export const CreateExcelLogic4 = () => {
     getExcelList,
     getExcelListAlignFlat,
     selectedGroupId,
-  } = useSnapshot(storeNShopping);
+  } = useSnapshot(storeNShoppingLogic4);
   const { createExcelList } = useCreateExcelList();
   const { createExcelListAlignFlat } = useCreateExcelListAlignFlat();
 
@@ -38,22 +38,16 @@ export const CreateExcelLogic4 = () => {
 
       setSelectedFile(file);
       const result = await window.ipc.invoke(
-        "process-excel-file-n-shopping",
-        file.path,
-      );
-
-      const result2 = await window.ipc.invoke(
-        "process-excel-file-n-shopping-data-with-align",
+        "process-excel-file-n-shopping-logic4",
         file.path,
       );
 
       const result3 = await window.ipc.invoke(
-        "process-excel-file-n-shopping-data-with-align-flat-map",
-        file.path,
+        "process-excel-file-n-shopping-logic4-data-with-align-flat-map",
+        { data: JSON.stringify(result.data) },
       );
-      storeNShopping.getExcelList = result.data;
-      storeNShopping.getExcelListAlignFlat = result3;
-
+      storeNShoppingLogic4.getExcelList = result.data;
+      storeNShoppingLogic4.getExcelListAlignFlat = result3;
       // 파일 선택 성공 메시지
       toast({
         title: result.success ? "성공" : "오류",
@@ -62,6 +56,8 @@ export const CreateExcelLogic4 = () => {
         duration: 3000,
         isClosable: true,
       });
+      console.log("result3 333333");
+      console.log(result3);
     }
   };
 
@@ -87,27 +83,28 @@ export const CreateExcelLogic4 = () => {
     const inputList = getExcelList.map((v) => ({
       ...v,
       groupFid: selectedGroupId,
-      catalog: v.catalog?.toString(),
-      nvMid: v.nvMid?.toString(),
+      placeNumber: v.placeNumber?.toString(),
     }));
     const { data } = await createExcelList({
       input: inputList,
     });
-    storeNShopping.selectedExcelList = inputList;
+    storeNShoppingLogic4.selectedExcelList = inputList;
 
-    const inputList2 = getExcelListAlignFlat.map((v) => ({
-      ...v,
-      groupFid: selectedGroupId,
-      catalog: v.catalog?.toString(),
-      nvMid: v.nvMid?.toString(),
-    }));
+    const createExcelListAlignFlatInputList = getExcelListAlignFlat.map(
+      (v) => ({
+        ...v,
+        groupFid: selectedGroupId,
+        placeNumber: v.placeNumber?.toString(),
+      }),
+    );
+
     const { data: data2 } = await createExcelListAlignFlat({
-      input: inputList2,
+      input: createExcelListAlignFlatInputList,
     });
   };
 
   const handleClearExcelList = () => {
-    storeNShopping.getExcelList = [];
+    storeNShoppingLogic4.getExcelList = [];
     toast({
       title: "가져온 엑셀리스트 비우기 성공",
       isClosable: true,

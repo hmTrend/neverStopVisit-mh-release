@@ -20,4 +20,4 @@ class NShoppingLogic4RegisterValtio {
   }
 }
 
-export const storeNShopping = proxy(new NShoppingLogic4RegisterValtio());
+export const storeNShoppingLogic4 = proxy(new NShoppingLogic4RegisterValtio());

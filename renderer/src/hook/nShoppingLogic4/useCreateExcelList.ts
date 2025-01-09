@@ -7,8 +7,6 @@ export const useCreateExcelList = () => {
   const toast = useToast();
 
   const createExcelList = async ({ input }) => {
-    console.log("input ddddsss");
-    console.log(input);
     const { data, errors } = await CreateExcelList({ variables: { input } });
     if (errors) {
       toast({

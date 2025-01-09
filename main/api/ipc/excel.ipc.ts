@@ -9,6 +9,10 @@ import {
   processExcelDataNPlace,
   processNPlaceExcelDataWithAlignFlatMap,
 } from "../../services/commons/excel/processExcelDataNPlace";
+import {
+  processExcelDataNShoppingLogic4,
+  processNPlaceLogic4ExcelDataWithAlignFlatMap,
+} from "../../services/commons/excel/processExcelDataNShoppingLogic4";
 
 export const excelIpc = () => {
   ipcMain.handle("process-excel-file", (e, filePath) => {
@@ -106,6 +110,46 @@ export const excelIpc = () => {
       try {
         const dataList = JSON.parse(data.data);
         const result = processNPlaceExcelDataWithAlignFlatMap({
+          data: dataList,
+        });
+        return result;
+      } catch (e) {
+        console.error("Error processing excel file:", e);
+        return {
+          data: [],
+          success: false,
+          message: e.message,
+        };
+      }
+    },
+  );
+
+  ipcMain.handle("process-excel-file-n-shopping-logic4", (e, filePath) => {
+    try {
+      const result = processExcelDataNShoppingLogic4({ filePath });
+      console.log("result 33333333");
+      console.log(result);
+      return {
+        data: result,
+        success: true,
+        message: `Excel file processed: ${filePath}`,
+      };
+    } catch (e) {
+      console.error("Error processing excel file:", e);
+      return {
+        data: [],
+        success: false,
+        message: e.message,
+      };
+    }
+  });
+
+  ipcMain.handle(
+    "process-excel-file-n-shopping-logic4-data-with-align-flat-map",
+    (e, data) => {
+      try {
+        const dataList = JSON.parse(data.data);
+        const result = processNPlaceLogic4ExcelDataWithAlignFlatMap({
           data: dataList,
         });
         return result;
