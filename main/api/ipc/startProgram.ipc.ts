@@ -5,24 +5,28 @@ import { monitorNetworkAndStart } from "../../services/commons/network/network.l
 import { NPlace } from "../../services/nPlace";
 import { closeAllBrowsers } from "../../services/commons/PuppeteerEngine/BrowserManager";
 import wait from "waait";
+import { NShoppingLogic4 } from "../../services/nShoppingLogic4";
 
 export const startProgramIpc = ({ mainWindow }) => {
+  let currentNShoppingLogic4Instance = null;
   let currentNShoppingInstance = null;
   let currentNPlaceInstance = null;
 
   ipcMain.handle("start-program", async (event, args) => {
     const data = JSON.parse(args);
-    const { nShopping, common, nPlace } = data;
-    await executeInChunks(
-      10000,
-      100,
+    const { nShopping, common, nPlace, nShoppingLogic4 } = data;
+    await executeInChunks({
+      totalCount: 10000,
+      chunkSize: 100,
       nPlace,
       nShopping,
-      currentNShoppingInstance,
-      currentNPlaceInstance,
+      nShoppingLogic4,
       common,
       mainWindow,
-    );
+      currentNShoppingLogic4Instance,
+      currentNShoppingInstance,
+      currentNPlaceInstance,
+    });
 
     return { message: "OK" };
   });
@@ -41,16 +45,18 @@ export const startProgramIpc = ({ mainWindow }) => {
   });
 };
 
-async function executeInChunks(
+async function executeInChunks({
   totalCount = 10000,
   chunkSize = 100,
   nPlace,
   nShopping,
+  currentNShoppingLogic4Instance,
   currentNShoppingInstance,
   currentNPlaceInstance,
   common,
   mainWindow,
-) {
+  nShoppingLogic4,
+}) {
   try {
     const totalChunks = Math.ceil(totalCount / chunkSize);
     let completedCount = 0;
@@ -70,9 +76,19 @@ async function executeInChunks(
         await networkIpChange({ common });
         await monitorNetworkAndStart();
         let startProgramList = [];
+        currentNShoppingLogic4Instance = new NShoppingLogic4();
         currentNShoppingInstance = new NShopping();
         currentNPlaceInstance = new NPlace();
         try {
+          if (nShoppingLogic4.isStart) {
+            console.log("this is nShoppingLogic4");
+            startProgramList.push(
+              currentNShoppingLogic4Instance.start({
+                nShoppingLogic4,
+                mainWindow,
+              }),
+            );
+          }
           if (nShopping.isStart) {
             startProgramList.push(
               currentNShoppingInstance.start({ nShopping, mainWindow }),

@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-29 쇼핑 리스트">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/excel/processExcelData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/excel/processExcelData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/excel/processExcelDataNPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/excel/processExcelDataNPlace.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-shoppingLogic4-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-shoppingLogic4-apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +93,7 @@
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/commons/excel",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/apollo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -115,11 +116,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/lib/apollo" />
+      <recent name="$PROJECT_DIR$/main/services" />
       <recent name="$PROJECT_DIR$/main/services/commons/excel" />
       <recent name="$PROJECT_DIR$/renderer/src/valtio" />
       <recent name="$PROJECT_DIR$/renderer/src/lib/graphql" />
-      <recent name="$PROJECT_DIR$/renderer/src/hook" />
-      <recent name="$PROJECT_DIR$/renderer/src/components/register" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/services/commons/naver" />
@@ -271,46 +272,6 @@
       <workItem from="1735884089462" duration="1000" />
       <workItem from="1736122953927" duration="4069000" />
       <workItem from="1736208952962" duration="66000" />
-    </task>
-    <task id="LOCAL-00311" summary="NSV-14 / findTargetBlog / domcontentloaded 로 변경 load 너무느림">
-      <option name="closed" value="true" />
-      <created>1734767119793</created>
-      <option name="number" value="00311" />
-      <option name="presentableId" value="LOCAL-00311" />
-      <option name="project" value="LOCAL" />
-      <updated>1734767119793</updated>
-    </task>
-    <task id="LOCAL-00312" summary="NSV-14 / yarn build">
-      <option name="closed" value="true" />
-      <created>1734767234395</created>
-      <option name="number" value="00312" />
-      <option name="presentableId" value="LOCAL-00312" />
-      <option name="project" value="LOCAL" />
-      <updated>1734767234395</updated>
-    </task>
-    <task id="LOCAL-00313" summary="NSV-14 / yarn build">
-      <option name="closed" value="true" />
-      <created>1734767253222</created>
-      <option name="number" value="00313" />
-      <option name="presentableId" value="LOCAL-00313" />
-      <option name="project" value="LOCAL" />
-      <updated>1734767253222</updated>
-    </task>
-    <task id="LOCAL-00314" summary="NSV-14 / yarn build">
-      <option name="closed" value="true" />
-      <created>1734767259092</created>
-      <option name="number" value="00314" />
-      <option name="presentableId" value="LOCAL-00314" />
-      <option name="project" value="LOCAL" />
-      <updated>1734767259092</updated>
-    </task>
-    <task id="LOCAL-00315" summary="NSV-14 / 쇼핑 &gt; goToShopping &gt; load &gt;&gt; documentloaded로 변경 너무 오래걸림">
-      <option name="closed" value="true" />
-      <created>1734767806720</created>
-      <option name="number" value="00315" />
-      <option name="presentableId" value="LOCAL-00315" />
-      <option name="project" value="LOCAL" />
-      <updated>1734767806720</updated>
     </task>
     <task id="LOCAL-00316" summary="NSV-14 / FetchFingerPrintTargetExcelOne &gt; 에러일경우 error &gt; errors 로 변경">
       <option name="closed" value="true" />
@@ -664,7 +625,47 @@
       <option name="project" value="LOCAL" />
       <updated>1736431951133</updated>
     </task>
-    <option name="localTasksCounter" value="360" />
+    <task id="LOCAL-00360" summary="NSVIT-32 백엔드 eslint 오류">
+      <option name="closed" value="true" />
+      <created>1736461225171</created>
+      <option name="number" value="00360" />
+      <option name="presentableId" value="LOCAL-00360" />
+      <option name="project" value="LOCAL" />
+      <updated>1736461225171</updated>
+    </task>
+    <task id="LOCAL-00361" summary="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기">
+      <option name="closed" value="true" />
+      <created>1736463069651</created>
+      <option name="number" value="00361" />
+      <option name="presentableId" value="LOCAL-00361" />
+      <option name="project" value="LOCAL" />
+      <updated>1736463069651</updated>
+    </task>
+    <task id="LOCAL-00362" summary="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기">
+      <option name="closed" value="true" />
+      <created>1736463837124</created>
+      <option name="number" value="00362" />
+      <option name="presentableId" value="LOCAL-00362" />
+      <option name="project" value="LOCAL" />
+      <updated>1736463837124</updated>
+    </task>
+    <task id="LOCAL-00363" summary="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기">
+      <option name="closed" value="true" />
+      <created>1736463850673</created>
+      <option name="number" value="00363" />
+      <option name="presentableId" value="LOCAL-00363" />
+      <option name="project" value="LOCAL" />
+      <updated>1736463850673</updated>
+    </task>
+    <task id="LOCAL-00364" summary="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기">
+      <option name="closed" value="true" />
+      <created>1736463864911</created>
+      <option name="number" value="00364" />
+      <option name="presentableId" value="LOCAL-00364" />
+      <option name="project" value="LOCAL" />
+      <updated>1736463864911</updated>
+    </task>
+    <option name="localTasksCounter" value="365" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -709,8 +710,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-17 / v2.13.0" />
-    <MESSAGE value="NSV-17 / 백엔드 errorToFront 적용" />
     <MESSAGE value="NSV-17 / 프론트 연결 최종완성" />
     <MESSAGE value="NSV-17 / v2.13.1" />
     <MESSAGE value="NSVIT-19 / 지문 &gt; 정상 / 쿠키 / 모두가져오기" />
@@ -734,7 +733,9 @@
     <MESSAGE value="NSVIT-26 엑셀 생성" />
     <MESSAGE value="NSVIT-27 엑셀 등록하기" />
     <MESSAGE value="NSVIT-29 쇼핑 리스트" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-29 쇼핑 리스트" />
+    <MESSAGE value="NSVIT-32 백엔드 eslint 오류" />
+    <MESSAGE value="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
