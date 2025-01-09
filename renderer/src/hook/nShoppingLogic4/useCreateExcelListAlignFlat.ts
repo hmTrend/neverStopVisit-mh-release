@@ -1,13 +1,10 @@
 import { useMutation } from "@apollo/client";
 import { useToast } from "@chakra-ui/react";
-import {
-  gqlCreateNShoppingExcelList,
-  gqlCreateNShoppingExcelListAlignFlatMap,
-} from "@/lib/graphql/n-shopping-apollo";
+import { gqlCreateNShoppingLogic4ExcelListAlignFlatMap } from "@/lib/graphql/n-shoppingLogic4-apollo";
 
 export const useCreateExcelListAlignFlat = () => {
   const [CreateNShoppingExcelListAlignFlatMap] = useMutation(
-    gqlCreateNShoppingExcelListAlignFlatMap,
+    gqlCreateNShoppingLogic4ExcelListAlignFlatMap,
   );
   const toast = useToast();
 

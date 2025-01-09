@@ -1,8 +1,8 @@
 import { GroupList } from "@/components/register/_commons/GroupList";
 import { useEffect, useState } from "react";
-import { storeNShopping } from "@/valtio/nShopping.register.valtio";
 import { useGetNShoppingGroupList } from "@/hook/nShoppingLogic4/useGetNShoppingGroupList";
 import { useDeleteNShoppingGroup } from "@/hook/nShoppingLogic4/useDeleteNShoppingGroup";
+import { storeNShoppingLogic4 } from "@/valtio/nShoppingLogic4.register.valtio";
 
 export const GroupListLogic4 = ({ selectedGroupName, selectedExcelList }) => {
   const { getNShoppingGroupList } = useGetNShoppingGroupList();
@@ -12,7 +12,7 @@ export const GroupListLogic4 = ({ selectedGroupName, selectedExcelList }) => {
   const GetNShoppingGroupList = async () => {
     const { data } = await getNShoppingGroupList();
     setGroupList(data);
-    storeNShopping.groupList = data;
+    storeNShoppingLogic4.groupList = data;
   };
 
   useEffect(() => {
@@ -20,8 +20,8 @@ export const GroupListLogic4 = ({ selectedGroupName, selectedExcelList }) => {
   }, [selectedGroupName, selectedExcelList]);
 
   const handleSelectGroup = ({ groupId, groupName }) => {
-    storeNShopping.selectedGroupId = groupId;
-    storeNShopping.selectedGroupName = groupName;
+    storeNShoppingLogic4.selectedGroupId = groupId;
+    storeNShoppingLogic4.selectedGroupName = groupName;
   };
 
   return (

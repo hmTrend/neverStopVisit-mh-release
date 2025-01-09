@@ -127,8 +127,6 @@ export const excelIpc = () => {
   ipcMain.handle("process-excel-file-n-shopping-logic4", (e, filePath) => {
     try {
       const result = processExcelDataNShoppingLogic4({ filePath });
-      console.log("result 33333333");
-      console.log(result);
       return {
         data: result,
         success: true,

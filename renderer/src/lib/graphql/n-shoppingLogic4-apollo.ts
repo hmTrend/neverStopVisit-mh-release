@@ -50,19 +50,26 @@ export const gqlDeleteNShoppingLogic4Group = gql`
   }
 `;
 
-export const gqlCreateNShoppingExcelList = gql`
-  mutation CreateNShoppingExcelList($input: [CreateNShoppingExcelListInput!]!) {
-    createNShoppingExcelList(input: $input) {
+export const gqlCreateNShoppingLogic4ExcelList = gql`
+  mutation CreateNShoppingLogic4ExcelList(
+    $input: [CreateNShoppingLogic4ExcelListInput!]!
+  ) {
+    createNShoppingLogic4ExcelList(input: $input) {
       data {
         _id
         groupFid
-        title
-        catalog
+        targetKeyword
+        delayTime
         nvMid
-        views
-        query
+        nowCount
+        dayCount
+        nvMidList
         createdAt
         updatedAt
+        workKeywordList {
+          targetBlog
+          workKeyword
+        }
       }
       message
       error
@@ -90,24 +97,27 @@ export const gqlGetNShoppingExcelList = gql`
   }
 `;
 
-export const gqlCreateNShoppingExcelListAlignFlatMap = gql`
-  mutation CreateNShoppingExcelListAlignFlatMap(
-    $input: [CreateNShoppingExcelListAlignFlatMapInput!]!
+export const gqlCreateNShoppingLogic4ExcelListAlignFlatMap = gql`
+  mutation CreateNShoppingLogic4ExcelListAlignFlatMap(
+    $input: [CreateNShoppingLogic4ExcelListAlignFlatMapInput!]!
   ) {
-    createNShoppingExcelListAlignFlatMap(input: $input) {
+    createNShoppingLogic4ExcelListAlignFlatMap(input: $input) {
       data {
         _id
         groupFid
-        title
-        catalog
+        targetKeyword
+        delayTime
+        nvMidList
         nvMid
-        views
-        query
+        nowCount
+        dayCount
+        workKeyword
+        targetBlog
         createdAt
         updatedAt
       }
-      error
       message
+      error
     }
   }
 `;
