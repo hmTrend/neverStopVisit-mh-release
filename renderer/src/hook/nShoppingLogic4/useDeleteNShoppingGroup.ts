@@ -1,11 +1,11 @@
 import { useMutation } from "@apollo/client";
 import { useToast } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
-import { gqlDeleteNShoppingGroup } from "@/lib/graphql/n-shopping-apollo";
 import { storeNShopping } from "@/valtio/nShopping.register.valtio";
+import { gqlDeleteNShoppingLogic4Group } from "@/lib/graphql/n-shoppingLogic4-apollo";
 
 export const useDeleteNShoppingGroup = () => {
-  const [DeleteNShoppingGroup] = useMutation(gqlDeleteNShoppingGroup);
+  const [DeleteNShoppingGroup] = useMutation(gqlDeleteNShoppingLogic4Group);
   const toast = useToast();
   const { groupList } = useSnapshot(storeNShopping);
 

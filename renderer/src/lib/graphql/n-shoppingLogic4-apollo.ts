@@ -34,9 +34,9 @@ export const gqlGetNShoppingLogicGroupList = gql`
   }
 `;
 
-export const gqlDeleteNShoppingGroup = gql`
-  mutation DeleteNShoppingGroup($input: DeleteFingerPrintInput!) {
-    deleteNShoppingGroup(input: $input) {
+export const gqlDeleteNShoppingLogic4Group = gql`
+  mutation DeleteNShoppingLogic4Group($input: DeleteFingerPrintInput!) {
+    deleteNShoppingLogic4Group(input: $input) {
       data {
         _id
         memberFid
