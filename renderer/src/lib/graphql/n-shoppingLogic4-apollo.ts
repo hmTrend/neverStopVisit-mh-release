@@ -77,17 +77,22 @@ export const gqlCreateNShoppingLogic4ExcelList = gql`
   }
 `;
 
-export const gqlGetNShoppingExcelList = gql`
-  query GetNShoppingExcelList($input: GetNShoppingExcelListInput!) {
-    getNShoppingExcelList(input: $input) {
+export const gqlGetNShoppingLogic4ExcelList = gql`
+  query GetNShoppingLogic4ExcelList($input: GetNShoppingExcelListInput!) {
+    getNShoppingLogic4ExcelList(input: $input) {
       data {
         _id
         groupFid
-        title
-        catalog
+        targetKeyword
+        delayTime
+        nvMidList
         nvMid
-        views
-        query
+        nowCount
+        dayCount
+        workKeywordList {
+          workKeyword
+          targetBlog
+        }
         createdAt
         updatedAt
       }

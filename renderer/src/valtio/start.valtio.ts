@@ -14,6 +14,13 @@ const getInitialData = () => {
       concurrentBrowserCount: 1,
       logicType: "NAVER",
     },
+    nShoppingLogic4: {
+      isStart: false,
+      selectedGroup: { groupName: "", groupId: "" },
+      fingerPrint: { groupName: "", groupId: "" },
+      concurrentBrowserCount: 1,
+      logicType: "NAVER",
+    },
     nPlace: {
       isStart: false,
       selectedGroup: { groupName: "", groupId: "" },
@@ -44,7 +51,14 @@ class StartValtio {
     selectedGroup: { groupName: string; groupId: string };
     fingerPrint: { groupName: string; groupId: string };
     concurrentBrowserCount: number;
-    logicType: "NAVER" | "GOOGLE";
+    logicType: "NAVER" | "GOOGLE" | "+STORE" | "BLOG";
+  };
+  nShoppingLogic4: {
+    isStart: boolean;
+    selectedGroup: { groupName: string; groupId: string };
+    fingerPrint: { groupName: string; groupId: string };
+    concurrentBrowserCount: number;
+    logicType: "NAVER" | "GOOGLE" | "+STORE" | "BLOG";
   };
   nPlace: {
     isStart: boolean;
@@ -60,6 +74,7 @@ class StartValtio {
     // 상태 초기화
     this.common = initialData.common;
     this.nShopping = initialData.nShopping;
+    this.nShoppingLogic4 = initialData.nShoppingLogic4;
     this.nPlace = initialData.nPlace;
   }
 }

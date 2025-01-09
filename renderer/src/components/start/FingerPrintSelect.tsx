@@ -21,7 +21,7 @@ export const FingerPrintSelect = ({ selectProgram }) => {
         <Select
           placeholder="작업할 지문선택"
           onChange={(e) => handleSelectChange(e, selectProgram.title)}
-          defaultValue={snapStart[selectProgram].fingerPrint.groupId}
+          defaultValue={snapStart[selectProgram]?.fingerPrint?.groupId}
         >
           {groupList.map((v: any, i) => (
             <option key={i} value={v._id}>

@@ -50,7 +50,7 @@ function TargetSelect({ selectProgram, handleSelectChange, groupList }) {
         <Select
           placeholder="작업할 그룹선택"
           onChange={handleSelectChange}
-          defaultValue={snap[selectProgram].selectedGroup.groupId}
+          defaultValue={snap[selectProgram]?.selectedGroup?.groupId}
         >
           {groupList.map((v: any, i) => (
             <option key={i} value={v._id}>
@@ -72,7 +72,7 @@ function LogicType({ logicType, selectProgram }) {
   return (
     <RadioGroup
       onChange={handleChange}
-      defaultValue={snap[selectProgram].logicType}
+      defaultValue={snap[selectProgram]?.logicType}
     >
       <Stack direction="row" gap={6}>
         {logicType.map((v, i) => (

@@ -12,6 +12,7 @@ import {
   TableCaption,
   TableContainer,
   Text,
+  Code,
 } from "@chakra-ui/react";
 
 export const Logic4ExcelList = ({ selectedGroupName, selectedExcelList }) => {
@@ -30,24 +31,31 @@ export const Logic4ExcelList = ({ selectedGroupName, selectedExcelList }) => {
               <Thead>
                 <Tr>
                   <Th>num</Th>
-                  <Th>title</Th>
-                  <Th>catalog</Th>
+                  <Th>targetKeyword</Th>
+                  <Th>nvMidList</Th>
                   <Th>nvMid</Th>
-                  <Th>views</Th>
-                  <Th>query</Th>
+                  <Th>dayCount</Th>
+                  <Th>nowCount</Th>
+                  <Th>delayTime</Th>
+                  <Th>workKeywordList</Th>
                 </Tr>
               </Thead>
               <Tbody>
                 {selectedExcelList.map((v: any, i) => (
                   <Tr key={i}>
                     <Td>{i + 1}</Td>
-                    <Td>{v.title}</Td>
-                    <Td>{v.catalog}</Td>
-                    <Td>{v.nvMid}</Td>
-                    <Td>{v.views}</Td>
+                    <Td>{v?.targetKeyword}</Td>
+                    <Td>{v?.nvMidList}</Td>
+                    <Td>{v?.nvMid}</Td>
+                    <Td>{v?.dayCount}</Td>
+                    <Td>{v?.nowCount}</Td>
+                    <Td>{v?.delayTime}</Td>
                     <Td>
-                      {v.query.map((v, i) => (
-                        <Text key={i}>{v}</Text>
+                      {v?.workKeywordList?.map((v, i) => (
+                        <Flex key={i} gap={3} py={1}>
+                          <Code bg={"gray.100"}>{v.workKeyword}</Code>
+                          <Text>{v.targetBlog}</Text>
+                        </Flex>
                       ))}
                     </Td>
                   </Tr>

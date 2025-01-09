@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-27 엑셀 등록하기">
-      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useCreateExcelList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useCreateExcelList.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-29 쇼핑 리스트">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/ConcurrentBrowserCount.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/ConcurrentBrowserCount.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/FingerPrintSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/FingerPrintSelect.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/StartStateSwitch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/StartStateSwitch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,54 +275,6 @@
       <workItem from="1735884089462" duration="1000" />
       <workItem from="1736122953927" duration="4069000" />
       <workItem from="1736208952962" duration="66000" />
-    </task>
-    <task id="LOCAL-00304" summary="NSV-14 / v2.10.3">
-      <option name="closed" value="true" />
-      <created>1734686406495</created>
-      <option name="number" value="00304" />
-      <option name="presentableId" value="LOCAL-00304" />
-      <option name="project" value="LOCAL" />
-      <updated>1734686406495</updated>
-    </task>
-    <task id="LOCAL-00305" summary="NSV-14 / 네이버 첫페이지 진입시 이메일 이미지 나타나는지 기다리기">
-      <option name="closed" value="true" />
-      <created>1734763320863</created>
-      <option name="number" value="00305" />
-      <option name="presentableId" value="LOCAL-00305" />
-      <option name="project" value="LOCAL" />
-      <updated>1734763320863</updated>
-    </task>
-    <task id="LOCAL-00306" summary="NSV-14 / networkSpeed / LTE | 3G">
-      <option name="closed" value="true" />
-      <created>1734764274297</created>
-      <option name="number" value="00306" />
-      <option name="presentableId" value="LOCAL-00306" />
-      <option name="project" value="LOCAL" />
-      <updated>1734764274297</updated>
-    </task>
-    <task id="LOCAL-00307" summary="NSV-14 / v2.11.0">
-      <option name="closed" value="true" />
-      <created>1734764293781</created>
-      <option name="number" value="00307" />
-      <option name="presentableId" value="LOCAL-00307" />
-      <option name="project" value="LOCAL" />
-      <updated>1734764293781</updated>
-    </task>
-    <task id="LOCAL-00308" summary="NSV-14 / initialize / 대기시간 30 &gt; 90">
-      <option name="closed" value="true" />
-      <created>1734766336276</created>
-      <option name="number" value="00308" />
-      <option name="presentableId" value="LOCAL-00308" />
-      <option name="project" value="LOCAL" />
-      <updated>1734766336276</updated>
-    </task>
-    <task id="LOCAL-00309" summary="NSV-14 / findTargetBlog / domcontentloaded 로 변경 load 너무느림">
-      <option name="closed" value="true" />
-      <created>1734767103243</created>
-      <option name="number" value="00309" />
-      <option name="presentableId" value="LOCAL-00309" />
-      <option name="project" value="LOCAL" />
-      <updated>1734767103243</updated>
     </task>
     <task id="LOCAL-00310" summary="NSV-14 / findTargetBlog / domcontentloaded 로 변경 load 너무느림">
       <option name="closed" value="true" />
@@ -662,7 +620,55 @@
       <option name="project" value="LOCAL" />
       <updated>1736426624496</updated>
     </task>
-    <option name="localTasksCounter" value="353" />
+    <task id="LOCAL-00353" summary="NSVIT-27 엑셀 등록하기">
+      <option name="closed" value="true" />
+      <created>1736426636985</created>
+      <option name="number" value="00353" />
+      <option name="presentableId" value="LOCAL-00353" />
+      <option name="project" value="LOCAL" />
+      <updated>1736426636985</updated>
+    </task>
+    <task id="LOCAL-00354" summary="NSVIT-27 엑셀 등록하기">
+      <option name="closed" value="true" />
+      <created>1736426662867</created>
+      <option name="number" value="00354" />
+      <option name="presentableId" value="LOCAL-00354" />
+      <option name="project" value="LOCAL" />
+      <updated>1736426662867</updated>
+    </task>
+    <task id="LOCAL-00355" summary="NSVIT-29 쇼핑 리스트">
+      <option name="closed" value="true" />
+      <created>1736427422122</created>
+      <option name="number" value="00355" />
+      <option name="presentableId" value="LOCAL-00355" />
+      <option name="project" value="LOCAL" />
+      <updated>1736427422123</updated>
+    </task>
+    <task id="LOCAL-00356" summary="NSVIT-29 쇼핑 리스트">
+      <option name="closed" value="true" />
+      <created>1736428862130</created>
+      <option name="number" value="00356" />
+      <option name="presentableId" value="LOCAL-00356" />
+      <option name="project" value="LOCAL" />
+      <updated>1736428862130</updated>
+    </task>
+    <task id="LOCAL-00357" summary="NSVIT-29 쇼핑 리스트">
+      <option name="closed" value="true" />
+      <created>1736430704420</created>
+      <option name="number" value="00357" />
+      <option name="presentableId" value="LOCAL-00357" />
+      <option name="project" value="LOCAL" />
+      <updated>1736430704421</updated>
+    </task>
+    <task id="LOCAL-00358" summary="NSVIT-29 쇼핑 리스트">
+      <option name="closed" value="true" />
+      <created>1736430796193</created>
+      <option name="number" value="00358" />
+      <option name="presentableId" value="LOCAL-00358" />
+      <option name="project" value="LOCAL" />
+      <updated>1736430796193</updated>
+    </task>
+    <option name="localTasksCounter" value="359" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -707,7 +713,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-17 / 프론트에 100개만 유지" />
     <MESSAGE value="NSV-17 / v2.13.0" />
     <MESSAGE value="NSV-17 / 백엔드 errorToFront 적용" />
     <MESSAGE value="NSV-17 / 프론트 연결 최종완성" />
@@ -732,7 +737,8 @@
     <MESSAGE value="NSVIT-26 엑셀 만들기" />
     <MESSAGE value="NSVIT-26 엑셀 생성" />
     <MESSAGE value="NSVIT-27 엑셀 등록하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-27 엑셀 등록하기" />
+    <MESSAGE value="NSVIT-29 쇼핑 리스트" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-29 쇼핑 리스트" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

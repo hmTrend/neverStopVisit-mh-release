@@ -1,12 +1,12 @@
 import { useSnapshot } from "valtio/react";
 import { useEffect } from "react";
-import { storeNShopping } from "@/valtio/nShopping.register.valtio";
-import { useGetExcelList } from "@/hook/nShopping/useGetExcelList";
 import { Logic4ExcelList } from "@/components/register/nShoppingLogic4/Logic4ExcelList";
+import { storeNShoppingLogic4 } from "@/valtio/nShoppingLogic4.register.valtio";
+import { useGetExcelList } from "@/hook/nShoppingLogic4/useGetExcelList";
 
 export const ExcelListLogic4 = () => {
   const { selectedGroupName, selectedExcelList, selectedGroupId } =
-    useSnapshot(storeNShopping);
+    useSnapshot(storeNShoppingLogic4);
   const { getExcelList } = useGetExcelList();
 
   const GetExcelList = async () => {
@@ -15,7 +15,7 @@ export const ExcelListLogic4 = () => {
   };
   useEffect(() => {
     GetExcelList().then((v: any) => {
-      storeNShopping.selectedExcelList = v.data;
+      storeNShoppingLogic4.selectedExcelList = v.data;
     });
   }, [selectedGroupName]);
 
