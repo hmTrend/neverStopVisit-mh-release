@@ -13,6 +13,7 @@ export class PuppeteerEngine {
   targetCookieId: string;
   query: string;
   nvMid: string;
+  targetBlog: string;
   context: BrowserContext;
   placeNumber: number;
 
@@ -32,7 +33,6 @@ export class PuppeteerEngine {
         cookie,
         type,
       });
-      console.log("aaa");
       this.page = page;
       this.browser = browser;
       globalBrowsers.browsers.push(browser);

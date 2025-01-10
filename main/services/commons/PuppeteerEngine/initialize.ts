@@ -3,7 +3,7 @@ import { formatCookiesForPlaywright } from "./formatCookiesForPlaywright";
 import { validateCookie } from "./validateCookie";
 import { getChromePath } from "./getChromePath";
 import wait from "waait";
-import { getNextCreateUserAgentWithDRSoftKorea241207WithOutIPhone } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhone";
+import { userAgentWithDRSoftKoreaWithIPhone } from "../../../lib/network/userAgentWithDRSoftKoreaWithIPhone";
 
 export const initialize = async ({
   url,
@@ -86,8 +86,7 @@ async function createMobileContext({
   browser: Browser;
   networkSpeed?: string;
 }) {
-  const userAgent: any =
-    getNextCreateUserAgentWithDRSoftKorea241207WithOutIPhone(); // 동적 user agent
+  const userAgent: any = userAgentWithDRSoftKoreaWithIPhone(); // 동적 user agent
 
   const context = await browser.newContext({
     userAgent: userAgent.userAgent,

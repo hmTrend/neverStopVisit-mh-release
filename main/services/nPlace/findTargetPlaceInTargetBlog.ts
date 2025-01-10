@@ -15,7 +15,7 @@ export const findTargetPlaceInTargetBlog = async ({
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({
-        url: "https://m.blog.naver.com/minidaoyou/223627474798",
+        url: "https://m.blog.naver.com/lodero/223720002550",
         cookie: "",
       });
       page = test.page;

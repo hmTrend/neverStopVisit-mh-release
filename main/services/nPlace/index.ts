@@ -10,7 +10,6 @@ import { findTargetPlaceInTargetBlog } from "./findTargetPlaceInTargetBlog";
 import { clickNearbyAttractions } from "./clickNearbyAttractions";
 import { googleToNaver } from "../commons/naver/googleToNaver";
 import { errorToFront } from "../commons/error/errorToFront";
-import { globalBrowsers } from "../../lib/const/constVar";
 import { UtilNetwork } from "../../lib/util/util.network";
 import { UtilDate } from "../../lib/util/util.date";
 

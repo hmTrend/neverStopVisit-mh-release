@@ -4,7 +4,7 @@ import wait from "waait";
 
 export const findTargetBlog = async ({
   page = undefined,
-  targetBlog = "https://m.blog.naver.com/minidaoyou/223627474798",
+  targetBlog = "https://m.blog.naver.com/lodero/223720002550",
   isTest = false,
 }: {
   page?: Page;
@@ -15,7 +15,7 @@ export const findTargetBlog = async ({
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({
-        url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%ED%99%8D%EB%8C%80%EB%A7%9B%EC%A7%91+%EA%B3%A0%EC%97%94",
+        url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EB%93%9C%EB%A6%BD%EB%B0%B1%EC%BB%A4%ED%94%BC+%EB%AC%B8%EC%A0%9C%EC%A0%81%EC%BB%A4%ED%94%BC",
         cookie: "",
       });
       page = test.page;

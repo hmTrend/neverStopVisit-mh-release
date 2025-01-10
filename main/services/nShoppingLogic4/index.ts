@@ -8,6 +8,7 @@ import { logicTypeNAVER } from "./logicType-NAVER";
 import { logicTypeGOOGLE } from "./logicType-GOOGLE";
 import { logicTypePLUSSTORE } from "./logicType-PLUS-STORE";
 import { GetNShoppingLogic4ExcelAlignFlatTargetOne } from "../../lib/apollo/n-shoppingLogic4-apollo";
+import { logicTypeBLOG } from "./logicType-BLOG";
 
 export class NShoppingLogic4 extends PuppeteerEngine {
   async start({ nShoppingLogic4, mainWindow }): Promise<void> {
@@ -20,12 +21,13 @@ export class NShoppingLogic4 extends PuppeteerEngine {
               groupFid: nShoppingLogic4.selectedGroup.groupId,
             });
           var ExcelData = excelData;
-          const { workKeyword, nvMid } = excelData;
+          const { workKeyword, nvMid, targetBlog } = excelData;
           console.log("excelData 333333");
           console.log(excelData);
           {
             this.query = workKeyword;
             this.nvMid = nvMid;
+            this.targetBlog = targetBlog;
           }
           break;
         } catch (e) {
@@ -102,12 +104,12 @@ export class NShoppingLogic4 extends PuppeteerEngine {
           cookie: this.targetCookie,
         });
         console.log("logic 4");
-        await logicTypePLUSSTORE({
+        await logicTypeBLOG({
           getRandomTime,
           page: this.page,
           targetCookieId: this.targetCookieId,
-          nvMid: this.nvMid,
           query: this.query,
+          targetBlog: this.targetBlog,
         });
       }
       const myIp = await UtilNetwork.getIpAddress();

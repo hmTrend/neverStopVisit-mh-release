@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기">
+      <change afterPath="$PROJECT_DIR$/main/lib/network/userAgentWithDRSoftKoreaWithIPhone.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/findTargetBlog.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/findTargetShoppingInTargetBlog.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/logicType-BLOG.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/targetKeywordSearch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025__1__1__PM_12_51_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025__1__1__PM_12_51__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-shoppingLogic4-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-shoppingLogic4-apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlaceInTargetBlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlaceInTargetBlog.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/targetKeywordSearch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/targetKeywordSearch.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,8 +85,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TypeScript.clickNearbyAttractions.tsx.executor": "Run",
+    "TypeScript.findTargetBlog.ts (1).executor": "Run",
     "TypeScript.findTargetBlog.ts.executor": "Run",
     "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
+    "TypeScript.findTargetShoppingInTargetBlog.ts.executor": "Run",
     "TypeScript.goToKeyword.ts.executor": "Run",
     "TypeScript.googleToNaverShopping.ts.executor": "Run",
     "TypeScript.index.ts (1).executor": "Run",
@@ -93,7 +106,7 @@
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/apollo",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/network",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -116,11 +129,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/lib/network" />
+      <recent name="$PROJECT_DIR$/main/services/nShoppingLogic4" />
       <recent name="$PROJECT_DIR$/main/lib/apollo" />
       <recent name="$PROJECT_DIR$/main/services" />
       <recent name="$PROJECT_DIR$/main/services/commons/excel" />
-      <recent name="$PROJECT_DIR$/renderer/src/valtio" />
-      <recent name="$PROJECT_DIR$/renderer/src/lib/graphql" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/services/commons/naver" />
@@ -130,44 +143,47 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.searchNVMID.ts">
-    <configuration name="findTargetPlaceInTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+  <component name="RunManager" selected="TypeScript.findTargetShoppingInTargetBlog.ts">
+    <configuration name="findTargetBlog.ts (1)" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShoppingLogic4" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nShoppingLogic4/findTargetBlog.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
+    <configuration name="findTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetPlaceInTargetBlog.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
-    <configuration name="goToKeyword.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="findTargetShoppingInTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShopping" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShoppingLogic4" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nShopping/goToKeyword.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nShoppingLogic4/findTargetShoppingInTargetBlog.ts" />
       <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="googleToNaverShopping.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/naver" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/naver/googleToNaverShopping.ts" />
-      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="searchNVMID.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -183,26 +199,27 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="util.network.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="targetKeywordSearch.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
+      <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/lib/util" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/lib/util/util.network.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/targetKeywordSearch.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.findTargetShoppingInTargetBlog.ts" />
+        <item itemvalue="TypeScript.findTargetBlog.ts (1)" />
+        <item itemvalue="TypeScript.findTargetBlog.ts" />
+        <item itemvalue="TypeScript.targetKeywordSearch.ts" />
         <item itemvalue="TypeScript.searchNVMID.ts" />
-        <item itemvalue="TypeScript.goToKeyword.ts" />
-        <item itemvalue="TypeScript.googleToNaverShopping.ts" />
-        <item itemvalue="TypeScript.util.network.ts" />
-        <item itemvalue="TypeScript.findTargetPlaceInTargetBlog.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -272,14 +289,6 @@
       <workItem from="1735884089462" duration="1000" />
       <workItem from="1736122953927" duration="4069000" />
       <workItem from="1736208952962" duration="66000" />
-    </task>
-    <task id="LOCAL-00316" summary="NSV-14 / FetchFingerPrintTargetExcelOne &gt; 에러일경우 error &gt; errors 로 변경">
-      <option name="closed" value="true" />
-      <created>1734768881004</created>
-      <option name="number" value="00316" />
-      <option name="presentableId" value="LOCAL-00316" />
-      <option name="project" value="LOCAL" />
-      <updated>1734768881004</updated>
     </task>
     <task id="LOCAL-00317" summary="NSV-14 / v2.11.2">
       <option name="closed" value="true" />
@@ -665,7 +674,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736463864911</updated>
     </task>
-    <option name="localTasksCounter" value="365" />
+    <task id="LOCAL-00365" summary="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기">
+      <option name="closed" value="true" />
+      <created>1736469897674</created>
+      <option name="number" value="00365" />
+      <option name="presentableId" value="LOCAL-00365" />
+      <option name="project" value="LOCAL" />
+      <updated>1736469897674</updated>
+    </task>
+    <option name="localTasksCounter" value="366" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
