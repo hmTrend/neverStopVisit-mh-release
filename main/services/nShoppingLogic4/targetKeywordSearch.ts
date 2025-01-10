@@ -23,7 +23,7 @@ export const targetKeywordSearch = async ({
       'img.shs_service_m[src="https://s.pstatic.net/static/www/mobile/edit/20240926_0/upload_1727340694234hLngf.png"]',
       {
         state: "visible", // 실제로 화면에 보이는지 확인
-        timeout: 20 * 1000, // 5초 타임아웃
+        timeout: 90 * 1000, // 5초 타임아웃
       },
     );
     for (let i = 0; i < 3; i++) {

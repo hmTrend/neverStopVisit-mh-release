@@ -32,7 +32,10 @@ export const findTargetBlogLogic4 = async ({
       }
       await page.locator(':text("인기글 더보기")').scrollIntoViewIfNeeded();
       await wait(1000);
-      await page.locator(':text("인기글 더보기")').click();
+      await Promise.all([
+        page.locator(':text("인기글 더보기")').click(),
+        page.waitForLoadState("load"),
+      ]);
       await wait(1000);
       const hasPopularBlogMore = await hasPopularBlogPostMorePage(
         page,
@@ -121,9 +124,9 @@ async function hasPopularBlogPostMorePage(
 }
 
 async function blogTabClick(page: Page) {
+  await wait(1000);
   const blogTab = page.locator("div.flick_bx a.tab:has(i.ico_nav_blog)");
-  await blogTab.waitFor({ state: "visible", timeout: 5000 });
-  await blogTab.click();
-  await page.waitForLoadState("load");
+  await blogTab.waitFor({ state: "visible", timeout: 60 * 1000 });
+  await Promise.all([blogTab.click(), page.waitForLoadState("load")]);
   await wait(1000);
 }

@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기">
-      <change afterPath="$PROJECT_DIR$/main/lib/network/userAgentWithDRSoftKoreaWithIPhone.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/findTargetBlog.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/findTargetShoppingInTargetBlog.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/logicType-BLOG.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/targetKeywordSearch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025__1__1__PM_12_51_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025__1__1__PM_12_51__Changes_.xml" beforeDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-36 느린속도로 문제 있는 부분 픽스">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlaceInTargetBlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlaceInTargetBlog.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/targetKeywordSearch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/targetKeywordSearch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/findTargetBlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/findTargetBlog.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +103,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -285,22 +272,6 @@
       <workItem from="1735884089462" duration="1000" />
       <workItem from="1736122953927" duration="4069000" />
       <workItem from="1736208952962" duration="66000" />
-    </task>
-    <task id="LOCAL-00317" summary="NSV-14 / v2.11.2">
-      <option name="closed" value="true" />
-      <created>1734768911183</created>
-      <option name="number" value="00317" />
-      <option name="presentableId" value="LOCAL-00317" />
-      <option name="project" value="LOCAL" />
-      <updated>1734768911184</updated>
-    </task>
-    <task id="LOCAL-00318" summary="NSV-15 / v2.12.0">
-      <option name="closed" value="true" />
-      <created>1734946353724</created>
-      <option name="number" value="00318" />
-      <option name="presentableId" value="LOCAL-00318" />
-      <option name="project" value="LOCAL" />
-      <updated>1734946353724</updated>
     </task>
     <task id="LOCAL-00319" summary="NSV-15 / console.log 삭제">
       <option name="closed" value="true" />
@@ -678,7 +649,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736469897674</updated>
     </task>
-    <option name="localTasksCounter" value="366" />
+    <task id="LOCAL-00366" summary="NSVIT-34 로직4 블로그 작업 만들기">
+      <option name="closed" value="true" />
+      <created>1736506651696</created>
+      <option name="number" value="00366" />
+      <option name="presentableId" value="LOCAL-00366" />
+      <option name="project" value="LOCAL" />
+      <updated>1736506651696</updated>
+    </task>
+    <task id="LOCAL-00367" summary="NSVIT-36 느린속도로 문제 있는 부분 픽스">
+      <option name="closed" value="true" />
+      <created>1736516048898</created>
+      <option name="number" value="00367" />
+      <option name="presentableId" value="LOCAL-00367" />
+      <option name="project" value="LOCAL" />
+      <updated>1736516048898</updated>
+    </task>
+    <option name="localTasksCounter" value="368" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -723,8 +710,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-17 / 프론트 연결 최종완성" />
-    <MESSAGE value="NSV-17 / v2.13.1" />
     <MESSAGE value="NSVIT-19 / 지문 &gt; 정상 / 쿠키 / 모두가져오기" />
     <MESSAGE value="dataTransDate" />
     <MESSAGE value="예쁘게 꾸미기 추가 완료" />
@@ -748,7 +733,9 @@
     <MESSAGE value="NSVIT-29 쇼핑 리스트" />
     <MESSAGE value="NSVIT-32 백엔드 eslint 오류" />
     <MESSAGE value="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기" />
+    <MESSAGE value="NSVIT-34 로직4 블로그 작업 만들기" />
+    <MESSAGE value="NSVIT-36 느린속도로 문제 있는 부분 픽스" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-36 느린속도로 문제 있는 부분 픽스" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
