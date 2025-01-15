@@ -10,21 +10,26 @@ export const loggedInCheck = async ({
   _id: string;
 }) => {
   try {
-    const logoutExists = await Promise.race([
+    let isLoggedIn;
+    await Promise.race([
       // 로그아웃 버튼 찾기
       page
         .locator('a[data-fclk="fot.logout"]')
-        .waitFor({ state: "visible", timeout: 30 * 1000 })
-        .then(() => true)
-        .catch(() => false),
+        .waitFor({ state: "visible", timeout: 60 * 1000 })
+        .then(() => (isLoggedIn = "YES"))
+        .catch(() => {
+          throw Error("this is not find loggedIn");
+        }),
       // 로그인 버튼 찾기
       page
         .locator('a[data-fclk="fot.login"]')
-        .waitFor({ state: "visible", timeout: 30 * 1000 })
-        .then(() => false)
-        .catch(() => false),
+        .waitFor({ state: "visible", timeout: 60 * 1000 })
+        .then(() => (isLoggedIn = "N0"))
+        .catch(() => {
+          throw Error("this is not find loggedIn");
+        }),
     ]);
-    if (!logoutExists) {
+    if (isLoggedIn === "NO") {
       await cookieNstateSave({ page, _id, nState: "미로그인" });
       throw Error("this is not loggedIn");
     }
