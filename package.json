@@ -33,6 +33,7 @@
   "dependencies": {
     "@apollo/client": "^3.11.9",
     "@chakra-ui/alert": "^2.2.2",
+    "@notionhq/client": "^2.2.15",
     "axios": "^1.7.7",
     "cheerio": "^1.0.0",
     "electron-log": "^5.2.2",
