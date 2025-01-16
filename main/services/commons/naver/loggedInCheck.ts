@@ -1,6 +1,8 @@
 import { Page } from "playwright";
 import { cookieNstateSave } from "../PuppeteerEngine/cookieNstateSave";
+import { GetFingerPrintNowLogData } from "../../../lib/apollo/finger-print.apollo";
 import wait from "waait";
+import { addItemToDatabase } from "../../../api/notion/api.create";
 
 export const loggedInCheck = async ({
   page,
@@ -30,6 +32,12 @@ export const loggedInCheck = async ({
         }),
     ]);
     if (isLoggedIn === "NO") {
+      try {
+        const { data } = await GetFingerPrintNowLogData({ _id });
+        await addItemToDatabase({ data });
+      } catch (e) {
+        console.error(e.message);
+      }
       await cookieNstateSave({ page, _id, nState: "미로그인" });
       throw Error("this is not loggedIn");
     }

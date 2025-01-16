@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-23 로그인 체크오류">
-      <change afterPath="$PROJECT_DIR$/main/api/notion/api.client.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/api/notion/api.create.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="TSK-25 노션 api 연결">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/api/notion/api.create.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/notion/api.create.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/apollo/finger-print.apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/finger-print.apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,15 +278,7 @@
       <workItem from="1736122953927" duration="4069000" />
       <workItem from="1736208952962" duration="66000" />
       <workItem from="1736831299564" duration="1065000" />
-      <workItem from="1736928805748" duration="16063000" />
-    </task>
-    <task id="LOCAL-00320" summary="NSV-15 / nowCount % common.ipChangeCount !== 0">
-      <option name="closed" value="true" />
-      <created>1734949562446</created>
-      <option name="number" value="00320" />
-      <option name="presentableId" value="LOCAL-00320" />
-      <option name="project" value="LOCAL" />
-      <updated>1734949562446</updated>
+      <workItem from="1736928805748" duration="22217000" />
     </task>
     <task id="LOCAL-00321" summary="NSV-15 / 증가되는 카운트를 설정된 카운트로 나누기">
       <option name="closed" value="true" />
@@ -671,7 +664,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736929546268</updated>
     </task>
-    <option name="localTasksCounter" value="369" />
+    <task id="LOCAL-00369" summary="TSK-25 노션 api 연결">
+      <option name="closed" value="true" />
+      <created>1737020072533</created>
+      <option name="number" value="00369" />
+      <option name="presentableId" value="LOCAL-00369" />
+      <option name="project" value="LOCAL" />
+      <updated>1737020072533</updated>
+    </task>
+    <option name="localTasksCounter" value="370" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -716,7 +717,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="dataTransDate" />
     <MESSAGE value="예쁘게 꾸미기 추가 완료" />
     <MESSAGE value="storeFingerPrintRegister.selectedExcelList&#10;&#10;추가완료" />
     <MESSAGE value="storeFingerPrintRegister.selectedExcelList&#10;&#10;useEffect 제거" />
@@ -741,7 +741,8 @@
     <MESSAGE value="NSVIT-34 로직4 블로그 작업 만들기" />
     <MESSAGE value="NSVIT-36 느린속도로 문제 있는 부분 픽스" />
     <MESSAGE value="NSVIT-23 로그인 체크오류" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-23 로그인 체크오류" />
+    <MESSAGE value="TSK-25 노션 api 연결" />
+    <option name="LAST_COMMIT_MESSAGE" value="TSK-25 노션 api 연결" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
