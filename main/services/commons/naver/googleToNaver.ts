@@ -1,22 +1,28 @@
 import { Page } from "playwright";
+import wait from "waait";
 
 export const googleToNaver = async ({ page }: { page: Page }) => {
   try {
-    console.log(11);
     await inputTypeCheck({ page });
-    console.log(22);
+
+    // Enter 키 입력 후 navigation 대기
     await Promise.all([
-      page.waitForLoadState("networkidle"),
+      page.waitForNavigation({ waitUntil: "domcontentloaded" }), // networkidle 대신 load 사용
       page.keyboard.press("Enter"),
     ]);
-    console.log(33);
+
+    // 네이버 링크 클릭 후 navigation 대기
     await Promise.all([
-      await page.locator('a[href*="naver.com"]').first().click(),
-      page.waitForLoadState("networkidle"),
+      page.waitForNavigation({
+        waitUntil: "domcontentloaded",
+        timeout: 60 * 1000,
+      }),
+      page.locator('a[href*="naver.com"]').first().click(),
     ]);
+
     return { page };
   } catch (e) {
-    throw new Error("ERR > googleToNaver");
+    throw new Error(`googleToNaver ${e.message}`);
   }
 };
 
@@ -41,6 +47,8 @@ async function inputTypeCheck({ page }) {
 
       if (result) {
         console.log(`Found ${result.type} input on attempt ${attempt}`);
+        await result.element.click();
+        await wait(1500);
         await result.element.fill("네이버");
         break; // 성공하면 루프 종료
       } else {

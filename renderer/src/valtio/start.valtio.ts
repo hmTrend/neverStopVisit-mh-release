@@ -1,12 +1,20 @@
 import { proxy, subscribe } from "valtio/vanilla";
+import { IpChangeCount } from "@/components/start/IpChangeCount";
 
 const STORAGE_KEY = "start_store";
 
 const getInitialData = () => {
   // 기본값 정의
   const defaultData = {
-    common: { isStart: false, ip: "STATIC", memberFid: "" },
+    common: { isStart: false, ip: "STATIC", memberFid: "", ipChangeCount: 1 },
     nShopping: {
+      isStart: false,
+      selectedGroup: { groupName: "", groupId: "" },
+      fingerPrint: { groupName: "", groupId: "" },
+      concurrentBrowserCount: 1,
+      logicType: "NAVER",
+    },
+    nShoppingLogic4: {
       isStart: false,
       selectedGroup: { groupName: "", groupId: "" },
       fingerPrint: { groupName: "", groupId: "" },
@@ -36,13 +44,21 @@ class StartValtio {
     isStart: boolean;
     ip: "STATIC" | "TETHERING" | "ROUTER" | "LOCAL";
     memberFid: string;
+    ipChangeCount: number;
   };
   nShopping: {
     isStart: boolean;
     selectedGroup: { groupName: string; groupId: string };
     fingerPrint: { groupName: string; groupId: string };
     concurrentBrowserCount: number;
-    logicType: "NAVER" | "GOOGLE";
+    logicType: "NAVER" | "GOOGLE" | "+STORE" | "BLOG";
+  };
+  nShoppingLogic4: {
+    isStart: boolean;
+    selectedGroup: { groupName: string; groupId: string };
+    fingerPrint: { groupName: string; groupId: string };
+    concurrentBrowserCount: number;
+    logicType: "NAVER" | "GOOGLE" | "+STORE" | "BLOG";
   };
   nPlace: {
     isStart: boolean;
@@ -58,6 +74,7 @@ class StartValtio {
     // 상태 초기화
     this.common = initialData.common;
     this.nShopping = initialData.nShopping;
+    this.nShoppingLogic4 = initialData.nShoppingLogic4;
     this.nPlace = initialData.nPlace;
   }
 }

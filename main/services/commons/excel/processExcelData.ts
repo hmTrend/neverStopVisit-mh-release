@@ -1,10 +1,4 @@
 import xlsx from "xlsx";
-import { fileURLToPath } from "url";
-import { dirname } from "path";
-
-// __dirname 대체를 위한 설정
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 export function processExcelData({ filePath, sheetName = "" }) {
   try {

@@ -5,7 +5,7 @@ import { getChromePath } from "./getChromePath";
 import wait from "waait";
 import { LaunchOptions } from "playwright-core";
 import { getNextCreateUserAgentWithPC } from "../../../lib/network/userAgentWithPC";
-import { getNextProxyDynamicProxy } from "../../../lib/proxy/getNextProxyDynamicProxy";
+import { getNextProxyYoodooProxy } from "../../../lib/proxy/getNextProxyYoodooProxy";
 
 export const initializeForPC = async ({
   url,
@@ -14,6 +14,7 @@ export const initializeForPC = async ({
   cookie,
   browser,
   type = "",
+  fingerPrintNetworkType,
 }: {
   url: string;
   page: Page;
@@ -22,8 +23,10 @@ export const initializeForPC = async ({
   cookie;
   browser: Browser;
   type?: string;
+  fingerPrintNetworkType: string;
 }) => {
-  const proxySettings = getNextProxyDynamicProxy();
+  // const proxySettings = getNextProxyDynamicProxy();
+  const proxySettings = getNextProxyYoodooProxy();
   for (let i = 0; i < 2; i++) {
     try {
       const browserOptions: LaunchOptions = {
@@ -37,7 +40,7 @@ export const initializeForPC = async ({
       };
 
       // type이 coupang일 경우에만 proxy 설정 추가
-      if (type === "coupang") {
+      if (fingerPrintNetworkType === "YOODOOPROXY") {
         browserOptions.proxy = { server: proxySettings };
       }
 
@@ -59,7 +62,7 @@ export const initializeForPC = async ({
         }
       }
       page = await getContext.newPage();
-      await page.goto(url, { waitUntil: "networkidle" });
+      await page.goto(url, { waitUntil: "load" });
       await wait(1500);
       break;
     } catch (e) {
@@ -74,8 +77,6 @@ export const initializeForPC = async ({
 async function createMobileContext({ browser }: { browser: Browser }) {
   const userAgent: any = getNextCreateUserAgentWithPC(); // 동적 user agent
 
-  console.log("userAgent 000000");
-  console.log(userAgent);
   const context = await browser.newContext({
     userAgent: userAgent.userAgent,
     extraHTTPHeaders: userAgent.headers,

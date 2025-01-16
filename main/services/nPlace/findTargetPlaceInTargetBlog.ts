@@ -1,9 +1,10 @@
 import { Page } from "playwright";
 import { PuppeteerEngine } from "../commons/PuppeteerEngine";
+import wait from "waait";
 
 export const findTargetPlaceInTargetBlog = async ({
   page = undefined,
-  targetPlace = "1443081237",
+  targetPlace = "1760267682",
   isTest = false,
 }: {
   page?: Page;
@@ -14,47 +15,106 @@ export const findTargetPlaceInTargetBlog = async ({
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({
-        url: "https://m.blog.naver.com/qhfk73/223499983532",
+        url: "https://m.blog.naver.com/lodero/223720002550",
         cookie: "",
       });
       page = test.page;
     }
 
-    const mapLink = page.locator("a.se-map-info");
-
     try {
-      const linkData = await mapLink.getAttribute("data-linkdata");
-      if (linkData) {
-        const placeInfo = JSON.parse(linkData);
-        if (placeInfo.placeId === targetPlace) {
-          // pagePromise를 먼저 생성
-          const pagePromise = page.context().waitForEvent("page");
-          // 클릭 수행
-          await mapLink.click();
-          // 새 페이지 가져오기
-          const newPage = await pagePromise;
+      const extractPlaceId = (href) => {
+        const match = href.match(/place\/(\d+)/);
+        return match ? match[1] : null;
+      };
 
-          // 새 탭이 로드될 때까지 기다림
-          await newPage.waitForLoadState("load");
+      // 두 요소에 대한 Promise 생성
+      const seMapPromise = page
+        .waitForSelector("a.se-map-info", {
+          state: "visible",
+          timeout: 90 * 1000,
+        })
+        .then(async (element) => ({
+          type: "se-map",
+          element,
+          async validate() {
+            const linkData = await element.getAttribute("data-linkdata");
+            if (!linkData) return false;
+            const placeInfo = JSON.parse(linkData);
+            return placeInfo.placeId === targetPlace;
+          },
+        }))
+        .catch(() => null);
 
-          // 새 탭으로 page 변수를 업데이트
-          page = newPage;
-        } else {
-          console.log("placeId가 일치하지 않습니다.");
-          throw new Error(
-            "findTargetPlaceInTargetBlog > 지도 정보를 찾을 수 없거나 클릭할 수 없습니다: ",
+      const locationDivPromise = page
+        .waitForSelector("div.location_component a", {
+          state: "visible",
+          timeout: 90 * 1000,
+        })
+        .then(async (element) => ({
+          type: "location-component",
+          element,
+          async validate() {
+            const isClickable = await element.isEnabled();
+            if (!isClickable) return false;
+            const href = await element.getAttribute("href");
+            if (!href) return false;
+            const placeId = extractPlaceId(href);
+            return placeId === targetPlace;
+          },
+        }))
+        .catch(() => null);
+
+      // Promise.race로 먼저 나타나는 요소 찾기
+      const result = await Promise.race([seMapPromise, locationDivPromise]);
+
+      if (result) {
+        if (result.type === "se-map") {
+          await page.waitForSelector(
+            "button.se-placesMap-additional-button.se-placesMap-button-bookmark",
+            {
+              state: "visible",
+              timeout: 60 * 1000,
+            },
           );
         }
+        if (result.type === "location-component") {
+          await wait(3 * 1000);
+        }
+        // 유효성 검사
+        const isValid = await result.validate();
+        if (!isValid) {
+          throw new Error(`PlaceId validation failed for ${result.type}`);
+        }
+
+        console.log(`Found valid ${result.type} element with matching placeId`);
+
+        // 새 페이지 열림 대기를 위한 Promise 미리 생성
+        const pagePromise = page.context().waitForEvent("page");
+        // 스크롤 및 클릭 수행
+        await result.element.scrollIntoViewIfNeeded();
+        await page.waitForTimeout(1500); // 스크롤 후 안정화 대기
+
+        // 클릭 수행
+        await result.element.click();
+        // 새 페이지 가져오기
+        const newPage = await pagePromise;
+        // 새 탭이 로드될 때까지 기다림
+        await newPage.waitForLoadState("load");
+
+        // 새 탭으로 page 변수를 업데이트
+        page = newPage;
+      } else {
+        console.log("placeId is not find");
+        throw new Error("findTargetPlaceInTargetBlog > placeId is not find ");
       }
     } catch (error) {
       throw new Error(
-        "findTargetPlaceInTargetBlog > 지도 정보를 찾을 수 없거나 클릭할 수 없습니다: " +
-          error.message,
+        "findTargetPlaceInTargetBlog > placeId is not find > " + error.message,
       );
     }
   } catch (e) {
     console.error(e.message);
-    throw Error("ERR > targetKeywordSearch");
+    throw Error(`findTargetPlaceInTargetBlog > ${e.message}`);
   }
 
   return { page };

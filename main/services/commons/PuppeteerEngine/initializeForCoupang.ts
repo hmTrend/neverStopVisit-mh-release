@@ -30,7 +30,7 @@ async function createFirefoxContext({
     },
   };
 
-  console.log("Firefox UserAgent");
+  console.log("coupang UserAgent");
   console.log(userAgent);
 
   const context = await browser.newContext({

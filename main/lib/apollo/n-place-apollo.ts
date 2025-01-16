@@ -25,8 +25,6 @@ const gqlGetNPlaceExcelAlignFlatTargetOne = gql`
 `;
 
 export const GetNPlaceExcelAlignFlatTargetOne = async ({ groupFid }) => {
-  console.log("groupFid 222333");
-  console.log(groupFid);
   const { data, error } = await client.query({
     query: gqlGetNPlaceExcelAlignFlatTargetOne,
     variables: {
@@ -44,8 +42,6 @@ export const GetNPlaceExcelAlignFlatTargetOne = async ({ groupFid }) => {
       error: error.message,
     };
   }
-  console.log("data 888999");
-  console.log(data);
   return {
     data: data.getNPlaceExcelAlignFlatTargetOne.data,
     message: "OK > GetNPlaceExcelAlignFlatTargetOne ",

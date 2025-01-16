@@ -1,6 +1,8 @@
 import { Page } from "playwright";
 import { cookieNstateSave } from "../PuppeteerEngine/cookieNstateSave";
+import { GetFingerPrintNowLogData } from "../../../lib/apollo/finger-print.apollo";
 import wait from "waait";
+import { addItemToDatabase } from "../../../api/notion/api.create";
 
 export const loggedInCheck = async ({
   page,
@@ -10,20 +12,40 @@ export const loggedInCheck = async ({
   _id: string;
 }) => {
   try {
-    await naverMainPageCompletedLoadingCheck({ page });
-    const logoutExists =
-      (await page.locator("[data-fclk='fotcontlogout']").count()) > 0;
-
-    if (!logoutExists) {
+    let isLoggedIn;
+    await Promise.race([
+      // 로그아웃 버튼 찾기
+      page
+        .locator('a[data-fclk="fot.logout"]')
+        .waitFor({ state: "visible", timeout: 60 * 1000 })
+        .then(() => (isLoggedIn = "YES"))
+        .catch(() => {
+          throw Error("this is not find loggedIn");
+        }),
+      // 로그인 버튼 찾기
+      page
+        .locator('a[data-fclk="fot.login"]')
+        .waitFor({ state: "visible", timeout: 60 * 1000 })
+        .then(() => (isLoggedIn = "N0"))
+        .catch(() => {
+          throw Error("this is not find loggedIn");
+        }),
+    ]);
+    if (isLoggedIn === "NO") {
+      try {
+        const { data } = await GetFingerPrintNowLogData({ _id });
+        await addItemToDatabase({ data });
+      } catch (e) {
+        console.error(e.message);
+      }
       await cookieNstateSave({ page, _id, nState: "미로그인" });
       throw Error("this is not loggedIn");
     }
 
-    console.log(44);
     return { page };
   } catch (e) {
     console.error(e.message);
-    throw Error("loggedInCheck");
+    throw Error(`loggedInCheck > ${e.message}`);
   }
 };
 

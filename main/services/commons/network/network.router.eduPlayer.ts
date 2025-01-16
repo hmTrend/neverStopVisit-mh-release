@@ -26,7 +26,7 @@ async function playwrightEngineStart() {
     const page = await context.newPage();
 
     await page.goto("http://192.168.8.1/index.html#band", {
-      waitUntil: "domcontentloaded",
+      waitUntil: "load",
       timeout: 120 * 1000,
     });
     return { page, browser };
@@ -55,14 +55,14 @@ async function isLoggedCheck({ page }: { page: Page }) {
 async function waitForLastImageWithLogIn({ page }) {
   await page.waitForSelector('img[src="./img_mifi/unread_message.gif"]', {
     state: "visible",
-    timeout: 30 * 1000, // 10초 타임아웃
+    timeout: 90 * 1000, // 10초 타임아웃
   });
 }
 
 async function waitForLoggedCheckWithLogOut({ page }) {
   await page.waitForSelector('span[data-trans="home"]', {
     state: "visible",
-    timeout: 30 * 1000, // 10초 타임아웃
+    timeout: 90 * 1000, // 10초 타임아웃
   });
 }
 

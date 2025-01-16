@@ -1,6 +1,7 @@
 import { useLazyQuery } from "@apollo/client";
-import { gqlGetExcelList } from "@/lib/graphql/finger-print.apollo";
 import { useToast } from "@chakra-ui/react";
+import { gqlGetExcelList } from "../../lib/graphql/finger-print.apollo";
+import { UtilDate } from "../../util/util.date";
 
 export const useGetExcelList = () => {
   const [GetExcelList] = useLazyQuery(gqlGetExcelList);
@@ -20,8 +21,18 @@ export const useGetExcelList = () => {
       });
       throw Error("ERR > getExcelList");
     }
+
+    const latestDate = Math.max(
+      ...data.getExcelList.data.map((v) => new Date(v.updatedAt).getTime()),
+    );
+
+    const dataTransDate = data.getExcelList.data.map((item) => ({
+      ...item,
+      updatedAt: UtilDate.formatKoreanTime(item.updatedAt),
+      isLatest: new Date(item.updatedAt).getTime() === latestDate,
+    }));
     return {
-      data: data.getExcelList.data,
+      data: dataTransDate,
       listTotalCount: data.getExcelList.listTotalCount,
     };
   };

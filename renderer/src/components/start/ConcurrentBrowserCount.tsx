@@ -27,7 +27,7 @@ export const ConcurrentBrowserCount = ({ selectProgram }) => {
           max={1}
           w={"75px"}
           onChange={handleChange}
-          defaultValue={snapStart[selectProgram].concurrentBrowserCount}
+          defaultValue={snapStart[selectProgram]?.concurrentBrowserCount}
         >
           <NumberInputField />
           <NumberInputStepper>

@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Button, useToast } from "@chakra-ui/react";
+import { useSnapshot } from "valtio/react";
+import { storeFingerPrintRegister } from "@/valtio/fingerPrint.register.valtio";
+import { UtilDate } from "@/util/util.date";
 
 // 열린 브라우저를 추적하기 위한 Map
 const openBrowsers = new Map();
 
-export const FingerprintButton = ({ _id, type }) => {
+export const FingerprintButton = ({ _id, type, fingerPrintNetworkType }) => {
   const [isOpen, setIsOpen] = useState(openBrowsers.has(_id));
   const toast = useToast();
   const [isLoading, setIsLoading] = useState(false);
+  const { selectedExcelList } = useSnapshot(storeFingerPrintRegister);
 
   useEffect(() => {
     // 브라우저 닫힘 이벤트 리스너
@@ -27,10 +31,26 @@ export const FingerprintButton = ({ _id, type }) => {
       const result = await window.ipc.invoke("finger-print-browser-open", {
         _id,
         type,
+        fingerPrintNetworkType,
       });
       openBrowsers.set(_id, true);
       setIsLoading(false);
       setIsOpen(true);
+      storeFingerPrintRegister.selectedExcelList = [
+        ...selectedExcelList.map((v) => {
+          if (v._id === _id) {
+            return {
+              ...v,
+              updatedAt: UtilDate.formatKoreanTime(new Date()),
+              isLatest: true,
+            };
+          }
+          return {
+            ...v,
+            isLatest: false,
+          };
+        }),
+      ];
     } catch (error) {
       console.error("Failed to open browser:", error);
       toast({

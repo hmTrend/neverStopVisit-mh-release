@@ -75,7 +75,7 @@ export const FetchFingerPrintTargetExcelOne = async ({
   cookie,
   nState,
 }) => {
-  const { data, error } = await client.mutate({
+  const { data, errors } = await client.mutate({
     mutation: gqlFetchFingerPrintTargetExcelOne,
     variables: {
       input: {
@@ -86,12 +86,12 @@ export const FetchFingerPrintTargetExcelOne = async ({
     },
     fetchPolicy: "no-cache",
   });
-  if (error) {
-    console.error(error.message);
+  if (errors) {
+    console.error(errors[0].message);
     return {
       data: "",
       message: "ERR > FetchFingerPrintTargetExcelOne ",
-      error: error.message,
+      error: errors[0].message,
     };
   }
   return {
@@ -147,6 +147,47 @@ export const GetFingerPrintTargetExcelOneFromId = async ({ _id }) => {
   return {
     data: data.getFingerPrintTargetExcelOneFromId.data,
     message: "OK > GetFingerPrintTargetExcelOneFromId ",
+    error: "",
+  };
+};
+
+const gqlGetFingerPrintNowLogData = gql`
+  query GetFingerPrintNowLogData($input: GetFingerPrintExcelListFromIdInput!) {
+    getFingerPrintNowLogData(input: $input) {
+      data {
+        totalCount
+        notLoginCount
+        nPw
+        nId
+        groupFid
+      }
+      message
+      error
+    }
+  }
+`;
+
+export const GetFingerPrintNowLogData = async ({ _id }) => {
+  const { data, error } = await client.query({
+    query: gqlGetFingerPrintNowLogData,
+    variables: {
+      input: {
+        _id,
+      },
+    },
+    fetchPolicy: "no-cache",
+  });
+  if (error) {
+    console.error(`GetFingerPrintNowLogData > ${error.message}`);
+    return {
+      data: "",
+      message: "ERR > GetFingerPrintNowLogData ",
+      error: error.message,
+    };
+  }
+  return {
+    data: data.getFingerPrintNowLogData.data,
+    message: "OK > GetFingerPrintNowLogData ",
     error: "",
   };
 };

@@ -87,6 +87,30 @@ export const gqlGetExcelList = gql`
   }
 `;
 
+export const gqlGetExcelListDownload = gql`
+  query GetExcelList($input: GetFingerPrintExcelListInput!) {
+    getExcelList(input: $input) {
+      data {
+        _id
+        groupFid
+        nId
+        nPw
+        bPw
+        nState
+        createdAt
+        ip
+        phoneNumber
+        updatedAt
+        type
+        cookie
+      }
+      listTotalCount
+      message
+      error
+    }
+  }
+`;
+
 export const gqlPatchFingerPrintExcelList = gql`
   mutation PatchFingerPrintExcelList(
     $input: [CreateFingerPrintExcelListInput!]!

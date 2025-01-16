@@ -20,7 +20,7 @@ export const StartStateSwitch = ({ selectProgram }) => {
       <Switch
         size="lg"
         onChange={handleChange}
-        defaultChecked={snap[selectProgram].isStart}
+        defaultChecked={snap[selectProgram]?.isStart}
       />
     </Stack>
   );

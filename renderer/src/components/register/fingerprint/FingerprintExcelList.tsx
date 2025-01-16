@@ -33,6 +33,7 @@ export const FingerprintExcelList = () => {
     selectedExcelList,
     selectedGroupId,
     listTotalCount,
+    fingerPrintNetworkType,
   } = useSnapshot(storeFingerPrintRegister);
   const { getExcelList } = useGetExcelList();
 
@@ -114,15 +115,16 @@ export const FingerprintExcelList = () => {
                 <Tr>
                   <Th>번호</Th>
                   <Th>타입</Th>
+                  <Th>업데이트</Th>
+                  <Th>지문열기</Th>
                   <Th>아이디</Th>
                   <Th>현재비번</Th>
                   <Th>이전비번</Th>
                   <Th>상태</Th>
                   <Th>쿠키</Th>
-                  <Th>생성일</Th>
                   <Th>아이피</Th>
                   <Th>폰번호</Th>
-                  <Th>지문열기</Th>
+
                   <Th>삭제여부</Th>
                 </Tr>
               </Thead>
@@ -131,6 +133,24 @@ export const FingerprintExcelList = () => {
                   <Tr key={i}>
                     <Td>{i + 1}</Td>
                     <Td>{v.type}</Td>
+                    <Td>
+                      <Text
+                        color={v.isLatest ? "red.500" : "inherit"}
+                        fontWeight={v.isLatest ? "bold" : "normal"}
+                        bg={v.isLatest ? "red.50" : "transparent"}
+                        p={v.isLatest ? 2 : 0}
+                        borderRadius={v.isLatest ? "md" : "none"}
+                      >
+                        {v.updatedAt}
+                      </Text>
+                    </Td>
+                    <Td>
+                      <FingerprintButton
+                        _id={v._id}
+                        type={v.type}
+                        fingerPrintNetworkType={fingerPrintNetworkType}
+                      />
+                    </Td>
                     <Td>{v.nId}</Td>
                     <Td>{CommonUtil.maskLast4Digits(v.nPw)}</Td>
                     <Td>{CommonUtil.maskLast4Digits(v.bPw)}</Td>
@@ -143,12 +163,10 @@ export const FingerprintExcelList = () => {
                         type={v.type}
                       />
                     </Td>
-                    <Td>{v.createdAt}</Td>
+
                     <Td>{v.ip}</Td>
                     <Td>{v.phoneNumber}</Td>
-                    <Td>
-                      <FingerprintButton _id={v._id} type={v.type} />
-                    </Td>
+
                     <Td>
                       <Button
                         onClick={() =>

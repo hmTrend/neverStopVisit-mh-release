@@ -16,7 +16,7 @@ class NShoppingRegisterValtio {
     this.selectedGroupId = "";
     this.getExcelList = [];
     this.getExcelListAlignFlat = [];
-    this.logicType = ["NAVER", "GOOGLE"];
+    this.logicType = ["NAVER", "GOOGLE", "+STORE"];
   }
 }
 

@@ -22,7 +22,7 @@ export const CreateGroup = forwardRef<HTMLInputElement, CreateGroupProps>(
         <Box>
           <FormControl>
             <FormLabel>{title} 그룹 만들기</FormLabel>
-            <Box display={"flex"}>
+            <Box display={"flex"} justifyContent={"flex-start"}>
               <Input type="email" ref={ref} />
               <Button onClick={fn} isLoading={loading}>
                 {title} 그룹생성

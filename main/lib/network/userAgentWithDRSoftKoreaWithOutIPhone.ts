@@ -365,11 +365,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
 
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-X700 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Safari/537.36",
+      "Mozilla/5.0 (Linux; Android 14; SM-X700 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Moblie Safari/537.36",
     headers: {
       "sec-ch-ua":
         '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Linux"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -806,7 +806,7 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
     headers: {
       "sec-ch-ua":
         '"Not)A;Brand";v="99", "HeadlessChrome";v="127", "Chromium";v="127"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Linux"',
       "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "cors",
@@ -2400,11 +2400,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
     headers: {
       "sec-ch-ua":
         '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -2532,11 +2532,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F926N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Safari/537.36 DaumApps/7.4.0 DaumDevice/mobile",
+      "Mozilla/5.0 (Linux; Android 14; SM-F926N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Mobile Safari/537.36 DaumApps/7.4.0 DaumDevice/mobile",
     headers: {
       "sec-ch-ua":
         '"Android WebView";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -3674,11 +3674,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F936N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Whale/1.0.0.0 Crosswalk/28.114.0.23 Safari/537.36",
+      "Mozilla/5.0 (Linux; Android 14; SM-F936N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Whale/1.0.0.0 Crosswalk/28.114.0.23 Mobile Safari/537.36",
     headers: {
       "sec-ch-ua":
         '"Chromium";v="114", "Whale";v="1", "Not)A;Brand";v="99", "XWhale";v="28"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -4666,11 +4666,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 13; SM-P610 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Safari/537.36 nApps(Android OS 13;SM-P610;naverdicapp;3.0.2)",
+      "Mozilla/5.0 (Linux; Android 13; SM-P610 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Mobile Safari/537.36 nApps(Android OS 13;SM-P610;naverdicapp;3.0.2)",
     headers: {
       "sec-ch-ua":
         '"Android WebView";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -5529,11 +5529,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F936N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Whale/1.0.0.0 Crosswalk/28.114.0.23 Safari/537.36",
+      "Mozilla/5.0 (Linux; Android 14; SM-F936N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Whale/1.0.0.0 Crosswalk/28.114.0.23 Mobile Safari/537.36",
     headers: {
       "sec-ch-ua":
         '"Chromium";v="114", "Whale";v="1", "Not)A;Brand";v="99", "XWhale";v="28"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -6024,11 +6024,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F956N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;]",
+      "Mozilla/5.0 (Linux; Android 14; SM-F956N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;]",
     headers: {
       "sec-ch-ua":
         '"Android WebView";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -6169,11 +6169,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
 
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F936N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.108 Safari/537.36",
+      "Mozilla/5.0 (Linux; Android 14; SM-F936N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.108 Mobile Safari/537.36",
     headers: {
       "sec-ch-ua":
         '"Chromium";v="130", "Android WebView";v="130", "Not?A_Brand";v="99"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -6342,11 +6342,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
 
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F946N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;]",
+      "Mozilla/5.0 (Linux; Android 14; SM-F946N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;]",
     headers: {
       "sec-ch-ua":
         '"Android WebView";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -6894,11 +6894,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F936N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Safari/537.36;ref:nate_app;appver:5.7.5;ndruk:202208231028127453515;skai:2022082310283277765;provider:TS;GadID:d2b76d46-93ca-414e-8e96-af171dec30dd;darkMode:light",
+      "Mozilla/5.0 (Linux; Android 14; SM-F936N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Mobile Safari/537.36;ref:nate_app;appver:5.7.5;ndruk:202208231028127453515;skai:2022082310283277765;provider:TS;GadID:d2b76d46-93ca-414e-8e96-af171dec30dd;darkMode:light",
     headers: {
       "sec-ch-ua":
         '"Chromium";v="130", "Android WebView";v="130", "Not?A_Brand";v="99"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -7012,11 +7012,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F946N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Whale/1.0.0.0 Crosswalk/28.114.0.23 Safari/537.36",
+      "Mozilla/5.0 (Linux; Android 14; SM-F946N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Whale/1.0.0.0 Crosswalk/28.114.0.23 Mobile Safari/537.36",
     headers: {
       "sec-ch-ua":
         '"Chromium";v="114", "Whale";v="1", "Not)A;Brand";v="99", "XWhale";v="28"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -7503,11 +7503,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-X810 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;IABMV/1;] FBNV/5",
+      "Mozilla/5.0 (Linux; Android 14; SM-X810 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;IABMV/1;] FBNV/5",
     headers: {
       "sec-ch-ua":
         '"Android WebView";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -7542,11 +7542,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-X810 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;IABMV/1;]",
+      "Mozilla/5.0 (Linux; Android 14; SM-X810 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;IABMV/1;]",
     headers: {
       "sec-ch-ua":
         '"Android WebView";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -7949,11 +7949,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F926N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.189 Whale/1.0.0.0 Crosswalk/27.102.0.25 Safari/537.36",
+      "Mozilla/5.0 (Linux; Android 14; SM-F926N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.189 Whale/1.0.0.0 Crosswalk/27.102.0.25 Mobile Safari/537.36",
     headers: {
       "sec-ch-ua":
         '"Whale";v="1", " Not;A Brand";v="99", "Chromium";v="102", "XWhale";v="27"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -8682,11 +8682,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
 
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/27.0 Chrome/125.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/27.0 Chrome/125.0.0.0 Mobile Safari/537.36",
     headers: {
       "sec-ch-ua":
         '"Chromium";v="125", "Not.A/Brand";v="24", "Samsung Internet";v="27.0"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -9282,11 +9282,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
 
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F946N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Safari/537.36 AdFitSDK/3.13.6",
+      "Mozilla/5.0 (Linux; Android 14; SM-F946N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Mobile Safari/537.36 AdFitSDK/3.13.6",
     headers: {
       "sec-ch-ua":
         '"Chromium";v="130", "Android WebView";v="130", "Not?A_Brand";v="99"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -10251,11 +10251,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F956N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;IABMV/1;] FBNV/5",
+      "Mozilla/5.0 (Linux; Android 14; SM-F956N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;IABMV/1;] FBNV/5",
     headers: {
       "sec-ch-ua":
         '"Android WebView";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -10409,11 +10409,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F956N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;IABMV/1;]",
+      "Mozilla/5.0 (Linux; Android 14; SM-F956N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;IABMV/1;]",
     headers: {
       "sec-ch-ua":
         '"Android WebView";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -12187,11 +12187,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F946N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;IABMV/1;]",
+      "Mozilla/5.0 (Linux; Android 14; SM-F946N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.78 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/491.0.0.58.78;IABMV/1;]",
     headers: {
       "sec-ch-ua":
         '"Android WebView";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -12705,11 +12705,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
 
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F956N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Whale/1.0.0.0 Crosswalk/28.114.0.23 Safari/537.36",
+      "Mozilla/5.0 (Linux; Android 14; SM-F956N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Whale/1.0.0.0 Crosswalk/28.114.0.23 Mobile Safari/537.36",
     headers: {
       "sec-ch-ua":
         '"Chromium";v="114", "Whale";v="1", "Not)A;Brand";v="99", "XWhale";v="28"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -13761,11 +13761,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-X610 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Safari/537.36 BizWebView",
+      "Mozilla/5.0 (Linux; Android 14; SM-X610 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Mobile Safari/537.36 BizWebView",
     headers: {
       "sec-ch-ua":
         '"Chromium";v="130", "Android WebView";v="130", "Not?A_Brand";v="99"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -14670,11 +14670,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 14; SM-F946N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Safari/537.36 AdFitSDK/3.12.15",
+      "Mozilla/5.0 (Linux; Android 14; SM-F946N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Mobile Safari/537.36 AdFitSDK/3.12.15",
     headers: {
       "sec-ch-ua":
         '"Chromium";v="130", "Android WebView";v="130", "Not?A_Brand";v="99"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -15069,11 +15069,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
 
   {
     userAgent:
-      "Mozilla/5.0 (Linux; Android 12; SM-T860 Build/SP2A.220305.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Safari/537.36 BizWebView",
+      "Mozilla/5.0 (Linux; Android 12; SM-T860 Build/SP2A.220305.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Mobile Safari/537.36 BizWebView",
     headers: {
       "sec-ch-ua":
         '"Chromium";v="130", "Android WebView";v="130", "Not?A_Brand";v="99"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": '"Android"',
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "cors",
@@ -15728,11 +15728,11 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
   },
   {
     userAgent:
-      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/27.0 Chrome/125.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/27.0 Chrome/125.0.0.0 Mobile Safari/537.36",
     headers: {
       "sec-ch-ua":
         '"Chromium";v="125", "Not.A/Brand";v="24", "Samsung Internet";v="27.0"',
-      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": "Linux",
       "sec-fetch-site": "none",
       "sec-fetch-mode": "navigate",

@@ -3,7 +3,7 @@ import { formatCookiesForPlaywright } from "./formatCookiesForPlaywright";
 import { validateCookie } from "./validateCookie";
 import { getChromePath } from "./getChromePath";
 import wait from "waait";
-import { getNextCreateUserAgentWithDRSoftKorea241207WithOutIPhone } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhone";
+import { userAgentWithDRSoftKoreaWithIPhone } from "../../../lib/network/userAgentWithDRSoftKoreaWithIPhone";
 
 export const initialize = async ({
   url,
@@ -13,6 +13,7 @@ export const initialize = async ({
   cookie,
   browser,
   type = "",
+  networkSpeed = "LTE",
 }: {
   url: string;
   page: Page;
@@ -21,8 +22,9 @@ export const initialize = async ({
   cookie;
   browser: Browser;
   type?: string;
+  networkSpeed?: "LTE" | "3G";
 }) => {
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 3; i++) {
     try {
       browser = await chromiumEngine.launch({
         headless: false,
@@ -46,36 +48,54 @@ export const initialize = async ({
         }
       }
       page = await getContext.newPage();
-      await page.goto(url, { waitUntil: "networkidle" });
+
+      if (networkSpeed === "3G") {
+        const client = await context.newCDPSession(page);
+        await client.send("Network.enable");
+        await client.send("Network.emulateNetworkConditions", {
+          offline: false,
+          latency: 100, // 지연시간 (ms)
+          downloadThroughput: (750 * 1024) / 8, // bytes/s
+          uploadThroughput: (250 * 1024) / 8, // bytes/s
+        });
+      }
+
+      await page.goto(url, {
+        waitUntil: "domcontentloaded",
+        timeout: 90 * 1000,
+      });
       await wait(1500);
       break;
     } catch (e) {
+      if (browser) {
+        await browser.close(); // 에러 발생 시 브라우저 닫기
+      }
       console.log("ERR > executablePath");
       console.error(e.message);
+      if (i === 2) {
+        throw Error("Cookie validation failure ended");
+      }
     }
   }
   return { page, browser };
 };
 
-async function createMobileContext({ browser }: { browser: Browser }) {
-  const userAgent: any =
-    getNextCreateUserAgentWithDRSoftKorea241207WithOutIPhone(); // 동적 user agent
+async function createMobileContext({
+  browser,
+}: {
+  browser: Browser;
+  networkSpeed?: string;
+}) {
+  const userAgent: any = userAgentWithDRSoftKoreaWithIPhone(); // 동적 user agent
 
-  console.log("userAgent 000000");
-  console.log(userAgent);
   const context = await browser.newContext({
     userAgent: userAgent.userAgent,
-    // userAgent:
-    //   "Mozilla/5.0 (Linux; Android 14; SM-S921N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Mobile Safari/537.36 coupangapp/1.0",
-    // userAgent:
-    //   "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Mobile/15E148 Safari/605.1",
     extraHTTPHeaders: userAgent.headers,
     viewport: { width: 412, height: 915 },
     isMobile: true,
     hasTouch: true,
     deviceScaleFactor: 2.625,
   });
-
   return { context };
 }
 

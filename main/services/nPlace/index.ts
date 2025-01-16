@@ -9,17 +9,18 @@ import { findTargetBlog } from "./findTargetBlog";
 import { findTargetPlaceInTargetBlog } from "./findTargetPlaceInTargetBlog";
 import { clickNearbyAttractions } from "./clickNearbyAttractions";
 import { googleToNaver } from "../commons/naver/googleToNaver";
+import { errorToFront } from "../commons/error/errorToFront";
+import { UtilNetwork } from "../../lib/util/util.network";
+import { UtilDate } from "../../lib/util/util.date";
 
 export class NPlace extends PuppeteerEngine {
-  async start({ nPlace }): Promise<void> {
+  async start({ nPlace, mainWindow }): Promise<void> {
     try {
       for (let i = 0; i <= 5; i++) {
         try {
           const { data: excelData } = await GetNPlaceExcelAlignFlatTargetOne({
             groupFid: nPlace.selectedGroup.groupId,
           });
-          console.log("excelData 334455");
-          console.log(excelData);
           var EcelData = excelData;
           const { targetKeyword, targetBlog, placeNumber } = excelData;
           {
@@ -105,18 +106,29 @@ export class NPlace extends PuppeteerEngine {
           nState: "정상",
         });
         this.page = page;
-        await wait(2000);
-        await this.page.close();
-        await this.page.context().close();
-        await this.browser.close();
-        await wait(3000);
       }
+      const myIp = await UtilNetwork.getIpAddress();
+      const createdAt = UtilDate.getCurrentDate();
+      errorToFront({
+        targetKeyword: this.query,
+        mainWindow,
+        errorMessage: "",
+        workType: "NPlace",
+        myIp,
+        createdAt,
+      });
     } catch (e) {
+      const myIp = await UtilNetwork.getIpAddress();
+      const createdAt = UtilDate.getCurrentDate();
+      errorToFront({
+        targetKeyword: this.query,
+        mainWindow,
+        errorMessage: e.message,
+        workType: "NPlace",
+        myIp,
+        createdAt,
+      });
       console.error(e.message);
-      await this.page.close();
-      await this.page.context().close();
-      await this.browser.close();
-      await wait(30 * 1000);
     }
   }
 
