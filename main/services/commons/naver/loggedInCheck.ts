@@ -1,7 +1,6 @@
 import { Page } from "playwright";
 import { cookieNstateSave } from "../PuppeteerEngine/cookieNstateSave";
 import { GetFingerPrintNowLogData } from "../../../lib/apollo/finger-print.apollo";
-import wait from "waait";
 import { addItemToDatabase } from "../../../api/notion/api.create";
 
 export const loggedInCheck = async ({

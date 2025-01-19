@@ -52,8 +52,11 @@ export async function addItemToDatabase({ data }) {
             },
           ],
         },
-        "정상 로그인": {
+        "모든 아이디": {
           number: totalCount, // 숫자 값 직접 입력
+        },
+        "로그인 정상": {
+          number: totalCount - notLoginCount, // 숫자 값 직접 입력
         },
         "로그인 풀림": {
           number: notLoginCount, // 숫자 값 직접 입력
