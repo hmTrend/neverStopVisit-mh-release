@@ -5,13 +5,13 @@ import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
 import { GetNPlaceExcelAlignFlatTargetOne } from "../../lib/apollo/n-place-apollo";
 import { loggedInCheck } from "../commons/naver/loggedInCheck";
 import { targetKeywordSearch } from "./targetKeywordSearch";
-import { findTargetBlog } from "./findTargetBlog";
 import { findTargetPlaceInTargetBlog } from "./findTargetPlaceInTargetBlog";
 import { clickNearbyAttractions } from "./clickNearbyAttractions";
 import { googleToNaver } from "../commons/naver/googleToNaver";
 import { errorToFront } from "../commons/error/errorToFront";
 import { UtilNetwork } from "../../lib/util/util.network";
 import { UtilDate } from "../../lib/util/util.date";
+import { findTargetBlog2 } from "./findTargetBlog2";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace, mainWindow }): Promise<void> {
@@ -81,7 +81,7 @@ export class NPlace extends PuppeteerEngine {
         this.page = page;
       }
       {
-        const { page } = await findTargetBlog({
+        const { page } = await findTargetBlog2({
           page: this.page,
           targetBlog: EcelData.targetBlog,
         });
