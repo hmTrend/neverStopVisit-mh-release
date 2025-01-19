@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="TSK-25 노션 api 연결">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="TSK-25 v3.0.0">
+      <change afterPath="$PROJECT_DIR$/main/services/commons/naver/googleNaverSearchedToNaver.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-01-10__11_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-01-10_오후_11_15/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025__1__8__PM_11_54_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025__1__8__PM_11_54__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025__1__8__PM_6_49__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/notion/api.create.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/notion/api.create.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/finger-print.apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/finger-print.apollo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/googleToNaver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/googleToNaver.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,64 +71,66 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TypeScript.api.client.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.api.create.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.clickNearbyAttractions.tsx.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.findTargetBlog.ts (1).executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.findTargetBlog.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.findTargetPlaceInTargetBlog.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.findTargetShoppingInTargetBlog.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.goToKeyword.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.googleToNaverShopping.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.index.ts (1).executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.index.ts (2).executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.index.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.initializeAndroid.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.initializeFireFox.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.mobile.userAgent.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.network.router.edu.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.network.router.eduPlayer.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.searchNVMID.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.targetKeywordSearch.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.util.network.ts.executor&quot;: &quot;Run&quot;,
-    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/network&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TypeScript.api.client.ts.executor": "Run",
+    "TypeScript.api.create.ts.executor": "Run",
+    "TypeScript.clickNearbyAttractions.tsx.executor": "Run",
+    "TypeScript.findTargetBlog.ts (1).executor": "Run",
+    "TypeScript.findTargetBlog.ts.executor": "Run",
+    "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
+    "TypeScript.findTargetShoppingInTargetBlog.ts.executor": "Run",
+    "TypeScript.goToKeyword.ts.executor": "Run",
+    "TypeScript.googleNaverSearchedToNaver.ts.executor": "Run",
+    "TypeScript.googleToNaver.ts.executor": "Run",
+    "TypeScript.googleToNaverShopping.ts.executor": "Run",
+    "TypeScript.index.ts (1).executor": "Run",
+    "TypeScript.index.ts (2).executor": "Run",
+    "TypeScript.index.ts.executor": "Run",
+    "TypeScript.initialize.ts.executor": "Run",
+    "TypeScript.initializeAndroid.ts.executor": "Run",
+    "TypeScript.initializeFireFox.ts.executor": "Run",
+    "TypeScript.mobile.userAgent.ts.executor": "Run",
+    "TypeScript.network.router.edu.ts.executor": "Run",
+    "TypeScript.network.router.eduPlayer.ts.executor": "Run",
+    "TypeScript.searchNVMID.ts.executor": "Run",
+    "TypeScript.targetKeywordSearch.ts.executor": "Run",
+    "TypeScript.util.network.ts.executor": "Run",
+    "eslint.code.style.apply.dismiss": "true",
+    "git-widget-placeholder": "develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/commons/naver",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/services/commons/naver" />
       <recent name="$PROJECT_DIR$/main/lib/network" />
       <recent name="$PROJECT_DIR$/main/services/nShoppingLogic4" />
       <recent name="$PROJECT_DIR$/main/lib/apollo" />
       <recent name="$PROJECT_DIR$/main/services" />
-      <recent name="$PROJECT_DIR$/main/services/commons/excel" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/services/commons/naver" />
@@ -133,7 +140,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.api.create.ts">
+  <component name="RunManager" selected="TypeScript.googleToNaver.ts">
     <configuration name="api.client.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -160,52 +167,55 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="findTargetBlog.ts (1)" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="googleNaverSearchedToNaver.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShoppingLogic4" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/naver" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nShoppingLogic4/findTargetBlog.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/naver/googleNaverSearchedToNaver.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
-    <configuration name="findTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="googleToNaver.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/naver" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetBlog.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/naver/googleToNaver.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
-    <configuration name="findTargetShoppingInTargetBlog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="initialize.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShoppingLogic4" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nShoppingLogic4/findTargetShoppingInTargetBlog.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.googleToNaver.ts" />
+        <item itemvalue="TypeScript.googleNaverSearchedToNaver.ts" />
+        <item itemvalue="TypeScript.initialize.ts" />
         <item itemvalue="TypeScript.api.create.ts" />
         <item itemvalue="TypeScript.api.client.ts" />
-        <item itemvalue="TypeScript.findTargetShoppingInTargetBlog.ts" />
-        <item itemvalue="TypeScript.findTargetBlog.ts (1)" />
-        <item itemvalue="TypeScript.findTargetBlog.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -276,23 +286,8 @@
       <workItem from="1736122953927" duration="4069000" />
       <workItem from="1736208952962" duration="66000" />
       <workItem from="1736831299564" duration="1065000" />
-      <workItem from="1736928805748" duration="22217000" />
-    </task>
-    <task id="LOCAL-00321" summary="NSV-15 / 증가되는 카운트를 설정된 카운트로 나누기">
-      <option name="closed" value="true" />
-      <created>1734949580513</created>
-      <option name="number" value="00321" />
-      <option name="presentableId" value="LOCAL-00321" />
-      <option name="project" value="LOCAL" />
-      <updated>1734949580513</updated>
-    </task>
-    <task id="LOCAL-00322" summary="NSV-15 / v2.12.1">
-      <option name="closed" value="true" />
-      <created>1734950025851</created>
-      <option name="number" value="00322" />
-      <option name="presentableId" value="LOCAL-00322" />
-      <option name="project" value="LOCAL" />
-      <updated>1734950025851</updated>
+      <workItem from="1736928805748" duration="25729000" />
+      <workItem from="1737267258946" duration="2527000" />
     </task>
     <task id="LOCAL-00323" summary="NSV-17 / errorToFront 백엔드 설치 완료 + 아이피 추가 +">
       <option name="closed" value="true" />
@@ -670,7 +665,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737020072533</updated>
     </task>
-    <option name="localTasksCounter" value="370" />
+    <task id="LOCAL-00370" summary="TSK-25 프론트 연결 및 노션에 데이터 전송 추가">
+      <option name="closed" value="true" />
+      <created>1737030152165</created>
+      <option name="number" value="00370" />
+      <option name="presentableId" value="LOCAL-00370" />
+      <option name="project" value="LOCAL" />
+      <updated>1737030152165</updated>
+    </task>
+    <task id="LOCAL-00371" summary="TSK-25 v3.0.0">
+      <option name="closed" value="true" />
+      <created>1737030237965</created>
+      <option name="number" value="00371" />
+      <option name="presentableId" value="LOCAL-00371" />
+      <option name="project" value="LOCAL" />
+      <updated>1737030237965</updated>
+    </task>
+    <option name="localTasksCounter" value="372" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -715,8 +726,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="예쁘게 꾸미기 추가 완료" />
-    <MESSAGE value="storeFingerPrintRegister.selectedExcelList&#10;&#10;추가완료" />
     <MESSAGE value="storeFingerPrintRegister.selectedExcelList&#10;&#10;useEffect 제거" />
     <MESSAGE value="naverM 모바일 오픈 셋팅완료" />
     <MESSAGE value="v2.14.0 네스비 naverM 지문 연동" />
@@ -740,7 +749,9 @@
     <MESSAGE value="NSVIT-36 느린속도로 문제 있는 부분 픽스" />
     <MESSAGE value="NSVIT-23 로그인 체크오류" />
     <MESSAGE value="TSK-25 노션 api 연결" />
-    <option name="LAST_COMMIT_MESSAGE" value="TSK-25 노션 api 연결" />
+    <MESSAGE value="TSK-25 프론트 연결 및 노션에 데이터 전송 추가" />
+    <MESSAGE value="TSK-25 v3.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="TSK-25 v3.0.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

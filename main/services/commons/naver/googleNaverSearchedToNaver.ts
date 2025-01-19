@@ -2,7 +2,7 @@ import { Page } from "playwright";
 import wait from "waait";
 import { PuppeteerEngine } from "../PuppeteerEngine";
 
-export const googleToNaver = async ({
+export const googleNaverSearchedToNaver = async ({
   page = undefined,
   isTest = false,
 }: {
@@ -13,19 +13,11 @@ export const googleToNaver = async ({
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({
-        url: "https://www.google.com/",
+        url: "https://www.google.com/search?q=%EB%84%A4%EC%9D%B4%EB%B2%84&sca_esv=cfdfcd9e6141dee0&sxsrf=ADLYWII9vWO1PBZ5I0TXrunY7mxW1Trg1A%3A1737268772794&source=hp&ei=JJ6MZ4TbLtDT1e8P3aDtkA0&oq=&gs_lp=EhFtb2JpbGUtZ3dzLXdpei1ocCIAKgIIADIHECMYJxjqAjIHECMYJxjqAjIHECMYJxjqAjIHECMYJxjqAjIHECMYJxjqAjIHECMYJxjqAjIHECMYJxjqAjIHECMYJxjqAjIHECMYJxjqAjIHECMYJxjqAjIHECMYJxjqAjIHECMYJxjqAjIHECMYJxjqAjIHECMYJxjqAjIHECMYJxjqAkjQDFAAWABwAXgAkAEAmAEAoAEAqgEAuAEByAEAmAIBoAIMqAIPmAMM8QWgdvHN9bJkl5IHATGgBwA&sclient=mobile-gws-wiz-hp/",
         cookie: "",
       });
       page = test.page;
     }
-
-    await inputTypeCheck({ page });
-
-    // Enter 키 입력 후 navigation 대기
-    await Promise.all([
-      page.waitForNavigation({ waitUntil: "domcontentloaded" }), // networkidle 대신 load 사용
-      page.keyboard.press("Enter"),
-    ]);
 
     // 네이버 링크 클릭 후 navigation 대기
     await Promise.all([
@@ -64,7 +56,7 @@ async function inputTypeCheck({ page }) {
       if (result) {
         console.log(`Found ${result.type} input on attempt ${attempt}`);
         await result.element.click();
-        await wait(500);
+        await wait(1500);
         await result.element.type("네이버", { delay: 300 });
         await wait(1000);
         break; // 성공하면 루프 종료
@@ -85,4 +77,4 @@ async function inputTypeCheck({ page }) {
   }
 }
 
-// googleToNaver();
+// googleNaverSearchedToNaver();
