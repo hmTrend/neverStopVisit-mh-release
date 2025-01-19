@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="TSK-65 네스비 플레이스 : 구글에서 네이버 접속시에 userAgent 오류 해결">
-      <change afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetBlog2.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="TSK-66 네스비 플레이스 첫페이지 인기글에서 블로그 찾고, 없을시 블로그탭에서 찾기">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,15 +280,7 @@
       <workItem from="1736208952962" duration="66000" />
       <workItem from="1736831299564" duration="1065000" />
       <workItem from="1736928805748" duration="25729000" />
-      <workItem from="1737267258946" duration="3052000" />
-    </task>
-    <task id="LOCAL-00324" summary="NSV-17 / 프론트에 100개만 유지">
-      <option name="closed" value="true" />
-      <created>1734998879594</created>
-      <option name="number" value="00324" />
-      <option name="presentableId" value="LOCAL-00324" />
-      <option name="project" value="LOCAL" />
-      <updated>1734998879594</updated>
+      <workItem from="1737267258946" duration="4030000" />
     </task>
     <task id="LOCAL-00325" summary="NSV-17 / v2.13.0">
       <option name="closed" value="true" />
@@ -674,7 +666,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737269917397</updated>
     </task>
-    <option name="localTasksCounter" value="373" />
+    <task id="LOCAL-00373" summary="TSK-66 네스비 플레이스 첫페이지 인기글에서 블로그 찾고, 없을시 블로그탭에서 찾기">
+      <option name="closed" value="true" />
+      <created>1737270502651</created>
+      <option name="number" value="00373" />
+      <option name="presentableId" value="LOCAL-00373" />
+      <option name="project" value="LOCAL" />
+      <updated>1737270502651</updated>
+    </task>
+    <option name="localTasksCounter" value="374" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -719,7 +719,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="naverM 모바일 오픈 셋팅완료" />
     <MESSAGE value="v2.14.0 네스비 naverM 지문 연동" />
     <MESSAGE value="쇼핑 로직 함수 나누기 성공 / 로직1, 로직2" />
     <MESSAGE value="googleToNaverShopping" />
@@ -744,7 +743,8 @@
     <MESSAGE value="TSK-25 프론트 연결 및 노션에 데이터 전송 추가" />
     <MESSAGE value="TSK-25 v3.0.0" />
     <MESSAGE value="TSK-65 네스비 플레이스 : 구글에서 네이버 접속시에 userAgent 오류 해결" />
-    <option name="LAST_COMMIT_MESSAGE" value="TSK-65 네스비 플레이스 : 구글에서 네이버 접속시에 userAgent 오류 해결" />
+    <MESSAGE value="TSK-66 네스비 플레이스 첫페이지 인기글에서 블로그 찾고, 없을시 블로그탭에서 찾기" />
+    <option name="LAST_COMMIT_MESSAGE" value="TSK-66 네스비 플레이스 첫페이지 인기글에서 블로그 찾고, 없을시 블로그탭에서 찾기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

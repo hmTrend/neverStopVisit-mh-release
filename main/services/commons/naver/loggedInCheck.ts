@@ -26,7 +26,7 @@ export const loggedInCheck = async ({
       page
         .locator('a[data-fclk="fot.login"]')
         .waitFor({ state: "visible", timeout: 60 * 1000 })
-        .then(() => (isLoggedIn = "N0"))
+        .then(() => (isLoggedIn = "NO"))
         .catch(() => {
           throw Error("this is not find loggedIn");
         }),
