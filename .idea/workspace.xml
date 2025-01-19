@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시 &gt; 노션 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/notion/api.create.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/notion/api.create.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,23 +279,7 @@
       <workItem from="1736208952962" duration="66000" />
       <workItem from="1736831299564" duration="1065000" />
       <workItem from="1736928805748" duration="25729000" />
-      <workItem from="1737267258946" duration="5188000" />
-    </task>
-    <task id="LOCAL-00326" summary="NSV-17 / 백엔드 errorToFront 적용">
-      <option name="closed" value="true" />
-      <created>1735000953210</created>
-      <option name="number" value="00326" />
-      <option name="presentableId" value="LOCAL-00326" />
-      <option name="project" value="LOCAL" />
-      <updated>1735000953210</updated>
-    </task>
-    <task id="LOCAL-00327" summary="NSV-17 / 백엔드 errorToFront 적용">
-      <option name="closed" value="true" />
-      <created>1735000958957</created>
-      <option name="number" value="00327" />
-      <option name="presentableId" value="LOCAL-00327" />
-      <option name="project" value="LOCAL" />
-      <updated>1735000958957</updated>
+      <workItem from="1737267258946" duration="7045000" />
     </task>
     <task id="LOCAL-00328" summary="NSV-17 / 프론트 연결 최종완성">
       <option name="closed" value="true" />
@@ -675,7 +657,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737271360655</updated>
     </task>
-    <option name="localTasksCounter" value="375" />
+    <task id="LOCAL-00375" summary="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시 &gt; 노션 수정">
+      <option name="closed" value="true" />
+      <created>1737273072068</created>
+      <option name="number" value="00375" />
+      <option name="presentableId" value="LOCAL-00375" />
+      <option name="project" value="LOCAL" />
+      <updated>1737273072068</updated>
+    </task>
+    <task id="LOCAL-00376" summary="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시 &gt; 노션 수정">
+      <option name="closed" value="true" />
+      <created>1737273214383</created>
+      <option name="number" value="00376" />
+      <option name="presentableId" value="LOCAL-00376" />
+      <option name="project" value="LOCAL" />
+      <updated>1737273214383</updated>
+    </task>
+    <option name="localTasksCounter" value="377" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -720,7 +718,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="쇼핑 로직 함수 나누기 성공 / 로직1, 로직2" />
     <MESSAGE value="googleToNaverShopping" />
     <MESSAGE value="logicTypePLUSSTORE" />
     <MESSAGE value="searchNVMID" />
@@ -745,7 +742,8 @@
     <MESSAGE value="TSK-65 네스비 플레이스 : 구글에서 네이버 접속시에 userAgent 오류 해결" />
     <MESSAGE value="TSK-66 네스비 플레이스 첫페이지 인기글에서 블로그 찾고, 없을시 블로그탭에서 찾기" />
     <MESSAGE value="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시" />
-    <option name="LAST_COMMIT_MESSAGE" value="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시" />
+    <MESSAGE value="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시 &gt; 노션 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시 &gt; 노션 수정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

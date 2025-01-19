@@ -33,7 +33,7 @@ export const googleToNaver = async ({
         waitUntil: "domcontentloaded",
         timeout: 60 * 1000,
       }),
-      page.locator('a[href*="naver.com"]').first().click(),
+      page.locator('a[href="https://www.naver.com/"]').first().click(),
     ]);
 
     return { page };
