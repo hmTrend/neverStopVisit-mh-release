@@ -95,7 +95,7 @@ export const FingerprintCreateExcel = () => {
     const { data } = await createExcelList({
       input: inputList,
     });
-    storeFingerPrintRegister.selectedExcelList = data;
+    storeFingerPrintRegister.selectedExcelList = data.slice(0, 100);
   };
 
   const handlePatchExcelList = async () => {
@@ -124,7 +124,7 @@ export const FingerprintCreateExcel = () => {
     const { data } = await patchExcelList({
       input: inputList,
     });
-    storeFingerPrintRegister.selectedExcelList = data;
+    storeFingerPrintRegister.selectedExcelList = data.slice(0, 100);
   };
 
   const handleClearExcelList = () => {
