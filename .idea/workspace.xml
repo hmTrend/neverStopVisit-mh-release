@@ -278,23 +278,7 @@
       <workItem from="1736928805748" duration="25729000" />
       <workItem from="1737267258946" duration="7045000" />
       <workItem from="1737369754592" duration="407000" />
-      <workItem from="1737375490846" duration="1071000" />
-    </task>
-    <task id="LOCAL-00329" summary="NSV-17 / v2.13.1">
-      <option name="closed" value="true" />
-      <created>1735032774948</created>
-      <option name="number" value="00329" />
-      <option name="presentableId" value="LOCAL-00329" />
-      <option name="project" value="LOCAL" />
-      <updated>1735032774948</updated>
-    </task>
-    <task id="LOCAL-00330" summary="NSVIT-19 / 지문 &gt; 정상 / 쿠키 / 모두가져오기">
-      <option name="closed" value="true" />
-      <created>1735298417351</created>
-      <option name="number" value="00330" />
-      <option name="presentableId" value="LOCAL-00330" />
-      <option name="project" value="LOCAL" />
-      <updated>1735298417352</updated>
+      <workItem from="1737375490846" duration="3206000" />
     </task>
     <task id="LOCAL-00331" summary="dataTransDate">
       <option name="closed" value="true" />
@@ -672,7 +656,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737275043141</updated>
     </task>
-    <option name="localTasksCounter" value="378" />
+    <task id="LOCAL-00378" summary="v3.0.2 엑셀 신규 추가 등록시 리스트 갱신 100개로 제한">
+      <option name="closed" value="true" />
+      <created>1737376659993</created>
+      <option name="number" value="00378" />
+      <option name="presentableId" value="LOCAL-00378" />
+      <option name="project" value="LOCAL" />
+      <updated>1737376659993</updated>
+    </task>
+    <task id="LOCAL-00379" summary="v3.0.2 엑셀 신규 추가 등록시 리스트 갱신 100개로 제한">
+      <option name="closed" value="true" />
+      <created>1737376673341</created>
+      <option name="number" value="00379" />
+      <option name="presentableId" value="LOCAL-00379" />
+      <option name="project" value="LOCAL" />
+      <updated>1737376673341</updated>
+    </task>
+    <option name="localTasksCounter" value="380" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -717,8 +717,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="logicTypePLUSSTORE" />
-    <MESSAGE value="searchNVMID" />
     <MESSAGE value="nShopping.logicType === &quot;+STORE&quot;" />
     <MESSAGE value="searchNVMID 하단에 있을시에도 서치후 찾기" />
     <MESSAGE value="NSV-21 v2.17.0 지문 다운로드시 쿠키값 같이 다운로드" />
@@ -742,7 +740,9 @@
     <MESSAGE value="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시" />
     <MESSAGE value="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시 &gt; 노션 수정" />
     <MESSAGE value="v3.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v3.0.1" />
+    <MESSAGE value="v3.1.2 엑셀 신규 추가 등록시 리스트 갱신 100개로 제한" />
+    <MESSAGE value="v3.0.2 엑셀 신규 추가 등록시 리스트 갱신 100개로 제한" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3.0.2 엑셀 신규 추가 등록시 리스트 갱신 100개로 제한" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

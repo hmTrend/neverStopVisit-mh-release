@@ -11,25 +11,26 @@ export const loggedInCheck = async ({
   _id: string;
 }) => {
   try {
-    let isLoggedIn;
-    await Promise.race([
-      // 로그아웃 버튼 찾기
-      page
-        .locator('a[data-fclk="fot.logout"]')
-        .waitFor({ state: "visible", timeout: 60 * 1000 })
-        .then(() => (isLoggedIn = "YES"))
-        .catch(() => {
-          throw Error("this is not find loggedIn");
-        }),
-      // 로그인 버튼 찾기
-      page
-        .locator('a[data-fclk="fot.login"]')
-        .waitFor({ state: "visible", timeout: 60 * 1000 })
-        .then(() => (isLoggedIn = "NO"))
-        .catch(() => {
-          throw Error("this is not find loggedIn");
-        }),
-    ]);
+    let isLoggedIn = "YES";
+    // 확장 영역 버튼이 나타날 때까지 대기
+    await page.waitForSelector(".sha_service .sha_aside_link", {
+      state: "visible",
+    });
+    // 버튼 클릭
+    await page.click(".sha_service .sha_aside_link");
+    // 페이지 로딩 완료 대기
+    await page.waitForLoadState("networkidle");
+    // 로그인 영역 확인
+    const nameElement = await page.$("span.name");
+
+    if (nameElement) {
+      // span 내부의 텍스트 확인
+      const nameText = await nameElement.textContent();
+      if (nameText === "로그인") {
+        isLoggedIn = "NO";
+      }
+    }
+
     if (isLoggedIn === "NO") {
       try {
         const { data } = await GetFingerPrintNowLogData({ _id });
@@ -40,6 +41,9 @@ export const loggedInCheck = async ({
       await cookieNstateSave({ page, _id, nState: "미로그인" });
       throw Error("this is not loggedIn");
     }
+    // 닫기 버튼 클릭
+    await page.click(".ah_link_landing.ah_close");
+    await page.waitForLoadState("networkidle");
 
     return { page };
   } catch (e) {
