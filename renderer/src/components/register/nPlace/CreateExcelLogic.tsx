@@ -41,6 +41,8 @@ export const CreateExcelLogic = () => {
         "process-excel-file-n-place",
         file.path,
       );
+      console.log("result 333333");
+      console.log(result);
 
       const result3 = await window.ipc.invoke(
         "process-excel-file-n-place-data-with-align-flat-map",
@@ -83,6 +85,8 @@ export const CreateExcelLogic = () => {
       groupFid: selectedGroupId,
       placeNumber: v.placeNumber?.toString(),
     }));
+    console.log("inputList 33333333");
+    console.log(inputList);
     const { data } = await createExcelList({
       input: inputList,
     });

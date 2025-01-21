@@ -36,11 +36,10 @@ export function processExcelDataNPlace({ filePath, sheetName = "" }) {
       for (let row = startRow; row < data.length; row++) {
         if (data[row][colIndex]) {
           const parts = data[row][colIndex].split("==");
-          if (parts.length >= 3) {
+          if (parts.length >= 2) {
             columnData.subKeywordList.push({
-              dayCount: parseInt(parts[0]),
-              targetKeyword: parts[1],
-              targetBlog: parts[2],
+              targetKeyword: parts[0],
+              targetBlog: parts[1],
             });
           }
         }
