@@ -117,6 +117,7 @@ export const CreateExcelLogic = () => {
   };
   return (
     <CreateExcel
+      title="쇼핑"
       selectedFile={selectedFile}
       handleClearExcelList={handleClearExcelList}
       handleCreateExcelList={handleCreateExcelList}

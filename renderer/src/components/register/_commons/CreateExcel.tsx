@@ -18,6 +18,7 @@ export const CreateExcel = (
     handleCreateExcelList,
     handleClearExcelList,
     selectedFile,
+    title = "",
   },
   ref,
 ) => {
@@ -48,7 +49,9 @@ export const CreateExcel = (
                 accept=".xlsx,.xls"
                 style={{ display: "none" }}
               />
-              <Button onClick={handleExcelButtonClick}>엑셀 생성</Button>
+              <Button onClick={handleExcelButtonClick}>
+                {title} 엑셀 생성
+              </Button>
             </Box>
           </Flex>
           <FormHelperText>새로운 엑셀리스트를 가져옵니다.</FormHelperText>
