@@ -3,6 +3,7 @@ import { findTargetBlog2 } from "./findTargetBlog2";
 import { findTargetPlaceInTargetBlog } from "./findTargetPlaceInTargetBlog";
 import wait from "waait";
 import { clickNearbyAttractions } from "./clickNearbyAttractions";
+import { findTargetPlace } from "./findTargetPlace";
 
 export async function logicTypeN_PLACE({ ExcelData, pageI }) {
   let page = pageI;
@@ -14,9 +15,9 @@ export async function logicTypeN_PLACE({ ExcelData, pageI }) {
     page = pageO;
   }
   {
-    const { page: pageO } = await findTargetBlog2({
+    const { page: pageO } = await findTargetPlace({
       page,
-      targetBlog: ExcelData.targetBlog,
+      placeNumber: ExcelData.placeNumber,
     });
     page = pageO;
   }
