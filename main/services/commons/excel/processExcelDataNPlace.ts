@@ -36,12 +36,10 @@ export function processExcelDataNPlace({ filePath, sheetName = "" }) {
       for (let row = startRow; row < data.length; row++) {
         if (data[row][colIndex]) {
           const parts = data[row][colIndex].split("==");
-          if (parts.length >= 2) {
-            columnData.subKeywordList.push({
-              targetKeyword: parts[0],
-              targetBlog: parts[1],
-            });
-          }
+          columnData.subKeywordList.push({
+            targetKeyword: parts[0]?.trim() || "", // parts[0]이 undefined인 경우 빈 문자열
+            targetBlog: parts[1]?.trim() || "", // parts[1]이 undefined인 경우 빈 문자열
+          });
         }
       }
 

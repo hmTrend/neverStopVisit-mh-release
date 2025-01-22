@@ -4,14 +4,13 @@ import { GetFingerPrintTargetExcelOne } from "../../lib/apollo/finger-print.apol
 import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
 import { GetNPlaceExcelAlignFlatTargetOne } from "../../lib/apollo/n-place-apollo";
 import { loggedInCheck } from "../commons/naver/loggedInCheck";
-import { targetKeywordSearch } from "./targetKeywordSearch";
-import { findTargetPlaceInTargetBlog } from "./findTargetPlaceInTargetBlog";
-import { clickNearbyAttractions } from "./clickNearbyAttractions";
 import { googleToNaver } from "../commons/naver/googleToNaver";
 import { errorToFront } from "../commons/error/errorToFront";
 import { UtilNetwork } from "../../lib/util/util.network";
 import { UtilDate } from "../../lib/util/util.date";
-import { findTargetBlog2 } from "./findTargetBlog2";
+import { logicTypeNAVER } from "./logicType.NAVER";
+import { logicTypeGOOGLE } from "./logicType.GOOGLE";
+import { logicTypeN_PLACE } from "./logicType.PLACE";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace, mainWindow }): Promise<void> {
@@ -21,7 +20,7 @@ export class NPlace extends PuppeteerEngine {
           const { data: excelData } = await GetNPlaceExcelAlignFlatTargetOne({
             groupFid: nPlace.selectedGroup.groupId,
           });
-          var EcelData = excelData;
+          var ExcelData = excelData;
           const { targetKeyword, targetBlog, placeNumber } = excelData;
           {
             this.query = targetKeyword;
@@ -59,7 +58,7 @@ export class NPlace extends PuppeteerEngine {
       }
       await super.initialize({
         url:
-          nPlace.logicType === "NAVER"
+          nPlace.logicType === "NAVER" || nPlace.logicType === "N_PLACE"
             ? "https://www.naver.com/"
             : "https://www.google.com/",
         cookie: this.targetCookie,
@@ -73,31 +72,14 @@ export class NPlace extends PuppeteerEngine {
       {
         await loggedInCheck({ page: this.page, _id: this.targetCookieId });
       }
-      {
-        const { page } = await targetKeywordSearch({
-          page: this.page,
-          targetKeyword: EcelData.targetKeyword,
-        });
-        this.page = page;
+      if (nPlace.logicType === "NAVER") {
+        await logicTypeNAVER({ ExcelData, pageI: this.page });
       }
-      {
-        const { page } = await findTargetBlog2({
-          page: this.page,
-          targetBlog: EcelData.targetBlog,
-        });
-        this.page = page;
+      if (nPlace.logicType === "GOOGLE") {
+        await logicTypeGOOGLE({ ExcelData, pageI: this.page });
       }
-      {
-        const { page } = await findTargetPlaceInTargetBlog({
-          page: this.page,
-          targetPlace: EcelData.placeNumber,
-        });
-        this.page = page;
-      }
-      await wait(EcelData.delayTime * 1000);
-      {
-        const { page } = await clickNearbyAttractions({ page: this.page });
-        this.page = page;
+      if (nPlace.logicType === "N_PLACE") {
+        await logicTypeN_PLACE({ ExcelData, pageI: this.page });
       }
       {
         const { page } = await cookieNstateSave({
