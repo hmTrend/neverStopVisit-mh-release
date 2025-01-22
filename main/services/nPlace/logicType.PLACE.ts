@@ -22,8 +22,4 @@ export async function logicTypeN_PLACE({ ExcelData, pageI }) {
     });
     page = pageO;
   }
-  {
-    const { page: pageO } = await clickNearbyAttractions({ page });
-    page = pageO;
-  }
 }
