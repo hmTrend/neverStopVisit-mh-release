@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-43 작업 시작시 N_PLACE 연결">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-45 플레이스 로직3 마지막 랜덤클릭 2개">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/logicType.PLACE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/logicType.PLACE.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/targetKeywordSearch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/targetKeywordSearch.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,15 +284,7 @@
       <workItem from="1737267258946" duration="7045000" />
       <workItem from="1737369754592" duration="407000" />
       <workItem from="1737375490846" duration="3206000" />
-      <workItem from="1737510895584" duration="9832000" />
-    </task>
-    <task id="LOCAL-00335" summary="naverM 모바일 오픈 셋팅완료">
-      <option name="closed" value="true" />
-      <created>1735878179247</created>
-      <option name="number" value="00335" />
-      <option name="presentableId" value="LOCAL-00335" />
-      <option name="project" value="LOCAL" />
-      <updated>1735878179247</updated>
+      <workItem from="1737510895584" duration="13054000" />
     </task>
     <task id="LOCAL-00336" summary="v2.14.0 네스비 naverM 지문 연동">
       <option name="closed" value="true" />
@@ -676,7 +670,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737516903250</updated>
     </task>
-    <option name="localTasksCounter" value="384" />
+    <task id="LOCAL-00384" summary="NSVIT-45 플레이스 로직3 마지막 랜덤클릭 2개">
+      <option name="closed" value="true" />
+      <created>1737520810430</created>
+      <option name="number" value="00384" />
+      <option name="presentableId" value="LOCAL-00384" />
+      <option name="project" value="LOCAL" />
+      <updated>1737520810430</updated>
+    </task>
+    <option name="localTasksCounter" value="385" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -721,7 +723,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-24 로직4 프론트 그룹만들기" />
     <MESSAGE value="NSVIT-25 그룹 삭제하기" />
     <MESSAGE value="NSVIT-26 엑셀 만들기" />
     <MESSAGE value="NSVIT-26 엑셀 생성" />
@@ -746,7 +747,8 @@
     <MESSAGE value="NSVIT-40 엑셀 로직 변경 등록" />
     <MESSAGE value="NSVIT-44 엑셀등록시 blogUrl 제외가능" />
     <MESSAGE value="NSVIT-43 작업 시작시 N_PLACE 연결" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-43 작업 시작시 N_PLACE 연결" />
+    <MESSAGE value="NSVIT-45 플레이스 로직3 마지막 랜덤클릭 2개" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-45 플레이스 로직3 마지막 랜덤클릭 2개" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

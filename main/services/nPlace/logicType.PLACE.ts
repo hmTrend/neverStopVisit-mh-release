@@ -18,17 +18,10 @@ export async function logicTypeN_PLACE({ ExcelData, pageI }) {
     const { page: pageO } = await findTargetPlace({
       page,
       placeNumber: ExcelData.placeNumber,
+      delayTime: ExcelData.delayTime * 1000,
     });
     page = pageO;
   }
-  {
-    const { page: pageO } = await findTargetPlaceInTargetBlog({
-      page,
-      targetPlace: ExcelData.placeNumber,
-    });
-    page = pageO;
-  }
-  await wait(ExcelData.delayTime * 1000);
   {
     const { page: pageO } = await clickNearbyAttractions({ page });
     page = pageO;

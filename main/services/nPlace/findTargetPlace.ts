@@ -4,18 +4,20 @@ import wait from "waait";
 
 export const findTargetPlace = async ({
   page = undefined,
-  placeNumber = "1372962862",
-  isTest = true,
+  placeNumber = "1500974767",
+  isTest = false,
+  delayTime = 0,
 }: {
   page?: Page;
   placeNumber?: string;
   isTest?: boolean;
+  delayTime?: number;
 } = {}) => {
   try {
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({
-        url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%8A%A4%EB%85%B8%EC%9A%B0%EC%9D%98%EC%9B%90+%EC%B2%AD%EC%A3%BC%EC%A0%90&tqi=iHtdasprfQZssEp4CzlssssstmV-481029&query=%EC%9D%BC%EC%82%B0%EC%A0%95%ED%98%95%EC%99%B8%EA%B3%BC",
+        url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EA%B0%95%EB%82%A8%EB%A7%9B%EC%A7%91&tqi=iHuKawqVWuZssamAn1lsssssseR-137215&query=%EA%B0%95%EB%82%A8%EB%AF%B8%EC%9A%A9%EC%8B%A4",
         cookie: "",
       });
       page = test.page;
@@ -45,8 +47,9 @@ export const findTargetPlace = async ({
       page,
       placeNumber,
     });
-    await wait(5000);
+    await wait(delayTime);
     await clickRandomTab({ page, placeNumber, excludeText });
+    await wait(3 * 1000);
     return { page };
   } catch (e) {
     console.error(e);
@@ -56,7 +59,6 @@ export const findTargetPlace = async ({
 
 async function clickTargetPlaceNextMorePage({ placeNumber, page }) {
   try {
-    console.log(11);
     const selector = `a[href*="/${placeNumber}"][role="button"]:not(.place_thumb)`;
     const link = await page.$(selector);
     if (!link) {
@@ -272,28 +274,19 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
       const spotButton = await page
         .locator("a.T00ux span", { hasText: "명소" })
         .first();
-      console.log(1);
       // 버튼이 보일 때까지 대기
       await spotButton.waitFor({
         state: "visible",
         timeout: 60 * 1000,
       });
 
-      console.log(2);
       // 요소가 화면에 보이도록 스크롤
       await spotButton.scrollIntoViewIfNeeded();
-      console.log(3);
 
       // 잠시 대기
       await page.waitForTimeout(1000);
-      console.log(4);
-
-      // 클릭 수행 및 로드 상태 대기
-      await Promise.all([
-        spotButton.click(),
-        page.waitForLoadState("load", { timeout: 5000 }),
-      ]);
-      console.log(6);
+      await spotButton.click();
+      await page.waitForLoadState("load", { timeout: 5000 });
     }
 
     console.log(`Successfully clicked random tab: ${selectedTab.text}`);
@@ -306,4 +299,4 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
 
 async function lastRandomClick() {}
 
-findTargetPlace();
+// findTargetPlace();
