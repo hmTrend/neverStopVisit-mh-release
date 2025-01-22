@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-44 엑셀등록시 blogUrl 제외가능">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-43 작업 시작시 N_PLACE 연결">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/logicType.PLACE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/logicType.PLACE.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,15 +282,7 @@
       <workItem from="1737267258946" duration="7045000" />
       <workItem from="1737369754592" duration="407000" />
       <workItem from="1737375490846" duration="3206000" />
-      <workItem from="1737510895584" duration="5977000" />
-    </task>
-    <task id="LOCAL-00334" summary="storeFingerPrintRegister.selectedExcelList&#10;&#10;useEffect 제거">
-      <option name="closed" value="true" />
-      <created>1735874912405</created>
-      <option name="number" value="00334" />
-      <option name="presentableId" value="LOCAL-00334" />
-      <option name="project" value="LOCAL" />
-      <updated>1735874912405</updated>
+      <workItem from="1737510895584" duration="9832000" />
     </task>
     <task id="LOCAL-00335" summary="naverM 모바일 오픈 셋팅완료">
       <option name="closed" value="true" />
@@ -677,7 +668,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737510533863</updated>
     </task>
-    <option name="localTasksCounter" value="383" />
+    <task id="LOCAL-00383" summary="NSVIT-43 작업 시작시 N_PLACE 연결">
+      <option name="closed" value="true" />
+      <created>1737516903250</created>
+      <option name="number" value="00383" />
+      <option name="presentableId" value="LOCAL-00383" />
+      <option name="project" value="LOCAL" />
+      <updated>1737516903250</updated>
+    </task>
+    <option name="localTasksCounter" value="384" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -722,7 +721,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v2.18.2" />
     <MESSAGE value="NSVIT-24 로직4 프론트 그룹만들기" />
     <MESSAGE value="NSVIT-25 그룹 삭제하기" />
     <MESSAGE value="NSVIT-26 엑셀 만들기" />
@@ -747,7 +745,8 @@
     <MESSAGE value="NSVIT-38 아이템 등록시 각 title추가" />
     <MESSAGE value="NSVIT-40 엑셀 로직 변경 등록" />
     <MESSAGE value="NSVIT-44 엑셀등록시 blogUrl 제외가능" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-44 엑셀등록시 blogUrl 제외가능" />
+    <MESSAGE value="NSVIT-43 작업 시작시 N_PLACE 연결" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-43 작업 시작시 N_PLACE 연결" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

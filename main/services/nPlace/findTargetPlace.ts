@@ -4,7 +4,7 @@ import wait from "waait";
 
 export const findTargetPlace = async ({
   page = undefined,
-  placeNumber = "1023265975",
+  placeNumber = "1372962862",
   isTest = true,
 }: {
   page?: Page;
@@ -28,11 +28,25 @@ export const findTargetPlace = async ({
       try {
         await clickTargetPlaceById({ placeNumber, page: pageO });
       } catch (e) {
-        const pageO = await clickNextPageMoreLink({ page });
-        page = pageO;
-        await clickTargetPlaceNextMorePage({ placeNumber, page });
+        {
+          const pageO = await clickNextPageMoreLink({ page });
+          page = pageO;
+        }
+        {
+          const pageO = await clickTargetPlaceNextMorePage({
+            placeNumber,
+            page,
+          });
+          page = pageO;
+        }
       }
     }
+    const { excludeText } = await clickRandomTab({
+      page,
+      placeNumber,
+    });
+    await wait(5000);
+    await clickRandomTab({ page, placeNumber, excludeText });
     return { page };
   } catch (e) {
     console.error(e);
@@ -59,12 +73,10 @@ async function clickTargetPlaceNextMorePage({ placeNumber, page }) {
     await link.waitForElementState("stable");
 
     // 클릭 수행 및 로드 상태 대기
-    await Promise.all([
-      link.click(),
-      page.waitForLoadState("load", { timeout: 5000 }),
-    ]);
+    await link.click();
+    await page.waitForLoadState("networkidle", { timeout: 60 * 1000 });
     console.log(`Successfully clicked link with ID: ${placeNumber}`);
-    return true;
+    return page;
   } catch (error) {
     console.error(
       `Error while trying to click link with ID ${placeNumber}:`,
@@ -92,6 +104,8 @@ async function clickTargetPlaceById({ placeNumber, page }) {
         await element.scrollIntoViewIfNeeded();
         await wait(1000);
         await element.click();
+        await page.waitForLoadState("networkidle");
+        await wait(1500);
         return;
       }
     }
@@ -180,7 +194,7 @@ async function clickNextPageMoreLink({ page }) {
 
         // 클릭 수행 및 로드 상태 대기
         await link.click();
-        await page.waitForLoadState("networkidle", { timeout: 30 * 1000 });
+        await page.waitForLoadState("networkidle", { timeout: 60 * 1000 });
         console.log("Successfully clicked hospital link");
         return page;
       } else {
@@ -196,5 +210,100 @@ async function clickNextPageMoreLink({ page }) {
     throw Error(error.message);
   }
 }
+
+async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
+  try {
+    console.log("excludeText 33333");
+    console.log(excludeText);
+    const selectorReady = 'a.DDfpb[role="button"]';
+
+    // 버튼이 보일 때까지 대기
+    await page.waitForSelector(selectorReady, {
+      state: "visible",
+      timeout: 60 * 1000,
+    });
+    // 모든 탭 메뉴 요소 찾기
+    const selector = `a[href*="/${placeNumber}/"][role="tab"].tpj9w._tab-menu`;
+    const tabs = await page.$$(selector);
+
+    if (!tabs || tabs.length === 0) {
+      throw new Error("No tab menu elements found");
+    }
+
+    const availableTabs = [];
+    for (const tab of tabs) {
+      const tabText = await tab.$eval("span", (span) => span.textContent);
+      if (tabText !== excludeText && tabText !== "정보" && tabText !== "홈") {
+        availableTabs.push({
+          element: tab,
+          text: tabText,
+        });
+      }
+    }
+
+    if (availableTabs.length === 0) {
+      throw new Error(`No available tabs after excluding "${excludeText}"`);
+    }
+
+    // 랜덤으로 탭 선택
+    const randomIndex = Math.floor(Math.random() * availableTabs.length);
+    const selectedTab = availableTabs[randomIndex];
+
+    // 선택된 탭의 텍스트와 href 가져오기 (로깅용)
+    const tabHref = await selectedTab.element.getAttribute("href");
+    console.log(`Randomly selected tab: ${selectedTab.text} (${tabHref})`);
+
+    // 요소가 화면에 보이도록 스크롤
+    await selectedTab.element.scrollIntoViewIfNeeded();
+
+    // 잠시 대기
+    await page.waitForTimeout(1000);
+
+    // 클릭하기 전에 요소가 안정적인지 확인
+    await selectedTab.element.waitForElementState("stable");
+
+    // 클릭 수행 및 로드 상태 대기
+    await Promise.all([
+      selectedTab.element.click(),
+      page.waitForLoadState("load", { timeout: 5000 }),
+    ]);
+    if (selectedTab.text === "주변") {
+      console.log("this is 주변");
+      const spotButton = await page
+        .locator("a.T00ux span", { hasText: "명소" })
+        .first();
+      console.log(1);
+      // 버튼이 보일 때까지 대기
+      await spotButton.waitFor({
+        state: "visible",
+        timeout: 60 * 1000,
+      });
+
+      console.log(2);
+      // 요소가 화면에 보이도록 스크롤
+      await spotButton.scrollIntoViewIfNeeded();
+      console.log(3);
+
+      // 잠시 대기
+      await page.waitForTimeout(1000);
+      console.log(4);
+
+      // 클릭 수행 및 로드 상태 대기
+      await Promise.all([
+        spotButton.click(),
+        page.waitForLoadState("load", { timeout: 5000 }),
+      ]);
+      console.log(6);
+    }
+
+    console.log(`Successfully clicked random tab: ${selectedTab.text}`);
+    return { excludeText: selectedTab.text };
+  } catch (error) {
+    console.error("Error while trying to click random tab:", error);
+    throw error;
+  }
+}
+
+async function lastRandomClick() {}
 
 findTargetPlace();
