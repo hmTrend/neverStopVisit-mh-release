@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-46 3.3.0">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-51 노션 api 넥스트론 연결하기">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-01-15__7_46.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-01-15_오후_7_46/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/notion/api.create.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/notion/api.patchDayNowCount.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/api/notion/api.patchDayNowCount.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/notion/api.patchDayNowCount.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-place-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-place-apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,61 +68,61 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TypeScript.api.client.ts.executor": "Run",
-    "TypeScript.api.create.ts.executor": "Run",
-    "TypeScript.api.patchDayNowCount.ts.executor": "Run",
-    "TypeScript.clickNearbyAttractions.tsx.executor": "Run",
-    "TypeScript.findTargetBlog.ts (1).executor": "Run",
-    "TypeScript.findTargetBlog.ts.executor": "Run",
-    "TypeScript.findTargetPlace.ts.executor": "Run",
-    "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
-    "TypeScript.findTargetShoppingInTargetBlog.ts.executor": "Run",
-    "TypeScript.goToKeyword.ts.executor": "Run",
-    "TypeScript.googleNaverSearchedToNaver.ts.executor": "Run",
-    "TypeScript.googleToNaver.ts.executor": "Run",
-    "TypeScript.googleToNaverShopping.ts.executor": "Run",
-    "TypeScript.index.ts (1).executor": "Run",
-    "TypeScript.index.ts (2).executor": "Run",
-    "TypeScript.index.ts.executor": "Run",
-    "TypeScript.initialize.ts.executor": "Run",
-    "TypeScript.initializeAndroid.ts.executor": "Run",
-    "TypeScript.initializeFireFox.ts.executor": "Run",
-    "TypeScript.mobile.userAgent.ts.executor": "Run",
-    "TypeScript.network.router.edu.ts.executor": "Run",
-    "TypeScript.network.router.eduPlayer.ts.executor": "Run",
-    "TypeScript.searchNVMID.ts.executor": "Run",
-    "TypeScript.targetKeywordSearch.ts.executor": "Run",
-    "TypeScript.util.network.ts.executor": "Run",
-    "eslint.code.style.apply.dismiss": "true",
-    "git-widget-placeholder": "develop",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/nPlace",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TypeScript.api.client.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.api.create.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.api.patchDayNowCount.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.clickNearbyAttractions.tsx.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetBlog.ts (1).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetBlog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetPlace.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetPlaceInTargetBlog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetShoppingInTargetBlog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.goToKeyword.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.googleNaverSearchedToNaver.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.googleToNaver.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.googleToNaverShopping.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts (1).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts (2).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initializeAndroid.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initializeFireFox.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.mobile.userAgent.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.network.router.edu.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.network.router.eduPlayer.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.searchNVMID.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.targetKeywordSearch.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.util.network.ts.executor&quot;: &quot;Run&quot;,
+    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/nPlace&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/services/nPlace" />
@@ -140,7 +143,7 @@
     <configuration name="api.patchDayNowCount.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/api/notion" />
@@ -148,13 +151,12 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/api/notion/api.patchDayNowCount.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="findTargetPlace.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
@@ -162,7 +164,6 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="googleNaverSearchedToNaver.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -285,15 +286,8 @@
       <workItem from="1737267258946" duration="7045000" />
       <workItem from="1737369754592" duration="407000" />
       <workItem from="1737375490846" duration="3206000" />
-      <workItem from="1737510895584" duration="19611000" />
-    </task>
-    <task id="LOCAL-00338" summary="쇼핑 로직 함수 나누기 성공 / 로직1, 로직2">
-      <option name="closed" value="true" />
-      <created>1736241935361</created>
-      <option name="number" value="00338" />
-      <option name="presentableId" value="LOCAL-00338" />
-      <option name="project" value="LOCAL" />
-      <updated>1736241935361</updated>
+      <workItem from="1737510895584" duration="24574000" />
+      <workItem from="1737589619553" duration="1350000" />
     </task>
     <task id="LOCAL-00339" summary="googleToNaverShopping">
       <option name="closed" value="true" />
@@ -679,7 +673,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737527740855</updated>
     </task>
-    <option name="localTasksCounter" value="387" />
+    <task id="LOCAL-00387" summary="NSVIT-51 노션 api 넥스트론 연결하기">
+      <option name="closed" value="true" />
+      <created>1737554999144</created>
+      <option name="number" value="00387" />
+      <option name="presentableId" value="LOCAL-00387" />
+      <option name="project" value="LOCAL" />
+      <updated>1737554999144</updated>
+    </task>
+    <option name="localTasksCounter" value="388" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -724,7 +726,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-26 엑셀 생성" />
     <MESSAGE value="NSVIT-27 엑셀 등록하기" />
     <MESSAGE value="NSVIT-29 쇼핑 리스트" />
     <MESSAGE value="NSVIT-32 백엔드 eslint 오류" />
@@ -749,7 +750,8 @@
     <MESSAGE value="NSVIT-45 플레이스 로직3 마지막 랜덤클릭 2개" />
     <MESSAGE value="NSVIT-46 전체동작 정상수행" />
     <MESSAGE value="NSVIT-46 3.3.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-46 3.3.0" />
+    <MESSAGE value="NSVIT-51 노션 api 넥스트론 연결하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-51 노션 api 넥스트론 연결하기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
