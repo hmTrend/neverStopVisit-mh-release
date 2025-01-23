@@ -270,23 +270,27 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
       page.waitForLoadState("load", { timeout: 5000 }),
     ]);
     if (selectedTab.text === "주변") {
-      console.log("this is 주변");
-      const spotButton = await page
-        .locator("a.T00ux span", { hasText: "명소" })
-        .first();
-      // 버튼이 보일 때까지 대기
-      await spotButton.waitFor({
-        state: "visible",
-        timeout: 60 * 1000,
-      });
+      try {
+        console.log("this is 주변");
+        const spotButton = await page
+          .locator("a.T00ux span", { hasText: "명소" })
+          .first();
+        // 버튼이 보일 때까지 대기
+        await spotButton.waitFor({
+          state: "visible",
+          timeout: 30 * 1000,
+        });
 
-      // 요소가 화면에 보이도록 스크롤
-      await spotButton.scrollIntoViewIfNeeded();
+        // 요소가 화면에 보이도록 스크롤
+        await spotButton.scrollIntoViewIfNeeded();
 
-      // 잠시 대기
-      await page.waitForTimeout(1000);
-      await spotButton.click();
-      await page.waitForLoadState("load", { timeout: 5000 });
+        // 잠시 대기
+        await page.waitForTimeout(1000);
+        await spotButton.click();
+        await page.waitForLoadState("load", { timeout: 5000 });
+      } catch (e) {
+        console.error(`err 명소 is not found > ${e.message}`);
+      }
     }
 
     console.log(`Successfully clicked random tab: ${selectedTab.text}`);

@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-51 노션 api 넥스트론 연결하기">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-01-15__7_46.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-01-15_오후_7_46/shelved.patch" beforeDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-18 플레이스 타수 보기페이지 v3.4.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/notion/api.patchDayNowCount.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/notion/api.patchDayNowCount.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-place-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-place-apollo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,23 +283,7 @@
       <workItem from="1737369754592" duration="407000" />
       <workItem from="1737375490846" duration="3206000" />
       <workItem from="1737510895584" duration="24574000" />
-      <workItem from="1737589619553" duration="1350000" />
-    </task>
-    <task id="LOCAL-00339" summary="googleToNaverShopping">
-      <option name="closed" value="true" />
-      <created>1736243533872</created>
-      <option name="number" value="00339" />
-      <option name="presentableId" value="LOCAL-00339" />
-      <option name="project" value="LOCAL" />
-      <updated>1736243533872</updated>
-    </task>
-    <task id="LOCAL-00340" summary="logicTypePLUSSTORE">
-      <option name="closed" value="true" />
-      <created>1736246634266</created>
-      <option name="number" value="00340" />
-      <option name="presentableId" value="LOCAL-00340" />
-      <option name="project" value="LOCAL" />
-      <updated>1736246634266</updated>
+      <workItem from="1737589619553" duration="2197000" />
     </task>
     <task id="LOCAL-00341" summary="searchNVMID">
       <option name="closed" value="true" />
@@ -681,7 +661,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737554999144</updated>
     </task>
-    <option name="localTasksCounter" value="388" />
+    <task id="LOCAL-00388" summary="NSV-18 플레이스 타수 보기페이지 v3.4.0">
+      <option name="closed" value="true" />
+      <created>1737591077219</created>
+      <option name="number" value="00388" />
+      <option name="presentableId" value="LOCAL-00388" />
+      <option name="project" value="LOCAL" />
+      <updated>1737591077219</updated>
+    </task>
+    <task id="LOCAL-00389" summary="NSV-18 플레이스 타수 보기페이지 v3.4.0">
+      <option name="closed" value="true" />
+      <created>1737591114954</created>
+      <option name="number" value="00389" />
+      <option name="presentableId" value="LOCAL-00389" />
+      <option name="project" value="LOCAL" />
+      <updated>1737591114954</updated>
+    </task>
+    <option name="localTasksCounter" value="390" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -726,7 +722,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-27 엑셀 등록하기" />
     <MESSAGE value="NSVIT-29 쇼핑 리스트" />
     <MESSAGE value="NSVIT-32 백엔드 eslint 오류" />
     <MESSAGE value="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기" />
@@ -751,7 +746,8 @@
     <MESSAGE value="NSVIT-46 전체동작 정상수행" />
     <MESSAGE value="NSVIT-46 3.3.0" />
     <MESSAGE value="NSVIT-51 노션 api 넥스트론 연결하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-51 노션 api 넥스트론 연결하기" />
+    <MESSAGE value="NSV-18 플레이스 타수 보기페이지 v3.4.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-18 플레이스 타수 보기페이지 v3.4.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
