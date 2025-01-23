@@ -2,7 +2,10 @@ import { PuppeteerEngine } from "../commons/PuppeteerEngine";
 import wait from "waait";
 import { GetFingerPrintTargetExcelOne } from "../../lib/apollo/finger-print.apollo";
 import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
-import { GetNPlaceExcelAlignFlatTargetOne } from "../../lib/apollo/n-place-apollo";
+import {
+  GetNPlaceExcelAlignFlatTargetOne,
+  PatchNPlaceDayNowCount,
+} from "../../lib/apollo/n-place-apollo";
 import { loggedInCheck } from "../commons/naver/loggedInCheck";
 import { googleToNaver } from "../commons/naver/googleToNaver";
 import { errorToFront } from "../commons/error/errorToFront";
@@ -11,6 +14,7 @@ import { UtilDate } from "../../lib/util/util.date";
 import { logicTypeNAVER } from "./logicType.NAVER";
 import { logicTypeGOOGLE } from "./logicType.GOOGLE";
 import { logicTypeN_PLACE } from "./logicType.PLACE";
+import { apiNotionPatchDayNowCount } from "../../api/notion/api.patchDayNowCount";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace, mainWindow }): Promise<void> {
@@ -88,6 +92,17 @@ export class NPlace extends PuppeteerEngine {
           nState: "정상",
         });
         this.page = page;
+      }
+      {
+        const { data } = await PatchNPlaceDayNowCount({
+          placeNumber: Number(this.placeNumber),
+          groupFid: ExcelData.groupFid,
+        });
+        try {
+          await apiNotionPatchDayNowCount({ data });
+        } catch (e) {
+          console.error(e.message);
+        }
       }
       const myIp = await UtilNetwork.getIpAddress();
       const createdAt = UtilDate.getCurrentDate();

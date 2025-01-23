@@ -8,7 +8,7 @@ export const notion = new Client({
 
 const DATABASE_ID = "183c7cf713ef80c8b58ccb428069afeb";
 
-export async function apiPatchDayNowCount({
+export async function apiNotionPatchDayNowCount({
   data = {
     groupFid: "67909dda7e8fd003562bb4e4",
     keyword: "서울비뇨기과의원 구리",
@@ -17,9 +17,18 @@ export async function apiPatchDayNowCount({
     placeNumber: "377282421",
     dayCount: 1000,
     dayNowCount: 11,
-    subKeywordList: "서브키워드1, 서브키워드2, 서브키워드3",
+    subKeywordList: [
+      {
+        dayCount: null,
+        targetBlog: "",
+        targetKeyword: "구리내과",
+        __typename: "NPlaceExcelListSubKeywordList",
+      },
+    ],
   },
 } = {}) {
+  console.log("data 333333");
+  console.log(data);
   try {
     const {
       keyword,
@@ -31,6 +40,9 @@ export async function apiPatchDayNowCount({
       dayNowCount,
       subKeywordList,
     } = data;
+    const keywordString = subKeywordList
+      .map((item) => item.targetKeyword)
+      .join(", ");
 
     const inputData = {
       keyword: {
@@ -82,7 +94,7 @@ export async function apiPatchDayNowCount({
         rich_text: [
           {
             text: {
-              content: subKeywordList,
+              content: keywordString,
             },
           },
         ],
@@ -136,13 +148,13 @@ export async function apiPatchDayNowCount({
   }
 }
 
-(async () => {
-  try {
-    const result = await apiPatchDayNowCount();
-    if (result) {
-      console.log("전체 응답:", result);
-    }
-  } catch (error) {
-    console.error("실행 중 오류 발생:", error);
-  }
-})();
+// (async () => {
+//   try {
+//     const result = await apiNotionPatchDayNowCount();
+//     if (result) {
+//       console.log("전체 응답:", result);
+//     }
+//   } catch (error) {
+//     console.error("실행 중 오류 발생:", error);
+//   }
+// })();
