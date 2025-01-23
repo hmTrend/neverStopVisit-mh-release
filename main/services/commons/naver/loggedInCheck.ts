@@ -1,7 +1,7 @@
 import { Page } from "playwright";
 import { cookieNstateSave } from "../PuppeteerEngine/cookieNstateSave";
 import { GetFingerPrintNowLogData } from "../../../lib/apollo/finger-print.apollo";
-import { addItemToDatabase } from "../../../api/notion/api.patchDayNowCount";
+import { apiNotionPatchLoginIssue } from "../../../api/notion/api.patchLoginIssue";
 
 export const loggedInCheck = async ({
   page,
@@ -34,7 +34,7 @@ export const loggedInCheck = async ({
     if (isLoggedIn === "NO") {
       try {
         const { data } = await GetFingerPrintNowLogData({ _id });
-        await addItemToDatabase({ data });
+        await apiNotionPatchLoginIssue({ data });
       } catch (e) {
         console.error(e.message);
       }
