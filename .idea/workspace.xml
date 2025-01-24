@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="명소 없을시 오류 try { 적용">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v3.4.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nPlace/ExcelListLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nPlace/ExcelListLogic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useGetExcelList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useGetExcelList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nPlace/useGetExcelList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nPlace/useGetExcelList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nShopping/useGetExcelList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nShopping/useGetExcelList.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +111,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -284,23 +286,8 @@
       <workItem from="1737369754592" duration="407000" />
       <workItem from="1737375490846" duration="3206000" />
       <workItem from="1737510895584" duration="24574000" />
-      <workItem from="1737589619553" duration="4532000" />
-    </task>
-    <task id="LOCAL-00342" summary="nShopping.logicType === &quot;+STORE&quot;">
-      <option name="closed" value="true" />
-      <created>1736278350282</created>
-      <option name="number" value="00342" />
-      <option name="presentableId" value="LOCAL-00342" />
-      <option name="project" value="LOCAL" />
-      <updated>1736278350282</updated>
-    </task>
-    <task id="LOCAL-00343" summary="searchNVMID 하단에 있을시에도 서치후 찾기">
-      <option name="closed" value="true" />
-      <created>1736279274117</created>
-      <option name="number" value="00343" />
-      <option name="presentableId" value="LOCAL-00343" />
-      <option name="project" value="LOCAL" />
-      <updated>1736279274117</updated>
+      <workItem from="1737589619553" duration="6727000" />
+      <workItem from="1737621028390" duration="10328000" />
     </task>
     <task id="LOCAL-00344" summary="NSV-21 v2.17.0 지문 다운로드시 쿠키값 같이 다운로드">
       <option name="closed" value="true" />
@@ -678,7 +665,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737591903160</updated>
     </task>
-    <option name="localTasksCounter" value="391" />
+    <task id="LOCAL-00391" summary="NSVIT-53 작업할 데이터 없을시 5분대기 로직추가">
+      <option name="closed" value="true" />
+      <created>1737594236299</created>
+      <option name="number" value="00391" />
+      <option name="presentableId" value="LOCAL-00391" />
+      <option name="project" value="LOCAL" />
+      <updated>1737594236299</updated>
+    </task>
+    <task id="LOCAL-00392" summary="v3.4.1">
+      <option name="closed" value="true" />
+      <created>1737594352033</created>
+      <option name="number" value="00392" />
+      <option name="presentableId" value="LOCAL-00392" />
+      <option name="project" value="LOCAL" />
+      <updated>1737594352033</updated>
+    </task>
+    <option name="localTasksCounter" value="393" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -723,8 +726,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-32 백엔드 eslint 오류" />
-    <MESSAGE value="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기" />
     <MESSAGE value="NSVIT-34 로직4 블로그 작업 만들기" />
     <MESSAGE value="NSVIT-36 느린속도로 문제 있는 부분 픽스" />
     <MESSAGE value="NSVIT-23 로그인 체크오류" />
@@ -748,7 +749,9 @@
     <MESSAGE value="NSVIT-51 노션 api 넥스트론 연결하기" />
     <MESSAGE value="NSV-18 플레이스 타수 보기페이지 v3.4.0" />
     <MESSAGE value="명소 없을시 오류 try { 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="명소 없을시 오류 try { 적용" />
+    <MESSAGE value="NSVIT-53 작업할 데이터 없을시 5분대기 로직추가" />
+    <MESSAGE value="v3.4.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3.4.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

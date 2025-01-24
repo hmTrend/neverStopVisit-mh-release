@@ -10,10 +10,15 @@ export const ExcelListLogic = () => {
   const { getExcelList } = useGetExcelList();
 
   const GetExcelList = async () => {
-    const { data } = await getExcelList({ groupFid: selectedGroupId });
-    return { data };
+    console.log("selectedGroupId");
+    console.log(selectedGroupId);
+    if (selectedGroupId) {
+      const { data } = await getExcelList({ groupFid: selectedGroupId });
+      return { data };
+    }
   };
   useEffect(() => {
+    if (!selectedGroupName) return;
     GetExcelList().then((v: any) => {
       storeNPlace.selectedExcelList = v.data;
     });

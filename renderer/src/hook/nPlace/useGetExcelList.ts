@@ -18,7 +18,7 @@ export const useGetExcelList = () => {
         duration: 3000,
         status: "error",
       });
-      throw Error("ERR > getExcelList");
+      throw Error(`ERR > getExcelList > ${error.message}`);
     }
     return { data: data.getNPlaceExcelList.data };
   };
