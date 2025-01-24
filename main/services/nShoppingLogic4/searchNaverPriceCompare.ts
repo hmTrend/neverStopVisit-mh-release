@@ -4,7 +4,7 @@ import wait from "waait";
 
 export async function searchNaverPriceCompare({
   page = undefined,
-  nvMid = "87576770616",
+  nvMid = "87533047182",
   isTest = false,
 }: {
   page?: Page;
@@ -35,9 +35,10 @@ export async function searchNaverPriceCompare({
           if (i === 1) {
             throw new Error(`findProductByImageId > ${e.message}`);
           }
-          await clickPageNumbers({ page, pageNumber: i + 1 });
+          await clickPageNumbers({ page, pageNumber: i + 2 });
         }
       }
+      throw Error(`findAndClickProduct > ${e.message}`);
     }
   } catch (e) {
     console.error(e.message);
@@ -98,8 +99,10 @@ async function findProductByImageId({
       await page.waitForLoadState("networkidle");
       await wait(1000);
     }
+    throw new Error(`findProductByImageId > item not found`);
   } catch (e) {
     console.error(`findProductByImageId > ${e.message}`);
+    throw new Error(`findProductByImageId > ${e.message}`);
   }
 }
 
@@ -123,7 +126,7 @@ async function scrollWithNewItems({ page }) {
           { timeout: 10 * 1000 },
         );
       } catch (err) {
-        throw new Error("No new items loaded after scrolling");
+        console.error("No new items loaded after scrolling");
       }
     }
     await wait(1500);

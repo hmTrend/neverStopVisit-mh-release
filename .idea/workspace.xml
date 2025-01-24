@@ -194,6 +194,7 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/nShoppingLogic4/searchNaverPriceCompare.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="targetKeywordSearch.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -294,14 +295,6 @@
       <workItem from="1737589619553" duration="6727000" />
       <workItem from="1737621028390" duration="22190000" />
       <workItem from="1737709622731" duration="2316000" />
-    </task>
-    <task id="LOCAL-00353" summary="NSVIT-27 엑셀 등록하기">
-      <option name="closed" value="true" />
-      <created>1736426636985</created>
-      <option name="number" value="00353" />
-      <option name="presentableId" value="LOCAL-00353" />
-      <option name="project" value="LOCAL" />
-      <updated>1736426636985</updated>
     </task>
     <task id="LOCAL-00354" summary="NSVIT-27 엑셀 등록하기">
       <option name="closed" value="true" />
@@ -687,7 +680,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737712988742</updated>
     </task>
-    <option name="localTasksCounter" value="402" />
+    <task id="LOCAL-00402" summary="3.5.1 작업완료시 쇼핑/플레이스 표기 : 쇼핑로직4 적용">
+      <option name="closed" value="true" />
+      <created>1737712996213</created>
+      <option name="number" value="00402" />
+      <option name="presentableId" value="LOCAL-00402" />
+      <option name="project" value="LOCAL" />
+      <updated>1737712996213</updated>
+    </task>
+    <option name="localTasksCounter" value="403" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
