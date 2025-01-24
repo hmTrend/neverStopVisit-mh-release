@@ -1,11 +1,11 @@
 import { Page } from "playwright";
-import { PuppeteerEngine } from "../commons/PuppeteerEngine";
 import wait from "waait";
+import { PuppeteerEngine } from "../PuppeteerEngine";
 
-export const targetKeywordSearch = async ({
+export const targetKeywordSearchWithEmptyPage = async ({
   page = undefined,
   targetKeyword = "가정용제빙기 미니",
-  isTest = true,
+  isTest = false,
 }: {
   page?: Page;
   targetKeyword?: string;
@@ -21,26 +21,18 @@ export const targetKeywordSearch = async ({
       page = test.page;
     }
 
-    // 이메일 이미지 나타나는지 기다리기
-    await page.waitForSelector(
-      'img.shs_service_m[src="https://s.pstatic.net/static/www/mobile/edit/20240926_0/upload_1727340694234hLngf.png"]',
-      {
-        state: "visible", // 실제로 화면에 보이는지 확인
-        timeout: 90 * 1000, // 5초 타임아웃
-      },
-    );
     for (let i = 0; i < 3; i++) {
       try {
-        const searchInput = page.locator("#MM_SEARCH_FAKE");
-        await searchInput.waitFor({ state: "visible", timeout: 10 * 1000 });
+        const searchInput = page.locator("#nx_query");
+        await searchInput.waitFor({ state: "visible", timeout: 30 * 1000 });
         await wait(1000);
 
         // 요소가 존재하는지 확인하고 텍스트 입력
         if (await searchInput.isVisible()) {
           await searchInput.click();
           await wait(1000);
-          const queryInput = page.locator("#query");
-          await queryInput.fill(targetKeyword);
+          const queryInput = page.locator("#nx_query");
+          await queryInput.pressSequentially(targetKeyword, { delay: 100 });
           await wait(500);
         } else {
           console.log("I can't find the search bar.");
@@ -57,12 +49,13 @@ export const targetKeywordSearch = async ({
       }
     }
 
-    const searchButton = page.locator("button.MM_SEARCH_SUBMIT");
+    const searchButton = page.locator("button.btn_search");
     try {
       // 검색 버튼이 나타날 때까지 대기하고 클릭
       await searchButton.waitFor({ state: "visible" });
       await searchButton.click();
       await page.waitForLoadState("networkidle");
+      await wait(1000);
     } catch (error) {
       console.log("I can't find the search bar. > ", error.message);
       throw Error("ERR > targetKeywordSearch > I can't find the search bar.");
@@ -75,4 +68,4 @@ export const targetKeywordSearch = async ({
   return { page };
 };
 
-targetKeywordSearch();
+// targetKeywordSearchWithEmptyPage();

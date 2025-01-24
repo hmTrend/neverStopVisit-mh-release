@@ -115,7 +115,7 @@ export class NShoppingLogic4 extends PuppeteerEngine {
       }
       if (nShoppingLogic4.logicType === "NAVER_COMPARE") {
         await super.initialize({
-          url: "https://www.naver.com/",
+          url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
           cookie: this.targetCookie,
         });
         console.log("logic 5");

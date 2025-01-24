@@ -1,12 +1,11 @@
 import { isPopup } from "./isPopup";
-import { loggedInCheck } from "../commons/naver/loggedInCheck";
-import { searchNVMID } from "./searchNVMID";
 import { expandProductDetails } from "./expandProductDetails";
 import wait from "waait";
 import { makeAPurchase } from "./makeAPurchase";
 import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
-import { targetKeywordSearch } from "./targetKeywordSearch";
 import { searchNaverPriceCompare } from "./searchNaverPriceCompare";
+import { loggedInCheckWithEmptyPage } from "../commons/naver/loggedInCheckWithEmptyPage";
+import { targetKeywordSearchWithEmptyPage } from "../commons/naver/targetKeywordSearchWithEmptyPage";
 
 export async function logicTypeNAVER_COMPARE({
   getRandomTime,
@@ -22,9 +21,9 @@ export async function logicTypeNAVER_COMPARE({
     });
     page = page0;
   }
-  await loggedInCheck({ page, _id: targetCookieId });
+  await loggedInCheckWithEmptyPage({ page, _id: targetCookieId });
   {
-    const { page: page0 } = await targetKeywordSearch({
+    const { page: page0 } = await targetKeywordSearchWithEmptyPage({
       page,
       targetKeyword: query,
     });

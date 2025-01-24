@@ -3,15 +3,27 @@ import { cookieNstateSave } from "../PuppeteerEngine/cookieNstateSave";
 import { GetFingerPrintNowLogData } from "../../../lib/apollo/finger-print.apollo";
 import { apiNotionPatchLoginIssue } from "../../../api/notion/api.patchLoginIssue";
 import wait from "waait";
+import { PuppeteerEngine } from "../PuppeteerEngine";
 
 export const loggedInCheck = async ({
   page,
   _id,
+  isTest = false,
 }: {
   page: Page;
   _id: string;
+  isTest?: boolean;
 }) => {
   try {
+    if (isTest) {
+      const test = new PuppeteerEngine();
+      await test.initialize({
+        url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
+        cookie: "",
+      });
+      page = test.page;
+    }
+
     let isLoggedIn = "YES";
     // 확장 영역 버튼이 나타날 때까지 대기
     await page.waitForSelector(".sha_service .sha_aside_link", {
