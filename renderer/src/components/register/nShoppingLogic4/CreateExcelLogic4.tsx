@@ -84,6 +84,7 @@ export const CreateExcelLogic4 = () => {
       ...v,
       groupFid: selectedGroupId,
       placeNumber: v.placeNumber?.toString(),
+      nvMid: v.nvMid?.toString(),
     }));
     const { data } = await createExcelList({
       input: inputList,
@@ -95,6 +96,7 @@ export const CreateExcelLogic4 = () => {
         ...v,
         groupFid: selectedGroupId,
         placeNumber: v.placeNumber?.toString(),
+        nvMid: v.nvMid?.toString(),
       }),
     );
 

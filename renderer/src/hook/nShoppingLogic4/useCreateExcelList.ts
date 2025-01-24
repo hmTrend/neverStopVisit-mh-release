@@ -15,7 +15,7 @@ export const useCreateExcelList = () => {
         duration: 3000,
         status: "error",
       });
-      throw Error("ERR > createExcelList");
+      throw Error(`ERR > createExcelList > ${errors[0].message}`);
     }
     toast({
       title: "쇼핑엑셀 만들기 성공",

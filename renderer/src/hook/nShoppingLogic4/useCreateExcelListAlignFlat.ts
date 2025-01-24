@@ -19,7 +19,7 @@ export const useCreateExcelListAlignFlat = () => {
         duration: 3000,
         status: "error",
       });
-      throw Error("ERR > createExcelListAlignFlat");
+      throw Error(`ERR > createExcelListAlignFlat > ${errors[0].message}`);
     }
     toast({
       title: "쇼핑엑셀각각 만들기 성공",

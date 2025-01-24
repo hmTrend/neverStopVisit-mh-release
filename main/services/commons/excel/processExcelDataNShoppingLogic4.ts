@@ -60,17 +60,25 @@ export function processExcelDataNShoppingLogic4({ filePath, sheetName = "" }) {
           for (let row = startRow; row < data.length; row++) {
             const cellValue = data[row]?.[colIndex];
             if (cellValue) {
-              // URL 패턴으로 문자열 분리
-              const matches = cellValue.match(/([^=]+)=(https?:\/\/[^\s]+)/g);
-              if (matches) {
-                matches.forEach((match) => {
-                  const [workKeyword, targetBlog] = match.split("=");
-                  if (workKeyword && targetBlog) {
-                    columnData.workKeywordList.push({
-                      workKeyword: workKeyword.trim(),
-                      targetBlog: targetBlog.trim(),
-                    });
-                  }
+              if (cellValue.includes("=")) {
+                // URL 패턴으로 분리
+                const matches = cellValue.match(/([^=]+)=(https?:\/\/[^\s]+)/g);
+                if (matches) {
+                  matches.forEach((match) => {
+                    const [workKeyword, targetBlog] = match.split("=");
+                    if (workKeyword) {
+                      columnData.workKeywordList.push({
+                        workKeyword: workKeyword.trim(),
+                        targetBlog: targetBlog ? targetBlog.trim() : "",
+                      });
+                    }
+                  });
+                }
+              } else {
+                // = 없는 경우 workKeyword만 등록
+                columnData.workKeywordList.push({
+                  workKeyword: cellValue.trim(),
+                  targetBlog: "",
                 });
               }
             }

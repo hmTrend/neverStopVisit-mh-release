@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="Complete the day's counting tasks &gt; waiting 300s..">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="기존 nShopping 삭제 &gt; nShoppingLogic4 / 대체됨">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/excel/processExcelDataNShoppingLogic4.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/excel/processExcelDataNShoppingLogic4.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShoppingLogic4/CreateExcelLogic4.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShoppingLogic4/CreateExcelLogic4.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useCreateExcelList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useCreateExcelList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useCreateExcelListAlignFlat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useCreateExcelListAlignFlat.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,15 +287,7 @@
       <workItem from="1737375490846" duration="3206000" />
       <workItem from="1737510895584" duration="24574000" />
       <workItem from="1737589619553" duration="6727000" />
-      <workItem from="1737621028390" duration="13529000" />
-    </task>
-    <task id="LOCAL-00346" summary="NSVIT-24 로직4 프론트 그룹만들기">
-      <option name="closed" value="true" />
-      <created>1736403551272</created>
-      <option name="number" value="00346" />
-      <option name="presentableId" value="LOCAL-00346" />
-      <option name="project" value="LOCAL" />
-      <updated>1736403551272</updated>
+      <workItem from="1737621028390" duration="15276000" />
     </task>
     <task id="LOCAL-00347" summary="NSVIT-25 그룹 삭제하기">
       <option name="closed" value="true" />
@@ -679,7 +673,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737699409404</updated>
     </task>
-    <option name="localTasksCounter" value="395" />
+    <task id="LOCAL-00395" summary="기존 nShopping 삭제 &gt; nShoppingLogic4 / 대체됨">
+      <option name="closed" value="true" />
+      <created>1737700874205</created>
+      <option name="number" value="00395" />
+      <option name="presentableId" value="LOCAL-00395" />
+      <option name="project" value="LOCAL" />
+      <updated>1737700874205</updated>
+    </task>
+    <option name="localTasksCounter" value="396" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -724,7 +726,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-23 로그인 체크오류" />
     <MESSAGE value="TSK-25 노션 api 연결" />
     <MESSAGE value="TSK-25 프론트 연결 및 노션에 데이터 전송 추가" />
     <MESSAGE value="TSK-25 v3.0.0" />
@@ -749,7 +750,8 @@
     <MESSAGE value="v3.4.1" />
     <MESSAGE value="GetExcelList / 새로고침시 값없음 오류해결" />
     <MESSAGE value="Complete the day's counting tasks &gt; waiting 300s.." />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete the day's counting tasks &gt; waiting 300s.." />
+    <MESSAGE value="기존 nShopping 삭제 &gt; nShoppingLogic4 / 대체됨" />
+    <option name="LAST_COMMIT_MESSAGE" value="기존 nShopping 삭제 &gt; nShoppingLogic4 / 대체됨" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
