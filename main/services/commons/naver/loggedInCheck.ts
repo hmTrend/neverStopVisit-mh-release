@@ -61,8 +61,7 @@ export const loggedInCheck = async ({
     }
     // 닫기 버튼 클릭
     await page.click(".ah_link_landing.ah_close");
-    await page.waitForLoadState("networkidle");
-
+    await page.waitForLoadState("domcontentloaded");
     return { page };
   } catch (e) {
     console.error(e.message);
