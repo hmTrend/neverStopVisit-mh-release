@@ -98,6 +98,7 @@ async function findProductByImageId({
       await productLink.click();
       await page.waitForLoadState("networkidle");
       await wait(1000);
+      return;
     }
     throw new Error(`findProductByImageId > item not found`);
   } catch (e) {

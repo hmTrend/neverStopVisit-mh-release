@@ -296,14 +296,6 @@
       <workItem from="1737621028390" duration="22190000" />
       <workItem from="1737709622731" duration="2316000" />
     </task>
-    <task id="LOCAL-00354" summary="NSVIT-27 엑셀 등록하기">
-      <option name="closed" value="true" />
-      <created>1736426662867</created>
-      <option name="number" value="00354" />
-      <option name="presentableId" value="LOCAL-00354" />
-      <option name="project" value="LOCAL" />
-      <updated>1736426662867</updated>
-    </task>
     <task id="LOCAL-00355" summary="NSVIT-29 쇼핑 리스트">
       <option name="closed" value="true" />
       <created>1736427422122</created>
@@ -688,7 +680,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737712996213</updated>
     </task>
-    <option name="localTasksCounter" value="403" />
+    <task id="LOCAL-00403" summary="3.5.2 2페이지 검색 안되는 현상 개선">
+      <option name="closed" value="true" />
+      <created>1737713952429</created>
+      <option name="number" value="00403" />
+      <option name="presentableId" value="LOCAL-00403" />
+      <option name="project" value="LOCAL" />
+      <updated>1737713952429</updated>
+    </task>
+    <option name="localTasksCounter" value="404" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -733,7 +733,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시" />
     <MESSAGE value="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시 &gt; 노션 수정" />
     <MESSAGE value="v3.0.1" />
     <MESSAGE value="v3.1.2 엑셀 신규 추가 등록시 리스트 갱신 100개로 제한" />
@@ -758,7 +757,8 @@
     <MESSAGE value="NSVIT-58 hasShoppingSection()" />
     <MESSAGE value="NSVIT-58 searchNaverPriceCompare()" />
     <MESSAGE value="3.5.1 작업완료시 쇼핑/플레이스 표기 : 쇼핑로직4 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.5.1 작업완료시 쇼핑/플레이스 표기 : 쇼핑로직4 적용" />
+    <MESSAGE value="3.5.2 2페이지 검색 안되는 현상 개선" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.5.2 2페이지 검색 안되는 현상 개선" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
