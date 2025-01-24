@@ -2,6 +2,7 @@ import { Page } from "playwright";
 import { cookieNstateSave } from "../PuppeteerEngine/cookieNstateSave";
 import { GetFingerPrintNowLogData } from "../../../lib/apollo/finger-print.apollo";
 import { apiNotionPatchLoginIssue } from "../../../api/notion/api.patchLoginIssue";
+import wait from "waait";
 
 export const loggedInCheck = async ({
   page,
@@ -20,6 +21,16 @@ export const loggedInCheck = async ({
     await page.click(".sha_service .sha_aside_link");
     // 페이지 로딩 완료 대기
     await page.waitForLoadState("networkidle");
+    {
+      /** 비동기 안내문 끄기 **/
+      const confirmBtn = page.locator("button.la_option", { hasText: "확인" });
+      if ((await confirmBtn.count()) > 0) {
+        await wait(500);
+        await confirmBtn.click();
+        await wait(1000);
+      }
+    }
+
     // 로그인 영역 확인
     const nameElement = await page.$("span.name");
 

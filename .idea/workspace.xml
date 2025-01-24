@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="기존 nShopping 삭제 &gt; nShoppingLogic4 / 대체됨">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-56 로직4 엑셀타입에서 url 빼고 엑셀 등록하기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/excel/processExcelDataNShoppingLogic4.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/excel/processExcelDataNShoppingLogic4.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/nShoppingLogic4/CreateExcelLogic4.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/nShoppingLogic4/CreateExcelLogic4.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useCreateExcelList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useCreateExcelList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useCreateExcelListAlignFlat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/nShoppingLogic4/useCreateExcelListAlignFlat.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,15 +284,7 @@
       <workItem from="1737375490846" duration="3206000" />
       <workItem from="1737510895584" duration="24574000" />
       <workItem from="1737589619553" duration="6727000" />
-      <workItem from="1737621028390" duration="15276000" />
-    </task>
-    <task id="LOCAL-00347" summary="NSVIT-25 그룹 삭제하기">
-      <option name="closed" value="true" />
-      <created>1736404851899</created>
-      <option name="number" value="00347" />
-      <option name="presentableId" value="LOCAL-00347" />
-      <option name="project" value="LOCAL" />
-      <updated>1736404851899</updated>
+      <workItem from="1737621028390" duration="16206000" />
     </task>
     <task id="LOCAL-00348" summary="NSVIT-26 엑셀 만들기">
       <option name="closed" value="true" />
@@ -681,7 +670,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737700874205</updated>
     </task>
-    <option name="localTasksCounter" value="396" />
+    <task id="LOCAL-00396" summary="NSVIT-56 로직4 엑셀타입에서 url 빼고 엑셀 등록하기">
+      <option name="closed" value="true" />
+      <created>1737702771917</created>
+      <option name="number" value="00396" />
+      <option name="presentableId" value="LOCAL-00396" />
+      <option name="project" value="LOCAL" />
+      <updated>1737702771917</updated>
+    </task>
+    <option name="localTasksCounter" value="397" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -726,7 +723,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="TSK-25 노션 api 연결" />
     <MESSAGE value="TSK-25 프론트 연결 및 노션에 데이터 전송 추가" />
     <MESSAGE value="TSK-25 v3.0.0" />
     <MESSAGE value="TSK-65 네스비 플레이스 : 구글에서 네이버 접속시에 userAgent 오류 해결" />
@@ -751,7 +747,8 @@
     <MESSAGE value="GetExcelList / 새로고침시 값없음 오류해결" />
     <MESSAGE value="Complete the day's counting tasks &gt; waiting 300s.." />
     <MESSAGE value="기존 nShopping 삭제 &gt; nShoppingLogic4 / 대체됨" />
-    <option name="LAST_COMMIT_MESSAGE" value="기존 nShopping 삭제 &gt; nShoppingLogic4 / 대체됨" />
+    <MESSAGE value="NSVIT-56 로직4 엑셀타입에서 url 빼고 엑셀 등록하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-56 로직4 엑셀타입에서 url 빼고 엑셀 등록하기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
