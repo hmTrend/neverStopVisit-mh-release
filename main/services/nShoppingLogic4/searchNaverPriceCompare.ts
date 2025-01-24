@@ -48,8 +48,9 @@ export async function searchNaverPriceCompare({
 }
 
 async function hasShoppingSection({ page }) {
+  await wait(2000);
   const shoppingSection = page.locator("section.sp_nshop");
-  if ((await shoppingSection.count()) === 0) {
+  if (!shoppingSection) {
     throw new Error("Shopping section not found");
   }
   console.log("this is naver shopping section");
