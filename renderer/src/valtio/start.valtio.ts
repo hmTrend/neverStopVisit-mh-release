@@ -58,7 +58,7 @@ class StartValtio {
     selectedGroup: { groupName: string; groupId: string };
     fingerPrint: { groupName: string; groupId: string };
     concurrentBrowserCount: number;
-    logicType: "NAVER" | "GOOGLE" | "+STORE" | "BLOG";
+    logicType: "NAVER" | "GOOGLE" | "+STORE" | "BLOG" | "NAVER_COMPARE";
   };
   nPlace: {
     isStart: boolean;

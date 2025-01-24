@@ -21,6 +21,7 @@ export const loggedInCheck = async ({
     await page.click(".sha_service .sha_aside_link");
     // 페이지 로딩 완료 대기
     await page.waitForLoadState("networkidle");
+    await wait(1000);
     {
       /** 비동기 안내문 끄기 **/
       const confirmBtn = page.locator("button.la_option", { hasText: "확인" });

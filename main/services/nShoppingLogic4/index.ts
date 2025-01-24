@@ -9,6 +9,7 @@ import { logicTypeGOOGLE } from "./logicType-GOOGLE";
 import { logicTypePLUSSTORE } from "./logicType-PLUS-STORE";
 import { GetNShoppingLogic4ExcelAlignFlatTargetOne } from "../../lib/apollo/n-shoppingLogic4-apollo";
 import { logicTypeBLOG } from "./logicType-BLOG";
+import { logicTypeNAVER_COMPARE } from "./logicType-NAVER_COMPARE";
 
 export class NShoppingLogic4 extends PuppeteerEngine {
   async start({ nShoppingLogic4, mainWindow }): Promise<void> {
@@ -110,6 +111,20 @@ export class NShoppingLogic4 extends PuppeteerEngine {
           targetCookieId: this.targetCookieId,
           query: this.query,
           targetBlog: this.targetBlog,
+        });
+      }
+      if (nShoppingLogic4.logicType === "NAVER_COMPARE") {
+        await super.initialize({
+          url: "https://www.naver.com/",
+          cookie: this.targetCookie,
+        });
+        console.log("logic 5");
+        await logicTypeNAVER_COMPARE({
+          getRandomTime,
+          page: this.page,
+          targetCookieId: this.targetCookieId,
+          query: this.query,
+          nvMid: this.nvMid,
         });
       }
       const myIp = await UtilNetwork.getIpAddress();

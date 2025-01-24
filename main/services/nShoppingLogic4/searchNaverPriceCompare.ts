@@ -15,7 +15,7 @@ export async function searchNaverPriceCompare({
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({
-        url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EA%B0%80%EC%A0%95%EC%9A%A9%EC%A0%9C%EB%B9%99%EA%B8%B0+%EB%AF%B8%EB%8B%88",
+        url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%A0%84%EB%8B%B4%EC%95%A1%EC%83%81",
         cookie: "",
       });
       page = test.page;
@@ -25,9 +25,20 @@ export async function searchNaverPriceCompare({
       await findAndClickProduct({ page, nvMid });
     } catch (e) {
       await clickMoreButton({ page });
+      for (let i = 0; i < 2; i++) {
+        const pageO = await scrollWithNewItems({ page });
+        try {
+          await findProductByImageId({ page: pageO, nvMid });
+          break;
+        } catch (e) {
+          console.error(e.message);
+          if (i === 1) {
+            throw new Error(`findProductByImageId > ${e.message}`);
+          }
+          await clickPageNumbers({ page, pageNumber: i + 1 });
+        }
+      }
     }
-    const pageO = await scrollWithNewItems({ page });
-    await findProductByImageId({ page: pageO, nvMid });
   } catch (e) {
     console.error(e.message);
     throw Error(`searchNaverPriceCompare > ${e.message}`);
@@ -121,6 +132,13 @@ async function scrollWithNewItems({ page }) {
     console.error("Error during scrolling:", err.message);
     throw err;
   }
+}
+
+async function clickPageNumbers({ page, pageNumber }) {
+  const pageBtn = page.locator(`.paginator_inner__H_LDe a`).nth(pageNumber - 1);
+  await pageBtn.click();
+  await page.waitForLoadState("networkidle");
+  await wait(1000);
 }
 
 // searchNaverPriceCompare();

@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-58 hasShoppingSection()">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-58 searchNaverPriceCompare()">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025__1__17__AM_7_52_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025__1__17__AM_7_52__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/logicType-NAVER_COMPARE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/logicType-NAVER_COMPARE.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/searchNaverPriceCompare.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/searchNaverPriceCompare.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/targetKeywordSearch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/targetKeywordSearch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/nShoppingLogic4.register.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/nShoppingLogic4.register.valtio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,62 +71,62 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TypeScript.api.client.ts.executor": "Run",
-    "TypeScript.api.create.ts.executor": "Run",
-    "TypeScript.api.patchDayNowCount.ts.executor": "Run",
-    "TypeScript.clickNearbyAttractions.tsx.executor": "Run",
-    "TypeScript.findTargetBlog.ts (1).executor": "Run",
-    "TypeScript.findTargetBlog.ts.executor": "Run",
-    "TypeScript.findTargetPlace.ts.executor": "Run",
-    "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
-    "TypeScript.findTargetShoppingInTargetBlog.ts.executor": "Run",
-    "TypeScript.goToKeyword.ts.executor": "Run",
-    "TypeScript.googleNaverSearchedToNaver.ts.executor": "Run",
-    "TypeScript.googleToNaver.ts.executor": "Run",
-    "TypeScript.googleToNaverShopping.ts.executor": "Run",
-    "TypeScript.index.ts (1).executor": "Run",
-    "TypeScript.index.ts (2).executor": "Run",
-    "TypeScript.index.ts.executor": "Run",
-    "TypeScript.initialize.ts.executor": "Run",
-    "TypeScript.initializeAndroid.ts.executor": "Run",
-    "TypeScript.initializeFireFox.ts.executor": "Run",
-    "TypeScript.mobile.userAgent.ts.executor": "Run",
-    "TypeScript.network.router.edu.ts.executor": "Run",
-    "TypeScript.network.router.eduPlayer.ts.executor": "Run",
-    "TypeScript.searchNVMID.ts.executor": "Run",
-    "TypeScript.searchNaverPriceCompare.ts.executor": "Run",
-    "TypeScript.targetKeywordSearch.ts.executor": "Run",
-    "TypeScript.util.network.ts.executor": "Run",
-    "eslint.code.style.apply.dismiss": "true",
-    "git-widget-placeholder": "develop",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/nShoppingLogic4",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TypeScript.api.client.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.api.create.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.api.patchDayNowCount.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.clickNearbyAttractions.tsx.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetBlog.ts (1).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetBlog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetPlace.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetPlaceInTargetBlog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetShoppingInTargetBlog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.goToKeyword.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.googleNaverSearchedToNaver.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.googleToNaver.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.googleToNaverShopping.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts (1).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts (2).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initializeAndroid.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initializeFireFox.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.mobile.userAgent.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.network.router.edu.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.network.router.eduPlayer.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.searchNVMID.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.searchNaverPriceCompare.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.targetKeywordSearch.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.util.network.ts.executor&quot;: &quot;Run&quot;,
+    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/nShoppingLogic4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/services/nShoppingLogic4" />
@@ -180,7 +186,7 @@
     <configuration name="searchNaverPriceCompare.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShoppingLogic4" />
@@ -194,7 +200,7 @@
     <configuration name="targetKeywordSearch.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShoppingLogic4" />
@@ -202,7 +208,6 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/nShoppingLogic4/targetKeywordSearch.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -218,7 +223,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
       </set>
     </attachedChunks>
   </component>
@@ -288,23 +293,8 @@
       <workItem from="1737375490846" duration="3206000" />
       <workItem from="1737510895584" duration="24574000" />
       <workItem from="1737589619553" duration="6727000" />
-      <workItem from="1737621028390" duration="22127000" />
-    </task>
-    <task id="LOCAL-00350" summary="NSVIT-26 엑셀 생성">
-      <option name="closed" value="true" />
-      <created>1736410647826</created>
-      <option name="number" value="00350" />
-      <option name="presentableId" value="LOCAL-00350" />
-      <option name="project" value="LOCAL" />
-      <updated>1736410647826</updated>
-    </task>
-    <task id="LOCAL-00351" summary="NSVIT-27 엑셀 등록하기">
-      <option name="closed" value="true" />
-      <created>1736417258901</created>
-      <option name="number" value="00351" />
-      <option name="presentableId" value="LOCAL-00351" />
-      <option name="project" value="LOCAL" />
-      <updated>1736417258901</updated>
+      <workItem from="1737621028390" duration="22190000" />
+      <workItem from="1737709622731" duration="2316000" />
     </task>
     <task id="LOCAL-00352" summary="NSVIT-27 엑셀 등록하기">
       <option name="closed" value="true" />
@@ -682,7 +672,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737704897968</updated>
     </task>
-    <option name="localTasksCounter" value="399" />
+    <task id="LOCAL-00399" summary="NSVIT-58 searchNaverPriceCompare()">
+      <option name="closed" value="true" />
+      <created>1737709553179</created>
+      <option name="number" value="00399" />
+      <option name="presentableId" value="LOCAL-00399" />
+      <option name="project" value="LOCAL" />
+      <updated>1737709553179</updated>
+    </task>
+    <task id="LOCAL-00400" summary="NSVIT-58 searchNaverPriceCompare()">
+      <option name="closed" value="true" />
+      <created>1737709581589</created>
+      <option name="number" value="00400" />
+      <option name="presentableId" value="LOCAL-00400" />
+      <option name="project" value="LOCAL" />
+      <updated>1737709581589</updated>
+    </task>
+    <option name="localTasksCounter" value="401" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -727,7 +733,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="TSK-65 네스비 플레이스 : 구글에서 네이버 접속시에 userAgent 오류 해결" />
     <MESSAGE value="TSK-66 네스비 플레이스 첫페이지 인기글에서 블로그 찾고, 없을시 블로그탭에서 찾기" />
     <MESSAGE value="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시" />
     <MESSAGE value="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시 &gt; 노션 수정" />
@@ -752,7 +757,8 @@
     <MESSAGE value="NSVIT-56 로직4 엑셀타입에서 url 빼고 엑셀 등록하기" />
     <MESSAGE value="NSVIT-57 로그인체크 &gt; 비동기 안내문 끄기" />
     <MESSAGE value="NSVIT-58 hasShoppingSection()" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-58 hasShoppingSection()" />
+    <MESSAGE value="NSVIT-58 searchNaverPriceCompare()" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-58 searchNaverPriceCompare()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
