@@ -26,7 +26,7 @@ export function WorkCompletedList() {
       {completedList?.map((v, i) => (
         <Box display={"flex"} gap={3} key={i}>
           <Text>{i + 1}</Text>
-          <Text>{v?.workType === "NShopping" ? "쇼핑" : "플레이스"}</Text>
+          <Text>{v?.workType === "NShoppingLogic4" ? "쇼핑" : "플레이스"}</Text>
           <Text>{v?.targetKeyword}</Text>
           <Text>{v?.myIp}</Text>
           <Text>{v?.createdAt}</Text>

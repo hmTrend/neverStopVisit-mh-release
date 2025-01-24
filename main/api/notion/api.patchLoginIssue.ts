@@ -8,7 +8,15 @@ export const notion = new Client({
 
 const DATABASE_ID = "17dc7cf713ef80daad90fbbd729b4477";
 
-export async function apiNotionPatchLoginIssue({ data }) {
+export async function apiNotionPatchLoginIssue({
+  data = {
+    totalCount: 0,
+    notLoginCount: 0,
+    nPw: "nPw",
+    nId: "nId",
+    groupFid: "groupFid",
+  },
+} = {}) {
   try {
     const { totalCount, notLoginCount, nPw, nId, groupFid } = data;
     const response = await notion.pages.create({
@@ -80,7 +88,7 @@ export async function apiNotionPatchLoginIssue({ data }) {
 
 // (async () => {
 //   try {
-//     const result = await addItemToDatabase();
+//     const result = await apiNotionPatchLoginIssue();
 //     if (result) {
 //       console.log("전체 응답:", result);
 //     }
