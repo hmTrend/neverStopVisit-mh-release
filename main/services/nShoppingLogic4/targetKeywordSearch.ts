@@ -4,7 +4,7 @@ import wait from "waait";
 
 export const targetKeywordSearch = async ({
   page = undefined,
-  targetKeyword = "드립백커피 문제적커피",
+  targetKeyword = "가정용제빙기 미니",
   isTest = false,
 }: {
   page?: Page;
