@@ -296,22 +296,6 @@
       <workItem from="1737621028390" duration="22190000" />
       <workItem from="1737709622731" duration="2316000" />
     </task>
-    <task id="LOCAL-00355" summary="NSVIT-29 쇼핑 리스트">
-      <option name="closed" value="true" />
-      <created>1736427422122</created>
-      <option name="number" value="00355" />
-      <option name="presentableId" value="LOCAL-00355" />
-      <option name="project" value="LOCAL" />
-      <updated>1736427422123</updated>
-    </task>
-    <task id="LOCAL-00356" summary="NSVIT-29 쇼핑 리스트">
-      <option name="closed" value="true" />
-      <created>1736428862130</created>
-      <option name="number" value="00356" />
-      <option name="presentableId" value="LOCAL-00356" />
-      <option name="project" value="LOCAL" />
-      <updated>1736428862130</updated>
-    </task>
     <task id="LOCAL-00357" summary="NSVIT-29 쇼핑 리스트">
       <option name="closed" value="true" />
       <created>1736430704420</created>
@@ -688,7 +672,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737713952429</updated>
     </task>
-    <option name="localTasksCounter" value="404" />
+    <task id="LOCAL-00404" summary="3.5.3 findProductByImageId 1페이지에서 찾을시 return문 적용">
+      <option name="closed" value="true" />
+      <created>1737714947576</created>
+      <option name="number" value="00404" />
+      <option name="presentableId" value="LOCAL-00404" />
+      <option name="project" value="LOCAL" />
+      <updated>1737714947576</updated>
+    </task>
+    <task id="LOCAL-00405" summary="3.5.3 findProductByImageId 1페이지에서 찾을시 return문 적용">
+      <option name="closed" value="true" />
+      <created>1737714958148</created>
+      <option name="number" value="00405" />
+      <option name="presentableId" value="LOCAL-00405" />
+      <option name="project" value="LOCAL" />
+      <updated>1737714958148</updated>
+    </task>
+    <option name="localTasksCounter" value="406" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -733,7 +733,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시 &gt; 노션 수정" />
     <MESSAGE value="v3.0.1" />
     <MESSAGE value="v3.1.2 엑셀 신규 추가 등록시 리스트 갱신 100개로 제한" />
     <MESSAGE value="v3.0.2 엑셀 신규 추가 등록시 리스트 갱신 100개로 제한" />
@@ -758,7 +757,8 @@
     <MESSAGE value="NSVIT-58 searchNaverPriceCompare()" />
     <MESSAGE value="3.5.1 작업완료시 쇼핑/플레이스 표기 : 쇼핑로직4 적용" />
     <MESSAGE value="3.5.2 2페이지 검색 안되는 현상 개선" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.5.2 2페이지 검색 안되는 현상 개선" />
+    <MESSAGE value="3.5.3 findProductByImageId 1페이지에서 찾을시 return문 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.5.3 findProductByImageId 1페이지에서 찾을시 return문 적용" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

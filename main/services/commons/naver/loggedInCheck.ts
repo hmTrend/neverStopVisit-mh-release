@@ -24,11 +24,17 @@ export const loggedInCheck = async ({
     await wait(1000);
     {
       /** 비동기 안내문 끄기 **/
-      const confirmBtn = page.locator("button.la_option", { hasText: "확인" });
-      if ((await confirmBtn.count()) > 0) {
-        await wait(500);
-        await confirmBtn.click();
-        await wait(1000);
+      try {
+        const confirmBtn = page.locator("button.la_option", {
+          hasText: "확인",
+        });
+        if ((await confirmBtn.count()) > 0) {
+          await wait(500);
+          await confirmBtn.click();
+          await wait(1000);
+        }
+      } catch (e) {
+        console.error(`loggedInCheck > ${e.message}`);
       }
     }
 
