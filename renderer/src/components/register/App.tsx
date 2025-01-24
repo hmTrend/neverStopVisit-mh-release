@@ -12,7 +12,6 @@ export const App = () => {
       <TabList>
         <Tab>지문</Tab>
         <Tab>플레이스</Tab>
-        <Tab>쇼핑</Tab>
         <Tab>쇼핑 로직4</Tab>
         <Tab>쿠팡</Tab>
       </TabList>
@@ -22,9 +21,6 @@ export const App = () => {
         </TabPanel>
         <TabPanel>
           <AppNPlace />
-        </TabPanel>
-        <TabPanel>
-          <AppNShopping />
         </TabPanel>
         <TabPanel>
           <AppNShoppingLogic4 />

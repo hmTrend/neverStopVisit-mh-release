@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="GetExcelList / 새로고침시 값없음 오류해결">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="Complete the day's counting tasks &gt; waiting 300s..">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-place-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-place-apollo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStartLogic.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,15 +285,7 @@
       <workItem from="1737375490846" duration="3206000" />
       <workItem from="1737510895584" duration="24574000" />
       <workItem from="1737589619553" duration="6727000" />
-      <workItem from="1737621028390" duration="12012000" />
-    </task>
-    <task id="LOCAL-00345" summary="v2.18.2">
-      <option name="closed" value="true" />
-      <created>1736347660988</created>
-      <option name="number" value="00345" />
-      <option name="presentableId" value="LOCAL-00345" />
-      <option name="project" value="LOCAL" />
-      <updated>1736347660988</updated>
+      <workItem from="1737621028390" duration="13529000" />
     </task>
     <task id="LOCAL-00346" summary="NSVIT-24 로직4 프론트 그룹만들기">
       <option name="closed" value="true" />
@@ -680,7 +671,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737697691759</updated>
     </task>
-    <option name="localTasksCounter" value="394" />
+    <task id="LOCAL-00394" summary="Complete the day's counting tasks &gt; waiting 300s..">
+      <option name="closed" value="true" />
+      <created>1737699409404</created>
+      <option name="number" value="00394" />
+      <option name="presentableId" value="LOCAL-00394" />
+      <option name="project" value="LOCAL" />
+      <updated>1737699409404</updated>
+    </task>
+    <option name="localTasksCounter" value="395" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -725,7 +724,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-36 느린속도로 문제 있는 부분 픽스" />
     <MESSAGE value="NSVIT-23 로그인 체크오류" />
     <MESSAGE value="TSK-25 노션 api 연결" />
     <MESSAGE value="TSK-25 프론트 연결 및 노션에 데이터 전송 추가" />
@@ -750,7 +748,8 @@
     <MESSAGE value="NSVIT-53 작업할 데이터 없을시 5분대기 로직추가" />
     <MESSAGE value="v3.4.1" />
     <MESSAGE value="GetExcelList / 새로고침시 값없음 오류해결" />
-    <option name="LAST_COMMIT_MESSAGE" value="GetExcelList / 새로고침시 값없음 오류해결" />
+    <MESSAGE value="Complete the day's counting tasks &gt; waiting 300s.." />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete the day's counting tasks &gt; waiting 300s.." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

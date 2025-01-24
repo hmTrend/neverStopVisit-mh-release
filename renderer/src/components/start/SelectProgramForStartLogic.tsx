@@ -84,12 +84,6 @@ export const SelectProgramForStartLogic = () => {
         logicType={nShoppingLogic4LogicType}
       />
       <SelectProgramForStart
-        groupList={nShoppingGroupList}
-        handleSelectChange={handleSelectChangeNShopping}
-        selectProgram={"nShopping"}
-        logicType={nShoppingLogicType}
-      />
-      <SelectProgramForStart
         groupList={nPlaceGroupList}
         handleSelectChange={handleSelectChangeNPlace}
         selectProgram={"nPlace"}
