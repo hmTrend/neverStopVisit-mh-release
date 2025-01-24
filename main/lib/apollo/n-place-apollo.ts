@@ -25,7 +25,7 @@ const gqlGetNPlaceExcelAlignFlatTargetOne = gql`
 `;
 
 export const GetNPlaceExcelAlignFlatTargetOne = async ({ groupFid }) => {
-  const { data, error } = await client.query({
+  const { data, errors } = await client.query({
     query: gqlGetNPlaceExcelAlignFlatTargetOne,
     variables: {
       input: {
@@ -34,13 +34,11 @@ export const GetNPlaceExcelAlignFlatTargetOne = async ({ groupFid }) => {
     },
     fetchPolicy: "no-cache",
   });
-  if (error) {
-    console.error(error.message);
-    return {
-      data,
-      message: "ERR > GetNPlaceExcelAlignFlatTargetOne ",
-      error: error.message,
-    };
+  if (errors) {
+    console.error(
+      `this is GetNPlaceExcelAlignFlatTargetOne > ${errors[0].message}`,
+    );
+    throw new Error(`GetNPlaceExcelAlignFlatTargetOne > ${errors[0].message}`);
   }
   return {
     data: data.getNPlaceExcelAlignFlatTargetOne.data,

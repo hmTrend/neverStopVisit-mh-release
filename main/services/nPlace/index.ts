@@ -34,7 +34,11 @@ export class NPlace extends PuppeteerEngine {
           break;
         } catch (e) {
           await wait(3 * 1000);
-          console.error(`GetNPlaceExcelAlignFlatTargetOne > ${e.message}`);
+          console.error(`123 GetNPlaceExcelAlignFlatTargetOne > ${e.message}`);
+          if (e.message.includes("Complete the day's counting tasks")) {
+            console.error(`err > NPlace > start > ${e.message}`);
+            throw Error(`err > NPlace > start > ${e.message}`);
+          }
           if (i === 5) {
             throw Error(
               `More than 5 errors > GetNPlaceExcelAlignFlatTargetOne > ${e.message}`,

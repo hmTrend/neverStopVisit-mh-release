@@ -105,14 +105,20 @@ async function executeInChunks({
           await closeAllBrowsers();
           await wait(5000);
         } catch (e) {
+          console.log("e.message >>>>>> test3333");
+          console.log(e.message);
           if (
             e.message.includes(
               "More than 5 errors > GetNPlaceExcelAlignFlatTargetOne",
             )
           ) {
-            console.log(
+            console.error(
               "this is More than 3 errors > GetNPlaceExcelAlignFlatTargetOne",
             );
+            await wait(300 * 1000);
+          }
+          if (e.message.includes("Complete the day's counting tasks")) {
+            console.error("Complete the day's counting tasks > waiting 300s..");
             await wait(300 * 1000);
           }
           await closeAllBrowsers();
