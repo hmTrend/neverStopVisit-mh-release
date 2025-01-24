@@ -20,8 +20,8 @@ export const loggedInCheck = async ({
     // 버튼 클릭
     await page.click(".sha_service .sha_aside_link");
     // 페이지 로딩 완료 대기
-    await page.waitForLoadState("networkidle");
-    await wait(1000);
+    await page.waitForLoadState("domcontentloaded");
+    await wait(2000);
     {
       /** 비동기 안내문 끄기 **/
       try {
