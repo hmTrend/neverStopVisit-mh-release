@@ -5,7 +5,7 @@ import wait from "waait";
 export const targetKeywordSearch = async ({
   page = undefined,
   targetKeyword = "가정용제빙기 미니",
-  isTest = true,
+  isTest = false,
 }: {
   page?: Page;
   targetKeyword?: string;
@@ -75,4 +75,4 @@ export const targetKeywordSearch = async ({
   return { page };
 };
 
-targetKeywordSearch();
+// targetKeywordSearch();

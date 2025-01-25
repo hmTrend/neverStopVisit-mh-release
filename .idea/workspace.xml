@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-59 v3.5.0">
-      <change afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheckWithEmptyPage.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/services/commons/naver/targetKeywordSearchWithEmptyPage.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-58 searchNaverPriceCompare()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/apollo-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/apollo-provider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/const/constVar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/const/constVar.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/logicType-NAVER_COMPARE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/logicType-NAVER_COMPARE.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/targetKeywordSearch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/targetKeywordSearch.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +67,6 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Node.js.apollo-provider.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -97,19 +89,17 @@
     &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.initializeAndroid.ts.executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.initializeFireFox.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.loggedInCheckWithEmptyPage.ts.executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.mobile.userAgent.ts.executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.network.router.edu.ts.executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.network.router.eduPlayer.ts.executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.searchNVMID.ts.executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.searchNaverPriceCompare.ts.executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.targetKeywordSearch.ts.executor&quot;: &quot;Run&quot;,
-    &quot;TypeScript.targetKeywordSearchWithEmptyPage.ts.executor&quot;: &quot;Run&quot;,
     &quot;TypeScript.util.network.ts.executor&quot;: &quot;Run&quot;,
     &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/commons/naver&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/nShoppingLogic4&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -132,9 +122,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/main/services/commons/naver" />
       <recent name="$PROJECT_DIR$/main/services/nShoppingLogic4" />
       <recent name="$PROJECT_DIR$/main/services/nPlace" />
+      <recent name="$PROJECT_DIR$/main/services/commons/naver" />
       <recent name="$PROJECT_DIR$/main/lib/network" />
       <recent name="$PROJECT_DIR$/main/lib/apollo" />
     </key>
@@ -146,11 +136,8 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.loggedInCheckWithEmptyPage.ts">
-    <configuration name="apollo-provider.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/main/lib/apollo/apollo-provider.js" working-dir="$PROJECT_DIR$/main/lib/apollo">
-      <method v="2" />
-    </configuration>
-    <configuration name="loggedInCheckWithEmptyPage.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+  <component name="RunManager" selected="TypeScript.searchNaverPriceCompare.ts">
+    <configuration name="googleNaverSearchedToNaver.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
       <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
@@ -159,33 +146,46 @@
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/naver" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/naver/loggedInCheckWithEmptyPage.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/naver/googleNaverSearchedToNaver.ts" />
+      <option name="programParameters" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="googleToNaver.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/naver" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/naver/googleToNaver.ts" />
+      <option name="programParameters" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="initialize.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" />
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
     <configuration name="searchNaverPriceCompare.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShoppingLogic4" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/nShoppingLogic4/searchNaverPriceCompare.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="targetKeywordSearchWithEmptyPage.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/naver" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/naver/targetKeywordSearchWithEmptyPage.ts" />
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
@@ -204,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TypeScript.loggedInCheckWithEmptyPage.ts" />
-        <item itemvalue="TypeScript.targetKeywordSearchWithEmptyPage.ts" />
-        <item itemvalue="TypeScript.targetKeywordSearch.ts" />
-        <item itemvalue="Node.js.apollo-provider.js" />
         <item itemvalue="TypeScript.searchNaverPriceCompare.ts" />
+        <item itemvalue="TypeScript.targetKeywordSearch.ts" />
+        <item itemvalue="TypeScript.initialize.ts" />
+        <item itemvalue="TypeScript.googleToNaver.ts" />
+        <item itemvalue="TypeScript.googleNaverSearchedToNaver.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +287,78 @@
       <workItem from="1737589619553" duration="6727000" />
       <workItem from="1737621028390" duration="22190000" />
       <workItem from="1737709622731" duration="2316000" />
-      <workItem from="1737761973929" duration="565000" />
+    </task>
+    <task id="LOCAL-00352" summary="NSVIT-27 엑셀 등록하기">
+      <option name="closed" value="true" />
+      <created>1736426624496</created>
+      <option name="number" value="00352" />
+      <option name="presentableId" value="LOCAL-00352" />
+      <option name="project" value="LOCAL" />
+      <updated>1736426624496</updated>
+    </task>
+    <task id="LOCAL-00353" summary="NSVIT-27 엑셀 등록하기">
+      <option name="closed" value="true" />
+      <created>1736426636985</created>
+      <option name="number" value="00353" />
+      <option name="presentableId" value="LOCAL-00353" />
+      <option name="project" value="LOCAL" />
+      <updated>1736426636985</updated>
+    </task>
+    <task id="LOCAL-00354" summary="NSVIT-27 엑셀 등록하기">
+      <option name="closed" value="true" />
+      <created>1736426662867</created>
+      <option name="number" value="00354" />
+      <option name="presentableId" value="LOCAL-00354" />
+      <option name="project" value="LOCAL" />
+      <updated>1736426662867</updated>
+    </task>
+    <task id="LOCAL-00355" summary="NSVIT-29 쇼핑 리스트">
+      <option name="closed" value="true" />
+      <created>1736427422122</created>
+      <option name="number" value="00355" />
+      <option name="presentableId" value="LOCAL-00355" />
+      <option name="project" value="LOCAL" />
+      <updated>1736427422123</updated>
+    </task>
+    <task id="LOCAL-00356" summary="NSVIT-29 쇼핑 리스트">
+      <option name="closed" value="true" />
+      <created>1736428862130</created>
+      <option name="number" value="00356" />
+      <option name="presentableId" value="LOCAL-00356" />
+      <option name="project" value="LOCAL" />
+      <updated>1736428862130</updated>
+    </task>
+    <task id="LOCAL-00357" summary="NSVIT-29 쇼핑 리스트">
+      <option name="closed" value="true" />
+      <created>1736430704420</created>
+      <option name="number" value="00357" />
+      <option name="presentableId" value="LOCAL-00357" />
+      <option name="project" value="LOCAL" />
+      <updated>1736430704421</updated>
+    </task>
+    <task id="LOCAL-00358" summary="NSVIT-29 쇼핑 리스트">
+      <option name="closed" value="true" />
+      <created>1736430796193</created>
+      <option name="number" value="00358" />
+      <option name="presentableId" value="LOCAL-00358" />
+      <option name="project" value="LOCAL" />
+      <updated>1736430796193</updated>
+    </task>
+    <task id="LOCAL-00359" summary="NSVIT-29 쇼핑 리스트">
+      <option name="closed" value="true" />
+      <created>1736431951133</created>
+      <option name="number" value="00359" />
+      <option name="presentableId" value="LOCAL-00359" />
+      <option name="project" value="LOCAL" />
+      <updated>1736431951133</updated>
+    </task>
+    <task id="LOCAL-00360" summary="NSVIT-32 백엔드 eslint 오류">
+      <option name="closed" value="true" />
+      <created>1736461225171</created>
+      <option name="number" value="00360" />
+      <option name="presentableId" value="LOCAL-00360" />
+      <option name="project" value="LOCAL" />
+      <updated>1736461225171</updated>
     </task>
     <task id="LOCAL-00361" summary="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기">
       <option name="closed" value="true" />
@@ -609,79 +680,7 @@
       <option name="project" value="LOCAL" />
       <updated>1737709581589</updated>
     </task>
-    <task id="LOCAL-00401" summary="3.5.1 작업완료시 쇼핑/플레이스 표기 : 쇼핑로직4 적용">
-      <option name="closed" value="true" />
-      <created>1737712988742</created>
-      <option name="number" value="00401" />
-      <option name="presentableId" value="LOCAL-00401" />
-      <option name="project" value="LOCAL" />
-      <updated>1737712988742</updated>
-    </task>
-    <task id="LOCAL-00402" summary="3.5.1 작업완료시 쇼핑/플레이스 표기 : 쇼핑로직4 적용">
-      <option name="closed" value="true" />
-      <created>1737712996213</created>
-      <option name="number" value="00402" />
-      <option name="presentableId" value="LOCAL-00402" />
-      <option name="project" value="LOCAL" />
-      <updated>1737712996213</updated>
-    </task>
-    <task id="LOCAL-00403" summary="3.5.2 2페이지 검색 안되는 현상 개선">
-      <option name="closed" value="true" />
-      <created>1737713952429</created>
-      <option name="number" value="00403" />
-      <option name="presentableId" value="LOCAL-00403" />
-      <option name="project" value="LOCAL" />
-      <updated>1737713952429</updated>
-    </task>
-    <task id="LOCAL-00404" summary="3.5.3 findProductByImageId 1페이지에서 찾을시 return문 적용">
-      <option name="closed" value="true" />
-      <created>1737714947576</created>
-      <option name="number" value="00404" />
-      <option name="presentableId" value="LOCAL-00404" />
-      <option name="project" value="LOCAL" />
-      <updated>1737714947576</updated>
-    </task>
-    <task id="LOCAL-00405" summary="3.5.3 findProductByImageId 1페이지에서 찾을시 return문 적용">
-      <option name="closed" value="true" />
-      <created>1737714958148</created>
-      <option name="number" value="00405" />
-      <option name="presentableId" value="LOCAL-00405" />
-      <option name="project" value="LOCAL" />
-      <updated>1737714958148</updated>
-    </task>
-    <task id="LOCAL-00406" summary="3.5.4 login Check error">
-      <option name="closed" value="true" />
-      <created>1737720280398</created>
-      <option name="number" value="00406" />
-      <option name="presentableId" value="LOCAL-00406" />
-      <option name="project" value="LOCAL" />
-      <updated>1737720280398</updated>
-    </task>
-    <task id="LOCAL-00407" summary="3.5.5 login Check documentedloaded">
-      <option name="closed" value="true" />
-      <created>1737721395056</created>
-      <option name="number" value="00407" />
-      <option name="presentableId" value="LOCAL-00407" />
-      <option name="project" value="LOCAL" />
-      <updated>1737721395056</updated>
-    </task>
-    <task id="LOCAL-00408" summary="3.5.5 login Check documentedloaded">
-      <option name="closed" value="true" />
-      <created>1737721413666</created>
-      <option name="number" value="00408" />
-      <option name="presentableId" value="LOCAL-00408" />
-      <option name="project" value="LOCAL" />
-      <updated>1737721413666</updated>
-    </task>
-    <task id="LOCAL-00409" summary="3.5.6 login Check documentedloaded 2">
-      <option name="closed" value="true" />
-      <created>1737723938820</created>
-      <option name="number" value="00409" />
-      <option name="presentableId" value="LOCAL-00409" />
-      <option name="project" value="LOCAL" />
-      <updated>1737723938820</updated>
-    </task>
-    <option name="localTasksCounter" value="410" />
+    <option name="localTasksCounter" value="401" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -712,7 +711,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="feature/notion" />
                       </list>
                     </value>
                   </entry>
@@ -726,6 +725,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="TSK-66 네스비 플레이스 첫페이지 인기글에서 블로그 찾고, 없을시 블로그탭에서 찾기" />
+    <MESSAGE value="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시" />
+    <MESSAGE value="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시 &gt; 노션 수정" />
+    <MESSAGE value="v3.0.1" />
+    <MESSAGE value="v3.1.2 엑셀 신규 추가 등록시 리스트 갱신 100개로 제한" />
+    <MESSAGE value="v3.0.2 엑셀 신규 추가 등록시 리스트 갱신 100개로 제한" />
     <MESSAGE value="NSVIT-38 아이템 등록시 각 title추가" />
     <MESSAGE value="NSVIT-40 엑셀 로직 변경 등록" />
     <MESSAGE value="NSVIT-44 엑셀등록시 blogUrl 제외가능" />
@@ -745,13 +750,7 @@
     <MESSAGE value="NSVIT-57 로그인체크 &gt; 비동기 안내문 끄기" />
     <MESSAGE value="NSVIT-58 hasShoppingSection()" />
     <MESSAGE value="NSVIT-58 searchNaverPriceCompare()" />
-    <MESSAGE value="3.5.1 작업완료시 쇼핑/플레이스 표기 : 쇼핑로직4 적용" />
-    <MESSAGE value="3.5.2 2페이지 검색 안되는 현상 개선" />
-    <MESSAGE value="3.5.3 findProductByImageId 1페이지에서 찾을시 return문 적용" />
-    <MESSAGE value="3.5.4 login Check error" />
-    <MESSAGE value="3.5.5 login Check documentedloaded" />
-    <MESSAGE value="3.5.6 login Check documentedloaded 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.5.6 login Check documentedloaded 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-58 searchNaverPriceCompare()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
