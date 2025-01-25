@@ -74,7 +74,7 @@ function LogicType({ logicType, selectProgram }) {
       onChange={handleChange}
       defaultValue={snap[selectProgram]?.logicType}
     >
-      <Stack direction="row" gap={6}>
+      <Flex wrap={"wrap"} gap={6}>
         {logicType.map((v, i) => (
           <Fragment key={i}>
             <Radio value={v}>
@@ -82,7 +82,7 @@ function LogicType({ logicType, selectProgram }) {
             </Radio>
           </Fragment>
         ))}
-      </Stack>
+      </Flex>
     </RadioGroup>
   );
 }
