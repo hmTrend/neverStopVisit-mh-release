@@ -27,8 +27,6 @@ export class NShoppingLogic4 extends PuppeteerEngine {
             });
           var ExcelData = excelData;
           const { workKeyword, nvMid, targetBlog, targetKeyword } = excelData;
-          console.log("excelData 333333");
-          console.log(excelData);
           {
             this.query = workKeyword;
             this.nvMid = nvMid;
@@ -37,8 +35,12 @@ export class NShoppingLogic4 extends PuppeteerEngine {
           }
           break;
         } catch (e) {
-          await wait(3 * 1000);
           console.error(e.message);
+          if (e.message.includes("Complete the day's counting tasks")) {
+            console.error(`err > NShoppingLogic4 > start > ${e.message}`);
+            throw Error(`err > NShoppingLogic4 > start > ${e.message}`);
+          }
+          await wait(3 * 1000);
           if (i === 3) {
             return console.error(
               "More than 3 errors > GetNShoppingExcelAlignFlatTargetOne",

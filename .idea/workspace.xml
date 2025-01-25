@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-71 플레이스 구글_블로그 로직2 업데이트 / 네이버 빈페이지">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-77 넥스트론 백엔드 타수 카운팅 연도">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-shoppingLogic4-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-shoppingLogic4-apollo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -294,15 +291,7 @@
       <workItem from="1737621028390" duration="22190000" />
       <workItem from="1737709622731" duration="2316000" />
       <workItem from="1737786717980" duration="183000" />
-      <workItem from="1737787025561" duration="5852000" />
-    </task>
-    <task id="LOCAL-00360" summary="NSVIT-32 백엔드 eslint 오류">
-      <option name="closed" value="true" />
-      <created>1736461225171</created>
-      <option name="number" value="00360" />
-      <option name="presentableId" value="LOCAL-00360" />
-      <option name="project" value="LOCAL" />
-      <updated>1736461225171</updated>
+      <workItem from="1737787025561" duration="7015000" />
     </task>
     <task id="LOCAL-00361" summary="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기">
       <option name="closed" value="true" />
@@ -688,7 +677,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737790008142</updated>
     </task>
-    <option name="localTasksCounter" value="409" />
+    <task id="LOCAL-00409" summary="NSVIT-77 넥스트론 백엔드 타수 카운팅 연도">
+      <option name="closed" value="true" />
+      <created>1737796593421</created>
+      <option name="number" value="00409" />
+      <option name="presentableId" value="LOCAL-00409" />
+      <option name="project" value="LOCAL" />
+      <updated>1737796593421</updated>
+    </task>
+    <option name="localTasksCounter" value="410" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -733,7 +730,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-38 아이템 등록시 각 title추가" />
     <MESSAGE value="NSVIT-40 엑셀 로직 변경 등록" />
     <MESSAGE value="NSVIT-44 엑셀등록시 blogUrl 제외가능" />
     <MESSAGE value="NSVIT-43 작업 시작시 N_PLACE 연결" />
@@ -758,7 +754,8 @@
     <MESSAGE value="NSVIT-68 넥스트론 프론트 연결하기" />
     <MESSAGE value="NSVIT-70 네스비플레이스_로직3_네이버 빈페이지 시작" />
     <MESSAGE value="NSVIT-71 플레이스 구글_블로그 로직2 업데이트 / 네이버 빈페이지" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-71 플레이스 구글_블로그 로직2 업데이트 / 네이버 빈페이지" />
+    <MESSAGE value="NSVIT-77 넥스트론 백엔드 타수 카운팅 연도" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-77 넥스트론 백엔드 타수 카운팅 연도" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
