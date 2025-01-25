@@ -28,13 +28,14 @@ export const googleToNaver = async ({
     ]);
 
     // 네이버 링크 클릭 후 navigation 대기
-    await Promise.all([
-      page.waitForNavigation({
-        waitUntil: "domcontentloaded",
-        timeout: 60 * 1000,
-      }),
-      page.locator('a[href="https://www.naver.com/"]').first().click(),
-    ]);
+    await page.locator('a[href="https://www.naver.com/"]').first().click();
+    await page.waitForLoadState("networkidle");
+    await wait(1000);
+    await page.locator("input#MM_SEARCH_FAKE").click();
+    await wait(500);
+    await page.keyboard.press("Enter");
+    await page.waitForLoadState("networkidle");
+    await wait(1000);
 
     return { page };
   } catch (e) {
@@ -65,7 +66,7 @@ async function inputTypeCheck({ page }) {
         console.log(`Found ${result.type} input on attempt ${attempt}`);
         await result.element.click();
         await wait(500);
-        await result.element.type("네이버", { delay: 300 });
+        await result.element.type("네이버", { delay: 100 });
         await wait(1000);
         break; // 성공하면 루프 종료
       } else {

@@ -6,7 +6,6 @@ import {
   GetNPlaceExcelAlignFlatTargetOne,
   PatchNPlaceDayNowCount,
 } from "../../lib/apollo/n-place-apollo";
-import { loggedInCheck } from "../commons/naver/loggedInCheck";
 import { googleToNaver } from "../commons/naver/googleToNaver";
 import { errorToFront } from "../commons/error/errorToFront";
 import { UtilNetwork } from "../../lib/util/util.network";
@@ -67,13 +66,13 @@ export class NPlace extends PuppeteerEngine {
       }
       await super.initialize({
         url:
-          nPlace.logicType === "NAVER" || nPlace.logicType === "N_PLACE"
+          nPlace.logicType === "NAVER_BLOG" || nPlace.logicType === "N_PLACE"
             ? "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query="
             : "https://www.google.com/",
         cookie: this.targetCookie,
       });
       {
-        if (nPlace.logicType === "GOOGLE") {
+        if (nPlace.logicType === "GOOGLE_BLOG") {
           const { page } = await googleToNaver({ page: this.page });
           this.page = page;
         }
@@ -81,10 +80,10 @@ export class NPlace extends PuppeteerEngine {
       {
         await loggedInCheckWithEmptyPage({ page: this.page, _id: this.targetCookieId });
       }
-      if (nPlace.logicType === "NAVER") {
+      if (nPlace.logicType === "NAVER_BLOG") {
         await logicTypeNAVER({ ExcelData, pageI: this.page });
       }
-      if (nPlace.logicType === "GOOGLE") {
+      if (nPlace.logicType === "GOOGLE_BLOG") {
         await logicTypeGOOGLE({ ExcelData, pageI: this.page });
       }
       if (nPlace.logicType === "N_PLACE") {
