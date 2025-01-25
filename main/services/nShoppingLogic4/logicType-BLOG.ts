@@ -1,13 +1,12 @@
-import { googleToNaver } from "../commons/naver/googleToNaver";
 import { isPopup } from "./isPopup";
-import { loggedInCheck } from "../commons/naver/loggedInCheck";
 import { expandProductDetails } from "./expandProductDetails";
 import wait from "waait";
 import { makeAPurchase } from "./makeAPurchase";
 import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
 import { findTargetBlogLogic4 } from "./findTargetBlog";
 import { findTargetShoppingInTargetBlog } from "./findTargetShoppingInTargetBlog";
-import { targetKeywordSearch } from "./targetKeywordSearch";
+import { loggedInCheckWithEmptyPage } from "../commons/naver/loggedInCheckWithEmptyPage";
+import { targetKeywordSearchWithEmptyPage } from "../commons/naver/targetKeywordSearchWithEmptyPage";
 
 export async function logicTypeBLOG({
   getRandomTime,
@@ -18,18 +17,14 @@ export async function logicTypeBLOG({
 }) {
   let page = page1;
   {
-    const { page: page0 } = await googleToNaver({ page });
-    page = page0;
-  }
-  {
     const { page: page0 } = await isPopup({
       page,
     });
     page = page0;
   }
-  await loggedInCheck({ page, _id: targetCookieId });
+  await loggedInCheckWithEmptyPage({ page, _id: targetCookieId });
   {
-    const { page: page0 } = await targetKeywordSearch({
+    const { page: page0 } = await targetKeywordSearchWithEmptyPage({
       page,
       targetKeyword: query,
     });

@@ -101,7 +101,7 @@ export class NShoppingLogic4 extends PuppeteerEngine {
       }
       if (nShoppingLogic4.logicType === "BLOG") {
         await super.initialize({
-          url: "https://www.google.com/",
+          url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
           cookie: this.targetCookie,
         });
         console.log("logic 4");
