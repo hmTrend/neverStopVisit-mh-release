@@ -1,14 +1,10 @@
-import { targetKeywordSearch } from "./targetKeywordSearch";
-import { findTargetBlog2 } from "./findTargetBlog2";
-import { findTargetPlaceInTargetBlog } from "./findTargetPlaceInTargetBlog";
-import wait from "waait";
-import { clickNearbyAttractions } from "./clickNearbyAttractions";
 import { findTargetPlace } from "./findTargetPlace";
+import { targetKeywordSearchWithEmptyPage } from "../commons/naver/targetKeywordSearchWithEmptyPage";
 
 export async function logicTypeN_PLACE({ ExcelData, pageI }) {
   let page = pageI;
   {
-    const { page: pageO } = await targetKeywordSearch({
+    const { page: pageO } = await targetKeywordSearchWithEmptyPage({
       page,
       targetKeyword: ExcelData.targetKeyword,
     });

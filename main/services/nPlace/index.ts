@@ -15,6 +15,7 @@ import { logicTypeNAVER } from "./logicType.NAVER";
 import { logicTypeGOOGLE } from "./logicType.GOOGLE";
 import { logicTypeN_PLACE } from "./logicType.PLACE";
 import { apiNotionPatchDayNowCount } from "../../api/notion/api.patchDayNowCount";
+import { loggedInCheckWithEmptyPage } from "../commons/naver/loggedInCheckWithEmptyPage";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace, mainWindow }): Promise<void> {
@@ -67,7 +68,7 @@ export class NPlace extends PuppeteerEngine {
       await super.initialize({
         url:
           nPlace.logicType === "NAVER" || nPlace.logicType === "N_PLACE"
-            ? "https://www.naver.com/"
+            ? "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query="
             : "https://www.google.com/",
         cookie: this.targetCookie,
       });
@@ -78,7 +79,7 @@ export class NPlace extends PuppeteerEngine {
         }
       }
       {
-        await loggedInCheck({ page: this.page, _id: this.targetCookieId });
+        await loggedInCheckWithEmptyPage({ page: this.page, _id: this.targetCookieId });
       }
       if (nPlace.logicType === "NAVER") {
         await logicTypeNAVER({ ExcelData, pageI: this.page });
