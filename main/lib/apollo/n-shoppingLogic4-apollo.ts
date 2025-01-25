@@ -54,3 +54,63 @@ export const GetNShoppingLogic4ExcelAlignFlatTargetOne = async ({
     error: "",
   };
 };
+
+const gqlPatchNShoppingLogic4NowCountIncrement = gql`
+  mutation PatchNShoppingLogic4NowCountIncrement(
+    $input: PatchNShoppingLogic4Input!
+  ) {
+    patchNShoppingLogic4NowCountIncrement(input: $input) {
+      data {
+        _id
+        groupFid
+        targetKeyword
+        delayTime
+        nvMidList
+        nvMid
+        nowCount
+        dayCount
+        workKeywordList {
+          workKeyword
+          targetBlog
+        }
+        createdAt
+        updatedAt
+      }
+      message
+      error
+    }
+  }
+`;
+
+export const PatchNShoppingLogic4NowCountIncrement = async ({
+  groupFid,
+  nvMid,
+  targetKeyword,
+}) => {
+  const { data, errors } = await client.mutate({
+    mutation: gqlPatchNShoppingLogic4NowCountIncrement,
+    variables: {
+      input: {
+        groupFid,
+        nvMid,
+        targetKeyword,
+      },
+    },
+    fetchPolicy: "no-cache",
+  });
+  if (errors) {
+    console.error(errors[0].message);
+    return {
+      data,
+      message: "ERR > PatchNShoppingLogic4NowCountIncrement ",
+      error: errors[0].message,
+    };
+  }
+  console.log("data 555777");
+  console.log(data);
+  return {
+    data: data.patchNShoppingLogic4NowCountIncrement.data,
+    message: "OK > PatchNShoppingLogic4NowCountIncrement ",
+    error: "",
+  };
+};

@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-70 네스비플레이스_로직3_네이버 빈페이지 시작">
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-71 플레이스 구글_블로그 로직2 업데이트 / 네이버 빈페이지">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/googleToNaver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/googleToNaver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/logicType.GOOGLE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/logicType.GOOGLE.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/logicType.NAVER.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/logicType.NAVER.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/nPlace.register.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/nPlace.register.valtio.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-shoppingLogic4-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-shoppingLogic4-apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,15 +294,7 @@
       <workItem from="1737621028390" duration="22190000" />
       <workItem from="1737709622731" duration="2316000" />
       <workItem from="1737786717980" duration="183000" />
-      <workItem from="1737787025561" duration="2684000" />
-    </task>
-    <task id="LOCAL-00359" summary="NSVIT-29 쇼핑 리스트">
-      <option name="closed" value="true" />
-      <created>1736431951133</created>
-      <option name="number" value="00359" />
-      <option name="presentableId" value="LOCAL-00359" />
-      <option name="project" value="LOCAL" />
-      <updated>1736431951133</updated>
+      <workItem from="1737787025561" duration="5852000" />
     </task>
     <task id="LOCAL-00360" summary="NSVIT-32 백엔드 eslint 오류">
       <option name="closed" value="true" />
@@ -691,7 +680,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737788767620</updated>
     </task>
-    <option name="localTasksCounter" value="408" />
+    <task id="LOCAL-00408" summary="NSVIT-71 플레이스 구글_블로그 로직2 업데이트 / 네이버 빈페이지">
+      <option name="closed" value="true" />
+      <created>1737790008142</created>
+      <option name="number" value="00408" />
+      <option name="presentableId" value="LOCAL-00408" />
+      <option name="project" value="LOCAL" />
+      <updated>1737790008142</updated>
+    </task>
+    <option name="localTasksCounter" value="409" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -736,7 +733,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v3.0.2 엑셀 신규 추가 등록시 리스트 갱신 100개로 제한" />
     <MESSAGE value="NSVIT-38 아이템 등록시 각 title추가" />
     <MESSAGE value="NSVIT-40 엑셀 로직 변경 등록" />
     <MESSAGE value="NSVIT-44 엑셀등록시 blogUrl 제외가능" />
@@ -761,7 +757,8 @@
     <MESSAGE value="NSVIT-66 넥스트론 백엔드 작동 상태 만들기" />
     <MESSAGE value="NSVIT-68 넥스트론 프론트 연결하기" />
     <MESSAGE value="NSVIT-70 네스비플레이스_로직3_네이버 빈페이지 시작" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-70 네스비플레이스_로직3_네이버 빈페이지 시작" />
+    <MESSAGE value="NSVIT-71 플레이스 구글_블로그 로직2 업데이트 / 네이버 빈페이지" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-71 플레이스 구글_블로그 로직2 업데이트 / 네이버 빈페이지" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

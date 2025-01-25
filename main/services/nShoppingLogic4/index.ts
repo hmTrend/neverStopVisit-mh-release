@@ -7,7 +7,10 @@ import { UtilDate } from "../../lib/util/util.date";
 import { logicTypeNAVER } from "./logicType-NAVER";
 import { logicTypeGOOGLE } from "./logicType-GOOGLE";
 import { logicTypePLUSSTORE } from "./logicType-PLUS-STORE";
-import { GetNShoppingLogic4ExcelAlignFlatTargetOne } from "../../lib/apollo/n-shoppingLogic4-apollo";
+import {
+  GetNShoppingLogic4ExcelAlignFlatTargetOne,
+  PatchNShoppingLogic4NowCountIncrement,
+} from "../../lib/apollo/n-shoppingLogic4-apollo";
 import { logicTypeBLOG } from "./logicType-BLOG";
 import { logicTypeNAVER_COMPARE } from "./logicType-NAVER_COMPARE";
 import { logicTypeN_SHOPPING_TAB } from "./logicType-N_SHOPPING_TAB";
@@ -23,13 +26,14 @@ export class NShoppingLogic4 extends PuppeteerEngine {
               groupFid: nShoppingLogic4.selectedGroup.groupId,
             });
           var ExcelData = excelData;
-          const { workKeyword, nvMid, targetBlog } = excelData;
+          const { workKeyword, nvMid, targetBlog, targetKeyword } = excelData;
           console.log("excelData 333333");
           console.log(excelData);
           {
             this.query = workKeyword;
             this.nvMid = nvMid;
             this.targetBlog = targetBlog;
+            this.targetKeyword = targetKeyword;
           }
           break;
         } catch (e) {
@@ -151,6 +155,11 @@ export class NShoppingLogic4 extends PuppeteerEngine {
         workType: "NShoppingLogic4",
         myIp,
         createdAt,
+      });
+      await PatchNShoppingLogic4NowCountIncrement({
+        groupFid: nShoppingLogic4.selectedGroup.groupId,
+        nvMid: this.nvMid,
+        targetKeyword: this.targetKeyword,
       });
     } catch (e) {
       const myIp = await UtilNetwork.getIpAddress();

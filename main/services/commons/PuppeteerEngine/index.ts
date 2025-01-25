@@ -16,6 +16,7 @@ export class PuppeteerEngine {
   targetBlog: string;
   context: BrowserContext;
   placeNumber: number;
+  targetKeyword: string;
 
   constructor() {
     this.chromiumEngine = chromium; // chromium 초기화
