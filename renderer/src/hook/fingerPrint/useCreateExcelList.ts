@@ -28,6 +28,7 @@ export const useCreateExcelList = () => {
       title: "엑셀지문 만들기 성공",
       isClosable: true,
       duration: 3000,
+      
       status: "success",
     });
     return { data: data.createExcelList.data };
