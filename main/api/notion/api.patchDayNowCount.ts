@@ -27,8 +27,6 @@ export async function apiNotionPatchDayNowCount({
     ],
   },
 } = {}) {
-  console.log("data 333333");
-  console.log(data);
   try {
     const {
       keyword,
@@ -101,7 +99,7 @@ export async function apiNotionPatchDayNowCount({
       },
       작업날짜: {
         date: {
-          start: new Date().toISOString().split("T")[0],
+          start: new Date().toISOString(),
         },
       },
     };
@@ -112,7 +110,7 @@ export async function apiNotionPatchDayNowCount({
           and: [
             {
               property: "작업날짜",
-              date: { equals: inputData["작업날짜"].date.start },
+              date: { equals: inputData["작업날짜"].date.start.split("T")[0] },
             },
             { property: "groupFid", rich_text: { equals: data.groupFid } },
             {

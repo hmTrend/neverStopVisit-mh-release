@@ -78,7 +78,10 @@ export class NPlace extends PuppeteerEngine {
         }
       }
       {
-        await loggedInCheckWithEmptyPage({ page: this.page, _id: this.targetCookieId });
+        await loggedInCheckWithEmptyPage({
+          page: this.page,
+          _id: this.targetCookieId,
+        });
       }
       if (nPlace.logicType === "NAVER_BLOG") {
         await logicTypeNAVER({ ExcelData, pageI: this.page });

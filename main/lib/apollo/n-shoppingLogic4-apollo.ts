@@ -46,8 +46,6 @@ export const GetNShoppingLogic4ExcelAlignFlatTargetOne = async ({
       error: error.message,
     };
   }
-  console.log("data 555777");
-  console.log(data);
   return {
     data: data.getNShoppingLogic4ExcelAlignFlatTargetOne.data,
     message: "OK > getNShoppingLogic4ExcelAlignFlatTargetOne ",
@@ -106,8 +104,6 @@ export const PatchNShoppingLogic4NowCountIncrement = async ({
       error: errors[0].message,
     };
   }
-  console.log("data 555777");
-  console.log(data);
   return {
     data: data.patchNShoppingLogic4NowCountIncrement.data,
     message: "OK > PatchNShoppingLogic4NowCountIncrement ",
