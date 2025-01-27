@@ -14,6 +14,7 @@ import {
 import { logicTypeBLOG } from "./logicType-BLOG";
 import { logicTypeNAVER_COMPARE } from "./logicType-NAVER_COMPARE";
 import { logicTypeN_SHOPPING_TAB } from "./logicType-N_SHOPPING_TAB";
+import { apiPatchDayNowCountForShopping } from "../../api/notion/api.patchDayNowCountForShopping";
 
 export class NShoppingLogic4 extends PuppeteerEngine {
   async start({ nShoppingLogic4, mainWindow }): Promise<void> {
@@ -158,11 +159,16 @@ export class NShoppingLogic4 extends PuppeteerEngine {
         myIp,
         createdAt,
       });
-      await PatchNShoppingLogic4NowCountIncrement({
+      const { data } = await PatchNShoppingLogic4NowCountIncrement({
         groupFid: nShoppingLogic4.selectedGroup.groupId,
         nvMid: this.nvMid,
         targetKeyword: this.targetKeyword,
       });
+      try {
+        await apiPatchDayNowCountForShopping({ data });
+      } catch (e) {
+        console.error(e.message);
+      }
     } catch (e) {
       const myIp = await UtilNetwork.getIpAddress();
       const createdAt = UtilDate.getCurrentDate();
