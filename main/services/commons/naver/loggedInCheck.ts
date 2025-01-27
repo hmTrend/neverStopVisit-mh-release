@@ -60,10 +60,11 @@ export const loggedInCheck = async ({
         isLoggedIn = "NO";
       }
     }
-
     if (isLoggedIn === "NO") {
       try {
         const { data } = await GetFingerPrintNowLogData({ _id });
+        console.log("data 333333333");
+        console.log(data);
         await apiNotionPatchLoginIssue({ data });
       } catch (e) {
         console.error(e.message);
@@ -80,16 +81,3 @@ export const loggedInCheck = async ({
     throw Error(`loggedInCheck > ${e.message}`);
   }
 };
-
-async function naverMainPageCompletedLoadingCheck({ page }) {
-  try {
-    await page.waitForSelector("#nmap_home_feed_1st", {
-      state: "attached",
-      timeout: 30 * 1000,
-    });
-    console.log("Ad element became visible");
-    // 추가 로직
-  } catch (error) {
-    console.log("Ad element did not appear:", error);
-  }
-}

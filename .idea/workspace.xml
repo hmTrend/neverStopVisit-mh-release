@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-77 넥스트론 백엔드 타수 카운팅 연도">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v3.6.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheckWithEmptyPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheckWithEmptyPage.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +74,7 @@
     "TypeScript.api.client.ts.executor": "Run",
     "TypeScript.api.create.ts.executor": "Run",
     "TypeScript.api.patchDayNowCount.ts.executor": "Run",
+    "TypeScript.api.patchLoginIssue.ts.executor": "Run",
     "TypeScript.clickNearbyAttractions.tsx.executor": "Run",
     "TypeScript.findTargetBlog.ts (1).executor": "Run",
     "TypeScript.findTargetBlog.ts.executor": "Run",
@@ -138,7 +140,21 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.googleToNaver.ts">
+  <component name="RunManager" selected="TypeScript.api.patchLoginIssue.ts">
+    <configuration name="api.patchLoginIssue.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/api/notion" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/api/notion/api.patchLoginIssue.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
     <configuration name="googleToNaver.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -192,26 +208,13 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="targetKeywordSearch.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShoppingLogic4" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nShoppingLogic4/targetKeywordSearch.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.api.patchLoginIssue.ts" />
         <item itemvalue="TypeScript.googleToNaver.ts" />
         <item itemvalue="TypeScript.searchNaverPriceCompareInPriceCompare.ts" />
         <item itemvalue="TypeScript.targetKeywordSearchWithEmptyPage.ts" />
         <item itemvalue="TypeScript.searchNaverPriceCompare.ts" />
-        <item itemvalue="TypeScript.targetKeywordSearch.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -291,23 +294,7 @@
       <workItem from="1737621028390" duration="22190000" />
       <workItem from="1737709622731" duration="2316000" />
       <workItem from="1737786717980" duration="183000" />
-      <workItem from="1737787025561" duration="7015000" />
-    </task>
-    <task id="LOCAL-00361" summary="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기">
-      <option name="closed" value="true" />
-      <created>1736463069651</created>
-      <option name="number" value="00361" />
-      <option name="presentableId" value="LOCAL-00361" />
-      <option name="project" value="LOCAL" />
-      <updated>1736463069651</updated>
-    </task>
-    <task id="LOCAL-00362" summary="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기">
-      <option name="closed" value="true" />
-      <created>1736463837124</created>
-      <option name="number" value="00362" />
-      <option name="presentableId" value="LOCAL-00362" />
-      <option name="project" value="LOCAL" />
-      <updated>1736463837124</updated>
+      <workItem from="1737787025561" duration="11919000" />
     </task>
     <task id="LOCAL-00363" summary="NSVIT-31 nShoppingLogic4 에서 백엔드 값 1개 가져와서 작업시작하기">
       <option name="closed" value="true" />
@@ -685,7 +672,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737796593421</updated>
     </task>
-    <option name="localTasksCounter" value="410" />
+    <task id="LOCAL-00410" summary="NSVIT-76 백엔드 값 가져올때, 현재타수가 맥스타수보다 같거나 많다면 에러처리">
+      <option name="closed" value="true" />
+      <created>1737797960269</created>
+      <option name="number" value="00410" />
+      <option name="presentableId" value="LOCAL-00410" />
+      <option name="project" value="LOCAL" />
+      <updated>1737797960269</updated>
+    </task>
+    <task id="LOCAL-00411" summary="v3.6.0">
+      <option name="closed" value="true" />
+      <created>1737798010321</created>
+      <option name="number" value="00411" />
+      <option name="presentableId" value="LOCAL-00411" />
+      <option name="project" value="LOCAL" />
+      <updated>1737798010321</updated>
+    </task>
+    <option name="localTasksCounter" value="412" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -716,7 +719,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature/notion" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -730,8 +733,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-40 엑셀 로직 변경 등록" />
-    <MESSAGE value="NSVIT-44 엑셀등록시 blogUrl 제외가능" />
     <MESSAGE value="NSVIT-43 작업 시작시 N_PLACE 연결" />
     <MESSAGE value="NSVIT-45 플레이스 로직3 마지막 랜덤클릭 2개" />
     <MESSAGE value="NSVIT-46 전체동작 정상수행" />
@@ -755,7 +756,9 @@
     <MESSAGE value="NSVIT-70 네스비플레이스_로직3_네이버 빈페이지 시작" />
     <MESSAGE value="NSVIT-71 플레이스 구글_블로그 로직2 업데이트 / 네이버 빈페이지" />
     <MESSAGE value="NSVIT-77 넥스트론 백엔드 타수 카운팅 연도" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-77 넥스트론 백엔드 타수 카운팅 연도" />
+    <MESSAGE value="NSVIT-76 백엔드 값 가져올때, 현재타수가 맥스타수보다 같거나 많다면 에러처리" />
+    <MESSAGE value="v3.6.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3.6.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -2,6 +2,8 @@ import { Page } from "playwright";
 import { cookieNstateSave } from "../PuppeteerEngine/cookieNstateSave";
 import wait from "waait";
 import { PuppeteerEngine } from "../PuppeteerEngine";
+import { apiNotionPatchLoginIssue } from "../../../api/notion/api.patchLoginIssue";
+import { GetFingerPrintNowLogData } from "../../../lib/apollo/finger-print.apollo";
 
 export const loggedInCheckWithEmptyPage = async ({
   page = undefined,
@@ -30,6 +32,8 @@ export const loggedInCheckWithEmptyPage = async ({
         if (i >= 2) {
           if (!isTest) {
             await cookieNstateSave({ page, _id, nState: "미로그인" });
+            const { data } = await GetFingerPrintNowLogData({ _id });
+            await apiNotionPatchLoginIssue({ data });
           }
           throw Error(`checkAndWaitForLogin > ${e.message}`);
         }
