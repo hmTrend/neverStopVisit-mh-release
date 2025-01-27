@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-80 killlo 네스비 플레이스 일일타수 DB / 시분 표시">
-      <change afterPath="$PROJECT_DIR$/main/api/notion/api.patchDayNowCountForShopping.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-69 노션 API 연결하기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/main/.env.development" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/main/.env.production" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +140,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.api.patchDayNowCountForShopping.ts">
+  <component name="RunManager" selected="TypeScript.findTargetPlace.ts">
     <configuration name="api.patchDayNowCountForShopping.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -186,6 +183,20 @@
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
+    <configuration name="findTargetPlace.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
     <configuration name="googleToNaver.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -200,26 +211,13 @@
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
-    <configuration name="searchNaverPriceCompareInPriceCompare.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShoppingLogic4" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nShoppingLogic4/searchNaverPriceCompareInPriceCompare.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.findTargetPlace.ts" />
         <item itemvalue="TypeScript.api.patchDayNowCountForShopping.ts" />
         <item itemvalue="TypeScript.api.patchDayNowCount.ts" />
         <item itemvalue="TypeScript.api.patchLoginIssue.ts" />
         <item itemvalue="TypeScript.googleToNaver.ts" />
-        <item itemvalue="TypeScript.searchNaverPriceCompareInPriceCompare.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -299,15 +297,7 @@
       <workItem from="1737621028390" duration="22190000" />
       <workItem from="1737709622731" duration="2316000" />
       <workItem from="1737786717980" duration="183000" />
-      <workItem from="1737787025561" duration="16672000" />
-    </task>
-    <task id="LOCAL-00366" summary="NSVIT-34 로직4 블로그 작업 만들기">
-      <option name="closed" value="true" />
-      <created>1736506651696</created>
-      <option name="number" value="00366" />
-      <option name="presentableId" value="LOCAL-00366" />
-      <option name="project" value="LOCAL" />
-      <updated>1736506651696</updated>
+      <workItem from="1737787025561" duration="17854000" />
     </task>
     <task id="LOCAL-00367" summary="NSVIT-36 느린속도로 문제 있는 부분 픽스">
       <option name="closed" value="true" />
@@ -693,7 +683,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737956143140</updated>
     </task>
-    <option name="localTasksCounter" value="415" />
+    <task id="LOCAL-00415" summary="NSVIT-69 노션 API 연결하기">
+      <option name="closed" value="true" />
+      <created>1737958361272</created>
+      <option name="number" value="00415" />
+      <option name="presentableId" value="LOCAL-00415" />
+      <option name="project" value="LOCAL" />
+      <updated>1737958361272</updated>
+    </task>
+    <option name="localTasksCounter" value="416" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -738,7 +736,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-46 전체동작 정상수행" />
     <MESSAGE value="NSVIT-46 3.3.0" />
     <MESSAGE value="NSVIT-51 노션 api 넥스트론 연결하기" />
     <MESSAGE value="NSV-18 플레이스 타수 보기페이지 v3.4.0" />
@@ -763,7 +760,8 @@
     <MESSAGE value="v3.6.0" />
     <MESSAGE value="NSVIT-79 미로그인시 노션API 전달하기" />
     <MESSAGE value="NSVIT-80 killlo 네스비 플레이스 일일타수 DB / 시분 표시" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-80 killlo 네스비 플레이스 일일타수 DB / 시분 표시" />
+    <MESSAGE value="NSVIT-69 노션 API 연결하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-69 노션 API 연결하기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

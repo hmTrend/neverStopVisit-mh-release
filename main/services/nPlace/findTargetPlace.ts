@@ -4,7 +4,7 @@ import wait from "waait";
 
 export const findTargetPlace = async ({
   page = undefined,
-  placeNumber = "1500974767",
+  placeNumber = "1687478893",
   isTest = false,
   delayTime = 0,
 }: {
@@ -17,7 +17,7 @@ export const findTargetPlace = async ({
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({
-        url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EA%B0%95%EB%82%A8%EB%A7%9B%EC%A7%91&tqi=iHuKawqVWuZssamAn1lsssssseR-137215&query=%EA%B0%95%EB%82%A8%EB%AF%B8%EC%9A%A9%EC%8B%A4",
+        url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%A6%9D%EB%AF%B8%EC%97%AD+%EC%B9%B4%ED%8E%98&tqi=iHND2lqVWuZsshRFm5wssssstj4-172917&query=%EC%A6%9D%EB%AF%B8%EC%97%AD%EA%B0%80%EA%B9%8C%EC%9A%B4%EC%B9%B4%ED%8E%98",
         cookie: "",
       });
       page = test.page;
@@ -122,37 +122,44 @@ async function clickTargetPlaceById({ placeNumber, page }) {
 async function expandAndClickMore({ page }) {
   try {
     // '펼쳐서 더보기' 버튼 찾기 시도
-    const moreButton = await page.$(`.m2Hh0.frzpe a[role="button"]`);
+    const selectors = [
+      '.iLepm.UoLNU a[role="button"]',
+      '.m2Hh0.frzpe a[role="button"]',
+    ];
 
-    if (moreButton) {
-      // 요소가 보이는지 확인
-      const isVisible = await moreButton.isVisible();
+    // 두 셀렉터 중 하나라도 있는지 확인하고 첫 번째로 발견되는 것 클릭
+    for (const selector of selectors) {
+      const moreButton = await page.$(selector);
+      if (moreButton) {
+        // 요소가 보이는지 확인
+        const isVisible = await moreButton.isVisible();
 
-      if (isVisible) {
-        // 요소가 화면에 보이도록 스크롤
-        await moreButton.scrollIntoViewIfNeeded();
+        if (isVisible) {
+          // 요소가 화면에 보이도록 스크롤
+          await moreButton.scrollIntoViewIfNeeded();
 
-        // 잠시 대기
-        await page.waitForTimeout(1000);
+          // 잠시 대기
+          await page.waitForTimeout(1000);
 
-        // 클릭하기 전에 요소가 안정적인지 확인
-        await moreButton.waitForElementState("stable");
+          // 클릭하기 전에 요소가 안정적인지 확인
+          await moreButton.waitForElementState("stable");
 
-        // 클릭 수행
-        await Promise.all([
-          moreButton.click(),
-          page.waitForLoadState("load", { timeout: 5000 }),
-        ]);
-        await wait(1500);
-        console.log("Successfully clicked more button");
-        return page;
+          // 클릭 수행
+          await Promise.all([
+            moreButton.click(),
+            page.waitForLoadState("load", { timeout: 5000 }),
+          ]);
+          await wait(1500);
+          console.log("Successfully clicked more button");
+          return page;
+        } else {
+          console.log("More button exists but is not visible");
+          return page;
+        }
       } else {
-        console.log("More button exists but is not visible");
+        console.log("More button not found");
         return page;
       }
-    } else {
-      console.log("More button not found");
-      return page;
     }
   } catch (error) {
     console.error("Error while trying to click more button:", error);
@@ -300,7 +307,5 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
     throw error;
   }
 }
-
-async function lastRandomClick() {}
 
 // findTargetPlace();
