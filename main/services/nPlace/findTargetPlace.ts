@@ -94,7 +94,7 @@ async function clickTargetPlaceById({ placeNumber, page }) {
     const selectors = [
       `li[data-loc_plc-doc-id="${placeNumber}"] > div > div:nth-of-type(2) > a`,
       `li[data-nmb_hpl-doc-id="${placeNumber}"] > div > div:nth-of-type(2) > a`,
-      `li[data-nmb_res-doc-id="${placeNumber}"] > div > div:nth-of-type(2) > a`,
+      `li[data-nmb_res-doc-id="${placeNumber}"] > div.CHC5F > a`,
       `li[data-nmb_hai-doc-id="${placeNumber}"] > div > div:nth-of-type(2) > a`,
     ];
 

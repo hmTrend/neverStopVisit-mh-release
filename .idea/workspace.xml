@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-69 노션 API 연결하기">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
     </list>
@@ -297,15 +297,7 @@
       <workItem from="1737621028390" duration="22190000" />
       <workItem from="1737709622731" duration="2316000" />
       <workItem from="1737786717980" duration="183000" />
-      <workItem from="1737787025561" duration="17854000" />
-    </task>
-    <task id="LOCAL-00367" summary="NSVIT-36 느린속도로 문제 있는 부분 픽스">
-      <option name="closed" value="true" />
-      <created>1736516048898</created>
-      <option name="number" value="00367" />
-      <option name="presentableId" value="LOCAL-00367" />
-      <option name="project" value="LOCAL" />
-      <updated>1736516048898</updated>
+      <workItem from="1737787025561" duration="18545000" />
     </task>
     <task id="LOCAL-00368" summary="NSVIT-23 로그인 체크오류">
       <option name="closed" value="true" />
@@ -691,7 +683,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737958361272</updated>
     </task>
-    <option name="localTasksCounter" value="416" />
+    <task id="LOCAL-00416" summary="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인">
+      <option name="closed" value="true" />
+      <created>1737959677337</created>
+      <option name="number" value="00416" />
+      <option name="presentableId" value="LOCAL-00416" />
+      <option name="project" value="LOCAL" />
+      <updated>1737959677337</updated>
+    </task>
+    <option name="localTasksCounter" value="417" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -736,7 +736,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-46 3.3.0" />
     <MESSAGE value="NSVIT-51 노션 api 넥스트론 연결하기" />
     <MESSAGE value="NSV-18 플레이스 타수 보기페이지 v3.4.0" />
     <MESSAGE value="명소 없을시 오류 try { 적용" />
@@ -761,7 +760,8 @@
     <MESSAGE value="NSVIT-79 미로그인시 노션API 전달하기" />
     <MESSAGE value="NSVIT-80 killlo 네스비 플레이스 일일타수 DB / 시분 표시" />
     <MESSAGE value="NSVIT-69 노션 API 연결하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-69 노션 API 연결하기" />
+    <MESSAGE value="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
