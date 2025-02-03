@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v3.10.0 더보기 클릭 안되는 이슈 해결">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +112,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -191,6 +190,7 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="googleToNaver.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -292,39 +292,9 @@
       <workItem from="1737621028390" duration="22190000" />
       <workItem from="1737709622731" duration="2316000" />
       <workItem from="1737786717980" duration="183000" />
-      <workItem from="1737787025561" duration="18545000" />
-    </task>
-    <task id="LOCAL-00368" summary="NSVIT-23 로그인 체크오류">
-      <option name="closed" value="true" />
-      <created>1736929546268</created>
-      <option name="number" value="00368" />
-      <option name="presentableId" value="LOCAL-00368" />
-      <option name="project" value="LOCAL" />
-      <updated>1736929546268</updated>
-    </task>
-    <task id="LOCAL-00369" summary="TSK-25 노션 api 연결">
-      <option name="closed" value="true" />
-      <created>1737020072533</created>
-      <option name="number" value="00369" />
-      <option name="presentableId" value="LOCAL-00369" />
-      <option name="project" value="LOCAL" />
-      <updated>1737020072533</updated>
-    </task>
-    <task id="LOCAL-00370" summary="TSK-25 프론트 연결 및 노션에 데이터 전송 추가">
-      <option name="closed" value="true" />
-      <created>1737030152165</created>
-      <option name="number" value="00370" />
-      <option name="presentableId" value="LOCAL-00370" />
-      <option name="project" value="LOCAL" />
-      <updated>1737030152165</updated>
-    </task>
-    <task id="LOCAL-00371" summary="TSK-25 v3.0.0">
-      <option name="closed" value="true" />
-      <created>1737030237965</created>
-      <option name="number" value="00371" />
-      <option name="presentableId" value="LOCAL-00371" />
-      <option name="project" value="LOCAL" />
-      <updated>1737030237965</updated>
+      <workItem from="1737787025561" duration="22212000" />
+      <workItem from="1738050990986" duration="176000" />
+      <workItem from="1738568103439" duration="5012000" />
     </task>
     <task id="LOCAL-00372" summary="TSK-65 네스비 플레이스 : 구글에서 네이버 접속시에 userAgent 오류 해결">
       <option name="closed" value="true" />
@@ -686,7 +656,39 @@
       <option name="project" value="LOCAL" />
       <updated>1737959677337</updated>
     </task>
-    <option name="localTasksCounter" value="417" />
+    <task id="LOCAL-00417" summary="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인">
+      <option name="closed" value="true" />
+      <created>1737960252378</created>
+      <option name="number" value="00417" />
+      <option name="presentableId" value="LOCAL-00417" />
+      <option name="project" value="LOCAL" />
+      <updated>1737960252378</updated>
+    </task>
+    <task id="LOCAL-00418" summary="v3.9.0">
+      <option name="closed" value="true" />
+      <created>1737960282826</created>
+      <option name="number" value="00418" />
+      <option name="presentableId" value="LOCAL-00418" />
+      <option name="project" value="LOCAL" />
+      <updated>1737960282826</updated>
+    </task>
+    <task id="LOCAL-00419" summary="v3.10.0 더보기 클릭 안되는 이슈 해결">
+      <option name="closed" value="true" />
+      <created>1738572028126</created>
+      <option name="number" value="00419" />
+      <option name="presentableId" value="LOCAL-00419" />
+      <option name="project" value="LOCAL" />
+      <updated>1738572028126</updated>
+    </task>
+    <task id="LOCAL-00420" summary="v3.10.0 더보기 클릭 안되는 이슈 해결">
+      <option name="closed" value="true" />
+      <created>1738572040419</created>
+      <option name="number" value="00420" />
+      <option name="presentableId" value="LOCAL-00420" />
+      <option name="project" value="LOCAL" />
+      <updated>1738572040419</updated>
+    </task>
+    <option name="localTasksCounter" value="421" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -731,8 +733,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-51 노션 api 넥스트론 연결하기" />
-    <MESSAGE value="NSV-18 플레이스 타수 보기페이지 v3.4.0" />
     <MESSAGE value="명소 없을시 오류 try { 적용" />
     <MESSAGE value="NSVIT-53 작업할 데이터 없을시 5분대기 로직추가" />
     <MESSAGE value="v3.4.1" />
@@ -756,7 +756,9 @@
     <MESSAGE value="NSVIT-80 killlo 네스비 플레이스 일일타수 DB / 시분 표시" />
     <MESSAGE value="NSVIT-69 노션 API 연결하기" />
     <MESSAGE value="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인" />
+    <MESSAGE value="v3.9.0" />
+    <MESSAGE value="v3.10.0 더보기 클릭 안되는 이슈 해결" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3.10.0 더보기 클릭 안되는 이슈 해결" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

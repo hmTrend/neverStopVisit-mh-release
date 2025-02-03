@@ -4,7 +4,7 @@ import wait from "waait";
 
 export const findTargetPlace = async ({
   page = undefined,
-  placeNumber = "1687478893",
+  placeNumber = "1372962862",
   isTest = false,
   delayTime = 0,
 }: {
@@ -17,7 +17,7 @@ export const findTargetPlace = async ({
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({
-        url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%A6%9D%EB%AF%B8%EC%97%AD+%EC%B9%B4%ED%8E%98&tqi=iHND2lqVWuZsshRFm5wssssstj4-172917&query=%EC%A6%9D%EB%AF%B8%EC%97%AD%EA%B0%80%EA%B9%8C%EC%9A%B4%EC%B9%B4%ED%8E%98",
+        url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%9D%BC%EC%82%B0%EB%A7%88%EC%B7%A8",
         cookie: "",
       });
       page = test.page;
@@ -121,49 +121,61 @@ async function clickTargetPlaceById({ placeNumber, page }) {
 
 async function expandAndClickMore({ page }) {
   try {
-    // '펼쳐서 더보기' 버튼 찾기 시도
     const selectors = [
       '.iLepm.UoLNU a[role="button"]',
       '.m2Hh0.frzpe a[role="button"]',
     ];
 
-    // 두 셀렉터 중 하나라도 있는지 확인하고 첫 번째로 발견되는 것 클릭
-    for (const selector of selectors) {
-      const moreButton = await page.$(selector);
-      if (moreButton) {
-        // 요소가 보이는지 확인
-        const isVisible = await moreButton.isVisible();
+    // 모든 셀렉터에 대해 동시에 요소를 찾고 클릭을 시도
+    const clickPromises = selectors.map(async (selector) => {
+      try {
+        // 요소가 나타날 때까지 대기 (최대 5초)
+        const moreButton = await page.waitForSelector(selector, {
+          state: "visible",
+          timeout: 5000,
+        });
 
-        if (isVisible) {
-          // 요소가 화면에 보이도록 스크롤
+        if (moreButton) {
           await moreButton.scrollIntoViewIfNeeded();
-
-          // 잠시 대기
           await page.waitForTimeout(1000);
-
-          // 클릭하기 전에 요소가 안정적인지 확인
           await moreButton.waitForElementState("stable");
 
-          // 클릭 수행
           await Promise.all([
             moreButton.click(),
             page.waitForLoadState("load", { timeout: 5000 }),
           ]);
+
           await wait(1500);
-          console.log("Successfully clicked more button");
-          return page;
-        } else {
-          console.log("More button exists but is not visible");
-          return page;
+          console.log(
+            `Successfully clicked more button with selector: ${selector}`,
+          );
+          return true;
         }
-      } else {
-        console.log("More button not found");
-        return page;
+      } catch (e) {
+        console.log(`Selector ${selector} failed: ${e.message}`);
+        return false;
       }
+    });
+
+    // Promise.race로 가장 먼저 성공하는 클릭 시도를 기다림
+    const results = await Promise.race([
+      Promise.any(clickPromises),
+      new Promise((_, reject) =>
+        setTimeout(
+          () => reject(new Error("Timeout waiting for any button")),
+          10000,
+        ),
+      ),
+    ]);
+
+    if (!results) {
+      console.log("No more button found or clickable");
     }
+
+    return page;
   } catch (error) {
-    console.error("Error while trying to click more button:", error);
-    throw Error(error.message);
+    console.error("Error in expandAndClickMore:", error);
+    return page; // 에러가 나도 페이지를 반환하여 계속 진행
   }
 }
 
