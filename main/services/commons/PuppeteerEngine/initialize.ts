@@ -13,7 +13,7 @@ export const initialize = async ({
   cookie,
   browser,
   type = "",
-  networkSpeed = "LTE",
+  networkSpeed = "3G",
 }: {
   url: string;
   page: Page;

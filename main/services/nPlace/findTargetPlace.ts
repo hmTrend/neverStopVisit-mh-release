@@ -5,7 +5,7 @@ import wait from "waait";
 export const findTargetPlace = async ({
   page = undefined,
   placeNumber = "1687478893",
-  isTest = false,
+  isTest = true,
   delayTime = 0,
 }: {
   page?: Page;
@@ -17,12 +17,13 @@ export const findTargetPlace = async ({
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({
-        url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%9D%BC%EC%82%B0%EB%A7%88%EC%B7%A8&tqi=iIuIflp0i0GssR7TAE0ssssstgK-207624&query=%EC%A6%9D%EB%AF%B8%EC%97%AD%EC%B9%B4%ED%8E%98",
+        url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%A6%9D%EB%AF%B8%EC%97%AD%EC%B9%B4%ED%8E%98",
         cookie: "",
       });
       page = test.page;
     }
     try {
+      await checkMapLoading(page);
       await clickTargetPlaceById({ placeNumber, page });
     } catch (e) {
       const pageO = await expandAndClickMore({ page });
@@ -132,7 +133,7 @@ async function expandAndClickMore({ page }) {
         // 요소가 나타날 때까지 대기 (최대 5초)
         const moreButton = await page.waitForSelector(selector, {
           state: "visible",
-          timeout: 5000,
+          timeout: 30 * 1000,
         });
 
         if (moreButton) {
@@ -142,7 +143,7 @@ async function expandAndClickMore({ page }) {
 
           await Promise.all([
             moreButton.click(),
-            page.waitForLoadState("load", { timeout: 5000 }),
+            page.waitForLoadState("load", { timeout: 30 * 1000 }),
           ]);
 
           await wait(1500);
@@ -320,4 +321,51 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
   }
 }
 
-// findTargetPlace();
+async function waitForPlaceMarkers(page, timeout = 90 * 1000) {
+  try {
+    await page.waitForSelector(".jVi3P", {
+      state: "visible",
+      timeout: timeout,
+    });
+
+    const isLoaded = await page.evaluate(() => {
+      const markers = document.querySelectorAll(".jVi3P");
+
+      const allImagesLoaded = Array.from(markers).every((marker) => {
+        const img = marker.querySelector("img.K0PDV") as HTMLImageElement; // 타입 명시
+        return img && img.complete;
+      });
+
+      return {
+        markerCount: markers.length,
+        allLoaded: allImagesLoaded,
+      };
+    });
+
+    console.log(`발견된 마커 수: ${isLoaded.markerCount}`);
+
+    if (isLoaded.allLoaded) {
+      console.log("모든 Place 마커가 로드되었습니다.");
+      return true;
+    } else {
+      console.log("일부 마커가 아직 로드되지 않았습니다.");
+      return false;
+    }
+  } catch (error) {
+    console.error("Place 마커 로딩 확인 중 에러:", error);
+    return false;
+  }
+}
+
+// 사용 예시:
+async function checkMapLoading(page) {
+  const markersLoaded = await waitForPlaceMarkers(page);
+  if (markersLoaded) {
+    console.log("지도와 마커가 모두 정상적으로 로드되었습니다.");
+    // 다음 작업 진행
+  } else {
+    console.log("마커 로딩에 실패했거나 timeout이 발생했습니다.");
+    // 에러 처리
+  }
+}
+findTargetPlace();
