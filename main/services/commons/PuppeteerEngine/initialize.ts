@@ -24,6 +24,7 @@ export const initialize = async ({
   type?: string;
   networkSpeed?: "LTE" | "3G";
 }) => {
+  let nowUserAgent;
   for (let i = 0; i < 3; i++) {
     try {
       browser = await chromiumEngine.launch({
@@ -36,8 +37,9 @@ export const initialize = async ({
         args: ["--disable-blink-features=AutomationControlled"],
       });
       let getContext;
-      const { context } = await createMobileContext({ browser });
+      const { context, userAgent } = await createMobileContext({ browser });
       getContext = context;
+      nowUserAgent = userAgent;
       if (cookie && cookie.length > 0) {
         if (validateCookie(cookie)) {
           const formattedCookies = formatCookiesForPlaywright(cookie);
@@ -77,7 +79,7 @@ export const initialize = async ({
       }
     }
   }
-  return { page, browser };
+  return { page, browser, userAgent: nowUserAgent };
 };
 
 async function createMobileContext({
@@ -97,7 +99,7 @@ async function createMobileContext({
     hasTouch: true,
     deviceScaleFactor: 2.625,
   });
-  return { context };
+  return { context, userAgent: userAgent.userAgent };
 }
 
 async function createDesktopContext({ browser }: { browser: Browser }) {

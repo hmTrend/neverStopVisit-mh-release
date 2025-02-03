@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v3.10.0 더보기 클릭 안되는 이슈 해결">
-      <change afterPath="$PROJECT_DIR$/main/api/notion/api.notion.errorLog.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="api_notion_errorLog() + userAgent 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -297,31 +296,7 @@
       <workItem from="1737786717980" duration="183000" />
       <workItem from="1737787025561" duration="22212000" />
       <workItem from="1738050990986" duration="176000" />
-      <workItem from="1738568103439" duration="6392000" />
-    </task>
-    <task id="LOCAL-00374" summary="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시">
-      <option name="closed" value="true" />
-      <created>1737271360655</created>
-      <option name="number" value="00374" />
-      <option name="presentableId" value="LOCAL-00374" />
-      <option name="project" value="LOCAL" />
-      <updated>1737271360655</updated>
-    </task>
-    <task id="LOCAL-00375" summary="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시 &gt; 노션 수정">
-      <option name="closed" value="true" />
-      <created>1737273072068</created>
-      <option name="number" value="00375" />
-      <option name="presentableId" value="LOCAL-00375" />
-      <option name="project" value="LOCAL" />
-      <updated>1737273072068</updated>
-    </task>
-    <task id="LOCAL-00376" summary="TSK-67 네스비 &gt; 로그인 오류시 로그 기록 페이지 표시 &gt; 노션 수정">
-      <option name="closed" value="true" />
-      <created>1737273214383</created>
-      <option name="number" value="00376" />
-      <option name="presentableId" value="LOCAL-00376" />
-      <option name="project" value="LOCAL" />
-      <updated>1737273214383</updated>
+      <workItem from="1738568103439" duration="7182000" />
     </task>
     <task id="LOCAL-00377" summary="v3.0.1">
       <option name="closed" value="true" />
@@ -691,7 +666,31 @@
       <option name="project" value="LOCAL" />
       <updated>1738581429625</updated>
     </task>
-    <option name="localTasksCounter" value="423" />
+    <task id="LOCAL-00423" summary="api_notion_errorLog()">
+      <option name="closed" value="true" />
+      <created>1738582803105</created>
+      <option name="number" value="00423" />
+      <option name="presentableId" value="LOCAL-00423" />
+      <option name="project" value="LOCAL" />
+      <updated>1738582803105</updated>
+    </task>
+    <task id="LOCAL-00424" summary="api_notion_errorLog() + userAgent 추가">
+      <option name="closed" value="true" />
+      <created>1738583420364</created>
+      <option name="number" value="00424" />
+      <option name="presentableId" value="LOCAL-00424" />
+      <option name="project" value="LOCAL" />
+      <updated>1738583420364</updated>
+    </task>
+    <task id="LOCAL-00425" summary="api_notion_errorLog() + userAgent 추가">
+      <option name="closed" value="true" />
+      <created>1738583512583</created>
+      <option name="number" value="00425" />
+      <option name="presentableId" value="LOCAL-00425" />
+      <option name="project" value="LOCAL" />
+      <updated>1738583512583</updated>
+    </task>
+    <option name="localTasksCounter" value="426" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -736,8 +735,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="명소 없을시 오류 try { 적용" />
-    <MESSAGE value="NSVIT-53 작업할 데이터 없을시 5분대기 로직추가" />
     <MESSAGE value="v3.4.1" />
     <MESSAGE value="GetExcelList / 새로고침시 값없음 오류해결" />
     <MESSAGE value="Complete the day's counting tasks &gt; waiting 300s.." />
@@ -761,7 +758,9 @@
     <MESSAGE value="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인" />
     <MESSAGE value="v3.9.0" />
     <MESSAGE value="v3.10.0 더보기 클릭 안되는 이슈 해결" />
-    <option name="LAST_COMMIT_MESSAGE" value="v3.10.0 더보기 클릭 안되는 이슈 해결" />
+    <MESSAGE value="api_notion_errorLog()" />
+    <MESSAGE value="api_notion_errorLog() + userAgent 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="api_notion_errorLog() + userAgent 추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

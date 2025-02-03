@@ -17,6 +17,7 @@ export class PuppeteerEngine {
   context: BrowserContext;
   placeNumber: number;
   targetKeyword: string;
+  userAgent: string;
 
   constructor() {
     this.chromiumEngine = chromium; // chromium 초기화
@@ -25,7 +26,7 @@ export class PuppeteerEngine {
 
   async initialize({ url, cookie, type = "" }) {
     try {
-      const { page, browser } = await initialize({
+      const { page, browser, userAgent } = await initialize({
         url,
         chromiumEngine: this.chromiumEngine,
         page: this.page,
@@ -36,6 +37,7 @@ export class PuppeteerEngine {
       });
       this.page = page;
       this.browser = browser;
+      this.userAgent = userAgent;
       globalBrowsers.browsers.push(browser);
     } catch (e) {
       console.error(e.message);

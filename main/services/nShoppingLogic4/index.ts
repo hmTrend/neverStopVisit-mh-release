@@ -15,6 +15,7 @@ import { logicTypeBLOG } from "./logicType-BLOG";
 import { logicTypeNAVER_COMPARE } from "./logicType-NAVER_COMPARE";
 import { logicTypeN_SHOPPING_TAB } from "./logicType-N_SHOPPING_TAB";
 import { apiPatchDayNowCountForShopping } from "../../api/notion/api.patchDayNowCountForShopping";
+import { api_notion_errorLog } from "../../api/notion/api.notion.errorLog";
 
 export class NShoppingLogic4 extends PuppeteerEngine {
   async start({ nShoppingLogic4, mainWindow }): Promise<void> {
@@ -180,7 +181,16 @@ export class NShoppingLogic4 extends PuppeteerEngine {
         myIp,
         createdAt,
       });
+      await api_notion_errorLog({
+        data: {
+          name: this.query,
+          type: "쇼핑",
+          errorLog: e.message,
+          userAgent: this.userAgent,
+        },
+      });
       console.error(e.message);
+      throw Error(e.message);
     }
   }
 

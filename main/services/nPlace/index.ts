@@ -15,6 +15,7 @@ import { logicTypeGOOGLE } from "./logicType.GOOGLE";
 import { logicTypeN_PLACE } from "./logicType.PLACE";
 import { apiNotionPatchDayNowCount } from "../../api/notion/api.patchDayNowCount";
 import { loggedInCheckWithEmptyPage } from "../commons/naver/loggedInCheckWithEmptyPage";
+import { api_notion_errorLog } from "../../api/notion/api.notion.errorLog";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace, mainWindow }): Promise<void> {
@@ -131,6 +132,14 @@ export class NPlace extends PuppeteerEngine {
         workType: "NPlace",
         myIp,
         createdAt,
+      });
+      await api_notion_errorLog({
+        data: {
+          name: this.query,
+          type: "플레이스",
+          errorLog: e.message,
+          userAgent: this.userAgent,
+        },
       });
       console.error(e.message);
       throw Error(e.message);
