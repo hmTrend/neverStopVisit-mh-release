@@ -4,7 +4,7 @@ import wait from "waait";
 
 export const findTargetPlace = async ({
   page = undefined,
-  placeNumber = "1372962862",
+  placeNumber = "1687478893",
   isTest = false,
   delayTime = 0,
 }: {
@@ -17,7 +17,7 @@ export const findTargetPlace = async ({
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({
-        url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%9D%BC%EC%82%B0%EB%A7%88%EC%B7%A8",
+        url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%9D%BC%EC%82%B0%EB%A7%88%EC%B7%A8&tqi=iIuIflp0i0GssR7TAE0ssssstgK-207624&query=%EC%A6%9D%EB%AF%B8%EC%97%AD%EC%B9%B4%ED%8E%98",
         cookie: "",
       });
       page = test.page;
