@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-85 / 증미역카페 / 오류로그 패치하기">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="findTargetPlace &gt; networkidle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
     </list>
@@ -298,15 +298,7 @@
       <workItem from="1738050990986" duration="176000" />
       <workItem from="1738568103439" duration="11404000" />
       <workItem from="1738624712837" duration="1837000" />
-      <workItem from="1738646953044" duration="1664000" />
-    </task>
-    <task id="LOCAL-00381" summary="NSVIT-40 엑셀 로직 변경 등록">
-      <option name="closed" value="true" />
-      <created>1737452092520</created>
-      <option name="number" value="00381" />
-      <option name="presentableId" value="LOCAL-00381" />
-      <option name="project" value="LOCAL" />
-      <updated>1737452092520</updated>
+      <workItem from="1738646953044" duration="2310000" />
     </task>
     <task id="LOCAL-00382" summary="NSVIT-44 엑셀등록시 blogUrl 제외가능">
       <option name="closed" value="true" />
@@ -692,7 +684,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738626387942</updated>
     </task>
-    <option name="localTasksCounter" value="430" />
+    <task id="LOCAL-00430" summary="findTargetPlace &gt; networkidle">
+      <option name="closed" value="true" />
+      <created>1738649445358</created>
+      <option name="number" value="00430" />
+      <option name="presentableId" value="LOCAL-00430" />
+      <option name="project" value="LOCAL" />
+      <updated>1738649445358</updated>
+    </task>
+    <option name="localTasksCounter" value="431" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -737,7 +737,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Complete the day's counting tasks &gt; waiting 300s.." />
     <MESSAGE value="기존 nShopping 삭제 &gt; nShoppingLogic4 / 대체됨" />
     <MESSAGE value="NSVIT-56 로직4 엑셀타입에서 url 빼고 엑셀 등록하기" />
     <MESSAGE value="NSVIT-57 로그인체크 &gt; 비동기 안내문 끄기" />
@@ -762,7 +761,8 @@
     <MESSAGE value="api_notion_errorLog() + userAgent 추가" />
     <MESSAGE value="v3.13.0" />
     <MESSAGE value="NSVIT-85 / 증미역카페 / 오류로그 패치하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-85 / 증미역카페 / 오류로그 패치하기" />
+    <MESSAGE value="findTargetPlace &gt; networkidle" />
+    <option name="LAST_COMMIT_MESSAGE" value="findTargetPlace &gt; networkidle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

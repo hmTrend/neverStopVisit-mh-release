@@ -5,7 +5,7 @@ import wait from "waait";
 export const findTargetPlace = async ({
   page = undefined,
   placeNumber = "1687478893",
-  isTest = true,
+  isTest = false,
   delayTime = 0,
 }: {
   page?: Page;
@@ -23,7 +23,7 @@ export const findTargetPlace = async ({
       page = test.page;
     }
     try {
-      await page.waitForLoadState("networkidle");
+      await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
       await clickTargetPlaceById({ placeNumber, page });
     } catch (e) {
       const pageO = await expandAndClickMore({ page });
@@ -321,4 +321,4 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
   }
 }
 
-findTargetPlace();
+// findTargetPlace();
