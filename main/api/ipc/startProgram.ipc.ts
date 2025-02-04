@@ -27,7 +27,6 @@ export const startProgramIpc = ({ mainWindow }) => {
       currentNShoppingInstance,
       currentNPlaceInstance,
     });
-
     return { message: "OK" };
   });
 
@@ -60,6 +59,7 @@ async function executeInChunks({
   try {
     const totalChunks = Math.ceil(totalCount / chunkSize);
     let completedCount = 0;
+    let continuousWork: number = 1;
 
     for (let chunk = 0; chunk < totalChunks; chunk++) {
       // 현재 청크의 시작과 끝 계산
@@ -72,13 +72,17 @@ async function executeInChunks({
       );
 
       // 현재 청크 실행
+
       for (let i = 0; i < currentChunkSize; i++) {
-        await networkIpChange({ common });
-        await monitorNetworkAndStart();
         let startProgramList = [];
-        currentNShoppingLogic4Instance = new NShoppingLogic4();
-        currentNShoppingInstance = new NShopping();
-        currentNPlaceInstance = new NPlace();
+        if (continuousWork === 1) {
+          await networkIpChange({ common });
+
+          await monitorNetworkAndStart();
+          currentNShoppingLogic4Instance = new NShoppingLogic4();
+          currentNShoppingInstance = new NShopping();
+          currentNPlaceInstance = new NPlace();
+        }
         try {
           if (nShoppingLogic4.isStart) {
             console.log("this is nShoppingLogic4");
@@ -86,6 +90,7 @@ async function executeInChunks({
               currentNShoppingLogic4Instance.start({
                 nShoppingLogic4,
                 mainWindow,
+                continuousWork,
               }),
             );
           }
@@ -96,13 +101,23 @@ async function executeInChunks({
           }
           if (nPlace.isStart) {
             startProgramList.push(
-              currentNPlaceInstance.start({ nPlace, mainWindow }),
+              currentNPlaceInstance.start({
+                nPlace,
+                mainWindow,
+                continuousWork,
+              }),
             );
           }
           const result = await Promise.all([...startProgramList]);
           completedCount++;
           await wait(3000);
-          await closeAllBrowsers();
+          const nowCount = nowCountSetup(continuousWork, common.ipChangeCount);
+          continuousWork = nowCount;
+          console.log("continuousWork 555553333333");
+          console.log(continuousWork);
+          if (continuousWork === 1) {
+            await closeAllBrowsers();
+          }
           await wait(5000);
         } catch (e) {
           console.log("e.message >>>>>> test3333");
@@ -137,9 +152,20 @@ async function executeInChunks({
       // 청크 완료 후 잠시 대기 (선택사항)
       await new Promise((resolve) => setTimeout(resolve, 1000));
     }
-
     console.log("\n모든 실행이 완료되었습니다.");
   } catch (error) {
     console.error("실행 중 오류 발생:", error);
+  }
+
+  function nowCountSetup(nowCount, maxCount) {
+    console.log("maxCount 33333");
+    console.log(maxCount);
+    console.log("nowCount 33333333333");
+    console.log(nowCount);
+    if (nowCount < maxCount) {
+      nowCount = nowCount + 1;
+      return nowCount;
+    }
+    return 1;
   }
 }

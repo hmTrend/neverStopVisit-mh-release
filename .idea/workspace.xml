@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="증미역카페 / 찾을때 느림대응">
-      <change afterPath="$PROJECT_DIR$/renderer/src/components/start/ContinuousWork.tsx" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-86 valtio 셋팅">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/ContinuousWork.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/ContinuousWork.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/SelectProgramForStart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" afterDir="false" />
     </list>
@@ -300,23 +303,7 @@
       <workItem from="1738050990986" duration="176000" />
       <workItem from="1738568103439" duration="11404000" />
       <workItem from="1738624712837" duration="1837000" />
-      <workItem from="1738646953044" duration="4314000" />
-    </task>
-    <task id="LOCAL-00384" summary="NSVIT-45 플레이스 로직3 마지막 랜덤클릭 2개">
-      <option name="closed" value="true" />
-      <created>1737520810430</created>
-      <option name="number" value="00384" />
-      <option name="presentableId" value="LOCAL-00384" />
-      <option name="project" value="LOCAL" />
-      <updated>1737520810430</updated>
-    </task>
-    <task id="LOCAL-00385" summary="NSVIT-46 전체동작 정상수행">
-      <option name="closed" value="true" />
-      <created>1737527682942</created>
-      <option name="number" value="00385" />
-      <option name="presentableId" value="LOCAL-00385" />
-      <option name="project" value="LOCAL" />
-      <updated>1737527682942</updated>
+      <workItem from="1738646953044" duration="10402000" />
     </task>
     <task id="LOCAL-00386" summary="NSVIT-46 3.3.0">
       <option name="closed" value="true" />
@@ -694,7 +681,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738649956899</updated>
     </task>
-    <option name="localTasksCounter" value="433" />
+    <task id="LOCAL-00433" summary="NSVIT-86 valtio 셋팅">
+      <option name="closed" value="true" />
+      <created>1738652075936</created>
+      <option name="number" value="00433" />
+      <option name="presentableId" value="LOCAL-00433" />
+      <option name="project" value="LOCAL" />
+      <updated>1738652075936</updated>
+    </task>
+    <task id="LOCAL-00434" summary="NSVIT-86 valtio 셋팅">
+      <option name="closed" value="true" />
+      <created>1738652095087</created>
+      <option name="number" value="00434" />
+      <option name="presentableId" value="LOCAL-00434" />
+      <option name="project" value="LOCAL" />
+      <updated>1738652095087</updated>
+    </task>
+    <option name="localTasksCounter" value="435" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -739,7 +742,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-56 로직4 엑셀타입에서 url 빼고 엑셀 등록하기" />
     <MESSAGE value="NSVIT-57 로그인체크 &gt; 비동기 안내문 끄기" />
     <MESSAGE value="NSVIT-58 hasShoppingSection()" />
     <MESSAGE value="NSVIT-58 searchNaverPriceCompare()" />
@@ -764,7 +766,8 @@
     <MESSAGE value="NSVIT-85 / 증미역카페 / 오류로그 패치하기" />
     <MESSAGE value="findTargetPlace &gt; networkidle" />
     <MESSAGE value="증미역카페 / 찾을때 느림대응" />
-    <option name="LAST_COMMIT_MESSAGE" value="증미역카페 / 찾을때 느림대응" />
+    <MESSAGE value="NSVIT-86 valtio 셋팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-86 valtio 셋팅" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

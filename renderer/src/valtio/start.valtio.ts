@@ -5,13 +5,17 @@ const STORAGE_KEY = "start_store";
 const getInitialData = () => {
   // 기본값 정의
   const defaultData = {
-    common: { isStart: false, ip: "STATIC", memberFid: "", ipChangeCount: 1 },
+    common: {
+      isStart: false,
+      ip: "STATIC",
+      memberFid: "",
+      ipChangeCount: 1,
+    },
     nShopping: {
       isStart: false,
       selectedGroup: { groupName: "", groupId: "" },
       fingerPrint: { groupName: "", groupId: "" },
       concurrentBrowserCount: 1,
-      continuousWork: 1,
       logicType: "NAVER",
     },
     nShoppingLogic4: {
@@ -19,7 +23,6 @@ const getInitialData = () => {
       selectedGroup: { groupName: "", groupId: "" },
       fingerPrint: { groupName: "", groupId: "" },
       concurrentBrowserCount: 1,
-      continuousWork: 1,
       logicType: "NAVER",
     },
     nPlace: {
@@ -52,7 +55,6 @@ class StartValtio {
     selectedGroup: { groupName: string; groupId: string };
     fingerPrint: { groupName: string; groupId: string };
     concurrentBrowserCount: number;
-    continuousWork: number;
     logicType: "NAVER" | "GOOGLE" | "+STORE" | "BLOG";
   };
   nShoppingLogic4: {
@@ -60,7 +62,6 @@ class StartValtio {
     selectedGroup: { groupName: string; groupId: string };
     fingerPrint: { groupName: string; groupId: string };
     concurrentBrowserCount: number;
-    continuousWork: number;
     logicType:
       | "NAVER"
       | "GOOGLE"

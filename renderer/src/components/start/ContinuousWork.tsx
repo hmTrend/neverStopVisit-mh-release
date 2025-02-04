@@ -1,41 +1,49 @@
+"use client";
+
 import {
+  Box,
+  Flex,
+  FormControl,
+  FormHelperText,
+  FormLabel,
   NumberInput,
   NumberInputField,
   NumberInputStepper,
   NumberIncrementStepper,
   NumberDecrementStepper,
-  Flex,
-  Box,
-  Text,
 } from "@chakra-ui/react";
 import { storeStart } from "@/valtio/start.valtio";
 import { useSnapshot } from "valtio/react";
 
-export const ContinuousWork = ({ selectProgram }) => {
+export function IpChangeCount() {
   const snapStart = useSnapshot(storeStart);
-  const handleChange = (valueString, valueNumber) => {
-    console.log("Number Value:", valueNumber);
-    storeStart[selectProgram].continuousWork = valueNumber;
+  const handleChange = (value) => {
+    storeStart.common.ipChangeCount = value;
   };
 
   return (
-    <Flex gap={3} alignItems={"center"} wrap={"nowrap"}>
-      <Text whiteSpace={"nowrap"}>{"연속"}</Text>
+    <Flex>
       <Box>
-        <NumberInput
-          min={1}
-          max={10}
-          w={"75px"}
-          onChange={handleChange}
-          defaultValue={snapStart[selectProgram]?.continuousWork}
-        >
-          <NumberInputField />
-          <NumberInputStepper>
-            <NumberIncrementStepper />
-            <NumberDecrementStepper />
-          </NumberInputStepper>
-        </NumberInput>
+        <FormControl as="fieldset">
+          <FormLabel as="legend" fontSize={"xl"}>
+            IP 교체주기
+          </FormLabel>
+          <NumberInput
+            value={snapStart.common.ipChangeCount}
+            min={1}
+            max={10}
+            step={1}
+            onChange={handleChange}
+          >
+            <NumberInputField />
+            <NumberInputStepper>
+              <NumberIncrementStepper />
+              <NumberDecrementStepper />
+            </NumberInputStepper>
+          </NumberInput>
+          <FormHelperText>IP 작업방식</FormHelperText>
+        </FormControl>
       </Box>
     </Flex>
   );
-};
+}

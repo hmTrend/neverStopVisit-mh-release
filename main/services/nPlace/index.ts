@@ -18,7 +18,7 @@ import { loggedInCheckWithEmptyPage } from "../commons/naver/loggedInCheckWithEm
 import { api_notion_errorLog } from "../../api/notion/api.notion.errorLog";
 
 export class NPlace extends PuppeteerEngine {
-  async start({ nPlace, mainWindow }): Promise<void> {
+  async start({ nPlace, mainWindow, continuousWork }): Promise<void> {
     try {
       for (let i = 0; i <= 5; i++) {
         try {
@@ -52,9 +52,10 @@ export class NPlace extends PuppeteerEngine {
           const { data: fingerPrintData } = await GetFingerPrintTargetExcelOne({
             groupFid: nPlace.fingerPrint.groupId,
           });
-          console.log(fingerPrintData);
-          this.targetCookieId = fingerPrintData._id;
-          this.targetCookie = JSON.parse(fingerPrintData.cookie);
+          if (continuousWork === 1) {
+            this.targetCookieId = fingerPrintData._id;
+            this.targetCookie = JSON.parse(fingerPrintData.cookie);
+          }
           break;
         } catch (e) {
           await wait(3 * 1000);
@@ -65,13 +66,19 @@ export class NPlace extends PuppeteerEngine {
           }
         }
       }
-      await super.initialize({
-        url:
-          nPlace.logicType === "NAVER_BLOG" || nPlace.logicType === "N_PLACE"
-            ? "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query="
-            : "https://www.google.com/",
-        cookie: this.targetCookie,
-      });
+      if (continuousWork === 1) {
+        await super.initialize({
+          url:
+            nPlace.logicType === "NAVER_BLOG" || nPlace.logicType === "N_PLACE"
+              ? "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query="
+              : "https://www.google.com/",
+          cookie: this.targetCookie,
+        });
+      } else {
+        await this.page.goto(
+          "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
+        );
+      }
       {
         if (nPlace.logicType === "GOOGLE_BLOG") {
           const { page } = await googleToNaver({ page: this.page });
