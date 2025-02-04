@@ -13,6 +13,7 @@ import { StartStateSwitch } from "@/components/start/StartStateSwitch";
 import { ConcurrentBrowserCount } from "@/components/start/ConcurrentBrowserCount";
 import { useSnapshot } from "valtio/react";
 import { storeStart } from "@/valtio/start.valtio";
+import { ContinuousWork } from "@/components/start/ContinuousWork";
 
 export const SelectProgramForStart = ({
   selectProgram,
@@ -31,7 +32,7 @@ export const SelectProgramForStart = ({
             handleSelectChange={handleSelectChange}
           />
           <FingerPrintSelect selectProgram={selectProgram} />
-          {/*<ConcurrentOneLineWork />*/}
+          <ContinuousWork selectProgram={selectProgram} />
           <ConcurrentBrowserCount selectProgram={selectProgram} />
         </Flex>
         <LogicType logicType={logicType} selectProgram={selectProgram} />

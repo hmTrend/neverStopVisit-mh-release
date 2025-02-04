@@ -1,5 +1,4 @@
 import { proxy, subscribe } from "valtio/vanilla";
-import { IpChangeCount } from "@/components/start/IpChangeCount";
 
 const STORAGE_KEY = "start_store";
 
@@ -12,6 +11,7 @@ const getInitialData = () => {
       selectedGroup: { groupName: "", groupId: "" },
       fingerPrint: { groupName: "", groupId: "" },
       concurrentBrowserCount: 1,
+      continuousWork: 1,
       logicType: "NAVER",
     },
     nShoppingLogic4: {
@@ -19,6 +19,7 @@ const getInitialData = () => {
       selectedGroup: { groupName: "", groupId: "" },
       fingerPrint: { groupName: "", groupId: "" },
       concurrentBrowserCount: 1,
+      continuousWork: 1,
       logicType: "NAVER",
     },
     nPlace: {
@@ -51,6 +52,7 @@ class StartValtio {
     selectedGroup: { groupName: string; groupId: string };
     fingerPrint: { groupName: string; groupId: string };
     concurrentBrowserCount: number;
+    continuousWork: number;
     logicType: "NAVER" | "GOOGLE" | "+STORE" | "BLOG";
   };
   nShoppingLogic4: {
@@ -58,7 +60,14 @@ class StartValtio {
     selectedGroup: { groupName: string; groupId: string };
     fingerPrint: { groupName: string; groupId: string };
     concurrentBrowserCount: number;
-    logicType: "NAVER" | "GOOGLE" | "+STORE" | "BLOG" | "NAVER_COMPARE"| "N_SHOPPING_TAB";
+    continuousWork: number;
+    logicType:
+      | "NAVER"
+      | "GOOGLE"
+      | "+STORE"
+      | "BLOG"
+      | "NAVER_COMPARE"
+      | "N_SHOPPING_TAB";
   };
   nPlace: {
     isStart: boolean;
