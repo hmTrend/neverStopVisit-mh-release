@@ -60,6 +60,7 @@ async function executeInChunks({
     const totalChunks = Math.ceil(totalCount / chunkSize);
     let completedCount = 0;
     let continuousWork: number = 1;
+    let placeNumbers: number[] = [];
 
     for (let chunk = 0; chunk < totalChunks; chunk++) {
       // 현재 청크의 시작과 끝 계산
@@ -113,8 +114,6 @@ async function executeInChunks({
           await wait(3000);
           const nowCount = nowCountSetup(continuousWork, common.ipChangeCount);
           continuousWork = nowCount;
-          console.log("continuousWork 555553333333");
-          console.log(continuousWork);
           if (continuousWork === 1) {
             await closeAllBrowsers();
           }
@@ -135,6 +134,13 @@ async function executeInChunks({
           if (e.message.includes("Complete the day's counting tasks")) {
             console.error("Complete the day's counting tasks > waiting 300s..");
             await wait(300 * 1000);
+          }
+          if (e.message.includes("No data to import into a continuous work")) {
+            continuousWork = 1;
+            console.error(
+              "No data to import into a continuous work > waiting 3s..",
+            );
+            await wait(3 * 1000);
           }
           await closeAllBrowsers();
           await wait(20 * 1000);

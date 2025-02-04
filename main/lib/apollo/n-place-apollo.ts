@@ -47,6 +47,62 @@ export const GetNPlaceExcelAlignFlatTargetOne = async ({ groupFid }) => {
   };
 };
 
+const gqlGetNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber = gql`
+  query GetNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber(
+    $input: GetNPlaceExcelListWithoutPlaceNumberInput!
+  ) {
+    getNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber(input: $input) {
+      data {
+        _id
+        groupFid
+        keyword
+        delayTime
+        placeName
+        placeNumber
+        dayCount
+        totalDayCount
+        targetBlog
+        targetKeyword
+        createdAt
+        updatedAt
+      }
+      message
+      error
+    }
+  }
+`;
+
+export const GetNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber = async ({
+  groupFid,
+  placeNumber,
+}) => {
+  const { data, errors } = await client.query({
+    query: gqlGetNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber,
+    variables: {
+      input: {
+        groupFid,
+        placeNumber,
+      },
+    },
+    fetchPolicy: "no-cache",
+  });
+  console.log("GetNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber 33333 ");
+  console.log(data);
+  if (errors) {
+    console.error(
+      `this is GetNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber > ${errors[0].message}`,
+    );
+    throw new Error(
+      `GetNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber > ${errors[0].message}`,
+    );
+  }
+  return {
+    data: data.getNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber.data,
+    message: "OK > GetNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber ",
+    error: "",
+  };
+};
+
 const gqlPatchNPlaceDayNowCount = gql`
   mutation PatchNPlaceDayNowCount($input: PatchNPlaceDayNowCountInput!) {
     patchNPlaceDayNowCount(input: $input) {

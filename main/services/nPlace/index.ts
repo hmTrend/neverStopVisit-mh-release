@@ -4,6 +4,7 @@ import { GetFingerPrintTargetExcelOne } from "../../lib/apollo/finger-print.apol
 import { cookieNstateSave } from "../commons/PuppeteerEngine/cookieNstateSave";
 import {
   GetNPlaceExcelAlignFlatTargetOne,
+  GetNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber,
   PatchNPlaceDayNowCount,
 } from "../../lib/apollo/n-place-apollo";
 import { googleToNaver } from "../commons/naver/googleToNaver";
@@ -20,23 +21,48 @@ import { api_notion_errorLog } from "../../api/notion/api.notion.errorLog";
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace, mainWindow, continuousWork }): Promise<void> {
     try {
+      if (continuousWork === 1) {
+        this.placeNumbers = [];
+      }
       for (let i = 0; i <= 5; i++) {
         try {
-          const { data: excelData } = await GetNPlaceExcelAlignFlatTargetOne({
-            groupFid: nPlace.selectedGroup.groupId,
-          });
-          var ExcelData = excelData;
-          const { targetKeyword, targetBlog, placeNumber } = excelData;
+          var ExcelData;
+          {
+            if (this.placeNumbers.length === 0) {
+              console.log("this is this.placeNumbers.length === 0");
+              const { data: excelData } =
+                await GetNPlaceExcelAlignFlatTargetOne({
+                  groupFid: nPlace.selectedGroup.groupId,
+                });
+              ExcelData = excelData;
+            } else {
+              console.log("this.placeNumbers 55553433333");
+              console.log(this.placeNumbers);
+              const { data: excelData } =
+                await GetNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber({
+                  groupFid: nPlace.selectedGroup.groupId,
+                  placeNumber: this.placeNumbers,
+                });
+              ExcelData = excelData;
+            }
+          }
+          const { targetKeyword, targetBlog, placeNumber } = ExcelData;
           {
             this.query = targetKeyword;
             this.nvMid = targetBlog;
             this.placeNumber = placeNumber;
+            this.placeNumbers.push(parseInt(placeNumber));
           }
           break;
         } catch (e) {
           await wait(3 * 1000);
           console.error(`123 GetNPlaceExcelAlignFlatTargetOne > ${e.message}`);
           if (e.message.includes("Complete the day's counting tasks")) {
+            console.error(`err > NPlace > start > ${e.message}`);
+            throw Error(`err > NPlace > start > ${e.message}`);
+          }
+          if (e.message.includes("No data to import into a continuous work")) {
+            this.placeNumbers = [];
             console.error(`err > NPlace > start > ${e.message}`);
             throw Error(`err > NPlace > start > ${e.message}`);
           }
@@ -47,26 +73,29 @@ export class NPlace extends PuppeteerEngine {
           }
         }
       }
-      for (let i = 0; i <= 5; i++) {
-        try {
-          const { data: fingerPrintData } = await GetFingerPrintTargetExcelOne({
-            groupFid: nPlace.fingerPrint.groupId,
-          });
-          if (continuousWork === 1) {
+      if (continuousWork === 1) {
+        for (let i = 0; i <= 5; i++) {
+          try {
+            const { data: fingerPrintData } =
+              await GetFingerPrintTargetExcelOne({
+                groupFid: nPlace.fingerPrint.groupId,
+              });
+
             this.targetCookieId = fingerPrintData._id;
             this.targetCookie = JSON.parse(fingerPrintData.cookie);
-          }
-          break;
-        } catch (e) {
-          await wait(3 * 1000);
-          console.error(e.message);
-          if (i === 3) {
-            console.error("More than 3 errors > GetFingerPrintTargetExcelOne");
-            throw Error("More than 3 errors > GetFingerPrintTargetExcelOne");
+
+            break;
+          } catch (e) {
+            await wait(3 * 1000);
+            console.error(e.message);
+            if (i === 3) {
+              console.error(
+                "More than 3 errors > GetFingerPrintTargetExcelOne",
+              );
+              throw Error("More than 3 errors > GetFingerPrintTargetExcelOne");
+            }
           }
         }
-      }
-      if (continuousWork === 1) {
         await super.initialize({
           url:
             nPlace.logicType === "NAVER_BLOG" || nPlace.logicType === "N_PLACE"

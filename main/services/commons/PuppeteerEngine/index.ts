@@ -16,6 +16,7 @@ export class PuppeteerEngine {
   targetBlog: string;
   context: BrowserContext;
   placeNumber: number;
+  placeNumbers: number[];
   targetKeyword: string;
   userAgent: string;
 
