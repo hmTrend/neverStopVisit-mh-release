@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v3.13.0">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSVIT-85 / 증미역카페 / 오류로그 패치하기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +198,7 @@
     <configuration name="initialize.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine" />
@@ -207,7 +206,6 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -299,15 +297,8 @@
       <workItem from="1737787025561" duration="22212000" />
       <workItem from="1738050990986" duration="176000" />
       <workItem from="1738568103439" duration="11404000" />
-      <workItem from="1738624712837" duration="1473000" />
-    </task>
-    <task id="LOCAL-00380" summary="NSVIT-38 아이템 등록시 각 title추가">
-      <option name="closed" value="true" />
-      <created>1737447391178</created>
-      <option name="number" value="00380" />
-      <option name="presentableId" value="LOCAL-00380" />
-      <option name="project" value="LOCAL" />
-      <updated>1737447391178</updated>
+      <workItem from="1738624712837" duration="1837000" />
+      <workItem from="1738646953044" duration="1664000" />
     </task>
     <task id="LOCAL-00381" summary="NSVIT-40 엑셀 로직 변경 등록">
       <option name="closed" value="true" />
@@ -693,7 +684,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738587180594</updated>
     </task>
-    <option name="localTasksCounter" value="429" />
+    <task id="LOCAL-00429" summary="NSVIT-85 / 증미역카페 / 오류로그 패치하기">
+      <option name="closed" value="true" />
+      <created>1738626387942</created>
+      <option name="number" value="00429" />
+      <option name="presentableId" value="LOCAL-00429" />
+      <option name="project" value="LOCAL" />
+      <updated>1738626387942</updated>
+    </task>
+    <option name="localTasksCounter" value="430" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -738,7 +737,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="GetExcelList / 새로고침시 값없음 오류해결" />
     <MESSAGE value="Complete the day's counting tasks &gt; waiting 300s.." />
     <MESSAGE value="기존 nShopping 삭제 &gt; nShoppingLogic4 / 대체됨" />
     <MESSAGE value="NSVIT-56 로직4 엑셀타입에서 url 빼고 엑셀 등록하기" />
@@ -763,7 +761,8 @@
     <MESSAGE value="api_notion_errorLog()" />
     <MESSAGE value="api_notion_errorLog() + userAgent 추가" />
     <MESSAGE value="v3.13.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="v3.13.0" />
+    <MESSAGE value="NSVIT-85 / 증미역카페 / 오류로그 패치하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSVIT-85 / 증미역카페 / 오류로그 패치하기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
