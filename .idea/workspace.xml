@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-40 / 연속작업 10개까지 셋팅">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NSV-40 / v3.16.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,15 +297,7 @@
       <workItem from="1738050990986" duration="176000" />
       <workItem from="1738568103439" duration="11404000" />
       <workItem from="1738624712837" duration="1837000" />
-      <workItem from="1738646953044" duration="19321000" />
-    </task>
-    <task id="LOCAL-00388" summary="NSV-18 플레이스 타수 보기페이지 v3.4.0">
-      <option name="closed" value="true" />
-      <created>1737591077219</created>
-      <option name="number" value="00388" />
-      <option name="presentableId" value="LOCAL-00388" />
-      <option name="project" value="LOCAL" />
-      <updated>1737591077219</updated>
+      <workItem from="1738646953044" duration="20153000" />
     </task>
     <task id="LOCAL-00389" summary="NSV-18 플레이스 타수 보기페이지 v3.4.0">
       <option name="closed" value="true" />
@@ -692,7 +683,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738663204106</updated>
     </task>
-    <option name="localTasksCounter" value="437" />
+    <task id="LOCAL-00437" summary="NSV-40 / v3.16.0">
+      <option name="closed" value="true" />
+      <created>1738712788062</created>
+      <option name="number" value="00437" />
+      <option name="presentableId" value="LOCAL-00437" />
+      <option name="project" value="LOCAL" />
+      <updated>1738712788062</updated>
+    </task>
+    <option name="localTasksCounter" value="438" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -737,7 +736,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-58 searchNaverPriceCompare()" />
     <MESSAGE value="NSVIT-61 네이버 공백 페이지에서 시작하기&#10;NSVIT-62 로그인 체크방식 공백 페이지 변경" />
     <MESSAGE value="NSVIT-65 로직4 구글 제외 X 네이버 빈페이지 시작" />
     <MESSAGE value="NSVIT-66 넥스트론 백엔드 작동 상태 만들기" />
@@ -762,7 +760,8 @@
     <MESSAGE value="NSVIT-86 valtio 셋팅" />
     <MESSAGE value="NSVIT-87 1개작업후 2번째 작업시 창 안닫히게 하기" />
     <MESSAGE value="NSV-40 / 연속작업 10개까지 셋팅" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSV-40 / 연속작업 10개까지 셋팅" />
+    <MESSAGE value="NSV-40 / v3.16.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="NSV-40 / v3.16.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -78,7 +78,7 @@ export function FingerprintCookeCook({ nId, indexNum, type, _id }) {
                 await fetchFingerPrintTargetExcelOne({
                   _id,
                   cookie: cookieRef.current.value,
-                  nState: "쿠키",
+                  nState: "정상",
                 });
                 onClose();
               }}

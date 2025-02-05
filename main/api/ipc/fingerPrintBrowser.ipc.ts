@@ -67,7 +67,7 @@ export const fingerPrintBrowserIpc = async () => {
             await cookieNstateSave({
               page: engine.page,
               _id,
-              nState: "쿠키",
+              nState: "정상",
             });
             engineMap.delete(_id);
             await engine.browser.close();
@@ -95,7 +95,7 @@ export const fingerPrintBrowserIpc = async () => {
         await cookieNstateSave({
           page: engine.page,
           _id,
-          nState: "쿠키",
+          nState: "정상",
         });
         engineMap.delete(_id);
         await engine.browser.close();
