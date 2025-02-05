@@ -3,16 +3,11 @@ import { changeMacAddress, getMacAddress } from "./network.local";
 import { networkRouterEdu } from "./network.router.edu.puppeteer";
 
 export const networkIpChange = (() => {
-  let nowCount = 0;
   return async ({ common }) => {
-    if (nowCount % common.ipChangeCount !== 0) {
-      nowCount = nowCount + 1;
-      return;
-    }
     switch (common.ip) {
       case "STATIC":
         console.log("STATIC");
-        return (nowCount = nowCount + 1);
+        return;
       case "TETHERING":
         console.log("TETHERING");
         const checkAdbConnectionResult =
@@ -24,12 +19,12 @@ export const networkIpChange = (() => {
           throw new Error("Tethering cannot be changed");
         }
         await TetheringMode.phoneIpChange(checkAdbConnectionResult);
-        return (nowCount = nowCount + 1);
+        return;
       case "ROUTER":
         console.log("ROUTER");
         // await networkRouterEduPlayer();
         await networkRouterEdu();
-        return (nowCount = nowCount + 1);
+        return;
       case "LOCAL":
         console.log("LOCAL");
         for (let i = 0; i < 5; i++) {
@@ -47,9 +42,9 @@ export const networkIpChange = (() => {
             }
           }
         }
-        return (nowCount = nowCount + 1);
+        return;
       default:
-        return (nowCount = nowCount + 1);
+        return;
     }
   };
 })();
