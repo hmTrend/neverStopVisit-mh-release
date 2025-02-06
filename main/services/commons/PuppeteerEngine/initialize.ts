@@ -4,6 +4,7 @@ import { validateCookie } from "./validateCookie";
 import { getChromePath } from "./getChromePath";
 import wait from "waait";
 import { getNextCreateUserAgentWithDRSoftKorea241207WithOutIPhone } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhone";
+import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhoneIN100percent";
 
 export const initialize = async ({
   url,
@@ -89,7 +90,7 @@ async function createMobileContext({
   networkSpeed?: string;
 }) {
   const userAgent: any =
-    getNextCreateUserAgentWithDRSoftKorea241207WithOutIPhone(); // 동적 user agent
+    getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(); // 동적 user agent
 
   const context = await browser.newContext({
     userAgent: userAgent.userAgent,

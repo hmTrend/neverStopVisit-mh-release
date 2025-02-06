@@ -16,6 +16,7 @@ import { logicTypeNAVER_COMPARE } from "./logicType-NAVER_COMPARE";
 import { logicTypeN_SHOPPING_TAB } from "./logicType-N_SHOPPING_TAB";
 import { apiPatchDayNowCountForShopping } from "../../api/notion/api.patchDayNowCountForShopping";
 import { api_notion_errorLog } from "../../api/notion/api.notion.errorLog";
+import { api_notion_shopping_errorLog } from "../../api/notion/api.notion.shopping.errorLog";
 
 export class NShoppingLogic4 extends PuppeteerEngine {
   async start({ nShoppingLogic4, mainWindow }): Promise<void> {
@@ -181,22 +182,28 @@ export class NShoppingLogic4 extends PuppeteerEngine {
         myIp,
         createdAt,
       });
-      // await api_notion_errorLog({
-      //   data: {
-      //     name: this.query,
-      //     type: "쇼핑",
-      //     errorLog: e.message,
-      //     userAgent: this.userAgent,
-      //     logicType:
-      //       nShoppingLogic4.logicType === "NAVER_BLOG"
-      //         ? "로직1(NAVER_BLOG)"
-      //         : nShoppingLogic4.logicType === "GOOGLE_BLOG"
-      //           ? "로직2(GOOGLE_BLOG)"
-      //           : nShoppingLogic4.logicType === "N_PLACE"
-      //             ? "로직3(N_PLACE)"
-      //             : "",
-      //   },
-      // });
+      await api_notion_shopping_errorLog({
+        data: {
+          name: this.query,
+          type: "쇼핑",
+          errorLog: e.message,
+          userAgent: this.userAgent,
+          logicType:
+            nShoppingLogic4.logicType === "NAVER"
+              ? "로직1(NAVER)"
+              : nShoppingLogic4.logicType === "GOOGLE"
+                ? "로직2(GOOGLE)"
+                : nShoppingLogic4.logicType === "+STORE"
+                  ? "로직3(+STORE)"
+                  : nShoppingLogic4.logicType === "BLOG"
+                    ? "로직4(BLOG)"
+                    : nShoppingLogic4.logicType === "NAVER_COMPARE"
+                      ? "로직5(NAVER_COMPARE)"
+                      : nShoppingLogic4.logicType === "N_SHOPPING_TAB"
+                        ? "로직6(N_SHOPPING_TAB)"
+                        : "",
+        },
+      });
       console.error(e.message);
       throw Error(e.message);
     }

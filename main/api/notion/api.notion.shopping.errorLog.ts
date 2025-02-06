@@ -5,15 +5,14 @@ export const notion = new Client({
     process.env.NOTION_TOKEN ??
     "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",
 });
-
-const DATABASE_ID = "18fc7cf713ef80e2a092d8ba7e0624ba";
-export async function api_notion_errorLog({
+const DATABASE_ID = "192c7cf713ef80caa6ceca5612c912be";
+export async function api_notion_shopping_errorLog({
   data = {
     name: "로그인 문제",
-    type: "플레이스",
+    type: "쇼핑",
     errorLog: "this is ERROR",
     userAgent: "userAgent",
-    logicType: "로직1(NAVER_BLOG)",
+    logicType: "로직6(N_SHOPPING_TAB)",
   },
 } = {}) {
   try {
@@ -75,7 +74,7 @@ export async function api_notion_errorLog({
 
 // (async () => {
 //   try {
-//     const result = await api_notion_errorLog();
+//     const result = await api_notion_shopping_errorLog();
 //     if (result) {
 //       console.log("전체 응답:", result);
 //     }
