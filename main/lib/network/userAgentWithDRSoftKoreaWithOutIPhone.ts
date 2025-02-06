@@ -12,7 +12,6 @@ const userAgentWithDRSoftKorea241207WithOutIPhone = [
       "sec-fetch-dest": "empty",
     },
   },
-
   {
     userAgent:
       "Mozilla/5.0 (Linux; Android 14; SM-F956N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Mobile Safari/537.36",
