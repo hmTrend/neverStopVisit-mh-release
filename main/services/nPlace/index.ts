@@ -175,6 +175,14 @@ export class NPlace extends PuppeteerEngine {
           type: "플레이스",
           errorLog: e.message,
           userAgent: this.userAgent,
+          logicType:
+            nPlace.logicType === "NAVER_BLOG"
+              ? "로직1(NAVER_BLOG)"
+              : nPlace.logicType === "GOOGLE_BLOG"
+                ? "로직2(GOOGLE_BLOG)"
+                : nPlace.logicType === "N_PLACE"
+                  ? "로직3(N_PLACE)"
+                  : "",
         },
       });
       console.error(e.message);

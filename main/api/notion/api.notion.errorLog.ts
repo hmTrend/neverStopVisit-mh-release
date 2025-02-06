@@ -13,10 +13,11 @@ export async function api_notion_errorLog({
     type: "플레이스",
     errorLog: "this is ERROR",
     userAgent: "userAgent",
+    logicType: "로직1(NAVER_BLOG)",
   },
 } = {}) {
   try {
-    const { name, type, errorLog, userAgent } = data;
+    const { name, type, errorLog, userAgent, logicType } = data;
     const response = await notion.pages.create({
       parent: {
         database_id: DATABASE_ID,

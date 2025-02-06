@@ -181,14 +181,22 @@ export class NShoppingLogic4 extends PuppeteerEngine {
         myIp,
         createdAt,
       });
-      await api_notion_errorLog({
-        data: {
-          name: this.query,
-          type: "쇼핑",
-          errorLog: e.message,
-          userAgent: this.userAgent,
-        },
-      });
+      // await api_notion_errorLog({
+      //   data: {
+      //     name: this.query,
+      //     type: "쇼핑",
+      //     errorLog: e.message,
+      //     userAgent: this.userAgent,
+      //     logicType:
+      //       nShoppingLogic4.logicType === "NAVER_BLOG"
+      //         ? "로직1(NAVER_BLOG)"
+      //         : nShoppingLogic4.logicType === "GOOGLE_BLOG"
+      //           ? "로직2(GOOGLE_BLOG)"
+      //           : nShoppingLogic4.logicType === "N_PLACE"
+      //             ? "로직3(N_PLACE)"
+      //             : "",
+      //   },
+      // });
       console.error(e.message);
       throw Error(e.message);
     }
