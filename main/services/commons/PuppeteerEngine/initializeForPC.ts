@@ -6,6 +6,7 @@ import wait from "waait";
 import { LaunchOptions } from "playwright-core";
 import { getNextCreateUserAgentWithPC } from "../../../lib/network/userAgentWithPC";
 import { getNextProxyYoodooProxy } from "../../../lib/proxy/getNextProxyYoodooProxy";
+import { getNextCreateUserAgentWithPC100percent } from "../../../lib/network/userAgentWithPC100percent";
 
 export const initializeForPC = async ({
   url,
@@ -75,10 +76,10 @@ export const initializeForPC = async ({
 };
 
 async function createMobileContext({ browser }: { browser: Browser }) {
-  const userAgent: any = getNextCreateUserAgentWithPC(); // 동적 user agent
+  const userAgent: any = getNextCreateUserAgentWithPC100percent(); // 동적 user agent
 
   const context = await browser.newContext({
-    userAgent: userAgent.userAgent,
+    // userAgent: userAgent.userAgent,
     extraHTTPHeaders: userAgent.headers,
   });
 
