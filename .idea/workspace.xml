@@ -143,20 +143,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.findTargetPlace.ts">
-    <configuration name="api.notion.errorLog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/api/notion" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/api/notion/api.notion.errorLog.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TypeScript.targetKeywordSearchWithEmptyPage.ts">
     <configuration name="api.notion.shopping.errorLog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -167,19 +154,6 @@
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/api/notion/api.notion.shopping.errorLog.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="api.patchDayNowCountForShopping.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/api/notion" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/api/notion/api.patchDayNowCountForShopping.ts" />
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
@@ -210,13 +184,41 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="targetKeywordSearchWithEmptyPage.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisit-f" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/naver" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/commons/naver/targetKeywordSearchWithEmptyPage.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
+      <method v="2" />
+    </configuration>
+    <configuration name="targetKeywordSearch.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisit-f" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShoppingLogic4" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/services/nShoppingLogic4/targetKeywordSearch.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.targetKeywordSearchWithEmptyPage.ts" />
+        <item itemvalue="TypeScript.targetKeywordSearch.ts" />
         <item itemvalue="TypeScript.findTargetPlace.ts" />
         <item itemvalue="TypeScript.api.notion.shopping.errorLog.ts" />
         <item itemvalue="TypeScript.initialize.ts" />
-        <item itemvalue="TypeScript.api.notion.errorLog.ts" />
-        <item itemvalue="TypeScript.api.patchDayNowCountForShopping.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -304,14 +306,6 @@
       <workItem from="1738738648125" duration="3703000" />
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
-    </task>
-    <task id="LOCAL-00396" summary="NSVIT-56 로직4 엑셀타입에서 url 빼고 엑셀 등록하기">
-      <option name="closed" value="true" />
-      <created>1737702771917</created>
-      <option name="number" value="00396" />
-      <option name="presentableId" value="LOCAL-00396" />
-      <option name="project" value="LOCAL" />
-      <updated>1737702771917</updated>
     </task>
     <task id="LOCAL-00397" summary="NSVIT-57 로그인체크 &gt; 비동기 안내문 끄기">
       <option name="closed" value="true" />
@@ -697,7 +691,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739321178995</updated>
     </task>
-    <option name="localTasksCounter" value="445" />
+    <task id="LOCAL-00445" summary="placeMapUrlPatternCheck">
+      <option name="closed" value="true" />
+      <created>1739323968020</created>
+      <option name="number" value="00445" />
+      <option name="presentableId" value="LOCAL-00445" />
+      <option name="project" value="LOCAL" />
+      <updated>1739323968020</updated>
+    </task>
+    <option name="localTasksCounter" value="446" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -742,7 +744,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-76 백엔드 값 가져올때, 현재타수가 맥스타수보다 같거나 많다면 에러처리" />
     <MESSAGE value="v3.6.0" />
     <MESSAGE value="NSVIT-79 미로그인시 노션API 전달하기" />
     <MESSAGE value="NSVIT-80 killlo 네스비 플레이스 일일타수 DB / 시분 표시" />
@@ -767,7 +768,8 @@
     <MESSAGE value="expandAndClickMore / 개선" />
     <MESSAGE value=" networkSpeed: &quot;LTE&quot; 추가" />
     <MESSAGE value="findTargetPlaceNLastActionRandomClick" />
-    <option name="LAST_COMMIT_MESSAGE" value="findTargetPlaceNLastActionRandomClick" />
+    <MESSAGE value="placeMapUrlPatternCheck" />
+    <option name="LAST_COMMIT_MESSAGE" value="placeMapUrlPatternCheck" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

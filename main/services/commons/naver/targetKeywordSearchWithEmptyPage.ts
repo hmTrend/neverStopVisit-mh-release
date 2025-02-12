@@ -4,7 +4,7 @@ import { PuppeteerEngine } from "../PuppeteerEngine";
 
 export const targetKeywordSearchWithEmptyPage = async ({
   page = undefined,
-  targetKeyword = "가정용제빙기 미니",
+  targetKeyword = "염창동카페",
   isTest = false,
 }: {
   page?: Page;
@@ -17,6 +17,7 @@ export const targetKeywordSearchWithEmptyPage = async ({
       await test.initialize({
         url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
         cookie: "",
+        networkSpeed: "3G",
       });
       page = test.page;
     }
@@ -42,7 +43,7 @@ export const targetKeywordSearchWithEmptyPage = async ({
         console.error(e.message);
         if (i === 2) {
           throw Error(
-            "targetKeywordSearch > naverKeywordSearch input don't click",
+            "targetKeywordSearchWithEmptyPage > naverKeywordSearch input don't click",
           );
         }
         await wait(3 * 1000);
@@ -52,17 +53,19 @@ export const targetKeywordSearchWithEmptyPage = async ({
     const searchButton = page.locator("button.btn_search");
     try {
       // 검색 버튼이 나타날 때까지 대기하고 클릭
-      await searchButton.waitFor({ state: "visible" });
+      await searchButton.waitFor({ state: "visible", timeout: 60 * 1000 });
       await searchButton.click();
       await page.waitForLoadState("networkidle");
       await wait(1000);
     } catch (error) {
       console.log("I can't find the search bar. > ", error.message);
-      throw Error("ERR > targetKeywordSearch > I can't find the search bar.");
+      throw Error(
+        "ERR > targetKeywordSearchWithEmptyPage > I can't find the search bar.",
+      );
     }
   } catch (e) {
     console.error(e.message);
-    throw Error(`targetKeywordSearch > ${e.message}`);
+    throw Error(`targetKeywordSearchWithEmptyPage > ${e.message}`);
   }
 
   return { page };

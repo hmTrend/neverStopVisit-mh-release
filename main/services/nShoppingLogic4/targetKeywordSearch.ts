@@ -4,7 +4,7 @@ import wait from "waait";
 
 export const targetKeywordSearch = async ({
   page = undefined,
-  targetKeyword = "가정용제빙기 미니",
+  targetKeyword = "염창동카페",
   isTest = false,
 }: {
   page?: Page;
@@ -17,6 +17,7 @@ export const targetKeywordSearch = async ({
       await test.initialize({
         url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
         cookie: "",
+        networkSpeed: "LTE",
       });
       page = test.page;
     }
