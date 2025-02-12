@@ -65,7 +65,7 @@ export const initialize = async ({
 
       await page.goto(url, {
         waitUntil: "domcontentloaded",
-        timeout: 90 * 1000,
+        timeout: 120 * 1000,
       });
       await wait(1500);
       break;

@@ -13,16 +13,16 @@ export const findTargetPlace = async ({
   isTest?: boolean;
   delayTime?: number;
 } = {}) => {
+  if (isTest) {
+    const test = new PuppeteerEngine();
+    await test.initialize({
+      url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%95%BC%EB%8B%B9%EB%A7%9B%EC%A7%91+%EB%B4%89%EC%9A%B0%EB%A6%AC&tqi=iIYE0dqVWusssapRFaCssssstTK-065475&query=%EC%95%BC%EB%8B%B9%EB%A7%9B%EC%A7%91",
+      cookie: "",
+      networkSpeed: "3G",
+    });
+    page = test.page;
+  }
   try {
-    if (isTest) {
-      const test = new PuppeteerEngine();
-      await test.initialize({
-        url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%95%BC%EB%8B%B9%EB%A7%9B%EC%A7%91+%EB%B4%89%EC%9A%B0%EB%A6%AC&tqi=iIYE0dqVWusssapRFaCssssstTK-065475&query=%EC%95%BC%EB%8B%B9%EB%A7%9B%EC%A7%91",
-        cookie: "",
-        networkSpeed: "LTE",
-      });
-      page = test.page;
-    }
     await clickTargetPlaceOrGoToNextStep({ page, placeNumber });
     await lastActionRandomClick({ page, placeNumber, delayTime });
     return { page };
@@ -51,7 +51,7 @@ async function clickTargetPlaceNextMorePage({ placeNumber, page }) {
 
     // 클릭 수행 및 로드 상태 대기
     await link.click();
-    await page.waitForLoadState("networkidle", { timeout: 60 * 1000 });
+    await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
     console.log(`Successfully clicked link with ID: ${placeNumber}`);
     return page;
   } catch (error) {
@@ -76,7 +76,10 @@ async function lastActionRandomClick({ page, placeNumber, delayTime }) {
 
 async function clickTargetPlaceOrGoToNextStep({ page, placeNumber }) {
   try {
-    await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
+    console.log(1);
+    const { waitForTargetUrl } = placeMapUrlPatternCheck({ page });
+    await waitForTargetUrl;
+    console.log(2);
     await clickTargetPlaceById({ placeNumber, page });
   } catch (e) {
     const pageO = await expandAndClickMore({ page });
@@ -99,6 +102,32 @@ async function clickTargetPlaceOrGoToNextStep({ page, placeNumber }) {
   }
 }
 
+function placeMapUrlPatternCheck({ page }) {
+  const targetUrlPattern = "https://search.pstatic.net/common/";
+
+  // 프로미스를 사용하여 조건 충족 여부를 기다림
+  const waitForTargetUrl = new Promise<void>(async (resolve, reject) => {
+    let timeoutId;
+
+    const timeout = 60 * 1000;
+    timeoutId = setTimeout(() => {
+      reject(new Error(`Timeout waiting for URL pattern: ${targetUrlPattern}`));
+    }, timeout);
+
+    // 네트워크 응답 감시
+    page.on("response", async (response) => {
+      const url = response.url();
+
+      // 대상 URL 패턴이 포함된 경우
+      if (url.includes(targetUrlPattern)) {
+        clearTimeout(timeoutId); // 타임아웃 해제
+        resolve(); // 조건 충족으로 프로미스 종료
+      }
+    });
+  });
+  return { waitForTargetUrl };
+}
+
 async function clickTargetPlaceById({ placeNumber, page }) {
   try {
     // 여러 데이터 속성에 대해 해당 ID 검색
@@ -117,7 +146,7 @@ async function clickTargetPlaceById({ placeNumber, page }) {
         await element.scrollIntoViewIfNeeded();
         await wait(1000);
         await element.click();
-        await page.waitForLoadState("networkidle");
+        await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
         await wait(1500);
         return;
       }
@@ -225,7 +254,7 @@ async function clickNextPageMoreLink({ page }) {
 
         // 클릭 수행 및 로드 상태 대기
         await link.click();
-        await page.waitForLoadState("networkidle", { timeout: 60 * 1000 });
+        await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
         console.log("Successfully clicked hospital link");
         return page;
       } else {

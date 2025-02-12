@@ -305,14 +305,6 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
     </task>
-    <task id="LOCAL-00395" summary="기존 nShopping 삭제 &gt; nShoppingLogic4 / 대체됨">
-      <option name="closed" value="true" />
-      <created>1737700874205</created>
-      <option name="number" value="00395" />
-      <option name="presentableId" value="LOCAL-00395" />
-      <option name="project" value="LOCAL" />
-      <updated>1737700874205</updated>
-    </task>
     <task id="LOCAL-00396" summary="NSVIT-56 로직4 엑셀타입에서 url 빼고 엑셀 등록하기">
       <option name="closed" value="true" />
       <created>1737702771917</created>
@@ -697,7 +689,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739320100765</updated>
     </task>
-    <option name="localTasksCounter" value="444" />
+    <task id="LOCAL-00444" summary="findTargetPlaceNLastActionRandomClick">
+      <option name="closed" value="true" />
+      <created>1739321178995</created>
+      <option name="number" value="00444" />
+      <option name="presentableId" value="LOCAL-00444" />
+      <option name="project" value="LOCAL" />
+      <updated>1739321178995</updated>
+    </task>
+    <option name="localTasksCounter" value="445" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -742,7 +742,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-77 넥스트론 백엔드 타수 카운팅 연도" />
     <MESSAGE value="NSVIT-76 백엔드 값 가져올때, 현재타수가 맥스타수보다 같거나 많다면 에러처리" />
     <MESSAGE value="v3.6.0" />
     <MESSAGE value="NSVIT-79 미로그인시 노션API 전달하기" />
@@ -767,7 +766,8 @@
     <MESSAGE value="쇼핑 / api_notion_shopping_errorLog / 에러로그추가" />
     <MESSAGE value="expandAndClickMore / 개선" />
     <MESSAGE value=" networkSpeed: &quot;LTE&quot; 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value=" networkSpeed: &quot;LTE&quot; 추가" />
+    <MESSAGE value="findTargetPlaceNLastActionRandomClick" />
+    <option name="LAST_COMMIT_MESSAGE" value="findTargetPlaceNLastActionRandomClick" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
