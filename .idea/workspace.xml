@@ -307,22 +307,6 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
     </task>
-    <task id="LOCAL-00401" summary="NSVIT-61 네이버 공백 페이지에서 시작하기&#10;NSVIT-62 로그인 체크방식 공백 페이지 변경">
-      <option name="closed" value="true" />
-      <created>1737768998491</created>
-      <option name="number" value="00401" />
-      <option name="presentableId" value="LOCAL-00401" />
-      <option name="project" value="LOCAL" />
-      <updated>1737768998491</updated>
-    </task>
-    <task id="LOCAL-00402" summary="NSVIT-65 로직4 구글 제외 X 네이버 빈페이지 시작">
-      <option name="closed" value="true" />
-      <created>1737769391223</created>
-      <option name="number" value="00402" />
-      <option name="presentableId" value="LOCAL-00402" />
-      <option name="project" value="LOCAL" />
-      <updated>1737769391223</updated>
-    </task>
     <task id="LOCAL-00403" summary="NSVIT-66 넥스트론 백엔드 작동 상태 만들기">
       <option name="closed" value="true" />
       <created>1737785993492</created>
@@ -699,7 +683,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739338145883</updated>
     </task>
-    <option name="localTasksCounter" value="450" />
+    <task id="LOCAL-00450" summary="홍대미용실 / 테스트완료">
+      <option name="closed" value="true" />
+      <created>1739338318947</created>
+      <option name="number" value="00450" />
+      <option name="presentableId" value="LOCAL-00450" />
+      <option name="project" value="LOCAL" />
+      <updated>1739338318947</updated>
+    </task>
+    <task id="LOCAL-00451" summary="v3.23.0">
+      <option name="closed" value="true" />
+      <created>1739338339140</created>
+      <option name="number" value="00451" />
+      <option name="presentableId" value="LOCAL-00451" />
+      <option name="project" value="LOCAL" />
+      <updated>1739338339140</updated>
+    </task>
+    <option name="localTasksCounter" value="452" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -744,7 +744,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인" />
     <MESSAGE value="v3.9.0" />
     <MESSAGE value="v3.10.0 더보기 클릭 안되는 이슈 해결" />
     <MESSAGE value="api_notion_errorLog()" />
@@ -769,7 +768,8 @@
     <MESSAGE value="const targetUrlPattern 보강" />
     <MESSAGE value="하단 플레이스 이동후 동적 로딩후 다음작업" />
     <MESSAGE value="홍대미용실 / 테스트완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="홍대미용실 / 테스트완료" />
+    <MESSAGE value="v3.23.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3.23.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

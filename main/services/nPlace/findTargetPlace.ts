@@ -4,8 +4,8 @@ import wait from "waait";
 
 export const findTargetPlace = async ({
   page = undefined,
-  placeNumber = "1064966442",
-  isTest = false,
+  placeNumber = "1149709850",
+  isTest = true,
   delayTime = 0,
 }: {
   page?: Page;
@@ -16,7 +16,7 @@ export const findTargetPlace = async ({
   if (isTest) {
     const test = new PuppeteerEngine();
     await test.initialize({
-      url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%98%A4%EC%82%B0%ED%97%AC%EC%8A%A4%EC%9E%A5&tqi=iIw5Uwpr4bossudIv4dssssst%2B4-468708&query=%ED%99%8D%EB%8C%80%EB%AF%B8%EC%9A%A9%EC%8B%A4",
+      url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%97%BC%EC%B0%BD%EB%8F%99%EC%B9%B4%ED%8E%98",
       cookie: "",
       networkSpeed: "3G",
     });
@@ -114,7 +114,8 @@ async function moveToPlaceSection({ page }) {
 }
 
 function placeMapUrlPatternCheck({ page }) {
-  const targetUrlPattern = "https://search.pstatic.net/common/?autoRotate=true";
+  const targetUrlPattern =
+    "https://search.pstatic.net/common/?autoRotate=true&type=f84";
 
   // 프로미스를 사용하여 조건 충족 여부를 기다림
   const waitForTargetUrl = new Promise<void>(async (resolve, reject) => {
@@ -131,7 +132,7 @@ function placeMapUrlPatternCheck({ page }) {
 
       // 대상 URL 패턴이 포함된 경우
       if (url.includes(targetUrlPattern)) {
-        console.log(`Detected target URL: ${url}`);
+        // console.log(`Detected target URL: ${url}`);
         clearTimeout(timeoutId); // 타임아웃 해제
         resolve(); // 조건 충족으로 프로미스 종료
       }
@@ -154,7 +155,7 @@ async function clickTargetPlaceById({ placeNumber, page }) {
     for (const selector of selectors) {
       const element = await page.$(selector);
       if (element) {
-        console.log(`Found element with selector: ${selector}`);
+        // console.log(`Found element with selector: ${selector}`);
         await element.scrollIntoViewIfNeeded();
         await wait(1000);
         await element.click();
@@ -202,7 +203,7 @@ async function expandAndClickMore({ page }) {
             resolve(true); // 성공적으로 클릭했음을 알림
           }
         } catch (e) {
-          console.log(`Selector ${selector} failed: ${e.message}`);
+          // console.log(`Selector ${selector} failed: ${e.message}`);
           reject(e); // 실패 시 에러 전달
         }
       });
@@ -371,4 +372,4 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
   }
 }
 
-// findTargetPlace();
+findTargetPlace();
