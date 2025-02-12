@@ -5,7 +5,7 @@ import wait from "waait";
 export const findTargetPlace = async ({
   page = undefined,
   placeNumber = "1545638206",
-  isTest = false,
+  isTest = true,
   delayTime = 0,
 }: {
   page?: Page;
@@ -17,7 +17,7 @@ export const findTargetPlace = async ({
     if (isTest) {
       const test = new PuppeteerEngine();
       await test.initialize({
-        url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%95%BC%EB%8B%B9%EB%A7%9B%EC%A7%91+%EB%B4%89%EC%9A%B0%EB%A6%AC",
+        url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%95%BC%EB%8B%B9%EB%A7%9B%EC%A7%91+%EB%B4%89%EC%9A%B0%EB%A6%AC&tqi=iIYE0dqVWusssapRFaCssssstTK-065475&query=%EC%95%BC%EB%8B%B9%EB%A7%9B%EC%A7%91",
         cookie: "",
       });
       page = test.page;
@@ -127,46 +127,45 @@ async function expandAndClickMore({ page }) {
       '.m2Hh0.frzpe a[role="button"]',
     ];
 
-    // 모든 셀렉터에 대해 동시에 요소를 찾고 클릭을 시도
-    const clickPromises = selectors.map(async (selector) => {
-      try {
-        // 요소가 나타날 때까지 대기 (최대 5초)
-        const moreButton = await page.waitForSelector(selector, {
-          state: "visible",
-          timeout: 30 * 1000,
-        });
+    const clickPromises = selectors.map((selector) => {
+      return new Promise(async (resolve, reject) => {
+        try {
+          // 요소가 나타날 때까지 대기 (최대 30초)
+          const moreButton = await page.waitForSelector(selector, {
+            state: "visible",
+            timeout: 30 * 1000,
+          });
 
-        if (moreButton) {
-          await moreButton.scrollIntoViewIfNeeded();
-          await page.waitForTimeout(1000);
-          await moreButton.waitForElementState("stable");
-
-          await Promise.all([
-            moreButton.click(),
-            page.waitForLoadState("load", { timeout: 30 * 1000 }),
-          ]);
-
-          await wait(1500);
-          console.log(
-            `Successfully clicked more button with selector: ${selector}`,
-          );
-          return true;
+          if (moreButton) {
+            await moreButton.scrollIntoViewIfNeeded();
+            await page.waitForTimeout(1000);
+            await moreButton.waitForElementState("stable");
+            await Promise.all([
+              moreButton.click(),
+              page.waitForLoadState("load", { timeout: 30 * 1000 }),
+            ]);
+            await page.waitForTimeout(1500); // 추가 대기 시간
+            console.log(
+              `Successfully clicked more button with selector: ${selector}`,
+            );
+            resolve(true); // 성공적으로 클릭했음을 알림
+          }
+        } catch (e) {
+          console.log(`Selector ${selector} failed: ${e.message}`);
+          reject(e); // 실패 시 에러 전달
         }
-      } catch (e) {
-        console.log(`Selector ${selector} failed: ${e.message}`);
-        return false;
-      }
+      });
     });
 
-    // Promise.race로 가장 먼저 성공하는 클릭 시도를 기다림
+    // Promise.race로 가장 먼저 성공하거나 실패하는 것을 기다림
     const results = await Promise.race([
-      Promise.any(clickPromises),
+      Promise.any(clickPromises), // 하나라도 성공하면 종료
       new Promise((_, reject) =>
         setTimeout(
           () => reject(new Error("Timeout waiting for any button")),
           30 * 1000,
         ),
-      ),
+      ), // 전체 타임아웃 설정
     ]);
 
     if (!results) {
@@ -321,4 +320,4 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
   }
 }
 
-// findTargetPlace();
+findTargetPlace();
