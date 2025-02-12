@@ -77,9 +77,11 @@ async function lastActionRandomClick({ page, placeNumber, delayTime }) {
 async function clickTargetPlaceOrGoToNextStep({ page, placeNumber }) {
   try {
     console.log(1);
+    await moveToPlaceSection({ page });
+    console.log(2);
     const { waitForTargetUrl } = placeMapUrlPatternCheck({ page });
     await waitForTargetUrl;
-    console.log(2);
+    console.log(3);
     await clickTargetPlaceById({ placeNumber, page });
   } catch (e) {
     const pageO = await expandAndClickMore({ page });
@@ -100,6 +102,18 @@ async function clickTargetPlaceOrGoToNextStep({ page, placeNumber }) {
       }
     }
   }
+}
+
+async function moveToPlaceSection({ page }) {
+  const targetLocator = page.locator("h2.place_section_header");
+
+  // 요소가 화면에 나타날 때까지 대기
+  console.log("Waiting for the target element to appear...");
+  await targetLocator.waitFor({ state: "visible", timeout: 30 * 1000 }); // 최대 10초 대기
+
+  // 요소가 화면에 보이도록 스크롤
+  console.log("Scrolling to the target element...");
+  await targetLocator.scrollIntoViewIfNeeded();
 }
 
 function placeMapUrlPatternCheck({ page }) {
