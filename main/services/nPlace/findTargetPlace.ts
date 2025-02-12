@@ -4,8 +4,8 @@ import wait from "waait";
 
 export const findTargetPlace = async ({
   page = undefined,
-  placeNumber = "1376105447",
-  isTest = true,
+  placeNumber = "1064966442",
+  isTest = false,
   delayTime = 0,
 }: {
   page?: Page;
@@ -16,7 +16,7 @@ export const findTargetPlace = async ({
   if (isTest) {
     const test = new PuppeteerEngine();
     await test.initialize({
-      url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%95%BC%EB%8B%B9%EB%A7%9B%EC%A7%91&tqi=iIY2gspr44ossFCz4c0ssssstwC-128760&query=%EC%98%A4%EC%82%B0%ED%97%AC%EC%8A%A4%EC%9E%A5",
+      url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%98%A4%EC%82%B0%ED%97%AC%EC%8A%A4%EC%9E%A5&tqi=iIw5Uwpr4bossudIv4dssssst%2B4-468708&query=%ED%99%8D%EB%8C%80%EB%AF%B8%EC%9A%A9%EC%8B%A4",
       cookie: "",
       networkSpeed: "3G",
     });
@@ -76,12 +76,9 @@ async function lastActionRandomClick({ page, placeNumber, delayTime }) {
 
 async function clickTargetPlaceOrGoToNextStep({ page, placeNumber }) {
   try {
-    console.log(1);
     await moveToPlaceSection({ page });
-    console.log(2);
     const { waitForTargetUrl } = placeMapUrlPatternCheck({ page });
     await waitForTargetUrl;
-    console.log(3);
     await clickTargetPlaceById({ placeNumber, page });
   } catch (e) {
     const pageO = await expandAndClickMore({ page });
@@ -374,4 +371,4 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
   }
 }
 
-findTargetPlace();
+// findTargetPlace();
