@@ -307,46 +307,6 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
     </task>
-    <task id="LOCAL-00403" summary="NSVIT-66 넥스트론 백엔드 작동 상태 만들기">
-      <option name="closed" value="true" />
-      <created>1737785993492</created>
-      <option name="number" value="00403" />
-      <option name="presentableId" value="LOCAL-00403" />
-      <option name="project" value="LOCAL" />
-      <updated>1737785993492</updated>
-    </task>
-    <task id="LOCAL-00404" summary="NSVIT-66 넥스트론 백엔드 작동 상태 만들기">
-      <option name="closed" value="true" />
-      <created>1737786001265</created>
-      <option name="number" value="00404" />
-      <option name="presentableId" value="LOCAL-00404" />
-      <option name="project" value="LOCAL" />
-      <updated>1737786001265</updated>
-    </task>
-    <task id="LOCAL-00405" summary="NSVIT-66 넥스트론 백엔드 작동 상태 만들기">
-      <option name="closed" value="true" />
-      <created>1737786048055</created>
-      <option name="number" value="00405" />
-      <option name="presentableId" value="LOCAL-00405" />
-      <option name="project" value="LOCAL" />
-      <updated>1737786048055</updated>
-    </task>
-    <task id="LOCAL-00406" summary="NSVIT-68 넥스트론 프론트 연결하기">
-      <option name="closed" value="true" />
-      <created>1737787374977</created>
-      <option name="number" value="00406" />
-      <option name="presentableId" value="LOCAL-00406" />
-      <option name="project" value="LOCAL" />
-      <updated>1737787374977</updated>
-    </task>
-    <task id="LOCAL-00407" summary="NSVIT-70 네스비플레이스_로직3_네이버 빈페이지 시작">
-      <option name="closed" value="true" />
-      <created>1737788767620</created>
-      <option name="number" value="00407" />
-      <option name="presentableId" value="LOCAL-00407" />
-      <option name="project" value="LOCAL" />
-      <updated>1737788767620</updated>
-    </task>
     <task id="LOCAL-00408" summary="NSVIT-71 플레이스 구글_블로그 로직2 업데이트 / 네이버 빈페이지">
       <option name="closed" value="true" />
       <created>1737790008142</created>
@@ -699,7 +659,47 @@
       <option name="project" value="LOCAL" />
       <updated>1739338339140</updated>
     </task>
-    <option name="localTasksCounter" value="452" />
+    <task id="LOCAL-00452" summary="v3.23.3 플레이스 이미지 확인로직 강화">
+      <option name="closed" value="true" />
+      <created>1739340608937</created>
+      <option name="number" value="00452" />
+      <option name="presentableId" value="LOCAL-00452" />
+      <option name="project" value="LOCAL" />
+      <updated>1739340608937</updated>
+    </task>
+    <task id="LOCAL-00453" summary="v3.23.3 플레이스 이미지 확인로직 강화">
+      <option name="closed" value="true" />
+      <created>1739340617003</created>
+      <option name="number" value="00453" />
+      <option name="presentableId" value="LOCAL-00453" />
+      <option name="project" value="LOCAL" />
+      <updated>1739340617003</updated>
+    </task>
+    <task id="LOCAL-00454" summary="v3.23.3 플레이스 이미지 확인로직 강화">
+      <option name="closed" value="true" />
+      <created>1739340634587</created>
+      <option name="number" value="00454" />
+      <option name="presentableId" value="LOCAL-00454" />
+      <option name="project" value="LOCAL" />
+      <updated>1739340634587</updated>
+    </task>
+    <task id="LOCAL-00455" summary="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경">
+      <option name="closed" value="true" />
+      <created>1739356813921</created>
+      <option name="number" value="00455" />
+      <option name="presentableId" value="LOCAL-00455" />
+      <option name="project" value="LOCAL" />
+      <updated>1739356813921</updated>
+    </task>
+    <task id="LOCAL-00456" summary="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경">
+      <option name="closed" value="true" />
+      <created>1739356833911</created>
+      <option name="number" value="00456" />
+      <option name="presentableId" value="LOCAL-00456" />
+      <option name="project" value="LOCAL" />
+      <updated>1739356833911</updated>
+    </task>
+    <option name="localTasksCounter" value="457" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -744,8 +744,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v3.9.0" />
-    <MESSAGE value="v3.10.0 더보기 클릭 안되는 이슈 해결" />
     <MESSAGE value="api_notion_errorLog()" />
     <MESSAGE value="api_notion_errorLog() + userAgent 추가" />
     <MESSAGE value="v3.13.0" />
@@ -769,7 +767,9 @@
     <MESSAGE value="하단 플레이스 이동후 동적 로딩후 다음작업" />
     <MESSAGE value="홍대미용실 / 테스트완료" />
     <MESSAGE value="v3.23.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="v3.23.0" />
+    <MESSAGE value="v3.23.3 플레이스 이미지 확인로직 강화" />
+    <MESSAGE value="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
