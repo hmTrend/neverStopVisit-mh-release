@@ -23,39 +23,12 @@ export const findTargetPlace = async ({
       });
       page = test.page;
     }
-    try {
-      await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
-      await clickTargetPlaceById({ placeNumber, page });
-    } catch (e) {
-      const pageO = await expandAndClickMore({ page });
-      page = pageO;
-      try {
-        await clickTargetPlaceById({ placeNumber, page: pageO });
-      } catch (e) {
-        {
-          const pageO = await clickNextPageMoreLink({ page });
-          page = pageO;
-        }
-        {
-          const pageO = await clickTargetPlaceNextMorePage({
-            placeNumber,
-            page,
-          });
-          page = pageO;
-        }
-      }
-    }
-    const { excludeText } = await clickRandomTab({
-      page,
-      placeNumber,
-    });
-    await wait(delayTime);
-    await clickRandomTab({ page, placeNumber, excludeText });
-    await wait(3 * 1000);
+    await clickTargetPlaceOrGoToNextStep({ page, placeNumber });
+    await lastActionRandomClick({ page, placeNumber, delayTime });
     return { page };
   } catch (e) {
     console.error(e);
-    throw Error(`findTargetPlace > ${e.message}`);
+    throw Error(`findTargetPlaceNLastActionRandomClick > ${e.message}`);
   }
 };
 
@@ -87,6 +60,42 @@ async function clickTargetPlaceNextMorePage({ placeNumber, page }) {
       error,
     );
     throw error;
+  }
+}
+
+async function lastActionRandomClick({ page, placeNumber, delayTime }) {
+  const { excludeText } = await clickRandomTab({
+    page,
+    placeNumber,
+  });
+  await wait(delayTime);
+  await clickRandomTab({ page, placeNumber, excludeText });
+  await wait(3 * 1000);
+  return { page };
+}
+
+async function clickTargetPlaceOrGoToNextStep({ page, placeNumber }) {
+  try {
+    await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
+    await clickTargetPlaceById({ placeNumber, page });
+  } catch (e) {
+    const pageO = await expandAndClickMore({ page });
+    page = pageO;
+    try {
+      await clickTargetPlaceById({ placeNumber, page: pageO });
+    } catch (e) {
+      {
+        const pageO = await clickNextPageMoreLink({ page });
+        page = pageO;
+      }
+      {
+        const pageO = await clickTargetPlaceNextMorePage({
+          placeNumber,
+          page,
+        });
+        page = pageO;
+      }
+    }
   }
 }
 
