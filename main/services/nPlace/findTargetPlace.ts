@@ -5,7 +5,7 @@ import wait from "waait";
 export const findTargetPlace = async ({
   page = undefined,
   placeNumber = "1149709850",
-  isTest = true,
+  isTest = false,
   delayTime = 0,
 }: {
   page?: Page;
@@ -372,4 +372,4 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
   }
 }
 
-findTargetPlace();
+// findTargetPlace();
