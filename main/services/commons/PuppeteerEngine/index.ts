@@ -4,6 +4,8 @@ import { chromium } from "playwright-extra";
 import { initializeForPC } from "./initializeForPC";
 import { globalBrowsers } from "../../../lib/const/constVar";
 
+type NetworkSpeed = "LTE" | "3G";
+
 export class PuppeteerEngine {
   chromiumEngine: typeof chromium; // 'typeof chromium'으로 수정
   page: Page;
@@ -25,7 +27,17 @@ export class PuppeteerEngine {
     this.pages = []; // pages 배열 초기화
   }
 
-  async initialize({ url, cookie, type = "" }) {
+  async initialize({
+    url,
+    cookie,
+    type = "",
+    networkSpeed = "LTE",
+  }: {
+    url: string;
+    cookie: string;
+    type?: string;
+    networkSpeed?: NetworkSpeed; // 타입을 명시적으로 정의
+  }) {
     try {
       const { page, browser, userAgent } = await initialize({
         url,
@@ -35,6 +47,7 @@ export class PuppeteerEngine {
         browser: this.browser,
         cookie,
         type,
+        networkSpeed,
       });
       this.page = page;
       this.browser = browser;

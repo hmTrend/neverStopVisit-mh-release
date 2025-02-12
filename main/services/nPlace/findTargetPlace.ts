@@ -19,6 +19,7 @@ export const findTargetPlace = async ({
       await test.initialize({
         url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%95%BC%EB%8B%B9%EB%A7%9B%EC%A7%91+%EB%B4%89%EC%9A%B0%EB%A6%AC&tqi=iIYE0dqVWusssapRFaCssssstTK-065475&query=%EC%95%BC%EB%8B%B9%EB%A7%9B%EC%A7%91",
         cookie: "",
+        networkSpeed: "LTE",
       });
       page = test.page;
     }

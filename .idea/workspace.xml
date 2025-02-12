@@ -305,14 +305,6 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
     </task>
-    <task id="LOCAL-00393" summary="GetExcelList / 새로고침시 값없음 오류해결">
-      <option name="closed" value="true" />
-      <created>1737697691759</created>
-      <option name="number" value="00393" />
-      <option name="presentableId" value="LOCAL-00393" />
-      <option name="project" value="LOCAL" />
-      <updated>1737697691759</updated>
-    </task>
     <task id="LOCAL-00394" summary="Complete the day's counting tasks &gt; waiting 300s..">
       <option name="closed" value="true" />
       <created>1737699409404</created>
@@ -697,7 +689,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738828801913</updated>
     </task>
-    <option name="localTasksCounter" value="442" />
+    <task id="LOCAL-00442" summary="expandAndClickMore / 개선">
+      <option name="closed" value="true" />
+      <created>1739319782910</created>
+      <option name="number" value="00442" />
+      <option name="presentableId" value="LOCAL-00442" />
+      <option name="project" value="LOCAL" />
+      <updated>1739319782911</updated>
+    </task>
+    <option name="localTasksCounter" value="443" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -742,7 +742,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-70 네스비플레이스_로직3_네이버 빈페이지 시작" />
     <MESSAGE value="NSVIT-71 플레이스 구글_블로그 로직2 업데이트 / 네이버 빈페이지" />
     <MESSAGE value="NSVIT-77 넥스트론 백엔드 타수 카운팅 연도" />
     <MESSAGE value="NSVIT-76 백엔드 값 가져올때, 현재타수가 맥스타수보다 같거나 많다면 에러처리" />
@@ -767,7 +766,8 @@
     <MESSAGE value="userAgent 수정" />
     <MESSAGE value="에러로그에 로직타입추가" />
     <MESSAGE value="쇼핑 / api_notion_shopping_errorLog / 에러로그추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="쇼핑 / api_notion_shopping_errorLog / 에러로그추가" />
+    <MESSAGE value="expandAndClickMore / 개선" />
+    <option name="LAST_COMMIT_MESSAGE" value="expandAndClickMore / 개선" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
