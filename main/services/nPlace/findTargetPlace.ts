@@ -4,8 +4,8 @@ import wait from "waait";
 
 export const findTargetPlace = async ({
   page = undefined,
-  placeNumber = "1545638206",
-  isTest = false,
+  placeNumber = "1376105447",
+  isTest = true,
   delayTime = 0,
 }: {
   page?: Page;
@@ -16,9 +16,9 @@ export const findTargetPlace = async ({
   if (isTest) {
     const test = new PuppeteerEngine();
     await test.initialize({
-      url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%95%BC%EB%8B%B9%EB%A7%9B%EC%A7%91+%EB%B4%89%EC%9A%B0%EB%A6%AC&tqi=iIYE0dqVWusssapRFaCssssstTK-065475&query=%EC%95%BC%EB%8B%B9%EB%A7%9B%EC%A7%91",
+      url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EC%95%BC%EB%8B%B9%EB%A7%9B%EC%A7%91&tqi=iIY2gspr44ossFCz4c0ssssstwC-128760&query=%EC%98%A4%EC%82%B0%ED%97%AC%EC%8A%A4%EC%9E%A5",
       cookie: "",
-      networkSpeed: "LTE",
+      networkSpeed: "3G",
     });
     page = test.page;
   }
@@ -103,7 +103,7 @@ async function clickTargetPlaceOrGoToNextStep({ page, placeNumber }) {
 }
 
 function placeMapUrlPatternCheck({ page }) {
-  const targetUrlPattern = "https://search.pstatic.net/common/";
+  const targetUrlPattern = "https://search.pstatic.net/common/?autoRotate=true";
 
   // 프로미스를 사용하여 조건 충족 여부를 기다림
   const waitForTargetUrl = new Promise<void>(async (resolve, reject) => {
@@ -120,6 +120,7 @@ function placeMapUrlPatternCheck({ page }) {
 
       // 대상 URL 패턴이 포함된 경우
       if (url.includes(targetUrlPattern)) {
+        console.log(`Detected target URL: ${url}`);
         clearTimeout(timeoutId); // 타임아웃 해제
         resolve(); // 조건 충족으로 프로미스 종료
       }
@@ -280,7 +281,7 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
     // 버튼이 보일 때까지 대기
     await page.waitForSelector(selectorReady, {
       state: "visible",
-      timeout: 60 * 1000,
+      timeout: 90 * 1000,
     });
     // 모든 탭 메뉴 요소 찾기
     const selector = `a[href*="/${placeNumber}/"][role="tab"].tpj9w._tab-menu`;
@@ -359,4 +360,4 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
   }
 }
 
-// findTargetPlace();
+findTargetPlace();

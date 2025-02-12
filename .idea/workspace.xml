@@ -143,7 +143,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/_commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.targetKeywordSearchWithEmptyPage.ts">
+  <component name="RunManager" selected="TypeScript.findTargetPlace.ts">
     <configuration name="api.notion.shopping.errorLog.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -214,9 +214,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.findTargetPlace.ts" />
         <item itemvalue="TypeScript.targetKeywordSearchWithEmptyPage.ts" />
         <item itemvalue="TypeScript.targetKeywordSearch.ts" />
-        <item itemvalue="TypeScript.findTargetPlace.ts" />
         <item itemvalue="TypeScript.api.notion.shopping.errorLog.ts" />
         <item itemvalue="TypeScript.initialize.ts" />
       </list>
@@ -306,14 +306,6 @@
       <workItem from="1738738648125" duration="3703000" />
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
-    </task>
-    <task id="LOCAL-00397" summary="NSVIT-57 로그인체크 &gt; 비동기 안내문 끄기">
-      <option name="closed" value="true" />
-      <created>1737703632410</created>
-      <option name="number" value="00397" />
-      <option name="presentableId" value="LOCAL-00397" />
-      <option name="project" value="LOCAL" />
-      <updated>1737703632410</updated>
     </task>
     <task id="LOCAL-00398" summary="NSVIT-58 hasShoppingSection()">
       <option name="closed" value="true" />
@@ -699,7 +691,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739323968020</updated>
     </task>
-    <option name="localTasksCounter" value="446" />
+    <task id="LOCAL-00446" summary="targetKeywordSearchWithEmptyPage">
+      <option name="closed" value="true" />
+      <created>1739324789347</created>
+      <option name="number" value="00446" />
+      <option name="presentableId" value="LOCAL-00446" />
+      <option name="project" value="LOCAL" />
+      <updated>1739324789347</updated>
+    </task>
+    <option name="localTasksCounter" value="447" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -744,7 +744,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v3.6.0" />
     <MESSAGE value="NSVIT-79 미로그인시 노션API 전달하기" />
     <MESSAGE value="NSVIT-80 killlo 네스비 플레이스 일일타수 DB / 시분 표시" />
     <MESSAGE value="NSVIT-69 노션 API 연결하기" />
@@ -769,7 +768,8 @@
     <MESSAGE value=" networkSpeed: &quot;LTE&quot; 추가" />
     <MESSAGE value="findTargetPlaceNLastActionRandomClick" />
     <MESSAGE value="placeMapUrlPatternCheck" />
-    <option name="LAST_COMMIT_MESSAGE" value="placeMapUrlPatternCheck" />
+    <MESSAGE value="targetKeywordSearchWithEmptyPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="targetKeywordSearchWithEmptyPage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
