@@ -4,7 +4,7 @@ import wait from "waait";
 
 export const findTargetPlace = async ({
   page = undefined,
-  placeNumber = "1149709850",
+  placeNumber = "1034276844",
   isTest = false,
   delayTime = 0,
 }: {
@@ -16,7 +16,7 @@ export const findTargetPlace = async ({
   if (isTest) {
     const test = new PuppeteerEngine();
     await test.initialize({
-      url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%97%BC%EC%B0%BD%EB%8F%99%EC%B9%B4%ED%8E%98",
+      url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EB%85%B8%EB%9F%89%EC%A7%84+%EC%8A%A4%ED%84%B0%EB%94%94%EB%A3%B8&tqi=iIw9usprffossTMBwSGssssssHV-496993&query=%EB%85%B8%EB%9F%89%EC%A7%84%EC%8A%A4%ED%84%B0%EB%94%94%EB%A3%B8",
       cookie: "",
       networkSpeed: "3G",
     });
@@ -76,19 +76,30 @@ async function lastActionRandomClick({ page, placeNumber, delayTime }) {
 
 async function clickTargetPlaceOrGoToNextStep({ page, placeNumber }) {
   try {
+    // const { waitForTargetUrl } = placeMapUrlPatternCheck({ page });
+    // await waitForTargetUrl;
+    console.log(1111);
     await moveToPlaceSection({ page });
-    const { waitForTargetUrl } = placeMapUrlPatternCheck({ page });
-    await waitForTargetUrl;
+    console.log(2222);
     await clickTargetPlaceById({ placeNumber, page });
   } catch (e) {
+    console.log(3333);
     const pageO = await expandAndClickMore({ page });
+    console.log(4444);
+
     page = pageO;
     try {
+      console.log(111);
       await clickTargetPlaceById({ placeNumber, page: pageO });
+      console.log(222);
     } catch (e) {
-      {
+      try {
+        console.log(222222);
         const pageO = await clickNextPageMoreLink({ page });
+        console.log(333);
         page = pageO;
+      } catch (e) {
+        console.error(`clickNextPageMoreLink > ${e.message}`);
       }
       {
         const pageO = await clickTargetPlaceNextMorePage({
@@ -189,13 +200,21 @@ async function expandAndClickMore({ page }) {
           });
 
           if (moreButton) {
-            await moreButton.scrollIntoViewIfNeeded();
-            await page.waitForTimeout(1000);
-            await moreButton.waitForElementState("stable");
-            await Promise.all([
-              moreButton.click(),
-              page.waitForLoadState("load", { timeout: 30 * 1000 }),
-            ]);
+            for (let i = 0; i < 5; i++) {
+              try {
+                await page.waitForTimeout(1000);
+                await moreButton.waitForElementState("stable");
+                await moreButton.scrollIntoViewIfNeeded();
+                await wait(1000);
+                await Promise.all([
+                  moreButton.click(),
+                  page.waitForLoadState("load", { timeout: 10 * 1000 }),
+                ]);
+                break;
+              } catch (e) {
+                console.error(`moreButton > ${e.message} / ${i}step`);
+              }
+            }
             await page.waitForTimeout(1500); // 추가 대기 시간
             console.log(
               `Successfully clicked more button with selector: ${selector}`,
@@ -244,9 +263,13 @@ async function clickNextPageMoreLink({ page }) {
     let link = null;
 
     // 각 선택자로 요소 찾기 시도
+    console.log(1);
     for (const selector of linkSelectors) {
+      console.log(2);
       link = await page.$(selector);
+      console.log(3);
       if (link) {
+        console.log(4);
         break;
       }
     }
@@ -266,8 +289,11 @@ async function clickNextPageMoreLink({ page }) {
         await link.waitForElementState("stable");
 
         // 클릭 수행 및 로드 상태 대기
+        console.log(11);
         await link.click();
+        console.log(22);
         await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
+        console.log(33);
         console.log("Successfully clicked hospital link");
         return page;
       } else {
