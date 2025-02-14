@@ -23,6 +23,11 @@ export const findTargetPlace = async ({
     page = test.page;
   }
   try {
+    const { waitForTargetUrl } = placeMapUrlPatternCheck({
+      page,
+    });
+    await waitForTargetUrl;
+    await wait(3 * 1000);
     await clickTargetPlaceOrGoToNextStep({ page, placeNumber });
     await lastActionRandomClick({ page, placeNumber, delayTime });
     return { page };
@@ -64,6 +69,7 @@ async function clickTargetPlaceNextMorePage({ placeNumber, page }) {
 }
 
 async function lastActionRandomClick({ page, placeNumber, delayTime }) {
+  await page.waitForSelector('a[role="button"].QKxqx'); // 알림받기 페이지 기다리기
   const { excludeText } = await clickRandomTab({
     page,
     placeNumber,
@@ -118,17 +124,10 @@ async function moveToPlaceSection({ page }) {
 function placeMapUrlPatternCheck({ page }) {
   const targetUrlPattern = "https://map.pstatic.net/nrb/styles/basic/";
   const targetUrlPattern_beauty =
-    "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f320";
+    "https://search.pstatic.net/common/?autoRotate=true&type=w278";
 
   // 프로미스를 사용하여 조건 충족 여부를 기다림
   const waitForTargetUrl = new Promise<void>(async (resolve, reject) => {
-    let timeoutId;
-
-    const timeout = 60 * 1000;
-    timeoutId = setTimeout(() => {
-      reject(new Error(`Timeout waiting for URL pattern: ${targetUrlPattern}`));
-    }, timeout);
-
     // 네트워크 응답 감시
     page.on("response", async (response) => {
       const url = response.url();
@@ -139,7 +138,6 @@ function placeMapUrlPatternCheck({ page }) {
         url.includes(targetUrlPattern_beauty)
       ) {
         console.log(`Detected target URL: ${url}`);
-        clearTimeout(timeoutId); // 타임아웃 해제
         resolve(); // 조건 충족으로 프로미스 종료
       }
     });
@@ -195,34 +193,12 @@ async function expandAndClickMore({ page }) {
           });
 
           if (moreButton) {
-            for (let i = 0; i < 5; i++) {
-              try {
-                await page.waitForTimeout(1000);
-                await moreButton.waitForElementState("stable");
-                await moreButton.scrollIntoViewIfNeeded();
-                await wait(1000);
-                if (i === 0) {
-                  console.log("this is moreButton > 0");
-                  await Promise.all([
-                    moreButton.click(),
-                    page.waitForLoadState("load", { timeout: 1000 }),
-                  ]);
-                } else {
-                  console.log("this is moreButton > 1 up");
-                  const { waitForTargetUrl } = placeMapUrlPatternCheck({
-                    page,
-                  });
-                  console.log("this is moreButton > 1 up 1");
-                  await waitForTargetUrl;
-                  await wait(3 * 1000);
-                  console.log("this is moreButton > 1 up 2");
-                  await moreButton.click();
-                }
-
-                break;
-              } catch (e) {
-                console.error(`moreButton > ${e.message} / ${i}step`);
-              }
+            try {
+              await moreButton.scrollIntoViewIfNeeded();
+              await moreButton.click();
+            } catch (e) {
+              console.error(`moreButton > ${e.message}`);
+              await wait(3 * 1000);
             }
             await page.waitForTimeout(1500); // 추가 대기 시간
             console.log(
@@ -272,13 +248,9 @@ async function clickNextPageMoreLink({ page }) {
     let link = null;
 
     // 각 선택자로 요소 찾기 시도
-    console.log(1);
     for (const selector of linkSelectors) {
-      console.log(2);
       link = await page.$(selector);
-      console.log(3);
       if (link) {
-        console.log(4);
         break;
       }
     }
@@ -286,23 +258,12 @@ async function clickNextPageMoreLink({ page }) {
     if (link) {
       // 요소가 보이는지 확인
       const isVisible = await link.isVisible();
-
       if (isVisible) {
-        // 요소가 화면에 보이도록 스크롤
         await link.scrollIntoViewIfNeeded();
-
-        // 잠시 대기
         await page.waitForTimeout(1000);
-
-        // 클릭하기 전에 요소가 안정적인지 확인
         await link.waitForElementState("stable");
-
-        // 클릭 수행 및 로드 상태 대기
-        console.log(11);
         await link.click();
-        console.log(22);
         await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
-        console.log(33);
         console.log("Successfully clicked hospital link");
         return page;
       } else {
@@ -321,8 +282,6 @@ async function clickNextPageMoreLink({ page }) {
 
 async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
   try {
-    await page.waitForSelector('a[role="button"].QKxqx'); // 알림버튼 기다리기
-
     // 모든 탭 메뉴 요소 찾기
     const selector = `a[href*="/${placeNumber}/"][role="tab"].tpj9w._tab-menu`;
     const tabs = await page.$$(selector);

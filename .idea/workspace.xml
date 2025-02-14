@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="더보기 클릭 못하는 이슈 해결">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="알림버튼 기다리기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/commons/naver/targetKeywordSearchWithEmptyPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/targetKeywordSearchWithEmptyPage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
     </list>
@@ -305,15 +304,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="4168000" />
-    </task>
-    <task id="LOCAL-00417" summary="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인">
-      <option name="closed" value="true" />
-      <created>1737960252378</created>
-      <option name="number" value="00417" />
-      <option name="presentableId" value="LOCAL-00417" />
-      <option name="project" value="LOCAL" />
-      <updated>1737960252378</updated>
+      <workItem from="1739530935139" duration="9307000" />
     </task>
     <task id="LOCAL-00418" summary="v3.9.0">
       <option name="closed" value="true" />
@@ -699,7 +690,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739528096524</updated>
     </task>
-    <option name="localTasksCounter" value="466" />
+    <task id="LOCAL-00466" summary="알림버튼 기다리기">
+      <option name="closed" value="true" />
+      <created>1739536081025</created>
+      <option name="number" value="00466" />
+      <option name="presentableId" value="LOCAL-00466" />
+      <option name="project" value="LOCAL" />
+      <updated>1739536081025</updated>
+    </task>
+    <option name="localTasksCounter" value="467" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -744,7 +743,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="증미역카페 / 찾을때 느림대응" />
     <MESSAGE value="NSVIT-86 valtio 셋팅" />
     <MESSAGE value="NSVIT-87 1개작업후 2번째 작업시 창 안닫히게 하기" />
     <MESSAGE value="NSV-40 / 연속작업 10개까지 셋팅" />
@@ -769,7 +767,8 @@
     <MESSAGE value="console log 제거" />
     <MESSAGE value="globalBrowsers.nShoppingLogic4_nvMid" />
     <MESSAGE value="더보기 클릭 못하는 이슈 해결" />
-    <option name="LAST_COMMIT_MESSAGE" value="더보기 클릭 못하는 이슈 해결" />
+    <MESSAGE value="알림버튼 기다리기" />
+    <option name="LAST_COMMIT_MESSAGE" value="알림버튼 기다리기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
