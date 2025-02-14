@@ -3,6 +3,7 @@ export const globalBrowsers = {
   myIp: "",
   createdAt: "",
   placeNumbers: [],
+  nShoppingLogic4_nvMid: [],
 };
 
 export const CookieLoggedIn = {
