@@ -55,10 +55,13 @@ export const targetKeywordSearchWithEmptyPage = async ({
       // 검색 버튼이 나타날 때까지 대기하고 클릭
       await searchButton.waitFor({ state: "visible", timeout: 60 * 1000 });
       await searchButton.click();
-      await page.waitForLoadState("networkidle");
+      await page.waitForLoadState("domcontentloaded");
       await wait(1000);
     } catch (error) {
-      console.log("I can't find the search bar. > ", error.message);
+      console.log(
+        "searchButton > I can't find the search bar. > ",
+        error.message,
+      );
       throw Error(
         "ERR > targetKeywordSearchWithEmptyPage > I can't find the search bar.",
       );

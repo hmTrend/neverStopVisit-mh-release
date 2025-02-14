@@ -5,7 +5,7 @@ import wait from "waait";
 export const findTargetPlace = async ({
   page = undefined,
   placeNumber = "1687478893",
-  isTest = true,
+  isTest = false,
   delayTime = 0,
 }: {
   page?: Page;
@@ -116,8 +116,9 @@ async function moveToPlaceSection({ page }) {
 }
 
 function placeMapUrlPatternCheck({ page }) {
-  const targetUrlPattern =
-    "https://search.pstatic.net/common/?autoRotate=true&type=f84";
+  const targetUrlPattern = "https://map.pstatic.net/nrb/styles/basic/";
+  const targetUrlPattern_beauty =
+    "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f320";
 
   // 프로미스를 사용하여 조건 충족 여부를 기다림
   const waitForTargetUrl = new Promise<void>(async (resolve, reject) => {
@@ -133,8 +134,11 @@ function placeMapUrlPatternCheck({ page }) {
       const url = response.url();
 
       // 대상 URL 패턴이 포함된 경우
-      if (url.includes(targetUrlPattern)) {
-        // console.log(`Detected target URL: ${url}`);
+      if (
+        url.includes(targetUrlPattern) ||
+        url.includes(targetUrlPattern_beauty)
+      ) {
+        console.log(`Detected target URL: ${url}`);
         clearTimeout(timeoutId); // 타임아웃 해제
         resolve(); // 조건 충족으로 프로미스 종료
       }
@@ -210,6 +214,7 @@ async function expandAndClickMore({ page }) {
                   });
                   console.log("this is moreButton > 1 up 1");
                   await waitForTargetUrl;
+                  await wait(3 * 1000);
                   console.log("this is moreButton > 1 up 2");
                   await moreButton.click();
                 }
@@ -316,15 +321,8 @@ async function clickNextPageMoreLink({ page }) {
 
 async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
   try {
-    console.log("excludeText 33333");
-    console.log(excludeText);
-    const selectorReady = 'a.DDfpb[role="button"]';
+    await page.waitForSelector('a[role="button"].QKxqx'); // 알림버튼 기다리기
 
-    // 버튼이 보일 때까지 대기
-    await page.waitForSelector(selectorReady, {
-      state: "visible",
-      timeout: 90 * 1000,
-    });
     // 모든 탭 메뉴 요소 찾기
     const selector = `a[href*="/${placeNumber}/"][role="tab"].tpj9w._tab-menu`;
     const tabs = await page.$$(selector);
@@ -402,4 +400,4 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
   }
 }
 
-findTargetPlace();
+// findTargetPlace();
