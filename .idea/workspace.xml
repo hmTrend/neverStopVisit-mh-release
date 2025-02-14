@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v3.23.9 네트워크환경으로 인한 &lt;더보기&gt; 클릭 못함 이슈 추가해결">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v3.26.0 연속 작업시 창끄고 다시 열기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/const/constVar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/const/constVar.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +167,7 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="initialize.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -305,14 +304,6 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-    </task>
-    <task id="LOCAL-00411" summary="v3.6.0">
-      <option name="closed" value="true" />
-      <created>1737798010321</created>
-      <option name="number" value="00411" />
-      <option name="presentableId" value="LOCAL-00411" />
-      <option name="project" value="LOCAL" />
-      <updated>1737798010321</updated>
     </task>
     <task id="LOCAL-00412" summary="NSVIT-79 미로그인시 노션API 전달하기">
       <option name="closed" value="true" />
@@ -698,7 +689,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739516043756</updated>
     </task>
-    <option name="localTasksCounter" value="460" />
+    <task id="LOCAL-00460" summary="v3.26.0 연속 작업시 창끄고 다시 열기">
+      <option name="closed" value="true" />
+      <created>1739522780166</created>
+      <option name="number" value="00460" />
+      <option name="presentableId" value="LOCAL-00460" />
+      <option name="project" value="LOCAL" />
+      <updated>1739522780166</updated>
+    </task>
+    <option name="localTasksCounter" value="461" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -743,7 +742,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="api_notion_errorLog() + userAgent 추가" />
     <MESSAGE value="v3.13.0" />
     <MESSAGE value="NSVIT-85 / 증미역카페 / 오류로그 패치하기" />
     <MESSAGE value="findTargetPlace &gt; networkidle" />
@@ -768,7 +766,8 @@
     <MESSAGE value="v3.23.3 플레이스 이미지 확인로직 강화" />
     <MESSAGE value="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경" />
     <MESSAGE value="v3.23.9" />
-    <option name="LAST_COMMIT_MESSAGE" value="v3.23.9" />
+    <MESSAGE value="v3.26.0 연속 작업시 창끄고 다시 열기" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3.26.0 연속 작업시 창끄고 다시 열기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

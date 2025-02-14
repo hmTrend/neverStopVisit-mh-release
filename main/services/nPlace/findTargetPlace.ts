@@ -4,7 +4,7 @@ import wait from "waait";
 
 export const findTargetPlace = async ({
   page = undefined,
-  placeNumber = "1034276844",
+  placeNumber = "20972819",
   isTest = false,
   delayTime = 0,
 }: {
@@ -16,7 +16,7 @@ export const findTargetPlace = async ({
   if (isTest) {
     const test = new PuppeteerEngine();
     await test.initialize({
-      url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EB%85%B8%EB%9F%89%EC%A7%84%EC%8A%A4%ED%84%B0%EB%94%94%EB%A3%B8&tqi=iIxH3lqVWusssF%2FxmnsssssstvG-385305&query=%EC%97%BC%EC%B0%BD%EB%8F%99+%EB%93%9C%EB%A6%BD%EC%BB%A4%ED%94%BC",
+      url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%98%A4%EC%82%B0%ED%97%AC%EC%8A%A4%EC%9E%A5",
       cookie: "",
       networkSpeed: "3G",
     });
@@ -311,7 +311,7 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
     // 버튼이 보일 때까지 대기
     await page.waitForSelector(selectorReady, {
       state: "visible",
-      timeout: 90 * 1000,
+      timeout: 60 * 1000,
     });
     // 모든 탭 메뉴 요소 찾기
     const selector = `a[href*="/${placeNumber}/"][role="tab"].tpj9w._tab-menu`;
