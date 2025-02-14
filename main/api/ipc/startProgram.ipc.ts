@@ -78,12 +78,11 @@ async function executeInChunks({
         let startProgramList = [];
         if (continuousWork === 1) {
           await networkIpChange({ common });
-
           await monitorNetworkAndStart();
-          currentNShoppingLogic4Instance = new NShoppingLogic4();
-          currentNShoppingInstance = new NShopping();
-          currentNPlaceInstance = new NPlace();
         }
+        currentNShoppingLogic4Instance = new NShoppingLogic4();
+        currentNShoppingInstance = new NShopping();
+        currentNPlaceInstance = new NPlace();
         try {
           if (nShoppingLogic4.isStart) {
             console.log("this is nShoppingLogic4");
@@ -114,9 +113,7 @@ async function executeInChunks({
           await wait(3000);
           const nowCount = nowCountSetup(continuousWork, common.ipChangeCount);
           continuousWork = nowCount;
-          if (continuousWork === 1) {
-            await closeAllBrowsers();
-          }
+          await closeAllBrowsers();
           await wait(5000);
         } catch (e) {
           console.log("e.message >>>>>> test3333");

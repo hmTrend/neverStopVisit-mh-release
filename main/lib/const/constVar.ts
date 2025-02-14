@@ -2,6 +2,7 @@ export const globalBrowsers = {
   browsers: [],
   myIp: "",
   createdAt: "",
+  placeNumbers: [],
 };
 
 export const CookieLoggedIn = {

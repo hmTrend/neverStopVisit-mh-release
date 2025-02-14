@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v3.19.0">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v3.23.9 네트워크환경으로 인한 &lt;더보기&gt; 클릭 못함 이슈 추가해결">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/const/constVar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/const/constVar.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +117,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {

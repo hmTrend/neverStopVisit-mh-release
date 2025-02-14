@@ -17,41 +17,47 @@ import { logicTypeN_PLACE } from "./logicType.PLACE";
 import { apiNotionPatchDayNowCount } from "../../api/notion/api.patchDayNowCount";
 import { loggedInCheckWithEmptyPage } from "../commons/naver/loggedInCheckWithEmptyPage";
 import { api_notion_errorLog } from "../../api/notion/api.notion.errorLog";
+import { globalBrowsers } from "../../lib/const/constVar";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace, mainWindow, continuousWork }): Promise<void> {
     try {
+      console.log(1);
       if (continuousWork === 1) {
-        this.placeNumbers = [];
+        globalBrowsers.placeNumbers = [];
       }
+      console.log(2);
       for (let i = 0; i <= 5; i++) {
         try {
           var ExcelData;
           {
-            if (this.placeNumbers.length === 0) {
-              console.log("this is this.placeNumbers.length === 0");
+            console.log(3);
+            console.log(globalBrowsers.placeNumbers);
+            if (globalBrowsers.placeNumbers.length === 0) {
+              console.log("this is globalBrowsers.placeNumbers.length === 0");
               const { data: excelData } =
                 await GetNPlaceExcelAlignFlatTargetOne({
                   groupFid: nPlace.selectedGroup.groupId,
                 });
               ExcelData = excelData;
             } else {
-              console.log("this.placeNumbers 55553433333");
-              console.log(this.placeNumbers);
+              console.log("globalBrowsers.placeNumbers 55553433333");
+              console.log(globalBrowsers.placeNumbers);
               const { data: excelData } =
                 await GetNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber({
                   groupFid: nPlace.selectedGroup.groupId,
-                  placeNumber: this.placeNumbers,
+                  placeNumber: globalBrowsers.placeNumbers,
                 });
               ExcelData = excelData;
             }
           }
+          console.log(4);
           const { targetKeyword, targetBlog, placeNumber } = ExcelData;
           {
             this.query = targetKeyword;
             this.nvMid = targetBlog;
             this.placeNumber = placeNumber;
-            this.placeNumbers.push(parseInt(placeNumber));
+            globalBrowsers.placeNumbers.push(parseInt(placeNumber));
           }
           break;
         } catch (e) {
@@ -62,7 +68,7 @@ export class NPlace extends PuppeteerEngine {
             throw Error(`err > NPlace > start > ${e.message}`);
           }
           if (e.message.includes("No data to import into a continuous work")) {
-            this.placeNumbers = [];
+            globalBrowsers.placeNumbers = [];
             console.error(`err > NPlace > start > ${e.message}`);
             throw Error(`err > NPlace > start > ${e.message}`);
           }
@@ -73,41 +79,34 @@ export class NPlace extends PuppeteerEngine {
           }
         }
       }
-      if (continuousWork === 1) {
-        for (let i = 0; i <= 5; i++) {
-          try {
-            const { data: fingerPrintData } =
-              await GetFingerPrintTargetExcelOne({
-                groupFid: nPlace.fingerPrint.groupId,
-              });
 
-            this.targetCookieId = fingerPrintData._id;
-            this.targetCookie = JSON.parse(fingerPrintData.cookie);
+      for (let i = 0; i <= 5; i++) {
+        try {
+          const { data: fingerPrintData } = await GetFingerPrintTargetExcelOne({
+            groupFid: nPlace.fingerPrint.groupId,
+          });
 
-            break;
-          } catch (e) {
-            await wait(3 * 1000);
-            console.error(e.message);
-            if (i === 3) {
-              console.error(
-                "More than 3 errors > GetFingerPrintTargetExcelOne",
-              );
-              throw Error("More than 3 errors > GetFingerPrintTargetExcelOne");
-            }
+          this.targetCookieId = fingerPrintData._id;
+          this.targetCookie = JSON.parse(fingerPrintData.cookie);
+
+          break;
+        } catch (e) {
+          await wait(3 * 1000);
+          console.error(e.message);
+          if (i === 3) {
+            console.error("More than 3 errors > GetFingerPrintTargetExcelOne");
+            throw Error("More than 3 errors > GetFingerPrintTargetExcelOne");
           }
         }
-        await super.initialize({
-          url:
-            nPlace.logicType === "NAVER_BLOG" || nPlace.logicType === "N_PLACE"
-              ? "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query="
-              : "https://www.google.com/",
-          cookie: this.targetCookie,
-        });
-      } else {
-        await this.page.goto(
-          "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
-        );
       }
+      await super.initialize({
+        url:
+          nPlace.logicType === "NAVER_BLOG" || nPlace.logicType === "N_PLACE"
+            ? "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query="
+            : "https://www.google.com/",
+        cookie: this.targetCookie,
+      });
+
       {
         if (nPlace.logicType === "GOOGLE_BLOG") {
           const { page } = await googleToNaver({ page: this.page });
