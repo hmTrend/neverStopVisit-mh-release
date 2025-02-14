@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="console log 제거">
-      <change beforePath="$PROJECT_DIR$/main/lib/const/constVar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/const/constVar.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="globalBrowsers.nShoppingLogic4_nvMid">
+      <change afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/logicType-SHOPPING_PAGE.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,7 @@
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/lib/network",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/nShoppingLogic4",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -129,10 +129,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/services/nShoppingLogic4" />
       <recent name="$PROJECT_DIR$/main/lib/network" />
       <recent name="$PROJECT_DIR$/main/api/notion" />
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
-      <recent name="$PROJECT_DIR$/main/services/nShoppingLogic4" />
       <recent name="$PROJECT_DIR$/main/services/nPlace" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -305,14 +305,6 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-    </task>
-    <task id="LOCAL-00415" summary="NSVIT-69 노션 API 연결하기">
-      <option name="closed" value="true" />
-      <created>1737958361272</created>
-      <option name="number" value="00415" />
-      <option name="presentableId" value="LOCAL-00415" />
-      <option name="project" value="LOCAL" />
-      <updated>1737958361272</updated>
     </task>
     <task id="LOCAL-00416" summary="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인">
       <option name="closed" value="true" />
@@ -698,7 +690,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739523851777</updated>
     </task>
-    <option name="localTasksCounter" value="464" />
+    <task id="LOCAL-00464" summary="globalBrowsers.nShoppingLogic4_nvMid">
+      <option name="closed" value="true" />
+      <created>1739524243241</created>
+      <option name="number" value="00464" />
+      <option name="presentableId" value="LOCAL-00464" />
+      <option name="project" value="LOCAL" />
+      <updated>1739524243241</updated>
+    </task>
+    <option name="localTasksCounter" value="465" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -743,7 +743,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSVIT-85 / 증미역카페 / 오류로그 패치하기" />
     <MESSAGE value="findTargetPlace &gt; networkidle" />
     <MESSAGE value="증미역카페 / 찾을때 느림대응" />
     <MESSAGE value="NSVIT-86 valtio 셋팅" />
@@ -768,7 +767,8 @@
     <MESSAGE value="v3.23.9" />
     <MESSAGE value="v3.26.0 연속 작업시 창끄고 다시 열기" />
     <MESSAGE value="console log 제거" />
-    <option name="LAST_COMMIT_MESSAGE" value="console log 제거" />
+    <MESSAGE value="globalBrowsers.nShoppingLogic4_nvMid" />
+    <option name="LAST_COMMIT_MESSAGE" value="globalBrowsers.nShoppingLogic4_nvMid" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

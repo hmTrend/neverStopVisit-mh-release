@@ -4,8 +4,8 @@ import wait from "waait";
 
 export const findTargetPlace = async ({
   page = undefined,
-  placeNumber = "20972819",
-  isTest = false,
+  placeNumber = "1687478893",
+  isTest = true,
   delayTime = 0,
 }: {
   page?: Page;
@@ -16,7 +16,7 @@ export const findTargetPlace = async ({
   if (isTest) {
     const test = new PuppeteerEngine();
     await test.initialize({
-      url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%98%A4%EC%82%B0%ED%97%AC%EC%8A%A4%EC%9E%A5",
+      url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%97%BC%EC%B0%BD%EB%8F%99%EC%B9%B4%ED%8E%98",
       cookie: "",
       networkSpeed: "3G",
     });
@@ -82,7 +82,6 @@ async function clickTargetPlaceOrGoToNextStep({ page, placeNumber }) {
     await clickTargetPlaceById({ placeNumber, page });
   } catch (e) {
     const pageO = await expandAndClickMore({ page });
-
     page = pageO;
     try {
       await clickTargetPlaceById({ placeNumber, page: pageO });
@@ -198,10 +197,23 @@ async function expandAndClickMore({ page }) {
                 await moreButton.waitForElementState("stable");
                 await moreButton.scrollIntoViewIfNeeded();
                 await wait(1000);
-                await Promise.all([
-                  moreButton.click(),
-                  page.waitForLoadState("load", { timeout: 10 * 1000 }),
-                ]);
+                if (i === 0) {
+                  console.log("this is moreButton > 0");
+                  await Promise.all([
+                    moreButton.click(),
+                    page.waitForLoadState("load", { timeout: 1000 }),
+                  ]);
+                } else {
+                  console.log("this is moreButton > 1 up");
+                  const { waitForTargetUrl } = placeMapUrlPatternCheck({
+                    page,
+                  });
+                  console.log("this is moreButton > 1 up 1");
+                  await waitForTargetUrl;
+                  console.log("this is moreButton > 1 up 2");
+                  await moreButton.click();
+                }
+
                 break;
               } catch (e) {
                 console.error(`moreButton > ${e.message} / ${i}step`);
@@ -226,7 +238,7 @@ async function expandAndClickMore({ page }) {
       new Promise((_, reject) =>
         setTimeout(
           () => reject(new Error("Timeout waiting for any button")),
-          30 * 1000,
+          66 * 1000,
         ),
       ), // 전체 타임아웃 설정
     ]);
@@ -281,8 +293,11 @@ async function clickNextPageMoreLink({ page }) {
         await link.waitForElementState("stable");
 
         // 클릭 수행 및 로드 상태 대기
+        console.log(11);
         await link.click();
+        console.log(22);
         await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
+        console.log(33);
         console.log("Successfully clicked hospital link");
         return page;
       } else {
@@ -308,7 +323,7 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
     // 버튼이 보일 때까지 대기
     await page.waitForSelector(selectorReady, {
       state: "visible",
-      timeout: 60 * 1000,
+      timeout: 90 * 1000,
     });
     // 모든 탭 메뉴 요소 찾기
     const selector = `a[href*="/${placeNumber}/"][role="tab"].tpj9w._tab-menu`;
@@ -387,4 +402,4 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
   }
 }
 
-// findTargetPlace();
+findTargetPlace();
