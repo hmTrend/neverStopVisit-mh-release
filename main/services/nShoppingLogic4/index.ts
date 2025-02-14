@@ -15,7 +15,6 @@ import { logicTypeBLOG } from "./logicType-BLOG";
 import { logicTypeNAVER_COMPARE } from "./logicType-NAVER_COMPARE";
 import { logicTypeN_SHOPPING_TAB } from "./logicType-N_SHOPPING_TAB";
 import { apiPatchDayNowCountForShopping } from "../../api/notion/api.patchDayNowCountForShopping";
-import { api_notion_errorLog } from "../../api/notion/api.notion.errorLog";
 import { api_notion_shopping_errorLog } from "../../api/notion/api.notion.shopping.errorLog";
 
 export class NShoppingLogic4 extends PuppeteerEngine {

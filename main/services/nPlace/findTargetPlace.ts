@@ -4,8 +4,8 @@ import wait from "waait";
 
 export const findTargetPlace = async ({
   page = undefined,
-  placeNumber = "1034276844",
-  isTest = false,
+  placeNumber = "1687478893",
+  isTest = true,
   delayTime = 0,
 }: {
   page?: Page;
@@ -16,7 +16,7 @@ export const findTargetPlace = async ({
   if (isTest) {
     const test = new PuppeteerEngine();
     await test.initialize({
-      url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=%EB%85%B8%EB%9F%89%EC%A7%84+%EC%8A%A4%ED%84%B0%EB%94%94%EB%A3%B8&tqi=iIw9usprffossTMBwSGssssssHV-496993&query=%EB%85%B8%EB%9F%89%EC%A7%84%EC%8A%A4%ED%84%B0%EB%94%94%EB%A3%B8",
+      url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%97%BC%EC%B0%BD%EB%8F%99%EC%B9%B4%ED%8E%98",
       cookie: "",
       networkSpeed: "3G",
     });
@@ -82,7 +82,6 @@ async function clickTargetPlaceOrGoToNextStep({ page, placeNumber }) {
     await clickTargetPlaceById({ placeNumber, page });
   } catch (e) {
     const pageO = await expandAndClickMore({ page });
-
     page = pageO;
     try {
       await clickTargetPlaceById({ placeNumber, page: pageO });
@@ -198,10 +197,23 @@ async function expandAndClickMore({ page }) {
                 await moreButton.waitForElementState("stable");
                 await moreButton.scrollIntoViewIfNeeded();
                 await wait(1000);
-                await Promise.all([
-                  moreButton.click(),
-                  page.waitForLoadState("load", { timeout: 10 * 1000 }),
-                ]);
+                if (i === 0) {
+                  console.log("this is moreButton > 0");
+                  await Promise.all([
+                    moreButton.click(),
+                    page.waitForLoadState("load", { timeout: 1000 }),
+                  ]);
+                } else {
+                  console.log("this is moreButton > 1 up");
+                  const { waitForTargetUrl } = placeMapUrlPatternCheck({
+                    page,
+                  });
+                  console.log("this is moreButton > 1 up 1");
+                  await waitForTargetUrl;
+                  console.log("this is moreButton > 1 up 2");
+                  await moreButton.click();
+                }
+
                 break;
               } catch (e) {
                 console.error(`moreButton > ${e.message} / ${i}step`);
@@ -226,7 +238,7 @@ async function expandAndClickMore({ page }) {
       new Promise((_, reject) =>
         setTimeout(
           () => reject(new Error("Timeout waiting for any button")),
-          30 * 1000,
+          66 * 1000,
         ),
       ), // 전체 타임아웃 설정
     ]);
@@ -390,4 +402,4 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
   }
 }
 
-// findTargetPlace();
+findTargetPlace();
