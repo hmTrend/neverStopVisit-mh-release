@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v3.26.0 연속 작업시 창끄고 다시 열기">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="console log 제거">
+      <change beforePath="$PROJECT_DIR$/main/lib/const/constVar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/const/constVar.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,30 +305,6 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-    </task>
-    <task id="LOCAL-00412" summary="NSVIT-79 미로그인시 노션API 전달하기">
-      <option name="closed" value="true" />
-      <created>1737953443496</created>
-      <option name="number" value="00412" />
-      <option name="presentableId" value="LOCAL-00412" />
-      <option name="project" value="LOCAL" />
-      <updated>1737953443496</updated>
-    </task>
-    <task id="LOCAL-00413" summary="NSVIT-80 killlo 네스비 플레이스 일일타수 DB / 시분 표시">
-      <option name="closed" value="true" />
-      <created>1737956127662</created>
-      <option name="number" value="00413" />
-      <option name="presentableId" value="LOCAL-00413" />
-      <option name="project" value="LOCAL" />
-      <updated>1737956127662</updated>
-    </task>
-    <task id="LOCAL-00414" summary="NSVIT-80 killlo 네스비 플레이스 일일타수 DB / 시분 표시">
-      <option name="closed" value="true" />
-      <created>1737956143140</created>
-      <option name="number" value="00414" />
-      <option name="presentableId" value="LOCAL-00414" />
-      <option name="project" value="LOCAL" />
-      <updated>1737956143140</updated>
     </task>
     <task id="LOCAL-00415" summary="NSVIT-69 노션 API 연결하기">
       <option name="closed" value="true" />
@@ -697,7 +674,31 @@
       <option name="project" value="LOCAL" />
       <updated>1739522780166</updated>
     </task>
-    <option name="localTasksCounter" value="461" />
+    <task id="LOCAL-00461" summary="v3.26.0 연속 작업시 창끄고 다시 열기">
+      <option name="closed" value="true" />
+      <created>1739523535351</created>
+      <option name="number" value="00461" />
+      <option name="presentableId" value="LOCAL-00461" />
+      <option name="project" value="LOCAL" />
+      <updated>1739523535351</updated>
+    </task>
+    <task id="LOCAL-00462" summary="v3.26.0 연속 작업시 창끄고 다시 열기">
+      <option name="closed" value="true" />
+      <created>1739523561478</created>
+      <option name="number" value="00462" />
+      <option name="presentableId" value="LOCAL-00462" />
+      <option name="project" value="LOCAL" />
+      <updated>1739523561478</updated>
+    </task>
+    <task id="LOCAL-00463" summary="console log 제거">
+      <option name="closed" value="true" />
+      <created>1739523851777</created>
+      <option name="number" value="00463" />
+      <option name="presentableId" value="LOCAL-00463" />
+      <option name="project" value="LOCAL" />
+      <updated>1739523851777</updated>
+    </task>
+    <option name="localTasksCounter" value="464" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -742,7 +743,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v3.13.0" />
     <MESSAGE value="NSVIT-85 / 증미역카페 / 오류로그 패치하기" />
     <MESSAGE value="findTargetPlace &gt; networkidle" />
     <MESSAGE value="증미역카페 / 찾을때 느림대응" />
@@ -767,7 +767,8 @@
     <MESSAGE value="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경" />
     <MESSAGE value="v3.23.9" />
     <MESSAGE value="v3.26.0 연속 작업시 창끄고 다시 열기" />
-    <option name="LAST_COMMIT_MESSAGE" value="v3.26.0 연속 작업시 창끄고 다시 열기" />
+    <MESSAGE value="console log 제거" />
+    <option name="LAST_COMMIT_MESSAGE" value="console log 제거" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

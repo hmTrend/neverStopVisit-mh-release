@@ -22,27 +22,20 @@ import { globalBrowsers } from "../../lib/const/constVar";
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace, mainWindow, continuousWork }): Promise<void> {
     try {
-      console.log(1);
       if (continuousWork === 1) {
         globalBrowsers.placeNumbers = [];
       }
-      console.log(2);
       for (let i = 0; i <= 5; i++) {
         try {
           var ExcelData;
           {
-            console.log(3);
-            console.log(globalBrowsers.placeNumbers);
             if (globalBrowsers.placeNumbers.length === 0) {
-              console.log("this is globalBrowsers.placeNumbers.length === 0");
               const { data: excelData } =
                 await GetNPlaceExcelAlignFlatTargetOne({
                   groupFid: nPlace.selectedGroup.groupId,
                 });
               ExcelData = excelData;
             } else {
-              console.log("globalBrowsers.placeNumbers 55553433333");
-              console.log(globalBrowsers.placeNumbers);
               const { data: excelData } =
                 await GetNPlaceExcelAlignFlatTargetOneWithoutPlaceNumber({
                   groupFid: nPlace.selectedGroup.groupId,

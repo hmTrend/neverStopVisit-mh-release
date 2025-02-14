@@ -281,11 +281,8 @@ async function clickNextPageMoreLink({ page }) {
         await link.waitForElementState("stable");
 
         // 클릭 수행 및 로드 상태 대기
-        console.log(11);
         await link.click();
-        console.log(22);
         await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
-        console.log(33);
         console.log("Successfully clicked hospital link");
         return page;
       } else {

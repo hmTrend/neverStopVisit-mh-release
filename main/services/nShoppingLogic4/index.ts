@@ -16,10 +16,14 @@ import { logicTypeNAVER_COMPARE } from "./logicType-NAVER_COMPARE";
 import { logicTypeN_SHOPPING_TAB } from "./logicType-N_SHOPPING_TAB";
 import { apiPatchDayNowCountForShopping } from "../../api/notion/api.patchDayNowCountForShopping";
 import { api_notion_shopping_errorLog } from "../../api/notion/api.notion.shopping.errorLog";
+import { globalBrowsers } from "../../lib/const/constVar";
 
 export class NShoppingLogic4 extends PuppeteerEngine {
-  async start({ nShoppingLogic4, mainWindow }): Promise<void> {
+  async start({ nShoppingLogic4, mainWindow, continuousWork }): Promise<void> {
     try {
+      if (continuousWork === 1) {
+        globalBrowsers.nShoppingLogic4_nvMid = [];
+      }
       for (let i = 0; i <= 5; i++) {
         try {
           console.log("getNShoppingLogic4ExcelAlignFlatTargetOne 3333");
