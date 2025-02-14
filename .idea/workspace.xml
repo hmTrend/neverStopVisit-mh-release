@@ -114,9 +114,9 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
+    "ts.external.directory.path": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -168,13 +168,12 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="initialize.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/services/commons/PuppeteerEngine" />
@@ -223,7 +222,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
       </set>
     </attachedChunks>
   </component>
@@ -304,30 +303,7 @@
       <workItem from="1738738648125" duration="3703000" />
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
-    </task>
-    <task id="LOCAL-00408" summary="NSVIT-71 플레이스 구글_블로그 로직2 업데이트 / 네이버 빈페이지">
-      <option name="closed" value="true" />
-      <created>1737790008142</created>
-      <option name="number" value="00408" />
-      <option name="presentableId" value="LOCAL-00408" />
-      <option name="project" value="LOCAL" />
-      <updated>1737790008142</updated>
-    </task>
-    <task id="LOCAL-00409" summary="NSVIT-77 넥스트론 백엔드 타수 카운팅 연도">
-      <option name="closed" value="true" />
-      <created>1737796593421</created>
-      <option name="number" value="00409" />
-      <option name="presentableId" value="LOCAL-00409" />
-      <option name="project" value="LOCAL" />
-      <updated>1737796593421</updated>
-    </task>
-    <task id="LOCAL-00410" summary="NSVIT-76 백엔드 값 가져올때, 현재타수가 맥스타수보다 같거나 많다면 에러처리">
-      <option name="closed" value="true" />
-      <created>1737797960269</created>
-      <option name="number" value="00410" />
-      <option name="presentableId" value="LOCAL-00410" />
-      <option name="project" value="LOCAL" />
-      <updated>1737797960269</updated>
+      <workItem from="1739515636948" duration="222000" />
     </task>
     <task id="LOCAL-00411" summary="v3.6.0">
       <option name="closed" value="true" />
@@ -697,7 +673,31 @@
       <option name="project" value="LOCAL" />
       <updated>1739356833911</updated>
     </task>
-    <option name="localTasksCounter" value="457" />
+    <task id="LOCAL-00457" summary="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경">
+      <option name="closed" value="true" />
+      <created>1739356881317</created>
+      <option name="number" value="00457" />
+      <option name="presentableId" value="LOCAL-00457" />
+      <option name="project" value="LOCAL" />
+      <updated>1739356881317</updated>
+    </task>
+    <task id="LOCAL-00458" summary="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경">
+      <option name="closed" value="true" />
+      <created>1739356969359</created>
+      <option name="number" value="00458" />
+      <option name="presentableId" value="LOCAL-00458" />
+      <option name="project" value="LOCAL" />
+      <updated>1739356969359</updated>
+    </task>
+    <task id="LOCAL-00459" summary="v3.23.9">
+      <option name="closed" value="true" />
+      <created>1739516043756</created>
+      <option name="number" value="00459" />
+      <option name="presentableId" value="LOCAL-00459" />
+      <option name="project" value="LOCAL" />
+      <updated>1739516043756</updated>
+    </task>
+    <option name="localTasksCounter" value="460" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -728,7 +728,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="origin/develop" />
                       </list>
                     </value>
                   </entry>
@@ -742,7 +742,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="api_notion_errorLog()" />
     <MESSAGE value="api_notion_errorLog() + userAgent 추가" />
     <MESSAGE value="v3.13.0" />
     <MESSAGE value="NSVIT-85 / 증미역카페 / 오류로그 패치하기" />
@@ -767,7 +766,8 @@
     <MESSAGE value="v3.23.0" />
     <MESSAGE value="v3.23.3 플레이스 이미지 확인로직 강화" />
     <MESSAGE value="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경" />
+    <MESSAGE value="v3.23.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3.23.9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
