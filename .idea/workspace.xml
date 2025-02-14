@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v3.26.0 연속 작업시 창끄고 다시 열기">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
-    </list>
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v3.26.0 연속 작업시 창끄고 다시 열기" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -304,22 +301,6 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-    </task>
-    <task id="LOCAL-00412" summary="NSVIT-79 미로그인시 노션API 전달하기">
-      <option name="closed" value="true" />
-      <created>1737953443496</created>
-      <option name="number" value="00412" />
-      <option name="presentableId" value="LOCAL-00412" />
-      <option name="project" value="LOCAL" />
-      <updated>1737953443496</updated>
-    </task>
-    <task id="LOCAL-00413" summary="NSVIT-80 killlo 네스비 플레이스 일일타수 DB / 시분 표시">
-      <option name="closed" value="true" />
-      <created>1737956127662</created>
-      <option name="number" value="00413" />
-      <option name="presentableId" value="LOCAL-00413" />
-      <option name="project" value="LOCAL" />
-      <updated>1737956127662</updated>
     </task>
     <task id="LOCAL-00414" summary="NSVIT-80 killlo 네스비 플레이스 일일타수 DB / 시분 표시">
       <option name="closed" value="true" />
@@ -697,7 +678,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739522780166</updated>
     </task>
-    <option name="localTasksCounter" value="461" />
+    <task id="LOCAL-00461" summary="v3.26.0 연속 작업시 창끄고 다시 열기">
+      <option name="closed" value="true" />
+      <created>1739523535351</created>
+      <option name="number" value="00461" />
+      <option name="presentableId" value="LOCAL-00461" />
+      <option name="project" value="LOCAL" />
+      <updated>1739523535351</updated>
+    </task>
+    <task id="LOCAL-00462" summary="v3.26.0 연속 작업시 창끄고 다시 열기">
+      <option name="closed" value="true" />
+      <created>1739523561478</created>
+      <option name="number" value="00462" />
+      <option name="presentableId" value="LOCAL-00462" />
+      <option name="project" value="LOCAL" />
+      <updated>1739523561478</updated>
+    </task>
+    <option name="localTasksCounter" value="463" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
