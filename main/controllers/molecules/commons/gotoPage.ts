@@ -19,4 +19,4 @@ export async function gotoPage({ url }) {
   }
 }
 
-// gotoPage();
+// gotoPage({ url: "https://search.shopping.naver.com/home" });

@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="gotoNaverEmptyPage">
-      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/inputClickAndInputTextAndButtonClick.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/naverShopping/gotoSearchNaverShopping.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoNaverEmptyPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="findTargetItemAndClick">
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findTargetItemAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findTargetItemAndClick.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +79,7 @@
     "TypeScript.clickNearbyAttractions.tsx.executor": "Run",
     "TypeScript.findTargetBlog.ts (1).executor": "Run",
     "TypeScript.findTargetBlog.ts.executor": "Run",
+    "TypeScript.findTargetItemAndClick.ts.executor": "Run",
     "TypeScript.findTargetPlace.ts.executor": "Run",
     "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
     "TypeScript.findTargetShoppingInTargetBlog.ts.executor": "Run",
@@ -91,6 +88,7 @@
     "TypeScript.googleToNaver.ts.executor": "Run",
     "TypeScript.googleToNaverShopping.ts.executor": "Run",
     "TypeScript.gotoNaverEmptyPage.ts.executor": "Run",
+    "TypeScript.gotoPage.ts.executor": "Run",
     "TypeScript.gotoSearchNaverShopping.ts.executor": "Run",
     "TypeScript.index.ts (1).executor": "Run",
     "TypeScript.index.ts (2).executor": "Run",
@@ -98,7 +96,7 @@
     "TypeScript.initialize.ts.executor": "Run",
     "TypeScript.initializeAndroid.ts.executor": "Run",
     "TypeScript.initializeFireFox.ts.executor": "Run",
-    "TypeScript.inputTextAndButtonClick.ts.executor": "Run",
+    "TypeScript.inputTextAndButtonClick.ts.executor": "Debug",
     "TypeScript.mobile.userAgent.ts.executor": "Run",
     "TypeScript.network.router.edu.ts.executor": "Run",
     "TypeScript.network.router.eduPlayer.ts.executor": "Run",
@@ -148,18 +146,19 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.inputTextAndButtonClick.ts">
-    <configuration name="findTargetPlace.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+  <component name="RunManager" selected="TypeScript.findTargetItemAndClick.ts">
+    <configuration name="findTargetItemAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nPlace" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/findTargetItemAndClick.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="gotoNaverEmptyPage.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -172,6 +171,20 @@
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/gotoNaverEmptyPage.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gotoPage.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" />
       <option name="programParameters" value="" />
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
@@ -204,26 +217,13 @@
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
-    <configuration name="targetKeywordSearch.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisit-f" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/services/nShoppingLogic4" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/services/nShoppingLogic4/targetKeywordSearch.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.findTargetItemAndClick.ts" />
+        <item itemvalue="TypeScript.gotoPage.ts" />
         <item itemvalue="TypeScript.inputTextAndButtonClick.ts" />
         <item itemvalue="TypeScript.gotoSearchNaverShopping.ts" />
         <item itemvalue="TypeScript.gotoNaverEmptyPage.ts" />
-        <item itemvalue="TypeScript.findTargetPlace.ts" />
-        <item itemvalue="TypeScript.targetKeywordSearch.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -312,31 +312,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="21295000" />
-    </task>
-    <task id="LOCAL-00420" summary="v3.10.0 더보기 클릭 안되는 이슈 해결">
-      <option name="closed" value="true" />
-      <created>1738572040419</created>
-      <option name="number" value="00420" />
-      <option name="presentableId" value="LOCAL-00420" />
-      <option name="project" value="LOCAL" />
-      <updated>1738572040419</updated>
-    </task>
-    <task id="LOCAL-00421" summary="v3.10.0 더보기 클릭 안되는 이슈 해결">
-      <option name="closed" value="true" />
-      <created>1738581186097</created>
-      <option name="number" value="00421" />
-      <option name="presentableId" value="LOCAL-00421" />
-      <option name="project" value="LOCAL" />
-      <updated>1738581186097</updated>
-    </task>
-    <task id="LOCAL-00422" summary="v3.10.0 더보기 클릭 안되는 이슈 해결">
-      <option name="closed" value="true" />
-      <created>1738581429625</created>
-      <option name="number" value="00422" />
-      <option name="presentableId" value="LOCAL-00422" />
-      <option name="project" value="LOCAL" />
-      <updated>1738581429625</updated>
+      <workItem from="1739530935139" duration="22229000" />
     </task>
     <task id="LOCAL-00423" summary="api_notion_errorLog()">
       <option name="closed" value="true" />
@@ -706,7 +682,31 @@
       <option name="project" value="LOCAL" />
       <updated>1739712657509</updated>
     </task>
-    <option name="localTasksCounter" value="469" />
+    <task id="LOCAL-00469" summary="inputClickAndInputTextAndButtonClick">
+      <option name="closed" value="true" />
+      <created>1739715343762</created>
+      <option name="number" value="00469" />
+      <option name="presentableId" value="LOCAL-00469" />
+      <option name="project" value="LOCAL" />
+      <updated>1739715343762</updated>
+    </task>
+    <task id="LOCAL-00470" summary="findTargetItemAndClick">
+      <option name="closed" value="true" />
+      <created>1739716083245</created>
+      <option name="number" value="00470" />
+      <option name="presentableId" value="LOCAL-00470" />
+      <option name="project" value="LOCAL" />
+      <updated>1739716083245</updated>
+    </task>
+    <task id="LOCAL-00471" summary="findTargetItemAndClick">
+      <option name="closed" value="true" />
+      <created>1739716116471</created>
+      <option name="number" value="00471" />
+      <option name="presentableId" value="LOCAL-00471" />
+      <option name="project" value="LOCAL" />
+      <updated>1739716116471</updated>
+    </task>
+    <option name="localTasksCounter" value="472" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -751,8 +751,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="NSV-40 / 연속작업 10개까지 셋팅" />
-    <MESSAGE value="NSV-40 / v3.16.0" />
     <MESSAGE value="지문 클릭시 / 쿠키 변경되는건을 &gt; 정상 으로 변경" />
     <MESSAGE value="userAgent 수정" />
     <MESSAGE value="에러로그에 로직타입추가" />
@@ -776,7 +774,9 @@
     <MESSAGE value="알림버튼 기다리기" />
     <MESSAGE value="플레이스 없는것 대응" />
     <MESSAGE value="gotoNaverEmptyPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="gotoNaverEmptyPage" />
+    <MESSAGE value="inputClickAndInputTextAndButtonClick" />
+    <MESSAGE value="findTargetItemAndClick" />
+    <option name="LAST_COMMIT_MESSAGE" value="findTargetItemAndClick" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
