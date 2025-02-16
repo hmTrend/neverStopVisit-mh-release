@@ -1,6 +1,5 @@
 import { chromium, Page, Browser, BrowserContext, devices } from "playwright";
 
-// 모바일 디바이스 타입 정의
 type MobileDevice = "iPhone 13" | "Pixel 5" | "iPad Pro 11" | "Galaxy S8+";
 
 interface BrowserOptions {
@@ -111,17 +110,21 @@ export async function navigateToPage({
       timeout: options.timeout ?? 30000,
     });
   } catch (error) {
-    console.error(`페이지 탐색 중 오류 발생: ${url}`, error);
+    console.error(`navigateToPage`, error);
     throw error;
   }
 }
 
 // 요소 대기 및 클릭 함수
-export async function waitAndClick(
-  page: Page,
-  selector: string,
-  options: WaitAndClickOptions = {},
-): Promise<void> {
+export async function waitAndClick({
+  page,
+  selector,
+  options = {},
+}: {
+  page?: Page;
+  selector?: string;
+  options?: WaitAndClickOptions;
+} = {}): Promise<void> {
   try {
     await page.waitForSelector(selector, {
       state: "visible",
@@ -129,18 +132,23 @@ export async function waitAndClick(
     });
     await page.click(selector);
   } catch (error) {
-    console.error(`요소 클릭 중 오류 발생: ${selector}`, error);
+    console.error(`waitAndClick`, error);
     throw error;
   }
 }
 
 // 텍스트 입력 함수
-export async function typeText(
-  page: Page,
-  selector: string,
-  text: string,
-  options: TypeTextOptions = {},
-): Promise<void> {
+export async function typeText({
+  page,
+  selector,
+  text,
+  options,
+}: {
+  page?: Page;
+  selector?: string;
+  text?: string;
+  options?: TypeTextOptions;
+} = {}): Promise<void> {
   try {
     await page.waitForSelector(selector);
     if (options.clearFirst) {

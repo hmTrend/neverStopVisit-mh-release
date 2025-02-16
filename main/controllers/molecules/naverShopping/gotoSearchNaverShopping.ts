@@ -1,6 +1,6 @@
 import { initBrowser, navigateToPage } from "../../atoms/playwright/engine";
 
-export async function gotoNaverEmptyPage() {
+export async function gotoSearchNaverShopping() {
   try {
     const { page } = await initBrowser({
       headless: false,
@@ -9,7 +9,7 @@ export async function gotoNaverEmptyPage() {
     });
     await navigateToPage({
       page,
-      url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
+      url: "https://search.shopping.naver.com/home",
       options: { waitUntil: "load" },
     });
   } catch (e) {
@@ -18,4 +18,4 @@ export async function gotoNaverEmptyPage() {
   }
 }
 
-gotoNaverEmptyPage();
+gotoSearchNaverShopping();
