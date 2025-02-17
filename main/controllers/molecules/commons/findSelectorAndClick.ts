@@ -7,7 +7,7 @@ export async function findSelectorAndClick({
   page = undefined,
   // selector = '[id="_sr_lst_86767716461"]',
   selector = { getByRole: "button", name: "상세정보 펼쳐보기" }, // 쇼핑 > 상세정보 펼쳐보기
-  scrollCallback = async ({ page }) => await pressKey({ page, select: "End" }),
+  scrollCallback = undefined,
 } = {}) {
   if (isTest) {
     const { getPage } = await gotoPage({
@@ -19,7 +19,7 @@ export async function findSelectorAndClick({
   try {
     const networkManager = createNetworkManager(page);
     await networkManager.waitForAllRequests();
-    await scrollCallback({ page });
+    if (scrollCallback) await scrollCallback({ page });
     const element = page.getByRole(selector.getByRole, {
       name: selector.name,
     });
@@ -36,4 +36,6 @@ export async function findSelectorAndClick({
   }
 }
 
-findSelectorAndClick();
+findSelectorAndClick({
+  scrollCallback: async ({ page }) => await pressKey({ page, select: "End" }),
+});
