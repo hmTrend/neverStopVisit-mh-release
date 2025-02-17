@@ -4,7 +4,7 @@ export async function gotoPage({ url }) {
   try {
     const { page } = await initBrowser({
       headless: false,
-      slowMo: 0,
+      slowMo: 1000,
       mobile: { isMobile: true, device: "iPad Pro 11" },
     });
     await navigateToPage({

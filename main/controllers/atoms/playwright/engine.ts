@@ -110,8 +110,8 @@ export async function navigateToPage({
       timeout: options.timeout ?? 30000,
     });
   } catch (error) {
-    console.error(`navigateToPage`, error);
-    throw error;
+    console.error(`navigateToPage > ${error.message}`);
+    throw `navigateToPage > ${error.message}`;
   }
 }
 

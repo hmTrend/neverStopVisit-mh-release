@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="findTargetItemAndClick">
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findTargetItemAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findTargetItemAndClick.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findTargetItemAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naverShopping/gotoSearchNaverShopping.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +82,7 @@
     "TypeScript.api.patchDayNowCountForShopping.ts.executor": "Run",
     "TypeScript.api.patchLoginIssue.ts.executor": "Run",
     "TypeScript.clickNearbyAttractions.tsx.executor": "Run",
+    "TypeScript.findSelectorAndClick.ts.executor": "Run",
     "TypeScript.findTargetBlog.ts (1).executor": "Run",
     "TypeScript.findTargetBlog.ts.executor": "Run",
     "TypeScript.findTargetItemAndClick.ts.executor": "Run",
@@ -146,7 +152,21 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.findTargetItemAndClick.ts">
+  <component name="RunManager" selected="TypeScript.findSelectorAndClick.ts">
+    <configuration name="findSelectorAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
     <configuration name="findTargetItemAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -157,20 +177,6 @@
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/findTargetItemAndClick.ts" />
-      <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <method v="2" />
-    </configuration>
-    <configuration name="gotoNaverEmptyPage.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/gotoNaverEmptyPage.ts" />
       <option name="programParameters" value="" />
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
@@ -219,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.findSelectorAndClick.ts" />
         <item itemvalue="TypeScript.findTargetItemAndClick.ts" />
         <item itemvalue="TypeScript.gotoPage.ts" />
         <item itemvalue="TypeScript.inputTextAndButtonClick.ts" />
         <item itemvalue="TypeScript.gotoSearchNaverShopping.ts" />
-        <item itemvalue="TypeScript.gotoNaverEmptyPage.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -312,15 +318,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="22229000" />
-    </task>
-    <task id="LOCAL-00423" summary="api_notion_errorLog()">
-      <option name="closed" value="true" />
-      <created>1738582803105</created>
-      <option name="number" value="00423" />
-      <option name="presentableId" value="LOCAL-00423" />
-      <option name="project" value="LOCAL" />
-      <updated>1738582803105</updated>
+      <workItem from="1739530935139" duration="24776000" />
     </task>
     <task id="LOCAL-00424" summary="api_notion_errorLog() + userAgent 추가">
       <option name="closed" value="true" />
@@ -706,7 +704,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739716116471</updated>
     </task>
-    <option name="localTasksCounter" value="472" />
+    <task id="LOCAL-00472" summary="findTargetItemAndClick">
+      <option name="closed" value="true" />
+      <created>1739716261753</created>
+      <option name="number" value="00472" />
+      <option name="presentableId" value="LOCAL-00472" />
+      <option name="project" value="LOCAL" />
+      <updated>1739716261753</updated>
+    </task>
+    <option name="localTasksCounter" value="473" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
