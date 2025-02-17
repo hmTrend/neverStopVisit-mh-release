@@ -1,12 +1,17 @@
-import { initBrowser, navigateToPage } from "../../atoms/playwright/engine";
+import {
+  initBrowser,
+  navigateToPage,
+  network3gMode,
+} from "../../atoms/playwright/engine";
 
 export async function gotoPage({ url }) {
   try {
-    const { page } = await initBrowser({
+    const { page, context } = await initBrowser({
       headless: false,
       slowMo: 1000,
       mobile: { isMobile: true, device: "iPad Pro 11" },
     });
+    await network3gMode({ is3gMode: true, page, context });
     await navigateToPage({
       page,
       url,

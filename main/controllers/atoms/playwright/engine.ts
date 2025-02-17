@@ -50,6 +50,12 @@ interface BrowserInstances {
   page: Page;
 }
 
+interface Network3gMode {
+  is3gMode?: boolean;
+  context?: BrowserContext;
+  page?: Page;
+}
+
 // 브라우저 시작 함수
 export async function initBrowser(
   options: BrowserOptions = {},
@@ -92,6 +98,22 @@ export async function initBrowser(
     console.error(e instanceof Error ? e.message : String(e));
     throw Error("initBrowser");
   }
+}
+
+export async function network3gMode({
+  is3gMode,
+  context,
+  page,
+}: Network3gMode = {}) {
+  if (!is3gMode) return;
+  const client = await context.newCDPSession(page);
+  await client.send("Network.enable");
+  await client.send("Network.emulateNetworkConditions", {
+    offline: false,
+    latency: 100, // 지연시간 (ms)
+    downloadThroughput: (750 * 1024) / 8, // bytes/s
+    uploadThroughput: (250 * 1024) / 8, // bytes/s
+  });
 }
 
 // 페이지 탐색 함수

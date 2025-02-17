@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="findTargetItemAndClick">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="findSelectorAndClick">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findTargetItemAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naverShopping/gotoSearchNaverShopping.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initialize.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,15 +315,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="24776000" />
-    </task>
-    <task id="LOCAL-00424" summary="api_notion_errorLog() + userAgent 추가">
-      <option name="closed" value="true" />
-      <created>1738583420364</created>
-      <option name="number" value="00424" />
-      <option name="presentableId" value="LOCAL-00424" />
-      <option name="project" value="LOCAL" />
-      <updated>1738583420364</updated>
+      <workItem from="1739530935139" duration="25431000" />
     </task>
     <task id="LOCAL-00425" summary="api_notion_errorLog() + userAgent 추가">
       <option name="closed" value="true" />
@@ -712,7 +701,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739716261753</updated>
     </task>
-    <option name="localTasksCounter" value="473" />
+    <task id="LOCAL-00473" summary="findSelectorAndClick">
+      <option name="closed" value="true" />
+      <created>1739751790681</created>
+      <option name="number" value="00473" />
+      <option name="presentableId" value="LOCAL-00473" />
+      <option name="project" value="LOCAL" />
+      <updated>1739751790681</updated>
+    </task>
+    <option name="localTasksCounter" value="474" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -757,7 +754,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="지문 클릭시 / 쿠키 변경되는건을 &gt; 정상 으로 변경" />
     <MESSAGE value="userAgent 수정" />
     <MESSAGE value="에러로그에 로직타입추가" />
     <MESSAGE value="쇼핑 / api_notion_shopping_errorLog / 에러로그추가" />
@@ -782,7 +778,8 @@
     <MESSAGE value="gotoNaverEmptyPage" />
     <MESSAGE value="inputClickAndInputTextAndButtonClick" />
     <MESSAGE value="findTargetItemAndClick" />
-    <option name="LAST_COMMIT_MESSAGE" value="findTargetItemAndClick" />
+    <MESSAGE value="findSelectorAndClick" />
+    <option name="LAST_COMMIT_MESSAGE" value="findSelectorAndClick" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
