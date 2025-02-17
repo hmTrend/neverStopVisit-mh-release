@@ -74,6 +74,54 @@ export async function initBrowser(
   }
 }
 
+interface NetworkManager {
+  page: Page;
+  pendingRequests: Set<string>;
+  setupNetworkListeners(): void;
+  waitForAllRequests(): Promise<void>;
+}
+
+export function createNetworkManager(page: Page): NetworkManager {
+  const pendingRequests = new Set<string>();
+
+  const setupNetworkListeners = () => {
+    // 요청 시작 시 Set에 추가
+    page.on("request", (request) => {
+      pendingRequests.add(request.url());
+    });
+
+    // 요청 완료 시 Set에서 제거
+    page.on("requestfinished", (request) => {
+      pendingRequests.delete(request.url());
+    });
+
+    // 요청 실패 시에도 Set에서 제거
+    page.on("requestfailed", (request) => {
+      pendingRequests.delete(request.url());
+    });
+  };
+
+  const waitForAllRequests = async () => {
+    try {
+      while (pendingRequests.size > 0) {
+        await page.waitForTimeout(100);
+      }
+    } catch (error) {
+      console.error("Error waiting for network requests:", error);
+      throw Error("waitForAllRequests");
+    }
+  };
+
+  setupNetworkListeners();
+
+  return {
+    page,
+    pendingRequests,
+    setupNetworkListeners,
+    waitForAllRequests,
+  };
+}
+
 export async function network3gMode({
   is3gMode,
   context,
@@ -108,6 +156,10 @@ export async function createMobileContext({
   return { context, userAgent: userAgent.userAgent };
 }
 
+export async function pressKey({ select, page }) {
+  await page.keyboard.press(select);
+}
+
 // 페이지 탐색 함수
 export async function navigateToPage({
   page,
@@ -121,7 +173,7 @@ export async function navigateToPage({
   try {
     await page.goto(url, {
       waitUntil: options.waitUntil ?? "networkidle",
-      timeout: options.timeout ?? 30000,
+      timeout: options.timeout ?? 60 * 1000,
     });
   } catch (error) {
     console.error(`navigateToPage > ${error.message}`);
