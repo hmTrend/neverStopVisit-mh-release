@@ -8,8 +8,8 @@ import { gotoPage } from "./gotoPage";
 export async function inputClickAndInputTextAndButtonClick({
   page = undefined,
   text = "문제적커피",
-  inputSelector = 'input[data-shp-area="GNB.input"]',
-  clickSelector = 'input[data-shp-area="GNB.input"]',
+  inputSelector = "#input_text",
+  clickSelector = 'button[data-shp-area="scb.search"]',
   options = { clearFirst: true, delay: 300 },
   isTest = false,
 } = {}) {

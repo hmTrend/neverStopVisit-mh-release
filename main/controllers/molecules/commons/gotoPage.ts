@@ -6,17 +6,21 @@ import {
 } from "../../atoms/playwright/engine";
 import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhoneIN100percent";
 
-export async function gotoPage({ url, is3gMode = false }) {
+export async function gotoPage({
+  url,
+  is3gMode = false,
+  contextCallback = async (browser) =>
+    createMobileContext({
+      browser,
+      userAgent:
+        getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
+    }),
+}) {
   try {
     const { page, context, browser } = await initBrowser({
       headless: false,
       slowMo: 1000,
-      // contextCallback: async (browser) =>
-      //   createMobileContext({
-      //     browser,
-      //     userAgent:
-      //       getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
-      //   }),
+      contextCallback,
     });
     await network3gMode({ is3gMode, page, context });
     await navigateToPage({

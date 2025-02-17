@@ -10,7 +10,7 @@ Black 'n White theme is a premium theme, that brings your chakra-ui experience o
    yarn create react-main my-chakra-main --template @chakra-ui/typescript && cd my-chakra-main/
    ```
 
-   ⚠️ Currently there are (issues with the create-react-app)[https://github.com/chakra-ui/chakra-ui/issues/5804] in combination with react 18. If you have problems starting the app, you can add `// @ts-nocheck` to the first line of the `index.ts` file. This might solve the problems until react 18 works in the CRA for chakra-ui with typescript.
+   ⚠️ Currently there are (issues with the create-react-app)[https://github.com/chakra-ui/chakra-ui/issues/5804] in combination with react 18. If you have problems starting the app, you can add `// @ts-nocheck` to the first line of the `getFingerPrintTargetExcelOne.ts` file. This might solve the problems until react 18 works in the CRA for chakra-ui with typescript.
 
 2. Install the pro-theme
 
@@ -30,7 +30,7 @@ Black 'n White theme is a premium theme, that brings your chakra-ui experience o
    │       ├── README.md
    │       ├── components
    │       ├── foundations
-   │       ├── index.ts
+   │       ├── getFingerPrintTargetExcelOne.ts
    │       └── styles.ts
    ├── tsconfig.json
    ```

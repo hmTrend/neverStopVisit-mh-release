@@ -2,15 +2,12 @@ import { playLogic1 } from "../../organisms/naverShopping/playLogic1";
 import { getFingerPrintTargetExcelOne } from "../../molecules/user/getFingerPrintTargetExcelOne";
 import { getNShoppingLogic4ExcelAlignFlatTargetOne } from "../../molecules/excel/getFingerPrintTargetExcelOne2";
 
-async function playNaverPlace({ logicType = "logic1" } = {}) {
+export async function playNaverShopping({ logicType = "logic1" } = {}) {
   const { cookieId, cookie } = await getFingerPrintTargetExcelOne({
     groupFid: "673c1ccbdafecfc189ac92ff",
   });
   const excelData = await getNShoppingLogic4ExcelAlignFlatTargetOne();
-  console.log(cookieId);
-  console.log(cookie);
-  console.log(excelData);
-  // await playSelectLogic({ logicType });
+  await playSelectLogic({ logicType });
 }
 
 async function playSelectLogic({ logicType }) {
@@ -27,4 +24,4 @@ function naverPlaceLogic2({ logicType }) {
   if (logicType !== "logic2") return;
 }
 
-// playNaverPlace();
+// playNaverShopping();

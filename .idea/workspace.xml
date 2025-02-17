@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="shopping &gt; findSelectorAndClick">
+      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/user/getFingerPrintTargetExcelOne.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/lib/util/timeStartToEnd.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/inputClickAndInputTextAndButtonClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/inputClickAndInputTextAndButtonClick.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/apollo/apollo-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/apollo-provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/theme/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +96,7 @@
     "TypeScript.findTargetPlace.ts.executor": "Run",
     "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
     "TypeScript.findTargetShoppingInTargetBlog.ts.executor": "Run",
+    "TypeScript.getFingerPrintTargetExcelOne2.ts.executor": "Run",
     "TypeScript.goToKeyword.ts.executor": "Run",
     "TypeScript.googleNaverSearchedToNaver.ts.executor": "Run",
     "TypeScript.googleToNaver.ts.executor": "Run",
@@ -100,6 +113,7 @@
     "TypeScript.inputClickAndInputTextAndButtonClick.ts.executor": "Run",
     "TypeScript.inputTextAndButtonClick.ts.executor": "Debug",
     "TypeScript.mobile.userAgent.ts.executor": "Run",
+    "TypeScript.naverShopping.ts.executor": "Run",
     "TypeScript.network.router.edu.ts.executor": "Run",
     "TypeScript.network.router.eduPlayer.ts.executor": "Run",
     "TypeScript.playLogic1.ts.executor": "Run",
@@ -112,7 +126,7 @@
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/controllers/molecules/naverShopping",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/controllers/templetes/naverShopping",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -135,25 +149,25 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/controllers/templetes/naverShopping" />
+      <recent name="$PROJECT_DIR$/main/controllers/molecules/user" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/naverShopping" />
       <recent name="$PROJECT_DIR$/main/services/nShoppingLogic4" />
       <recent name="$PROJECT_DIR$/main/lib/network" />
-      <recent name="$PROJECT_DIR$/main/api/notion" />
-      <recent name="$PROJECT_DIR$/renderer/src/components/start" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/controllers/molecules/excel" />
+      <recent name="$PROJECT_DIR$/main/controllers/molecules/user" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/commons" />
       <recent name="$PROJECT_DIR$/main/services/commons/naver" />
       <recent name="$PROJECT_DIR$/main/lib/network" />
-      <recent name="$PROJECT_DIR$/assets/icons/win" />
-      <recent name="$PROJECT_DIR$/renderer/src/components/start" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.playLogic1.ts">
+  <component name="RunManager" selected="TypeScript.naverShopping.ts">
     <configuration name="findSelectorAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
@@ -164,44 +178,44 @@
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
-    <configuration name="findTargetItemAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="getFingerPrintTargetExcelOne2.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
       <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/excel" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/findTargetItemAndClick.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne2.ts" />
       <option name="programParameters" value="" />
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
-    <configuration name="gotoPage.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="index.ts (1)" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/templetes/naverPlace" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" />
       <option name="programParameters" value="" />
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
-    <configuration name="inputClickAndInputTextAndButtonClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="naverShopping.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
       <option name="tsnodePackageRef" value="" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/upscale/naverShopping" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/inputClickAndInputTextAndButtonClick.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" />
       <option name="programParameters" value="" />
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
@@ -209,7 +223,7 @@
     <configuration name="playLogic1.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/organisms/naverShopping" />
@@ -222,11 +236,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.naverShopping.ts" />
+        <item itemvalue="TypeScript.index.ts (1)" />
+        <item itemvalue="TypeScript.getFingerPrintTargetExcelOne2.ts" />
         <item itemvalue="TypeScript.playLogic1.ts" />
         <item itemvalue="TypeScript.findSelectorAndClick.ts" />
-        <item itemvalue="TypeScript.inputClickAndInputTextAndButtonClick.ts" />
-        <item itemvalue="TypeScript.gotoPage.ts" />
-        <item itemvalue="TypeScript.findTargetItemAndClick.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -315,15 +329,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="41548000" />
-    </task>
-    <task id="LOCAL-00434" summary="NSVIT-86 valtio 셋팅">
-      <option name="closed" value="true" />
-      <created>1738652095087</created>
-      <option name="number" value="00434" />
-      <option name="presentableId" value="LOCAL-00434" />
-      <option name="project" value="LOCAL" />
-      <updated>1738652095087</updated>
+      <workItem from="1739530935139" duration="49868000" />
     </task>
     <task id="LOCAL-00435" summary="NSVIT-87 1개작업후 2번째 작업시 창 안닫히게 하기">
       <option name="closed" value="true" />
@@ -709,7 +715,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739786490243</updated>
     </task>
-    <option name="localTasksCounter" value="483" />
+    <task id="LOCAL-00483" summary="shopping &gt; findSelectorAndClick">
+      <option name="closed" value="true" />
+      <created>1739786521253</created>
+      <option name="number" value="00483" />
+      <option name="presentableId" value="LOCAL-00483" />
+      <option name="project" value="LOCAL" />
+      <updated>1739786521253</updated>
+    </task>
+    <option name="localTasksCounter" value="484" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
