@@ -1,19 +1,15 @@
 import { chromium, Page, Browser, BrowserContext, devices } from "playwright";
+import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhoneIN100percent";
 
 type MobileDevice = "iPhone 13" | "Pixel 5" | "iPad Pro 11" | "Galaxy S8+";
 
 interface BrowserOptions {
   headless?: boolean;
   slowMo?: number;
-  mobile?: {
-    device?: MobileDevice;
-    isMobile?: boolean;
-    viewport?: {
-      width: number;
-      height: number;
-    };
+  contextCallback?: (browser: Browser) => Promise<{
+    context: BrowserContext;
     userAgent?: string;
-  };
+  }>;
 }
 
 interface NavigateOptions {
@@ -66,32 +62,10 @@ export async function initBrowser(
       slowMo: options.slowMo ?? 50,
     });
 
-    // 모바일 옵션이 있는 경우
-    if (options.mobile) {
-      let contextOptions = {};
+    const { context, userAgent } = options.contextCallback
+      ? await options.contextCallback(browser)
+      : { context: await browser.newContext(), userAgent: undefined };
 
-      // 미리 정의된 디바이스 사용
-      if (options.mobile.device) {
-        contextOptions = {
-          ...devices[options.mobile.device],
-        };
-      }
-      // 커스텀 모바일 설정
-      else if (options.mobile.viewport) {
-        contextOptions = {
-          viewport: options.mobile.viewport,
-          isMobile: options.mobile.isMobile ?? true,
-          userAgent: options.mobile.userAgent,
-        };
-      }
-
-      const context = await browser.newContext(contextOptions);
-      const page = await context.newPage();
-      return { browser, context, page };
-    }
-
-    // 일반 데스크톱 브라우저 실행
-    const context = await browser.newContext();
     const page = await context.newPage();
     return { browser, context, page };
   } catch (e) {
@@ -114,6 +88,24 @@ export async function network3gMode({
     downloadThroughput: (750 * 1024) / 8, // bytes/s
     uploadThroughput: (250 * 1024) / 8, // bytes/s
   });
+}
+
+export async function createMobileContext({
+  browser,
+  userAgent,
+}: {
+  browser: Browser;
+  userAgent: any;
+}) {
+  const context = await browser.newContext({
+    userAgent: userAgent.userAgent,
+    extraHTTPHeaders: userAgent.headers,
+    viewport: { width: 412, height: 915 },
+    isMobile: true,
+    hasTouch: true,
+    deviceScaleFactor: 2.625,
+  });
+  return { context, userAgent: userAgent.userAgent };
 }
 
 // 페이지 탐색 함수

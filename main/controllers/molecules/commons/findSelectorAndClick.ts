@@ -1,7 +1,7 @@
 import { gotoPage } from "./gotoPage";
 
 export async function findSelectorAndClick({
-  isTest = false,
+  isTest = true,
   page = undefined,
   // selector = '[id="_sr_lst_86767716461"]',
   selector = 'button[data-shp-area-id="more"]',
@@ -25,4 +25,4 @@ export async function findSelectorAndClick({
   }
 }
 
-// findSelectorAndClick();
+findSelectorAndClick();

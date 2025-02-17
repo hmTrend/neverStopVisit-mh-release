@@ -1,17 +1,27 @@
 import {
+  createMobileContext,
   initBrowser,
   navigateToPage,
   network3gMode,
 } from "../../atoms/playwright/engine";
+import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhoneIN100percent";
 
 export async function gotoPage({ url }) {
   try {
-    const { page, context } = await initBrowser({
+    console.log(
+      getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
+    );
+    const { page, context, browser } = await initBrowser({
       headless: false,
       slowMo: 1000,
-      mobile: { isMobile: true, device: "iPad Pro 11" },
+      contextCallback: async (browser) =>
+        createMobileContext({
+          browser,
+          userAgent:
+            getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
+        }),
     });
-    await network3gMode({ is3gMode: true, page, context });
+    // await network3gMode({ is3gMode: false, page, context });
     await navigateToPage({
       page,
       url,

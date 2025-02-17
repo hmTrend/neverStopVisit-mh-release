@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="findSelectorAndClick">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="network3gMode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +150,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.findSelectorAndClick.ts">
+  <component name="RunManager" selected="TypeScript.gotoPage.ts">
     <configuration name="findSelectorAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -222,9 +223,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.gotoPage.ts" />
         <item itemvalue="TypeScript.findSelectorAndClick.ts" />
         <item itemvalue="TypeScript.findTargetItemAndClick.ts" />
-        <item itemvalue="TypeScript.gotoPage.ts" />
         <item itemvalue="TypeScript.inputTextAndButtonClick.ts" />
         <item itemvalue="TypeScript.gotoSearchNaverShopping.ts" />
       </list>
@@ -315,15 +316,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="25431000" />
-    </task>
-    <task id="LOCAL-00425" summary="api_notion_errorLog() + userAgent 추가">
-      <option name="closed" value="true" />
-      <created>1738583512583</created>
-      <option name="number" value="00425" />
-      <option name="presentableId" value="LOCAL-00425" />
-      <option name="project" value="LOCAL" />
-      <updated>1738583512583</updated>
+      <workItem from="1739530935139" duration="28417000" />
     </task>
     <task id="LOCAL-00426" summary="api_notion_errorLog() + userAgent 추가">
       <option name="closed" value="true" />
@@ -709,7 +702,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739751790681</updated>
     </task>
-    <option name="localTasksCounter" value="474" />
+    <task id="LOCAL-00474" summary="network3gMode">
+      <option name="closed" value="true" />
+      <created>1739752442564</created>
+      <option name="number" value="00474" />
+      <option name="presentableId" value="LOCAL-00474" />
+      <option name="project" value="LOCAL" />
+      <updated>1739752442564</updated>
+    </task>
+    <option name="localTasksCounter" value="475" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -754,7 +755,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="userAgent 수정" />
     <MESSAGE value="에러로그에 로직타입추가" />
     <MESSAGE value="쇼핑 / api_notion_shopping_errorLog / 에러로그추가" />
     <MESSAGE value="expandAndClickMore / 개선" />
@@ -779,7 +779,8 @@
     <MESSAGE value="inputClickAndInputTextAndButtonClick" />
     <MESSAGE value="findTargetItemAndClick" />
     <MESSAGE value="findSelectorAndClick" />
-    <option name="LAST_COMMIT_MESSAGE" value="findSelectorAndClick" />
+    <MESSAGE value="network3gMode" />
+    <option name="LAST_COMMIT_MESSAGE" value="network3gMode" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
