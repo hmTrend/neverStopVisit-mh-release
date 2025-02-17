@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="globalBrowsers.nShoppingLogic4_nvMid">
-      <change afterPath="$PROJECT_DIR$/main/services/nShoppingLogic4/logicType-SHOPPING_PAGE.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="알림버튼 기다리기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/targetKeywordSearchWithEmptyPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/targetKeywordSearchWithEmptyPage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,68 +65,68 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TypeScript.api.client.ts.executor": "Run",
-    "TypeScript.api.create.ts.executor": "Run",
-    "TypeScript.api.notion.errorLog.ts.executor": "Run",
-    "TypeScript.api.notion.shopping.errorLog.ts.executor": "Run",
-    "TypeScript.api.patchDayNowCount.ts.executor": "Run",
-    "TypeScript.api.patchDayNowCountForShopping.ts.executor": "Run",
-    "TypeScript.api.patchLoginIssue.ts.executor": "Run",
-    "TypeScript.clickNearbyAttractions.tsx.executor": "Run",
-    "TypeScript.findTargetBlog.ts (1).executor": "Run",
-    "TypeScript.findTargetBlog.ts.executor": "Run",
-    "TypeScript.findTargetPlace.ts.executor": "Run",
-    "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
-    "TypeScript.findTargetShoppingInTargetBlog.ts.executor": "Run",
-    "TypeScript.goToKeyword.ts.executor": "Run",
-    "TypeScript.googleNaverSearchedToNaver.ts.executor": "Run",
-    "TypeScript.googleToNaver.ts.executor": "Run",
-    "TypeScript.googleToNaverShopping.ts.executor": "Run",
-    "TypeScript.index.ts (1).executor": "Run",
-    "TypeScript.index.ts (2).executor": "Run",
-    "TypeScript.index.ts.executor": "Run",
-    "TypeScript.initialize.ts.executor": "Run",
-    "TypeScript.initializeAndroid.ts.executor": "Run",
-    "TypeScript.initializeFireFox.ts.executor": "Run",
-    "TypeScript.mobile.userAgent.ts.executor": "Run",
-    "TypeScript.network.router.edu.ts.executor": "Run",
-    "TypeScript.network.router.eduPlayer.ts.executor": "Run",
-    "TypeScript.searchNVMID.ts.executor": "Run",
-    "TypeScript.searchNaverPriceCompare.ts.executor": "Run",
-    "TypeScript.searchNaverPriceCompareInPriceCompare.ts.executor": "Run",
-    "TypeScript.targetKeywordSearch.ts.executor": "Run",
-    "TypeScript.targetKeywordSearchWithEmptyPage.ts.executor": "Run",
-    "TypeScript.util.network.ts.executor": "Run",
-    "eslint.code.style.apply.dismiss": "true",
-    "git-widget-placeholder": "develop",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/nShoppingLogic4",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TypeScript.api.client.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.api.create.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.api.notion.errorLog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.api.notion.shopping.errorLog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.api.patchDayNowCount.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.api.patchDayNowCountForShopping.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.api.patchLoginIssue.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.clickNearbyAttractions.tsx.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetBlog.ts (1).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetBlog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetPlace.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetPlaceInTargetBlog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.findTargetShoppingInTargetBlog.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.goToKeyword.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.googleNaverSearchedToNaver.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.googleToNaver.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.googleToNaverShopping.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts (1).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts (2).executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.index.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initialize.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initializeAndroid.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.initializeFireFox.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.mobile.userAgent.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.network.router.edu.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.network.router.eduPlayer.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.searchNVMID.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.searchNaverPriceCompare.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.searchNaverPriceCompareInPriceCompare.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.targetKeywordSearch.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.targetKeywordSearchWithEmptyPage.ts.executor&quot;: &quot;Run&quot;,
+    &quot;TypeScript.util.network.ts.executor&quot;: &quot;Run&quot;,
+    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/services/nShoppingLogic4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/services/nShoppingLogic4" />
@@ -168,7 +168,6 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="initialize.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -223,7 +222,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
       </set>
     </attachedChunks>
   </component>
@@ -305,22 +304,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-    </task>
-    <task id="LOCAL-00416" summary="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인">
-      <option name="closed" value="true" />
-      <created>1737959677337</created>
-      <option name="number" value="00416" />
-      <option name="presentableId" value="LOCAL-00416" />
-      <option name="project" value="LOCAL" />
-      <updated>1737959677337</updated>
-    </task>
-    <task id="LOCAL-00417" summary="NSVIT-81 플레이스 / 문제적 커피 타수 안들어가는 현상 확인">
-      <option name="closed" value="true" />
-      <created>1737960252378</created>
-      <option name="number" value="00417" />
-      <option name="presentableId" value="LOCAL-00417" />
-      <option name="project" value="LOCAL" />
-      <updated>1737960252378</updated>
+      <workItem from="1739530935139" duration="9307000" />
     </task>
     <task id="LOCAL-00418" summary="v3.9.0">
       <option name="closed" value="true" />
@@ -698,7 +682,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739524243241</updated>
     </task>
-    <option name="localTasksCounter" value="465" />
+    <task id="LOCAL-00465" summary="더보기 클릭 못하는 이슈 해결">
+      <option name="closed" value="true" />
+      <created>1739528096524</created>
+      <option name="number" value="00465" />
+      <option name="presentableId" value="LOCAL-00465" />
+      <option name="project" value="LOCAL" />
+      <updated>1739528096524</updated>
+    </task>
+    <task id="LOCAL-00466" summary="알림버튼 기다리기">
+      <option name="closed" value="true" />
+      <created>1739536081025</created>
+      <option name="number" value="00466" />
+      <option name="presentableId" value="LOCAL-00466" />
+      <option name="project" value="LOCAL" />
+      <updated>1739536081025</updated>
+    </task>
+    <option name="localTasksCounter" value="467" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -743,8 +743,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="findTargetPlace &gt; networkidle" />
-    <MESSAGE value="증미역카페 / 찾을때 느림대응" />
     <MESSAGE value="NSVIT-86 valtio 셋팅" />
     <MESSAGE value="NSVIT-87 1개작업후 2번째 작업시 창 안닫히게 하기" />
     <MESSAGE value="NSV-40 / 연속작업 10개까지 셋팅" />
@@ -768,7 +766,9 @@
     <MESSAGE value="v3.26.0 연속 작업시 창끄고 다시 열기" />
     <MESSAGE value="console log 제거" />
     <MESSAGE value="globalBrowsers.nShoppingLogic4_nvMid" />
-    <option name="LAST_COMMIT_MESSAGE" value="globalBrowsers.nShoppingLogic4_nvMid" />
+    <MESSAGE value="더보기 클릭 못하는 이슈 해결" />
+    <MESSAGE value="알림버튼 기다리기" />
+    <option name="LAST_COMMIT_MESSAGE" value="알림버튼 기다리기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

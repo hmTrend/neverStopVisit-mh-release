@@ -3,7 +3,6 @@ import { formatCookiesForPlaywright } from "./formatCookiesForPlaywright";
 import { validateCookie } from "./validateCookie";
 import { getChromePath } from "./getChromePath";
 import wait from "waait";
-import { getNextCreateUserAgentWithDRSoftKorea241207WithOutIPhone } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhone";
 import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhoneIN100percent";
 
 export const initialize = async ({
@@ -52,16 +51,16 @@ export const initialize = async ({
       }
       page = await getContext.newPage();
 
-      if (networkSpeed === "3G") {
-        const client = await context.newCDPSession(page);
-        await client.send("Network.enable");
-        await client.send("Network.emulateNetworkConditions", {
-          offline: false,
-          latency: 100, // 지연시간 (ms)
-          downloadThroughput: (750 * 1024) / 8, // bytes/s
-          uploadThroughput: (250 * 1024) / 8, // bytes/s
-        });
-      }
+      // if (networkSpeed === "3G") {
+      const client = await context.newCDPSession(page);
+      await client.send("Network.enable");
+      await client.send("Network.emulateNetworkConditions", {
+        offline: false,
+        latency: 100, // 지연시간 (ms)
+        downloadThroughput: (750 * 1024) / 8, // bytes/s
+        uploadThroughput: (250 * 1024) / 8, // bytes/s
+      });
+      // }
 
       await page.goto(url, {
         waitUntil: "domcontentloaded",
