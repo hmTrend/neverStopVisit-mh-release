@@ -1,6 +1,7 @@
 import { gotoPage } from "../../molecules/commons/gotoPage";
 import { inputClickAndInputTextAndButtonClick } from "../../molecules/commons/inputClickAndInputTextAndButtonClick";
 import { Page } from "playwright";
+import { findSelectorAndClick } from "../../molecules/commons/findSelectorAndClick";
 
 export async function playLogic1() {
   try {
@@ -13,6 +14,10 @@ export async function playLogic1() {
       inputSelector: 'input[data-shp-area="GNB.input"]',
       clickSelector: 'button[data-shp-area="GNB.search"]',
       options: { clearFirst: true, delay: 300 },
+    });
+    await findSelectorAndClick({
+      page: getPage,
+      selector: '[id="_sr_lst_86767716461"]',
     });
   } catch (e) {
     console.error(`playLogic1 > ${e.message}`);

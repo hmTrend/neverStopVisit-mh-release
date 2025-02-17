@@ -1,6 +1,7 @@
 import { gotoPage } from "./gotoPage";
 import { createNetworkManager, pressKey } from "../../atoms/playwright/engine";
 import waait from "waait";
+import { Page } from "playwright";
 
 export async function findSelectorAndClick({
   isTest = false,
@@ -8,6 +9,16 @@ export async function findSelectorAndClick({
   // selector = '[id="_sr_lst_86767716461"]',
   selector = { getByRole: "button", name: "상세정보 펼쳐보기" }, // 쇼핑 > 상세정보 펼쳐보기
   scrollCallback = undefined,
+}: {
+  isTest?: boolean;
+  page?: Page;
+  selector?:
+    | string
+    | {
+        getByRole: string;
+        name: string;
+      };
+  scrollCallback?: (params: { page: Page }) => Promise<void>;
 } = {}) {
   if (isTest) {
     const { getPage } = await gotoPage({
@@ -20,10 +31,8 @@ export async function findSelectorAndClick({
     const networkManager = createNetworkManager(page);
     await networkManager.waitForAllRequests();
     if (scrollCallback) await scrollCallback({ page });
-    const element = page.getByRole(selector.getByRole, {
-      name: selector.name,
-    });
-    // 스크롤해서 요소가 화면에 보이게 하기
+
+    const element = transSelecterType({ page, selector });
     await element.scrollIntoViewIfNeeded();
     await page.waitForTimeout(1000); // 스크롤 후 잠시 대기
     await element.click({ force: true }); // force 옵션 추가
@@ -37,3 +46,9 @@ export async function findSelectorAndClick({
 // findSelectorAndClick({
 //   scrollCallback: async ({ page }) => await pressKey({ page, select: "End" }),
 // });
+
+function transSelecterType({ page, selector }: { page: Page; selector: any }) {
+  return typeof selector === "string"
+    ? page.locator(selector)
+    : page.getByRole(selector.getByRole, { name: selector.name });
+}
