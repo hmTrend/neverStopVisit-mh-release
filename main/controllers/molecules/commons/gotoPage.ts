@@ -24,7 +24,7 @@ export async function gotoPage({ url, is3gMode = false }) {
       url,
       options: { waitUntil: "load" },
     });
-    return { getPage: page };
+    return { getPage: page, context };
   } catch (e) {
     console.error(`gotoNaverEmptyPage > ${e.message}`);
     throw "gotoPage";

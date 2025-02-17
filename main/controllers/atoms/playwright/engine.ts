@@ -181,6 +181,32 @@ export async function navigateToPage({
   }
 }
 
+export async function switchToOpenedTab({
+  context,
+}: {
+  context: BrowserContext;
+}): Promise<{ latestPage: Page }> {
+  try {
+    // 열려있는 모든 페이지 가져오기
+    const pages = context.pages();
+
+    // 가장 최근에 열린 페이지 (마지막 페이지) 반환
+    const latestPage = pages[pages.length - 1];
+
+    if (!latestPage) {
+      throw `switchToOpenedTab > No pages found`;
+    }
+
+    // 페이지가 완전히 로드될 때까지 대기
+    await latestPage.waitForLoadState("load");
+
+    return { latestPage };
+  } catch (error) {
+    console.error("Error switching to opened tab:", error.message);
+    throw Error("switchToOpenedTab");
+  }
+}
+
 // 요소 대기 및 클릭 함수
 export async function waitAndClick({
   page,

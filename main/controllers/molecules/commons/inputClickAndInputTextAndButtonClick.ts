@@ -30,6 +30,7 @@ export async function inputClickAndInputTextAndButtonClick({
       options,
     });
     await waitAndClick({ page, selector: clickSelector });
+    return { getPage: page };
   } catch (e) {
     console.error(`inputClickAndInputTextAndButtonClick > ${e.message}`);
     throw `inputClickAndInputTextAndButtonClick > ${e.message}`;
