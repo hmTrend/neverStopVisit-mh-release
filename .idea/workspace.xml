@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="if (scrollCallback)">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="scrollCallback">
+      <change afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/inputClickAndInputTextAndButtonClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/inputClickAndInputTextAndButtonClick.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,10 +101,12 @@
     "TypeScript.initialize.ts.executor": "Run",
     "TypeScript.initializeAndroid.ts.executor": "Run",
     "TypeScript.initializeFireFox.ts.executor": "Run",
+    "TypeScript.inputClickAndInputTextAndButtonClick.ts.executor": "Run",
     "TypeScript.inputTextAndButtonClick.ts.executor": "Debug",
     "TypeScript.mobile.userAgent.ts.executor": "Run",
     "TypeScript.network.router.edu.ts.executor": "Run",
     "TypeScript.network.router.eduPlayer.ts.executor": "Run",
+    "TypeScript.playLogic1.ts.executor": "Run",
     "TypeScript.searchNVMID.ts.executor": "Run",
     "TypeScript.searchNaverPriceCompare.ts.executor": "Run",
     "TypeScript.searchNaverPriceCompareInPriceCompare.ts.executor": "Run",
@@ -149,7 +153,7 @@
       <recent name="$PROJECT_DIR$/renderer/src/components/start" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.findSelectorAndClick.ts">
+  <component name="RunManager" selected="TypeScript.playLogic1.ts">
     <configuration name="findSelectorAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -192,21 +196,7 @@
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
-    <configuration name="gotoSearchNaverShopping.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/naverShopping" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/naverShopping/gotoSearchNaverShopping.ts" />
-      <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <method v="2" />
-    </configuration>
-    <configuration name="inputTextAndButtonClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+    <configuration name="inputClickAndInputTextAndButtonClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
       <option name="tsnodePackageRef" value="" />
@@ -215,18 +205,32 @@
       <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/inputTextAndButtonClick.ts" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/inputClickAndInputTextAndButtonClick.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
+    <configuration name="playLogic1.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/organisms/naverShopping" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" />
       <option name="programParameters" value="" />
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.playLogic1.ts" />
+        <item itemvalue="TypeScript.inputClickAndInputTextAndButtonClick.ts" />
         <item itemvalue="TypeScript.findSelectorAndClick.ts" />
         <item itemvalue="TypeScript.gotoPage.ts" />
         <item itemvalue="TypeScript.findTargetItemAndClick.ts" />
-        <item itemvalue="TypeScript.inputTextAndButtonClick.ts" />
-        <item itemvalue="TypeScript.gotoSearchNaverShopping.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -315,15 +319,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="32879000" />
-    </task>
-    <task id="LOCAL-00430" summary="findTargetPlace &gt; networkidle">
-      <option name="closed" value="true" />
-      <created>1738649445358</created>
-      <option name="number" value="00430" />
-      <option name="presentableId" value="LOCAL-00430" />
-      <option name="project" value="LOCAL" />
-      <updated>1738649445358</updated>
+      <workItem from="1739530935139" duration="37110000" />
     </task>
     <task id="LOCAL-00431" summary="증미역카페 / 찾을때 느림대응">
       <option name="closed" value="true" />
@@ -709,7 +705,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739760479207</updated>
     </task>
-    <option name="localTasksCounter" value="479" />
+    <task id="LOCAL-00479" summary="scrollCallback">
+      <option name="closed" value="true" />
+      <created>1739760554432</created>
+      <option name="number" value="00479" />
+      <option name="presentableId" value="LOCAL-00479" />
+      <option name="project" value="LOCAL" />
+      <updated>1739760554432</updated>
+    </task>
+    <option name="localTasksCounter" value="480" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -776,10 +780,10 @@
     <MESSAGE value="findSelectorAndClick" />
     <MESSAGE value="network3gMode" />
     <MESSAGE value="contextCallback" />
-    <MESSAGE value="scrollCallback" />
     <MESSAGE value="scrollCallback 2" />
     <MESSAGE value="if (scrollCallback)" />
-    <option name="LAST_COMMIT_MESSAGE" value="if (scrollCallback)" />
+    <MESSAGE value="scrollCallback" />
+    <option name="LAST_COMMIT_MESSAGE" value="scrollCallback" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

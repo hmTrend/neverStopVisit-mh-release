@@ -1,10 +1,15 @@
-import { typeText, waitAndClick } from "../../atoms/playwright/engine";
+import {
+  createNetworkManager,
+  typeText,
+  waitAndClick,
+} from "../../atoms/playwright/engine";
 import { gotoPage } from "./gotoPage";
 
 export async function inputClickAndInputTextAndButtonClick({
   page = undefined,
   text = "문제적커피",
-  selector = "",
+  inputSelector = 'input[data-shp-area="GNB.input"]',
+  clickSelector = 'input[data-shp-area="GNB.input"]',
   options = { clearFirst: true, delay: 300 },
   isTest = false,
 } = {}) {
@@ -15,17 +20,19 @@ export async function inputClickAndInputTextAndButtonClick({
     page = getPage;
   }
   try {
-    await waitAndClick({ page, selector: "#input_text" });
+    const networkManager = createNetworkManager(page);
+    await networkManager.waitForAllRequests();
+    await waitAndClick({ page, selector: inputSelector });
     await typeText({
       page,
-      text: "문제적커피",
-      selector: "#input_text",
-      options: { clearFirst: true, delay: 300 },
+      text,
+      selector: inputSelector,
+      options,
     });
-    await waitAndClick({ page, selector: 'button[data-shp-area-id="search"]' });
+    await waitAndClick({ page, selector: clickSelector });
   } catch (e) {
-    console.error(e.message);
-    throw "inputClickAndInputTextAndButtonClick";
+    console.error(`inputClickAndInputTextAndButtonClick > ${e.message}`);
+    throw `inputClickAndInputTextAndButtonClick > ${e.message}`;
   }
 }
 

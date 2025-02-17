@@ -3,7 +3,7 @@ import { createNetworkManager, pressKey } from "../../atoms/playwright/engine";
 import waait from "waait";
 
 export async function findSelectorAndClick({
-  isTest = true,
+  isTest = false,
   page = undefined,
   // selector = '[id="_sr_lst_86767716461"]',
   selector = { getByRole: "button", name: "상세정보 펼쳐보기" }, // 쇼핑 > 상세정보 펼쳐보기
@@ -34,6 +34,6 @@ export async function findSelectorAndClick({
   }
 }
 
-findSelectorAndClick({
-  scrollCallback: async ({ page }) => await pressKey({ page, select: "End" }),
-});
+// findSelectorAndClick({
+//   scrollCallback: async ({ page }) => await pressKey({ page, select: "End" }),
+// });
