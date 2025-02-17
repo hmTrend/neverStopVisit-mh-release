@@ -18,7 +18,7 @@ export async function gotoPage({ url }) {
       //       getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
       //   }),
     });
-    await network3gMode({ is3gMode: true, page, context });
+    await network3gMode({ is3gMode: false, page, context });
     await navigateToPage({
       page,
       url,

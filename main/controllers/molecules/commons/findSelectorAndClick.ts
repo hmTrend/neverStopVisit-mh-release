@@ -25,9 +25,7 @@ export async function findSelectorAndClick({
     });
     // 스크롤해서 요소가 화면에 보이게 하기
     await element.scrollIntoViewIfNeeded();
-
     await page.waitForTimeout(1000); // 스크롤 후 잠시 대기
-
     await element.click({ force: true }); // force 옵션 추가
     console.log("Successfully clicked element");
   } catch (e) {

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="scrollCallback">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="if (scrollCallback)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,23 +315,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="32786000" />
-    </task>
-    <task id="LOCAL-00428" summary="v3.13.0">
-      <option name="closed" value="true" />
-      <created>1738587180594</created>
-      <option name="number" value="00428" />
-      <option name="presentableId" value="LOCAL-00428" />
-      <option name="project" value="LOCAL" />
-      <updated>1738587180594</updated>
-    </task>
-    <task id="LOCAL-00429" summary="NSVIT-85 / 증미역카페 / 오류로그 패치하기">
-      <option name="closed" value="true" />
-      <created>1738626387942</created>
-      <option name="number" value="00429" />
-      <option name="presentableId" value="LOCAL-00429" />
-      <option name="project" value="LOCAL" />
-      <updated>1738626387942</updated>
+      <workItem from="1739530935139" duration="32879000" />
     </task>
     <task id="LOCAL-00430" summary="findTargetPlace &gt; networkidle">
       <option name="closed" value="true" />
@@ -708,7 +693,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739760258185</updated>
     </task>
-    <option name="localTasksCounter" value="477" />
+    <task id="LOCAL-00477" summary="scrollCallback 2">
+      <option name="closed" value="true" />
+      <created>1739760471775</created>
+      <option name="number" value="00477" />
+      <option name="presentableId" value="LOCAL-00477" />
+      <option name="project" value="LOCAL" />
+      <updated>1739760471775</updated>
+    </task>
+    <task id="LOCAL-00478" summary="if (scrollCallback)">
+      <option name="closed" value="true" />
+      <created>1739760479207</created>
+      <option name="number" value="00478" />
+      <option name="presentableId" value="LOCAL-00478" />
+      <option name="project" value="LOCAL" />
+      <updated>1739760479207</updated>
+    </task>
+    <option name="localTasksCounter" value="479" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -753,8 +754,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="expandAndClickMore / 개선" />
-    <MESSAGE value=" networkSpeed: &quot;LTE&quot; 추가" />
     <MESSAGE value="findTargetPlaceNLastActionRandomClick" />
     <MESSAGE value="placeMapUrlPatternCheck" />
     <MESSAGE value="targetKeywordSearchWithEmptyPage" />
@@ -778,7 +777,9 @@
     <MESSAGE value="network3gMode" />
     <MESSAGE value="contextCallback" />
     <MESSAGE value="scrollCallback" />
-    <option name="LAST_COMMIT_MESSAGE" value="scrollCallback" />
+    <MESSAGE value="scrollCallback 2" />
+    <MESSAGE value="if (scrollCallback)" />
+    <option name="LAST_COMMIT_MESSAGE" value="if (scrollCallback)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
