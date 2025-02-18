@@ -182,7 +182,7 @@ export async function navigateToPage({
     });
   } catch (error) {
     console.error(`navigateToPage > ${error.message}`);
-    throw `navigateToPage > ${error.message}`;
+    throw Error(`navigateToPage > ${error.message}`);
   }
 }
 
@@ -207,8 +207,8 @@ export async function switchToOpenedTab({
 
     return { latestPage };
   } catch (error) {
-    console.error("Error switching to opened tab:", error.message);
-    throw Error("switchToOpenedTab");
+    console.error(`switchToOpenedTab > ${error.message}`);
+    throw Error(`switchToOpenedTab > ${error.message}`);
   }
 }
 
@@ -229,8 +229,8 @@ export async function waitAndClick({
     });
     await page.click(selector);
   } catch (error) {
-    console.error(`waitAndClick`, error);
-    throw error;
+    console.error(`waitAndClick > ${error.message}`);
+    throw Error(`waitAndClick > ${error.message}`);
   }
 }
 
@@ -255,8 +255,8 @@ export async function typeText({
       delay: options.delay ?? 100,
     });
   } catch (error) {
-    console.error(`텍스트 입력 중 오류 발생: ${selector}`, error);
-    throw error;
+    console.error(`typeText > ${error.message}`);
+    throw Error(`typeText > ${error.message}`);
   }
 }
 
@@ -269,8 +269,8 @@ export async function getElementText(
     await page.waitForSelector(selector);
     return await page.$eval(selector, (el) => el.textContent?.trim() ?? "");
   } catch (error) {
-    console.error(`텍스트 가져오기 중 오류 발생: ${selector}`, error);
-    throw error;
+    console.error(`getElementText > ${error.message}`, error);
+    throw Error(`getElementText > ${error.message}`);
   }
 }
 
@@ -286,8 +286,8 @@ export async function takeScreenshot(
       type: options.type ?? "png",
     });
   } catch (error) {
-    console.error("스크린샷 촬영 중 오류 발생", error);
-    throw error;
+    console.error(`takeScreenshot > ${error.message}`);
+    throw Error(`takeScreenshot > ${error.message}`);
   }
 }
 
@@ -308,7 +308,7 @@ export async function downloadFile(
     return path;
   } catch (error) {
     console.error(`downloadFile > ${error.message}`);
-    throw error;
+    throw Error(`downloadFile > ${error.message}`);
   }
 }
 
@@ -324,7 +324,7 @@ export async function cleanup({
     await browser?.close();
   } catch (error) {
     console.error(`cleanup > ${error.message}`);
-    throw error;
+    throw Error(`cleanup > ${error.message}`);
   }
 }
 
@@ -344,7 +344,7 @@ export async function waitForPageLoad(
     }
   } catch (error) {
     console.error(`waitForPageLoad > ${error.message}`);
-    throw error;
+    throw `waitForPageLoad > ${error.message}`;
   }
 }
 
@@ -362,7 +362,7 @@ export async function scrollToElement(
       });
     });
   } catch (error) {
-    console.error(`요소로 스크롤 중 오류 발생: ${selector}`, error);
-    throw error;
+    console.error(`scrollToElement > ${error.message}`, error);
+    throw Error(`scrollToElement > ${error.message}`);
   }
 }
