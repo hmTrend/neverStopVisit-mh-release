@@ -34,7 +34,7 @@ export async function naverShopping({
 async function networkPlay({ internetType, playTime }) {
   const execute = await internetConnectType({
     internetType,
-    playTime: 3,
+    playTime,
   });
   await execute();
   await monitorNetworkAndStart();
