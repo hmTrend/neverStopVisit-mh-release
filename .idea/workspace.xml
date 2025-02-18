@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="networkPlay">
-      <change afterPath="$PROJECT_DIR$/main/controllers/atoms/network/checkInternetConnection.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="start-program">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/network/network.local.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/network/network.local.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" afterDir="false" />
     </list>
@@ -322,15 +320,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="72140000" />
-    </task>
-    <task id="LOCAL-00443" summary=" networkSpeed: &quot;LTE&quot; 추가">
-      <option name="closed" value="true" />
-      <created>1739320100765</created>
-      <option name="number" value="00443" />
-      <option name="presentableId" value="LOCAL-00443" />
-      <option name="project" value="LOCAL" />
-      <updated>1739320100765</updated>
+      <workItem from="1739530935139" duration="72522000" />
     </task>
     <task id="LOCAL-00444" summary="findTargetPlaceNLastActionRandomClick">
       <option name="closed" value="true" />
@@ -716,7 +706,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739867919179</updated>
     </task>
-    <option name="localTasksCounter" value="492" />
+    <task id="LOCAL-00492" summary="start-program">
+      <option name="closed" value="true" />
+      <created>1739869037657</created>
+      <option name="number" value="00492" />
+      <option name="presentableId" value="LOCAL-00492" />
+      <option name="project" value="LOCAL" />
+      <updated>1739869037657</updated>
+    </task>
+    <option name="localTasksCounter" value="493" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -761,7 +759,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경" />
     <MESSAGE value="v3.23.9" />
     <MESSAGE value="v3.26.0 연속 작업시 창끄고 다시 열기" />
     <MESSAGE value="console log 제거" />
@@ -786,7 +783,8 @@
     <MESSAGE value="internetConnectType" />
     <MESSAGE value="NPlaceRegisterValtio&#10;NShoppingLogic4RegisterValtio" />
     <MESSAGE value="networkPlay" />
-    <option name="LAST_COMMIT_MESSAGE" value="networkPlay" />
+    <MESSAGE value="start-program" />
+    <option name="LAST_COMMIT_MESSAGE" value="start-program" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

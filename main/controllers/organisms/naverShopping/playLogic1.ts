@@ -9,11 +9,13 @@ import {
 } from "../../atoms/playwright/engine";
 import { Page } from "playwright";
 import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhoneIN100percent";
+import wait from "waait";
 
 export async function playLogic1({
   targetKeyword = "문제적커피",
   nvMid = "82805514345",
   cookies = [],
+  delayTime = 30,
 } = {}) {
   /**
    * 네이버 가격비교 페이지 > 상품검색 > 상세페이지 > 상세정보 펼쳐보기
@@ -50,6 +52,7 @@ export async function playLogic1({
       scrollCallback: async ({ page }) =>
         await pressKey({ page, select: "End" }),
     });
+    await wait(delayTime * 1000);
     await cleanup({ page, context });
   } catch (e) {
     await cleanup({ page, context });

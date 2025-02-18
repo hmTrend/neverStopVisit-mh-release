@@ -31,7 +31,7 @@ export async function playNaverShopping({
       await getNShoppingLogic4ExcelAlignFlatTargetOne({
         groupFid: dataGroupFid,
       });
-    const { nvMid, workKeyword } = excelData;
+    const { nvMid, workKeyword, delayTime } = excelData;
     console.log("excelData 3333");
     console.log(excelData);
     await playSelectLogic({
@@ -39,6 +39,7 @@ export async function playNaverShopping({
       cookies: cookie,
       nvMid,
       targetKeyword: workKeyword,
+      delayTime,
     });
   } catch (e) {
     console.error(`playNaverShopping > ${e.message}`);
@@ -46,14 +47,32 @@ export async function playNaverShopping({
   }
 }
 
-async function playSelectLogic({ logicType, cookies, nvMid, targetKeyword }) {
-  await naverPlaceLogic1({ logicType, cookies, nvMid, targetKeyword });
+async function playSelectLogic({
+  logicType,
+  cookies,
+  nvMid,
+  targetKeyword,
+  delayTime,
+}) {
+  await naverPlaceLogic1({
+    logicType,
+    cookies,
+    nvMid,
+    targetKeyword,
+    delayTime,
+  });
   naverPlaceLogic2({ logicType });
 }
 
-async function naverPlaceLogic1({ logicType, cookies, nvMid, targetKeyword }) {
+async function naverPlaceLogic1({
+  logicType,
+  cookies,
+  nvMid,
+  targetKeyword,
+  delayTime,
+}) {
   if (logicType !== "LOGIC1") return;
-  await playLogic1({ cookies, nvMid, targetKeyword });
+  await playLogic1({ cookies, nvMid, targetKeyword, delayTime });
 }
 
 function naverPlaceLogic2({ logicType }) {

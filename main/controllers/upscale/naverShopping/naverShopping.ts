@@ -25,9 +25,9 @@ export async function naverShopping({
       });
     } catch (error) {
       console.error(`naverShopping > ${error.message}`);
-      await wait(30 * 1000);
+      await wait(10 * 1000);
     }
-    await wait(3000);
+    await wait(2 * 1000);
   }
 }
 
