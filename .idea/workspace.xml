@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="start-program">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="playTime">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,23 +319,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="72522000" />
-    </task>
-    <task id="LOCAL-00444" summary="findTargetPlaceNLastActionRandomClick">
-      <option name="closed" value="true" />
-      <created>1739321178995</created>
-      <option name="number" value="00444" />
-      <option name="presentableId" value="LOCAL-00444" />
-      <option name="project" value="LOCAL" />
-      <updated>1739321178995</updated>
-    </task>
-    <task id="LOCAL-00445" summary="placeMapUrlPatternCheck">
-      <option name="closed" value="true" />
-      <created>1739323968020</created>
-      <option name="number" value="00445" />
-      <option name="presentableId" value="LOCAL-00445" />
-      <option name="project" value="LOCAL" />
-      <updated>1739323968020</updated>
+      <workItem from="1739530935139" duration="74874000" />
     </task>
     <task id="LOCAL-00446" summary="targetKeywordSearchWithEmptyPage">
       <option name="closed" value="true" />
@@ -714,7 +697,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739869037657</updated>
     </task>
-    <option name="localTasksCounter" value="493" />
+    <task id="LOCAL-00493" summary="delayTime">
+      <option name="closed" value="true" />
+      <created>1739869435910</created>
+      <option name="number" value="00493" />
+      <option name="presentableId" value="LOCAL-00493" />
+      <option name="project" value="LOCAL" />
+      <updated>1739869435910</updated>
+    </task>
+    <task id="LOCAL-00494" summary="playTime">
+      <option name="closed" value="true" />
+      <created>1739869924440</created>
+      <option name="number" value="00494" />
+      <option name="presentableId" value="LOCAL-00494" />
+      <option name="project" value="LOCAL" />
+      <updated>1739869924440</updated>
+    </task>
+    <option name="localTasksCounter" value="495" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -759,8 +758,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v3.23.9" />
-    <MESSAGE value="v3.26.0 연속 작업시 창끄고 다시 열기" />
     <MESSAGE value="console log 제거" />
     <MESSAGE value="globalBrowsers.nShoppingLogic4_nvMid" />
     <MESSAGE value="더보기 클릭 못하는 이슈 해결" />
@@ -784,7 +781,9 @@
     <MESSAGE value="NPlaceRegisterValtio&#10;NShoppingLogic4RegisterValtio" />
     <MESSAGE value="networkPlay" />
     <MESSAGE value="start-program" />
-    <option name="LAST_COMMIT_MESSAGE" value="start-program" />
+    <MESSAGE value="delayTime" />
+    <MESSAGE value="playTime" />
+    <option name="LAST_COMMIT_MESSAGE" value="playTime" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

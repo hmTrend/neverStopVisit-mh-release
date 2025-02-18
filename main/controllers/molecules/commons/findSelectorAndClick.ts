@@ -31,7 +31,10 @@ export async function findSelectorAndClick({
   try {
     const networkManager = createNetworkManager(page);
     await networkManager.waitForAllRequests();
-    if (scrollCallback) await scrollCallback({ page });
+    if (scrollCallback) {
+      await scrollCallback({ page });
+      await page.locator('button:has-text("상세정보 펼쳐보기")').waitFor();
+    }
     const element = transSelecterType({ page, selector });
     await element.scrollIntoViewIfNeeded({ timeout: 1000 });
     await page.waitForTimeout(1000); // 스크롤 후 잠시 대기

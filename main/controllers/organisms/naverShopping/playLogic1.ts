@@ -40,10 +40,7 @@ export async function playLogic1({
       clickSelector: 'button[data-shp-area="scb.search"]',
       options: { clearFirst: true, delay: 300 },
     });
-    await findSelectorAndClick({
-      page,
-      selector: `#_sr_lst_${nvMid}`,
-    });
+    await comparePricesFindAllProducts({ nvMid, maxPages: 1, page });
     const { latestPage } = await switchToOpenedTab({ context });
     page = latestPage;
     await findSelectorAndClick({
@@ -62,3 +59,31 @@ export async function playLogic1({
 }
 
 // playLogic1();
+
+async function comparePricesFindAllProducts({
+  page,
+  nvMid = "",
+  maxPages = 1,
+}: {
+  page: Page;
+  nvMid: string;
+  maxPages: number;
+}) {
+  try {
+    await findSelectorAndClick({
+      page,
+      selector: `#_sr_lst_${nvMid}`,
+    });
+  } catch (e) {
+    console.error(`comparePricesFindAllProducts > ${e.message}`);
+    for (let i = 0; i < 5; i++) {
+      await page.keyboard.press("End");
+      await page.waitForLoadState("domcontentloaded");
+      await wait(300);
+    }
+    await findSelectorAndClick({
+      page,
+      selector: `#_sr_lst_${nvMid}`,
+    });
+  }
+}
