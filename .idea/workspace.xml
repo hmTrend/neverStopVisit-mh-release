@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="errorMessageTrans">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="totalWorkingTime: Math.floor(totalSeconds)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/util/timeStartToEnd.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/util/timeStartToEnd.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,15 +319,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="87644000" />
-    </task>
-    <task id="LOCAL-00459" summary="v3.23.9">
-      <option name="closed" value="true" />
-      <created>1739516043756</created>
-      <option name="number" value="00459" />
-      <option name="presentableId" value="LOCAL-00459" />
-      <option name="project" value="LOCAL" />
-      <updated>1739516043756</updated>
+      <workItem from="1739530935139" duration="89427000" />
     </task>
     <task id="LOCAL-00460" summary="v3.26.0 연속 작업시 창끄고 다시 열기">
       <option name="closed" value="true" />
@@ -715,7 +705,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739891155012</updated>
     </task>
-    <option name="localTasksCounter" value="508" />
+    <task id="LOCAL-00508" summary="totalWorkingTime: Math.floor(totalSeconds)">
+      <option name="closed" value="true" />
+      <created>1739892131008</created>
+      <option name="number" value="00508" />
+      <option name="presentableId" value="LOCAL-00508" />
+      <option name="project" value="LOCAL" />
+      <updated>1739892131008</updated>
+    </task>
+    <option name="localTasksCounter" value="509" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -760,7 +758,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="scrollCallback 2" />
     <MESSAGE value="if (scrollCallback)" />
     <MESSAGE value="scrollCallback" />
     <MESSAGE value="shopping &gt; playLogic1" />
@@ -785,7 +782,8 @@
     <MESSAGE value="&lt;StatArrow type=&quot;increase&quot; /&gt;" />
     <MESSAGE value="throw Error refactoring" />
     <MESSAGE value="errorMessageTrans" />
-    <option name="LAST_COMMIT_MESSAGE" value="errorMessageTrans" />
+    <MESSAGE value="totalWorkingTime: Math.floor(totalSeconds)" />
+    <option name="LAST_COMMIT_MESSAGE" value="totalWorkingTime: Math.floor(totalSeconds)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
