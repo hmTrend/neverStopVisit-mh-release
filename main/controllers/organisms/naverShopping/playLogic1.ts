@@ -10,6 +10,7 @@ import {
 import { Page } from "playwright";
 import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhoneIN100percent";
 import wait from "waait";
+import { sameUrlCheckForError } from "../../molecules/commons/sameUrlCheckForError";
 
 export async function playLogic1({
   targetKeyword = "문제적커피",
@@ -41,6 +42,7 @@ export async function playLogic1({
       options: { clearFirst: true, delay: 300 },
     });
     await comparePricesFindAllProducts({ nvMid, maxPages: 1, page });
+    await sameUrlCheckForError(); // 19세 상품일경우 19세 이상 아이디로만 접근가능
     const { latestPage } = await switchToOpenedTab({ context });
     page = latestPage;
     await findSelectorAndClick({

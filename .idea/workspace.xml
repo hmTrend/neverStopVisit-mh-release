@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="playTime">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="sameUrlCheckForError">
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +105,7 @@
     "TypeScript.network.router.edu.ts.executor": "Run",
     "TypeScript.network.router.eduPlayer.ts.executor": "Run",
     "TypeScript.playLogic1.ts.executor": "Run",
+    "TypeScript.sameUrlCheckForError.ts.executor": "Run",
     "TypeScript.searchNVMID.ts.executor": "Run",
     "TypeScript.searchNaverPriceCompare.ts.executor": "Run",
     "TypeScript.searchNaverPriceCompareInPriceCompare.ts.executor": "Run",
@@ -153,7 +152,7 @@
       <recent name="$PROJECT_DIR$/main/lib/network" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.naverShopping.ts">
+  <component name="RunManager" selected="TypeScript.sameUrlCheckForError.ts">
     <configuration name="findSelectorAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -164,20 +163,6 @@
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" />
-      <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <method v="2" />
-    </configuration>
-    <configuration name="getFingerPrintTargetExcelOne2.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/excel" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne2.ts" />
       <option name="programParameters" value="" />
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
@@ -224,13 +209,27 @@
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
+    <configuration name="sameUrlCheckForError.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.sameUrlCheckForError.ts" />
         <item itemvalue="TypeScript.naverShopping.ts" />
         <item itemvalue="TypeScript.index.ts (1)" />
         <item itemvalue="TypeScript.findSelectorAndClick.ts" />
         <item itemvalue="TypeScript.gotoPage.ts" />
-        <item itemvalue="TypeScript.getFingerPrintTargetExcelOne2.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -319,23 +318,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="74874000" />
-    </task>
-    <task id="LOCAL-00446" summary="targetKeywordSearchWithEmptyPage">
-      <option name="closed" value="true" />
-      <created>1739324789347</created>
-      <option name="number" value="00446" />
-      <option name="presentableId" value="LOCAL-00446" />
-      <option name="project" value="LOCAL" />
-      <updated>1739324789347</updated>
-    </task>
-    <task id="LOCAL-00447" summary="const targetUrlPattern 보강">
-      <option name="closed" value="true" />
-      <created>1739327515913</created>
-      <option name="number" value="00447" />
-      <option name="presentableId" value="LOCAL-00447" />
-      <option name="project" value="LOCAL" />
-      <updated>1739327515913</updated>
+      <workItem from="1739530935139" duration="77964000" />
     </task>
     <task id="LOCAL-00448" summary="하단 플레이스 이동후 동적 로딩후 다음작업">
       <option name="closed" value="true" />
@@ -713,7 +696,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739869924440</updated>
     </task>
-    <option name="localTasksCounter" value="495" />
+    <task id="LOCAL-00495" summary="comparePricesFindAllProducts">
+      <option name="closed" value="true" />
+      <created>1739871772345</created>
+      <option name="number" value="00495" />
+      <option name="presentableId" value="LOCAL-00495" />
+      <option name="project" value="LOCAL" />
+      <updated>1739871772345</updated>
+    </task>
+    <task id="LOCAL-00496" summary="sameUrlCheckForError">
+      <option name="closed" value="true" />
+      <created>1739881499681</created>
+      <option name="number" value="00496" />
+      <option name="presentableId" value="LOCAL-00496" />
+      <option name="project" value="LOCAL" />
+      <updated>1739881499681</updated>
+    </task>
+    <option name="localTasksCounter" value="497" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -758,8 +757,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="console log 제거" />
-    <MESSAGE value="globalBrowsers.nShoppingLogic4_nvMid" />
     <MESSAGE value="더보기 클릭 못하는 이슈 해결" />
     <MESSAGE value="알림버튼 기다리기" />
     <MESSAGE value="플레이스 없는것 대응" />
@@ -783,7 +780,9 @@
     <MESSAGE value="start-program" />
     <MESSAGE value="delayTime" />
     <MESSAGE value="playTime" />
-    <option name="LAST_COMMIT_MESSAGE" value="playTime" />
+    <MESSAGE value="comparePricesFindAllProducts" />
+    <MESSAGE value="sameUrlCheckForError" />
+    <option name="LAST_COMMIT_MESSAGE" value="sameUrlCheckForError" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

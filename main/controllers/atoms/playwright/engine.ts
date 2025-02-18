@@ -199,7 +199,7 @@ export async function switchToOpenedTab({
     const latestPage = pages[pages.length - 1];
 
     if (!latestPage) {
-      throw `switchToOpenedTab > No pages found`;
+      throw Error(`switchToOpenedTab > No pages found`);
     }
 
     // 페이지가 완전히 로드될 때까지 대기
