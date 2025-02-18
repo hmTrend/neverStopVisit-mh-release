@@ -56,7 +56,7 @@ export async function playLogic1({
   } catch (e) {
     await cleanup({ page, context });
     console.error(`playLogic1 > ${e.message}`);
-    throw `playLogic1 > ${e.message}`;
+    throw Error(`playLogic1 > ${e.message}`);
   }
 }
 

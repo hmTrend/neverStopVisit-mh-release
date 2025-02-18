@@ -10,7 +10,7 @@ export async function getFingerPrintTargetExcelOne({
     return { cookieId: data._id, cookie: JSON.parse(data.cookie) };
   } catch (e) {
     console.error(`getFingerPrintTargetExcelOne > ${e.message}`);
-    throw `getFingerPrintTargetExcelOne > ${e.message}`;
+    throw Error(`getFingerPrintTargetExcelOne > ${e.message}`);
   }
 }
 

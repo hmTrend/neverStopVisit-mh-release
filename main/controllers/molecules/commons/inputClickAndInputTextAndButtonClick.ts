@@ -33,7 +33,7 @@ export async function inputClickAndInputTextAndButtonClick({
     return { getPage: page };
   } catch (e) {
     console.error(`inputClickAndInputTextAndButtonClick > ${e.message}`);
-    throw `inputClickAndInputTextAndButtonClick > ${e.message}`;
+    throw Error(`inputClickAndInputTextAndButtonClick > ${e.message}`);
   }
 }
 

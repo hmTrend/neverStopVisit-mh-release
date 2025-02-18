@@ -344,7 +344,7 @@ export async function waitForPageLoad(
     }
   } catch (error) {
     console.error(`waitForPageLoad > ${error.message}`);
-    throw `waitForPageLoad > ${error.message}`;
+    throw Error(`waitForPageLoad > ${error.message}`);
   }
 }
 

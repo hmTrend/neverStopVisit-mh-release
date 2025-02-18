@@ -11,7 +11,7 @@ export async function getNShoppingLogic4ExcelAlignFlatTargetOne({
     return data;
   } catch (e) {
     console.error(`getNShoppingLogic4ExcelAlignFlatTargetOne > ${e.message}`);
-    throw `getNShoppingLogic4ExcelAlignFlatTargetOne > ${e.message}`;
+    throw Error(`getNShoppingLogic4ExcelAlignFlatTargetOne > ${e.message}`);
   }
 }
 

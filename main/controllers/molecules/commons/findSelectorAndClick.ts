@@ -42,7 +42,7 @@ export async function findSelectorAndClick({
     return { getPage: page };
   } catch (e) {
     console.error(e.message);
-    throw `findTargetItemAndClick > ${e.message}`;
+    throw Error(`findTargetItemAndClick > ${e.message}`);
   }
 }
 

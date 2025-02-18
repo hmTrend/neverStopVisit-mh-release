@@ -17,6 +17,6 @@ export async function measureExecutionTime({
     return totalSeconds;
   } catch (error) {
     console.error(`measureExecutionTime > ${error.message}`);
-    throw `measureExecutionTime > ${error.message}`;
+    throw Error(`measureExecutionTime > ${error.message}`);
   }
 }
