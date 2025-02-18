@@ -6,6 +6,7 @@ import { NPlace } from "../../services/nPlace";
 import { closeAllBrowsers } from "../../services/commons/PuppeteerEngine/BrowserManager";
 import wait from "waait";
 import { NShoppingLogic4 } from "../../services/nShoppingLogic4";
+import { naverShopping } from "../../controllers/upscale/naverShopping/naverShopping";
 
 export const startProgramIpc = ({ mainWindow }) => {
   let currentNShoppingLogic4Instance = null;
@@ -14,19 +15,27 @@ export const startProgramIpc = ({ mainWindow }) => {
 
   ipcMain.handle("start-program", async (event, args) => {
     const data = JSON.parse(args);
-    const { nShopping, common, nPlace, nShoppingLogic4 } = data;
-    await executeInChunks({
-      totalCount: 10000,
-      chunkSize: 100,
-      nPlace,
-      nShopping,
-      nShoppingLogic4,
-      common,
-      mainWindow,
-      currentNShoppingLogic4Instance,
-      currentNShoppingInstance,
-      currentNPlaceInstance,
-    });
+    const { common, nPlace, nShoppingLogic4 } = data;
+    if (nShoppingLogic4.isStart) {
+      await naverShopping({
+        internetType: common.ip,
+        playTime: common.ipChangeCount,
+        mainWindow,
+        data: nShoppingLogic4,
+      });
+    }
+    // await executeInChunks({
+    //   totalCount: 10000,
+    //   chunkSize: 100,
+    //   nPlace,
+    //   nShopping,
+    //   nShoppingLogic4,
+    //   common,
+    //   mainWindow,
+    //   currentNShoppingLogic4Instance,
+    //   currentNShoppingInstance,
+    //   currentNPlaceInstance,
+    // });
     return { message: "OK" };
   });
 
@@ -86,13 +95,13 @@ async function executeInChunks({
         try {
           if (nShoppingLogic4.isStart) {
             console.log("this is nShoppingLogic4");
-            startProgramList.push(
-              currentNShoppingLogic4Instance.start({
-                nShoppingLogic4,
-                mainWindow,
-                continuousWork,
-              }),
-            );
+            // startProgramList.push(
+            //   currentNShoppingLogic4Instance.start({
+            //     nShoppingLogic4,
+            //     mainWindow,
+            //     continuousWork,
+            //   }),
+            // );
           }
           if (nShopping.isStart) {
             startProgramList.push(

@@ -19,7 +19,7 @@ interface NShoppingLogic4ExcelListAlignFlatMapEntity {
 }
 
 export async function playNaverShopping({
-  logicType = "logic1",
+  logicType = "LOGIC1",
   dataGroupFid = "678069f3613a9e38805be50d",
   fingerPrintGroupFid = "673c1ccbdafecfc189ac92ff",
 } = {}) {
@@ -52,12 +52,12 @@ async function playSelectLogic({ logicType, cookies, nvMid, targetKeyword }) {
 }
 
 async function naverPlaceLogic1({ logicType, cookies, nvMid, targetKeyword }) {
-  if (logicType !== "logic1") return;
+  if (logicType !== "LOGIC1") return;
   await playLogic1({ cookies, nvMid, targetKeyword });
 }
 
 function naverPlaceLogic2({ logicType }) {
-  if (logicType !== "logic2") return;
+  if (logicType !== "LOGIC2") return;
 }
 
 // playNaverShopping();

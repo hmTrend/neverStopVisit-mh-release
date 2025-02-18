@@ -3,29 +3,41 @@ import wait from "waait";
 import { internetConnectType } from "../../molecules/commons/internetConnectType";
 import { playNaverShopping } from "../../templetes/naverShopping";
 import { UtilNetwork } from "../../atoms/util/util.network";
+import { monitorNetworkAndStart } from "../../atoms/network/network.local";
 
-export async function naverShopping({ internetType = "STATIC" }) {
+export async function naverShopping({
+  internetType = "STATIC",
+  playTime,
+  mainWindow,
+  data,
+}) {
   let isRunning = true;
   while (isRunning) {
     try {
-      await networkPlay({ internetType });
+      await networkPlay({ internetType, playTime });
       await measureExecutionTime({
-        playCallback: playNaverShopping,
+        playCallback: () =>
+          playNaverShopping({
+            logicType: data.logicType,
+            dataGroupFid: data.selectedGroup.groupId,
+            fingerPrintGroupFid: data.fingerPrint.groupId,
+          }),
       });
     } catch (error) {
       console.error(`naverShopping > ${error.message}`);
-      await wait(10 * 1000);
+      await wait(30 * 1000);
     }
-    await wait(1000);
+    await wait(3000);
   }
 }
 
-async function networkPlay({ internetType }) {
+async function networkPlay({ internetType, playTime }) {
   const execute = await internetConnectType({
     internetType,
     playTime: 3,
   });
   await execute();
+  await monitorNetworkAndStart();
   return await UtilNetwork.getIpAddress();
 }
 

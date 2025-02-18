@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="NPlaceRegisterValtio&#10;NShoppingLogic4RegisterValtio">
-      <change afterPath="$PROJECT_DIR$/main/controllers/atoms/util/util.network.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="networkPlay">
+      <change afterPath="$PROJECT_DIR$/main/controllers/atoms/network/checkInternetConnection.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/internetConnectType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/internetConnectType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/network/network.local.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/network/network.local.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +119,7 @@
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/controllers/atoms/util",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/controllers/atoms/network",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -140,9 +142,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/controllers/atoms/network" />
       <recent name="$PROJECT_DIR$/main/controllers/atoms/util" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register" />
-      <recent name="$PROJECT_DIR$/main/controllers/atoms/network" />
       <recent name="$PROJECT_DIR$/main/controllers/templetes/naverShopping" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/user" />
     </key>
@@ -320,15 +322,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="70979000" />
-    </task>
-    <task id="LOCAL-00442" summary="expandAndClickMore / 개선">
-      <option name="closed" value="true" />
-      <created>1739319782910</created>
-      <option name="number" value="00442" />
-      <option name="presentableId" value="LOCAL-00442" />
-      <option name="project" value="LOCAL" />
-      <updated>1739319782911</updated>
+      <workItem from="1739530935139" duration="72140000" />
     </task>
     <task id="LOCAL-00443" summary=" networkSpeed: &quot;LTE&quot; 추가">
       <option name="closed" value="true" />
@@ -714,7 +708,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739866471378</updated>
     </task>
-    <option name="localTasksCounter" value="491" />
+    <task id="LOCAL-00491" summary="networkPlay">
+      <option name="closed" value="true" />
+      <created>1739867919178</created>
+      <option name="number" value="00491" />
+      <option name="presentableId" value="LOCAL-00491" />
+      <option name="project" value="LOCAL" />
+      <updated>1739867919179</updated>
+    </task>
+    <option name="localTasksCounter" value="492" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -759,7 +761,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v3.23.3 플레이스 이미지 확인로직 강화" />
     <MESSAGE value="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경" />
     <MESSAGE value="v3.23.9" />
     <MESSAGE value="v3.26.0 연속 작업시 창끄고 다시 열기" />
@@ -784,7 +785,8 @@
     <MESSAGE value="naverShopping" />
     <MESSAGE value="internetConnectType" />
     <MESSAGE value="NPlaceRegisterValtio&#10;NShoppingLogic4RegisterValtio" />
-    <option name="LAST_COMMIT_MESSAGE" value="NPlaceRegisterValtio&#10;NShoppingLogic4RegisterValtio" />
+    <MESSAGE value="networkPlay" />
+    <option name="LAST_COMMIT_MESSAGE" value="networkPlay" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
