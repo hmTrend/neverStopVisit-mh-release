@@ -17,6 +17,7 @@ export async function naverShopping({
   while (isRunning) {
     try {
       await workedDataToFront({
+        mainWindow,
         callback: () => totalPlay({ playTime, data, internetType }),
       });
     } catch (error) {

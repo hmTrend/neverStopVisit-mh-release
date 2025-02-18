@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="DataUser">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="setDataUser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/ipc/workedDataToFront.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/user/data.user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/user/data.user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/util/timeStartToEnd.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/util/timeStartToEnd.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,15 +321,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="83662000" />
-    </task>
-    <task id="LOCAL-00451" summary="v3.23.0">
-      <option name="closed" value="true" />
-      <created>1739338339140</created>
-      <option name="number" value="00451" />
-      <option name="presentableId" value="LOCAL-00451" />
-      <option name="project" value="LOCAL" />
-      <updated>1739338339140</updated>
+      <workItem from="1739530935139" duration="84596000" />
     </task>
     <task id="LOCAL-00452" summary="v3.23.3 플레이스 이미지 확인로직 강화">
       <option name="closed" value="true" />
@@ -717,7 +707,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739884033008</updated>
     </task>
-    <option name="localTasksCounter" value="500" />
+    <task id="LOCAL-00500" summary="setDataUser">
+      <option name="closed" value="true" />
+      <created>1739888065313</created>
+      <option name="number" value="00500" />
+      <option name="presentableId" value="LOCAL-00500" />
+      <option name="project" value="LOCAL" />
+      <updated>1739888065313</updated>
+    </task>
+    <option name="localTasksCounter" value="501" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -762,7 +760,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="플레이스 없는것 대응" />
     <MESSAGE value="gotoNaverEmptyPage" />
     <MESSAGE value="inputClickAndInputTextAndButtonClick" />
     <MESSAGE value="findTargetItemAndClick" />
@@ -787,7 +784,8 @@
     <MESSAGE value="sameUrlCheckForError" />
     <MESSAGE value="throw Error 처리" />
     <MESSAGE value="DataUser" />
-    <option name="LAST_COMMIT_MESSAGE" value="DataUser" />
+    <MESSAGE value="setDataUser" />
+    <option name="LAST_COMMIT_MESSAGE" value="setDataUser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

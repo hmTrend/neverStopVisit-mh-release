@@ -30,7 +30,6 @@ export async function sameUrlCheckForError({
     console.error(e.message);
     throw Error(e.message);
   }
-  return;
 }
 
 // sameUrlCheckForError();
