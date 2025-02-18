@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="setDataUser">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="  logicType: logicType,&#10;      workType: &quot;NShoppingLogic4&quot;,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +116,7 @@
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/controllers/atoms/network",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/controllers/atoms/util",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -141,8 +139,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/main/controllers/atoms/network" />
       <recent name="$PROJECT_DIR$/main/controllers/atoms/util" />
+      <recent name="$PROJECT_DIR$/main/controllers/atoms/network" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register" />
       <recent name="$PROJECT_DIR$/main/controllers/templetes/naverShopping" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/user" />
@@ -321,23 +319,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="84596000" />
-    </task>
-    <task id="LOCAL-00452" summary="v3.23.3 플레이스 이미지 확인로직 강화">
-      <option name="closed" value="true" />
-      <created>1739340608937</created>
-      <option name="number" value="00452" />
-      <option name="presentableId" value="LOCAL-00452" />
-      <option name="project" value="LOCAL" />
-      <updated>1739340608937</updated>
-    </task>
-    <task id="LOCAL-00453" summary="v3.23.3 플레이스 이미지 확인로직 강화">
-      <option name="closed" value="true" />
-      <created>1739340617003</created>
-      <option name="number" value="00453" />
-      <option name="presentableId" value="LOCAL-00453" />
-      <option name="project" value="LOCAL" />
-      <updated>1739340617003</updated>
+      <workItem from="1739530935139" duration="85535000" />
     </task>
     <task id="LOCAL-00454" summary="v3.23.3 플레이스 이미지 확인로직 강화">
       <option name="closed" value="true" />
@@ -715,7 +697,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739888065313</updated>
     </task>
-    <option name="localTasksCounter" value="501" />
+    <task id="LOCAL-00501" summary="sameUrlCheckForError">
+      <option name="closed" value="true" />
+      <created>1739888994615</created>
+      <option name="number" value="00501" />
+      <option name="presentableId" value="LOCAL-00501" />
+      <option name="project" value="LOCAL" />
+      <updated>1739888994615</updated>
+    </task>
+    <task id="LOCAL-00502" summary="  logicType: logicType,&#10;      workType: &quot;NShoppingLogic4&quot;,">
+      <option name="closed" value="true" />
+      <created>1739889864630</created>
+      <option name="number" value="00502" />
+      <option name="presentableId" value="LOCAL-00502" />
+      <option name="project" value="LOCAL" />
+      <updated>1739889864630</updated>
+    </task>
+    <option name="localTasksCounter" value="503" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -760,7 +758,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="gotoNaverEmptyPage" />
     <MESSAGE value="inputClickAndInputTextAndButtonClick" />
     <MESSAGE value="findTargetItemAndClick" />
     <MESSAGE value="network3gMode" />
@@ -781,11 +778,12 @@
     <MESSAGE value="delayTime" />
     <MESSAGE value="playTime" />
     <MESSAGE value="comparePricesFindAllProducts" />
-    <MESSAGE value="sameUrlCheckForError" />
     <MESSAGE value="throw Error 처리" />
     <MESSAGE value="DataUser" />
     <MESSAGE value="setDataUser" />
-    <option name="LAST_COMMIT_MESSAGE" value="setDataUser" />
+    <MESSAGE value="sameUrlCheckForError" />
+    <MESSAGE value="  logicType: logicType,&#10;      workType: &quot;NShoppingLogic4&quot;," />
+    <option name="LAST_COMMIT_MESSAGE" value="  logicType: logicType,&#10;      workType: &quot;NShoppingLogic4&quot;," />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

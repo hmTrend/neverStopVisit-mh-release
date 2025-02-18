@@ -9,6 +9,8 @@ export function WorkCompletedList() {
   useEffect(() => {
     const cleanup = window.ipc.on("error-to-front-result", (args: any) => {
       storeWork.addToCompletedList(args);
+      console.log("args 333333");
+      console.log(args);
     });
     return cleanup;
   }, []);

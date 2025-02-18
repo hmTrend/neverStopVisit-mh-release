@@ -3,6 +3,7 @@ export const DataUser = {
   mainWindow: undefined,
   errorMessage: "",
   workType: "",
+  logicType: "",
   myIp: "",
   nvMid: "",
   delayTime: 0,
@@ -18,6 +19,7 @@ export function dataUserInitialize() {
   DataUser.mainWindow = undefined;
   DataUser.errorMessage = "";
   DataUser.workType = "";
+  DataUser.logicType = "";
   DataUser.myIp = "";
   DataUser.nvMid = "";
   DataUser.delayTime = 0;
@@ -32,6 +34,7 @@ export function setDataUser({
   mainWindow,
   errorMessage,
   workType,
+  logicType,
   myIp,
   nvMid,
   delayTime,
@@ -41,6 +44,7 @@ export function setDataUser({
   mainWindow?: undefined;
   errorMessage?: string;
   workType?: string;
+  logicType?: string;
   myIp?: string;
   nvMid?: string;
   delayTime?: number;
@@ -51,6 +55,7 @@ export function setDataUser({
   if (mainWindow !== undefined) DataUser.mainWindow = mainWindow;
   if (errorMessage !== undefined) DataUser.errorMessage = errorMessage;
   if (workType !== undefined) DataUser.workType = workType;
+  if (logicType !== undefined) DataUser.logicType = logicType;
   if (myIp !== undefined) DataUser.myIp = myIp;
   if (nvMid !== undefined) DataUser.nvMid = nvMid;
   if (delayTime !== undefined) DataUser.delayTime = delayTime;
