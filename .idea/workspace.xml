@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="  logicType: logicType,&#10;      workType: &quot;NShoppingLogic4&quot;,">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="&lt;Box width=&quot;20px&quot;&gt;">
       <change beforePath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -320,15 +318,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="86259000" />
-    </task>
-    <task id="LOCAL-00455" summary="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경">
-      <option name="closed" value="true" />
-      <created>1739356813921</created>
-      <option name="number" value="00455" />
-      <option name="presentableId" value="LOCAL-00455" />
-      <option name="project" value="LOCAL" />
-      <updated>1739356813921</updated>
+      <workItem from="1739530935139" duration="86350000" />
     </task>
     <task id="LOCAL-00456" summary="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경">
       <option name="closed" value="true" />
@@ -714,7 +704,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739889885696</updated>
     </task>
-    <option name="localTasksCounter" value="504" />
+    <task id="LOCAL-00504" summary="&lt;Box width=&quot;20px&quot;&gt;">
+      <option name="closed" value="true" />
+      <created>1739890619831</created>
+      <option name="number" value="00504" />
+      <option name="presentableId" value="LOCAL-00504" />
+      <option name="project" value="LOCAL" />
+      <updated>1739890619831</updated>
+    </task>
+    <option name="localTasksCounter" value="505" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -759,7 +757,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="inputClickAndInputTextAndButtonClick" />
     <MESSAGE value="findTargetItemAndClick" />
     <MESSAGE value="network3gMode" />
     <MESSAGE value="contextCallback" />
@@ -784,7 +781,8 @@
     <MESSAGE value="setDataUser" />
     <MESSAGE value="sameUrlCheckForError" />
     <MESSAGE value="  logicType: logicType,&#10;      workType: &quot;NShoppingLogic4&quot;," />
-    <option name="LAST_COMMIT_MESSAGE" value="  logicType: logicType,&#10;      workType: &quot;NShoppingLogic4&quot;," />
+    <MESSAGE value="&lt;Box width=&quot;20px&quot;&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&lt;Box width=&quot;20px&quot;&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

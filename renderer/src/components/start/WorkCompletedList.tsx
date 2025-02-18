@@ -31,11 +31,11 @@ export function WorkCompletedList() {
           <Box width="20px">
             {v?.errorMessage === "" ? (
               <Stat>
-                <StatArrow type="decrease" />
+                <StatArrow type="increase" />
               </Stat>
             ) : (
               <Stat>
-                <StatArrow type="increase" />
+                <StatArrow type="decrease" />
               </Stat>
             )}
           </Box>
