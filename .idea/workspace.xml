@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="throw Error refactoring">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="errorMessageTrans">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/util/timeStartToEnd.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/util/timeStartToEnd.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -320,15 +321,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="86791000" />
-    </task>
-    <task id="LOCAL-00458" summary="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경">
-      <option name="closed" value="true" />
-      <created>1739356969359</created>
-      <option name="number" value="00458" />
-      <option name="presentableId" value="LOCAL-00458" />
-      <option name="project" value="LOCAL" />
-      <updated>1739356969359</updated>
+      <workItem from="1739530935139" duration="87644000" />
     </task>
     <task id="LOCAL-00459" summary="v3.23.9">
       <option name="closed" value="true" />
@@ -714,7 +707,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739890876323</updated>
     </task>
-    <option name="localTasksCounter" value="507" />
+    <task id="LOCAL-00507" summary="errorMessageTrans">
+      <option name="closed" value="true" />
+      <created>1739891155012</created>
+      <option name="number" value="00507" />
+      <option name="presentableId" value="LOCAL-00507" />
+      <option name="project" value="LOCAL" />
+      <updated>1739891155012</updated>
+    </task>
+    <option name="localTasksCounter" value="508" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -759,7 +760,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="contextCallback" />
     <MESSAGE value="scrollCallback 2" />
     <MESSAGE value="if (scrollCallback)" />
     <MESSAGE value="scrollCallback" />
@@ -784,7 +784,8 @@
     <MESSAGE value="&lt;Box width=&quot;20px&quot;&gt;" />
     <MESSAGE value="&lt;StatArrow type=&quot;increase&quot; /&gt;" />
     <MESSAGE value="throw Error refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="throw Error refactoring" />
+    <MESSAGE value="errorMessageTrans" />
+    <option name="LAST_COMMIT_MESSAGE" value="errorMessageTrans" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

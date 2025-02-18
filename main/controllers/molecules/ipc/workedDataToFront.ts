@@ -27,17 +27,21 @@ export async function workedDataToFront({
     await callback();
     mainWindow.webContents.send(sendAddress, {
       workType: DataUser.workType,
+      logicType: DataUser.logicType,
       errorMessage: "",
       targetKeyword: DataUser.targetKeyword,
       myIp: DataUser.myIp,
+      totalWorkingTime: DataUser.totalWorkingTime,
       createdAt: UtilDate.getCurrentDate(),
     });
   } catch (e) {
     mainWindow.webContents.send(sendAddress, {
       workType: DataUser.workType,
+      logicType: DataUser.logicType,
       errorMessage: errorMessageTrans({ errMessage: e.message }),
       targetKeyword: DataUser.targetKeyword,
       myIp: DataUser.myIp,
+      totalWorkingTime: DataUser.totalWorkingTime,
       createdAt: UtilDate.getCurrentDate(),
     });
     console.error(`workedDataToFront > ${e.message}`);

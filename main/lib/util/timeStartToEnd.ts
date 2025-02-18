@@ -13,8 +13,8 @@ export async function measureExecutionTime({
     const endTime = new Date().getTime(); // 종료 시간 저장
     const totalSeconds = (endTime - startTime) / 1000; // 밀리초를 초로 변환
     console.log(`totalSeconds > ${totalSeconds}`);
-    setDataUser({ totalWorkingTime: totalSeconds });
-    return totalSeconds;
+    setDataUser({ totalWorkingTime: Math.floor(totalSeconds) });
+    return Math.floor(totalSeconds);
   } catch (error) {
     console.error(`measureExecutionTime > ${error.message}`);
     throw Error(`measureExecutionTime > ${error.message}`);

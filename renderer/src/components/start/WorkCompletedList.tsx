@@ -25,6 +25,7 @@ export function WorkCompletedList() {
         <Text>타겟키워드</Text>
         <Text>내아이피</Text>
         <Text>작업시간</Text>
+        <Text>작성날짜</Text>
         <Text>에러내용</Text>
       </Box>
       {completedList?.map((v, i) => (
@@ -45,6 +46,7 @@ export function WorkCompletedList() {
           <Text>{v?.logicType}</Text>
           <Text>{v?.targetKeyword}</Text>
           <Text>{v?.myIp}</Text>
+          <Text>{v?.totalWorkingTime}초</Text>
           <Text>{v?.createdAt}</Text>
           <Text>{v?.errorMessage}</Text>
         </Box>
