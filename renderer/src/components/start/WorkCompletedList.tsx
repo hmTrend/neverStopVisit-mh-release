@@ -20,7 +20,8 @@ export function WorkCompletedList() {
       <Box display={"flex"} gap={3}>
         <Text>성공</Text>
         <Text>번호</Text>
-        <Text>작업타입</Text>
+        <Text>유형</Text>
+        <Text>로직</Text>
         <Text>타겟키워드</Text>
         <Text>내아이피</Text>
         <Text>작업시간</Text>
@@ -41,6 +42,7 @@ export function WorkCompletedList() {
           </Box>
           <Text>{i + 1}</Text>
           <Text>{v?.workType === "NShoppingLogic4" ? "쇼핑" : "플레이스"}</Text>
+          <Text>{v?.logicType}</Text>
           <Text>{v?.targetKeyword}</Text>
           <Text>{v?.myIp}</Text>
           <Text>{v?.createdAt}</Text>

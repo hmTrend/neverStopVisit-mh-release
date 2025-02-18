@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="&lt;Box width=&quot;20px&quot;&gt;">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="throw Error refactoring">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -318,23 +320,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="86350000" />
-    </task>
-    <task id="LOCAL-00456" summary="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경">
-      <option name="closed" value="true" />
-      <created>1739356833911</created>
-      <option name="number" value="00456" />
-      <option name="presentableId" value="LOCAL-00456" />
-      <option name="project" value="LOCAL" />
-      <updated>1739356833911</updated>
-    </task>
-    <task id="LOCAL-00457" summary="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경">
-      <option name="closed" value="true" />
-      <created>1739356881317</created>
-      <option name="number" value="00457" />
-      <option name="presentableId" value="LOCAL-00457" />
-      <option name="project" value="LOCAL" />
-      <updated>1739356881317</updated>
+      <workItem from="1739530935139" duration="86791000" />
     </task>
     <task id="LOCAL-00458" summary="v3.23.6 플레이스 이미지 확인로직 삭제 / 유동적이라 플레이스 더보기 재클릭으로 변경">
       <option name="closed" value="true" />
@@ -712,7 +698,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739890619831</updated>
     </task>
-    <option name="localTasksCounter" value="505" />
+    <task id="LOCAL-00505" summary="&lt;StatArrow type=&quot;increase&quot; /&gt;">
+      <option name="closed" value="true" />
+      <created>1739890733292</created>
+      <option name="number" value="00505" />
+      <option name="presentableId" value="LOCAL-00505" />
+      <option name="project" value="LOCAL" />
+      <updated>1739890733292</updated>
+    </task>
+    <task id="LOCAL-00506" summary="throw Error refactoring">
+      <option name="closed" value="true" />
+      <created>1739890876323</created>
+      <option name="number" value="00506" />
+      <option name="presentableId" value="LOCAL-00506" />
+      <option name="project" value="LOCAL" />
+      <updated>1739890876323</updated>
+    </task>
+    <option name="localTasksCounter" value="507" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -757,8 +759,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="findTargetItemAndClick" />
-    <MESSAGE value="network3gMode" />
     <MESSAGE value="contextCallback" />
     <MESSAGE value="scrollCallback 2" />
     <MESSAGE value="if (scrollCallback)" />
@@ -782,7 +782,9 @@
     <MESSAGE value="sameUrlCheckForError" />
     <MESSAGE value="  logicType: logicType,&#10;      workType: &quot;NShoppingLogic4&quot;," />
     <MESSAGE value="&lt;Box width=&quot;20px&quot;&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&lt;Box width=&quot;20px&quot;&gt;" />
+    <MESSAGE value="&lt;StatArrow type=&quot;increase&quot; /&gt;" />
+    <MESSAGE value="throw Error refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="throw Error refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

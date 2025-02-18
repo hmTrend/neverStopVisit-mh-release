@@ -35,7 +35,7 @@ export async function workedDataToFront({
   } catch (e) {
     mainWindow.webContents.send(sendAddress, {
       workType: DataUser.workType,
-      errorMessage: e.message,
+      errorMessage: errorMessageTrans({ errMessage: e.message }),
       targetKeyword: DataUser.targetKeyword,
       myIp: DataUser.myIp,
       createdAt: UtilDate.getCurrentDate(),
@@ -43,4 +43,11 @@ export async function workedDataToFront({
     console.error(`workedDataToFront > ${e.message}`);
     throw Error(`workedDataToFront > ${e.message}`);
   }
+}
+
+function errorMessageTrans({ errMessage }: { errMessage: string }) {
+  if (errMessage.includes("#_sr_lst_")) {
+    return "상품 미발견";
+  }
+  return errMessage;
 }
