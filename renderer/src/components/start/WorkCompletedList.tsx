@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Stat, StatArrow, Text } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
 import { storeWork } from "@/valtio/work.valtio";
 import { useEffect } from "react";
@@ -18,6 +18,7 @@ export function WorkCompletedList() {
   return (
     <Flex direction={"column"} fontSize={"xs"}>
       <Box display={"flex"} gap={3}>
+        <Text>성공</Text>
         <Text>번호</Text>
         <Text>작업타입</Text>
         <Text>타겟키워드</Text>
@@ -27,6 +28,17 @@ export function WorkCompletedList() {
       </Box>
       {completedList?.map((v, i) => (
         <Box display={"flex"} gap={3} key={i}>
+          <Box width="20px">
+            {v?.errorMessage === "" ? (
+              <Stat>
+                <StatArrow type="decrease" />
+              </Stat>
+            ) : (
+              <Stat>
+                <StatArrow type="increase" />
+              </Stat>
+            )}
+          </Box>
           <Text>{i + 1}</Text>
           <Text>{v?.workType === "NShoppingLogic4" ? "쇼핑" : "플레이스"}</Text>
           <Text>{v?.targetKeyword}</Text>

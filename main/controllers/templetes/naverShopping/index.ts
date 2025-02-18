@@ -51,7 +51,7 @@ export async function playNaverShopping({
     });
   } catch (e) {
     console.error(`playNaverShopping > ${e.message}`);
-    throw `playNaverShopping > ${e.message}`;
+    throw Error(`playNaverShopping > ${e.message}`);
   }
 }
 
