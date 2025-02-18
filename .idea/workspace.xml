@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="shopping &gt; findSelectorAndClick">
-      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/user/getFingerPrintTargetExcelOne.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/lib/util/timeStartToEnd.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="measureExecutionTime">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/inputClickAndInputTextAndButtonClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/inputClickAndInputTextAndButtonClick.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/apollo-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/apollo-provider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/theme/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/theme/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,20 +157,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TypeScript.naverShopping.ts">
-    <configuration name="findSelectorAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" />
-      <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <method v="2" />
-    </configuration>
     <configuration name="getFingerPrintTargetExcelOne2.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -188,6 +167,20 @@
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne2.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gotoPage.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" />
       <option name="programParameters" value="" />
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
@@ -238,9 +231,9 @@
       <list>
         <item itemvalue="TypeScript.naverShopping.ts" />
         <item itemvalue="TypeScript.index.ts (1)" />
+        <item itemvalue="TypeScript.gotoPage.ts" />
         <item itemvalue="TypeScript.getFingerPrintTargetExcelOne2.ts" />
         <item itemvalue="TypeScript.playLogic1.ts" />
-        <item itemvalue="TypeScript.findSelectorAndClick.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -329,23 +322,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="49868000" />
-    </task>
-    <task id="LOCAL-00435" summary="NSVIT-87 1개작업후 2번째 작업시 창 안닫히게 하기">
-      <option name="closed" value="true" />
-      <created>1738658098701</created>
-      <option name="number" value="00435" />
-      <option name="presentableId" value="LOCAL-00435" />
-      <option name="project" value="LOCAL" />
-      <updated>1738658098701</updated>
-    </task>
-    <task id="LOCAL-00436" summary="NSV-40 / 연속작업 10개까지 셋팅">
-      <option name="closed" value="true" />
-      <created>1738663204106</created>
-      <option name="number" value="00436" />
-      <option name="presentableId" value="LOCAL-00436" />
-      <option name="project" value="LOCAL" />
-      <updated>1738663204106</updated>
+      <workItem from="1739530935139" duration="61886000" />
     </task>
     <task id="LOCAL-00437" summary="NSV-40 / v3.16.0">
       <option name="closed" value="true" />
@@ -723,7 +700,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739786521253</updated>
     </task>
-    <option name="localTasksCounter" value="484" />
+    <task id="LOCAL-00484" summary="measureExecutionTime">
+      <option name="closed" value="true" />
+      <created>1739801406433</created>
+      <option name="number" value="00484" />
+      <option name="presentableId" value="LOCAL-00484" />
+      <option name="project" value="LOCAL" />
+      <updated>1739801406433</updated>
+    </task>
+    <task id="LOCAL-00485" summary="measureExecutionTime">
+      <option name="closed" value="true" />
+      <created>1739801411436</created>
+      <option name="number" value="00485" />
+      <option name="presentableId" value="LOCAL-00485" />
+      <option name="project" value="LOCAL" />
+      <updated>1739801411436</updated>
+    </task>
+    <option name="localTasksCounter" value="486" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -768,7 +761,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="const targetUrlPattern 보강" />
     <MESSAGE value="하단 플레이스 이동후 동적 로딩후 다음작업" />
     <MESSAGE value="홍대미용실 / 테스트완료" />
     <MESSAGE value="v3.23.0" />
@@ -793,7 +785,8 @@
     <MESSAGE value="shopping &gt; playLogic1" />
     <MESSAGE value="shopping &gt; playLogic1 2" />
     <MESSAGE value="shopping &gt; findSelectorAndClick" />
-    <option name="LAST_COMMIT_MESSAGE" value="shopping &gt; findSelectorAndClick" />
+    <MESSAGE value="measureExecutionTime" />
+    <option name="LAST_COMMIT_MESSAGE" value="measureExecutionTime" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

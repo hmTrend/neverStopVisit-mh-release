@@ -10,6 +10,7 @@ interface BrowserOptions {
     context: BrowserContext;
     userAgent?: string;
   }>;
+  cookies?: any[];
 }
 
 interface NavigateOptions {
@@ -65,6 +66,10 @@ export async function initBrowser(
     const { context, userAgent } = options.contextCallback
       ? await options.contextCallback(browser)
       : { context: await browser.newContext(), userAgent: undefined };
+
+    if (options.cookies && options.cookies.length > 0) {
+      await context.addCookies(options.cookies);
+    }
 
     const page = await context.newPage();
     return { browser, context, page };

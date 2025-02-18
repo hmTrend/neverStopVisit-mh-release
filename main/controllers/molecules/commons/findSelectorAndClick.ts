@@ -32,10 +32,14 @@ export async function findSelectorAndClick({
     const networkManager = createNetworkManager(page);
     await networkManager.waitForAllRequests();
     if (scrollCallback) await scrollCallback({ page });
-    const element = transSelecterType({ page, selector });
-    await element.scrollIntoViewIfNeeded();
-    await page.waitForTimeout(1000); // 스크롤 후 잠시 대기
-    await element.click({ force: true }); // force 옵션 추가
+    try {
+      const element = transSelecterType({ page, selector });
+      await element.scrollIntoViewIfNeeded({ timeout: 1000 });
+      await page.waitForTimeout(1000); // 스크롤 후 잠시 대기
+      await element.click({ force: true, timeout: 1000 }); // force 옵션 추가
+    } catch {
+      console.error("this is NOT More details button");
+    }
     return { getPage: page };
   } catch (e) {
     console.error(e.message);

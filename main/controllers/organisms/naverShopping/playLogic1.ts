@@ -12,6 +12,7 @@ import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "
 export async function playLogic1({
   targetKeyword = "문제적커피",
   nvMid = "82805514345",
+  cookies = [],
 } = {}) {
   /**
    * 네이버 가격비교 페이지 > 상품검색 > 상세페이지 > 상세정보 펼쳐보기
@@ -26,6 +27,7 @@ export async function playLogic1({
           userAgent:
             getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
         }),
+      cookies,
     });
     page = getPage;
     await inputClickAndInputTextAndButtonClick({
