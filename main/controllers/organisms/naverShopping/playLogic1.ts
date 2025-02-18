@@ -2,6 +2,7 @@ import { gotoPage } from "../../molecules/commons/gotoPage";
 import { inputClickAndInputTextAndButtonClick } from "../../molecules/commons/inputClickAndInputTextAndButtonClick";
 import { findSelectorAndClick } from "../../molecules/commons/findSelectorAndClick";
 import {
+  cleanup,
   createMobileContext,
   pressKey,
   switchToOpenedTab,
@@ -17,19 +18,19 @@ export async function playLogic1({
   /**
    * 네이버 가격비교 페이지 > 상품검색 > 상세페이지 > 상세정보 펼쳐보기
    * **/
+  let page: Page;
+  const { getPage, context } = await gotoPage({
+    url: "https://search.shopping.naver.com/home",
+    contextCallback: async (browser) =>
+      createMobileContext({
+        browser,
+        userAgent:
+          getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
+      }),
+    cookies,
+  });
+  page = getPage;
   try {
-    let page: Page;
-    const { getPage, context } = await gotoPage({
-      url: "https://search.shopping.naver.com/home",
-      contextCallback: async (browser) =>
-        createMobileContext({
-          browser,
-          userAgent:
-            getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
-        }),
-      cookies,
-    });
-    page = getPage;
     await inputClickAndInputTextAndButtonClick({
       page,
       text: targetKeyword,
@@ -49,7 +50,9 @@ export async function playLogic1({
       scrollCallback: async ({ page }) =>
         await pressKey({ page, select: "End" }),
     });
+    await cleanup({ page, context });
   } catch (e) {
+    await cleanup({ page, context });
     console.error(`playLogic1 > ${e.message}`);
     throw `playLogic1 > ${e.message}`;
   }

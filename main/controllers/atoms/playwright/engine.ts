@@ -307,7 +307,7 @@ export async function downloadFile(
     await download.saveAs(path);
     return path;
   } catch (error) {
-    console.error("파일 다운로드 중 오류 발생", error);
+    console.error(`downloadFile > ${error.message}`);
     throw error;
   }
 }
@@ -323,7 +323,7 @@ export async function cleanup({
     await context?.close();
     await browser?.close();
   } catch (error) {
-    console.error("리소스 정리 중 오류 발생", error);
+    console.error(`cleanup > ${error.message}`);
     throw error;
   }
 }
@@ -343,7 +343,7 @@ export async function waitForPageLoad(
       await page.waitForSelector(options.additionalSelector);
     }
   } catch (error) {
-    console.error("페이지 로드 대기 중 오류 발생", error);
+    console.error(`waitForPageLoad > ${error.message}`);
     throw error;
   }
 }

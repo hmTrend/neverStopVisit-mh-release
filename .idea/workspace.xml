@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="findSelectorAndClick">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="naverShopping">
+      <change afterPath="$PROJECT_DIR$/main/controllers/atoms/network/network.local.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/controllers/atoms/network/network.router.edu.puppeteer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/controllers/atoms/network/network.tethering.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/internetConnectType.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" afterDir="false" />
     </list>
@@ -117,7 +122,7 @@
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/controllers/templetes/naverShopping",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/controllers/atoms/network",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -140,11 +145,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/controllers/atoms/network" />
       <recent name="$PROJECT_DIR$/main/controllers/templetes/naverShopping" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/user" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/naverShopping" />
       <recent name="$PROJECT_DIR$/main/services/nShoppingLogic4" />
-      <recent name="$PROJECT_DIR$/main/lib/network" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/controllers/molecules/excel" />
@@ -154,7 +159,7 @@
       <recent name="$PROJECT_DIR$/main/lib/network" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.index.ts (1)">
+  <component name="RunManager" selected="TypeScript.naverShopping.ts">
     <configuration name="findSelectorAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -227,9 +232,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.naverShopping.ts" />
         <item itemvalue="TypeScript.index.ts (1)" />
         <item itemvalue="TypeScript.findSelectorAndClick.ts" />
-        <item itemvalue="TypeScript.naverShopping.ts" />
         <item itemvalue="TypeScript.gotoPage.ts" />
         <item itemvalue="TypeScript.getFingerPrintTargetExcelOne2.ts" />
       </list>
@@ -320,15 +325,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="63751000" />
-    </task>
-    <task id="LOCAL-00438" summary="지문 클릭시 / 쿠키 변경되는건을 &gt; 정상 으로 변경">
-      <option name="closed" value="true" />
-      <created>1738738955719</created>
-      <option name="number" value="00438" />
-      <option name="presentableId" value="LOCAL-00438" />
-      <option name="project" value="LOCAL" />
-      <updated>1738738955719</updated>
+      <workItem from="1739530935139" duration="66921000" />
     </task>
     <task id="LOCAL-00439" summary="userAgent 수정">
       <option name="closed" value="true" />
@@ -714,7 +711,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739858172613</updated>
     </task>
-    <option name="localTasksCounter" value="487" />
+    <task id="LOCAL-00487" summary="naverShopping">
+      <option name="closed" value="true" />
+      <created>1739860632948</created>
+      <option name="number" value="00487" />
+      <option name="presentableId" value="LOCAL-00487" />
+      <option name="project" value="LOCAL" />
+      <updated>1739860632948</updated>
+    </task>
+    <option name="localTasksCounter" value="488" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -759,7 +764,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="하단 플레이스 이동후 동적 로딩후 다음작업" />
     <MESSAGE value="홍대미용실 / 테스트완료" />
     <MESSAGE value="v3.23.0" />
     <MESSAGE value="v3.23.3 플레이스 이미지 확인로직 강화" />
@@ -784,7 +788,8 @@
     <MESSAGE value="shopping &gt; findSelectorAndClick" />
     <MESSAGE value="measureExecutionTime" />
     <MESSAGE value="findSelectorAndClick" />
-    <option name="LAST_COMMIT_MESSAGE" value="findSelectorAndClick" />
+    <MESSAGE value="naverShopping" />
+    <option name="LAST_COMMIT_MESSAGE" value="naverShopping" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
