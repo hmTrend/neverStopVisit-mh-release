@@ -1,6 +1,7 @@
 import { playLogic1 } from "../../organisms/naverShopping/playLogic1";
 import { getFingerPrintTargetExcelOne } from "../../molecules/user/getFingerPrintTargetExcelOne";
 import { getNShoppingLogic4ExcelAlignFlatTargetOne } from "../../molecules/excel/getFingerPrintTargetExcelOne2";
+import { workedDataToFront } from "../../atoms/ipc/workedDataToFront";
 
 interface NShoppingLogic4ExcelListAlignFlatMapEntity {
   _id: string;
