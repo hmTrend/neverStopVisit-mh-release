@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="measureExecutionTime">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="findSelectorAndClick">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/engine.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +154,21 @@
       <recent name="$PROJECT_DIR$/main/lib/network" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.naverShopping.ts">
+  <component name="RunManager" selected="TypeScript.index.ts (1)">
+    <configuration name="findSelectorAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
     <configuration name="getFingerPrintTargetExcelOne2.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -213,27 +225,13 @@
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
-    <configuration name="playLogic1.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/organisms/naverShopping" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" />
-      <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TypeScript.naverShopping.ts" />
         <item itemvalue="TypeScript.index.ts (1)" />
+        <item itemvalue="TypeScript.findSelectorAndClick.ts" />
+        <item itemvalue="TypeScript.naverShopping.ts" />
         <item itemvalue="TypeScript.gotoPage.ts" />
         <item itemvalue="TypeScript.getFingerPrintTargetExcelOne2.ts" />
-        <item itemvalue="TypeScript.playLogic1.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -322,15 +320,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="61886000" />
-    </task>
-    <task id="LOCAL-00437" summary="NSV-40 / v3.16.0">
-      <option name="closed" value="true" />
-      <created>1738712788062</created>
-      <option name="number" value="00437" />
-      <option name="presentableId" value="LOCAL-00437" />
-      <option name="project" value="LOCAL" />
-      <updated>1738712788062</updated>
+      <workItem from="1739530935139" duration="63751000" />
     </task>
     <task id="LOCAL-00438" summary="지문 클릭시 / 쿠키 변경되는건을 &gt; 정상 으로 변경">
       <option name="closed" value="true" />
@@ -716,7 +706,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739801411436</updated>
     </task>
-    <option name="localTasksCounter" value="486" />
+    <task id="LOCAL-00486" summary="findSelectorAndClick">
+      <option name="closed" value="true" />
+      <created>1739858172613</created>
+      <option name="number" value="00486" />
+      <option name="presentableId" value="LOCAL-00486" />
+      <option name="project" value="LOCAL" />
+      <updated>1739858172613</updated>
+    </task>
+    <option name="localTasksCounter" value="487" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -776,7 +774,6 @@
     <MESSAGE value="gotoNaverEmptyPage" />
     <MESSAGE value="inputClickAndInputTextAndButtonClick" />
     <MESSAGE value="findTargetItemAndClick" />
-    <MESSAGE value="findSelectorAndClick" />
     <MESSAGE value="network3gMode" />
     <MESSAGE value="contextCallback" />
     <MESSAGE value="scrollCallback 2" />
@@ -786,7 +783,8 @@
     <MESSAGE value="shopping &gt; playLogic1 2" />
     <MESSAGE value="shopping &gt; findSelectorAndClick" />
     <MESSAGE value="measureExecutionTime" />
-    <option name="LAST_COMMIT_MESSAGE" value="measureExecutionTime" />
+    <MESSAGE value="findSelectorAndClick" />
+    <option name="LAST_COMMIT_MESSAGE" value="findSelectorAndClick" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

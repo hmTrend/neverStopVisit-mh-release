@@ -3,11 +3,16 @@ import { getFingerPrintTargetExcelOne } from "../../molecules/user/getFingerPrin
 import { getNShoppingLogic4ExcelAlignFlatTargetOne } from "../../molecules/excel/getFingerPrintTargetExcelOne2";
 
 export async function playNaverShopping({ logicType = "logic1" } = {}) {
-  const { cookieId, cookie } = await getFingerPrintTargetExcelOne({
-    groupFid: "673c1ccbdafecfc189ac92ff",
-  });
-  const excelData = await getNShoppingLogic4ExcelAlignFlatTargetOne();
-  await playSelectLogic({ logicType });
+  try {
+    const { cookieId, cookie } = await getFingerPrintTargetExcelOne({
+      groupFid: "673c1ccbdafecfc189ac92ff",
+    });
+    const excelData = await getNShoppingLogic4ExcelAlignFlatTargetOne();
+    await playSelectLogic({ logicType });
+  } catch (e) {
+    console.error(`playNaverShopping > ${e.message}`);
+    throw `playNaverShopping > ${e.message}`;
+  }
 }
 
 async function playSelectLogic({ logicType }) {
