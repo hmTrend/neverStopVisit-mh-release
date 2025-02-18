@@ -19,6 +19,7 @@ export const StartStateSwitch = ({ selectProgram }) => {
     <Stack align="center" direction="row">
       <Switch
         size="lg"
+        colorScheme={"teal"}
         onChange={handleChange}
         defaultChecked={snap[selectProgram]?.isStart}
       />

@@ -6,6 +6,7 @@ import {
   Radio,
   RadioGroup,
   Stack,
+  Tooltip,
 } from "@chakra-ui/react";
 import { Fragment, useState } from "react";
 import { FingerPrintSelect } from "@/components/start/FingerPrintSelect";
@@ -71,13 +72,15 @@ function LogicType({ logicType, selectProgram }) {
   return (
     <RadioGroup
       onChange={handleChange}
-      defaultValue={snap[selectProgram]?.logicType}
+      defaultValue={snap[selectProgram]?.logicType.name}
     >
       <Flex wrap={"wrap"} gap={6}>
         {logicType.map((v, i) => (
           <Fragment key={i}>
-            <Radio value={v}>
-              로직{i + 1}({v})
+            <Radio value={v.name}>
+              <Tooltip label={v.description} aria-label="A tooltip">
+                로직{i + 1}({v.name})
+              </Tooltip>
             </Radio>
           </Fragment>
         ))}

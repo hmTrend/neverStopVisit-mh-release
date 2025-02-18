@@ -7,7 +7,7 @@ class NShoppingLogic4RegisterValtio {
   selectedGroupId: string;
   getExcelList: any[];
   getExcelListAlignFlat: any[];
-  logicType: string[];
+  logicType: { name: string; description: string }[] = [];
 
   constructor() {
     this.selectedGroupName = "";
@@ -16,7 +16,13 @@ class NShoppingLogic4RegisterValtio {
     this.selectedGroupId = "";
     this.getExcelList = [];
     this.getExcelListAlignFlat = [];
-    this.logicType = ["NAVER", "GOOGLE", "+STORE", "BLOG", "NAVER_COMPARE", "N_SHOPPING_TAB"];
+    this.logicType = [
+      {
+        name: "LOGIC1",
+        description:
+          "네이버가격비교홈 > 상품찾기! > 상세페이지(상세정보펼쳐보기)",
+      },
+    ];
   }
 }
 

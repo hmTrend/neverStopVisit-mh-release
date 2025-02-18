@@ -1,16 +1,16 @@
 import { Flex } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
-import { storeNShopping } from "@/valtio/nShopping.register.valtio";
 import { storeAuth } from "@/valtio/member.valtio";
 import { CreateExcelLogic4 } from "@/components/register/nShoppingLogic4/CreateExcelLogic4";
 import { CreateGroupLogic4 } from "@/components/register/nShoppingLogic4/CreateGroupLogic4";
 import { GroupListLogic4 } from "@/components/register/nShoppingLogic4/GroupListLogic4";
 import { ExcelListLogic4 } from "@/components/register/nShoppingLogic4/ExcelListLogic4";
+import { storeNShoppingLogic4 } from "@/valtio/nShoppingLogic4.register.valtio";
 
 export const App = () => {
   const { userId } = useSnapshot(storeAuth);
   const { selectedGroupName, groupList, selectedExcelList } =
-    useSnapshot(storeNShopping);
+    useSnapshot(storeNShoppingLogic4);
   return (
     <Flex direction={"column"} gap={3}>
       <CreateGroupLogic4 id={userId} selectedGroupName={selectedGroupName} />
