@@ -1,12 +1,17 @@
 import { measureExecutionTime } from "../../../lib/util/timeStartToEnd";
 import wait from "waait";
 import { internetConnectType } from "../../molecules/commons/internetConnectType";
+import { playNaverShopping } from "../../templetes/naverShopping";
+import { UtilNetwork } from "../../atoms/util/util.network";
 
-export async function naverShopping() {
+export async function naverShopping({ internetType = "STATIC" }) {
   let isRunning = true;
   while (isRunning) {
     try {
-      await measureExecutionTime({ playCallback: internetPlay });
+      await networkPlay({ internetType });
+      await measureExecutionTime({
+        playCallback: playNaverShopping,
+      });
     } catch (error) {
       console.error(`naverShopping > ${error.message}`);
       await wait(10 * 1000);
@@ -15,13 +20,13 @@ export async function naverShopping() {
   }
 }
 
-async function internetPlay() {
+async function networkPlay({ internetType }) {
   const execute = await internetConnectType({
-    internetType: "STATIC",
-    callback: naverShopping,
+    internetType,
     playTime: 3,
   });
   await execute();
+  return await UtilNetwork.getIpAddress();
 }
 
 // naverShopping();

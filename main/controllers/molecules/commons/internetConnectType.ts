@@ -4,10 +4,10 @@ import {
   changeMacAddress,
   getMacAddress,
 } from "../../atoms/network/network.local";
+import { UtilNetwork } from "../../atoms/util/util.network";
 
 export async function internetConnectType({
   internetType = "STATIC",
-  callback,
   playTime = 5,
 }) {
   let count = 0;
@@ -20,10 +20,6 @@ export async function internetConnectType({
       await internetTypeTETHERING({ internetType });
       await internetTypeROUTER({ internetType });
       await internetTypeLOCAL({ internetType });
-    }
-
-    if (callback) {
-      await callback();
     }
   };
 }
