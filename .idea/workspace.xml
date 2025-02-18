@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="throw Error 처리">
-      <change afterPath="$PROJECT_DIR$/main/controllers/atoms/ipc/workedDataToFront.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/controllers/atoms/user/data.user.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="DataUser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/ipc/workedDataToFront.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/user/data.user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/user/data.user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/util/timeStartToEnd.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/util/timeStartToEnd.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,11 +150,11 @@
       <recent name="$PROJECT_DIR$/main/controllers/molecules/user" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/controllers/molecules" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/excel" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/user" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/commons" />
       <recent name="$PROJECT_DIR$/main/services/commons/naver" />
-      <recent name="$PROJECT_DIR$/main/lib/network" />
     </key>
   </component>
   <component name="RunManager" selected="TypeScript.sameUrlCheckForError.ts">
@@ -323,15 +323,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="80443000" />
-    </task>
-    <task id="LOCAL-00450" summary="홍대미용실 / 테스트완료">
-      <option name="closed" value="true" />
-      <created>1739338318947</created>
-      <option name="number" value="00450" />
-      <option name="presentableId" value="LOCAL-00450" />
-      <option name="project" value="LOCAL" />
-      <updated>1739338318947</updated>
+      <workItem from="1739530935139" duration="83662000" />
     </task>
     <task id="LOCAL-00451" summary="v3.23.0">
       <option name="closed" value="true" />
@@ -717,7 +709,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739881790684</updated>
     </task>
-    <option name="localTasksCounter" value="499" />
+    <task id="LOCAL-00499" summary="DataUser">
+      <option name="closed" value="true" />
+      <created>1739884033008</created>
+      <option name="number" value="00499" />
+      <option name="presentableId" value="LOCAL-00499" />
+      <option name="project" value="LOCAL" />
+      <updated>1739884033008</updated>
+    </task>
+    <option name="localTasksCounter" value="500" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -762,7 +762,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="알림버튼 기다리기" />
     <MESSAGE value="플레이스 없는것 대응" />
     <MESSAGE value="gotoNaverEmptyPage" />
     <MESSAGE value="inputClickAndInputTextAndButtonClick" />
@@ -787,7 +786,8 @@
     <MESSAGE value="comparePricesFindAllProducts" />
     <MESSAGE value="sameUrlCheckForError" />
     <MESSAGE value="throw Error 처리" />
-    <option name="LAST_COMMIT_MESSAGE" value="throw Error 처리" />
+    <MESSAGE value="DataUser" />
+    <option name="LAST_COMMIT_MESSAGE" value="DataUser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

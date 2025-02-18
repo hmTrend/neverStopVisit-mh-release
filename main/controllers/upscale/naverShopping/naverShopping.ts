@@ -4,7 +4,8 @@ import { internetConnectType } from "../../molecules/commons/internetConnectType
 import { playNaverShopping } from "../../templetes/naverShopping";
 import { UtilNetwork } from "../../atoms/util/util.network";
 import { monitorNetworkAndStart } from "../../atoms/network/network.local";
-import { workedDataToFront } from "../../atoms/ipc/workedDataToFront";
+import { workedDataToFront } from "../../molecules/ipc/workedDataToFront";
+import { setDataUser } from "../../atoms/user/data.user";
 
 export async function naverShopping({
   internetType = "STATIC",
@@ -15,7 +16,9 @@ export async function naverShopping({
   let isRunning = true;
   while (isRunning) {
     try {
-      await totalPlay({ playTime, data, internetType });
+      await workedDataToFront({
+        callback: () => totalPlay({ playTime, data, internetType }),
+      });
     } catch (error) {
       console.error(`naverShopping > ${error.message}`);
       await wait(10 * 1000);
@@ -48,7 +51,9 @@ async function networkPlay({ internetType, playTime }) {
   });
   await execute();
   await monitorNetworkAndStart();
-  return await UtilNetwork.getIpAddress();
+  const result = await UtilNetwork.getIpAddress();
+  setDataUser({ myIp: result });
+  return result;
 }
 
 // naverShopping();
