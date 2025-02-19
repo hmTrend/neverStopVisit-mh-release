@@ -97,19 +97,23 @@ export class BrowserManager {
 
   async networkAndCpuThrottling(options: Network3gMode = {}): Promise<void> {
     const { is3gMode, cpuThrottlingRate } = options;
-    if (!is3gMode) return;
-
     const client = await this.context.newCDPSession(this.page);
-    await client.send("Network.enable");
-    await client.send("Network.emulateNetworkConditions", {
-      offline: false,
-      latency: 100, // 지연시간 (ms)
-      downloadThroughput: (750 * 1024) / 8, // bytes/s
-      uploadThroughput: (250 * 1024) / 8, // bytes/s
-    });
-    await client.send("Emulation.setCPUThrottlingRate", {
-      rate: cpuThrottlingRate,
-    });
+
+    if (is3gMode) {
+      await client.send("Network.enable");
+      await client.send("Network.emulateNetworkConditions", {
+        offline: false,
+        latency: 100, // 지연시간 (ms)
+        downloadThroughput: (750 * 1024) / 8, // bytes/s
+        uploadThroughput: (250 * 1024) / 8, // bytes/s
+      });
+    }
+
+    if (cpuThrottlingRate) {
+      await client.send("Emulation.setCPUThrottlingRate", {
+        rate: cpuThrottlingRate,
+      });
+    }
   }
 
   async navigateToPage(
