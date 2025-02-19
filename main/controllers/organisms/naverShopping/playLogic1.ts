@@ -6,6 +6,7 @@ import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "
 import wait from "waait";
 import { sameUrlCheckForError } from "../../molecules/commons/sameUrlCheckForError";
 import { BrowserManager } from "../../atoms/playwright/BrawserManager";
+import { findSelectorAndClickWithDetailPage } from "../../molecules/commons/findSelectorAndClickWithDetailPage";
 
 export async function playLogic1({
   targetKeyword = "문제적커피",
@@ -45,7 +46,7 @@ export async function playLogic1({
     });
     await browserManager.switchToOpenedTab();
     await sameUrlCheckForError({ page, browserManager }); // 19세 상품일경우 19세 이상 아이디로만 접근가능
-    await findSelectorAndClick({
+    await findSelectorAndClickWithDetailPage({
       browserManager,
       page,
       selector: { getByRole: "button", name: "상세정보 펼쳐보기" },
@@ -85,7 +86,7 @@ async function comparePricesFindAllProducts({
     for (let i = 0; i < 5; i++) {
       await page.keyboard.press("End");
       await page.waitForLoadState("domcontentloaded");
-      await wait(300);
+      await wait(100);
     }
     await findSelectorAndClick({
       browserManager,

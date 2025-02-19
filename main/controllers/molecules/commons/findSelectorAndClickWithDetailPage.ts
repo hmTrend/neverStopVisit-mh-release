@@ -1,19 +1,30 @@
 import { gotoPage } from "./gotoPage";
 import { Page } from "playwright";
+import { BrowserManager } from "../../atoms/playwright/BrawserManager";
 
-export async function findSelectorAndClick({
+export async function findSelectorAndClickWithDetailPage({
   isTest = false,
   page = undefined,
   browserManager = undefined,
   // selector = "#_sr_lst_82805514345",
   // selector = 'a.thumbnail_thumb__Bxb6Z[data-shp-contents-id="82805514345"]', // PC버전
-  // selector = { getByRole: "button", name: "상세정보 펼쳐보기" }, // 쇼핑 > 상세정보 펼쳐보기
-  selector, // 상세정보 펼쳐보기 / 없을시에도 대응
+  selector = { getByRole: "button", name: "상세정보 펼쳐보기" }, // 쇼핑 > 상세정보 펼쳐보기
+  // selector, // 상세정보 펼쳐보기 / 없을시에도 대응
+  scrollCallback = undefined,
 }: {
   isTest?: boolean;
   page?: Page;
   browserManager?: any;
-  selector?: string;
+  selector?:
+    | string
+    | {
+        getByRole: string;
+        name: string;
+      };
+  scrollCallback?: (params: {
+    page?: Page;
+    browserManager?: BrowserManager;
+  }) => Promise<void>;
 } = {}) {
   if (isTest) {
     const { getPage, getBrowserManager } = await gotoPage({
@@ -29,19 +40,21 @@ export async function findSelectorAndClick({
   try {
     const networkManager = browserManager.createNetworkManager();
     await networkManager.waitForAllRequests();
-
-    const element = page.locator(selector);
-    await page.waitForTimeout(1000); // 스크롤 후 잠시 대기
-    await element.click({ timeout: 1000 }); // force 옵션 추가
+    if (scrollCallback) {
+      await scrollCallback({ page, browserManager });
+    }
+    await browserManager.transSelecterType({
+      selector,
+    });
   } catch (e) {
     console.error(e.message);
-    throw Error(`findTargetItemAndClick > ${e.message}`);
+    throw Error(`findSelectorAndClickWithDetailPage > ${e.message}`);
   }
 }
 
-// findSelectorAndClick({
+// findSelectorAndClickWithDetailPage({
 //   scrollCallback: async ({ browserManager }) =>
 //     await browserManager.pressKey({ select: "End" }),
 // });
 
-// findSelectorAndClick();
+// findSelectorAndClickWithDetailPage();
