@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="sameUrlCheckForError">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="switchToOpenedTab">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-02-12__9_07.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,23 +321,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="95700000" />
-    </task>
-    <task id="LOCAL-00465" summary="더보기 클릭 못하는 이슈 해결">
-      <option name="closed" value="true" />
-      <created>1739528096524</created>
-      <option name="number" value="00465" />
-      <option name="presentableId" value="LOCAL-00465" />
-      <option name="project" value="LOCAL" />
-      <updated>1739528096524</updated>
-    </task>
-    <task id="LOCAL-00466" summary="알림버튼 기다리기">
-      <option name="closed" value="true" />
-      <created>1739536081025</created>
-      <option name="number" value="00466" />
-      <option name="presentableId" value="LOCAL-00466" />
-      <option name="project" value="LOCAL" />
-      <updated>1739536081025</updated>
+      <workItem from="1739530935139" duration="96943000" />
     </task>
     <task id="LOCAL-00467" summary="플레이스 없는것 대응">
       <option name="closed" value="true" />
@@ -714,7 +699,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739926005369</updated>
     </task>
-    <option name="localTasksCounter" value="514" />
+    <task id="LOCAL-00514" summary="findSelectorAndClick">
+      <option name="closed" value="true" />
+      <created>1739929192231</created>
+      <option name="number" value="00514" />
+      <option name="presentableId" value="LOCAL-00514" />
+      <option name="project" value="LOCAL" />
+      <updated>1739929192231</updated>
+    </task>
+    <task id="LOCAL-00515" summary="switchToOpenedTab">
+      <option name="closed" value="true" />
+      <created>1739929526168</created>
+      <option name="number" value="00515" />
+      <option name="presentableId" value="LOCAL-00515" />
+      <option name="project" value="LOCAL" />
+      <updated>1739929526168</updated>
+    </task>
+    <option name="localTasksCounter" value="516" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -759,9 +760,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="shopping &gt; findSelectorAndClick" />
     <MESSAGE value="measureExecutionTime" />
-    <MESSAGE value="findSelectorAndClick" />
     <MESSAGE value="naverShopping" />
     <MESSAGE value="internetConnectType" />
     <MESSAGE value="NPlaceRegisterValtio&#10;NShoppingLogic4RegisterValtio" />
@@ -784,7 +783,9 @@
     <MESSAGE value="init &gt; contextCallback" />
     <MESSAGE value="inputClickAndInputTextAndButtonClick" />
     <MESSAGE value="sameUrlCheckForError" />
-    <option name="LAST_COMMIT_MESSAGE" value="sameUrlCheckForError" />
+    <MESSAGE value="findSelectorAndClick" />
+    <MESSAGE value="switchToOpenedTab" />
+    <option name="LAST_COMMIT_MESSAGE" value="switchToOpenedTab" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

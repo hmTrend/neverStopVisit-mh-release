@@ -31,17 +31,15 @@ export async function findSelectorAndClick({
     browserManager = getBrowserManager;
   }
   try {
-    const networkManager = browserManager.createNetworkManager(page);
+    const networkManager = browserManager.createNetworkManager();
     await networkManager.waitForAllRequests();
     if (scrollCallback) {
       await scrollCallback({ page });
-      await page.locator('button:has-text("상세정보 펼쳐보기")').waitFor();
+      await browserManager.locatorWaitForSelector({
+        selector: 'button:has-text("상세정보 펼쳐보기")',
+      });
     }
-    const element = transSelecterType({ page, selector });
-    await element.scrollIntoViewIfNeeded({ timeout: 1000 });
-    await page.waitForTimeout(1000); // 스크롤 후 잠시 대기
-    await element.click({ timeout: 1000 }); // force 옵션 추가
-    return { getPage: page };
+    await browserManager.transSelecterType({ selector });
   } catch (e) {
     console.error(e.message);
     throw Error(`findTargetItemAndClick > ${e.message}`);
@@ -53,9 +51,3 @@ export async function findSelectorAndClick({
 // });
 
 // findSelectorAndClick();
-
-function transSelecterType({ page, selector }: { page: Page; selector: any }) {
-  return typeof selector === "string"
-    ? page.locator(selector)
-    : page.getByRole(selector.getByRole, { name: selector.name });
-}

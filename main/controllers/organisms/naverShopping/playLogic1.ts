@@ -1,11 +1,6 @@
 import { gotoPage } from "../../molecules/commons/gotoPage";
 import { inputClickAndInputTextAndButtonClick } from "../../molecules/commons/inputClickAndInputTextAndButtonClick";
 import { findSelectorAndClick } from "../../molecules/commons/findSelectorAndClick";
-import {
-  cleanup,
-  pressKey,
-  switchToOpenedTab,
-} from "../../atoms/playwright/engine";
 import { Page } from "playwright";
 import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhoneIN100percent";
 import wait from "waait";

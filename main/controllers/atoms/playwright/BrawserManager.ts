@@ -256,4 +256,22 @@ export class BrowserManager {
       throw Error(`switchToOpenedTab > ${error.message}`);
     }
   }
+
+  async transSelecterType({ selector }) {
+    let element;
+    if (typeof selector === "string") {
+      element = this.page.locator(selector);
+    } else {
+      element = this.page.getByRole(selector.getByRole, {
+        name: selector.name,
+      });
+    }
+    await element.scrollIntoViewIfNeeded({ timeout: 1000 });
+    await this.page.waitForTimeout(1000); // 스크롤 후 잠시 대기
+    await element.click({ timeout: 1000 }); // force 옵션 추가
+  }
+
+  async locatorWaitForSelector({ selector }) {
+    await this.page.locator(selector).waitFor();
+  }
 }
