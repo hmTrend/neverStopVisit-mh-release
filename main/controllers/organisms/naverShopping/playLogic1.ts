@@ -49,7 +49,7 @@ export async function playLogic1({
       browserManager,
       page,
       selector: { getByRole: "button", name: "상세정보 펼쳐보기" },
-      scrollCallback: async ({ page }) =>
+      scrollCallback: async () =>
         await browserManager.pressKey({ select: "End" }),
     });
     await wait(delayTime * 1000);

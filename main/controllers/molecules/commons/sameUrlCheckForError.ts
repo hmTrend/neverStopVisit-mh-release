@@ -21,6 +21,8 @@ export async function sameUrlCheckForError({
     page = getPage;
   }
   try {
+    const networkManager = browserManager.createNetworkManager();
+    await networkManager.waitForAllRequests();
     const currentUrl = page.url();
     if (currentUrl.includes(checkUrl)) {
       throw Error(`${checkUrl}`);

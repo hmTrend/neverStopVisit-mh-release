@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="switchToOpenedTab">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-02-12__9_07.xml" beforeDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="locatorWaitForSelector">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +156,7 @@
       <recent name="$PROJECT_DIR$/main/services/commons/naver" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.sameUrlCheckForError.ts">
+  <component name="RunManager" selected="TypeScript.findSelectorAndClick.ts">
     <configuration name="findSelectorAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -228,9 +229,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.findSelectorAndClick.ts" />
         <item itemvalue="TypeScript.sameUrlCheckForError.ts" />
         <item itemvalue="TypeScript.inputClickAndInputTextAndButtonClick.ts" />
-        <item itemvalue="TypeScript.findSelectorAndClick.ts" />
         <item itemvalue="TypeScript.gotoPage.ts" />
         <item itemvalue="TypeScript.naverShopping.ts" />
       </list>
@@ -321,23 +322,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="96943000" />
-    </task>
-    <task id="LOCAL-00467" summary="플레이스 없는것 대응">
-      <option name="closed" value="true" />
-      <created>1739541258794</created>
-      <option name="number" value="00467" />
-      <option name="presentableId" value="LOCAL-00467" />
-      <option name="project" value="LOCAL" />
-      <updated>1739541258794</updated>
-    </task>
-    <task id="LOCAL-00468" summary="gotoNaverEmptyPage">
-      <option name="closed" value="true" />
-      <created>1739712657509</created>
-      <option name="number" value="00468" />
-      <option name="presentableId" value="LOCAL-00468" />
-      <option name="project" value="LOCAL" />
-      <updated>1739712657509</updated>
+      <workItem from="1739530935139" duration="102633000" />
     </task>
     <task id="LOCAL-00469" summary="inputClickAndInputTextAndButtonClick">
       <option name="closed" value="true" />
@@ -715,7 +700,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739929526168</updated>
     </task>
-    <option name="localTasksCounter" value="516" />
+    <task id="LOCAL-00516" summary="locatorWaitForSelector">
+      <option name="closed" value="true" />
+      <created>1739930442148</created>
+      <option name="number" value="00516" />
+      <option name="presentableId" value="LOCAL-00516" />
+      <option name="project" value="LOCAL" />
+      <updated>1739930442148</updated>
+    </task>
+    <task id="LOCAL-00517" summary="locatorWaitForSelector">
+      <option name="closed" value="true" />
+      <created>1739930521416</created>
+      <option name="number" value="00517" />
+      <option name="presentableId" value="LOCAL-00517" />
+      <option name="project" value="LOCAL" />
+      <updated>1739930521416</updated>
+    </task>
+    <option name="localTasksCounter" value="518" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -760,7 +761,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="measureExecutionTime" />
     <MESSAGE value="naverShopping" />
     <MESSAGE value="internetConnectType" />
     <MESSAGE value="NPlaceRegisterValtio&#10;NShoppingLogic4RegisterValtio" />
@@ -785,7 +785,8 @@
     <MESSAGE value="sameUrlCheckForError" />
     <MESSAGE value="findSelectorAndClick" />
     <MESSAGE value="switchToOpenedTab" />
-    <option name="LAST_COMMIT_MESSAGE" value="switchToOpenedTab" />
+    <MESSAGE value="locatorWaitForSelector" />
+    <option name="LAST_COMMIT_MESSAGE" value="locatorWaitForSelector" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
