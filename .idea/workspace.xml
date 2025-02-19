@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="init &gt; contextCallback">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="inputClickAndInputTextAndButtonClick">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/inputClickAndInputTextAndButtonClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/inputClickAndInputTextAndButtonClick.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +153,7 @@
       <recent name="$PROJECT_DIR$/main/services/commons/naver" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.inputClickAndInputTextAndButtonClick.ts">
+  <component name="RunManager" selected="TypeScript.sameUrlCheckForError.ts">
     <configuration name="findSelectorAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -227,10 +226,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.sameUrlCheckForError.ts" />
         <item itemvalue="TypeScript.inputClickAndInputTextAndButtonClick.ts" />
         <item itemvalue="TypeScript.findSelectorAndClick.ts" />
         <item itemvalue="TypeScript.gotoPage.ts" />
-        <item itemvalue="TypeScript.sameUrlCheckForError.ts" />
         <item itemvalue="TypeScript.naverShopping.ts" />
       </list>
     </recent_temporary>
@@ -320,15 +319,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="92695000" />
-    </task>
-    <task id="LOCAL-00463" summary="console log 제거">
-      <option name="closed" value="true" />
-      <created>1739523851777</created>
-      <option name="number" value="00463" />
-      <option name="presentableId" value="LOCAL-00463" />
-      <option name="project" value="LOCAL" />
-      <updated>1739523851777</updated>
+      <workItem from="1739530935139" duration="93511000" />
     </task>
     <task id="LOCAL-00464" summary="globalBrowsers.nShoppingLogic4_nvMid">
       <option name="closed" value="true" />
@@ -714,7 +705,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739924799249</updated>
     </task>
-    <option name="localTasksCounter" value="512" />
+    <task id="LOCAL-00512" summary="inputClickAndInputTextAndButtonClick">
+      <option name="closed" value="true" />
+      <created>1739925188060</created>
+      <option name="number" value="00512" />
+      <option name="presentableId" value="LOCAL-00512" />
+      <option name="project" value="LOCAL" />
+      <updated>1739925188060</updated>
+    </task>
+    <option name="localTasksCounter" value="513" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -759,7 +758,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="shopping &gt; playLogic1 2" />
     <MESSAGE value="shopping &gt; findSelectorAndClick" />
     <MESSAGE value="measureExecutionTime" />
     <MESSAGE value="findSelectorAndClick" />
@@ -784,7 +782,8 @@
     <MESSAGE value="nShopping 안쓰는 전역변수 삭제" />
     <MESSAGE value="findSelectorAndClick 생성자함수 리팩토링" />
     <MESSAGE value="init &gt; contextCallback" />
-    <option name="LAST_COMMIT_MESSAGE" value="init &gt; contextCallback" />
+    <MESSAGE value="inputClickAndInputTextAndButtonClick" />
+    <option name="LAST_COMMIT_MESSAGE" value="inputClickAndInputTextAndButtonClick" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
