@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="transSelecterType">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="19세 제한">
       <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,15 +319,7 @@
       <workItem from="1739515636948" duration="222000" />
       <workItem from="1739530935139" duration="105254000" />
       <workItem from="1739949691522" duration="374000" />
-      <workItem from="1739950075773" duration="7484000" />
-    </task>
-    <task id="LOCAL-00473" summary="findSelectorAndClick">
-      <option name="closed" value="true" />
-      <created>1739751790681</created>
-      <option name="number" value="00473" />
-      <option name="presentableId" value="LOCAL-00473" />
-      <option name="project" value="LOCAL" />
-      <updated>1739751790681</updated>
+      <workItem from="1739950075773" duration="7571000" />
     </task>
     <task id="LOCAL-00474" summary="network3gMode">
       <option name="closed" value="true" />
@@ -716,7 +705,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739953544333</updated>
     </task>
-    <option name="localTasksCounter" value="522" />
+    <task id="LOCAL-00522" summary="19세 제한">
+      <option name="closed" value="true" />
+      <created>1739975217605</created>
+      <option name="number" value="00522" />
+      <option name="presentableId" value="LOCAL-00522" />
+      <option name="project" value="LOCAL" />
+      <updated>1739975217605</updated>
+    </task>
+    <option name="localTasksCounter" value="523" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -761,7 +758,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="networkPlay" />
     <MESSAGE value="start-program" />
     <MESSAGE value="delayTime" />
     <MESSAGE value="playTime" />
@@ -786,7 +782,8 @@
     <MESSAGE value="sameUrlCheckForError" />
     <MESSAGE value="findSelectorAndClickWithDetailPage" />
     <MESSAGE value="transSelecterType" />
-    <option name="LAST_COMMIT_MESSAGE" value="transSelecterType" />
+    <MESSAGE value="19세 제한" />
+    <option name="LAST_COMMIT_MESSAGE" value="19세 제한" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

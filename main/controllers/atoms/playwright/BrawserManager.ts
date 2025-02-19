@@ -107,6 +107,9 @@ export class BrowserManager {
       downloadThroughput: (750 * 1024) / 8, // bytes/s
       uploadThroughput: (250 * 1024) / 8, // bytes/s
     });
+    await client.send("Emulation.setCPUThrottlingRate", {
+      rate: cpuThrottlingRate,
+    });
   }
 
   async navigateToPage(
