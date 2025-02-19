@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="cpuThrottlingRate = 20">
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="findSelectorAndClick / 클릭후 3초대기 추가">
+      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/naver/waitSelectAndForLoggedInCheck.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/user/data.cookie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/user/data.cookie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +117,7 @@
     "TypeScript.targetKeywordSearch.ts.executor": "Run",
     "TypeScript.targetKeywordSearchWithEmptyPage.ts.executor": "Run",
     "TypeScript.util.network.ts.executor": "Run",
+    "TypeScript.waitSelectAndForLoggedInCheck.ts.executor": "Run",
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
@@ -147,14 +151,14 @@
       <recent name="$PROJECT_DIR$/main/controllers/templetes/naverShopping" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/controllers/molecules/naver" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/excel" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/user" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/commons" />
-      <recent name="$PROJECT_DIR$/main/services/commons/naver" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.findSelectorAndClickWithDetailPage.ts">
+  <component name="RunManager" selected="TypeScript.waitSelectAndForLoggedInCheck.ts">
     <configuration name="BrawserManager.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -196,19 +200,6 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="inputClickAndInputTextAndButtonClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/inputClickAndInputTextAndButtonClick.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="sameUrlCheckForError.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -222,13 +213,27 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="waitSelectAndForLoggedInCheck.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/naver" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/naver/waitSelectAndForLoggedInCheck.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.waitSelectAndForLoggedInCheck.ts" />
         <item itemvalue="TypeScript.findSelectorAndClickWithDetailPage.ts" />
         <item itemvalue="TypeScript.BrawserManager.ts" />
         <item itemvalue="TypeScript.findSelectorAndClick.ts" />
         <item itemvalue="TypeScript.sameUrlCheckForError.ts" />
-        <item itemvalue="TypeScript.inputClickAndInputTextAndButtonClick.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -319,15 +324,7 @@
       <workItem from="1739515636948" duration="222000" />
       <workItem from="1739530935139" duration="105254000" />
       <workItem from="1739949691522" duration="374000" />
-      <workItem from="1739950075773" duration="9758000" />
-    </task>
-    <task id="LOCAL-00476" summary="scrollCallback">
-      <option name="closed" value="true" />
-      <created>1739760258185</created>
-      <option name="number" value="00476" />
-      <option name="presentableId" value="LOCAL-00476" />
-      <option name="project" value="LOCAL" />
-      <updated>1739760258185</updated>
+      <workItem from="1739950075773" duration="14828000" />
     </task>
     <task id="LOCAL-00477" summary="scrollCallback 2">
       <option name="closed" value="true" />
@@ -713,7 +710,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739976064461</updated>
     </task>
-    <option name="localTasksCounter" value="525" />
+    <task id="LOCAL-00525" summary="findSelectorAndClick / 클릭후 3초대기 추가">
+      <option name="closed" value="true" />
+      <created>1739977565396</created>
+      <option name="number" value="00525" />
+      <option name="presentableId" value="LOCAL-00525" />
+      <option name="project" value="LOCAL" />
+      <updated>1739977565396</updated>
+    </task>
+    <option name="localTasksCounter" value="526" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -758,7 +763,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="playTime" />
     <MESSAGE value="comparePricesFindAllProducts" />
     <MESSAGE value="throw Error 처리" />
     <MESSAGE value="DataUser" />
@@ -783,7 +787,8 @@
     <MESSAGE value="19세 제한" />
     <MESSAGE value="emulateNetworkConditions" />
     <MESSAGE value="cpuThrottlingRate = 20" />
-    <option name="LAST_COMMIT_MESSAGE" value="cpuThrottlingRate = 20" />
+    <MESSAGE value="findSelectorAndClick / 클릭후 3초대기 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="findSelectorAndClick / 클릭후 3초대기 추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
