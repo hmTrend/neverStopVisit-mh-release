@@ -11,6 +11,7 @@ interface BrowserOptions {
 }
 
 interface Network3gMode {
+  cpuThrottlingRate?: number;
   is3gMode?: boolean;
   context?: BrowserContext;
   page?: Page;
@@ -94,8 +95,8 @@ export class BrowserManager {
     }
   }
 
-  async network3gMode(options: Network3gMode = {}): Promise<void> {
-    const { is3gMode } = options;
+  async networkAndCpuThrottling(options: Network3gMode = {}): Promise<void> {
+    const { is3gMode, cpuThrottlingRate } = options;
     if (!is3gMode) return;
 
     const client = await this.context.newCDPSession(this.page);
