@@ -231,4 +231,29 @@ export class BrowserManager {
   async pressKey({ select }) {
     await this.page.keyboard.press(select);
   }
+
+  async switchToOpenedTab(): Promise<Page> {
+    try {
+      // 열려있는 모든 페이지 가져오기
+      const pages = this.context.pages();
+
+      // 가장 최근에 열린 페이지 (마지막 페이지) 반환
+      const latestPage = pages[pages.length - 1];
+
+      if (!latestPage) {
+        throw Error(`switchToOpenedTab > No pages found`);
+      }
+
+      // 페이지가 완전히 로드될 때까지 대기
+      await latestPage.waitForLoadState("load");
+
+      // 현재 활성 페이지 업데이트
+      this.page = latestPage;
+
+      return latestPage;
+    } catch (error) {
+      console.error(`switchToOpenedTab > ${error.message}`);
+      throw Error(`switchToOpenedTab > ${error.message}`);
+    }
+  }
 }
