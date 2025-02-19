@@ -28,6 +28,15 @@ interface NetworkManager {
   waitForAllRequests(): Promise<void>;
 }
 
+interface WaitAndClickOptions {
+  timeout?: number;
+}
+
+interface TypeTextOptions {
+  clearFirst?: boolean;
+  delay?: number;
+}
+
 export class BrowserManager {
   browser: Browser;
   context: BrowserContext;
@@ -64,6 +73,24 @@ export class BrowserManager {
     } catch (e) {
       console.error(e instanceof Error ? e.message : String(e));
       throw Error("BrowserManager 초기화 실패");
+    }
+  }
+
+  static async createMobileContext(userAgent: any, browser: Browser) {
+    try {
+      const context = await browser.newContext({
+        userAgent: userAgent.userAgent,
+        extraHTTPHeaders: userAgent.headers,
+        viewport: { width: 412, height: 915 },
+        isMobile: true,
+        hasTouch: true,
+        deviceScaleFactor: 2.625,
+      });
+
+      return { context, userAgent: userAgent.userAgent };
+    } catch (error) {
+      console.error(`createMobileContext > ${error.message}`);
+      throw Error(`createMobileContext > ${error.message}`);
     }
   }
 
@@ -141,5 +168,47 @@ export class BrowserManager {
     };
 
     return this.networkManager;
+  }
+
+  async waitAndClick({
+    selector,
+    options = {},
+  }: {
+    selector?: string;
+    options?: WaitAndClickOptions;
+  } = {}): Promise<void> {
+    try {
+      await this.page.waitForSelector(selector, {
+        state: "visible",
+        timeout: options.timeout ?? 5000,
+      });
+      await this.page.click(selector);
+    } catch (error) {
+      console.error(`waitAndClick > ${error.message}`);
+      throw Error(`waitAndClick > ${error.message}`);
+    }
+  }
+
+  async typeText({
+    selector,
+    text,
+    options = {},
+  }: {
+    selector?: string;
+    text?: string;
+    options?: TypeTextOptions;
+  } = {}): Promise<void> {
+    try {
+      await this.page.waitForSelector(selector);
+      if (options.clearFirst) {
+        await this.page.fill(selector, "");
+      }
+      await this.page.type(selector, text, {
+        delay: options.delay ?? 100,
+      });
+    } catch (error) {
+      console.error(`typeText > ${error.message}`);
+      throw Error(`typeText > ${error.message}`);
+    }
   }
 }
