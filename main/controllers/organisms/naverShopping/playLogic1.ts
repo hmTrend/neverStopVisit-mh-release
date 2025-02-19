@@ -44,7 +44,7 @@ export async function playLogic1({
       browserManager,
     });
     await browserManager.switchToOpenedTab();
-    await sameUrlCheckForError({ page }); // 19세 상품일경우 19세 이상 아이디로만 접근가능
+    await sameUrlCheckForError({ page, browserManager }); // 19세 상품일경우 19세 이상 아이디로만 접근가능
     await findSelectorAndClick({
       browserManager,
       page,

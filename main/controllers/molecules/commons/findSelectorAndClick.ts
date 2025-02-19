@@ -9,7 +9,7 @@ export async function findSelectorAndClick({
   // selector = "#_sr_lst_82805514345",
   // selector = 'a.thumbnail_thumb__Bxb6Z[data-shp-contents-id="82805514345"]', // PC버전
   // selector = { getByRole: "button", name: "상세정보 펼쳐보기" }, // 쇼핑 > 상세정보 펼쳐보기
-  selector = "#DEFAULT", // 상세정보 펼쳐보기 / 없을시에도 대응
+  selector, // 상세정보 펼쳐보기 / 없을시에도 대응
   scrollCallback = undefined,
 }: {
   isTest?: boolean;
@@ -47,7 +47,7 @@ export async function findSelectorAndClick({
       });
     }
     await browserManager.transSelecterType({
-      selector: { getByRole: "button", name: "상세정보 펼쳐보기" },
+      selector,
     });
   } catch (e) {
     console.error(e.message);

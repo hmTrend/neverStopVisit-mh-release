@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="locatorWaitForSelector">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="No expand details button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -322,15 +320,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="102633000" />
-    </task>
-    <task id="LOCAL-00469" summary="inputClickAndInputTextAndButtonClick">
-      <option name="closed" value="true" />
-      <created>1739715343762</created>
-      <option name="number" value="00469" />
-      <option name="presentableId" value="LOCAL-00469" />
-      <option name="project" value="LOCAL" />
-      <updated>1739715343762</updated>
+      <workItem from="1739530935139" duration="103000000" />
     </task>
     <task id="LOCAL-00470" summary="findTargetItemAndClick">
       <option name="closed" value="true" />
@@ -716,7 +706,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739930521416</updated>
     </task>
-    <option name="localTasksCounter" value="518" />
+    <task id="LOCAL-00518" summary="No expand details button">
+      <option name="closed" value="true" />
+      <created>1739947225749</created>
+      <option name="number" value="00518" />
+      <option name="presentableId" value="LOCAL-00518" />
+      <option name="project" value="LOCAL" />
+      <updated>1739947225749</updated>
+    </task>
+    <option name="localTasksCounter" value="519" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -761,7 +759,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="naverShopping" />
     <MESSAGE value="internetConnectType" />
     <MESSAGE value="NPlaceRegisterValtio&#10;NShoppingLogic4RegisterValtio" />
     <MESSAGE value="networkPlay" />
@@ -786,7 +783,8 @@
     <MESSAGE value="findSelectorAndClick" />
     <MESSAGE value="switchToOpenedTab" />
     <MESSAGE value="locatorWaitForSelector" />
-    <option name="LAST_COMMIT_MESSAGE" value="locatorWaitForSelector" />
+    <MESSAGE value="No expand details button" />
+    <option name="LAST_COMMIT_MESSAGE" value="No expand details button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
