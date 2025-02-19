@@ -1,8 +1,6 @@
 import { gotoPage } from "./gotoPage";
-import { Page } from "playwright";
 
 export async function inputClickAndInputTextAndButtonClick({
-  page = undefined,
   browserManager = undefined,
   text = "문제적커피",
   inputSelector = "#input_text",
@@ -11,7 +9,6 @@ export async function inputClickAndInputTextAndButtonClick({
   isTest = false,
 }: {
   isTest?: boolean;
-  page?: Page;
   text?: string;
   browserManager?: any;
   inputSelector?: string;
@@ -19,24 +16,21 @@ export async function inputClickAndInputTextAndButtonClick({
   options?: { clearFirst?: boolean; delay?: number };
 } = {}) {
   if (isTest) {
-    const { getPage, getBrowserManager } = await gotoPage({
+    const { getBrowserManager } = await gotoPage({
       url: "https://search.shopping.naver.com/home",
     });
-    page = getPage;
     browserManager = getBrowserManager;
   }
   try {
-    const networkManager = browserManager.createNetworkManager(page);
+    const networkManager = browserManager.createNetworkManager();
     await networkManager.waitForAllRequests();
-    await networkManager.waitAndClick({ page, selector: inputSelector });
-    await networkManager.typeText({
-      page,
+    await browserManager.waitAndClick({ selector: inputSelector });
+    await browserManager.typeText({
       text,
       selector: inputSelector,
       options,
     });
-    await networkManager.waitAndClick({ page, selector: clickSelector });
-    return { getPage: page };
+    await browserManager.waitAndClick({ selector: clickSelector });
   } catch (e) {
     console.error(`inputClickAndInputTextAndButtonClick > ${e.message}`);
     throw Error(`inputClickAndInputTextAndButtonClick > ${e.message}`);

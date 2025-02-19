@@ -1,6 +1,7 @@
 import { createMobileContext } from "../../atoms/playwright/engine";
 import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhoneIN100percent";
 import { BrowserManager } from "../../atoms/playwright/BrawserManager";
+import { DataCookieOver19 } from "../../atoms/user/data.cookie";
 
 export async function gotoPage({
   url,
