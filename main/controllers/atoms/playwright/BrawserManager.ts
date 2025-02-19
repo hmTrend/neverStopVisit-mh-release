@@ -260,24 +260,16 @@ export class BrowserManager {
   async transSelecterType({ selector }) {
     try {
       let element;
-      console.log(1);
       if (typeof selector === "string") {
-        console.log(2);
         element = this.page.locator(selector);
-        console.log(3);
       } else {
-        console.log(4);
         element = this.page.getByRole(selector.getByRole, {
           name: selector.name,
         });
-        console.log(5);
       }
-      await element.waitFor({ state: "visible", timeout: 30 * 1000 }); // 스크롤 후 잠시 대기
-      console.log(6);
+      await element.waitFor();
       await element.scrollIntoViewIfNeeded({ timeout: 1000 });
-      console.log(7);
       await element.click({ timeout: 1000 }); // force 옵션 추가
-      console.log(8);
     } catch (e) {
       console.error(`transSelecterType > No expand details button`);
     }
