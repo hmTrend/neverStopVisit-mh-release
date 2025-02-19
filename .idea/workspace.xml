@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="emulateNetworkConditions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="cpuThrottlingRate = 20">
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,15 +319,7 @@
       <workItem from="1739515636948" duration="222000" />
       <workItem from="1739530935139" duration="105254000" />
       <workItem from="1739949691522" duration="374000" />
-      <workItem from="1739950075773" duration="8130000" />
-    </task>
-    <task id="LOCAL-00475" summary="contextCallback">
-      <option name="closed" value="true" />
-      <created>1739755480918</created>
-      <option name="number" value="00475" />
-      <option name="presentableId" value="LOCAL-00475" />
-      <option name="project" value="LOCAL" />
-      <updated>1739755480918</updated>
+      <workItem from="1739950075773" duration="9758000" />
     </task>
     <task id="LOCAL-00476" summary="scrollCallback">
       <option name="closed" value="true" />
@@ -715,7 +705,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739975306325</updated>
     </task>
-    <option name="localTasksCounter" value="524" />
+    <task id="LOCAL-00524" summary="cpuThrottlingRate = 20">
+      <option name="closed" value="true" />
+      <created>1739976064461</created>
+      <option name="number" value="00524" />
+      <option name="presentableId" value="LOCAL-00524" />
+      <option name="project" value="LOCAL" />
+      <updated>1739976064461</updated>
+    </task>
+    <option name="localTasksCounter" value="525" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -760,7 +758,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="delayTime" />
     <MESSAGE value="playTime" />
     <MESSAGE value="comparePricesFindAllProducts" />
     <MESSAGE value="throw Error 처리" />
@@ -785,7 +782,8 @@
     <MESSAGE value="transSelecterType" />
     <MESSAGE value="19세 제한" />
     <MESSAGE value="emulateNetworkConditions" />
-    <option name="LAST_COMMIT_MESSAGE" value="emulateNetworkConditions" />
+    <MESSAGE value="cpuThrottlingRate = 20" />
+    <option name="LAST_COMMIT_MESSAGE" value="cpuThrottlingRate = 20" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

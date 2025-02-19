@@ -5,7 +5,7 @@ import { DataCookieOver19 } from "../../atoms/user/data.cookie";
 
 export async function gotoPage({
   url,
-  is3gMode = false,
+  is3gMode = true,
   cpuThrottlingRate = 20,
   contextCallback = async (browser) =>
     BrowserManager.createMobileContext(

@@ -32,7 +32,7 @@ export async function findSelectorAndClick({
 
     const element = page.locator(selector);
     await page.waitForTimeout(1000); // 스크롤 후 잠시 대기
-    await element.click({ timeout: 1000 }); // force 옵션 추가
+    await element.click({ timeout: 3000 }); // force 옵션 추가
   } catch (e) {
     console.error(e.message);
     throw Error(`findTargetItemAndClick > ${e.message}`);
