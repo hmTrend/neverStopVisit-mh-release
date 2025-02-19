@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="inputClickAndInputTextAndButtonClick">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="sameUrlCheckForError">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,15 +320,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="93511000" />
-    </task>
-    <task id="LOCAL-00464" summary="globalBrowsers.nShoppingLogic4_nvMid">
-      <option name="closed" value="true" />
-      <created>1739524243241</created>
-      <option name="number" value="00464" />
-      <option name="presentableId" value="LOCAL-00464" />
-      <option name="project" value="LOCAL" />
-      <updated>1739524243241</updated>
+      <workItem from="1739530935139" duration="95700000" />
     </task>
     <task id="LOCAL-00465" summary="더보기 클릭 못하는 이슈 해결">
       <option name="closed" value="true" />
@@ -713,7 +706,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739925188060</updated>
     </task>
-    <option name="localTasksCounter" value="513" />
+    <task id="LOCAL-00513" summary="sameUrlCheckForError">
+      <option name="closed" value="true" />
+      <created>1739926005369</created>
+      <option name="number" value="00513" />
+      <option name="presentableId" value="LOCAL-00513" />
+      <option name="project" value="LOCAL" />
+      <updated>1739926005369</updated>
+    </task>
+    <option name="localTasksCounter" value="514" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -772,7 +773,6 @@
     <MESSAGE value="throw Error 처리" />
     <MESSAGE value="DataUser" />
     <MESSAGE value="setDataUser" />
-    <MESSAGE value="sameUrlCheckForError" />
     <MESSAGE value="  logicType: logicType,&#10;      workType: &quot;NShoppingLogic4&quot;," />
     <MESSAGE value="&lt;Box width=&quot;20px&quot;&gt;" />
     <MESSAGE value="&lt;StatArrow type=&quot;increase&quot; /&gt;" />
@@ -783,7 +783,8 @@
     <MESSAGE value="findSelectorAndClick 생성자함수 리팩토링" />
     <MESSAGE value="init &gt; contextCallback" />
     <MESSAGE value="inputClickAndInputTextAndButtonClick" />
-    <option name="LAST_COMMIT_MESSAGE" value="inputClickAndInputTextAndButtonClick" />
+    <MESSAGE value="sameUrlCheckForError" />
+    <option name="LAST_COMMIT_MESSAGE" value="sameUrlCheckForError" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

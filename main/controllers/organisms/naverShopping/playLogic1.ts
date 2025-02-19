@@ -3,7 +3,6 @@ import { inputClickAndInputTextAndButtonClick } from "../../molecules/commons/in
 import { findSelectorAndClick } from "../../molecules/commons/findSelectorAndClick";
 import {
   cleanup,
-  createMobileContext,
   pressKey,
   switchToOpenedTab,
 } from "../../atoms/playwright/engine";
@@ -11,6 +10,7 @@ import { Page } from "playwright";
 import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhoneIN100percent";
 import wait from "waait";
 import { sameUrlCheckForError } from "../../molecules/commons/sameUrlCheckForError";
+import { BrowserManager } from "../../atoms/playwright/BrawserManager";
 
 export async function playLogic1({
   targetKeyword = "문제적커피",
@@ -22,39 +22,46 @@ export async function playLogic1({
    * 네이버 가격비교 페이지 > 상품검색 > 상세페이지 > 상세정보 펼쳐보기
    * **/
   let page: Page;
-  const { getPage, context } = await gotoPage({
+  let browserManager: BrowserManager;
+  const { getPage, context, getBrowserManager } = await gotoPage({
     url: "https://search.shopping.naver.com/home",
     contextCallback: async (browser) =>
-      createMobileContext({
+      BrowserManager.createMobileContext(
+        getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
         browser,
-        userAgent:
-          getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
-      }),
+      ),
     cookies,
   });
   page = getPage;
+  browserManager = getBrowserManager;
   try {
     await inputClickAndInputTextAndButtonClick({
-      page,
+      browserManager,
       text: targetKeyword,
       inputSelector: "#input_text",
       clickSelector: 'button[data-shp-area="scb.search"]',
       options: { clearFirst: true, delay: 300 },
     });
-    await comparePricesFindAllProducts({ nvMid, maxPages: 1, page });
+    await comparePricesFindAllProducts({
+      nvMid,
+      maxPages: 1,
+      page,
+      browserManager,
+    });
     const { latestPage } = await switchToOpenedTab({ context });
     page = latestPage;
     await sameUrlCheckForError({ page }); // 19세 상품일경우 19세 이상 아이디로만 접근가능
     await findSelectorAndClick({
+      browserManager,
       page,
       selector: { getByRole: "button", name: "상세정보 펼쳐보기" },
       scrollCallback: async ({ page }) =>
-        await pressKey({ page, select: "End" }),
+        await browserManager.pressKey({ select: "End" }),
     });
     await wait(delayTime * 1000);
-    await cleanup({ page, context });
+    await browserManager.cleanup();
   } catch (e) {
-    await cleanup({ page, context });
+    await browserManager.cleanup();
     console.error(`playLogic1 > ${e.message}`);
     throw Error(`playLogic1 > ${e.message}`);
   }
@@ -63,16 +70,19 @@ export async function playLogic1({
 // playLogic1();
 
 async function comparePricesFindAllProducts({
+  browserManager,
   page,
   nvMid = "",
   maxPages = 1,
 }: {
+  browserManager: BrowserManager;
   page: Page;
   nvMid: string;
   maxPages: number;
 }) {
   try {
     await findSelectorAndClick({
+      browserManager,
       page,
       selector: `#_sr_lst_${nvMid}`,
     });
@@ -84,6 +94,7 @@ async function comparePricesFindAllProducts({
       await wait(300);
     }
     await findSelectorAndClick({
+      browserManager,
       page,
       selector: `#_sr_lst_${nvMid}`,
     });

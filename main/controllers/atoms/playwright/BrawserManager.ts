@@ -211,4 +211,24 @@ export class BrowserManager {
       throw Error(`typeText > ${error.message}`);
     }
   }
+
+  async cleanup(): Promise<void> {
+    try {
+      await this.page?.close();
+      await this.context?.close();
+      await this.browser?.close();
+
+      // 참조 제거
+      this.page = null;
+      this.context = null;
+      this.browser = null;
+    } catch (error) {
+      console.error(`cleanup > ${error.message}`);
+      throw Error(`cleanup > ${error.message}`);
+    }
+  }
+
+  async pressKey({ select }) {
+    await this.page.keyboard.press(select);
+  }
 }
