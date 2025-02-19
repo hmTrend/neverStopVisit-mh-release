@@ -5,6 +5,44 @@ import {
   network3gMode,
 } from "../../atoms/playwright/engine";
 import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhoneIN100percent";
+import { DataCookieOver19 } from "../../atoms/user/data.cookie";
+import { BrowserManager } from "../../atoms/playwright/BrawserManager";
+
+// export async function gotoPage({
+//   url,
+//   is3gMode = false,
+//   contextCallback = async (browser) =>
+//     createMobileContext({
+//       browser,
+//       userAgent:
+//         getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
+//     }),
+//   cookies = [],
+// }) {
+//   try {
+//     const { page, context, browser } = await initBrowser({
+//       headless: false,
+//       slowMo: 1000,
+//       contextCallback,
+//       cookies,
+//     });
+//     await network3gMode({ is3gMode, page, context });
+//     await navigateToPage({
+//       page,
+//       url,
+//       options: { waitUntil: "load" },
+//     });
+//     return { getPage: page, context };
+//   } catch (e) {
+//     console.error(`gotoNaverEmptyPage > ${e.message}`);
+//     throw "gotoPage";
+//   }
+// }
+//
+// gotoPage({
+//   url: "https://m.smartstore.naver.com/brainiaccoffee/products/9223216138?nl-au=6983f8990d554f28aa6904730156551a&nl-query=%EB%AC%B8%EC%A0%9C%EC%A0%81%EC%BB%A4%ED%94%BC",
+//   cookies: DataCookieOver19,
+// });
 
 export async function gotoPage({
   url,
@@ -18,271 +56,33 @@ export async function gotoPage({
   cookies = [],
 }) {
   try {
-    const { page, context, browser } = await initBrowser({
+    const browserManager = new BrowserManager();
+    await browserManager.init({
       headless: false,
       slowMo: 1000,
       contextCallback,
       cookies,
     });
-    await network3gMode({ is3gMode, page, context });
-    await navigateToPage({
-      page,
+
+    await browserManager.network3gMode({ is3gMode });
+    await browserManager.navigateToPage({
       url,
       options: { waitUntil: "load" },
     });
-    return { getPage: page, context };
+
+    return {
+      getPage: browserManager.page,
+      context: browserManager.context,
+      getBrowserManager: browserManager,
+    };
   } catch (e) {
     console.error(`gotoNaverEmptyPage > ${e.message}`);
     throw "gotoPage";
   }
 }
 
+// 호출 예시
 // gotoPage({
-//   url: "https://m.smartstore.naver.com/brainiaccoffee/products/9223216138?nl-au=6983f8990d554f28aa6904730156551a&nl-query=%EB%AC%B8%EC%A0%9C%EC%A0%81%EC%BB%A4%ED%94%BC",
-//   cookies: [
-//     {
-//       name: "NAC",
-//       value: "qPkPBUAizrLz",
-//       domain: ".naver.com",
-//       path: "/",
-//       expires: 1759375824,
-//       httpOnly: false,
-//       secure: true,
-//       sameSite: "Strict",
-//     },
-//     {
-//       name: "NACT",
-//       value: "1",
-//       domain: ".naver.com",
-//       path: "/",
-//       expires: 1759375824,
-//       httpOnly: false,
-//       secure: false,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "NNB",
-//       value: "L6N3C2O7XX6GM",
-//       domain: ".naver.com",
-//       path: "/",
-//       expires: 1769155965.55564,
-//       httpOnly: false,
-//       secure: true,
-//       sameSite: "None",
-//     },
-//     {
-//       name: "MM_search_homefeed",
-//       value: "true",
-//       domain: "m.naver.com",
-//       path: "/",
-//       expires: 1759375824,
-//       httpOnly: false,
-//       secure: false,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "_naver_usersession_",
-//       value: "4L2oCESk5LC5Iyhu5lwagw==",
-//       domain: ".naver.com",
-//       path: "/",
-//       expires: 1759375824,
-//       httpOnly: false,
-//       secure: false,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE",
-//       value: "ko_KR",
-//       domain: "mloc.map.naver.com",
-//       path: "/",
-//       expires: 1759375824,
-//       httpOnly: false,
-//       secure: false,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "_naver_usersession_",
-//       value: "4L2oCESk5LC5Iyhu5lwagw==",
-//       domain: ".map.naver.com",
-//       path: "/",
-//       expires: 1759375824,
-//       httpOnly: false,
-//       secure: false,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "page_uid",
-//       value: "iYy+edqVWeKssn978e0ssssstf8-339502",
-//       domain: ".naver.com",
-//       path: "/",
-//       expires: 1759375824,
-//       httpOnly: false,
-//       secure: false,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "JSESSIONID",
-//       value: "1565254ACDEF438CB0ABBD5DF94228EE",
-//       domain: "m.map.naver.com",
-//       path: "/",
-//       expires: 1759375824,
-//       httpOnly: true,
-//       secure: false,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "AEC",
-//       value: "AZ6Zc-WdVi1vlYdcaSQnk1Nl6KNN-2G0owQGAa0dYdzBHQ7Fy_SYdMk8r0w",
-//       domain: ".google.com",
-//       path: "/",
-//       expires: 1749101730.803,
-//       httpOnly: true,
-//       secure: true,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "NID",
-//       value:
-//         "519=PB-XoLbQB5AL9AxT9ZyZXev56VfNWXHVbKjgabt9uVcp522P5XjYmsHpnWicHVfL6JY6j5swvqLDnKzFsLeBArgOszudW9bEGeNqeLrV05SyBAOhKAb6NW1ybgx1CuPP4ioMMRmUL5bP4htCmpU3x8Zh6O93f3NNrK9uj_SuAKTHTl7x9VvUSEmzey-wSS3TO-5VcC_intEM",
-//       domain: ".google.com",
-//       path: "/",
-//       expires: 1749360933.063,
-//       httpOnly: true,
-//       secure: true,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "MM_POSITION",
-//       value:
-//         "fa909b4c28a7cfee57b8b012f75211d686a618d9b45eaa8c9ac09f58d2f02ba4660716b7ef9190897fdc353e5cda2523",
-//       domain: ".m.naver.com",
-//       path: "/",
-//       expires: 1736141736.291,
-//       httpOnly: true,
-//       secure: false,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "MM_LAST_REFERER",
-//       value: "https://www.google.com/",
-//       domain: "m.naver.com",
-//       path: "/",
-//       expires: -1,
-//       httpOnly: false,
-//       secure: false,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "PM_CK_loc",
-//       value: "4a2edecc8f8a7cd6ec83003d2d8a26205819adbe71f7a6c9ecc46290c653c6cb",
-//       domain: "www.naver.com",
-//       path: "/",
-//       expires: 1734682319.908063,
-//       httpOnly: true,
-//       secure: false,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "NM_srt_chzzk",
-//       value: "1",
-//       domain: "www.naver.com",
-//       path: "/",
-//       expires: 1734682320,
-//       httpOnly: false,
-//       secure: false,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "SRT30",
-//       value: "1734595922",
-//       domain: ".naver.com",
-//       path: "/",
-//       expires: 1734597765.555772,
-//       httpOnly: false,
-//       secure: true,
-//       sameSite: "None",
-//     },
-//     {
-//       name: "SRT5",
-//       value: "1734595922",
-//       domain: ".naver.com",
-//       path: "/",
-//       expires: 1734596265.555835,
-//       httpOnly: false,
-//       secure: true,
-//       sameSite: "None",
-//     },
-//     {
-//       name: "nid_slevel",
-//       value: "-1",
-//       domain: ".nid.naver.com",
-//       path: "/",
-//       expires: 1766131955,
-//       httpOnly: false,
-//       secure: false,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "NID_JST",
-//       value:
-//         "NvVvDB577Wk1ZqQ7ktjkktTolbQB57/gM/4UbQhZW4CnLRTDrjSdAyN7843QfWf/9Ihdm/1YrU/cci3QUN8TLlZ8ZEJo5dTkMVbg6WD0Ju7JiE4P9k92HVZO3iXb1R59vIjHHnrsF9eeFUMRFdED9VVH2NJseBlTovh9XxLhnu4=",
-//       domain: ".nid.naver.com",
-//       path: "/",
-//       expires: 1751875955.458045,
-//       httpOnly: true,
-//       secure: true,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "nid_inf",
-//       value: "1094649238",
-//       domain: ".naver.com",
-//       path: "/",
-//       expires: -1,
-//       httpOnly: false,
-//       secure: false,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "NID_AUT",
-//       value: "Q944FV7TNcE4RVqLZHSZFjy+oEfZAsxYJN2vfNwjXYtz44U8Se0QqN8ca4bekfE4",
-//       domain: ".naver.com",
-//       path: "/",
-//       expires: -1,
-//       httpOnly: true,
-//       secure: true,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "NID_SES",
-//       value:
-//         "AAABfdzv/ZTakGmSDStjT9Qod6NpvZFvUN96WrvvHiS0clFW6Uyvt33E9kdC4c5uiT5NcEiWeHf4AJRTFjyZqoSoqmOIZRTJf92FDLsuzQk3ZNRUdcjAvrATHOxFuqkHtLuKkwCnKa+T0GNsr9IGlmv9l7ymlCmXt1vPsTqjJUq4tHSDu5J9cKjndKQdE/pQxqQ7nk9WDHdKf2BN75JjMUZdSKJsHy/hbfknlwI24LXfbdQV5oLHxJ63aR6GklC3jSFKC0x/E8BpMLOUMse3RnfsJGncuWo6MLcuEIK8V42kXp0G8oVDtwY2cryoDSKGuDVJ6rXAWeuGIf2sdkyHv/QvUyZh/KBJx2avQIASRMWvaq2+Ijz3zPK2KTiEprqIq1kLD4dfA1nnUXZ4Rm6e3mcfSFUVD+C1WFlg7KTuyVi8lAAYfRxHRg/n+ecV/qdpy8aoD4bSgtbXgClExRLITXcC/eHkTa3xqbn37kz/VvdS6eDGyt1hlvyO4eW83WX8XFvnTQ==",
-//       domain: ".naver.com",
-//       path: "/",
-//       expires: -1,
-//       httpOnly: false,
-//       secure: true,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "NID_JKL",
-//       value: "IBYcOcASnc8GDE5vX8LcpBAiU8IQxQ0rMmHi5UFQb0U=",
-//       domain: ".naver.com",
-//       path: "/",
-//       expires: -1,
-//       httpOnly: false,
-//       secure: true,
-//       sameSite: "Lax",
-//     },
-//     {
-//       name: "BUC",
-//       value: "MdmFIlyuLb-pxAZnb64ktPlIgBtY7YA4LDQk3E8cGac=",
-//       domain: ".naver.com",
-//       path: "/",
-//       expires: 1769155965.55587,
-//       httpOnly: true,
-//       secure: true,
-//       sameSite: "None",
-//     },
-//   ],
+//   url: "https://m.smartstore.naver.com/brainiaccoffee/products/9223216138?nl-au=6983f8990d554f28aa6904730156551a&nl-query=%EB%AC%B4%EC%A0%9C%EC%A0%81%EC%BB%A4%ED%94%BC",
+//   cookies: DataCookieOver19,
 // });

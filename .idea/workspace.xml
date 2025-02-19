@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="totalWorkingTime: Math.floor(totalSeconds)">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="nShopping 안쓰는 전역변수 삭제">
+      <change afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/user/data.cookie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/user/data.cookie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +156,7 @@
       <recent name="$PROJECT_DIR$/main/services/commons/naver" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.sameUrlCheckForError.ts">
+  <component name="RunManager" selected="TypeScript.findSelectorAndClick.ts">
     <configuration name="findSelectorAndClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -226,11 +229,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.findSelectorAndClick.ts" />
+        <item itemvalue="TypeScript.gotoPage.ts" />
         <item itemvalue="TypeScript.sameUrlCheckForError.ts" />
         <item itemvalue="TypeScript.naverShopping.ts" />
         <item itemvalue="TypeScript.index.ts (1)" />
-        <item itemvalue="TypeScript.findSelectorAndClick.ts" />
-        <item itemvalue="TypeScript.gotoPage.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -319,15 +322,7 @@
       <workItem from="1738820920814" duration="542000" />
       <workItem from="1738821472372" duration="6313000" />
       <workItem from="1739515636948" duration="222000" />
-      <workItem from="1739530935139" duration="89427000" />
-    </task>
-    <task id="LOCAL-00460" summary="v3.26.0 연속 작업시 창끄고 다시 열기">
-      <option name="closed" value="true" />
-      <created>1739522780166</created>
-      <option name="number" value="00460" />
-      <option name="presentableId" value="LOCAL-00460" />
-      <option name="project" value="LOCAL" />
-      <updated>1739522780166</updated>
+      <workItem from="1739530935139" duration="91131000" />
     </task>
     <task id="LOCAL-00461" summary="v3.26.0 연속 작업시 창끄고 다시 열기">
       <option name="closed" value="true" />
@@ -713,7 +708,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739892131008</updated>
     </task>
-    <option name="localTasksCounter" value="509" />
+    <task id="LOCAL-00509" summary="nShopping 안쓰는 전역변수 삭제">
+      <option name="closed" value="true" />
+      <created>1739921945691</created>
+      <option name="number" value="00509" />
+      <option name="presentableId" value="LOCAL-00509" />
+      <option name="project" value="LOCAL" />
+      <updated>1739921945691</updated>
+    </task>
+    <option name="localTasksCounter" value="510" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -758,7 +761,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="if (scrollCallback)" />
     <MESSAGE value="scrollCallback" />
     <MESSAGE value="shopping &gt; playLogic1" />
     <MESSAGE value="shopping &gt; playLogic1 2" />
@@ -783,7 +785,8 @@
     <MESSAGE value="throw Error refactoring" />
     <MESSAGE value="errorMessageTrans" />
     <MESSAGE value="totalWorkingTime: Math.floor(totalSeconds)" />
-    <option name="LAST_COMMIT_MESSAGE" value="totalWorkingTime: Math.floor(totalSeconds)" />
+    <MESSAGE value="nShopping 안쓰는 전역변수 삭제" />
+    <option name="LAST_COMMIT_MESSAGE" value="nShopping 안쓰는 전역변수 삭제" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

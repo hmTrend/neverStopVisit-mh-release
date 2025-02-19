@@ -1,0 +1,145 @@
+import { Browser, BrowserContext, chromium, Page } from "playwright";
+
+interface BrowserOptions {
+  headless?: boolean;
+  slowMo?: number;
+  contextCallback?: (browser: Browser) => Promise<{
+    context: BrowserContext;
+    userAgent?: string;
+  }>;
+  cookies?: any[];
+}
+
+interface Network3gMode {
+  is3gMode?: boolean;
+  context?: BrowserContext;
+  page?: Page;
+}
+
+interface NavigateOptions {
+  waitUntil?: "load" | "domcontentloaded" | "networkidle";
+  timeout?: number;
+}
+
+interface NetworkManager {
+  page: Page;
+  pendingRequests: Set<string>;
+  setupNetworkListeners(): void;
+  waitForAllRequests(): Promise<void>;
+}
+
+export class BrowserManager {
+  browser: Browser;
+  context: BrowserContext;
+  page: Page;
+  networkManager: any;
+
+  constructor() {
+    // 생성자는 비동기가 될 수 없으므로 속성들을 초기화합니다
+    this.browser = null;
+    this.context = null;
+    this.page = null;
+    this.networkManager = null;
+  }
+
+  async init(options: BrowserOptions = {}): Promise<this> {
+    try {
+      this.browser = await chromium.launch({
+        headless: options.headless ?? false,
+        slowMo: options.slowMo ?? 50,
+      });
+
+      const { context, userAgent } = options.contextCallback
+        ? await options.contextCallback(this.browser)
+        : { context: await this.browser.newContext(), userAgent: undefined };
+
+      this.context = context;
+
+      if (options.cookies && options.cookies.length > 0) {
+        await this.context.addCookies(options.cookies);
+      }
+
+      this.page = await this.context.newPage();
+      return this;
+    } catch (e) {
+      console.error(e instanceof Error ? e.message : String(e));
+      throw Error("BrowserManager 초기화 실패");
+    }
+  }
+
+  async network3gMode(options: Network3gMode = {}): Promise<void> {
+    const { is3gMode } = options;
+    if (!is3gMode) return;
+
+    const client = await this.context.newCDPSession(this.page);
+    await client.send("Network.enable");
+    await client.send("Network.emulateNetworkConditions", {
+      offline: false,
+      latency: 100, // 지연시간 (ms)
+      downloadThroughput: (750 * 1024) / 8, // bytes/s
+      uploadThroughput: (250 * 1024) / 8, // bytes/s
+    });
+  }
+
+  async navigateToPage(
+    options: {
+      url?: string;
+      options?: NavigateOptions;
+    } = {},
+  ): Promise<void> {
+    try {
+      const { url, options: navigateOptions = {} } = options;
+
+      await this.page.goto(url, {
+        waitUntil: navigateOptions.waitUntil ?? "networkidle",
+        timeout: navigateOptions.timeout ?? 60 * 1000,
+      });
+    } catch (error) {
+      console.error(`navigateToPage > ${error.message}`);
+      throw Error(`navigateToPage > ${error.message}`);
+    }
+  }
+
+  createNetworkManager(): NetworkManager {
+    const pendingRequests = new Set<string>();
+
+    const setupNetworkListeners = () => {
+      // 요청 시작 시 Set에 추가
+      this.page.on("request", (request) => {
+        pendingRequests.add(request.url());
+      });
+
+      // 요청 완료 시 Set에서 제거
+      this.page.on("requestfinished", (request) => {
+        pendingRequests.delete(request.url());
+      });
+
+      // 요청 실패 시에도 Set에서 제거
+      this.page.on("requestfailed", (request) => {
+        pendingRequests.delete(request.url());
+      });
+    };
+
+    const waitForAllRequests = async () => {
+      try {
+        while (pendingRequests.size > 0) {
+          await this.page.waitForTimeout(100);
+        }
+      } catch (error) {
+        console.error("Error waiting for network requests:", error);
+        throw Error("waitForAllRequests");
+      }
+    };
+
+    setupNetworkListeners();
+
+    this.networkManager = {
+      page: this.page,
+      pendingRequests,
+      setupNetworkListeners,
+      waitForAllRequests,
+    };
+
+    return this.networkManager;
+  }
+}

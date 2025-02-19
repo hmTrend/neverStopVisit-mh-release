@@ -1,5 +1,5 @@
 // 19세 이상 쿠키 데이타
-export const dataCookieOver19 = [
+export const DataCookieOver19 = [
   {
     name: "Conversion",
     value:
@@ -471,7 +471,7 @@ export const dataCookieOver19 = [
     sameSite: "None",
   },
 ];
-export const dataCookieUnder19 = [
+export const DataCookieUnder19 = [
   {
     name: "NID_AUT",
     value: "ZFRux0ACZjeERfi314M8/NieKNIkmFNZ9qJi/8kSXi9Lb1jxGjQX5I73hVN/TJGa",
