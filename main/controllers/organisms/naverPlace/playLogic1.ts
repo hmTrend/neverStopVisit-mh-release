@@ -7,12 +7,13 @@ import { inputClickAndInputTextAndButtonClick } from "../../molecules/commons/in
 import wait from "waait";
 import { findSelectorAndScroll } from "../../molecules/commons/findSelectorAndScroll";
 import { clickTargetPlaceOrGoToNextStep } from "../../molecules/naverPlace/clickTargetPlaceOrGoToNextStep";
+import { lastActionRandomClick } from "../../molecules/naverPlace/lastActionRandomClick";
 
 export async function playLogic1({
   targetKeyword = "동남지구 맛집",
   placeNumber = "82805514345",
   cookies = [],
-  delayTime = 30,
+  delayTime = 5,
 } = {}) {
   /**
    * 네이버 빈 페이지 > 네이버검색! > 상세페이지 > 상세정보 펼쳐보기
@@ -42,6 +43,12 @@ export async function playLogic1({
       options: { clearFirst: true, delay: 300 },
     });
     await clickTargetPlaceOrGoToNextStep({ placeNumber, page, browserManager });
+    await lastActionRandomClick({
+      placeNumber,
+      page,
+      browserManager,
+      delayTime,
+    });
     await wait(delayTime * 1000);
     await browserManager.cleanup();
   } catch (e) {
