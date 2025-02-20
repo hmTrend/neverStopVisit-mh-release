@@ -1,7 +1,7 @@
 import { playLogic1 } from "../../organisms/naverShopping/playLogic1";
 import { getFingerPrintTargetExcelOne } from "../../molecules/user/getFingerPrintTargetExcelOne";
-import { getNShoppingLogic4ExcelAlignFlatTargetOne } from "../../molecules/excel/getFingerPrintTargetExcelOne2";
 import { setDataUser } from "../../atoms/user/data.user";
+import { getNPlaceExcelAlignFlatTargetOne } from "../../molecules/excel/getNPlaceExcelAlignFlatTargetOne";
 
 interface NShoppingLogic4ExcelListAlignFlatMapEntity {
   _id: string;
@@ -29,7 +29,7 @@ export async function playNaverPlace({
       groupFid: fingerPrintGroupFid,
     });
     const excelData: NShoppingLogic4ExcelListAlignFlatMapEntity =
-      await getNShoppingLogic4ExcelAlignFlatTargetOne({
+      await getNPlaceExcelAlignFlatTargetOne({
         groupFid: dataGroupFid,
       });
     const { nvMid, workKeyword, delayTime, targetKeyword } = excelData;
@@ -37,7 +37,7 @@ export async function playNaverPlace({
       targetKeyword,
       workKeyword,
       logicType: logicType,
-      workType: "NShoppingLogic4",
+      workType: "NPlace",
       nvMid,
       delayTime,
     });

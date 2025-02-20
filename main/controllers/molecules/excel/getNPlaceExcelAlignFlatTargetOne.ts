@@ -12,9 +12,9 @@ export async function getNPlaceExcelAlignFlatTargetOne({
       return data;
     } catch (e) {
       if (i >= 4) {
-        throw Error(`getNShoppingLogic4ExcelAlignFlatTargetOne > ${e.message}`);
+        throw Error(`getNPlaceExcelAlignFlatTargetOne > ${e.message}`);
       }
-      console.error(`getNShoppingLogic4ExcelAlignFlatTargetOne > no data`);
+      console.error(`getNPlaceExcelAlignFlatTargetOne > no data`);
       await wait(3 * 1000);
     }
   }
