@@ -1,11 +1,11 @@
 "use client";
 
-import { SelectProgramForStart } from "@/components/start/SelectProgramForStart";
 import { useSnapshot } from "valtio/react";
-import { storeStart } from "@/valtio/start.valtio";
 import { Flex } from "@chakra-ui/react";
-import { storeNPlace } from "@/valtio/nPlace.register.valtio";
 import { storeNShoppingLogic4 } from "@/valtio/nShoppingLogic4.register.valtio";
+import { storeNPlace } from "@/valtio/nPlace.register.valtio";
+import { storeStart } from "@/valtio/start.valtio";
+import { SelectProgramForStart } from "@/components/start/SelectProgramForStart";
 
 export const SelectProgramForStartLogic = () => {
   const {

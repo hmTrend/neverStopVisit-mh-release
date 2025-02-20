@@ -72,7 +72,7 @@ function LogicType({ logicType, selectProgram }) {
   return (
     <RadioGroup
       onChange={handleChange}
-      defaultValue={snap[selectProgram]?.logicType.name}
+      defaultValue={snap[selectProgram]?.logicType}
     >
       <Flex wrap={"wrap"} gap={6}>
         {logicType.map((v, i) => (
