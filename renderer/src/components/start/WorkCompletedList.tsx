@@ -23,6 +23,7 @@ export function WorkCompletedList() {
         <Text>유형</Text>
         <Text>로직</Text>
         <Text>타겟키워드</Text>
+        <Text>워크키워드</Text>
         <Text>내아이피</Text>
         <Text>작업시간</Text>
         <Text>작성날짜</Text>
@@ -45,6 +46,7 @@ export function WorkCompletedList() {
           <Text>{v?.workType === "NShoppingLogic4" ? "쇼핑" : "플레이스"}</Text>
           <Text>{v?.logicType}</Text>
           <Text>{v?.targetKeyword}</Text>
+          <Text>{v?.workKeyword}</Text>
           <Text>{v?.myIp}</Text>
           <Text>{v?.totalWorkingTime}초</Text>
           <Text>{v?.createdAt}</Text>

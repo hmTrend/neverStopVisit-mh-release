@@ -2,8 +2,8 @@ import { DataUser, dataUserInitialize } from "../../atoms/user/data.user";
 import { UtilDate } from "../../atoms/util/util.date";
 
 export async function workedDataToFront({
-  targetKeyword,
   mainWindow,
+  groupFid,
   errorMessage,
   workType,
   logicType,
@@ -11,16 +11,18 @@ export async function workedDataToFront({
   createdAt,
   sendAddress = "error-to-front-result",
   callback = "undefined",
+  countPatchCallback = async () => {},
 }: {
-  targetKeyword?: string;
   mainWindow?: any;
   errorMessage?: string;
   workType?: string;
+  groupFid?: string;
   logicType?: string;
   myIp?: string;
   createdAt?: Date;
   sendAddress?: string;
   callback?: any;
+  countPatchCallback?: ({ groupFid, nvMid, targetKeyword }) => Promise<any>;
 }) {
   try {
     dataUserInitialize();
@@ -30,9 +32,15 @@ export async function workedDataToFront({
       logicType: DataUser.logicType,
       errorMessage: "",
       targetKeyword: DataUser.targetKeyword,
+      workKeyword: DataUser.workKeyword,
       myIp: DataUser.myIp,
       totalWorkingTime: DataUser.totalWorkingTime,
       createdAt: UtilDate.getCurrentDate(),
+    });
+    await countPatchCallback({
+      groupFid,
+      nvMid: DataUser.nvMid,
+      targetKeyword: DataUser.targetKeyword,
     });
   } catch (e) {
     mainWindow.webContents.send(sendAddress, {
@@ -40,6 +48,7 @@ export async function workedDataToFront({
       logicType: DataUser.logicType,
       errorMessage: errorMessageTrans({ errMessage: e.message }),
       targetKeyword: DataUser.targetKeyword,
+      workKeyword: DataUser.workKeyword,
       myIp: DataUser.myIp,
       totalWorkingTime: DataUser.totalWorkingTime,
       createdAt: UtilDate.getCurrentDate(),

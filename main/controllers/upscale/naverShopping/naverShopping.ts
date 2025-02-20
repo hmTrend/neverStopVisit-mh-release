@@ -5,7 +5,8 @@ import { playNaverShopping } from "../../templetes/naverShopping";
 import { UtilNetwork } from "../../atoms/util/util.network";
 import { monitorNetworkAndStart } from "../../atoms/network/network.local";
 import { workedDataToFront } from "../../molecules/ipc/workedDataToFront";
-import { setDataUser } from "../../atoms/user/data.user";
+import { DataUser, setDataUser } from "../../atoms/user/data.user";
+import { PatchNShoppingLogic4NowCountIncrement } from "../../../lib/apollo/n-shoppingLogic4-apollo";
 
 export async function naverShopping({
   internetType = "STATIC",
@@ -18,7 +19,14 @@ export async function naverShopping({
     try {
       await workedDataToFront({
         mainWindow,
+        groupFid: data.selectedGroup.groupId,
         callback: () => totalPlay({ playTime, data, internetType }),
+        countPatchCallback: async ({ groupFid, nvMid, targetKeyword }) =>
+          await PatchNShoppingLogic4NowCountIncrement({
+            groupFid,
+            nvMid,
+            targetKeyword,
+          }),
       });
     } catch (error) {
       console.error(`naverShopping > ${error.message}`);

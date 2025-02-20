@@ -32,9 +32,10 @@ export async function playNaverShopping({
       await getNShoppingLogic4ExcelAlignFlatTargetOne({
         groupFid: dataGroupFid,
       });
-    const { nvMid, workKeyword, delayTime } = excelData;
+    const { nvMid, workKeyword, delayTime, targetKeyword } = excelData;
     setDataUser({
-      targetKeyword: workKeyword,
+      targetKeyword,
+      workKeyword,
       logicType: logicType,
       workType: "NShoppingLogic4",
       nvMid,
