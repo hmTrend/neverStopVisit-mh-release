@@ -1,4 +1,5 @@
 import { Browser, BrowserContext, chromium, Page } from "playwright";
+import { getChromePath } from "./getChromPath";
 
 interface BrowserOptions {
   headless?: boolean;
@@ -57,6 +58,7 @@ export class BrowserManager {
       this.browser = await chromium.launch({
         headless: options.headless ?? false,
         slowMo: options.slowMo ?? 50,
+        executablePath: getChromePath(),
       });
 
       const { context, userAgent } = options.contextCallback

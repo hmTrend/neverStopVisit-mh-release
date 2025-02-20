@@ -321,14 +321,6 @@
       <workItem from="1739949691522" duration="374000" />
       <workItem from="1739950075773" duration="16923000" />
     </task>
-    <task id="LOCAL-00479" summary="scrollCallback">
-      <option name="closed" value="true" />
-      <created>1739760554432</created>
-      <option name="number" value="00479" />
-      <option name="presentableId" value="LOCAL-00479" />
-      <option name="project" value="LOCAL" />
-      <updated>1739760554432</updated>
-    </task>
     <task id="LOCAL-00480" summary="shopping &gt; playLogic1">
       <option name="closed" value="true" />
       <created>1739781583397</created>
@@ -713,7 +705,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740010502124</updated>
     </task>
-    <option name="localTasksCounter" value="528" />
+    <task id="LOCAL-00528" summary="4.3.3 / 불필요 nShopping 삭제">
+      <option name="closed" value="true" />
+      <created>1740011918676</created>
+      <option name="number" value="00528" />
+      <option name="presentableId" value="LOCAL-00528" />
+      <option name="project" value="LOCAL" />
+      <updated>1740011918676</updated>
+    </task>
+    <option name="localTasksCounter" value="529" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -758,7 +758,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="DataUser" />
     <MESSAGE value="setDataUser" />
     <MESSAGE value="  logicType: logicType,&#10;      workType: &quot;NShoppingLogic4&quot;," />
     <MESSAGE value="&lt;Box width=&quot;20px&quot;&gt;" />
@@ -783,7 +782,8 @@
     <MESSAGE value="findSelectorAndClick / 클릭후 3초대기 추가" />
     <MESSAGE value="waitSelectAndForLoggedInCheck" />
     <MESSAGE value="loginCheckCallback" />
-    <option name="LAST_COMMIT_MESSAGE" value="loginCheckCallback" />
+    <MESSAGE value="4.3.3 / 불필요 nShopping 삭제" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.3.3 / 불필요 nShopping 삭제" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
