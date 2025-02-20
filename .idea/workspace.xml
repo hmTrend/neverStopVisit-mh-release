@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v4.3.16 로직선택하기">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v4.3.19 타겟 워크 키워드 나누기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/user/data.user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/user/data.user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,15 +320,7 @@
       <workItem from="1739530935139" duration="105254000" />
       <workItem from="1739949691522" duration="374000" />
       <workItem from="1739950075773" duration="16923000" />
-      <workItem from="1740030146378" duration="3566000" />
-    </task>
-    <task id="LOCAL-00485" summary="measureExecutionTime">
-      <option name="closed" value="true" />
-      <created>1739801411436</created>
-      <option name="number" value="00485" />
-      <option name="presentableId" value="LOCAL-00485" />
-      <option name="project" value="LOCAL" />
-      <updated>1739801411436</updated>
+      <workItem from="1740030146378" duration="4135000" />
     </task>
     <task id="LOCAL-00486" summary="findSelectorAndClick">
       <option name="closed" value="true" />
@@ -719,7 +706,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740030426378</updated>
     </task>
-    <option name="localTasksCounter" value="534" />
+    <task id="LOCAL-00534" summary="v4.3.19 타겟 워크 키워드 나누기">
+      <option name="closed" value="true" />
+      <created>1740033728663</created>
+      <option name="number" value="00534" />
+      <option name="presentableId" value="LOCAL-00534" />
+      <option name="project" value="LOCAL" />
+      <updated>1740033728663</updated>
+    </task>
+    <option name="localTasksCounter" value="535" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -764,7 +759,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="throw Error refactoring" />
     <MESSAGE value="errorMessageTrans" />
     <MESSAGE value="totalWorkingTime: Math.floor(totalSeconds)" />
     <MESSAGE value="nShopping 안쓰는 전역변수 삭제" />
@@ -789,7 +783,8 @@
     <MESSAGE value="4.3.9 / GetFingerPrintTargetExcelOne / getNShoppingLogic4ExcelAlignFlatTargetOne&#10;&#10;5번 다시가져오기" />
     <MESSAGE value="4.3.9" />
     <MESSAGE value="v4.3.16 로직선택하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="v4.3.16 로직선택하기" />
+    <MESSAGE value="v4.3.19 타겟 워크 키워드 나누기" />
+    <option name="LAST_COMMIT_MESSAGE" value="v4.3.19 타겟 워크 키워드 나누기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -798,18 +793,6 @@
           <url>file://$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelDownload.tsx</url>
           <line>12</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts</url>
-          <line>166</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/main/services/nShoppingLogic4/index.ts</url>
-          <line>172</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
