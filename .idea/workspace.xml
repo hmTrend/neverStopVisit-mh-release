@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="waitSelectAndForLoggedInCheck">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="loginCheckCallback">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/gotoPage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naver/waitSelectAndForLoggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/naver/waitSelectAndForLoggedInCheck.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,15 +322,7 @@
       <workItem from="1739515636948" duration="222000" />
       <workItem from="1739530935139" duration="105254000" />
       <workItem from="1739949691522" duration="374000" />
-      <workItem from="1739950075773" duration="16354000" />
-    </task>
-    <task id="LOCAL-00478" summary="if (scrollCallback)">
-      <option name="closed" value="true" />
-      <created>1739760479207</created>
-      <option name="number" value="00478" />
-      <option name="presentableId" value="LOCAL-00478" />
-      <option name="project" value="LOCAL" />
-      <updated>1739760479207</updated>
+      <workItem from="1739950075773" duration="16923000" />
     </task>
     <task id="LOCAL-00479" summary="scrollCallback">
       <option name="closed" value="true" />
@@ -717,7 +708,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740009152694</updated>
     </task>
-    <option name="localTasksCounter" value="527" />
+    <task id="LOCAL-00527" summary="loginCheckCallback">
+      <option name="closed" value="true" />
+      <created>1740010502124</created>
+      <option name="number" value="00527" />
+      <option name="presentableId" value="LOCAL-00527" />
+      <option name="project" value="LOCAL" />
+      <updated>1740010502124</updated>
+    </task>
+    <option name="localTasksCounter" value="528" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -762,7 +761,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="throw Error 처리" />
     <MESSAGE value="DataUser" />
     <MESSAGE value="setDataUser" />
     <MESSAGE value="  logicType: logicType,&#10;      workType: &quot;NShoppingLogic4&quot;," />
@@ -787,7 +785,8 @@
     <MESSAGE value="cpuThrottlingRate = 20" />
     <MESSAGE value="findSelectorAndClick / 클릭후 3초대기 추가" />
     <MESSAGE value="waitSelectAndForLoggedInCheck" />
-    <option name="LAST_COMMIT_MESSAGE" value="waitSelectAndForLoggedInCheck" />
+    <MESSAGE value="loginCheckCallback" />
+    <option name="LAST_COMMIT_MESSAGE" value="loginCheckCallback" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

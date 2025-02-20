@@ -23,6 +23,10 @@ export async function waitSelectAndForLoggedInCheck({
   }
 
   try {
+    await browserManager.navigateToPage({
+      url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
+      options: { waitUntil: "load" },
+    });
     await browserManager.page.waitForSelector(waitSelect);
     const links = await browserManager.page
       .locator("div.footer_etc > span.item > a.link")
