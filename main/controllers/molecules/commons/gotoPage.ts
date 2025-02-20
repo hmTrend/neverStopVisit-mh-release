@@ -2,6 +2,7 @@ import { createMobileContext } from "../../atoms/playwright/engine";
 import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhoneIN100percent";
 import { BrowserManager } from "../../atoms/playwright/BrawserManager";
 import { DataCookieOver19 } from "../../atoms/user/data.cookie";
+import { waitSelectAndForLoggedInCheck } from "../naver/waitSelectAndForLoggedInCheck";
 
 export async function gotoPage({
   url,
@@ -13,6 +14,7 @@ export async function gotoPage({
       browser,
     ),
   cookies = [],
+  loginCheckCallback = async ({ browserManager }) => {},
 }) {
   try {
     const browserManager = new BrowserManager();
@@ -27,6 +29,9 @@ export async function gotoPage({
       is3gMode,
       cpuThrottlingRate,
     });
+
+    await loginCheckCallback({ browserManager });
+
     await browserManager.navigateToPage({
       url,
       options: { waitUntil: "load" },

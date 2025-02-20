@@ -7,6 +7,7 @@ import wait from "waait";
 import { sameUrlCheckForError } from "../../molecules/commons/sameUrlCheckForError";
 import { BrowserManager } from "../../atoms/playwright/BrawserManager";
 import { findSelectorAndClickWithDetailPage } from "../../molecules/commons/findSelectorAndClickWithDetailPage";
+import { waitSelectAndForLoggedInCheck } from "../../molecules/naver/waitSelectAndForLoggedInCheck";
 
 export async function playLogic1({
   targetKeyword = "문제적커피",
@@ -19,13 +20,15 @@ export async function playLogic1({
    * **/
   let page: Page;
   let browserManager: BrowserManager;
-  const { getPage, context, getBrowserManager } = await gotoPage({
+  const { getPage, getBrowserManager } = await gotoPage({
     url: "https://search.shopping.naver.com/home",
     contextCallback: async (browser) =>
       BrowserManager.createMobileContext(
         getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
         browser,
       ),
+    loginCheckCallback: async ({ browserManager }) =>
+      waitSelectAndForLoggedInCheck({ browserManager }),
     cookies,
   });
   page = getPage;
