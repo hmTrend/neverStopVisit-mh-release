@@ -40,11 +40,6 @@ export async function playLogic1({
       clickSelector: 'button.btn_search[type="submit"]',
       options: { clearFirst: true, delay: 300 },
     });
-    await findSelectorAndScroll({
-      selector: ".place_section_header_title",
-      browserManager,
-      page,
-    });
     await wait(delayTime * 1000);
     await browserManager.cleanup();
   } catch (e) {
