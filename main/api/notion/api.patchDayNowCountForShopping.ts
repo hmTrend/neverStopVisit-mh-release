@@ -117,13 +117,21 @@ export async function apiPatchDayNowCountForShopping({
       },
     };
     {
+      const inputDate = inputData["작업날짜"].date.start.split("T")[0];
+      // 한국 시간 기준으로 시작과 끝 시간 설정
+      const startTime = `${inputDate}T00:00:00+09:00`;
+      const endTime = `${inputDate}T23:59:59+09:00`;
+
       const response = await notion.databases.query({
         database_id: DATABASE_ID,
         filter: {
           and: [
             {
               property: "작업날짜",
-              date: { equals: inputData["작업날짜"].date.start.split("T")[0] },
+              date: {
+                on_or_after: startTime,
+                on_or_before: endTime,
+              },
             },
             { property: "groupFid", rich_text: { equals: data.groupFid } },
             {

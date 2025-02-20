@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v4.3.19 타겟 워크 키워드 나누기">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v4.3.26 apiPatchDayNowCountForShopping">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" afterDir="false" />
     </list>
@@ -156,7 +156,7 @@
       <recent name="$PROJECT_DIR$/main/controllers/molecules/commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.findSelectorAndClickWithDetailPage.ts">
+  <component name="RunManager" selected="TypeScript.api.patchDayNowCountForShopping.ts">
     <configuration name="BrawserManager.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -168,6 +168,20 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" />
       <option name="programParameters" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="api.patchDayNowCountForShopping.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/api/notion" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/api/notion/api.patchDayNowCountForShopping.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="findSelectorAndClickWithDetailPage.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -196,19 +210,6 @@
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sameUrlCheckForError.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/sameUrlCheckForError.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="waitSelectAndForLoggedInCheck.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -224,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.api.patchDayNowCountForShopping.ts" />
         <item itemvalue="TypeScript.findSelectorAndClickWithDetailPage.ts" />
         <item itemvalue="TypeScript.waitSelectAndForLoggedInCheck.ts" />
         <item itemvalue="TypeScript.BrawserManager.ts" />
         <item itemvalue="TypeScript.findSelectorAndClick.ts" />
-        <item itemvalue="TypeScript.sameUrlCheckForError.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -320,23 +321,7 @@
       <workItem from="1739530935139" duration="105254000" />
       <workItem from="1739949691522" duration="374000" />
       <workItem from="1739950075773" duration="16923000" />
-      <workItem from="1740030146378" duration="4135000" />
-    </task>
-    <task id="LOCAL-00486" summary="findSelectorAndClick">
-      <option name="closed" value="true" />
-      <created>1739858172613</created>
-      <option name="number" value="00486" />
-      <option name="presentableId" value="LOCAL-00486" />
-      <option name="project" value="LOCAL" />
-      <updated>1739858172613</updated>
-    </task>
-    <task id="LOCAL-00487" summary="naverShopping">
-      <option name="closed" value="true" />
-      <created>1739860632948</created>
-      <option name="number" value="00487" />
-      <option name="presentableId" value="LOCAL-00487" />
-      <option name="project" value="LOCAL" />
-      <updated>1739860632948</updated>
+      <workItem from="1740030146378" duration="5746000" />
     </task>
     <task id="LOCAL-00488" summary="internetConnectType">
       <option name="closed" value="true" />
@@ -714,7 +699,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740033728663</updated>
     </task>
-    <option name="localTasksCounter" value="535" />
+    <task id="LOCAL-00535" summary="v4.3.23 apiPatchDayNowCountForShopping">
+      <option name="closed" value="true" />
+      <created>1740034301244</created>
+      <option name="number" value="00535" />
+      <option name="presentableId" value="LOCAL-00535" />
+      <option name="project" value="LOCAL" />
+      <updated>1740034301244</updated>
+    </task>
+    <task id="LOCAL-00536" summary="v4.3.26 apiPatchDayNowCountForShopping">
+      <option name="closed" value="true" />
+      <created>1740035751565</created>
+      <option name="number" value="00536" />
+      <option name="presentableId" value="LOCAL-00536" />
+      <option name="project" value="LOCAL" />
+      <updated>1740035751565</updated>
+    </task>
+    <option name="localTasksCounter" value="537" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -759,8 +760,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="errorMessageTrans" />
-    <MESSAGE value="totalWorkingTime: Math.floor(totalSeconds)" />
     <MESSAGE value="nShopping 안쓰는 전역변수 삭제" />
     <MESSAGE value="findSelectorAndClick 생성자함수 리팩토링" />
     <MESSAGE value="init &gt; contextCallback" />
@@ -784,7 +783,9 @@
     <MESSAGE value="4.3.9" />
     <MESSAGE value="v4.3.16 로직선택하기" />
     <MESSAGE value="v4.3.19 타겟 워크 키워드 나누기" />
-    <option name="LAST_COMMIT_MESSAGE" value="v4.3.19 타겟 워크 키워드 나누기" />
+    <MESSAGE value="v4.3.23 apiPatchDayNowCountForShopping" />
+    <MESSAGE value="v4.3.26 apiPatchDayNowCountForShopping" />
+    <option name="LAST_COMMIT_MESSAGE" value="v4.3.26 apiPatchDayNowCountForShopping" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
