@@ -56,12 +56,15 @@ async function totalPlay({ internetType, playTime, data }) {
   }
 }
 
+let globalExecute = null;
 async function networkPlay({ internetType, playTime }) {
-  const execute = await internetConnectType({
-    internetType,
-    playTime,
-  });
-  await execute();
+  if (!globalExecute) {
+    globalExecute = await internetConnectType({
+      internetType,
+      playTime,
+    });
+  }
+  await globalExecute();
   await monitorNetworkAndStart();
   const result = await UtilNetwork.getIpAddress();
   setDataUser({ myIp: result });

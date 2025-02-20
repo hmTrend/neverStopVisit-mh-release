@@ -15,14 +15,13 @@ export async function internetConnectType({
   console.log(playTime);
   console.log(internetType);
   return async function execute() {
-    count++;
-
     if (count % playTime === 0) {
       internetTypeSTATIC({ internetType });
       await internetTypeTETHERING({ internetType });
       await internetTypeROUTER({ internetType });
       await internetTypeLOCAL({ internetType });
     }
+    count++;
   };
 }
 
@@ -37,7 +36,7 @@ async function internetTypeTETHERING({ internetType }) {
     !checkAdbConnectionResult ||
     typeof checkAdbConnectionResult !== "string"
   ) {
-    throw new Error("Tethering cannot be changed");
+    throw new Error("internetTypeTETHERING > Tethering cannot be changed");
   }
   await TetheringMode.phoneIpChange(checkAdbConnectionResult);
 }
