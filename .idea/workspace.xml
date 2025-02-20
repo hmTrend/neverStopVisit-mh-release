@@ -127,7 +127,7 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -321,14 +321,6 @@
       <workItem from="1739530935139" duration="105254000" />
       <workItem from="1739949691522" duration="374000" />
       <workItem from="1739950075773" duration="16923000" />
-    </task>
-    <task id="LOCAL-00483" summary="shopping &gt; findSelectorAndClick">
-      <option name="closed" value="true" />
-      <created>1739786521253</created>
-      <option name="number" value="00483" />
-      <option name="presentableId" value="LOCAL-00483" />
-      <option name="project" value="LOCAL" />
-      <updated>1739786521253</updated>
     </task>
     <task id="LOCAL-00484" summary="measureExecutionTime">
       <option name="closed" value="true" />
@@ -714,7 +706,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740018598190</updated>
     </task>
-    <option name="localTasksCounter" value="532" />
+    <task id="LOCAL-00532" summary="4.3.9">
+      <option name="closed" value="true" />
+      <created>1740020380371</created>
+      <option name="number" value="00532" />
+      <option name="presentableId" value="LOCAL-00532" />
+      <option name="project" value="LOCAL" />
+      <updated>1740020380371</updated>
+    </task>
+    <option name="localTasksCounter" value="533" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -759,7 +759,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&lt;Box width=&quot;20px&quot;&gt;" />
     <MESSAGE value="&lt;StatArrow type=&quot;increase&quot; /&gt;" />
     <MESSAGE value="throw Error refactoring" />
     <MESSAGE value="errorMessageTrans" />
@@ -784,7 +783,8 @@
     <MESSAGE value="4.3.3 / 불필요 nShopping 삭제" />
     <MESSAGE value="4.3.6 / executablePath: getChromePath()" />
     <MESSAGE value="4.3.9 / GetFingerPrintTargetExcelOne / getNShoppingLogic4ExcelAlignFlatTargetOne&#10;&#10;5번 다시가져오기" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.3.9 / GetFingerPrintTargetExcelOne / getNShoppingLogic4ExcelAlignFlatTargetOne&#10;&#10;5번 다시가져오기" />
+    <MESSAGE value="4.3.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.3.9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

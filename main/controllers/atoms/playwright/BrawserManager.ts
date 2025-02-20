@@ -1,5 +1,6 @@
 import { Browser, BrowserContext, chromium, Page } from "playwright";
 import { getChromePath } from "./getChromPath";
+import { dataPlaywright } from "../data/data.playwright";
 
 interface BrowserOptions {
   headless?: boolean;
@@ -53,7 +54,10 @@ export class BrowserManager {
     this.networkManager = null;
   }
 
-  async init(options: BrowserOptions = {}): Promise<this> {
+  async init(
+    options: BrowserOptions = {},
+    dataPlaywrightPages = dataPlaywright.pages,
+  ): Promise<this> {
     try {
       this.browser = await chromium.launch({
         headless: options.headless ?? false,
@@ -72,6 +76,7 @@ export class BrowserManager {
       }
 
       this.page = await this.context.newPage();
+      dataPlaywright.pages.push(this.page);
       return this;
     } catch (e) {
       console.error(e instanceof Error ? e.message : String(e));
@@ -227,6 +232,12 @@ export class BrowserManager {
       await this.page?.close();
       await this.context?.close();
       await this.browser?.close();
+
+      for (const page of dataPlaywright.pages) {
+        if (!page.isClosed()) {
+          await page.close();
+        }
+      }
 
       // 참조 제거
       this.page = null;
