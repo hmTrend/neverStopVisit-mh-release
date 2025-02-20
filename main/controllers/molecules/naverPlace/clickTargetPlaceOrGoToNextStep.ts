@@ -4,7 +4,7 @@ import { gotoPage } from "../commons/gotoPage";
 import { Page } from "playwright";
 
 export async function clickTargetPlaceOrGoToNextStep({
-  isTest = true,
+  isTest = false,
   page = undefined,
   browserManager = undefined,
   placeNumber = "43229792",
@@ -235,4 +235,4 @@ async function expandAndClickMore({ page }) {
   }
 }
 
-clickTargetPlaceOrGoToNextStep();
+// clickTargetPlaceOrGoToNextStep();

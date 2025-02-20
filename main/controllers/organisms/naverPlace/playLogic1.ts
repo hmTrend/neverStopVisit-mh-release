@@ -6,10 +6,11 @@ import { waitSelectAndForLoggedInCheck } from "../../molecules/naver/waitSelectA
 import { inputClickAndInputTextAndButtonClick } from "../../molecules/commons/inputClickAndInputTextAndButtonClick";
 import wait from "waait";
 import { findSelectorAndScroll } from "../../molecules/commons/findSelectorAndScroll";
+import { clickTargetPlaceOrGoToNextStep } from "../../molecules/naverPlace/clickTargetPlaceOrGoToNextStep";
 
 export async function playLogic1({
   targetKeyword = "동남지구 맛집",
-  nvMid = "82805514345",
+  placeNumber = "82805514345",
   cookies = [],
   delayTime = 30,
 } = {}) {
@@ -40,6 +41,7 @@ export async function playLogic1({
       clickSelector: 'button.btn_search[type="submit"]',
       options: { clearFirst: true, delay: 300 },
     });
+    await clickTargetPlaceOrGoToNextStep({ placeNumber, page, browserManager });
     await wait(delayTime * 1000);
     await browserManager.cleanup();
   } catch (e) {
