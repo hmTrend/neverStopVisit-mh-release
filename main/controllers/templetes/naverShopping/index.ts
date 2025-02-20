@@ -25,7 +25,7 @@ export async function playNaverShopping({
   fingerPrintGroupFid = "673c1ccbdafecfc189ac92ff",
 } = {}) {
   try {
-    const { cookieId, cookie } = await getFingerPrintTargetExcelOne({
+    const { cookie } = await getFingerPrintTargetExcelOne({
       groupFid: fingerPrintGroupFid,
     });
     const excelData: NShoppingLogic4ExcelListAlignFlatMapEntity =

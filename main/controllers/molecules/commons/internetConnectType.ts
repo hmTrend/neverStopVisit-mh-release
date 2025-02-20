@@ -11,7 +11,9 @@ export async function internetConnectType({
   playTime = 5,
 }) {
   let count = 0;
-
+  console.log("playTime");
+  console.log(playTime);
+  console.log(internetType);
   return async function execute() {
     count++;
 

@@ -15,7 +15,7 @@ export const startProgramIpc = ({ mainWindow }) => {
 
   ipcMain.handle("start-program", async (event, args) => {
     const data = JSON.parse(args);
-    const { common, nPlace, nShoppingLogic4 } = data;
+    const { common, nShoppingLogic4 } = data;
     if (nShoppingLogic4.isStart) {
       await naverShopping({
         internetType: common.ip,
