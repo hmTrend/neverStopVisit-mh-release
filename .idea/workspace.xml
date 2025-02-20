@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.6.6 lastActionRandomClick">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.6.9 clickRandomTab">
+      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne22.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/lastActionRandomClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/lastActionRandomClick.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic1.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne2.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +124,7 @@
     "eslint.code.style.apply.dismiss": "true",
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/controllers/molecules/commons",
+    "last_opened_file_path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/main/controllers/molecules/excel",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -146,11 +147,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main/controllers/molecules/excel" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/commons" />
       <recent name="$PROJECT_DIR$/main/controllers/atoms/util" />
       <recent name="$PROJECT_DIR$/main/controllers/atoms/network" />
       <recent name="$PROJECT_DIR$/renderer/src/components/register" />
-      <recent name="$PROJECT_DIR$/main/controllers/templetes/naverShopping" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/controllers/molecules/naver" />
@@ -160,20 +161,7 @@
       <recent name="$PROJECT_DIR$/main/controllers/molecules/commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.lastActionRandomClick.ts">
-    <configuration name="api.patchDayNowCountForShopping.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/api/notion" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/api/notion/api.patchDayNowCountForShopping.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TypeScript.getFingerPrintTargetExcelOne22.ts">
     <configuration name="clickTargetPlaceOrGoToNextStep.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -198,6 +186,20 @@
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndScroll.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
+    <configuration name="getFingerPrintTargetExcelOne22.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/excel" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne22.ts" />
       <option name="programParameters" value="" />
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
@@ -232,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.getFingerPrintTargetExcelOne22.ts" />
         <item itemvalue="TypeScript.lastActionRandomClick.ts" />
         <item itemvalue="TypeScript.playLogic1.ts" />
         <item itemvalue="TypeScript.clickTargetPlaceOrGoToNextStep.ts" />
         <item itemvalue="TypeScript.findSelectorAndScroll.ts" />
-        <item itemvalue="TypeScript.api.patchDayNowCountForShopping.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -330,38 +332,6 @@
       <workItem from="1739950075773" duration="16923000" />
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
-    </task>
-    <task id="LOCAL-00493" summary="delayTime">
-      <option name="closed" value="true" />
-      <created>1739869435910</created>
-      <option name="number" value="00493" />
-      <option name="presentableId" value="LOCAL-00493" />
-      <option name="project" value="LOCAL" />
-      <updated>1739869435910</updated>
-    </task>
-    <task id="LOCAL-00494" summary="playTime">
-      <option name="closed" value="true" />
-      <created>1739869924440</created>
-      <option name="number" value="00494" />
-      <option name="presentableId" value="LOCAL-00494" />
-      <option name="project" value="LOCAL" />
-      <updated>1739869924440</updated>
-    </task>
-    <task id="LOCAL-00495" summary="comparePricesFindAllProducts">
-      <option name="closed" value="true" />
-      <created>1739871772345</created>
-      <option name="number" value="00495" />
-      <option name="presentableId" value="LOCAL-00495" />
-      <option name="project" value="LOCAL" />
-      <updated>1739871772345</updated>
-    </task>
-    <task id="LOCAL-00496" summary="sameUrlCheckForError">
-      <option name="closed" value="true" />
-      <created>1739881499681</created>
-      <option name="number" value="00496" />
-      <option name="presentableId" value="LOCAL-00496" />
-      <option name="project" value="LOCAL" />
-      <updated>1739881499681</updated>
     </task>
     <task id="LOCAL-00497" summary="sameUrlCheckForError">
       <option name="closed" value="true" />
@@ -723,7 +693,39 @@
       <option name="project" value="LOCAL" />
       <updated>1740051655317</updated>
     </task>
-    <option name="localTasksCounter" value="542" />
+    <task id="LOCAL-00542" summary="v5.6.9 clickRandomTab">
+      <option name="closed" value="true" />
+      <created>1740053174000</created>
+      <option name="number" value="00542" />
+      <option name="presentableId" value="LOCAL-00542" />
+      <option name="project" value="LOCAL" />
+      <updated>1740053174000</updated>
+    </task>
+    <task id="LOCAL-00543" summary="v5.6.9 clickRandomTab">
+      <option name="closed" value="true" />
+      <created>1740053189719</created>
+      <option name="number" value="00543" />
+      <option name="presentableId" value="LOCAL-00543" />
+      <option name="project" value="LOCAL" />
+      <updated>1740053189719</updated>
+    </task>
+    <task id="LOCAL-00544" summary="v5.6.9 clickRandomTab">
+      <option name="closed" value="true" />
+      <created>1740053208080</created>
+      <option name="number" value="00544" />
+      <option name="presentableId" value="LOCAL-00544" />
+      <option name="project" value="LOCAL" />
+      <updated>1740053208080</updated>
+    </task>
+    <task id="LOCAL-00545" summary="v5.6.9 clickRandomTab">
+      <option name="closed" value="true" />
+      <created>1740053234578</created>
+      <option name="number" value="00545" />
+      <option name="presentableId" value="LOCAL-00545" />
+      <option name="project" value="LOCAL" />
+      <updated>1740053234578</updated>
+    </task>
+    <option name="localTasksCounter" value="546" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -768,7 +770,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="switchToOpenedTab" />
     <MESSAGE value="locatorWaitForSelector" />
     <MESSAGE value="No expand details button" />
     <MESSAGE value="sameUrlCheckForError" />
@@ -793,7 +794,8 @@
     <MESSAGE value="v5.6.0 clickTargetPlaceOrGoToNextStep" />
     <MESSAGE value="v5.6.3 playLogic1()" />
     <MESSAGE value="v5.6.6 lastActionRandomClick" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.6.6 lastActionRandomClick" />
+    <MESSAGE value="v5.6.9 clickRandomTab" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.6.9 clickRandomTab" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,12 +1,12 @@
-import { GetNShoppingLogic4ExcelAlignFlatTargetOne } from "../../../lib/apollo/n-shoppingLogic4-apollo";
 import wait from "waait";
+import { GetNPlaceExcelAlignFlatTargetOne } from "../../../lib/apollo/n-place-apollo";
 
-export async function getNShoppingLogic4ExcelAlignFlatTargetOne({
-  groupFid = "678069f3613a9e38805be50d",
+export async function getNPlaceExcelAlignFlatTargetOne({
+  groupFid = "67aafd4a7c9b8a9996fa459d",
 } = {}) {
   for (let i = 0; i <= 5; i++) {
     try {
-      const { data } = await GetNShoppingLogic4ExcelAlignFlatTargetOne({
+      const { data } = await GetNPlaceExcelAlignFlatTargetOne({
         groupFid,
       });
       return data;
@@ -20,4 +20,4 @@ export async function getNShoppingLogic4ExcelAlignFlatTargetOne({
   }
 }
 
-// getNShoppingLogic4ExcelAlignFlatTargetOne();
+// getNPlaceExcelAlignFlatTargetOne();
