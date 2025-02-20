@@ -129,7 +129,7 @@ export class BrowserManager {
 
       await this.page.goto(url, {
         waitUntil: navigateOptions.waitUntil ?? "networkidle",
-        timeout: navigateOptions.timeout ?? 60 * 1000,
+        timeout: navigateOptions.timeout ?? 90 * 1000,
       });
     } catch (error) {
       console.error(`navigateToPage > ${error.message}`);
@@ -160,7 +160,7 @@ export class BrowserManager {
     const waitForAllRequests = async () => {
       try {
         while (pendingRequests.size > 0) {
-          await this.page.waitForTimeout(100);
+          await this.page.waitForTimeout(30 * 1000);
         }
       } catch (error) {
         console.error("Error waiting for network requests:", error);
