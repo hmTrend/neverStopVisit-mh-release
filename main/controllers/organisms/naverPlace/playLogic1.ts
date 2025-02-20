@@ -5,6 +5,7 @@ import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "
 import { waitSelectAndForLoggedInCheck } from "../../molecules/naver/waitSelectAndForLoggedInCheck";
 import { inputClickAndInputTextAndButtonClick } from "../../molecules/commons/inputClickAndInputTextAndButtonClick";
 import wait from "waait";
+import { findSelectorAndScroll } from "../../molecules/commons/findSelectorAndScroll";
 
 export async function playLogic1({
   targetKeyword = "동남지구 맛집",
@@ -33,10 +34,16 @@ export async function playLogic1({
   try {
     await inputClickAndInputTextAndButtonClick({
       browserManager,
+      page,
       text: targetKeyword,
       inputSelector: "#nx_query",
       clickSelector: 'button.btn_search[type="submit"]',
       options: { clearFirst: true, delay: 300 },
+    });
+    await findSelectorAndScroll({
+      selector: ".place_section_header_title",
+      browserManager,
+      page,
     });
     await wait(delayTime * 1000);
     await browserManager.cleanup();

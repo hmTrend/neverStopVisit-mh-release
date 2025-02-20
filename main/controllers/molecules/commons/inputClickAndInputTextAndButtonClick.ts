@@ -1,7 +1,10 @@
 import { gotoPage } from "./gotoPage";
+import { BrowserManager } from "../../atoms/playwright/BrawserManager";
+import { Page } from "playwright";
 
 export async function inputClickAndInputTextAndButtonClick({
   browserManager = undefined,
+  page = undefined,
   text = "문제적커피",
   inputSelector = "#input_text",
   clickSelector = 'button[data-shp-area="scb.search"]',
@@ -10,7 +13,8 @@ export async function inputClickAndInputTextAndButtonClick({
 }: {
   isTest?: boolean;
   text?: string;
-  browserManager?: any;
+  browserManager?: BrowserManager;
+  page?: Page;
   inputSelector?: string;
   clickSelector?: string;
   options?: { clearFirst?: boolean; delay?: number };
