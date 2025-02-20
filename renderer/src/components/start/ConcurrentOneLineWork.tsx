@@ -13,7 +13,7 @@ import { storeStart } from "@/valtio/start.valtio";
 export const ConcurrentOneLineWork = () => {
   const handleChange = (valueString, valueNumber) => {
     console.log("Number Value:", valueNumber);
-    storeStart.nShopping.concurrentBrowserCount = valueNumber;
+    storeStart.nShoppingLogic4.concurrentBrowserCount = valueNumber;
   };
 
   return (
