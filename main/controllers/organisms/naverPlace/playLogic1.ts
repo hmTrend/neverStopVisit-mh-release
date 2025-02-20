@@ -5,13 +5,12 @@ import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "
 import { waitSelectAndForLoggedInCheck } from "../../molecules/naver/waitSelectAndForLoggedInCheck";
 import { inputClickAndInputTextAndButtonClick } from "../../molecules/commons/inputClickAndInputTextAndButtonClick";
 import wait from "waait";
-import { findSelectorAndScroll } from "../../molecules/commons/findSelectorAndScroll";
 import { clickTargetPlaceOrGoToNextStep } from "../../molecules/naverPlace/clickTargetPlaceOrGoToNextStep";
 import { lastActionRandomClick } from "../../molecules/naverPlace/lastActionRandomClick";
 
 export async function playLogic1({
-  targetKeyword = "동남지구 맛집",
-  placeNumber = "82805514345",
+  targetKeyword = "강남맛집",
+  placeNumber = "234267045",
   cookies = [],
   delayTime = 5,
 } = {}) {
@@ -21,14 +20,16 @@ export async function playLogic1({
   let page: Page;
   let browserManager: BrowserManager;
   const { getPage, getBrowserManager } = await gotoPage({
+    is3gMode: false,
+    cpuThrottlingRate: 0,
     url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
     contextCallback: async (browser) =>
       BrowserManager.createMobileContext(
         getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
         browser,
       ),
-    // loginCheckCallback: async ({ browserManager }) =>
-    //   waitSelectAndForLoggedInCheck({ browserManager }),
+    loginCheckCallback: async ({ browserManager }) =>
+      waitSelectAndForLoggedInCheck({ browserManager }),
     cookies,
   });
   page = getPage;
@@ -58,4 +59,4 @@ export async function playLogic1({
   }
 }
 
-playLogic1();
+// playLogic1();

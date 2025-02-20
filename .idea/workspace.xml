@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.6.3 playLogic1()">
-      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/lastActionRandomClick.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.6.6 lastActionRandomClick">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/lastActionRandomClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/lastActionRandomClick.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic1.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,8 +233,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TypeScript.lastActionRandomClick.ts" />
-        <item itemvalue="TypeScript.clickTargetPlaceOrGoToNextStep.ts" />
         <item itemvalue="TypeScript.playLogic1.ts" />
+        <item itemvalue="TypeScript.clickTargetPlaceOrGoToNextStep.ts" />
         <item itemvalue="TypeScript.findSelectorAndScroll.ts" />
         <item itemvalue="TypeScript.api.patchDayNowCountForShopping.ts" />
       </list>
@@ -330,14 +330,6 @@
       <workItem from="1739950075773" duration="16923000" />
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
-    </task>
-    <task id="LOCAL-00492" summary="start-program">
-      <option name="closed" value="true" />
-      <created>1739869037657</created>
-      <option name="number" value="00492" />
-      <option name="presentableId" value="LOCAL-00492" />
-      <option name="project" value="LOCAL" />
-      <updated>1739869037657</updated>
     </task>
     <task id="LOCAL-00493" summary="delayTime">
       <option name="closed" value="true" />
@@ -723,7 +715,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740050777026</updated>
     </task>
-    <option name="localTasksCounter" value="541" />
+    <task id="LOCAL-00541" summary="v5.6.6 lastActionRandomClick">
+      <option name="closed" value="true" />
+      <created>1740051655317</created>
+      <option name="number" value="00541" />
+      <option name="presentableId" value="LOCAL-00541" />
+      <option name="project" value="LOCAL" />
+      <updated>1740051655317</updated>
+    </task>
+    <option name="localTasksCounter" value="542" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -768,7 +768,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="findSelectorAndClick" />
     <MESSAGE value="switchToOpenedTab" />
     <MESSAGE value="locatorWaitForSelector" />
     <MESSAGE value="No expand details button" />
@@ -793,7 +792,8 @@
     <MESSAGE value="v5.1.0 findSelectorAndScroll" />
     <MESSAGE value="v5.6.0 clickTargetPlaceOrGoToNextStep" />
     <MESSAGE value="v5.6.3 playLogic1()" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.6.3 playLogic1()" />
+    <MESSAGE value="v5.6.6 lastActionRandomClick" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.6.6 lastActionRandomClick" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

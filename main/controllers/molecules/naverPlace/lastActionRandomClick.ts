@@ -1,6 +1,7 @@
 import wait from "waait";
 import { Page } from "playwright";
 import { gotoPage } from "../commons/gotoPage";
+import { BrowserManager } from "../../atoms/playwright/BrawserManager";
 
 export async function lastActionRandomClick({
   isTest = false,
@@ -11,7 +12,7 @@ export async function lastActionRandomClick({
 }: {
   isTest?: boolean;
   page?: Page;
-  browserManager?: any;
+  browserManager?: BrowserManager;
   placeNumber?: string;
   delayTime?: number;
 } = {}) {
@@ -32,9 +33,16 @@ export async function lastActionRandomClick({
     const { excludeText } = await clickRandomTab({
       page,
       placeNumber,
+      networkManager,
+      delayTime,
     });
-    await wait(delayTime * 1000);
-    await clickRandomTab({ page, placeNumber, excludeText });
+    await clickRandomTab({
+      page,
+      placeNumber,
+      excludeText,
+      networkManager,
+      delayTime: 0,
+    });
     await wait(3 * 1000);
     return { page };
   } catch (e) {
@@ -43,7 +51,19 @@ export async function lastActionRandomClick({
   }
 }
 
-async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
+async function clickRandomTab({
+  page,
+  placeNumber,
+  excludeText = "",
+  networkManager,
+  delayTime,
+}: {
+  page: Page;
+  placeNumber: string;
+  excludeText?: string;
+  networkManager?: any;
+  delayTime: number;
+}) {
   try {
     // 모든 탭 메뉴 요소 찾기
     const selector = `a[href*="/${placeNumber}/"][role="tab"].tpj9w._tab-menu`;
@@ -86,10 +106,10 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
     await selectedTab.element.waitForElementState("stable");
 
     // 클릭 수행 및 로드 상태 대기
-    await Promise.all([
-      selectedTab.element.click(),
-      page.waitForLoadState("load", { timeout: 5000 }),
-    ]);
+    await selectedTab.element.click();
+    await wait(delayTime * 1000);
+    await networkManager.waitForAllRequests();
+
     if (selectedTab.text === "주변") {
       try {
         console.log("this is 주변");
@@ -108,7 +128,7 @@ async function clickRandomTab({ page, placeNumber, excludeText = "" }) {
         // 잠시 대기
         await page.waitForTimeout(1000);
         await spotButton.click();
-        await page.waitForLoadState("load", { timeout: 5000 });
+        await page.waitForLoadState("load", { timeout: 10 * 1000 });
       } catch (e) {
         console.error(`err 명소 is not found > ${e.message}`);
       }
