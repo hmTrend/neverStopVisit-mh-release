@@ -20,20 +20,20 @@ export async function playLogic1({
    * **/
   let page: Page;
   let browserManager: BrowserManager;
-  const { getPage, getBrowserManager } = await gotoPage({
-    url: "https://search.shopping.naver.com/home",
-    contextCallback: async (browser) =>
-      BrowserManager.createMobileContext(
-        getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
-        browser,
-      ),
-    loginCheckCallback: async ({ browserManager }) =>
-      waitSelectAndForLoggedInCheck({ browserManager }),
-    cookies,
-  });
-  page = getPage;
-  browserManager = getBrowserManager;
   try {
+    const { getPage, getBrowserManager } = await gotoPage({
+      url: "https://search.shopping.naver.com/home",
+      contextCallback: async (browser) =>
+        BrowserManager.createMobileContext(
+          getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
+          browser,
+        ),
+      loginCheckCallback: async ({ browserManager }) =>
+        waitSelectAndForLoggedInCheck({ browserManager }),
+      cookies,
+    });
+    page = getPage;
+    browserManager = getBrowserManager;
     await inputClickAndInputTextAndButtonClick({
       browserManager,
       text: targetKeyword,

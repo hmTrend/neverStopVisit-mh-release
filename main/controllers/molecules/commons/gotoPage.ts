@@ -43,8 +43,8 @@ export async function gotoPage({
       getBrowserManager: browserManager,
     };
   } catch (e) {
-    console.error(`gotoNaverEmptyPage > ${e.message}`);
-    throw "gotoPage";
+    console.error(`gotoPage > ${e.message}`);
+    throw Error(`gotoPage > ${e.message}`);
   }
 }
 

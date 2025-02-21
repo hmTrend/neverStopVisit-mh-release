@@ -63,14 +63,19 @@ async function playSelectLogic({
   targetKeyword,
   delayTime,
 }) {
-  await naverPlaceLogic1({
-    logicType,
-    cookies,
-    nvMid,
-    targetKeyword,
-    delayTime,
-  });
-  naverPlaceLogic2({ logicType });
+  try {
+    await naverPlaceLogic1({
+      logicType,
+      cookies,
+      nvMid,
+      targetKeyword,
+      delayTime,
+    });
+    naverPlaceLogic2({ logicType });
+  } catch (e) {
+    console.error(e.message);
+    throw Error(`playSelectLogic > ${e.message}`);
+  }
 }
 
 async function naverPlaceLogic1({
@@ -80,8 +85,13 @@ async function naverPlaceLogic1({
   targetKeyword,
   delayTime,
 }) {
-  if (logicType !== "LOGIC1") return;
-  await playLogic1({ cookies, nvMid, targetKeyword, delayTime });
+  try {
+    if (logicType !== "LOGIC1") return;
+    await playLogic1({ cookies, nvMid, targetKeyword, delayTime });
+  } catch (e) {
+    console.error(e.message);
+    throw Error(`naverPlaceLogic1 > ${e.message}`);
+  }
 }
 
 function naverPlaceLogic2({ logicType }) {
