@@ -233,9 +233,11 @@ export class BrowserManager {
       await this.context?.close();
       await this.browser?.close();
 
-      for (const page of dataPlaywright.pages) {
-        if (!page.isClosed()) {
-          await page.close();
+      if (dataPlaywright?.pages) {
+        for (const page of dataPlaywright.pages) {
+          if (!page.isClosed()) {
+            await page.close();
+          }
         }
       }
 
