@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.6.9 clickRandomTab">
-      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne22.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.9.3 playNaverPlace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne2.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/lastActionRandomClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/lastActionRandomClick.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic1.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,6 +92,7 @@
     "TypeScript.findTargetPlaceInTargetBlog.ts.executor": "Run",
     "TypeScript.findTargetShoppingInTargetBlog.ts.executor": "Run",
     "TypeScript.getFingerPrintTargetExcelOne2.ts.executor": "Run",
+    "TypeScript.getFingerPrintTargetExcelOne22.ts.executor": "Run",
     "TypeScript.goToKeyword.ts.executor": "Run",
     "TypeScript.googleNaverSearchedToNaver.ts.executor": "Run",
     "TypeScript.googleToNaver.ts.executor": "Run",
@@ -161,7 +162,7 @@
       <recent name="$PROJECT_DIR$/main/controllers/molecules/commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.getFingerPrintTargetExcelOne22.ts">
+  <component name="RunManager" selected="TypeScript.index.ts">
     <configuration name="clickTargetPlaceOrGoToNextStep.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -176,20 +177,6 @@
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
-    <configuration name="findSelectorAndScroll.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/commons" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndScroll.ts" />
-      <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <method v="2" />
-    </configuration>
     <configuration name="getFingerPrintTargetExcelOne22.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -200,6 +187,20 @@
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne22.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
+    <configuration name="index.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/templetes/naverPlace" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" />
       <option name="programParameters" value="" />
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
@@ -234,11 +235,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TypeScript.getFingerPrintTargetExcelOne22.ts" />
+        <item itemvalue="TypeScript.index.ts" />
         <item itemvalue="TypeScript.lastActionRandomClick.ts" />
+        <item itemvalue="TypeScript.getFingerPrintTargetExcelOne22.ts" />
         <item itemvalue="TypeScript.playLogic1.ts" />
         <item itemvalue="TypeScript.clickTargetPlaceOrGoToNextStep.ts" />
-        <item itemvalue="TypeScript.findSelectorAndScroll.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -332,38 +333,6 @@
       <workItem from="1739950075773" duration="16923000" />
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
-    </task>
-    <task id="LOCAL-00497" summary="sameUrlCheckForError">
-      <option name="closed" value="true" />
-      <created>1739881550825</created>
-      <option name="number" value="00497" />
-      <option name="presentableId" value="LOCAL-00497" />
-      <option name="project" value="LOCAL" />
-      <updated>1739881550825</updated>
-    </task>
-    <task id="LOCAL-00498" summary="throw Error 처리">
-      <option name="closed" value="true" />
-      <created>1739881790684</created>
-      <option name="number" value="00498" />
-      <option name="presentableId" value="LOCAL-00498" />
-      <option name="project" value="LOCAL" />
-      <updated>1739881790684</updated>
-    </task>
-    <task id="LOCAL-00499" summary="DataUser">
-      <option name="closed" value="true" />
-      <created>1739884033008</created>
-      <option name="number" value="00499" />
-      <option name="presentableId" value="LOCAL-00499" />
-      <option name="project" value="LOCAL" />
-      <updated>1739884033008</updated>
-    </task>
-    <task id="LOCAL-00500" summary="setDataUser">
-      <option name="closed" value="true" />
-      <created>1739888065313</created>
-      <option name="number" value="00500" />
-      <option name="presentableId" value="LOCAL-00500" />
-      <option name="project" value="LOCAL" />
-      <updated>1739888065313</updated>
     </task>
     <task id="LOCAL-00501" summary="sameUrlCheckForError">
       <option name="closed" value="true" />
@@ -725,7 +694,39 @@
       <option name="project" value="LOCAL" />
       <updated>1740053234578</updated>
     </task>
-    <option name="localTasksCounter" value="546" />
+    <task id="LOCAL-00546" summary="v5.6.12 getNPlaceExcelAlignFlatTargetOne">
+      <option name="closed" value="true" />
+      <created>1740054109324</created>
+      <option name="number" value="00546" />
+      <option name="presentableId" value="LOCAL-00546" />
+      <option name="project" value="LOCAL" />
+      <updated>1740054109324</updated>
+    </task>
+    <task id="LOCAL-00547" summary="v5.6.12 getNPlaceExcelAlignFlatTargetOne">
+      <option name="closed" value="true" />
+      <created>1740054118814</created>
+      <option name="number" value="00547" />
+      <option name="presentableId" value="LOCAL-00547" />
+      <option name="project" value="LOCAL" />
+      <updated>1740054118814</updated>
+    </task>
+    <task id="LOCAL-00548" summary="v5.9.0 getNPlaceExcelAlignFlatTargetOne">
+      <option name="closed" value="true" />
+      <created>1740054125072</created>
+      <option name="number" value="00548" />
+      <option name="presentableId" value="LOCAL-00548" />
+      <option name="project" value="LOCAL" />
+      <updated>1740054125072</updated>
+    </task>
+    <task id="LOCAL-00549" summary="v5.9.3 playNaverPlace">
+      <option name="closed" value="true" />
+      <created>1740054484931</created>
+      <option name="number" value="00549" />
+      <option name="presentableId" value="LOCAL-00549" />
+      <option name="project" value="LOCAL" />
+      <updated>1740054484931</updated>
+    </task>
+    <option name="localTasksCounter" value="550" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -770,9 +771,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="locatorWaitForSelector" />
-    <MESSAGE value="No expand details button" />
-    <MESSAGE value="sameUrlCheckForError" />
     <MESSAGE value="findSelectorAndClickWithDetailPage" />
     <MESSAGE value="transSelecterType" />
     <MESSAGE value="19세 제한" />
@@ -795,7 +793,10 @@
     <MESSAGE value="v5.6.3 playLogic1()" />
     <MESSAGE value="v5.6.6 lastActionRandomClick" />
     <MESSAGE value="v5.6.9 clickRandomTab" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.6.9 clickRandomTab" />
+    <MESSAGE value="v5.6.12 getNPlaceExcelAlignFlatTargetOne" />
+    <MESSAGE value="v5.9.0 getNPlaceExcelAlignFlatTargetOne" />
+    <MESSAGE value="v5.9.3 playNaverPlace" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.9.3 playNaverPlace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

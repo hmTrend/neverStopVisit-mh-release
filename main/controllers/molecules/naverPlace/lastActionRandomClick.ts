@@ -29,13 +29,14 @@ export async function lastActionRandomClick({
   try {
     const networkManager = browserManager.createNetworkManager();
     await networkManager.waitForAllRequests();
-    await page.waitForSelector('a[role="button"].QKxqx'); // 알림받기 페이지 기다리기
+    // await page.waitForSelector('a[role="button"].QKxqx'); // 알림받기 페이지 기다리기 > 피부과 없어서 삭제
     const { excludeText } = await clickRandomTab({
       page,
       placeNumber,
       networkManager,
       delayTime,
     });
+    // await wait(delayTime * 1000);
     await clickRandomTab({
       page,
       placeNumber,
@@ -107,7 +108,6 @@ async function clickRandomTab({
 
     // 클릭 수행 및 로드 상태 대기
     await selectedTab.element.click();
-    await wait(delayTime * 1000);
     await networkManager.waitForAllRequests();
 
     if (selectedTab.text === "주변") {

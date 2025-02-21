@@ -1,53 +1,51 @@
-import { playLogic1 } from "../../organisms/naverShopping/playLogic1";
 import { getFingerPrintTargetExcelOne } from "../../molecules/user/getFingerPrintTargetExcelOne";
 import { setDataUser } from "../../atoms/user/data.user";
 import { getNPlaceExcelAlignFlatTargetOne } from "../../molecules/excel/getNPlaceExcelAlignFlatTargetOne";
+import { playLogic1 } from "../../organisms/naverPlace/playLogic1";
 
-interface NShoppingLogic4ExcelListAlignFlatMapEntity {
+interface NPlaceExcelListAlignFlatMapEntity {
   _id: string;
   groupFid: string;
-  targetKeyword: string;
+  keyword: string;
   delayTime: number;
-  nvMidList: string;
-  nvMid: string;
-  nowCount: number;
-  dayCount: number;
-  workKeyword: string;
+  placeName: string;
+  placeNumber: string;
+  dayCount: number | null;
+  totalDayCount: number;
   targetBlog: string;
+  targetKeyword: string;
   createdAt: string;
   updatedAt: string;
-  __typename: "NShoppingLogic4ExcelListAlignFlatMapEntity";
+  __typename: "NPlaceExcelListAlignFlatMapEntity";
 }
 
 export async function playNaverPlace({
   logicType = "LOGIC1",
-  dataGroupFid = "678069f3613a9e38805be50d",
+  dataGroupFid = "67909dda7e8fd003562bb4e4",
   fingerPrintGroupFid = "673c1ccbdafecfc189ac92ff",
 } = {}) {
   try {
     const { cookie } = await getFingerPrintTargetExcelOne({
       groupFid: fingerPrintGroupFid,
     });
-    const excelData: NShoppingLogic4ExcelListAlignFlatMapEntity =
+    const excelData: NPlaceExcelListAlignFlatMapEntity =
       await getNPlaceExcelAlignFlatTargetOne({
         groupFid: dataGroupFid,
       });
-    const { nvMid, workKeyword, delayTime, targetKeyword } = excelData;
+    const { placeNumber, keyword, delayTime, targetKeyword } = excelData;
     setDataUser({
-      targetKeyword,
-      workKeyword,
+      targetKeyword: keyword,
+      workKeyword: targetKeyword,
       logicType: logicType,
       workType: "NPlace",
-      nvMid,
+      nvMid: placeNumber,
       delayTime,
     });
-    console.log("excelData 3333");
-    console.log(excelData);
     await playSelectLogic({
       logicType,
       cookies: cookie,
-      nvMid,
-      targetKeyword: workKeyword,
+      placeNumber,
+      targetKeyword,
       delayTime,
     });
   } catch (e) {
@@ -59,14 +57,14 @@ export async function playNaverPlace({
 async function playSelectLogic({
   logicType,
   cookies,
-  nvMid,
+  placeNumber,
   targetKeyword,
   delayTime,
 }) {
   await naverPlaceLogic1({
     logicType,
     cookies,
-    nvMid,
+    placeNumber,
     targetKeyword,
     delayTime,
   });
@@ -76,16 +74,16 @@ async function playSelectLogic({
 async function naverPlaceLogic1({
   logicType,
   cookies,
-  nvMid,
+  placeNumber,
   targetKeyword,
   delayTime,
 }) {
   if (logicType !== "LOGIC1") return;
-  await playLogic1({ cookies, nvMid, targetKeyword, delayTime });
+  await playLogic1({ cookies, placeNumber, targetKeyword, delayTime });
 }
 
 function naverPlaceLogic2({ logicType }) {
   if (logicType !== "LOGIC2") return;
 }
 
-// playNaverShopping();
+playNaverPlace();

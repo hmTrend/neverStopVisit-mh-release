@@ -50,7 +50,6 @@ export async function playLogic1({
       browserManager,
       delayTime,
     });
-    await wait(delayTime * 1000);
     await browserManager.cleanup();
   } catch (e) {
     await browserManager.cleanup();
