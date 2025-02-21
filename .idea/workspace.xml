@@ -135,7 +135,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/apk/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/typescript/lib",
+    "ts.external.directory.path": "C:\\Users\\apkWin\\Desktop\\gitHub\\hmTrend\\neverStopVisit-f\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -166,7 +166,7 @@
     <configuration name="clickTargetPlaceOrGoToNextStep.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/naverPlace" />
@@ -174,13 +174,12 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clickTargetPlaceOrGoToNextStep.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="getFingerPrintTargetExcelOne22.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/excel" />
@@ -188,13 +187,12 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne22.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="index.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/templetes/naverPlace" />
@@ -202,13 +200,12 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="lastActionRandomClick.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/naverPlace" />
@@ -216,13 +213,12 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/naverPlace/lastActionRandomClick.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="playLogic1.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="" />
+      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <option name="enabledTsNodeEsmLoader" value="false" />
       <option name="interpreterOptions" value="" />
       <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/organisms/naverPlace" />
@@ -230,7 +226,6 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic1.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -333,14 +328,6 @@
       <workItem from="1739950075773" duration="16923000" />
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
-    </task>
-    <task id="LOCAL-00506" summary="throw Error refactoring">
-      <option name="closed" value="true" />
-      <created>1739890876323</created>
-      <option name="number" value="00506" />
-      <option name="presentableId" value="LOCAL-00506" />
-      <option name="project" value="LOCAL" />
-      <updated>1739890876323</updated>
     </task>
     <task id="LOCAL-00507" summary="errorMessageTrans">
       <option name="closed" value="true" />
@@ -726,7 +713,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740112027144</updated>
     </task>
-    <option name="localTasksCounter" value="555" />
+    <task id="LOCAL-00555" summary="v5.16.0">
+      <option name="closed" value="true" />
+      <created>1740113687918</created>
+      <option name="number" value="00555" />
+      <option name="presentableId" value="LOCAL-00555" />
+      <option name="project" value="LOCAL" />
+      <updated>1740113687918</updated>
+    </task>
+    <option name="localTasksCounter" value="556" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -771,7 +766,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="findSelectorAndClick / 클릭후 3초대기 추가" />
     <MESSAGE value="waitSelectAndForLoggedInCheck" />
     <MESSAGE value="loginCheckCallback" />
     <MESSAGE value="4.3.3 / 불필요 nShopping 삭제" />
@@ -796,7 +790,8 @@
     <MESSAGE value="v5.13.0 playNaverPlace" />
     <MESSAGE value="v5.13.3 allSettledData" />
     <MESSAGE value="v5.13.6 upscalePlay" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.13.6 upscalePlay" />
+    <MESSAGE value="v5.16.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.16.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
