@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.9.3 playNaverPlace">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/lastActionRandomClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/lastActionRandomClick.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic1.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" afterDir="false" />
-    </list>
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.9.6 playNaverPlace" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -333,14 +328,6 @@
       <workItem from="1739950075773" duration="16923000" />
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
-    </task>
-    <task id="LOCAL-00501" summary="sameUrlCheckForError">
-      <option name="closed" value="true" />
-      <created>1739888994615</created>
-      <option name="number" value="00501" />
-      <option name="presentableId" value="LOCAL-00501" />
-      <option name="project" value="LOCAL" />
-      <updated>1739888994615</updated>
     </task>
     <task id="LOCAL-00502" summary="  logicType: logicType,&#10;      workType: &quot;NShoppingLogic4&quot;,">
       <option name="closed" value="true" />
@@ -726,7 +713,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740054484931</updated>
     </task>
-    <option name="localTasksCounter" value="550" />
+    <task id="LOCAL-00550" summary="v5.9.6 playNaverPlace">
+      <option name="closed" value="true" />
+      <created>1740105684903</created>
+      <option name="number" value="00550" />
+      <option name="presentableId" value="LOCAL-00550" />
+      <option name="project" value="LOCAL" />
+      <updated>1740105684903</updated>
+    </task>
+    <option name="localTasksCounter" value="551" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -771,7 +766,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="findSelectorAndClickWithDetailPage" />
     <MESSAGE value="transSelecterType" />
     <MESSAGE value="19세 제한" />
     <MESSAGE value="emulateNetworkConditions" />
@@ -796,7 +790,8 @@
     <MESSAGE value="v5.6.12 getNPlaceExcelAlignFlatTargetOne" />
     <MESSAGE value="v5.9.0 getNPlaceExcelAlignFlatTargetOne" />
     <MESSAGE value="v5.9.3 playNaverPlace" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.9.3 playNaverPlace" />
+    <MESSAGE value="v5.9.6 playNaverPlace" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.9.6 playNaverPlace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

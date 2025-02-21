@@ -36,7 +36,7 @@ export async function lastActionRandomClick({
       networkManager,
       delayTime,
     });
-    // await wait(delayTime * 1000);
+    await wait(delayTime * 1000);
     await clickRandomTab({
       page,
       placeNumber,
