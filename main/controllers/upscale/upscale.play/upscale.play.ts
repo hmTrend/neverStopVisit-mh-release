@@ -37,6 +37,7 @@ export async function upscalePlay({
     } catch (error) {
       console.error(`naverShopping > ${error.message}`);
       await wait(10 * 1000);
+      throw Error(`upscalePlay > isRunning > ${error.message}`);
     }
     await wait(2 * 1000);
   }

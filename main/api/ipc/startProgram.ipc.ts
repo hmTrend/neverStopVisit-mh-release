@@ -14,17 +14,22 @@ export const startProgramIpc = ({ mainWindow }) => {
   let currentNPlaceInstance = null;
 
   ipcMain.handle("start-program", async (event, args) => {
-    const data = JSON.parse(args);
-    const { common, nShoppingLogic4, nPlace } = data;
+    try {
+      const data = JSON.parse(args);
+      const { common, nShoppingLogic4, nPlace } = data;
 
-    await upscalePlay({
-      internetType: common.ip,
-      playTime: common.ipChangeCount,
-      mainWindow,
-      nShoppingLogic4,
-      nPlace,
-    });
-    return { message: "OK" };
+      await upscalePlay({
+        internetType: common.ip,
+        playTime: common.ipChangeCount,
+        mainWindow,
+        nShoppingLogic4,
+        nPlace,
+      });
+      return { message: "OK" };
+    } catch (e) {
+      console.error(e.message);
+      throw Error(`start-program > ${e.message}`);
+    }
   });
 
   ipcMain.handle("stop-program", async () => {

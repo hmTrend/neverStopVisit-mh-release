@@ -329,14 +329,6 @@
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
     </task>
-    <task id="LOCAL-00507" summary="errorMessageTrans">
-      <option name="closed" value="true" />
-      <created>1739891155012</created>
-      <option name="number" value="00507" />
-      <option name="presentableId" value="LOCAL-00507" />
-      <option name="project" value="LOCAL" />
-      <updated>1739891155012</updated>
-    </task>
     <task id="LOCAL-00508" summary="totalWorkingTime: Math.floor(totalSeconds)">
       <option name="closed" value="true" />
       <created>1739892131008</created>
@@ -721,7 +713,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740113687918</updated>
     </task>
-    <option name="localTasksCounter" value="556" />
+    <task id="LOCAL-00556" summary="v5.16.0">
+      <option name="closed" value="true" />
+      <created>1740116929765</created>
+      <option name="number" value="00556" />
+      <option name="presentableId" value="LOCAL-00556" />
+      <option name="project" value="LOCAL" />
+      <updated>1740116929765</updated>
+    </task>
+    <option name="localTasksCounter" value="557" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
