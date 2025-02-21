@@ -86,4 +86,4 @@ function naverPlaceLogic2({ logicType }) {
   if (logicType !== "LOGIC2") return;
 }
 
-playNaverPlace();
+// playNaverPlace();
