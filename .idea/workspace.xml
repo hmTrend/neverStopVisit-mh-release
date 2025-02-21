@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.13.6 upscalePlay">
-      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront2.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.19.0 코드 정리">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -329,14 +327,6 @@
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
       <workItem from="1740117821358" duration="1988000" />
-    </task>
-    <task id="LOCAL-00512" summary="inputClickAndInputTextAndButtonClick">
-      <option name="closed" value="true" />
-      <created>1739925188060</created>
-      <option name="number" value="00512" />
-      <option name="presentableId" value="LOCAL-00512" />
-      <option name="project" value="LOCAL" />
-      <updated>1739925188060</updated>
     </task>
     <task id="LOCAL-00513" summary="sameUrlCheckForError">
       <option name="closed" value="true" />
@@ -722,7 +712,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740119594725</updated>
     </task>
-    <option name="localTasksCounter" value="561" />
+    <task id="LOCAL-00561" summary="v5.19.0 코드 정리">
+      <option name="closed" value="true" />
+      <created>1740124456906</created>
+      <option name="number" value="00561" />
+      <option name="presentableId" value="LOCAL-00561" />
+      <option name="project" value="LOCAL" />
+      <updated>1740124456906</updated>
+    </task>
+    <option name="localTasksCounter" value="562" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -767,7 +765,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="4.3.3 / 불필요 nShopping 삭제" />
     <MESSAGE value="4.3.6 / executablePath: getChromePath()" />
     <MESSAGE value="4.3.9 / GetFingerPrintTargetExcelOne / getNShoppingLogic4ExcelAlignFlatTargetOne&#10;&#10;5번 다시가져오기" />
     <MESSAGE value="4.3.9" />
@@ -792,7 +789,8 @@
     <MESSAGE value="v5.16.0" />
     <MESSAGE value="v5.19.0 에러시 표시후 종료처리" />
     <MESSAGE value="v5.23.0 의도적 에러 확인하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.23.0 의도적 에러 확인하기" />
+    <MESSAGE value="v5.19.0 코드 정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.19.0 코드 정리" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

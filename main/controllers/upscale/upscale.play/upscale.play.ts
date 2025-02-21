@@ -21,7 +21,13 @@ export async function upscalePlay({
 
   while (isRunning) {
     try {
-      await totalPlay({ playTime, nShoppingLogic4, nPlace, internetType });
+      await totalPlay({
+        playTime,
+        nShoppingLogic4,
+        nPlace,
+        internetType,
+        mainWindow,
+      });
       // await workedDataToFront({
       //   mainWindow,
       //   groupFid: nShoppingLogic4.selectedGroup.groupId,
@@ -43,7 +49,13 @@ export async function upscalePlay({
   }
 }
 
-async function totalPlay({ internetType, playTime, nPlace, nShoppingLogic4 }) {
+async function totalPlay({
+  internetType,
+  playTime,
+  nPlace,
+  nShoppingLogic4,
+  mainWindow,
+}) {
   try {
     await networkPlay({ internetType, playTime });
     const allSettledData = await Promise.allSettled(basketPlayList());
