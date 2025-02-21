@@ -46,9 +46,17 @@ export async function upscalePlay({
 async function totalPlay({ internetType, playTime, nPlace, nShoppingLogic4 }) {
   try {
     await networkPlay({ internetType, playTime });
-    const allSettledData = await Promise.allSettled(basketPlayList());
-    console.log("allSettledData 33333");
-    console.log(allSettledData);
+    // const allSettledData = await Promise.allSettled(basketPlayList());
+    await measureExecutionTime({
+      playCallback: () =>
+        playNaverShopping({
+          logicType: nShoppingLogic4.logicType,
+          dataGroupFid: nShoppingLogic4.selectedGroup.groupId,
+          fingerPrintGroupFid: nShoppingLogic4.fingerPrint.groupId,
+        }),
+    });
+    // console.log("allSettledData 33333");
+    // console.log(allSettledData);
   } catch (e) {
     console.error(`totalPlay > ${e.message}`);
     throw Error(`totalPlay > ${e.message}`);
