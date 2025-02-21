@@ -19,22 +19,23 @@ export async function playLogic1({
    * **/
   let page: Page;
   let browserManager: BrowserManager;
-  const { getPage, getBrowserManager } = await gotoPage({
-    is3gMode: false,
-    cpuThrottlingRate: 0,
-    url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
-    contextCallback: async (browser) =>
-      BrowserManager.createMobileContext(
-        getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
-        browser,
-      ),
-    loginCheckCallback: async ({ browserManager }) =>
-      waitSelectAndForLoggedInCheck({ browserManager }),
-    cookies,
-  });
-  page = getPage;
-  browserManager = getBrowserManager;
   try {
+    const { getPage, getBrowserManager } = await gotoPage({
+      is3gMode: false,
+      cpuThrottlingRate: 0,
+      url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
+      contextCallback: async (browser) =>
+        BrowserManager.createMobileContext(
+          getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
+          browser,
+        ),
+      loginCheckCallback: async ({ browserManager }) =>
+        waitSelectAndForLoggedInCheck({ browserManager }),
+      cookies,
+    });
+    page = getPage;
+    browserManager = getBrowserManager;
+
     await inputClickAndInputTextAndButtonClick({
       browserManager,
       page,

@@ -328,23 +328,7 @@
       <workItem from="1739950075773" duration="16923000" />
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
-      <workItem from="1740117821358" duration="1688000" />
-    </task>
-    <task id="LOCAL-00510" summary="findSelectorAndClick 생성자함수 리팩토링">
-      <option name="closed" value="true" />
-      <created>1739923630267</created>
-      <option name="number" value="00510" />
-      <option name="presentableId" value="LOCAL-00510" />
-      <option name="project" value="LOCAL" />
-      <updated>1739923630267</updated>
-    </task>
-    <task id="LOCAL-00511" summary="init &gt; contextCallback">
-      <option name="closed" value="true" />
-      <created>1739924799249</created>
-      <option name="number" value="00511" />
-      <option name="presentableId" value="LOCAL-00511" />
-      <option name="project" value="LOCAL" />
-      <updated>1739924799249</updated>
+      <workItem from="1740117821358" duration="1988000" />
     </task>
     <task id="LOCAL-00512" summary="inputClickAndInputTextAndButtonClick">
       <option name="closed" value="true" />
@@ -722,7 +706,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740117270614</updated>
     </task>
-    <option name="localTasksCounter" value="559" />
+    <task id="LOCAL-00559" summary="v5.23.0 의도적 에러 확인하기">
+      <option name="closed" value="true" />
+      <created>1740119589446</created>
+      <option name="number" value="00559" />
+      <option name="presentableId" value="LOCAL-00559" />
+      <option name="project" value="LOCAL" />
+      <updated>1740119589447</updated>
+    </task>
+    <task id="LOCAL-00560" summary="v5.23.0 의도적 에러 확인하기">
+      <option name="closed" value="true" />
+      <created>1740119594725</created>
+      <option name="number" value="00560" />
+      <option name="presentableId" value="LOCAL-00560" />
+      <option name="project" value="LOCAL" />
+      <updated>1740119594725</updated>
+    </task>
+    <option name="localTasksCounter" value="561" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -767,7 +767,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="loginCheckCallback" />
     <MESSAGE value="4.3.3 / 불필요 nShopping 삭제" />
     <MESSAGE value="4.3.6 / executablePath: getChromePath()" />
     <MESSAGE value="4.3.9 / GetFingerPrintTargetExcelOne / getNShoppingLogic4ExcelAlignFlatTargetOne&#10;&#10;5번 다시가져오기" />
@@ -792,7 +791,8 @@
     <MESSAGE value="v5.13.6 upscalePlay" />
     <MESSAGE value="v5.16.0" />
     <MESSAGE value="v5.19.0 에러시 표시후 종료처리" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.19.0 에러시 표시후 종료처리" />
+    <MESSAGE value="v5.23.0 의도적 에러 확인하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.23.0 의도적 에러 확인하기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
