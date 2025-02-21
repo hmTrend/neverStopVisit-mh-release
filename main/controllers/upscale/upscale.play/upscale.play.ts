@@ -21,19 +21,19 @@ export async function upscalePlay({
 
   while (isRunning) {
     try {
-      await totalPlay({ playTime, nShoppingLogic4, nPlace, internetType });
-      // await workedDataToFront({
-      //   mainWindow,
-      //   groupFid: nShoppingLogic4.selectedGroup.groupId,
-      //   callback: () =>
-      //     totalPlay({ playTime, nShoppingLogic4, nPlace, internetType }),
-      //   countPatchCallback: async ({ groupFid, nvMid, targetKeyword }) =>
-      //     await completedCountList().completedShoppingCountPatch({
-      //       groupFid,
-      //       nvMid,
-      //       targetKeyword,
-      //     }),
-      // });
+      // await totalPlay({ playTime, nShoppingLogic4, nPlace, internetType });
+      await workedDataToFront({
+        mainWindow,
+        groupFid: nShoppingLogic4.selectedGroup.groupId,
+        callback: () =>
+          totalPlay({ playTime, nShoppingLogic4, nPlace, internetType }),
+        countPatchCallback: async ({ groupFid, nvMid, targetKeyword }) =>
+          await completedCountList().completedShoppingCountPatch({
+            groupFid,
+            nvMid,
+            targetKeyword,
+          }),
+      });
     } catch (error) {
       console.error(`naverShopping > ${error.message}`);
       await wait(10 * 1000);
@@ -54,65 +54,80 @@ async function totalPlay({ internetType, playTime, nPlace, nShoppingLogic4 }) {
   }
 
   function basketPlayList() {
-    const naverShoppingPlayList = () =>
-      measureExecutionTime({
-        playCallback: () =>
-          playNaverShopping({
-            logicType: nShoppingLogic4.logicType,
-            dataGroupFid: nShoppingLogic4.selectedGroup.groupId,
-            fingerPrintGroupFid: nShoppingLogic4.fingerPrint.groupId,
-          }),
-      });
-    const naverPlacePlayList = () =>
-      measureExecutionTime({
-        playCallback: () =>
-          playNaverPlace({
-            logicType: nPlace.logicType,
-            dataGroupFid: nPlace.selectedGroup.groupId,
-            fingerPrintGroupFid: nPlace.fingerPrint.groupId,
-          }),
-      });
-    let playList = [];
-    console.log("nShoppingLogic4 555555");
-    console.log(nShoppingLogic4);
-    if (nShoppingLogic4.isStart) {
-      playList.push(naverShoppingPlayList());
+    try {
+      const naverShoppingPlayList = () =>
+        measureExecutionTime({
+          playCallback: () =>
+            playNaverShopping({
+              logicType: nShoppingLogic4.logicType,
+              dataGroupFid: nShoppingLogic4.selectedGroup.groupId,
+              fingerPrintGroupFid: nShoppingLogic4.fingerPrint.groupId,
+            }),
+        });
+      const naverPlacePlayList = () =>
+        measureExecutionTime({
+          playCallback: () =>
+            playNaverPlace({
+              logicType: nPlace.logicType,
+              dataGroupFid: nPlace.selectedGroup.groupId,
+              fingerPrintGroupFid: nPlace.fingerPrint.groupId,
+            }),
+        });
+      let playList = [];
+      console.log("nShoppingLogic4 555555");
+      console.log(nShoppingLogic4);
+      if (nShoppingLogic4.isStart) {
+        playList.push(naverShoppingPlayList());
+      }
+      if (nPlace.isStart) {
+        playList.push(naverPlacePlayList());
+      }
+      return playList;
+    } catch (e) {
+      console.error(e.message);
+      throw Error(`basketPlayList > ${e.message}`);
     }
-    if (nPlace.isStart) {
-      playList.push(naverPlacePlayList());
-    }
-    return playList;
   }
 }
 
 let globalExecute = null;
 async function networkPlay({ internetType, playTime }) {
-  if (!globalExecute) {
-    globalExecute = await internetConnectType({
-      internetType,
-      playTime,
-    });
+  try {
+    if (!globalExecute) {
+      globalExecute = await internetConnectType({
+        internetType,
+        playTime,
+      });
+    }
+    await globalExecute();
+    await monitorNetworkAndStart();
+    const result = await UtilNetwork.getIpAddress();
+    setDataUser({ myIp: result });
+    return result;
+  } catch (e) {
+    console.error(e.message);
+    throw Error(`networkPlay > ${e.message}`);
   }
-  await globalExecute();
-  await monitorNetworkAndStart();
-  const result = await UtilNetwork.getIpAddress();
-  setDataUser({ myIp: result });
-  return result;
 }
 
 function completedCountList() {
-  const completedShoppingCountPatch = async ({
-    groupFid,
-    nvMid,
-    targetKeyword,
-  }) => {
-    const { data } = await PatchNShoppingLogic4NowCountIncrement({
+  try {
+    const completedShoppingCountPatch = async ({
       groupFid,
       nvMid,
       targetKeyword,
-    });
-    await apiPatchDayNowCountForShopping({ data });
-  };
-  return { completedShoppingCountPatch };
+    }) => {
+      const { data } = await PatchNShoppingLogic4NowCountIncrement({
+        groupFid,
+        nvMid,
+        targetKeyword,
+      });
+      await apiPatchDayNowCountForShopping({ data });
+    };
+    return { completedShoppingCountPatch };
+  } catch (e) {
+    console.error(e.message);
+    throw Error(`completedCountList > ${e.message}`);
+  }
 }
 // upscalePlay();

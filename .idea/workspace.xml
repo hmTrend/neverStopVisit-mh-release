@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.13.0 playNaverPlace">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.13.3 allSettledData">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/nPlace.register.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/nPlace.register.valtio.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,14 +331,6 @@
       <workItem from="1739950075773" duration="16923000" />
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
-    </task>
-    <task id="LOCAL-00504" summary="&lt;Box width=&quot;20px&quot;&gt;">
-      <option name="closed" value="true" />
-      <created>1739890619831</created>
-      <option name="number" value="00504" />
-      <option name="presentableId" value="LOCAL-00504" />
-      <option name="project" value="LOCAL" />
-      <updated>1739890619831</updated>
     </task>
     <task id="LOCAL-00505" summary="&lt;StatArrow type=&quot;increase&quot; /&gt;">
       <option name="closed" value="true" />
@@ -726,7 +716,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740109917203</updated>
     </task>
-    <option name="localTasksCounter" value="553" />
+    <task id="LOCAL-00553" summary="v5.13.3 allSettledData">
+      <option name="closed" value="true" />
+      <created>1740111608043</created>
+      <option name="number" value="00553" />
+      <option name="presentableId" value="LOCAL-00553" />
+      <option name="project" value="LOCAL" />
+      <updated>1740111608043</updated>
+    </task>
+    <option name="localTasksCounter" value="554" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -771,7 +769,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="emulateNetworkConditions" />
     <MESSAGE value="cpuThrottlingRate = 20" />
     <MESSAGE value="findSelectorAndClick / 클릭후 3초대기 추가" />
     <MESSAGE value="waitSelectAndForLoggedInCheck" />
@@ -796,7 +793,8 @@
     <MESSAGE value="v5.9.6 playNaverPlace" />
     <MESSAGE value="v5.9.6 await wait(delayTime * 1000)" />
     <MESSAGE value="v5.13.0 playNaverPlace" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.13.0 playNaverPlace" />
+    <MESSAGE value="v5.13.3 allSettledData" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.13.3 allSettledData" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
