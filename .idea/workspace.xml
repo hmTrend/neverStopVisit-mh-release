@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.9.6 await wait(delayTime * 1000)">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.13.0 playNaverPlace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/upscale/naverShopping/naverShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/nPlace.register.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/nPlace.register.valtio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,14 +333,6 @@
       <workItem from="1739950075773" duration="16923000" />
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
-    </task>
-    <task id="LOCAL-00503" summary="  logicType: logicType,&#10;      workType: &quot;NShoppingLogic4&quot;,">
-      <option name="closed" value="true" />
-      <created>1739889885696</created>
-      <option name="number" value="00503" />
-      <option name="presentableId" value="LOCAL-00503" />
-      <option name="project" value="LOCAL" />
-      <updated>1739889885696</updated>
     </task>
     <task id="LOCAL-00504" summary="&lt;Box width=&quot;20px&quot;&gt;">
       <option name="closed" value="true" />
@@ -726,7 +718,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740105752946</updated>
     </task>
-    <option name="localTasksCounter" value="552" />
+    <task id="LOCAL-00552" summary="v5.13.0 playNaverPlace">
+      <option name="closed" value="true" />
+      <created>1740109917202</created>
+      <option name="number" value="00552" />
+      <option name="presentableId" value="LOCAL-00552" />
+      <option name="project" value="LOCAL" />
+      <updated>1740109917203</updated>
+    </task>
+    <option name="localTasksCounter" value="553" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -771,7 +771,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="19세 제한" />
     <MESSAGE value="emulateNetworkConditions" />
     <MESSAGE value="cpuThrottlingRate = 20" />
     <MESSAGE value="findSelectorAndClick / 클릭후 3초대기 추가" />
@@ -796,7 +795,8 @@
     <MESSAGE value="v5.9.3 playNaverPlace" />
     <MESSAGE value="v5.9.6 playNaverPlace" />
     <MESSAGE value="v5.9.6 await wait(delayTime * 1000)" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.9.6 await wait(delayTime * 1000)" />
+    <MESSAGE value="v5.13.0 playNaverPlace" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.13.0 playNaverPlace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

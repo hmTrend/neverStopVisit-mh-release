@@ -45,16 +45,36 @@ export async function upscalePlay({
 async function totalPlay({ internetType, playTime, nPlace, nShoppingLogic4 }) {
   try {
     await networkPlay({ internetType, playTime });
-    const allSetteledData = await Promise.allSettled([...basketPlayList()]);
-    console.log("allSetteledData 33333");
-    console.log(allSetteledData);
+    const allSettledData = await Promise.allSettled(basketPlayList());
+    console.log("allSettledData 33333");
+    console.log(allSettledData);
   } catch (e) {
     console.error(`totalPlay > ${e.message}`);
     throw Error(`totalPlay > ${e.message}`);
   }
 
   function basketPlayList() {
+    const naverShoppingPlayList = () =>
+      measureExecutionTime({
+        playCallback: () =>
+          playNaverShopping({
+            logicType: nShoppingLogic4.logicType,
+            dataGroupFid: nShoppingLogic4.selectedGroup.groupId,
+            fingerPrintGroupFid: nShoppingLogic4.fingerPrint.groupId,
+          }),
+      });
+    const naverPlacePlayList = () =>
+      measureExecutionTime({
+        playCallback: () =>
+          playNaverPlace({
+            logicType: nPlace.logicType,
+            dataGroupFid: nPlace.selectedGroup.groupId,
+            fingerPrintGroupFid: nPlace.fingerPrint.groupId,
+          }),
+      });
     let playList = [];
+    console.log("nShoppingLogic4 555555");
+    console.log(nShoppingLogic4);
     if (nShoppingLogic4.isStart) {
       playList.push(naverShoppingPlayList());
     }
@@ -63,25 +83,6 @@ async function totalPlay({ internetType, playTime, nPlace, nShoppingLogic4 }) {
     }
     return playList;
   }
-
-  const naverShoppingPlayList = async () =>
-    await measureExecutionTime({
-      playCallback: () =>
-        playNaverShopping({
-          logicType: nShoppingLogic4.logicType,
-          dataGroupFid: nShoppingLogic4.selectedGroup.groupId,
-          fingerPrintGroupFid: nShoppingLogic4.fingerPrint.groupId,
-        }),
-    });
-  const naverPlacePlayList = async () =>
-    await measureExecutionTime({
-      playCallback: () =>
-        playNaverPlace({
-          logicType: nPlace.logicType,
-          dataGroupFid: nPlace.selectedGroup.groupId,
-          fingerPrintGroupFid: nPlace.fingerPrint.groupId,
-        }),
-    });
 }
 
 let globalExecute = null;
