@@ -57,7 +57,7 @@ async function totalPlay({
     const allSettledData = await Promise.allSettled(basketPlayList());
     console.log("allSettledData 33333");
     console.log(allSettledData);
-    allSettledResult({ allSettledData, nShoppingLogic4, savedDataPlay });
+    await allSettledResult(allSettledData, nShoppingLogic4, savedDataPlay);
   } catch (e) {
     console.error(`totalPlay > ${e.message}`);
     throw Error(`totalPlay > ${e.message}`);
@@ -102,8 +102,8 @@ async function totalPlay({
   }
 
   async function allSettledResult(
-    nShoppingLogic4,
     allSettledData,
+    nShoppingLogic4,
     savedDataPlay: SavedDataPlayFunction,
   ) {
     let currentIndex = 0;
