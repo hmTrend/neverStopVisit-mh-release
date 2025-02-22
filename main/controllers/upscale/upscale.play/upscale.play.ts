@@ -101,7 +101,7 @@ async function totalPlay({
     }
   }
 
-  function allSettledResult(
+  async function allSettledResult(
     nShoppingLogic4,
     allSettledData,
     savedDataPlay: SavedDataPlayFunction,
@@ -122,10 +122,10 @@ async function totalPlay({
           mainWindow,
         });
       }
-      await savedData.countPatchCallback({
-        groupFid: savedData.groupFid,
-        nvMid: savedData.nvMid,
-        targetKeyword: savedData.targetKeyword,
+      await PatchNShoppingLogic4NowCountIncrement({
+        groupFid: shoppingData.groupFid,
+        nvMid: shoppingData.nvMid,
+        targetKeyword: shoppingData.targetKeyword,
       });
       currentIndex++;
     }
