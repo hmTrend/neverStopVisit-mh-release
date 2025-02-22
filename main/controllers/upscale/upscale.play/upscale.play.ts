@@ -171,11 +171,16 @@ async function nShoppingLogic4IsStart({
         mainWindow,
       });
     }
-    await PatchNShoppingLogic4NowCountIncrement({
+    console.log("dddddbbbbb 333333");
+    console.log(shoppingData.dataGroupFid);
+    console.log(shoppingData.nvMid);
+    console.log(shoppingData.targetKeyword);
+    const { data } = await PatchNShoppingLogic4NowCountIncrement({
       groupFid: shoppingData.dataGroupFid,
       nvMid: shoppingData.nvMid,
       targetKeyword: shoppingData.targetKeyword,
     });
+    await apiPatchDayNowCountForShopping({ data });
     currentIndex++;
   }
   return { getCurrentIndex: currentIndex };

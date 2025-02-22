@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.49.0 networkPlay &gt; savedDataPlayCB">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.53.0 nShoppingLogic4IsStart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
     </list>
@@ -327,15 +327,7 @@
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
       <workItem from="1740117821358" duration="1988000" />
-      <workItem from="1740127837159" duration="16285000" />
-    </task>
-    <task id="LOCAL-00522" summary="19세 제한">
-      <option name="closed" value="true" />
-      <created>1739975217605</created>
-      <option name="number" value="00522" />
-      <option name="presentableId" value="LOCAL-00522" />
-      <option name="project" value="LOCAL" />
-      <updated>1739975217605</updated>
+      <workItem from="1740127837159" duration="16802000" />
     </task>
     <task id="LOCAL-00523" summary="emulateNetworkConditions">
       <option name="closed" value="true" />
@@ -721,7 +713,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740198689174</updated>
     </task>
-    <option name="localTasksCounter" value="571" />
+    <task id="LOCAL-00571" summary="v5.53.0 nShoppingLogic4IsStart">
+      <option name="closed" value="true" />
+      <created>1740200722532</created>
+      <option name="number" value="00571" />
+      <option name="presentableId" value="LOCAL-00571" />
+      <option name="project" value="LOCAL" />
+      <updated>1740200722532</updated>
+    </task>
+    <option name="localTasksCounter" value="572" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -766,7 +766,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.6.0 clickTargetPlaceOrGoToNextStep" />
     <MESSAGE value="v5.6.3 playLogic1()" />
     <MESSAGE value="v5.6.6 lastActionRandomClick" />
     <MESSAGE value="v5.6.9 clickRandomTab" />
@@ -791,7 +790,8 @@
     <MESSAGE value="v5.43.0 const { shoppingData } = savedDataPlay({});" />
     <MESSAGE value="v5.46.0 WorkCompletedList" />
     <MESSAGE value="v5.49.0 networkPlay &gt; savedDataPlayCB" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.49.0 networkPlay &gt; savedDataPlayCB" />
+    <MESSAGE value="v5.53.0 nShoppingLogic4IsStart" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.53.0 nShoppingLogic4IsStart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
