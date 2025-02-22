@@ -27,8 +27,11 @@ export const findTargetPlace = async ({
       page,
     });
     await waitForTargetUrl;
+    console.log(111);
     await wait(3 * 1000);
+    console.log(222);
     await clickTargetPlaceOrGoToNextStep({ page, placeNumber });
+    console.log(333);
     await lastActionRandomClick({ page, placeNumber, delayTime });
     return { page };
   } catch (e) {

@@ -21,8 +21,8 @@ export async function playLogic1({
   let browserManager: BrowserManager;
   try {
     const { getPage, getBrowserManager } = await gotoPage({
-      is3gMode: true,
-      cpuThrottlingRate: 4,
+      is3gMode: false,
+      cpuThrottlingRate: 0,
       url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
       contextCallback: async (browser) =>
         BrowserManager.createMobileContext(
