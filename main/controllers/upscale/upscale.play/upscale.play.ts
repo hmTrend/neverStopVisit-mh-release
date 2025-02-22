@@ -15,6 +15,8 @@ import {
 } from "../../atoms/user/data.play";
 import { UtilText } from "../../atoms/util/util.text";
 import { UtilDate } from "../../atoms/util/util.date";
+import { PatchNPlaceDayNowCount } from "../../../lib/apollo/n-place-apollo";
+import { apiNotionPatchDayNowCount } from "../../../api/notion/api.patchDayNowCount";
 
 export async function upscalePlay({
   internetType = "STATIC",
@@ -124,18 +126,13 @@ async function totalPlay({
       savedDataPlay,
     });
     currentIndex = getCurrentIndex;
-    if (nPlace.isStart) {
-      // const placeResult = allSettledData[currentIndex];
-      // if (placeResult.status === "fulfilled") {
-      //   // 플레이스 로직 성공 처리
-      //   nextPlaceFunction();
-      // } else if (placeResult.status === "rejected") {
-      //   // 플레이스 로직 실패 처리
-      //   console.error("플레이스 로직 에러:", placeResult.reason);
-      //   // 또는 에러 처리 함수 호출
-      //   handlePlaceError(placeResult.reason);
-      // }
-    }
+    await nPlaceIsStart({
+      nPlace,
+      allSettledData,
+      mainWindow,
+      currentIndex,
+      savedDataPlay,
+    });
   }
 }
 
@@ -146,43 +143,79 @@ async function nShoppingLogic4IsStart({
   mainWindow,
   currentIndex,
 }) {
-  if (nShoppingLogic4.isStart) {
-    const { shoppingData } = savedDataPlay({});
-    const shoppingResult = allSettledData[currentIndex];
-    if (shoppingResult.status === "fulfilled") {
-      await workedDataToFront({
-        savedData: {
-          ...nShoppingLogic4,
-          ...shoppingData,
-          createdAt: UtilDate.getCurrentDate(),
-          errorMessage: "",
-        },
-        mainWindow,
-      });
-    } else if (shoppingResult.status === "rejected") {
-      console.error(`nShoppingLogic4IsStart > ${shoppingResult.reason}`);
-      await workedDataToFront({
-        savedData: {
-          ...nShoppingLogic4,
-          ...shoppingData,
-          createdAt: UtilDate.getCurrentDate(),
-          errorMessage: UtilText.errorMessageTrans(shoppingResult.reason),
-        },
-        mainWindow,
-      });
-    }
-    console.log("dddddbbbbb 333333");
-    console.log(shoppingData.dataGroupFid);
-    console.log(shoppingData.nvMid);
-    console.log(shoppingData.targetKeyword);
-    const { data } = await PatchNShoppingLogic4NowCountIncrement({
-      groupFid: shoppingData.dataGroupFid,
-      nvMid: shoppingData.nvMid,
-      targetKeyword: shoppingData.targetKeyword,
+  if (!nShoppingLogic4.isStart) return;
+  const { shoppingData } = savedDataPlay({});
+  const shoppingResult = allSettledData[currentIndex];
+  if (shoppingResult.status === "fulfilled") {
+    await workedDataToFront({
+      savedData: {
+        ...nShoppingLogic4,
+        ...shoppingData,
+        createdAt: UtilDate.getCurrentDate(),
+        errorMessage: "",
+      },
+      mainWindow,
     });
-    await apiPatchDayNowCountForShopping({ data });
-    currentIndex++;
+  } else if (shoppingResult.status === "rejected") {
+    console.error(`nShoppingLogic4IsStart > ${shoppingResult.reason}`);
+    await workedDataToFront({
+      savedData: {
+        ...nShoppingLogic4,
+        ...shoppingData,
+        createdAt: UtilDate.getCurrentDate(),
+        errorMessage: UtilText.errorMessageTrans(shoppingResult.reason),
+      },
+      mainWindow,
+    });
   }
+  const { data } = await PatchNShoppingLogic4NowCountIncrement({
+    groupFid: shoppingData.dataGroupFid,
+    nvMid: shoppingData.nvMid,
+    targetKeyword: shoppingData.targetKeyword,
+  });
+  await apiPatchDayNowCountForShopping({ data });
+  currentIndex++;
+  return { getCurrentIndex: currentIndex };
+}
+
+async function nPlaceIsStart({
+  nPlace,
+  savedDataPlay,
+  allSettledData,
+  mainWindow,
+  currentIndex,
+}) {
+  if (!nPlace.isStart) return;
+  const { placeData } = savedDataPlay({});
+  const placeResult = allSettledData[currentIndex];
+  if (placeResult.status === "fulfilled") {
+    await workedDataToFront({
+      savedData: {
+        ...nPlace,
+        ...placeData,
+        createdAt: UtilDate.getCurrentDate(),
+        errorMessage: "",
+      },
+      mainWindow,
+    });
+  } else if (placeResult.status === "rejected") {
+    console.error(`nPlaceIsStart > ${placeResult.reason}`);
+    await workedDataToFront({
+      savedData: {
+        ...nPlace,
+        ...placeData,
+        createdAt: UtilDate.getCurrentDate(),
+        errorMessage: UtilText.errorMessageTrans(placeResult.reason),
+      },
+      mainWindow,
+    });
+  }
+  const { data } = await PatchNPlaceDayNowCount({
+    groupFid: placeResult.dataGroupFid,
+    placeNumber: placeResult.placeNumber,
+  });
+  await apiNotionPatchDayNowCount({ data });
+  currentIndex++;
   return { getCurrentIndex: currentIndex };
 }
 
