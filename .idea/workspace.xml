@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.53.0 nShoppingLogic4IsStart">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.59.0 apiPatchDayNowCountForShopping">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/api/notion/api.patchDayNowCountForShopping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/notion/api.patchDayNowCountForShopping.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,15 +327,7 @@
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
       <workItem from="1740117821358" duration="1988000" />
-      <workItem from="1740127837159" duration="16802000" />
-    </task>
-    <task id="LOCAL-00523" summary="emulateNetworkConditions">
-      <option name="closed" value="true" />
-      <created>1739975306325</created>
-      <option name="number" value="00523" />
-      <option name="presentableId" value="LOCAL-00523" />
-      <option name="project" value="LOCAL" />
-      <updated>1739975306325</updated>
+      <workItem from="1740127837159" duration="17187000" />
     </task>
     <task id="LOCAL-00524" summary="cpuThrottlingRate = 20">
       <option name="closed" value="true" />
@@ -721,7 +713,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740200722532</updated>
     </task>
-    <option name="localTasksCounter" value="572" />
+    <task id="LOCAL-00572" summary="v5.59.0 apiPatchDayNowCountForShopping">
+      <option name="closed" value="true" />
+      <created>1740201231835</created>
+      <option name="number" value="00572" />
+      <option name="presentableId" value="LOCAL-00572" />
+      <option name="project" value="LOCAL" />
+      <updated>1740201231835</updated>
+    </task>
+    <option name="localTasksCounter" value="573" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -766,7 +766,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.6.3 playLogic1()" />
     <MESSAGE value="v5.6.6 lastActionRandomClick" />
     <MESSAGE value="v5.6.9 clickRandomTab" />
     <MESSAGE value="v5.6.12 getNPlaceExcelAlignFlatTargetOne" />
@@ -791,7 +790,8 @@
     <MESSAGE value="v5.46.0 WorkCompletedList" />
     <MESSAGE value="v5.49.0 networkPlay &gt; savedDataPlayCB" />
     <MESSAGE value="v5.53.0 nShoppingLogic4IsStart" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.53.0 nShoppingLogic4IsStart" />
+    <MESSAGE value="v5.59.0 apiPatchDayNowCountForShopping" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.59.0 apiPatchDayNowCountForShopping" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
