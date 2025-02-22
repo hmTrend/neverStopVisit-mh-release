@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.86.0 apiNotionPatchDayNowCount &gt; timeZone: &quot;Asia/Seoul&quot;" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.89.0 쇼핑 스로틀링 강화">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndClick.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clickTargetPlaceOrGoToNextStep.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clickTargetPlaceOrGoToNextStep.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -327,15 +331,7 @@
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
       <workItem from="1740117821358" duration="1988000" />
-      <workItem from="1740127837159" duration="24714000" />
-    </task>
-    <task id="LOCAL-00533" summary="v4.3.16 로직선택하기">
-      <option name="closed" value="true" />
-      <created>1740030426378</created>
-      <option name="number" value="00533" />
-      <option name="presentableId" value="LOCAL-00533" />
-      <option name="project" value="LOCAL" />
-      <updated>1740030426378</updated>
+      <workItem from="1740127837159" duration="25562000" />
     </task>
     <task id="LOCAL-00534" summary="v4.3.19 타겟 워크 키워드 나누기">
       <option name="closed" value="true" />
@@ -721,7 +717,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740209711107</updated>
     </task>
-    <option name="localTasksCounter" value="582" />
+    <task id="LOCAL-00582" summary="v5.89.0 쇼핑 스로틀링 강화">
+      <option name="closed" value="true" />
+      <created>1740210236223</created>
+      <option name="number" value="00582" />
+      <option name="presentableId" value="LOCAL-00582" />
+      <option name="project" value="LOCAL" />
+      <updated>1740210236223</updated>
+    </task>
+    <option name="localTasksCounter" value="583" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -766,7 +770,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.13.3 allSettledData" />
     <MESSAGE value="v5.13.6 upscalePlay" />
     <MESSAGE value="v5.16.0" />
     <MESSAGE value="v5.19.0 에러시 표시후 종료처리" />
@@ -791,7 +794,8 @@
     <MESSAGE value="v5.79.0 clickTargetPlaceOrGoToNextStep &gt; 에러로그처리강화" />
     <MESSAGE value="v5.83.0 clickTargetPlaceNextMorePage &gt;     await page.waitForSelector(selector, { timeout: 60 * 1000 });" />
     <MESSAGE value="v5.86.0 apiNotionPatchDayNowCount &gt; timeZone: &quot;Asia/Seoul&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.86.0 apiNotionPatchDayNowCount &gt; timeZone: &quot;Asia/Seoul&quot;" />
+    <MESSAGE value="v5.89.0 쇼핑 스로틀링 강화" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.89.0 쇼핑 스로틀링 강화" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

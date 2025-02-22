@@ -192,7 +192,7 @@ async function expandAndClickMore({ page }) {
           // 요소가 나타날 때까지 대기 (최대 30초)
           const moreButton = await page.waitForSelector(selector, {
             state: "visible",
-            timeout: 30 * 1000,
+            timeout: 60 * 1000,
           });
 
           if (moreButton) {
