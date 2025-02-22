@@ -40,7 +40,6 @@ export async function upscalePlay({
     } catch (error) {
       console.error(`naverShopping > ${error.message}`);
       await wait(10 * 1000);
-      throw Error(`upscalePlay > isRunning > ${error.message}`);
     }
     await wait(2 * 1000);
   }
@@ -191,8 +190,6 @@ async function nPlaceIsStart({
 }) {
   if (!nPlace.isStart) return;
   const { placeData } = savedDataPlay({});
-  console.log("placeData 333344445555");
-  console.log(placeData);
   const placeResult = allSettledData[currentIndex];
   if (placeResult.status === "fulfilled") {
     await workedDataToFront({
@@ -217,8 +214,8 @@ async function nPlaceIsStart({
     });
   }
   const { data } = await PatchNPlaceDayNowCount({
-    groupFid: placeResult.dataGroupFid,
-    placeNumber: placeResult.placeNumber,
+    groupFid: placeData.dataGroupFid,
+    placeNumber: parseInt(placeData.placeNumber),
   });
   await apiNotionPatchDayNowCount({ data });
   currentIndex++;

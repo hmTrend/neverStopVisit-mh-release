@@ -129,7 +129,10 @@ const gqlPatchNPlaceDayNowCount = gql`
   }
 `;
 
-export const PatchNPlaceDayNowCount = async ({ groupFid, placeNumber }) => {
+export const PatchNPlaceDayNowCount = async ({
+  groupFid = "67aafd4a7c9b8a9996fa459d",
+  placeNumber = 1064966442,
+} = {}) => {
   const { data, errors } = await client.mutate({
     mutation: gqlPatchNPlaceDayNowCount,
     variables: {
@@ -156,3 +159,5 @@ export const PatchNPlaceDayNowCount = async ({ groupFid, placeNumber }) => {
     error: "",
   };
 };
+
+// PatchNPlaceDayNowCount();
