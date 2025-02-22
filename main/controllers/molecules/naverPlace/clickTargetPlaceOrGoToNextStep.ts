@@ -7,7 +7,7 @@ export async function clickTargetPlaceOrGoToNextStep({
   isTest = false,
   page = undefined,
   browserManager = undefined,
-  placeNumber = "43229792",
+  placeNumber = "1918144108",
 }: {
   isTest?: boolean;
   page?: Page;
@@ -16,10 +16,10 @@ export async function clickTargetPlaceOrGoToNextStep({
 } = {}) {
   if (isTest) {
     const { getPage, getBrowserManager } = await gotoPage({
-      is3gMode: false,
-      cpuThrottlingRate: 0,
-      url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=&tqi=iJNbTlqVIOhssniJdF8ssssssSo-381109&query=%EA%B0%95%EB%82%A8%EB%A7%9B%EC%A7%91",
-      // 강남맛집 모바일
+      is3gMode: true,
+      cpuThrottlingRate: 20,
+      url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%ED%95%A9%EC%A0%95%EB%84%A4%EC%9D%BC",
+      // 합정네일 모바일
     });
     browserManager = getBrowserManager;
     page = getPage;
@@ -27,31 +27,37 @@ export async function clickTargetPlaceOrGoToNextStep({
   try {
     const networkManager = browserManager.createNetworkManager();
     await networkManager.waitForAllRequests();
-
+    console.log(11111111);
     await findSelectorAndScroll({
       selector: ".place_section_header_title",
       browserManager,
       page,
     });
+    console.log(22222222222);
     await clickTargetPlaceById({ placeNumber, page });
   } catch (e) {
-    const pageO = await expandAndClickMore({ page });
-    page = pageO;
-    try {
-      await clickTargetPlaceById({ placeNumber, page: pageO });
-    } catch (e) {
+    for (let i = 0; i < 10; i++) {
       try {
-        const pageO = await clickNextPageMoreLink({ page });
+        const pageO = await expandAndClickMore({ page });
         page = pageO;
+        {
+          await clickNextPageMoreLink({ page });
+          page = pageO;
+        }
+        {
+          const pageO = await clickTargetPlaceNextMorePage({
+            placeNumber,
+            page,
+          });
+          page = pageO;
+        }
+        break;
       } catch (e) {
-        console.error(`clickNextPageMoreLink > ${e.message}`);
-      }
-      {
-        const pageO = await clickTargetPlaceNextMorePage({
-          placeNumber,
-          page,
-        });
-        page = pageO;
+        if (i >= 9) {
+          console.error(`clickNextPageMoreLink > ${e.message}`);
+        }
+        console.log(`clickNextPageMoreLink > loading...`);
+        await wait(3 * 1000);
       }
     }
   }
@@ -60,9 +66,12 @@ export async function clickTargetPlaceOrGoToNextStep({
 async function clickTargetPlaceNextMorePage({ placeNumber, page }) {
   try {
     const selector = `a[href*="/${placeNumber}"][role="button"]:not(.place_thumb)`;
+    await page.waitForSelector(selector, { timeout: 1000 });
     const link = await page.$(selector);
     if (!link) {
-      throw new Error(`Link with ID ${placeNumber} not found`);
+      throw new Error(
+        `clickTargetPlaceNextMorePage > Link with ID ${placeNumber} not found`,
+      );
     }
 
     // 요소가 화면에 보이도록 스크롤
@@ -84,7 +93,7 @@ async function clickTargetPlaceNextMorePage({ placeNumber, page }) {
       `Error while trying to click link with ID ${placeNumber}:`,
       error,
     );
-    throw error;
+    throw Error(`clickTargetPlaceNextMorePage > ${error.message}`);
   }
 }
 
@@ -182,56 +191,33 @@ async function expandAndClickMore({ page }) {
       '.iLepm.UoLNU a[role="button"]',
       '.m2Hh0.frzpe a[role="button"]',
     ];
+    const waitPromises = selectors.map((selector) =>
+      page.waitForSelector(selector, {
+        state: "visible",
+        timeout: 60 * 1000,
+      }),
+    );
 
-    const clickPromises = selectors.map((selector) => {
-      return new Promise(async (resolve, reject) => {
-        try {
-          // 요소가 나타날 때까지 대기 (최대 30초)
-          const moreButton = await page.waitForSelector(selector, {
-            state: "visible",
-            timeout: 30 * 1000,
-          });
+    const moreButton = await Promise.race(waitPromises);
 
-          if (moreButton) {
-            try {
-              await moreButton.scrollIntoViewIfNeeded();
-              await moreButton.click();
-            } catch (e) {
-              console.error(`moreButton > ${e.message}`);
-              await wait(3 * 1000);
-            }
-            await page.waitForTimeout(1500); // 추가 대기 시간
-            console.log(
-              `Successfully clicked more button with selector: ${selector}`,
-            );
-            resolve(true); // 성공적으로 클릭했음을 알림
-          }
-        } catch (e) {
-          // console.log(`Selector ${selector} failed: ${e.message}`);
-          reject(e); // 실패 시 에러 전달
-        }
-      });
-    });
-
-    // Promise.race로 가장 먼저 성공하거나 실패하는 것을 기다림
-    const results = await Promise.race([
-      Promise.any(clickPromises), // 하나라도 성공하면 종료
-      new Promise((_, reject) =>
-        setTimeout(
-          () => reject(new Error("Timeout waiting for any button")),
-          66 * 1000,
-        ),
-      ), // 전체 타임아웃 설정
-    ]);
-
-    if (!results) {
-      console.log("No more button found or clickable");
+    if (!moreButton) {
+      throw new Error("expandAndClickMore > No button found");
     }
 
+    try {
+      await moreButton.scrollIntoViewIfNeeded();
+      await moreButton.click();
+    } catch (e) {
+      console.error(`moreButton > ${e.message}`);
+      throw new Error(`expandAndClickMore ${e.message}`);
+    }
+
+    await page.waitForTimeout(1500);
+    console.log("Successfully clicked first visible button");
     return page;
   } catch (error) {
     console.error("Error in expandAndClickMore:", error);
-    return page; // 에러가 나도 페이지를 반환하여 계속 진행
+    throw new Error(`expandAndClickMore ${error.message}`);
   }
 }
 

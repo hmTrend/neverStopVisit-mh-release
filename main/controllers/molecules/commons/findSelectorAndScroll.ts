@@ -27,6 +27,10 @@ export async function findSelectorAndScroll({
     await networkManager.waitForAllRequests();
 
     const element = page.locator(selector);
+    await element.waitFor({
+      state: "visible",
+      timeout: 30 * 1000, // 60초
+    });
     await page.waitForTimeout(1000);
     await element.scrollIntoViewIfNeeded();
   } catch (e) {
