@@ -108,13 +108,13 @@ async function totalPlay({
   ) {
     let currentIndex = 0;
     if (nShoppingLogic4.isStart) {
-      const { shoppingData } = savedDataPlay();
+      const { shoppingData } = savedDataPlay({});
       const shoppingResult = allSettledData[currentIndex];
       if (shoppingResult.status === "fulfilled") {
-        workedDataToFront({ savedData: shoppingData, mainWindow });
+        await workedDataToFront({ savedData: shoppingData, mainWindow });
       } else if (shoppingResult.status === "rejected") {
         console.error("쇼핑 로직 에러:", shoppingResult.reason);
-        workedDataToFront({
+        await workedDataToFront({
           savedData: {
             ...shoppingData,
             errorMessage: UtilText.errorMessageTrans(shoppingResult.reason),

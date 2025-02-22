@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.36.0 PatchNShoppingLogic4NowCountIncrement">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.39.0 allSettledResult">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/user/data.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/user/data.play.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -326,15 +328,7 @@
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
       <workItem from="1740117821358" duration="1988000" />
-      <workItem from="1740127837159" duration="10693000" />
-    </task>
-    <task id="LOCAL-00518" summary="No expand details button">
-      <option name="closed" value="true" />
-      <created>1739947225749</created>
-      <option name="number" value="00518" />
-      <option name="presentableId" value="LOCAL-00518" />
-      <option name="project" value="LOCAL" />
-      <updated>1739947225749</updated>
+      <workItem from="1740127837159" duration="11671000" />
     </task>
     <task id="LOCAL-00519" summary="sameUrlCheckForError">
       <option name="closed" value="true" />
@@ -720,7 +714,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740191736286</updated>
     </task>
-    <option name="localTasksCounter" value="567" />
+    <task id="LOCAL-00567" summary="v5.39.0 allSettledResult">
+      <option name="closed" value="true" />
+      <created>1740191921911</created>
+      <option name="number" value="00567" />
+      <option name="presentableId" value="LOCAL-00567" />
+      <option name="project" value="LOCAL" />
+      <updated>1740191921911</updated>
+    </task>
+    <option name="localTasksCounter" value="568" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -765,7 +767,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v4.3.23 apiPatchDayNowCountForShopping" />
     <MESSAGE value="v4.3.26 apiPatchDayNowCountForShopping" />
     <MESSAGE value="v5.0.0 playLogic1" />
     <MESSAGE value="v5.1.0 findSelectorAndScroll" />
@@ -790,7 +791,8 @@
     <MESSAGE value="v5.29.0 savedDataPlay" />
     <MESSAGE value="v5.33.0 UtilText.errorMessageTrans" />
     <MESSAGE value="v5.36.0 PatchNShoppingLogic4NowCountIncrement" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.36.0 PatchNShoppingLogic4NowCountIncrement" />
+    <MESSAGE value="v5.39.0 allSettledResult" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.39.0 allSettledResult" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

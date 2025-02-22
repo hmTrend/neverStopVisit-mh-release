@@ -37,11 +37,15 @@ export const playDataInitial: PlayDataInitialFunction = () => {
   let placeData: PlaceData = {};
   let mainWindow;
 
-  return function savedDataPlay({
-    getShoppingData,
-    getPlaceData,
-    getMainWindow,
-  }: SavedDataPlayParams): SavedDataPlayReturn {
+  return function savedDataPlay(
+    params: SavedDataPlayParams = {},
+  ): SavedDataPlayReturn {
+    const {
+      getShoppingData = {},
+      getPlaceData = {},
+      getMainWindow = null,
+    } = params;
+
     if (getShoppingData) {
       shoppingData = { ...shoppingData, ...getShoppingData };
     }
