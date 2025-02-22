@@ -14,6 +14,7 @@ import {
   SavedDataPlayFunction,
 } from "../../atoms/user/data.play";
 import { UtilText } from "../../atoms/util/util.text";
+import { UtilDate } from "../../atoms/util/util.date";
 
 export async function upscalePlay({
   internetType = "STATIC",
@@ -66,8 +67,8 @@ async function totalPlay({
   function basketPlayList() {
     savedDataPlay({ getMainWindow: mainWindow });
     try {
-      const naverShoppingPlayList = async () =>
-        await measureExecutionTime({
+      const naverShoppingPlayList = async () => {
+        const resultTotalWorkedSecondsTime = await measureExecutionTime({
           playCallback: () =>
             playNaverShopping({
               savedDataPlay,
@@ -76,6 +77,10 @@ async function totalPlay({
               fingerPrintGroupFid: nShoppingLogic4.fingerPrint.groupId,
             }),
         });
+        savedDataPlay({
+          getShoppingData: { totalWorkingTime: resultTotalWorkedSecondsTime },
+        });
+      };
 
       const naverPlacePlayList = () =>
         measureExecutionTime({
@@ -111,12 +116,22 @@ async function totalPlay({
       const { shoppingData } = savedDataPlay({});
       const shoppingResult = allSettledData[currentIndex];
       if (shoppingResult.status === "fulfilled") {
-        await workedDataToFront({ savedData: shoppingData, mainWindow });
+        await workedDataToFront({
+          savedData: {
+            ...nShoppingLogic4,
+            ...shoppingData,
+            createdAt: UtilDate.getCurrentDate(),
+            errorMessage: "",
+          },
+          mainWindow,
+        });
       } else if (shoppingResult.status === "rejected") {
         console.error("쇼핑 로직 에러:", shoppingResult.reason);
         await workedDataToFront({
           savedData: {
+            ...nShoppingLogic4,
             ...shoppingData,
+            createdAt: UtilDate.getCurrentDate(),
             errorMessage: UtilText.errorMessageTrans(shoppingResult.reason),
           },
           mainWindow,
