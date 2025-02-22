@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.66.0 totalPlay &gt; allSettledResult &gt; nPlaceIsStart">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.73.0 naverPlacePlayList &gt; savedDataPlay">
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -328,23 +326,7 @@
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
       <workItem from="1740117821358" duration="1988000" />
-      <workItem from="1740127837159" duration="19355000" />
-    </task>
-    <task id="LOCAL-00526" summary="waitSelectAndForLoggedInCheck">
-      <option name="closed" value="true" />
-      <created>1740009152694</created>
-      <option name="number" value="00526" />
-      <option name="presentableId" value="LOCAL-00526" />
-      <option name="project" value="LOCAL" />
-      <updated>1740009152694</updated>
-    </task>
-    <task id="LOCAL-00527" summary="loginCheckCallback">
-      <option name="closed" value="true" />
-      <created>1740010502124</created>
-      <option name="number" value="00527" />
-      <option name="presentableId" value="LOCAL-00527" />
-      <option name="project" value="LOCAL" />
-      <updated>1740010502124</updated>
+      <workItem from="1740127837159" duration="19660000" />
     </task>
     <task id="LOCAL-00528" summary="4.3.3 / 불필요 nShopping 삭제">
       <option name="closed" value="true" />
@@ -722,7 +704,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740202245398</updated>
     </task>
-    <option name="localTasksCounter" value="575" />
+    <task id="LOCAL-00575" summary="v5.69.0 playNaverPlace &gt; savedDataPlay">
+      <option name="closed" value="true" />
+      <created>1740203917831</created>
+      <option name="number" value="00575" />
+      <option name="presentableId" value="LOCAL-00575" />
+      <option name="project" value="LOCAL" />
+      <updated>1740203917831</updated>
+    </task>
+    <task id="LOCAL-00576" summary="v5.73.0 naverPlacePlayList &gt; savedDataPlay">
+      <option name="closed" value="true" />
+      <created>1740204049230</created>
+      <option name="number" value="00576" />
+      <option name="presentableId" value="LOCAL-00576" />
+      <option name="project" value="LOCAL" />
+      <updated>1740204049230</updated>
+    </task>
+    <option name="localTasksCounter" value="577" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -767,8 +765,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.6.12 getNPlaceExcelAlignFlatTargetOne" />
-    <MESSAGE value="v5.9.0 getNPlaceExcelAlignFlatTargetOne" />
     <MESSAGE value="v5.9.3 playNaverPlace" />
     <MESSAGE value="v5.9.6 playNaverPlace" />
     <MESSAGE value="v5.9.6 await wait(delayTime * 1000)" />
@@ -792,7 +788,9 @@
     <MESSAGE value="v5.59.0 apiPatchDayNowCountForShopping" />
     <MESSAGE value="v5.63.0 한국시간 날짜로 변경완료" />
     <MESSAGE value="v5.66.0 totalPlay &gt; allSettledResult &gt; nPlaceIsStart" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.66.0 totalPlay &gt; allSettledResult &gt; nPlaceIsStart" />
+    <MESSAGE value="v5.69.0 playNaverPlace &gt; savedDataPlay" />
+    <MESSAGE value="v5.73.0 naverPlacePlayList &gt; savedDataPlay" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.73.0 naverPlacePlayList &gt; savedDataPlay" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

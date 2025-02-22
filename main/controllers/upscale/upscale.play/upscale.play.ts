@@ -87,8 +87,8 @@ async function totalPlay({
         });
       };
 
-      const naverPlacePlayList = () =>
-        measureExecutionTime({
+      const naverPlacePlayList = async () => {
+        const resultTotalWorkedSecondsTime = await measureExecutionTime({
           playCallback: () =>
             playNaverPlace({
               savedDataPlay,
@@ -97,6 +97,11 @@ async function totalPlay({
               fingerPrintGroupFid: nPlace.fingerPrint.groupId,
             }),
         });
+        savedDataPlay({
+          getPlaceData: { totalWorkingTime: resultTotalWorkedSecondsTime },
+        });
+      };
+
       let playList = [];
       if (nShoppingLogic4.isStart) {
         playList.push(naverShoppingPlayList());
