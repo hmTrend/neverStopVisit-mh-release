@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.76.0 PatchNPlaceDayNowCount">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.79.0 clickTargetPlaceOrGoToNextStep &gt; 에러로그처리강화">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clickTargetPlaceOrGoToNextStep.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clickTargetPlaceOrGoToNextStep.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic1.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,15 +329,7 @@
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
       <workItem from="1740117821358" duration="1988000" />
-      <workItem from="1740127837159" duration="24067000" />
-    </task>
-    <task id="LOCAL-00530" summary="4.3.9 / GetFingerPrintTargetExcelOne / getNShoppingLogic4ExcelAlignFlatTargetOne&#10;&#10;5번 다시가져오기">
-      <option name="closed" value="true" />
-      <created>1740018518792</created>
-      <option name="number" value="00530" />
-      <option name="presentableId" value="LOCAL-00530" />
-      <option name="project" value="LOCAL" />
-      <updated>1740018518792</updated>
+      <workItem from="1740127837159" duration="24393000" />
     </task>
     <task id="LOCAL-00531" summary="4.3.9 / GetFingerPrintTargetExcelOne / getNShoppingLogic4ExcelAlignFlatTargetOne&#10;&#10;5번 다시가져오기">
       <option name="closed" value="true" />
@@ -726,7 +715,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740205796978</updated>
     </task>
-    <option name="localTasksCounter" value="579" />
+    <task id="LOCAL-00579" summary="v5.79.0 clickTargetPlaceOrGoToNextStep &gt; 에러로그처리강화">
+      <option name="closed" value="true" />
+      <created>1740209409651</created>
+      <option name="number" value="00579" />
+      <option name="presentableId" value="LOCAL-00579" />
+      <option name="project" value="LOCAL" />
+      <updated>1740209409651</updated>
+    </task>
+    <option name="localTasksCounter" value="580" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -771,7 +768,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.9.6 playNaverPlace" />
     <MESSAGE value="v5.9.6 await wait(delayTime * 1000)" />
     <MESSAGE value="v5.13.0 playNaverPlace" />
     <MESSAGE value="v5.13.3 allSettledData" />
@@ -796,7 +792,8 @@
     <MESSAGE value="v5.69.0 playNaverPlace &gt; savedDataPlay" />
     <MESSAGE value="v5.73.0 naverPlacePlayList &gt; savedDataPlay" />
     <MESSAGE value="v5.76.0 PatchNPlaceDayNowCount" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.76.0 PatchNPlaceDayNowCount" />
+    <MESSAGE value="v5.79.0 clickTargetPlaceOrGoToNextStep &gt; 에러로그처리강화" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.79.0 clickTargetPlaceOrGoToNextStep &gt; 에러로그처리강화" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

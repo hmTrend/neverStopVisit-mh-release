@@ -60,7 +60,7 @@ export async function clickTargetPlaceOrGoToNextStep({
 async function clickTargetPlaceNextMorePage({ placeNumber, page }) {
   try {
     const selector = `a[href*="/${placeNumber}"][role="button"]:not(.place_thumb)`;
-    await page.waitForSelector(selector);
+    await page.waitForSelector(selector, { timeout: 60 * 1000 });
     const link = await page.$(selector);
     if (!link) {
       throw new Error(
