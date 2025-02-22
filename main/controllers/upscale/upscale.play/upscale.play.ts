@@ -54,7 +54,11 @@ async function totalPlay({
   savedDataPlay,
 }) {
   try {
-    await networkPlay({ internetType, playTime });
+    await networkPlay({
+      internetType,
+      playTime,
+      savedDataPlayCB: savedDataPlay,
+    });
     const allSettledData = await Promise.allSettled(basketPlayList());
     console.log("allSettledData 33333");
     console.log(allSettledData);
@@ -160,7 +164,11 @@ async function totalPlay({
 }
 
 let globalExecute = null;
-async function networkPlay({ internetType, playTime }) {
+async function networkPlay({
+  internetType,
+  playTime,
+  savedDataPlayCB = ({ getShoppingData, getPlaceData }) => {},
+}) {
   try {
     if (!globalExecute) {
       globalExecute = await internetConnectType({
@@ -171,7 +179,10 @@ async function networkPlay({ internetType, playTime }) {
     await globalExecute();
     await monitorNetworkAndStart();
     const result = await UtilNetwork.getIpAddress();
-    setDataUser({ myIp: result });
+    savedDataPlayCB({
+      getShoppingData: { myIp: result },
+      getPlaceData: { myIp: result },
+    });
     return result;
   } catch (e) {
     console.error(e.message);

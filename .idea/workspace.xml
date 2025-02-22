@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.43.0 const { shoppingData } = savedDataPlay({});">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.46.0 WorkCompletedList">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront2.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/util/timeStartToEnd.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/util/timeStartToEnd.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,15 +327,7 @@
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
       <workItem from="1740117821358" duration="1988000" />
-      <workItem from="1740127837159" duration="14503000" />
-    </task>
-    <task id="LOCAL-00520" summary="findSelectorAndClickWithDetailPage">
-      <option name="closed" value="true" />
-      <created>1739952036634</created>
-      <option name="number" value="00520" />
-      <option name="presentableId" value="LOCAL-00520" />
-      <option name="project" value="LOCAL" />
-      <updated>1739952036634</updated>
+      <workItem from="1740127837159" duration="14957000" />
     </task>
     <task id="LOCAL-00521" summary="transSelecterType">
       <option name="closed" value="true" />
@@ -723,7 +713,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740192957773</updated>
     </task>
-    <option name="localTasksCounter" value="569" />
+    <task id="LOCAL-00569" summary="v5.46.0 WorkCompletedList">
+      <option name="closed" value="true" />
+      <created>1740198294490</created>
+      <option name="number" value="00569" />
+      <option name="presentableId" value="LOCAL-00569" />
+      <option name="project" value="LOCAL" />
+      <updated>1740198294490</updated>
+    </task>
+    <option name="localTasksCounter" value="570" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -768,7 +766,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.0.0 playLogic1" />
     <MESSAGE value="v5.1.0 findSelectorAndScroll" />
     <MESSAGE value="v5.6.0 clickTargetPlaceOrGoToNextStep" />
     <MESSAGE value="v5.6.3 playLogic1()" />
@@ -793,7 +790,8 @@
     <MESSAGE value="v5.36.0 PatchNShoppingLogic4NowCountIncrement" />
     <MESSAGE value="v5.39.0 allSettledResult" />
     <MESSAGE value="v5.43.0 const { shoppingData } = savedDataPlay({});" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.43.0 const { shoppingData } = savedDataPlay({});" />
+    <MESSAGE value="v5.46.0 WorkCompletedList" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.46.0 WorkCompletedList" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
