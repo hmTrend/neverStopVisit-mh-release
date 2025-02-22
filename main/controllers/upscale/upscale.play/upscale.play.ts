@@ -54,10 +54,16 @@ async function totalPlay({
   savedDataPlay,
 }) {
   try {
-    await networkPlay({
-      internetType,
-      playTime,
-      savedDataPlayCB: savedDataPlay,
+    const resultChangeSeconds = await measureExecutionTime({
+      playCallback: await networkPlay({
+        internetType,
+        playTime,
+        savedDataPlayCB: savedDataPlay,
+      }),
+    });
+    savedDataPlay({
+      shoppingData: { changeTime: resultChangeSeconds },
+      placeData: { changeTime: resultChangeSeconds },
     });
     const allSettledData = await Promise.allSettled(basketPlayList());
     console.log("allSettledData 33333");
