@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.93.0 findSelectorAndClick">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.99.0 플레이스 느림대응">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndScroll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/commons/findSelectorAndScroll.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clickTargetPlaceOrGoToNextStep.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clickTargetPlaceOrGoToNextStep.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/findTargetPlace.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,30 +330,7 @@
       <workItem from="1740045300502" duration="2248000" />
       <workItem from="1740117821358" duration="1988000" />
       <workItem from="1740127837159" duration="27810000" />
-    </task>
-    <task id="LOCAL-00535" summary="v4.3.23 apiPatchDayNowCountForShopping">
-      <option name="closed" value="true" />
-      <created>1740034301244</created>
-      <option name="number" value="00535" />
-      <option name="presentableId" value="LOCAL-00535" />
-      <option name="project" value="LOCAL" />
-      <updated>1740034301244</updated>
-    </task>
-    <task id="LOCAL-00536" summary="v4.3.26 apiPatchDayNowCountForShopping">
-      <option name="closed" value="true" />
-      <created>1740035751565</created>
-      <option name="number" value="00536" />
-      <option name="presentableId" value="LOCAL-00536" />
-      <option name="project" value="LOCAL" />
-      <updated>1740035751565</updated>
-    </task>
-    <task id="LOCAL-00537" summary="v5.0.0 playLogic1">
-      <option name="closed" value="true" />
-      <created>1740048490891</created>
-      <option name="number" value="00537" />
-      <option name="presentableId" value="LOCAL-00537" />
-      <option name="project" value="LOCAL" />
-      <updated>1740048490891</updated>
+      <workItem from="1740212960575" duration="2956000" />
     </task>
     <task id="LOCAL-00538" summary="v5.1.0 findSelectorAndScroll">
       <option name="closed" value="true" />
@@ -724,7 +700,31 @@
       <option name="project" value="LOCAL" />
       <updated>1740210783099</updated>
     </task>
-    <option name="localTasksCounter" value="584" />
+    <task id="LOCAL-00584" summary="v5.99.0 플레이스 느림대응">
+      <option name="closed" value="true" />
+      <created>1740213029125</created>
+      <option name="number" value="00584" />
+      <option name="presentableId" value="LOCAL-00584" />
+      <option name="project" value="LOCAL" />
+      <updated>1740213029125</updated>
+    </task>
+    <task id="LOCAL-00585" summary="v5.99.0 플레이스 느림대응">
+      <option name="closed" value="true" />
+      <created>1740213058273</created>
+      <option name="number" value="00585" />
+      <option name="presentableId" value="LOCAL-00585" />
+      <option name="project" value="LOCAL" />
+      <updated>1740213058273</updated>
+    </task>
+    <task id="LOCAL-00586" summary="v5.99.0 플레이스 느림대응">
+      <option name="closed" value="true" />
+      <created>1740213071228</created>
+      <option name="number" value="00586" />
+      <option name="presentableId" value="LOCAL-00586" />
+      <option name="project" value="LOCAL" />
+      <updated>1740213071228</updated>
+    </task>
+    <option name="localTasksCounter" value="587" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -769,7 +769,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.16.0" />
     <MESSAGE value="v5.19.0 에러시 표시후 종료처리" />
     <MESSAGE value="v5.23.0 의도적 에러 확인하기" />
     <MESSAGE value="v5.19.0 코드 정리" />
@@ -794,7 +793,8 @@
     <MESSAGE value="v5.86.0 apiNotionPatchDayNowCount &gt; timeZone: &quot;Asia/Seoul&quot;" />
     <MESSAGE value="v5.89.0 쇼핑 스로틀링 강화" />
     <MESSAGE value="v5.93.0 findSelectorAndClick" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.93.0 findSelectorAndClick" />
+    <MESSAGE value="v5.99.0 플레이스 느림대응" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.99.0 플레이스 느림대응" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -26,6 +26,8 @@ export function WorkCompletedList() {
         <Text>워크키워드</Text>
         <Text>내아이피</Text>
         <Text>작업시간</Text>
+        <Text>변경시간</Text>
+        <Text>대기초수</Text>
         <Text>작성날짜</Text>
         <Text>에러내용</Text>
       </Box>
@@ -48,7 +50,9 @@ export function WorkCompletedList() {
           <Text>{v?.targetKeyword}</Text>
           <Text>{v?.workKeyword}</Text>
           <Text>{v?.myIp}</Text>
-          <Text>{v?.totalWorkingTime}초</Text>
+          <Text color={"red"}>{v?.totalWorkingTime}초</Text>
+          <Text color={"green"}>{v?.changeTime}초</Text>
+          <Text color={"blue"}>{v?.delayTime}초</Text>
           <Text>{v?.createdAt}</Text>
           <Text>{v?.errorMessage}</Text>
         </Box>

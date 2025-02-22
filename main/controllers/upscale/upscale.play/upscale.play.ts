@@ -149,6 +149,8 @@ async function nShoppingLogic4IsStart({
   if (!nShoppingLogic4.isStart) return { getCurrentIndex: 0 };
   const { shoppingData } = savedDataPlay({});
   const shoppingResult = allSettledData[currentIndex];
+  console.log("shoppingData 33333");
+  console.log(shoppingData);
   if (shoppingResult.status === "fulfilled") {
     await workedDataToFront({
       savedData: {
