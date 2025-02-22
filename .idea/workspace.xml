@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.63.0 한국시간 날짜로 변경완료">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.66.0 totalPlay &gt; allSettledResult &gt; nPlaceIsStart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront2.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -328,15 +328,7 @@
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
       <workItem from="1740117821358" duration="1988000" />
-      <workItem from="1740127837159" duration="17795000" />
-    </task>
-    <task id="LOCAL-00525" summary="findSelectorAndClick / 클릭후 3초대기 추가">
-      <option name="closed" value="true" />
-      <created>1739977565396</created>
-      <option name="number" value="00525" />
-      <option name="presentableId" value="LOCAL-00525" />
-      <option name="project" value="LOCAL" />
-      <updated>1739977565396</updated>
+      <workItem from="1740127837159" duration="19355000" />
     </task>
     <task id="LOCAL-00526" summary="waitSelectAndForLoggedInCheck">
       <option name="closed" value="true" />
@@ -722,7 +714,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740201636480</updated>
     </task>
-    <option name="localTasksCounter" value="574" />
+    <task id="LOCAL-00574" summary="v5.66.0 totalPlay &gt; allSettledResult &gt; nPlaceIsStart">
+      <option name="closed" value="true" />
+      <created>1740202245398</created>
+      <option name="number" value="00574" />
+      <option name="presentableId" value="LOCAL-00574" />
+      <option name="project" value="LOCAL" />
+      <updated>1740202245398</updated>
+    </task>
+    <option name="localTasksCounter" value="575" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -767,7 +767,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.6.9 clickRandomTab" />
     <MESSAGE value="v5.6.12 getNPlaceExcelAlignFlatTargetOne" />
     <MESSAGE value="v5.9.0 getNPlaceExcelAlignFlatTargetOne" />
     <MESSAGE value="v5.9.3 playNaverPlace" />
@@ -792,7 +791,8 @@
     <MESSAGE value="v5.53.0 nShoppingLogic4IsStart" />
     <MESSAGE value="v5.59.0 apiPatchDayNowCountForShopping" />
     <MESSAGE value="v5.63.0 한국시간 날짜로 변경완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.63.0 한국시간 날짜로 변경완료" />
+    <MESSAGE value="v5.66.0 totalPlay &gt; allSettledResult &gt; nPlaceIsStart" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.66.0 totalPlay &gt; allSettledResult &gt; nPlaceIsStart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

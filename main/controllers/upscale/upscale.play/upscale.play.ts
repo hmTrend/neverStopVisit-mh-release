@@ -4,7 +4,6 @@ import { internetConnectType } from "../../molecules/commons/internetConnectType
 import { playNaverShopping } from "../../templetes/naverShopping";
 import { UtilNetwork } from "../../atoms/util/util.network";
 import { monitorNetworkAndStart } from "../../atoms/network/network.local";
-import { DataUser, setDataUser } from "../../atoms/user/data.user";
 import { PatchNShoppingLogic4NowCountIncrement } from "../../../lib/apollo/n-shoppingLogic4-apollo";
 import { apiPatchDayNowCountForShopping } from "../../../api/notion/api.patchDayNowCountForShopping";
 import { playNaverPlace } from "../../templetes/naverPlace";
@@ -143,7 +142,7 @@ async function nShoppingLogic4IsStart({
   mainWindow,
   currentIndex,
 }) {
-  if (!nShoppingLogic4.isStart) return;
+  if (!nShoppingLogic4.isStart) return { getCurrentIndex: 0 };
   const { shoppingData } = savedDataPlay({});
   const shoppingResult = allSettledData[currentIndex];
   if (shoppingResult.status === "fulfilled") {
@@ -187,6 +186,8 @@ async function nPlaceIsStart({
 }) {
   if (!nPlace.isStart) return;
   const { placeData } = savedDataPlay({});
+  console.log("placeData 333344445555");
+  console.log(placeData);
   const placeResult = allSettledData[currentIndex];
   if (placeResult.status === "fulfilled") {
     await workedDataToFront({
@@ -243,27 +244,6 @@ async function networkPlay({
   } catch (e) {
     console.error(e.message);
     throw Error(`networkPlay > ${e.message}`);
-  }
-}
-
-function completedCountList() {
-  try {
-    const completedShoppingCountPatch = async ({
-      groupFid,
-      nvMid,
-      targetKeyword,
-    }) => {
-      const { data } = await PatchNShoppingLogic4NowCountIncrement({
-        groupFid,
-        nvMid,
-        targetKeyword,
-      });
-      await apiPatchDayNowCountForShopping({ data });
-    };
-    return { completedShoppingCountPatch };
-  } catch (e) {
-    console.error(e.message);
-    throw Error(`completedCountList > ${e.message}`);
   }
 }
 // upscalePlay();

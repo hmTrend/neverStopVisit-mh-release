@@ -33,15 +33,17 @@ export async function playNaverPlace({
       await getNPlaceExcelAlignFlatTargetOne({
         groupFid: dataGroupFid,
       });
-    const { placeNumber, keyword, delayTime, targetKeyword } = excelData;
-    setDataUser({
-      targetKeyword: keyword,
-      workKeyword: targetKeyword,
-      logicType: logicType,
-      workType: "NPlace",
-      nvMid: placeNumber,
-      delayTime,
+    savedDataPlay({
+      getPlaceData: {
+        cookie,
+        ...excelData,
+        workType: "NPlace",
+        logicType,
+        dataGroupFid,
+        fingerPrintGroupFid,
+      },
     });
+    const { placeNumber, keyword, delayTime, targetKeyword } = excelData;
     await playSelectLogic({
       logicType,
       cookies: cookie,
@@ -50,8 +52,8 @@ export async function playNaverPlace({
       delayTime,
     });
   } catch (e) {
-    console.error(`playNaverShopping > ${e.message}`);
-    throw Error(`playNaverShopping > ${e.message}`);
+    console.error(`playNaverPlace > ${e.message}`);
+    throw Error(`playNaverPlace > ${e.message}`);
   }
 }
 
