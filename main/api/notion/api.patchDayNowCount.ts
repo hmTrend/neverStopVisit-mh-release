@@ -42,6 +42,10 @@ export async function apiNotionPatchDayNowCount({
       .map((item) => item.targetKeyword)
       .join(", ");
 
+    const seoulDate = new Date(
+      new Date().toLocaleString("en-US", { timeZone: "Asia/Seoul" }),
+    );
+
     const inputData = {
       keyword: {
         title: [
@@ -99,7 +103,7 @@ export async function apiNotionPatchDayNowCount({
       },
       작업날짜: {
         date: {
-          start: new Date().toISOString(),
+          start: seoulDate.toISOString(),
         },
       },
     };
