@@ -9,6 +9,7 @@ import { PatchNShoppingLogic4NowCountIncrement } from "../../../lib/apollo/n-sho
 import { apiPatchDayNowCountForShopping } from "../../../api/notion/api.patchDayNowCountForShopping";
 import { playNaverPlace } from "../../templetes/naverPlace";
 import { workedDataToFront } from "../../molecules/ipc/workedDataToFront2";
+import { playDataInitial } from "../../atoms/user/data.play";
 
 export async function upscalePlay({
   internetType = "STATIC",
@@ -75,11 +76,13 @@ async function totalPlay({
   }
 
   function basketPlayList() {
+    const savedDataPlay = playDataInitial();
     try {
       const naverShoppingPlayList = async () =>
         await measureExecutionTime({
           playCallback: () =>
             playNaverShopping({
+              savedDataPlay,
               logicType: nShoppingLogic4.logicType,
               dataGroupFid: nShoppingLogic4.selectedGroup.groupId,
               fingerPrintGroupFid: nShoppingLogic4.fingerPrint.groupId,
@@ -90,6 +93,7 @@ async function totalPlay({
         measureExecutionTime({
           playCallback: () =>
             playNaverPlace({
+              savedDataPlay,
               logicType: nPlace.logicType,
               dataGroupFid: nPlace.selectedGroup.groupId,
               fingerPrintGroupFid: nPlace.fingerPrint.groupId,

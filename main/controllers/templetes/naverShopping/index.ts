@@ -2,6 +2,7 @@ import { playLogic1 } from "../../organisms/naverShopping/playLogic1";
 import { getFingerPrintTargetExcelOne } from "../../molecules/user/getFingerPrintTargetExcelOne";
 import { getNShoppingLogic4ExcelAlignFlatTargetOne } from "../../molecules/excel/getFingerPrintTargetExcelOne2";
 import { setDataUser } from "../../atoms/user/data.user";
+import { SavedDataPlayFunction } from "../../atoms/user/data.play";
 
 interface NShoppingLogic4ExcelListAlignFlatMapEntity {
   _id: string;
@@ -20,9 +21,15 @@ interface NShoppingLogic4ExcelListAlignFlatMapEntity {
 }
 
 export async function playNaverShopping({
+  savedDataPlay = undefined,
   logicType = "LOGIC1",
   dataGroupFid = "678069f3613a9e38805be50d",
   fingerPrintGroupFid = "673c1ccbdafecfc189ac92ff",
+}: {
+  savedDataPlay?: SavedDataPlayFunction;
+  logicType?: string;
+  dataGroupFid?: string;
+  fingerPrintGroupFid?: string;
 } = {}) {
   try {
     const { cookie } = await getFingerPrintTargetExcelOne({
@@ -32,17 +39,17 @@ export async function playNaverShopping({
       await getNShoppingLogic4ExcelAlignFlatTargetOne({
         groupFid: dataGroupFid,
       });
-    const { nvMid, workKeyword, delayTime, targetKeyword } = excelData;
-    setDataUser({
-      targetKeyword,
-      workKeyword,
-      logicType: logicType,
-      workType: "NShoppingLogic4",
-      nvMid,
-      delayTime,
+    savedDataPlay({
+      getShoppingData: {
+        cookie,
+        ...excelData,
+        workType: "NShoppingLogic4",
+        logicType,
+        dataGroupFid,
+        fingerPrintGroupFid,
+      },
     });
-    console.log("excelData 3333");
-    console.log(excelData);
+    const { nvMid, workKeyword, delayTime, targetKeyword } = excelData;
     await playSelectLogic({
       logicType,
       cookies: cookie,

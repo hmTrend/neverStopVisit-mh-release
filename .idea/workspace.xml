@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.23.0 쇼핑 / 플레이스 멀티 동작">
-      <change afterPath="$PROJECT_DIR$/main/controllers/atoms/user/data.play.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-02-14__3_47.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-02-14_오후_3_47/shelved.patch" beforeDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.26.0 playDataInitial / 전역 변수 설정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/user/data.user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/user/data.user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/workedDataToFront2.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/user/data.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/user/data.play.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/const/constVar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/const/constVar.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,15 +330,7 @@
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
       <workItem from="1740117821358" duration="1988000" />
-      <workItem from="1740127837159" duration="6100000" />
-    </task>
-    <task id="LOCAL-00514" summary="findSelectorAndClick">
-      <option name="closed" value="true" />
-      <created>1739929192231</created>
-      <option name="number" value="00514" />
-      <option name="presentableId" value="LOCAL-00514" />
-      <option name="project" value="LOCAL" />
-      <updated>1739929192231</updated>
+      <workItem from="1740127837159" duration="7206000" />
     </task>
     <task id="LOCAL-00515" summary="switchToOpenedTab">
       <option name="closed" value="true" />
@@ -728,7 +716,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740125263698</updated>
     </task>
-    <option name="localTasksCounter" value="563" />
+    <task id="LOCAL-00563" summary="v5.26.0 playDataInitial / 전역 변수 설정">
+      <option name="closed" value="true" />
+      <created>1740187337856</created>
+      <option name="number" value="00563" />
+      <option name="presentableId" value="LOCAL-00563" />
+      <option name="project" value="LOCAL" />
+      <updated>1740187337856</updated>
+    </task>
+    <option name="localTasksCounter" value="564" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -773,7 +769,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="4.3.9 / GetFingerPrintTargetExcelOne / getNShoppingLogic4ExcelAlignFlatTargetOne&#10;&#10;5번 다시가져오기" />
     <MESSAGE value="4.3.9" />
     <MESSAGE value="v4.3.16 로직선택하기" />
     <MESSAGE value="v4.3.19 타겟 워크 키워드 나누기" />
@@ -798,7 +793,8 @@
     <MESSAGE value="v5.23.0 의도적 에러 확인하기" />
     <MESSAGE value="v5.19.0 코드 정리" />
     <MESSAGE value="v5.23.0 쇼핑 / 플레이스 멀티 동작" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.23.0 쇼핑 / 플레이스 멀티 동작" />
+    <MESSAGE value="v5.26.0 playDataInitial / 전역 변수 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.26.0 playDataInitial / 전역 변수 설정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

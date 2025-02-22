@@ -20,6 +20,7 @@ interface NPlaceExcelListAlignFlatMapEntity {
 }
 
 export async function playNaverPlace({
+  savedDataPlay = undefined,
   logicType = "LOGIC1",
   dataGroupFid = "67909dda7e8fd003562bb4e4",
   fingerPrintGroupFid = "673c1ccbdafecfc189ac92ff",

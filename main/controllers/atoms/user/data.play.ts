@@ -22,7 +22,7 @@ interface SavedDataPlayReturn {
 }
 
 // 내부 함수의 타입 정의
-type SavedDataPlayFunction = (
+export type SavedDataPlayFunction = (
   params: SavedDataPlayParams,
 ) => SavedDataPlayReturn;
 
@@ -33,7 +33,6 @@ interface PlayDataInitialFunction {
 export const playDataInitial: PlayDataInitialFunction = () => {
   let shoppingData: ShoppingData = {};
   let placeData: PlaceData = {};
-  let oksk;
 
   return function savedDataPlay({
     getShoppingData = {},
@@ -41,7 +40,6 @@ export const playDataInitial: PlayDataInitialFunction = () => {
   }: SavedDataPlayParams): SavedDataPlayReturn {
     shoppingData = { ...shoppingData, ...getShoppingData };
     placeData = { ...placeData, ...getPlaceData };
-    oksk = { ...oksk, ...getPlaceData };
     return { shoppingData, placeData };
   };
 };
