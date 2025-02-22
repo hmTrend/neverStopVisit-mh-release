@@ -60,9 +60,12 @@ export async function clickTargetPlaceOrGoToNextStep({
 async function clickTargetPlaceNextMorePage({ placeNumber, page }) {
   try {
     const selector = `a[href*="/${placeNumber}"][role="button"]:not(.place_thumb)`;
+    await page.waitForSelector(selector);
     const link = await page.$(selector);
     if (!link) {
-      throw new Error(`Link with ID ${placeNumber} not found`);
+      throw new Error(
+        `clickTargetPlaceNextMorePage > Link with ID ${placeNumber} not found`,
+      );
     }
 
     // 요소가 화면에 보이도록 스크롤
@@ -84,7 +87,7 @@ async function clickTargetPlaceNextMorePage({ placeNumber, page }) {
       `Error while trying to click link with ID ${placeNumber}:`,
       error,
     );
-    throw error;
+    throw Error(`clickTargetPlaceNextMorePage > ${error.message}`);
   }
 }
 

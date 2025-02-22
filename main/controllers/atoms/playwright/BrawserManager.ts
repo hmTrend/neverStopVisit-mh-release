@@ -214,7 +214,7 @@ export class BrowserManager {
     options?: TypeTextOptions;
   } = {}): Promise<void> {
     try {
-      await this.page.waitForSelector(selector);
+      await this.page.waitForSelector(selector, { timeout: 60 * 1000 });
       if (options.clearFirst) {
         await this.page.fill(selector, "");
       }
