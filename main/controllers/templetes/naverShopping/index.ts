@@ -1,7 +1,6 @@
 import { playLogic1 } from "../../organisms/naverShopping/playLogic1";
 import { getFingerPrintTargetExcelOne } from "../../molecules/user/getFingerPrintTargetExcelOne";
 import { getNShoppingLogic4ExcelAlignFlatTargetOne } from "../../molecules/excel/getFingerPrintTargetExcelOne2";
-import { setDataUser } from "../../atoms/user/data.user";
 import { SavedDataPlayFunction } from "../../atoms/user/data.play";
 
 interface NShoppingLogic4ExcelListAlignFlatMapEntity {

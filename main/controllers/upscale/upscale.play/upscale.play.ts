@@ -9,7 +9,11 @@ import { PatchNShoppingLogic4NowCountIncrement } from "../../../lib/apollo/n-sho
 import { apiPatchDayNowCountForShopping } from "../../../api/notion/api.patchDayNowCountForShopping";
 import { playNaverPlace } from "../../templetes/naverPlace";
 import { workedDataToFront } from "../../molecules/ipc/workedDataToFront2";
-import { playDataInitial } from "../../atoms/user/data.play";
+import {
+  playDataInitial,
+  SavedDataPlayFunction,
+} from "../../atoms/user/data.play";
+import { UtilText } from "../../atoms/util/util.text";
 
 export async function upscalePlay({
   internetType = "STATIC",
@@ -22,25 +26,15 @@ export async function upscalePlay({
 
   while (isRunning) {
     try {
+      const savedDataPlay = playDataInitial();
       await totalPlay({
         playTime,
         nShoppingLogic4,
         nPlace,
         internetType,
         mainWindow,
+        savedDataPlay,
       });
-      // await workedDataToFront({
-      //   mainWindow,
-      //   groupFid: nShoppingLogic4.selectedGroup.groupId,
-      //   callback: () =>
-      //     totalPlay({ playTime, nShoppingLogic4, nPlace, internetType }),
-      //   countPatchCallback: async ({ groupFid, nvMid, targetKeyword }) =>
-      //     await completedCountList().completedShoppingCountPatch({
-      //       groupFid,
-      //       nvMid,
-      //       targetKeyword,
-      //     }),
-      // });
     } catch (error) {
       console.error(`naverShopping > ${error.message}`);
       await wait(10 * 1000);
@@ -56,27 +50,21 @@ async function totalPlay({
   nPlace,
   nShoppingLogic4,
   mainWindow,
+  savedDataPlay,
 }) {
   try {
     await networkPlay({ internetType, playTime });
     const allSettledData = await Promise.allSettled(basketPlayList());
-    // await measureExecutionTime({
-    //   playCallback: () =>
-    //     playNaverShopping({
-    //       logicType: nShoppingLogic4.logicType,
-    //       dataGroupFid: nShoppingLogic4.selectedGroup.groupId,
-    //       fingerPrintGroupFid: nShoppingLogic4.fingerPrint.groupId,
-    //     }),
-    // });
     console.log("allSettledData 33333");
     console.log(allSettledData);
+    allSettledResult({ allSettledData, nShoppingLogic4, savedDataPlay });
   } catch (e) {
     console.error(`totalPlay > ${e.message}`);
     throw Error(`totalPlay > ${e.message}`);
   }
 
   function basketPlayList() {
-    const savedDataPlay = playDataInitial();
+    savedDataPlay({ getMainWindow: mainWindow });
     try {
       const naverShoppingPlayList = async () =>
         await measureExecutionTime({
@@ -100,16 +88,8 @@ async function totalPlay({
             }),
         });
       let playList = [];
-      console.log("nShoppingLogic4 > mainWindow 555555");
-      console.log(mainWindow);
       if (nShoppingLogic4.isStart) {
-        playList.push(
-          workedDataToFront({
-            mainWindow,
-            callback: naverShoppingPlayList,
-            workedData: DataUser,
-          }),
-        );
+        playList.push(naverShoppingPlayList());
       }
       if (nPlace.isStart) {
         playList.push(naverPlacePlayList());
@@ -118,6 +98,48 @@ async function totalPlay({
     } catch (e) {
       console.error(e.message);
       throw Error(`basketPlayList > ${e.message}`);
+    }
+  }
+
+  function allSettledResult(
+    nShoppingLogic4,
+    allSettledData,
+    savedDataPlay: SavedDataPlayFunction,
+  ) {
+    let currentIndex = 0;
+    if (nShoppingLogic4.isStart) {
+      const { shoppingData } = savedDataPlay();
+      const shoppingResult = allSettledData[currentIndex];
+      if (shoppingResult.status === "fulfilled") {
+        workedDataToFront({ savedData: shoppingData, mainWindow });
+      } else if (shoppingResult.status === "rejected") {
+        console.error("쇼핑 로직 에러:", shoppingResult.reason);
+        workedDataToFront({
+          savedData: {
+            ...shoppingData,
+            errorMessage: UtilText.errorMessageTrans(shoppingResult.reason),
+          },
+          mainWindow,
+        });
+      }
+      await savedData.countPatchCallback({
+        groupFid: savedData.groupFid,
+        nvMid: savedData.nvMid,
+        targetKeyword: savedData.targetKeyword,
+      });
+      currentIndex++;
+    }
+    if (nPlace.isStart) {
+      // const placeResult = allSettledData[currentIndex];
+      // if (placeResult.status === "fulfilled") {
+      //   // 플레이스 로직 성공 처리
+      //   nextPlaceFunction();
+      // } else if (placeResult.status === "rejected") {
+      //   // 플레이스 로직 실패 처리
+      //   console.error("플레이스 로직 에러:", placeResult.reason);
+      //   // 또는 에러 처리 함수 호출
+      //   handlePlaceError(placeResult.reason);
+      // }
     }
   }
 }

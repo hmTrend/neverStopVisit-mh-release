@@ -13,17 +13,19 @@ interface PlaceData {
 interface SavedDataPlayParams {
   getShoppingData?: Partial<ShoppingData>;
   getPlaceData?: Partial<PlaceData>;
+  getMainWindow?: any;
 }
 
 // 반환값 타입 정의
 interface SavedDataPlayReturn {
-  shoppingData: ShoppingData;
-  placeData: PlaceData;
+  shoppingData?: ShoppingData;
+  placeData?: PlaceData;
+  mainWindow?: any;
 }
 
 // 내부 함수의 타입 정의
 export type SavedDataPlayFunction = (
-  params: SavedDataPlayParams,
+  params?: SavedDataPlayParams,
 ) => SavedDataPlayReturn;
 
 interface PlayDataInitialFunction {
@@ -33,13 +35,22 @@ interface PlayDataInitialFunction {
 export const playDataInitial: PlayDataInitialFunction = () => {
   let shoppingData: ShoppingData = {};
   let placeData: PlaceData = {};
+  let mainWindow;
 
   return function savedDataPlay({
-    getShoppingData = {},
-    getPlaceData = {},
+    getShoppingData,
+    getPlaceData,
+    getMainWindow,
   }: SavedDataPlayParams): SavedDataPlayReturn {
-    shoppingData = { ...shoppingData, ...getShoppingData };
-    placeData = { ...placeData, ...getPlaceData };
-    return { shoppingData, placeData };
+    if (getShoppingData) {
+      shoppingData = { ...shoppingData, ...getShoppingData };
+    }
+    if (getPlaceData) {
+      placeData = { ...placeData, ...getPlaceData };
+    }
+    if (getMainWindow) {
+      mainWindow = getMainWindow;
+    }
+    return { shoppingData, placeData, mainWindow };
   };
 };
