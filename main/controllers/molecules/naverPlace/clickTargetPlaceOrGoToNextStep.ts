@@ -7,7 +7,7 @@ export async function clickTargetPlaceOrGoToNextStep({
   isTest = false,
   page = undefined,
   browserManager = undefined,
-  placeNumber = "43229792",
+  placeNumber = "1918144108",
 }: {
   isTest?: boolean;
   page?: Page;
@@ -16,10 +16,10 @@ export async function clickTargetPlaceOrGoToNextStep({
 } = {}) {
   if (isTest) {
     const { getPage, getBrowserManager } = await gotoPage({
-      is3gMode: false,
-      cpuThrottlingRate: 0,
-      url: "https://m.search.naver.com/search.naver?sm=mtb_hty.top&where=m&ssc=tab.m.all&oquery=&tqi=iJNbTlqVIOhssniJdF8ssssssSo-381109&query=%EA%B0%95%EB%82%A8%EB%A7%9B%EC%A7%91",
-      // 강남맛집 모바일
+      is3gMode: true,
+      cpuThrottlingRate: 20,
+      url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%ED%95%A9%EC%A0%95%EB%84%A4%EC%9D%BC",
+      // 합정네일 모바일
     });
     browserManager = getBrowserManager;
     page = getPage;

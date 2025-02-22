@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.79.0 clickTargetPlaceOrGoToNextStep &gt; 에러로그처리강화">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clickTargetPlaceOrGoToNextStep.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clickTargetPlaceOrGoToNextStep.ts" afterDir="false" />
-    </list>
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.86.0 apiNotionPatchDayNowCount &gt; timeZone: &quot;Asia/Seoul&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,7 +158,21 @@
       <recent name="$PROJECT_DIR$/main/controllers/molecules/commons" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.n-place-apollo.ts">
+  <component name="RunManager" selected="TypeScript.clickTargetPlaceOrGoToNextStep.ts">
+    <configuration name="clickTargetPlaceOrGoToNextStep.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisitHit" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/molecules/naverPlace" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clickTargetPlaceOrGoToNextStep.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
+      <method v="2" />
+    </configuration>
     <configuration name="getFingerPrintTargetExcelOne22.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -215,26 +226,13 @@
       <option name="tsnodePackage" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
       <method v="2" />
     </configuration>
-    <configuration name="playLogic1.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/controllers/organisms/naverPlace" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic1.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.clickTargetPlaceOrGoToNextStep.ts" />
         <item itemvalue="TypeScript.n-place-apollo.ts" />
         <item itemvalue="TypeScript.index.ts" />
         <item itemvalue="TypeScript.lastActionRandomClick.ts" />
         <item itemvalue="TypeScript.getFingerPrintTargetExcelOne22.ts" />
-        <item itemvalue="TypeScript.playLogic1.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -329,23 +327,7 @@
       <workItem from="1740030146378" duration="5746000" />
       <workItem from="1740045300502" duration="2248000" />
       <workItem from="1740117821358" duration="1988000" />
-      <workItem from="1740127837159" duration="24393000" />
-    </task>
-    <task id="LOCAL-00531" summary="4.3.9 / GetFingerPrintTargetExcelOne / getNShoppingLogic4ExcelAlignFlatTargetOne&#10;&#10;5번 다시가져오기">
-      <option name="closed" value="true" />
-      <created>1740018598190</created>
-      <option name="number" value="00531" />
-      <option name="presentableId" value="LOCAL-00531" />
-      <option name="project" value="LOCAL" />
-      <updated>1740018598190</updated>
-    </task>
-    <task id="LOCAL-00532" summary="4.3.9">
-      <option name="closed" value="true" />
-      <created>1740020380371</created>
-      <option name="number" value="00532" />
-      <option name="presentableId" value="LOCAL-00532" />
-      <option name="project" value="LOCAL" />
-      <updated>1740020380371</updated>
+      <workItem from="1740127837159" duration="24714000" />
     </task>
     <task id="LOCAL-00533" summary="v4.3.16 로직선택하기">
       <option name="closed" value="true" />
@@ -723,7 +705,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740209409651</updated>
     </task>
-    <option name="localTasksCounter" value="580" />
+    <task id="LOCAL-00580" summary="v5.83.0 clickTargetPlaceNextMorePage &gt;     await page.waitForSelector(selector, { timeout: 60 * 1000 });">
+      <option name="closed" value="true" />
+      <created>1740209551480</created>
+      <option name="number" value="00580" />
+      <option name="presentableId" value="LOCAL-00580" />
+      <option name="project" value="LOCAL" />
+      <updated>1740209551480</updated>
+    </task>
+    <task id="LOCAL-00581" summary="v5.86.0 apiNotionPatchDayNowCount &gt; timeZone: &quot;Asia/Seoul&quot;">
+      <option name="closed" value="true" />
+      <created>1740209711107</created>
+      <option name="number" value="00581" />
+      <option name="presentableId" value="LOCAL-00581" />
+      <option name="project" value="LOCAL" />
+      <updated>1740209711107</updated>
+    </task>
+    <option name="localTasksCounter" value="582" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -768,8 +766,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.9.6 await wait(delayTime * 1000)" />
-    <MESSAGE value="v5.13.0 playNaverPlace" />
     <MESSAGE value="v5.13.3 allSettledData" />
     <MESSAGE value="v5.13.6 upscalePlay" />
     <MESSAGE value="v5.16.0" />
@@ -793,7 +789,9 @@
     <MESSAGE value="v5.73.0 naverPlacePlayList &gt; savedDataPlay" />
     <MESSAGE value="v5.76.0 PatchNPlaceDayNowCount" />
     <MESSAGE value="v5.79.0 clickTargetPlaceOrGoToNextStep &gt; 에러로그처리강화" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.79.0 clickTargetPlaceOrGoToNextStep &gt; 에러로그처리강화" />
+    <MESSAGE value="v5.83.0 clickTargetPlaceNextMorePage &gt;     await page.waitForSelector(selector, { timeout: 60 * 1000 });" />
+    <MESSAGE value="v5.86.0 apiNotionPatchDayNowCount &gt; timeZone: &quot;Asia/Seoul&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.86.0 apiNotionPatchDayNowCount &gt; timeZone: &quot;Asia/Seoul&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -22,7 +22,7 @@ export async function playLogic1({
   try {
     const { getPage, getBrowserManager } = await gotoPage({
       is3gMode: true,
-      cpuThrottlingRate: 8,
+      cpuThrottlingRate: 4,
       url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=",
       contextCallback: async (browser) =>
         BrowserManager.createMobileContext(
