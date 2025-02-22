@@ -116,38 +116,14 @@ async function totalPlay({
     savedDataPlay: SavedDataPlayFunction,
   ) {
     let currentIndex = 0;
-    if (nShoppingLogic4.isStart) {
-      const { shoppingData } = savedDataPlay({});
-      const shoppingResult = allSettledData[currentIndex];
-      if (shoppingResult.status === "fulfilled") {
-        await workedDataToFront({
-          savedData: {
-            ...nShoppingLogic4,
-            ...shoppingData,
-            createdAt: UtilDate.getCurrentDate(),
-            errorMessage: "",
-          },
-          mainWindow,
-        });
-      } else if (shoppingResult.status === "rejected") {
-        console.error("쇼핑 로직 에러:", shoppingResult.reason);
-        await workedDataToFront({
-          savedData: {
-            ...nShoppingLogic4,
-            ...shoppingData,
-            createdAt: UtilDate.getCurrentDate(),
-            errorMessage: UtilText.errorMessageTrans(shoppingResult.reason),
-          },
-          mainWindow,
-        });
-      }
-      await PatchNShoppingLogic4NowCountIncrement({
-        groupFid: shoppingData.groupFid,
-        nvMid: shoppingData.nvMid,
-        targetKeyword: shoppingData.targetKeyword,
-      });
-      currentIndex++;
-    }
+    const { getCurrentIndex } = await nShoppingLogic4IsStart({
+      nShoppingLogic4,
+      allSettledData,
+      mainWindow,
+      currentIndex,
+      savedDataPlay,
+    });
+    currentIndex = getCurrentIndex;
     if (nPlace.isStart) {
       // const placeResult = allSettledData[currentIndex];
       // if (placeResult.status === "fulfilled") {
@@ -161,6 +137,48 @@ async function totalPlay({
       // }
     }
   }
+}
+
+async function nShoppingLogic4IsStart({
+  nShoppingLogic4,
+  savedDataPlay,
+  allSettledData,
+  mainWindow,
+  currentIndex,
+}) {
+  if (nShoppingLogic4.isStart) {
+    const { shoppingData } = savedDataPlay({});
+    const shoppingResult = allSettledData[currentIndex];
+    if (shoppingResult.status === "fulfilled") {
+      await workedDataToFront({
+        savedData: {
+          ...nShoppingLogic4,
+          ...shoppingData,
+          createdAt: UtilDate.getCurrentDate(),
+          errorMessage: "",
+        },
+        mainWindow,
+      });
+    } else if (shoppingResult.status === "rejected") {
+      console.error(`nShoppingLogic4IsStart > ${shoppingResult.reason}`);
+      await workedDataToFront({
+        savedData: {
+          ...nShoppingLogic4,
+          ...shoppingData,
+          createdAt: UtilDate.getCurrentDate(),
+          errorMessage: UtilText.errorMessageTrans(shoppingResult.reason),
+        },
+        mainWindow,
+      });
+    }
+    await PatchNShoppingLogic4NowCountIncrement({
+      groupFid: shoppingData.dataGroupFid,
+      nvMid: shoppingData.nvMid,
+      targetKeyword: shoppingData.targetKeyword,
+    });
+    currentIndex++;
+  }
+  return { getCurrentIndex: currentIndex };
 }
 
 let globalExecute = null;
