@@ -6,6 +6,8 @@ export const globalBrowsers = {
   nShoppingLogic4_nvMid: [],
 };
 
+export const globalMainWindow = { mainWindow: null };
+
 export const CookieLoggedIn = {
   cookie: [
     {

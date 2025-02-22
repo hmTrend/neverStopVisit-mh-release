@@ -1,12 +1,9 @@
 import { DataUser, dataUserInitialize } from "../../atoms/user/data.user";
 import { UtilDate } from "../../atoms/util/util.date";
+import { globalMainWindow } from "../../../lib/const/constVar";
 
 interface WorkedDataToFrontMsg {
-  mainWindow?: {
-    webContents: {
-      send: (address: string, data: any) => void;
-    };
-  };
+  mainWindow?: any;
   errorMessage?: string;
   workType?: string;
   groupFid?: string;
@@ -17,7 +14,7 @@ interface WorkedDataToFrontMsg {
   targetKeyword?: string;
   workKeyword?: string;
   totalWorkingTime?: number;
-  callback?: () => Promise<void>;
+  callback?: any;
   countPatchCallback?: (params: {
     groupFid: string;
     nvMid: string;
@@ -27,29 +24,25 @@ interface WorkedDataToFrontMsg {
 }
 
 interface WorkedDataToFrontFunction {
-  workedDataToFront: (workedData?: WorkedDataToFrontMsg) => Promise<void>;
+  workedDataToFront: ({ mainWindow, callback, workedData }) => Promise<void>;
   errorMessageTrans: (params: { errMessage: string }) => string;
 }
 
 export const workedDataToFront: WorkedDataToFrontFunction["workedDataToFront"] =
-  async (workedData) => {
+  async ({ mainWindow, callback, workedData }) => {
+    console.log("workedData 3333");
+    console.log(workedData);
     try {
       dataUserInitialize();
-      await workedData.callback();
-      workedData.mainWindow.webContents.send(
-        workedData.sendAddress,
-        workedData,
-      );
+      await callback();
+      mainWindow.webContents.send(workedData.sendAddress, workedData);
       await workedData.countPatchCallback({
         groupFid: workedData.groupFid,
         nvMid: workedData.nvMid,
         targetKeyword: workedData.targetKeyword,
       });
     } catch (e) {
-      workedData.mainWindow.webContents.send(
-        workedData.sendAddress,
-        workedData,
-      );
+      mainWindow.webContents.send(workedData.sendAddress, workedData);
       console.error(`workedDataToFront > ${e.message}`);
       throw Error(`workedDataToFront > ${e.message}`);
     }

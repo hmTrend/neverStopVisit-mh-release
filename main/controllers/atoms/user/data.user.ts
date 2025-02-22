@@ -9,9 +9,9 @@ export const DataUser = {
   nvMid: "",
   delayTime: 0,
   totalWorkingTime: 0,
-  createdAt: new Date(),
+  createdAt: "",
   sendAddress: "error-to-front-result",
-  callback: "undefined",
+  callback: undefined,
   groupFid: "undefined",
 };
 
@@ -27,9 +27,9 @@ export function dataUserInitialize() {
   DataUser.nvMid = "";
   DataUser.delayTime = 0;
   DataUser.totalWorkingTime = 0;
-  DataUser.createdAt = new Date();
+  DataUser.createdAt = "";
   DataUser.sendAddress = "error-to-front-result";
-  DataUser.callback = "undefined";
+  DataUser.callback = undefined;
   DataUser.groupFid = "";
 }
 
@@ -71,7 +71,7 @@ export function setDataUser({
   if (groupFid !== undefined) DataUser.groupFid = groupFid;
   if (totalWorkingTime !== undefined)
     DataUser.totalWorkingTime = totalWorkingTime;
-  DataUser.createdAt = new Date();
+  DataUser.createdAt = "";
   DataUser.sendAddress = "error-to-front-result";
   DataUser.callback = "undefined";
 }

@@ -4,11 +4,11 @@ import { internetConnectType } from "../../molecules/commons/internetConnectType
 import { playNaverShopping } from "../../templetes/naverShopping";
 import { UtilNetwork } from "../../atoms/util/util.network";
 import { monitorNetworkAndStart } from "../../atoms/network/network.local";
-import { workedDataToFront } from "../../molecules/ipc/workedDataToFront";
 import { DataUser, setDataUser } from "../../atoms/user/data.user";
 import { PatchNShoppingLogic4NowCountIncrement } from "../../../lib/apollo/n-shoppingLogic4-apollo";
 import { apiPatchDayNowCountForShopping } from "../../../api/notion/api.patchDayNowCountForShopping";
 import { playNaverPlace } from "../../templetes/naverPlace";
+import { workedDataToFront } from "../../molecules/ipc/workedDataToFront2";
 
 export async function upscalePlay({
   internetType = "STATIC",
@@ -76,8 +76,8 @@ async function totalPlay({
 
   function basketPlayList() {
     try {
-      const naverShoppingPlayList = () =>
-        measureExecutionTime({
+      const naverShoppingPlayList = async () =>
+        await measureExecutionTime({
           playCallback: () =>
             playNaverShopping({
               logicType: nShoppingLogic4.logicType,
@@ -85,6 +85,7 @@ async function totalPlay({
               fingerPrintGroupFid: nShoppingLogic4.fingerPrint.groupId,
             }),
         });
+
       const naverPlacePlayList = () =>
         measureExecutionTime({
           playCallback: () =>
@@ -95,10 +96,16 @@ async function totalPlay({
             }),
         });
       let playList = [];
-      console.log("nShoppingLogic4 555555");
-      console.log(nShoppingLogic4);
+      console.log("nShoppingLogic4 > mainWindow 555555");
+      console.log(mainWindow);
       if (nShoppingLogic4.isStart) {
-        playList.push(naverShoppingPlayList());
+        playList.push(
+          workedDataToFront({
+            mainWindow,
+            callback: naverShoppingPlayList,
+            workedData: DataUser,
+          }),
+        );
       }
       if (nPlace.isStart) {
         playList.push(naverPlacePlayList());

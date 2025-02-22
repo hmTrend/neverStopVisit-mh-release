@@ -7,6 +7,7 @@ import { closeAllBrowsers } from "../../services/commons/PuppeteerEngine/Browser
 import wait from "waait";
 import { NShoppingLogic4 } from "../../services/nShoppingLogic4";
 import { upscalePlay } from "../../controllers/upscale/upscale.play/upscale.play";
+import { globalMainWindow } from "../../lib/const/constVar";
 
 export const startProgramIpc = ({ mainWindow }) => {
   let currentNShoppingLogic4Instance = null;
@@ -17,7 +18,7 @@ export const startProgramIpc = ({ mainWindow }) => {
     try {
       const data = JSON.parse(args);
       const { common, nShoppingLogic4, nPlace } = data;
-
+      globalMainWindow.mainWindow = mainWindow;
       await upscalePlay({
         internetType: common.ip,
         playTime: common.ipChangeCount,
