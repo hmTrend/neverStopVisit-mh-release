@@ -158,8 +158,8 @@ async function nShoppingLogic4IsStart({
   if (!nShoppingLogic4.isStart) return { getCurrentIndex: 0 };
   const { shoppingData } = savedDataPlay({});
   const shoppingResult = allSettledData[currentIndex];
-  console.log("shoppingData 33333");
-  console.log(shoppingData);
+  console.log("shoppingResult 33333");
+  console.log(shoppingResult);
   if (shoppingResult.status === "fulfilled") {
     await workedDataToFront({
       savedData: {
@@ -171,13 +171,14 @@ async function nShoppingLogic4IsStart({
       mainWindow,
     });
   } else if (shoppingResult.status === "rejected") {
-    console.error(`nShoppingLogic4IsStart > ${shoppingResult.reason}`);
     await workedDataToFront({
       savedData: {
         ...nShoppingLogic4,
         ...shoppingData,
         createdAt: UtilDate.getCurrentDate(),
-        errorMessage: UtilText.errorMessageTrans(shoppingResult.reason),
+        errorMessage: UtilText.errorMessageTrans({
+          errMessage: shoppingResult.reason.message,
+        }),
       },
       mainWindow,
     });
