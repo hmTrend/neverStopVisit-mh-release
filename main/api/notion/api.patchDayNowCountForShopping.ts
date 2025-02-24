@@ -58,6 +58,10 @@ export async function apiPatchDayNowCountForShopping({
     const seoulDate = new Date();
     seoulDate.setHours(seoulDate.getHours() + 9); // UTC+9 (한국 시간)
 
+    const markDate = new Date(
+      new Date().toLocaleString("en-US", { timeZone: "Asia/Seoul" }),
+    );
+
     const inputData = {
       targetKeyword: {
         title: [
@@ -115,12 +119,12 @@ export async function apiPatchDayNowCountForShopping({
       },
       작업날짜: {
         date: {
-          start: seoulDate.toISOString(),
+          start: markDate.toISOString(),
         },
       },
     };
     {
-      const inputDate = inputData["작업날짜"].date.start.split("T")[0];
+      const queryDate = seoulDate.toISOString().split("T")[0];
 
       const response = await notion.databases.query({
         database_id: DATABASE_ID,
@@ -129,7 +133,7 @@ export async function apiPatchDayNowCountForShopping({
             {
               property: "작업날짜",
               date: {
-                equals: inputDate,
+                equals: queryDate,
               },
             },
             { property: "groupFid", rich_text: { equals: data.groupFid } },

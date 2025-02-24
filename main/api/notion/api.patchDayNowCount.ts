@@ -45,6 +45,10 @@ export async function apiNotionPatchDayNowCount({
     const seoulDate = new Date();
     seoulDate.setHours(seoulDate.getHours() + 9); // UTC+9 (한국 시간)
 
+    const markDate = new Date(
+      new Date().toLocaleString("en-US", { timeZone: "Asia/Seoul" }),
+    );
+
     const inputData = {
       keyword: {
         title: [
@@ -102,18 +106,20 @@ export async function apiNotionPatchDayNowCount({
       },
       작업날짜: {
         date: {
-          start: seoulDate.toISOString(),
+          start: markDate.toISOString(),
         },
       },
     };
     {
+      const queryDate = seoulDate.toISOString().split("T")[0];
+
       const response = await notion.databases.query({
         database_id: DATABASE_ID,
         filter: {
           and: [
             {
               property: "작업날짜",
-              date: { equals: inputData["작업날짜"].date.start.split("T")[0] },
+              date: { equals: queryDate },
             },
             { property: "groupFid", rich_text: { equals: data.groupFid } },
             {
