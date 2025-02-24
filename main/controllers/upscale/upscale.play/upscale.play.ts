@@ -62,15 +62,11 @@ async function totalPlay({
           savedDataPlayCB: savedDataPlay,
         }),
     });
-    console.log("resultChangeSeconds 333333");
-    console.log(resultChangeSeconds);
     savedDataPlay({
       getShoppingData: { changeTime: resultChangeSeconds },
       getPlaceData: { changeTime: resultChangeSeconds },
     });
     const allSettledData = await Promise.allSettled(basketPlayList());
-    console.log("allSettledData 33333");
-    console.log(allSettledData);
     await allSettledResult(allSettledData, nShoppingLogic4, savedDataPlay);
   } catch (e) {
     console.error(`totalPlay > ${e.message}`);

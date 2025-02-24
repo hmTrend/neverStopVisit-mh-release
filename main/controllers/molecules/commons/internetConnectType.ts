@@ -1,10 +1,10 @@
 import { TetheringMode } from "../../atoms/network/network.tethering";
-import { networkRouterEdu } from "../../atoms/network/network.router.edu.puppeteer";
 import {
   changeMacAddress,
   getMacAddress,
 } from "../../atoms/network/network.local";
 import { UtilNetwork } from "../../atoms/util/util.network";
+import { networkRouterEdu } from "../../atoms/network/network.router.edu";
 
 export async function internetConnectType({
   internetType = "STATIC",
