@@ -43,8 +43,6 @@ export async function playLogic1({
       clickSelector: 'button[data-shp-area="scb.search"]',
       options: { clearFirst: true, delay: 300 },
     });
-    console.log("ossk error log 33333");
-    throw Error("this is my ERROR");
     await comparePricesFindAllProducts({
       nvMid,
       maxPages: 1,
