@@ -35,11 +35,7 @@ export const GetFingerPrintTargetExcelOne = async ({ groupFid }) => {
   });
   if (error) {
     console.error(error.message);
-    return {
-      data,
-      message: "ERR > GetFingerPrintTargetExcelOne ",
-      error: error.message,
-    };
+    throw Error(`ERR > GetFingerPrintTargetExcelOne > ${error.message}`);
   }
   return {
     data: data.getFingerPrintTargetExcelOne.data,
@@ -88,11 +84,7 @@ export const FetchFingerPrintTargetExcelOne = async ({
   });
   if (errors) {
     console.error(errors[0].message);
-    return {
-      data: "",
-      message: "ERR > FetchFingerPrintTargetExcelOne ",
-      error: errors[0].message,
-    };
+    throw Error(`ERR > FetchFingerPrintTargetExcelOne > ${errors[0].message}`);
   }
   return {
     data: data.fetchFingerPrintTargetExcelOne.data,
@@ -138,11 +130,7 @@ export const GetFingerPrintTargetExcelOneFromId = async ({ _id }) => {
   });
   if (error) {
     console.error(error.message);
-    return {
-      data: "",
-      message: "ERR > GetFingerPrintTargetExcelOneFromId ",
-      error: error.message,
-    };
+    throw Error(`ERR > GetFingerPrintTargetExcelOneFromId > ${error.message}`);
   }
   return {
     data: data.getFingerPrintTargetExcelOneFromId.data,
@@ -179,11 +167,7 @@ export const GetFingerPrintNowLogData = async ({ _id }) => {
   });
   if (error) {
     console.error(`GetFingerPrintNowLogData > ${error.message}`);
-    return {
-      data: "",
-      message: "ERR > GetFingerPrintNowLogData ",
-      error: error.message,
-    };
+    throw Error(`ERR > GetFingerPrintNowLogData > ${error.message}`);
   }
   return {
     data: data.getFingerPrintNowLogData.data,

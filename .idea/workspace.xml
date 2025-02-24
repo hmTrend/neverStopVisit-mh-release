@@ -335,14 +335,6 @@
       <workItem from="1740212960575" duration="5887000" />
       <workItem from="1740350959622" duration="2619000" />
     </task>
-    <task id="LOCAL-00543" summary="v5.6.9 clickRandomTab">
-      <option name="closed" value="true" />
-      <created>1740053189719</created>
-      <option name="number" value="00543" />
-      <option name="presentableId" value="LOCAL-00543" />
-      <option name="project" value="LOCAL" />
-      <updated>1740053189719</updated>
-    </task>
     <task id="LOCAL-00544" summary="v5.6.9 clickRandomTab">
       <option name="closed" value="true" />
       <created>1740053208080</created>
@@ -727,7 +719,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740356411565</updated>
     </task>
-    <option name="localTasksCounter" value="592" />
+    <task id="LOCAL-00592" summary="v5.116.0 this is my ERROR remove">
+      <option name="closed" value="true" />
+      <created>1740356706618</created>
+      <option name="number" value="00592" />
+      <option name="presentableId" value="LOCAL-00592" />
+      <option name="project" value="LOCAL" />
+      <updated>1740356706618</updated>
+    </task>
+    <option name="localTasksCounter" value="593" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -772,7 +772,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.29.0 savedDataPlay" />
     <MESSAGE value="v5.33.0 UtilText.errorMessageTrans" />
     <MESSAGE value="v5.36.0 PatchNShoppingLogic4NowCountIncrement" />
     <MESSAGE value="v5.39.0 allSettledResult" />
@@ -797,7 +796,8 @@
     <MESSAGE value="v5.109.0 changeTime" />
     <MESSAGE value="v5.113.0 작업시간(대기초수)" />
     <MESSAGE value="v5.116.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.116.0" />
+    <MESSAGE value="v5.116.0 this is my ERROR remove" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.116.0 this is my ERROR remove" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
