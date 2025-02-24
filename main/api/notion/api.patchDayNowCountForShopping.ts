@@ -55,9 +55,8 @@ export async function apiPatchDayNowCountForShopping({
       .map((item) => item.workKeyword)
       .join(", ");
 
-    const seoulDate = new Date(
-      new Date().toLocaleString("en-US", { timeZone: "Asia/Seoul" }),
-    );
+    const seoulDate = new Date();
+    seoulDate.setHours(seoulDate.getHours() + 9); // UTC+9 (한국 시간)
 
     const inputData = {
       targetKeyword: {

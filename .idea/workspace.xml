@@ -165,7 +165,7 @@
       <recent name="$PROJECT_DIR$/main/controllers/molecules/user" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.network.router.edu.ts">
+  <component name="RunManager" selected="TypeScript.api.patchDayNowCountForShopping.ts">
     <configuration name="BrawserManager.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisit-f" />
       <option name="interpreterRef" value="project" />
@@ -180,6 +180,20 @@
       <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
       <method v="2" />
     </configuration>
+    <configuration name="api.patchDayNowCountForShopping.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="neverStopVisit-f" />
+      <option name="interpreterRef" value="project" />
+      <option name="tsnodePackageRef" value="" />
+      <option name="enabledTsNodeEsmLoader" value="false" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/main/api/notion" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/main/api/notion/api.patchDayNowCountForShopping.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~\Desktop\gitHub\hmTrend\neverStopVisit-f\node_modules\ts-node" />
+      <method v="2" />
+    </configuration>
     <configuration name="clickTargetPlaceOrGoToNextStep.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisitHit" />
       <option name="interpreterRef" value="project" />
@@ -190,19 +204,6 @@
       <option name="tsconfigFile" value="" />
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clickTargetPlaceOrGoToNextStep.ts" />
-      <option name="programParameters" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="n-place-apollo.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
-      <module name="neverStopVisitHit" />
-      <option name="interpreterRef" value="project" />
-      <option name="tsnodePackageRef" value="~/Desktop/gitHub/hmTrend/neverStopVisit-f/node_modules/ts-node" />
-      <option name="enabledTsNodeEsmLoader" value="false" />
-      <option name="interpreterOptions" value="" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/main/lib/apollo" />
-      <option name="tsconfigFile" value="" />
-      <option name="extraTypeScriptOptions" value="" />
-      <option name="scriptName" value="$PROJECT_DIR$/main/lib/apollo/n-place-apollo.ts" />
       <option name="programParameters" value="" />
       <method v="2" />
     </configuration>
@@ -236,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.api.patchDayNowCountForShopping.ts" />
         <item itemvalue="TypeScript.network.router.edu.ts" />
         <item itemvalue="TypeScript.BrawserManager.ts" />
         <item itemvalue="TypeScript.network.router.edu.puppeteer.ts" />
         <item itemvalue="TypeScript.clickTargetPlaceOrGoToNextStep.ts" />
-        <item itemvalue="TypeScript.n-place-apollo.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -338,14 +339,6 @@
       <workItem from="1740127837159" duration="27810000" />
       <workItem from="1740212960575" duration="5887000" />
       <workItem from="1740350959622" duration="2619000" />
-    </task>
-    <task id="LOCAL-00553" summary="v5.13.3 allSettledData">
-      <option name="closed" value="true" />
-      <created>1740111608043</created>
-      <option name="number" value="00553" />
-      <option name="presentableId" value="LOCAL-00553" />
-      <option name="project" value="LOCAL" />
-      <updated>1740111608043</updated>
     </task>
     <task id="LOCAL-00554" summary="v5.13.6 upscalePlay">
       <option name="closed" value="true" />
@@ -731,7 +724,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740392392695</updated>
     </task>
-    <option name="localTasksCounter" value="602" />
+    <task id="LOCAL-00602" summary="v6.3.16 naverShopping 에러로그 강화">
+      <option name="closed" value="true" />
+      <created>1740392882921</created>
+      <option name="number" value="00602" />
+      <option name="presentableId" value="LOCAL-00602" />
+      <option name="project" value="LOCAL" />
+      <updated>1740392882921</updated>
+    </task>
+    <option name="localTasksCounter" value="603" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -776,7 +777,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.66.0 totalPlay &gt; allSettledResult &gt; nPlaceIsStart" />
     <MESSAGE value="v5.69.0 playNaverPlace &gt; savedDataPlay" />
     <MESSAGE value="v5.73.0 naverPlacePlayList &gt; savedDataPlay" />
     <MESSAGE value="v5.76.0 PatchNPlaceDayNowCount" />
@@ -801,7 +801,8 @@
     <MESSAGE value="v6.3.3 라우터 초수 포멧변경 / build" />
     <MESSAGE value="v6.3.6 await browserManager?.cleanup()" />
     <MESSAGE value="v6.3.9 comparePricesFindAllProducts &gt; for (let i = 0; i &lt; 5; i++) {" />
-    <option name="LAST_COMMIT_MESSAGE" value="v6.3.9 comparePricesFindAllProducts &gt; for (let i = 0; i &lt; 5; i++) {" />
+    <MESSAGE value="v6.3.16 naverShopping 에러로그 강화" />
+    <option name="LAST_COMMIT_MESSAGE" value="v6.3.16 naverShopping 에러로그 강화" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

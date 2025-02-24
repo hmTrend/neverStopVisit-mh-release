@@ -42,9 +42,8 @@ export async function apiNotionPatchDayNowCount({
       .map((item) => item.targetKeyword)
       .join(", ");
 
-    const seoulDate = new Date(
-      new Date().toLocaleString("en-US", { timeZone: "Asia/Seoul" }),
-    );
+    const seoulDate = new Date();
+    seoulDate.setHours(seoulDate.getHours() + 9); // UTC+9 (한국 시간)
 
     const inputData = {
       keyword: {
