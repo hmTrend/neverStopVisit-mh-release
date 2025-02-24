@@ -227,6 +227,15 @@ export class BrowserManager {
     }
   }
 
+  async getCookies() {
+    try {
+      return await this.context.cookies();
+    } catch (e) {
+      console.error(`BrowserManager > getCookies > ${e.message}`);
+      throw Error(`BrowserManager > getCookies > ${e.message}`);
+    }
+  }
+
   async cleanup(): Promise<void> {
     try {
       await this.page?.close();
