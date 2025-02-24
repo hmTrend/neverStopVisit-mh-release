@@ -339,14 +339,6 @@
       <workItem from="1740212960575" duration="5887000" />
       <workItem from="1740350959622" duration="2619000" />
     </task>
-    <task id="LOCAL-00552" summary="v5.13.0 playNaverPlace">
-      <option name="closed" value="true" />
-      <created>1740109917202</created>
-      <option name="number" value="00552" />
-      <option name="presentableId" value="LOCAL-00552" />
-      <option name="project" value="LOCAL" />
-      <updated>1740109917203</updated>
-    </task>
     <task id="LOCAL-00553" summary="v5.13.3 allSettledData">
       <option name="closed" value="true" />
       <created>1740111608043</created>
@@ -731,7 +723,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740392159973</updated>
     </task>
-    <option name="localTasksCounter" value="601" />
+    <task id="LOCAL-00601" summary="v6.3.9 comparePricesFindAllProducts &gt; for (let i = 0; i &lt; 5; i++) {">
+      <option name="closed" value="true" />
+      <created>1740392392695</created>
+      <option name="number" value="00601" />
+      <option name="presentableId" value="LOCAL-00601" />
+      <option name="project" value="LOCAL" />
+      <updated>1740392392695</updated>
+    </task>
+    <option name="localTasksCounter" value="602" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -776,7 +776,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.63.0 한국시간 날짜로 변경완료" />
     <MESSAGE value="v5.66.0 totalPlay &gt; allSettledResult &gt; nPlaceIsStart" />
     <MESSAGE value="v5.69.0 playNaverPlace &gt; savedDataPlay" />
     <MESSAGE value="v5.73.0 naverPlacePlayList &gt; savedDataPlay" />
@@ -801,7 +800,8 @@
     <MESSAGE value="v6.3.3 networkRouterEdu &gt; 실행셋팅" />
     <MESSAGE value="v6.3.3 라우터 초수 포멧변경 / build" />
     <MESSAGE value="v6.3.6 await browserManager?.cleanup()" />
-    <option name="LAST_COMMIT_MESSAGE" value="v6.3.6 await browserManager?.cleanup()" />
+    <MESSAGE value="v6.3.9 comparePricesFindAllProducts &gt; for (let i = 0; i &lt; 5; i++) {" />
+    <option name="LAST_COMMIT_MESSAGE" value="v6.3.9 comparePricesFindAllProducts &gt; for (let i = 0; i &lt; 5; i++) {" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

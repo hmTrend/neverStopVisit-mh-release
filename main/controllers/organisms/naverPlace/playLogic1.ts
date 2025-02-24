@@ -51,9 +51,9 @@ export async function playLogic1({
       browserManager,
       delayTime,
     });
-    await browserManager.cleanup();
+    await browserManager?.cleanup();
   } catch (e) {
-    await browserManager.cleanup();
+    await browserManager?.cleanup();
     console.error(`playLogic1 > ${e.message}`);
     throw Error(`playLogic1 > ${e.message}`);
   }
