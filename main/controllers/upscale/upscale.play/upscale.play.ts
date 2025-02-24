@@ -1,4 +1,3 @@
-import { measureExecutionTime } from "../../../lib/util/timeStartToEnd";
 import wait from "waait";
 import { internetConnectType } from "../../molecules/commons/internetConnectType";
 import { playNaverShopping } from "../../templetes/naverShopping";
@@ -16,6 +15,7 @@ import { UtilText } from "../../atoms/util/util.text";
 import { UtilDate } from "../../atoms/util/util.date";
 import { PatchNPlaceDayNowCount } from "../../../lib/apollo/n-place-apollo";
 import { apiNotionPatchDayNowCount } from "../../../api/notion/api.patchDayNowCount";
+import { UtilAnalisys } from "../../atoms/util/util.analisys";
 
 export async function upscalePlay({
   internetType = "STATIC",
@@ -54,7 +54,7 @@ async function totalPlay({
   savedDataPlay,
 }) {
   try {
-    const resultChangeSeconds = await measureExecutionTime({
+    const resultChangeSeconds = await UtilAnalisys.measureExecutionTime({
       playCallback: async () =>
         await networkPlay({
           internetType,
@@ -81,30 +81,32 @@ async function totalPlay({
     savedDataPlay({ getMainWindow: mainWindow });
     try {
       const naverShoppingPlayList = async () => {
-        const resultTotalWorkedSecondsTime = await measureExecutionTime({
-          playCallback: () =>
-            playNaverShopping({
-              savedDataPlay,
-              logicType: nShoppingLogic4.logicType,
-              dataGroupFid: nShoppingLogic4.selectedGroup.groupId,
-              fingerPrintGroupFid: nShoppingLogic4.fingerPrint.groupId,
-            }),
-        });
+        const resultTotalWorkedSecondsTime =
+          await UtilAnalisys.measureExecutionTime({
+            playCallback: () =>
+              playNaverShopping({
+                savedDataPlay,
+                logicType: nShoppingLogic4.logicType,
+                dataGroupFid: nShoppingLogic4.selectedGroup.groupId,
+                fingerPrintGroupFid: nShoppingLogic4.fingerPrint.groupId,
+              }),
+          });
         savedDataPlay({
           getShoppingData: { totalWorkingTime: resultTotalWorkedSecondsTime },
         });
       };
 
       const naverPlacePlayList = async () => {
-        const resultTotalWorkedSecondsTime = await measureExecutionTime({
-          playCallback: () =>
-            playNaverPlace({
-              savedDataPlay,
-              logicType: nPlace.logicType,
-              dataGroupFid: nPlace.selectedGroup.groupId,
-              fingerPrintGroupFid: nPlace.fingerPrint.groupId,
-            }),
-        });
+        const resultTotalWorkedSecondsTime =
+          await UtilAnalisys.measureExecutionTime({
+            playCallback: () =>
+              playNaverPlace({
+                savedDataPlay,
+                logicType: nPlace.logicType,
+                dataGroupFid: nPlace.selectedGroup.groupId,
+                fingerPrintGroupFid: nPlace.fingerPrint.groupId,
+              }),
+          });
         savedDataPlay({
           getPlaceData: { totalWorkingTime: resultTotalWorkedSecondsTime },
         });

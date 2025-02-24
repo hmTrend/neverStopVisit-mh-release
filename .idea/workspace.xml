@@ -157,11 +157,11 @@
       <recent name="$PROJECT_DIR$/main/controllers/atoms/network" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\controllers\atoms\util" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/naver" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/excel" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/user" />
-      <recent name="$PROJECT_DIR$/main/controllers/molecules/commons" />
     </key>
   </component>
   <component name="RunManager" selected="TypeScript.clickTargetPlaceOrGoToNextStep.ts">
@@ -334,14 +334,6 @@
       <workItem from="1740127837159" duration="27810000" />
       <workItem from="1740212960575" duration="5887000" />
       <workItem from="1740350959622" duration="2619000" />
-    </task>
-    <task id="LOCAL-00544" summary="v5.6.9 clickRandomTab">
-      <option name="closed" value="true" />
-      <created>1740053208080</created>
-      <option name="number" value="00544" />
-      <option name="presentableId" value="LOCAL-00544" />
-      <option name="project" value="LOCAL" />
-      <updated>1740053208080</updated>
     </task>
     <task id="LOCAL-00545" summary="v5.6.9 clickRandomTab">
       <option name="closed" value="true" />
@@ -727,7 +719,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740356706618</updated>
     </task>
-    <option name="localTasksCounter" value="593" />
+    <task id="LOCAL-00593" summary="v5.119.0 GetFingerPrintTargetExcelOne / 에러처리 강화">
+      <option name="closed" value="true" />
+      <created>1740359716291</created>
+      <option name="number" value="00593" />
+      <option name="presentableId" value="LOCAL-00593" />
+      <option name="project" value="LOCAL" />
+      <updated>1740359716291</updated>
+    </task>
+    <option name="localTasksCounter" value="594" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -772,7 +772,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.33.0 UtilText.errorMessageTrans" />
     <MESSAGE value="v5.36.0 PatchNShoppingLogic4NowCountIncrement" />
     <MESSAGE value="v5.39.0 allSettledResult" />
     <MESSAGE value="v5.43.0 const { shoppingData } = savedDataPlay({});" />
@@ -797,7 +796,8 @@
     <MESSAGE value="v5.113.0 작업시간(대기초수)" />
     <MESSAGE value="v5.116.0" />
     <MESSAGE value="v5.116.0 this is my ERROR remove" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.116.0 this is my ERROR remove" />
+    <MESSAGE value="v5.119.0 GetFingerPrintTargetExcelOne / 에러처리 강화" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.119.0 GetFingerPrintTargetExcelOne / 에러처리 강화" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

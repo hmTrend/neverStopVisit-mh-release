@@ -11,10 +11,12 @@ export async function getFingerPrintTargetExcelOne({
       });
       return { cookieId: data._id, cookie: JSON.parse(data.cookie) };
     } catch (e) {
-      if (i >= 4) {
-        throw Error(`getFingerPrintTargetExcelOne > ${e.message}`);
+      if (i >= 10) {
+        throw Error(
+          `getFingerPrintTargetExcelOne with Shopping > ${e.message}`,
+        );
       }
-      console.error(`getFingerPrintTargetExcelOne > no data`);
+      console.error(`getFingerPrintTargetExcelOne with Shopping > no data`);
       await wait(3 * 1000);
     }
   }

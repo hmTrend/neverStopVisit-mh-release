@@ -2,7 +2,7 @@ import wait from "waait";
 import puppeteer from "puppeteer-core";
 import { getChromePath } from "../playwright/getChromPath";
 
-export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
+export const networkRouterEdu = async ({ chromeHeadless = "Open" } = {}) => {
   const browser = await puppeteer.launch({
     headless: chromeHeadless.includes("Close") ? true : false,
     ignoreDefaultArgs: ["--disable-extensions"],
@@ -68,3 +68,5 @@ export const networkRouterEdu = async ({ chromeHeadless = "Close" } = {}) => {
 // networkRouterEdu()
 // const test = new RouterIpChanger();
 // test.startRouterChanger();
+
+networkRouterEdu();
