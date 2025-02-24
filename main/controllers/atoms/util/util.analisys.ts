@@ -2,7 +2,7 @@ export class UtilAnalisys {
   static async measureExecutionTime({
     playCallback,
   }: {
-    playCallback: () => Promise<void>;
+    playCallback: () => Promise<any>;
   }): Promise<number> {
     try {
       const startTime = new Date().getTime(); // 시작 시간 저장

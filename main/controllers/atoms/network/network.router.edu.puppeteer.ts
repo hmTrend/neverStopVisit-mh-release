@@ -1,6 +1,7 @@
 import wait from "waait";
 import puppeteer from "puppeteer-core";
 import { getChromePath } from "../playwright/getChromPath";
+import { UtilAnalisys } from "../util/util.analisys";
 
 export const networkRouterEdu = async ({ chromeHeadless = "Open" } = {}) => {
   const browser = await puppeteer.launch({
@@ -68,5 +69,7 @@ export const networkRouterEdu = async ({ chromeHeadless = "Open" } = {}) => {
 // networkRouterEdu()
 // const test = new RouterIpChanger();
 // test.startRouterChanger();
-
-networkRouterEdu();
+networkRouterEdu({ chromeHeadless: "Open" });
+UtilAnalisys.measureExecutionTime({
+  playCallback: () => networkRouterEdu({ chromeHeadless: "Open" }),
+});
