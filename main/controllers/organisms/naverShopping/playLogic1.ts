@@ -23,7 +23,7 @@ export async function playLogic1({
   try {
     const { getPage, getBrowserManager } = await gotoPage({
       is3gMode: false,
-      cpuThrottlingRate: 0,
+      cpuThrottlingRate: 10,
       url: "https://search.shopping.naver.com/home",
       contextCallback: async (browser) =>
         BrowserManager.createMobileContext(
@@ -59,9 +59,9 @@ export async function playLogic1({
         await browserManager.pressKey({ select: "End" }),
     });
     await wait(delayTime * 1000);
-    await browserManager.cleanup();
+    await browserManager?.cleanup();
   } catch (e) {
-    await browserManager.cleanup();
+    await browserManager?.cleanup();
     console.error(`playLogic1 > ${e.message}`);
     throw Error(`playLogic1 > ${e.message}`);
   }

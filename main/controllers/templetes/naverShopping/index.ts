@@ -70,7 +70,7 @@ async function playSelectLogic({
   delayTime,
 }) {
   try {
-    await naverPlaceLogic1({
+    await naverShoppingLogic1({
       logicType,
       cookies,
       nvMid,
@@ -84,7 +84,7 @@ async function playSelectLogic({
   }
 }
 
-async function naverPlaceLogic1({
+async function naverShoppingLogic1({
   logicType,
   cookies,
   nvMid,
@@ -96,7 +96,7 @@ async function naverPlaceLogic1({
     await playLogic1({ cookies, nvMid, targetKeyword, delayTime });
   } catch (e) {
     console.error(e.message);
-    throw Error(`naverPlaceLogic1 > ${e.message}`);
+    throw Error(`naverShoppingLogic1 > ${e.message}`);
   }
 }
 
