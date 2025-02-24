@@ -339,22 +339,6 @@
       <workItem from="1740212960575" duration="5887000" />
       <workItem from="1740350959622" duration="2619000" />
     </task>
-    <task id="LOCAL-00548" summary="v5.9.0 getNPlaceExcelAlignFlatTargetOne">
-      <option name="closed" value="true" />
-      <created>1740054125072</created>
-      <option name="number" value="00548" />
-      <option name="presentableId" value="LOCAL-00548" />
-      <option name="project" value="LOCAL" />
-      <updated>1740054125072</updated>
-    </task>
-    <task id="LOCAL-00549" summary="v5.9.3 playNaverPlace">
-      <option name="closed" value="true" />
-      <created>1740054484931</created>
-      <option name="number" value="00549" />
-      <option name="presentableId" value="LOCAL-00549" />
-      <option name="project" value="LOCAL" />
-      <updated>1740054484931</updated>
-    </task>
     <task id="LOCAL-00550" summary="v5.9.6 playNaverPlace">
       <option name="closed" value="true" />
       <created>1740105684903</created>
@@ -731,7 +715,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740373326166</updated>
     </task>
-    <option name="localTasksCounter" value="597" />
+    <task id="LOCAL-00597" summary="v6.3.3 networkRouterEdu &gt; 포멧 완성">
+      <option name="closed" value="true" />
+      <created>1740387861529</created>
+      <option name="number" value="00597" />
+      <option name="presentableId" value="LOCAL-00597" />
+      <option name="project" value="LOCAL" />
+      <updated>1740387861529</updated>
+    </task>
+    <task id="LOCAL-00598" summary="v6.3.3 networkRouterEdu &gt; 실행셋팅">
+      <option name="closed" value="true" />
+      <created>1740388045483</created>
+      <option name="number" value="00598" />
+      <option name="presentableId" value="LOCAL-00598" />
+      <option name="project" value="LOCAL" />
+      <updated>1740388045483</updated>
+    </task>
+    <option name="localTasksCounter" value="599" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -776,8 +776,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.46.0 WorkCompletedList" />
-    <MESSAGE value="v5.49.0 networkPlay &gt; savedDataPlayCB" />
     <MESSAGE value="v5.53.0 nShoppingLogic4IsStart" />
     <MESSAGE value="v5.59.0 apiPatchDayNowCountForShopping" />
     <MESSAGE value="v5.63.0 한국시간 날짜로 변경완료" />
@@ -801,7 +799,9 @@
     <MESSAGE value="v5.123.0 UtilAnalisys.measureExecutionTime" />
     <MESSAGE value="v6.0.0 networkRouterEdu" />
     <MESSAGE value="v6.3.0 networkRouterEdu &gt; isTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="v6.3.0 networkRouterEdu &gt; isTest" />
+    <MESSAGE value="v6.3.3 networkRouterEdu &gt; 포멧 완성" />
+    <MESSAGE value="v6.3.3 networkRouterEdu &gt; 실행셋팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="v6.3.3 networkRouterEdu &gt; 실행셋팅" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
