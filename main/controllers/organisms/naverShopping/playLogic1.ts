@@ -89,14 +89,19 @@ async function comparePricesFindAllProducts({
   } catch (e) {
     console.error(`comparePricesFindAllProducts > ${e.message}`);
     for (let i = 0; i < 5; i++) {
-      await page.keyboard.press("End");
-      await page.waitForLoadState("domcontentloaded");
-      await wait(100);
+      try {
+        await page.keyboard.press("End");
+        await page.waitForLoadState("load");
+        await wait(300);
+        await findSelectorAndClick({
+          browserManager,
+          page,
+          selector: `#_sr_lst_${nvMid}`,
+        });
+        break;
+      } catch (e) {
+        console.log(`findSelectorAndClick > ${e.message}`);
+      }
     }
-    await findSelectorAndClick({
-      browserManager,
-      page,
-      selector: `#_sr_lst_${nvMid}`,
-    });
   }
 }
