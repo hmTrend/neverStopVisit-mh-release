@@ -16,7 +16,6 @@ import { UtilDate } from "../../atoms/util/util.date";
 import { PatchNPlaceDayNowCount } from "../../../lib/apollo/n-place-apollo";
 import { apiNotionPatchDayNowCount } from "../../../api/notion/api.patchDayNowCount";
 import { UtilAnalisys } from "../../atoms/util/util.analisys";
-import { globalBrowsers } from "../../../lib/const/constVar";
 
 export async function upscalePlay({
   internetType = "STATIC",
@@ -38,9 +37,6 @@ export async function upscalePlay({
         mainWindow,
         savedDataPlay,
       });
-      console.log("globalBrowsers.browsers 333");
-      console.log(globalBrowsers.browsers.length);
-      console.log(globalBrowsers.browsers);
     } catch (error) {
       console.error(`naverShopping > ${error.message}`);
       await wait(10 * 1000);
