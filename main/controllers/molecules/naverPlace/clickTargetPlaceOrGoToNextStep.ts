@@ -27,13 +27,11 @@ export async function clickTargetPlaceOrGoToNextStep({
   try {
     const networkManager = browserManager.createNetworkManager();
     await networkManager.waitForAllRequests();
-    console.log(11111111);
     await findSelectorAndScroll({
       selector: ".place_section_header_title",
       browserManager,
       page,
     });
-    console.log(22222222222);
     await clickTargetPlaceById({ placeNumber, page });
   } catch (e) {
     for (let i = 0; i < 10; i++) {
