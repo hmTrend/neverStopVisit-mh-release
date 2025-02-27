@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.123.6 AppLogging">
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/util/util.logger.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/util/util.logger.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.123.9 functionName, args: fnEndArgs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/logging/AppLogging.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/logging/AppLogging.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/hook/logging/useLoggingIpcData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/logging/useLoggingIpcData.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,15 +334,7 @@
       <workItem from="1740212960575" duration="5887000" />
       <workItem from="1740350959622" duration="2619000" />
       <workItem from="1740551522151" duration="5529000" />
-      <workItem from="1740614581693" duration="6581000" />
-    </task>
-    <task id="LOCAL-00562" summary="v5.23.0 쇼핑 / 플레이스 멀티 동작">
-      <option name="closed" value="true" />
-      <created>1740125263698</created>
-      <option name="number" value="00562" />
-      <option name="presentableId" value="LOCAL-00562" />
-      <option name="project" value="LOCAL" />
-      <updated>1740125263698</updated>
+      <workItem from="1740614581693" duration="7470000" />
     </task>
     <task id="LOCAL-00563" summary="v5.26.0 playDataInitial / 전역 변수 설정">
       <option name="closed" value="true" />
@@ -726,7 +720,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740621059191</updated>
     </task>
-    <option name="localTasksCounter" value="611" />
+    <task id="LOCAL-00611" summary="v5.123.9 functionName, args: fnEndArgs">
+      <option name="closed" value="true" />
+      <created>1740621267357</created>
+      <option name="number" value="00611" />
+      <option name="presentableId" value="LOCAL-00611" />
+      <option name="project" value="LOCAL" />
+      <updated>1740621267357</updated>
+    </task>
+    <option name="localTasksCounter" value="612" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -771,7 +773,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.93.0 findSelectorAndClick" />
     <MESSAGE value="v5.99.0 플레이스 느림대응" />
     <MESSAGE value="v5.103.0 작업시간 / 변경시간 / 대기초수 / 셋팅" />
     <MESSAGE value="v5.106.0 changeTime" />
@@ -796,7 +797,8 @@
     <MESSAGE value="v5.123.0 ipcBackLogging" />
     <MESSAGE value="v5.123.3 globalMainWindow Move" />
     <MESSAGE value="v5.123.6 AppLogging" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.123.6 AppLogging" />
+    <MESSAGE value="v5.123.9 functionName, args: fnEndArgs" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.123.9 functionName, args: fnEndArgs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
