@@ -16,6 +16,7 @@ import { UtilDate } from "../../atoms/util/util.date";
 import { PatchNPlaceDayNowCount } from "../../../lib/apollo/n-place-apollo";
 import { apiNotionPatchDayNowCount } from "../../../api/notion/api.patchDayNowCount";
 import { UtilAnalisys } from "../../atoms/util/util.analisys";
+import { withLogging } from "../../atoms/util/util.logger";
 
 export async function upscalePlay({
   internetType = "STATIC",
@@ -54,9 +55,10 @@ async function totalPlay({
   savedDataPlay,
 }) {
   try {
+    const networkPlayWithLogging = withLogging(networkPlay, "networkPlay");
     const resultChangeSeconds = await UtilAnalisys.measureExecutionTime({
       playCallback: async () =>
-        await networkPlay({
+        networkPlayWithLogging({
           internetType,
           playTime,
           savedDataPlayCB: savedDataPlay,

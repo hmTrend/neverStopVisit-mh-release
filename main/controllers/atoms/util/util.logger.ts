@@ -24,7 +24,7 @@ function withLogging(fn, functionName) {
     logger.emit("log", {
       level: "INFO",
       functionName,
-      message: `함수 시작: ${args.length ? JSON.stringify(args) : "인자 없음"}`,
+      message: `함수 시작: ${args.length ? JSON.stringify(args).substring(0, 100) : "인자 없음"}`,
     });
 
     try {
@@ -35,7 +35,7 @@ function withLogging(fn, functionName) {
       logger.emit("log", {
         level: "INFO",
         functionName,
-        message: `함수 종료: ${result !== undefined ? JSON.stringify(result) : "반환값 없음"}`,
+        message: `함수 종료: ${result !== undefined ? JSON.stringify(result).substring(0, 100) : "반환값 없음"}`,
       });
 
       return result;
