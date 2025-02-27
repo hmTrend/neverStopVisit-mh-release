@@ -6,6 +6,7 @@ import { StartButtonLogic } from "@/components/start/StartButtonLogic";
 import { OptionCommon } from "@/components/start/OptionCommon";
 import { WorkCompletedList } from "@/components/start/WorkCompletedList";
 import { IpChangeCount } from "@/components/start/IpChangeCount";
+import { AppLogging } from "@/components/logging/AppLogging";
 
 export const App = () => {
   return (
@@ -14,6 +15,7 @@ export const App = () => {
       <IpChangeCount />
       <SelectProgramForStartLogic />
       <StartButtonLogic />
+      <AppLogging />
       <WorkCompletedList />
     </Flex>
   );

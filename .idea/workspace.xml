@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.123.0 ipcBackLogging">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.123.3 globalMainWindow Move">
+      <change afterPath="$PROJECT_DIR$/renderer/src/components/logging/AppLogging.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renderer/src/hook/logging/useLoggingIpcData.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/util/util.logger.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/util/util.logger.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/ipc/ipc.back.logging.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/ipc.back.logging.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,11 +157,11 @@
       <recent name="$PROJECT_DIR$/main/controllers/atoms/network" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/renderer/src/components" />
       <recent name="C:\Users\apkWin\Desktop\gitHub\hmTrend\neverStopVisit-f\main\controllers\atoms\util" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/naver" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules" />
       <recent name="$PROJECT_DIR$/main/controllers/molecules/excel" />
-      <recent name="$PROJECT_DIR$/main/controllers/molecules/user" />
     </key>
   </component>
   <component name="RunManager" selected="TypeScript.api.patchDayNowCountForShopping.ts">
@@ -334,15 +335,7 @@
       <workItem from="1740212960575" duration="5887000" />
       <workItem from="1740350959622" duration="2619000" />
       <workItem from="1740551522151" duration="5529000" />
-      <workItem from="1740614581693" duration="5336000" />
-    </task>
-    <task id="LOCAL-00560" summary="v5.23.0 의도적 에러 확인하기">
-      <option name="closed" value="true" />
-      <created>1740119594725</created>
-      <option name="number" value="00560" />
-      <option name="presentableId" value="LOCAL-00560" />
-      <option name="project" value="LOCAL" />
-      <updated>1740119594725</updated>
+      <workItem from="1740614581693" duration="6414000" />
     </task>
     <task id="LOCAL-00561" summary="v5.19.0 코드 정리">
       <option name="closed" value="true" />
@@ -728,7 +721,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740618661100</updated>
     </task>
-    <option name="localTasksCounter" value="609" />
+    <task id="LOCAL-00609" summary="v5.123.3 globalMainWindow Move">
+      <option name="closed" value="true" />
+      <created>1740619949823</created>
+      <option name="number" value="00609" />
+      <option name="presentableId" value="LOCAL-00609" />
+      <option name="project" value="LOCAL" />
+      <updated>1740619949823</updated>
+    </task>
+    <option name="localTasksCounter" value="610" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -773,7 +774,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.86.0 apiNotionPatchDayNowCount &gt; timeZone: &quot;Asia/Seoul&quot;" />
     <MESSAGE value="v5.89.0 쇼핑 스로틀링 강화" />
     <MESSAGE value="v5.93.0 findSelectorAndClick" />
     <MESSAGE value="v5.99.0 플레이스 느림대응" />
@@ -798,7 +798,8 @@
     <MESSAGE value="v5.116.9 딜레이 줄이기" />
     <MESSAGE value="v5.119.0 logger" />
     <MESSAGE value="v5.123.0 ipcBackLogging" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.123.0 ipcBackLogging" />
+    <MESSAGE value="v5.123.3 globalMainWindow Move" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.123.3 globalMainWindow Move" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
