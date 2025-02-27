@@ -33,7 +33,7 @@ function withLogging(fn, functionName) {
     });
     ipcBackLogging({
       mainWindow: globalMainWindow.mainWindow,
-      data: fnStartArgs,
+      data: { functionName, args: fnStartArgs },
     });
 
     try {
@@ -51,7 +51,7 @@ function withLogging(fn, functionName) {
       });
       ipcBackLogging({
         mainWindow: globalMainWindow.mainWindow,
-        data: fnEndArgs,
+        data: { functionName, args: fnEndArgs },
       });
 
       return result;
