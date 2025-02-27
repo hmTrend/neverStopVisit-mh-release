@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.119.0 logger">
-      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/ipc.back.logging.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v5.123.0 ipcBackLogging">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/atoms/util/util.logger.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/util/util.logger.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/ipc/ipc.back.logging.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/ipc/ipc.back.logging.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,15 +334,7 @@
       <workItem from="1740212960575" duration="5887000" />
       <workItem from="1740350959622" duration="2619000" />
       <workItem from="1740551522151" duration="5529000" />
-      <workItem from="1740614581693" duration="4049000" />
-    </task>
-    <task id="LOCAL-00559" summary="v5.23.0 의도적 에러 확인하기">
-      <option name="closed" value="true" />
-      <created>1740119589446</created>
-      <option name="number" value="00559" />
-      <option name="presentableId" value="LOCAL-00559" />
-      <option name="project" value="LOCAL" />
-      <updated>1740119589447</updated>
+      <workItem from="1740614581693" duration="5336000" />
     </task>
     <task id="LOCAL-00560" summary="v5.23.0 의도적 에러 확인하기">
       <option name="closed" value="true" />
@@ -730,7 +720,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740615459071</updated>
     </task>
-    <option name="localTasksCounter" value="608" />
+    <task id="LOCAL-00608" summary="v5.123.0 ipcBackLogging">
+      <option name="closed" value="true" />
+      <created>1740618661100</created>
+      <option name="number" value="00608" />
+      <option name="presentableId" value="LOCAL-00608" />
+      <option name="project" value="LOCAL" />
+      <updated>1740618661100</updated>
+    </task>
+    <option name="localTasksCounter" value="609" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -775,7 +773,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.83.0 clickTargetPlaceNextMorePage &gt;     await page.waitForSelector(selector, { timeout: 60 * 1000 });" />
     <MESSAGE value="v5.86.0 apiNotionPatchDayNowCount &gt; timeZone: &quot;Asia/Seoul&quot;" />
     <MESSAGE value="v5.89.0 쇼핑 스로틀링 강화" />
     <MESSAGE value="v5.93.0 findSelectorAndClick" />
@@ -800,7 +797,8 @@
     <MESSAGE value="v5.116.6 로그인 풀림 개선" />
     <MESSAGE value="v5.116.9 딜레이 줄이기" />
     <MESSAGE value="v5.119.0 logger" />
-    <option name="LAST_COMMIT_MESSAGE" value="v5.119.0 logger" />
+    <MESSAGE value="v5.123.0 ipcBackLogging" />
+    <option name="LAST_COMMIT_MESSAGE" value="v5.123.0 ipcBackLogging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

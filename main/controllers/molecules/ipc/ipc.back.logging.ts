@@ -1,8 +1,8 @@
 interface IIpcBackLogging {
-  ipcBackLogging: ({ mainWindow, data }) => Promise<void>;
+  ipcBackLogging: ({ mainWindow, data }) => void;
 }
 
-export const ipcBackLogging: IIpcBackLogging["ipcBackLogging"] = async ({
+export const ipcBackLogging: IIpcBackLogging["ipcBackLogging"] = ({
   mainWindow,
   data,
 }) => {

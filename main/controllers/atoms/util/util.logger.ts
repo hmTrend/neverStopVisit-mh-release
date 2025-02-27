@@ -1,4 +1,6 @@
 import { EventEmitter } from "events";
+import { ipcBackLogging } from "../../molecules/ipc/ipc.back.logging";
+import { globalBrowsers, globalMainWindow } from "../../../lib/const/constVar";
 
 const logger = new EventEmitter();
 
@@ -21,21 +23,35 @@ logger.on("error", (data) => {
 function withLogging(fn, functionName) {
   return async function (...args) {
     // 함수 시작 로그
+    const fnStartArgs = args.length
+      ? JSON.stringify(args).substring(0, 100)
+      : "인자 없음";
     logger.emit("log", {
       level: "INFO",
       functionName,
-      message: `함수 시작: ${args.length ? JSON.stringify(args).substring(0, 100) : "인자 없음"}`,
+      message: `함수 시작: ${fnStartArgs}`,
+    });
+    ipcBackLogging({
+      mainWindow: globalMainWindow.mainWindow,
+      data: fnStartArgs,
     });
 
     try {
       // 실제 함수 실행
       const result = await fn.apply(this, args);
-
+      const fnEndArgs =
+        result !== undefined
+          ? JSON.stringify(result).substring(0, 100)
+          : "반환값 없음";
       // 함수 종료 로그
       logger.emit("log", {
         level: "INFO",
         functionName,
-        message: `함수 종료: ${result !== undefined ? JSON.stringify(result).substring(0, 100) : "반환값 없음"}`,
+        message: `함수 종료: ${fnEndArgs}`,
+      });
+      ipcBackLogging({
+        mainWindow: globalMainWindow.mainWindow,
+        data: fnEndArgs,
       });
 
       return result;
