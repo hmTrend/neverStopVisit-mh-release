@@ -33,13 +33,13 @@ export async function playNaverShopping({
   fingerPrintGroupFid?: string;
 } = {}) {
   try {
-    const getFingerPrintTargetExcelOneWithLogging = withLogging(
-      getFingerPrintTargetExcelOne,
-      "getFingerPrintTargetExcelOne",
-    );
     const getNShoppingLogic4ExcelAlignFlatTargetOneWithLogging = withLogging(
       getNShoppingLogic4ExcelAlignFlatTargetOne,
       "getNShoppingLogic4ExcelAlignFlatTargetOne",
+    );
+    const getFingerPrintTargetExcelOneWithLogging = withLogging(
+      getFingerPrintTargetExcelOne,
+      "getFingerPrintTargetExcelOne",
     );
     const playSelectLogicWithLogging = withLogging(
       playSelectLogic,

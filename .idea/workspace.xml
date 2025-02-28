@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v7.0.0 작업했던 리스트 중복안되게 하기">
-      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/excel/patchWorkedListOne.ts" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v7.0.0 쇼핑 아이디 중복안되게 작업하기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-shoppingLogic4-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-shoppingLogic4-apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne2.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,15 +334,7 @@
       <workItem from="1740350959622" duration="2619000" />
       <workItem from="1740551522151" duration="5529000" />
       <workItem from="1740614581693" duration="10053000" />
-      <workItem from="1740727375814" duration="5255000" />
-    </task>
-    <task id="LOCAL-00565" summary="v5.33.0 UtilText.errorMessageTrans">
-      <option name="closed" value="true" />
-      <created>1740191498864</created>
-      <option name="number" value="00565" />
-      <option name="presentableId" value="LOCAL-00565" />
-      <option name="project" value="LOCAL" />
-      <updated>1740191498864</updated>
+      <workItem from="1740727375814" duration="6443000" />
     </task>
     <task id="LOCAL-00566" summary="v5.36.0 PatchNShoppingLogic4NowCountIncrement">
       <option name="closed" value="true" />
@@ -730,7 +720,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740739387995</updated>
     </task>
-    <option name="localTasksCounter" value="614" />
+    <task id="LOCAL-00614" summary="v7.0.0 쇼핑 아이디 중복안되게 작업하기">
+      <option name="closed" value="true" />
+      <created>1740740727439</created>
+      <option name="number" value="00614" />
+      <option name="presentableId" value="LOCAL-00614" />
+      <option name="project" value="LOCAL" />
+      <updated>1740740727440</updated>
+    </task>
+    <option name="localTasksCounter" value="615" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -775,7 +773,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.106.0 changeTime" />
     <MESSAGE value="v5.109.0 changeTime" />
     <MESSAGE value="v5.113.0 작업시간(대기초수)" />
     <MESSAGE value="v5.116.0" />
@@ -800,7 +797,8 @@
     <MESSAGE value="v5.123.9 functionName, args: fnEndArgs" />
     <MESSAGE value="v5.123.9 yarn build" />
     <MESSAGE value="v7.0.0 작업했던 리스트 중복안되게 하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="v7.0.0 작업했던 리스트 중복안되게 하기" />
+    <MESSAGE value="v7.0.0 쇼핑 아이디 중복안되게 작업하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="v7.0.0 쇼핑 아이디 중복안되게 작업하기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
