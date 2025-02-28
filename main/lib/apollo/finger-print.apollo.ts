@@ -23,12 +23,16 @@ const gqlGetFingerPrintTargetExcelOne = gql`
   }
 `;
 
-export const GetFingerPrintTargetExcelOne = async ({ groupFid }) => {
+export const GetFingerPrintTargetExcelOne = async ({
+  groupFid,
+  workedListOne,
+}) => {
   const { data, error } = await client.query({
     query: gqlGetFingerPrintTargetExcelOne,
     variables: {
       input: {
         groupFid,
+        workedListOne,
       },
     },
     fetchPolicy: "no-cache",

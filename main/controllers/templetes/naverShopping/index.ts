@@ -44,14 +44,15 @@ export async function playNaverShopping({
       playSelectLogic,
       "playSelectLogic",
     );
-
-    const resultCookie = await getFingerPrintTargetExcelOneWithLogging({
-      groupFid: fingerPrintGroupFid,
-    });
     const excelData: NShoppingLogic4ExcelListAlignFlatMapEntity =
       await getNShoppingLogic4ExcelAlignFlatTargetOneWithLogging({
         groupFid: dataGroupFid,
       });
+    const resultCookie = await getFingerPrintTargetExcelOneWithLogging({
+      groupFid: fingerPrintGroupFid,
+      workedListOne: excelData.nvMid,
+    });
+
     savedDataPlay({
       getShoppingData: {
         cookie: resultCookie.cookie,
