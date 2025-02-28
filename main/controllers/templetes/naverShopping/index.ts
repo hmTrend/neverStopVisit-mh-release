@@ -3,6 +3,7 @@ import { getFingerPrintTargetExcelOne } from "../../molecules/user/getFingerPrin
 import { getNShoppingLogic4ExcelAlignFlatTargetOne } from "../../molecules/excel/getFingerPrintTargetExcelOne2";
 import { SavedDataPlayFunction } from "../../atoms/user/data.play";
 import { withLogging } from "../../atoms/util/util.logger";
+import { patchWorkedListOne } from "../../molecules/excel/patchWorkedListOne";
 
 interface NShoppingLogic4ExcelListAlignFlatMapEntity {
   _id: string;
@@ -44,6 +45,11 @@ export async function playNaverShopping({
       playSelectLogic,
       "playSelectLogic",
     );
+    const patchWorkedListOneWithLogging = withLogging(
+      patchWorkedListOne,
+      "patchWorkedListOne",
+    );
+
     const excelData: NShoppingLogic4ExcelListAlignFlatMapEntity =
       await getNShoppingLogic4ExcelAlignFlatTargetOneWithLogging({
         groupFid: dataGroupFid,
@@ -70,6 +76,10 @@ export async function playNaverShopping({
       nvMid,
       targetKeyword: workKeyword,
       delayTime,
+    });
+    await patchWorkedListOneWithLogging({
+      _id: resultCookie.cookieId,
+      workedName: excelData.nvMid,
     });
   } catch (e) {
     console.error(`playNaverShopping > ${e.message}`);

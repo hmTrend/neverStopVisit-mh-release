@@ -110,3 +110,54 @@ export const PatchNShoppingLogic4NowCountIncrement = async ({
     error: "",
   };
 };
+
+const gqlPatchWorkedListOne = gql`
+  mutation PatchWorkedListOne($input: PatchWorkedListOneInput!) {
+    patchWorkedListOne(input: $input) {
+      data {
+        _id
+        groupFid
+        nId
+        nPw
+        bPw
+        nState
+        createdAt
+        ip
+        cookie
+        phoneNumber
+        updatedAt
+        type
+        workedList
+        workedListExpireAt
+      }
+      message
+      error
+    }
+  }
+`;
+
+export const PatchWorkedListOne = async ({ _id, workedName }) => {
+  const { data, errors } = await client.mutate({
+    mutation: gqlPatchWorkedListOne,
+    variables: {
+      input: {
+        _id,
+        workedName,
+      },
+    },
+    fetchPolicy: "no-cache",
+  });
+  if (errors) {
+    console.error(errors[0].message);
+    return {
+      data,
+      message: "ERR > PatchWorkedListOne",
+      error: errors[0].message,
+    };
+  }
+  return {
+    data: data.patchWorkedListOne.data,
+    message: "OK > PatchWorkedListOne",
+    error: "",
+  };
+};
