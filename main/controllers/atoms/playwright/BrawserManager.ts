@@ -1,6 +1,7 @@
 import { Browser, BrowserContext, chromium, Page } from "playwright";
 import { getChromePath } from "./getChromPath";
 import { dataPlaywright } from "../data/data.playwright";
+import wait from "waait";
 
 interface BrowserOptions {
   headless?: boolean;
@@ -266,6 +267,7 @@ export class BrowserManager {
 
   async switchToOpenedTab(): Promise<Page> {
     try {
+      await wait(2 * 1000);
       // 열려있는 모든 페이지 가져오기
       const pages = this.context.pages();
 

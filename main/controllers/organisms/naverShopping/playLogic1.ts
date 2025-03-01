@@ -8,6 +8,7 @@ import { sameUrlCheckForError } from "../../molecules/commons/sameUrlCheckForErr
 import { BrowserManager } from "../../atoms/playwright/BrawserManager";
 import { findSelectorAndClickWithDetailPage } from "../../molecules/commons/findSelectorAndClickWithDetailPage";
 import { waitSelectAndForLoggedInCheck } from "../../molecules/naver/waitSelectAndForLoggedInCheck";
+import { withLogging } from "../../atoms/util/util.logger";
 
 export async function playLogic1({
   targetKeyword = "문제적커피",
@@ -21,7 +22,8 @@ export async function playLogic1({
   let page: Page;
   let browserManager: BrowserManager;
   try {
-    const { getPage, getBrowserManager } = await gotoPage({
+    const gotoPageWithLogging = withLogging(gotoPage, "getPage");
+    const { getPage, getBrowserManager } = await gotoPageWithLogging({
       is3gMode: false,
       cpuThrottlingRate: 0,
       url: "https://search.shopping.naver.com/home",
@@ -34,30 +36,50 @@ export async function playLogic1({
         waitSelectAndForLoggedInCheck({ browserManager }),
       cookies,
     });
+
     page = getPage;
     browserManager = getBrowserManager;
-    await inputClickAndInputTextAndButtonClick({
+
+    const inputClickAndInputTextAndButtonClickWithLogging = withLogging(
+      inputClickAndInputTextAndButtonClick,
+      "inputClickAndInputTextAndButtonClick",
+    );
+    await inputClickAndInputTextAndButtonClickWithLogging({
       browserManager,
       text: targetKeyword,
       inputSelector: "#input_text",
       clickSelector: 'button[data-shp-area="scb.search"]',
       options: { clearFirst: true, delay: 300 },
     });
-    await comparePricesFindAllProducts({
+    const comparePricesFindAllProductsWithLogging = withLogging(
+      comparePricesFindAllProducts,
+      "comparePricesFindAllProducts",
+    );
+    await comparePricesFindAllProductsWithLogging({
       nvMid,
       maxPages: 1,
       page,
       browserManager,
     });
     await browserManager.switchToOpenedTab();
-    await sameUrlCheckForError({ browserManager }); // 19세 상품일경우 19세 이상 아이디로만 접근가능
-    await findSelectorAndClickWithDetailPage({
+    const sameUrlCheckForErrorWithLogging = withLogging(
+      sameUrlCheckForError,
+      "sameUrlCheckForError",
+    );
+    await sameUrlCheckForErrorWithLogging({ browserManager }); // 19세 상품일경우 19세 이상 아이디로만 접근가능
+
+    const findSelectorAndClickWithDetailPageWithLogging = withLogging(
+      findSelectorAndClickWithDetailPage,
+      "findSelectorAndClickWithDetailPage",
+    );
+    await findSelectorAndClickWithDetailPageWithLogging({
       browserManager,
       page,
       selector: { getByRole: "button", name: "상세정보 펼쳐보기" },
       scrollCallback: async () =>
         await browserManager.pressKey({ select: "End" }),
     });
+
     await wait(delayTime * 1000);
     await browserManager?.cleanup();
   } catch (e) {
