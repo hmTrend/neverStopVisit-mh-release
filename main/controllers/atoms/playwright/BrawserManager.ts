@@ -130,16 +130,21 @@ export class BrowserManager {
       options?: NavigateOptions;
     } = {},
   ): Promise<void> {
-    try {
-      const { url, options: navigateOptions = {} } = options;
+    for (let i = 0; i < 3; i++) {
+      try {
+        const { url, options: navigateOptions = {} } = options;
 
-      await this.page.goto(url, {
-        waitUntil: navigateOptions.waitUntil ?? "networkidle",
-        timeout: navigateOptions.timeout ?? 90 * 1000,
-      });
-    } catch (error) {
-      console.error(`navigateToPage > ${error.message}`);
-      throw Error(`navigateToPage > ${error.message}`);
+        await this.page.goto(url, {
+          waitUntil: navigateOptions.waitUntil ?? "networkidle",
+          timeout: 30 * 1000,
+        });
+        return;
+      } catch (error) {
+        console.error(`navigateToPage > ${error.message}`);
+        if (i === 2) {
+          throw Error(`navigateToPage > ${error.message}`);
+        }
+      }
     }
   }
 

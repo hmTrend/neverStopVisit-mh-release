@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v7.3.0 쇼핑 playLogic1 / 로깅설치">
-      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/naver/loggedInCheck.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/logging/AppLogging.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/logging/AppLogging.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v7.3.6 navigateToPage" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -335,23 +331,7 @@
       <workItem from="1740350959622" duration="2619000" />
       <workItem from="1740551522151" duration="5529000" />
       <workItem from="1740614581693" duration="10053000" />
-      <workItem from="1740727375814" duration="9169000" />
-    </task>
-    <task id="LOCAL-00568" summary="v5.43.0 const { shoppingData } = savedDataPlay({});">
-      <option name="closed" value="true" />
-      <created>1740192957773</created>
-      <option name="number" value="00568" />
-      <option name="presentableId" value="LOCAL-00568" />
-      <option name="project" value="LOCAL" />
-      <updated>1740192957773</updated>
-    </task>
-    <task id="LOCAL-00569" summary="v5.46.0 WorkCompletedList">
-      <option name="closed" value="true" />
-      <created>1740198294490</created>
-      <option name="number" value="00569" />
-      <option name="presentableId" value="LOCAL-00569" />
-      <option name="project" value="LOCAL" />
-      <updated>1740198294490</updated>
+      <workItem from="1740727375814" duration="9609000" />
     </task>
     <task id="LOCAL-00570" summary="v5.49.0 networkPlay &gt; savedDataPlayCB">
       <option name="closed" value="true" />
@@ -729,7 +709,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740793078280</updated>
     </task>
-    <option name="localTasksCounter" value="617" />
+    <task id="LOCAL-00617" summary="v7.3.3 쇼핑 playLogic1 / 동작">
+      <option name="closed" value="true" />
+      <created>1740793226923</created>
+      <option name="number" value="00617" />
+      <option name="presentableId" value="LOCAL-00617" />
+      <option name="project" value="LOCAL" />
+      <updated>1740793226923</updated>
+    </task>
+    <task id="LOCAL-00618" summary="v7.3.6 navigateToPage">
+      <option name="closed" value="true" />
+      <created>1740793534222</created>
+      <option name="number" value="00618" />
+      <option name="presentableId" value="LOCAL-00618" />
+      <option name="project" value="LOCAL" />
+      <updated>1740793534222</updated>
+    </task>
+    <option name="localTasksCounter" value="619" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -774,8 +770,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.116.0" />
-    <MESSAGE value="v5.116.0 this is my ERROR remove" />
     <MESSAGE value="v5.119.0 GetFingerPrintTargetExcelOne / 에러처리 강화" />
     <MESSAGE value="v5.123.0 UtilAnalisys.measureExecutionTime" />
     <MESSAGE value="v6.0.0 networkRouterEdu" />
@@ -799,7 +793,9 @@
     <MESSAGE value="v7.0.0 쇼핑 아이디 중복안되게 작업하기" />
     <MESSAGE value="v7.0.3 getNShoppingLogic4ExcelAlignFlatTargetOne 10번 재작업" />
     <MESSAGE value="v7.3.0 쇼핑 playLogic1 / 로깅설치" />
-    <option name="LAST_COMMIT_MESSAGE" value="v7.3.0 쇼핑 playLogic1 / 로깅설치" />
+    <MESSAGE value="v7.3.3 쇼핑 playLogic1 / 동작" />
+    <MESSAGE value="v7.3.6 navigateToPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="v7.3.6 navigateToPage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
