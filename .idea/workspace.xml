@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v7.3.6 navigateToPage" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v7.6.0 에러 개선">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -331,31 +334,7 @@
       <workItem from="1740350959622" duration="2619000" />
       <workItem from="1740551522151" duration="5529000" />
       <workItem from="1740614581693" duration="10053000" />
-      <workItem from="1740727375814" duration="9609000" />
-    </task>
-    <task id="LOCAL-00570" summary="v5.49.0 networkPlay &gt; savedDataPlayCB">
-      <option name="closed" value="true" />
-      <created>1740198689174</created>
-      <option name="number" value="00570" />
-      <option name="presentableId" value="LOCAL-00570" />
-      <option name="project" value="LOCAL" />
-      <updated>1740198689174</updated>
-    </task>
-    <task id="LOCAL-00571" summary="v5.53.0 nShoppingLogic4IsStart">
-      <option name="closed" value="true" />
-      <created>1740200722532</created>
-      <option name="number" value="00571" />
-      <option name="presentableId" value="LOCAL-00571" />
-      <option name="project" value="LOCAL" />
-      <updated>1740200722532</updated>
-    </task>
-    <task id="LOCAL-00572" summary="v5.59.0 apiPatchDayNowCountForShopping">
-      <option name="closed" value="true" />
-      <created>1740201231835</created>
-      <option name="number" value="00572" />
-      <option name="presentableId" value="LOCAL-00572" />
-      <option name="project" value="LOCAL" />
-      <updated>1740201231835</updated>
+      <workItem from="1740727375814" duration="14693000" />
     </task>
     <task id="LOCAL-00573" summary="v5.63.0 한국시간 날짜로 변경완료">
       <option name="closed" value="true" />
@@ -725,7 +704,31 @@
       <option name="project" value="LOCAL" />
       <updated>1740793534222</updated>
     </task>
-    <option name="localTasksCounter" value="619" />
+    <task id="LOCAL-00619" summary="v7.3.6 navigateToPage">
+      <option name="closed" value="true" />
+      <created>1740804461957</created>
+      <option name="number" value="00619" />
+      <option name="presentableId" value="LOCAL-00619" />
+      <option name="project" value="LOCAL" />
+      <updated>1740804461957</updated>
+    </task>
+    <task id="LOCAL-00620" summary="v7.3.9 화이트스크린 제거">
+      <option name="closed" value="true" />
+      <created>1740804808226</created>
+      <option name="number" value="00620" />
+      <option name="presentableId" value="LOCAL-00620" />
+      <option name="project" value="LOCAL" />
+      <updated>1740804808226</updated>
+    </task>
+    <task id="LOCAL-00621" summary="v7.6.0 에러 개선">
+      <option name="closed" value="true" />
+      <created>1740813218793</created>
+      <option name="number" value="00621" />
+      <option name="presentableId" value="LOCAL-00621" />
+      <option name="project" value="LOCAL" />
+      <updated>1740813218793</updated>
+    </task>
+    <option name="localTasksCounter" value="622" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -770,8 +773,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.119.0 GetFingerPrintTargetExcelOne / 에러처리 강화" />
-    <MESSAGE value="v5.123.0 UtilAnalisys.measureExecutionTime" />
     <MESSAGE value="v6.0.0 networkRouterEdu" />
     <MESSAGE value="v6.3.0 networkRouterEdu &gt; isTest" />
     <MESSAGE value="v6.3.3 networkRouterEdu &gt; 포멧 완성" />
@@ -795,7 +796,9 @@
     <MESSAGE value="v7.3.0 쇼핑 playLogic1 / 로깅설치" />
     <MESSAGE value="v7.3.3 쇼핑 playLogic1 / 동작" />
     <MESSAGE value="v7.3.6 navigateToPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="v7.3.6 navigateToPage" />
+    <MESSAGE value="v7.3.9 화이트스크린 제거" />
+    <MESSAGE value="v7.6.0 에러 개선" />
+    <option name="LAST_COMMIT_MESSAGE" value="v7.6.0 에러 개선" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
