@@ -3,8 +3,8 @@ import { findSelectorAndScroll } from "../commons/findSelectorAndScroll";
 import { gotoPage } from "../commons/gotoPage";
 import { Page } from "playwright";
 
-export async function clickTargetPlaceOrGoToNextStep({
-  isTest = false,
+export async function blogReviewRandomClick({
+  isTest = true,
   page = undefined,
   browserManager = undefined,
   placeNumber = "1918144108",
@@ -18,7 +18,7 @@ export async function clickTargetPlaceOrGoToNextStep({
     const { getPage, getBrowserManager } = await gotoPage({
       is3gMode: false,
       cpuThrottlingRate: 0,
-      url: "https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%ED%95%A9%EC%A0%95%EB%84%A4%EC%9D%BC",
+      url: "https://m.place.naver.com/nailshop/1918144108/home?entry=pll",
       // 합정네일 모바일
     });
     browserManager = getBrowserManager;
@@ -27,38 +27,16 @@ export async function clickTargetPlaceOrGoToNextStep({
   try {
     const networkManager = browserManager.createNetworkManager();
     await networkManager.waitForAllRequests();
-    await findSelectorAndScroll({
-      selector: ".place_section_header_title",
-      browserManager,
-      page,
-    });
-    await clickTargetPlaceById({ placeNumber, page });
+    await blogReviewSelector({ page });
   } catch (e) {
-    for (let i = 0; i < 10; i++) {
-      try {
-        const pageO = await expandAndClickMore({ page });
-        page = pageO;
-        {
-          await clickNextPageMoreLink({ page });
-          page = pageO;
-        }
-        {
-          const pageO = await clickTargetPlaceNextMorePage({
-            placeNumber,
-            page,
-          });
-          page = pageO;
-        }
-        break;
-      } catch (e) {
-        if (i >= 9) {
-          console.error(`clickNextPageMoreLink > ${e.message}`);
-        }
-        console.log(`clickNextPageMoreLink > loading...`);
-        await wait(3 * 1000);
-      }
-    }
+    console.error(`blogReviewRandomClick > ${e.message}`);
+    throw Error(`blogReviewRandomClick > ${e.message}`);
   }
+}
+
+async function blogReviewSelector({ page }: { page: Page }) {
+  const blogReviewSelector = 'a[href*="/review/ugc"]:has-text("블로그 리뷰")';
+  await page.locator(blogReviewSelector).first().click();
 }
 
 async function clickTargetPlaceNextMorePage({ placeNumber, page }) {
@@ -219,4 +197,4 @@ async function expandAndClickMore({ page }) {
   }
 }
 
-// clickTargetPlaceOrGoToNextStep();
+blogReviewRandomClick();

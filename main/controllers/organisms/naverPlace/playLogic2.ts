@@ -14,7 +14,7 @@ export async function playLogic2({
   delayTime = 5,
 } = {}) {
   /**
-   * 네이버 빈 페이지 > 네이버검색! > 플레이스 > 더보기 > 블로그 리뷰 > 랜덤클릭 > 플레이스
+   * 네이버 빈 페이지 > 네이버검색! > 플레이스찾기! > 더보기 > 플레이스찾기! > 블로그 리뷰 > 랜덤클릭 > 플레이스찾기!(체류)
    * **/
   let page: Page;
   let browserManager: BrowserManager;
@@ -44,12 +44,6 @@ export async function playLogic2({
       options: { clearFirst: true, delay: 300 },
     });
     await clickTargetPlaceOrGoToNextStep({ placeNumber, page, browserManager });
-    await lastActionRandomClick({
-      placeNumber,
-      page,
-      browserManager,
-      delayTime,
-    });
     await browserManager?.cleanup();
   } catch (e) {
     await browserManager?.cleanup();
