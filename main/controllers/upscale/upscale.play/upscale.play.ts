@@ -76,7 +76,11 @@ async function totalPlay({
   }
 
   function basketPlayList() {
-    savedDataPlay({ getMainWindow: mainWindow });
+    const savedDataPlay_mainWindow = withLogging(
+      savedDataPlay,
+      "savedDataPlay_mainWindow",
+    );
+    savedDataPlay_mainWindow({ getMainWindow: mainWindow });
     try {
       const naverShoppingPlayList = async () => {
         const resultTotalWorkedSecondsTime =
@@ -89,7 +93,11 @@ async function totalPlay({
                 fingerPrintGroupFid: nShoppingLogic4.fingerPrint.groupId,
               }),
           });
-        savedDataPlay({
+        const savedDataPlay_totalWorkingTime = withLogging(
+          savedDataPlay,
+          "savedDataPlay_totalWorkingTime",
+        );
+        await savedDataPlay_totalWorkingTime({
           getShoppingData: { totalWorkingTime: resultTotalWorkedSecondsTime },
         });
       };
