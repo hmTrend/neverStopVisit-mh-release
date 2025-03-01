@@ -22,7 +22,7 @@ export async function playLogic1({
   let page: Page;
   let browserManager: BrowserManager;
   try {
-    const gotoPageWithLogging = withLogging(gotoPage, "getPage");
+    const gotoPageWithLogging = withLogging(gotoPage, "gotoPage");
     const { getPage, getBrowserManager } = await gotoPageWithLogging({
       is3gMode: false,
       cpuThrottlingRate: 0,

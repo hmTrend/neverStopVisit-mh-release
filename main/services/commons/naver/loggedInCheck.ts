@@ -63,8 +63,6 @@ export const loggedInCheck = async ({
     if (isLoggedIn === "NO") {
       try {
         const { data } = await GetFingerPrintNowLogData({ _id });
-        console.log("data 333333333");
-        console.log(data);
         await apiNotionPatchLoginIssue({ data });
       } catch (e) {
         console.error(e.message);

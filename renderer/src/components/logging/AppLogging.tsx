@@ -20,9 +20,6 @@ export function AppLogging() {
   const [logs, setLogs] = useState<LoggingData[]>([]);
 
   function loggingData(data: LoggingData) {
-    console.log("data 33333");
-    console.log(data);
-
     // 현재 시간 추가
     const dataWithTimestamp = {
       ...data,
