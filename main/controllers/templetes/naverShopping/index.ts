@@ -45,10 +45,6 @@ export async function playNaverShopping({
       playSelectLogic,
       "playSelectLogic",
     );
-    const patchWorkedListOneWithLogging = withLogging(
-      patchWorkedListOne,
-      "patchWorkedListOne",
-    );
 
     const excelData: NShoppingLogic4ExcelListAlignFlatMapEntity =
       await getNShoppingLogic4ExcelAlignFlatTargetOneWithLogging({
@@ -77,6 +73,11 @@ export async function playNaverShopping({
       targetKeyword: workKeyword,
       delayTime,
     });
+
+    const patchWorkedListOneWithLogging = withLogging(
+      patchWorkedListOne,
+      "patchWorkedListOne",
+    );
     await patchWorkedListOneWithLogging({
       _id: resultCookie.cookieId,
       workedName: excelData.nvMid,

@@ -24,7 +24,7 @@ function withLogging(fn, functionName) {
   return async function (...args) {
     // 함수 시작 로그
     const fnStartArgs = args.length
-      ? JSON.stringify(args).substring(0, 100)
+      ? JSON.stringify(args).substring(0, 180)
       : "인자 없음";
     logger.emit("log", {
       level: "INFO",
