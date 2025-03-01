@@ -6,6 +6,7 @@ class WorkValtio {
     this.completedList = [];
   }
   addToCompletedList(item: any) {
+    if (!item) return;
     this.completedList = [...this.completedList, item].slice(-100);
   }
 }
