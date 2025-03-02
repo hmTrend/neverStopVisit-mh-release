@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v8.6.0 쇼핑 &gt; 로깅체크 강화">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v8.9.0 back 에러받기 성공">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/excel/getFingerPrintTargetExcelOne2.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic2.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/apollo-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/apollo-provider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/lib/apollo/n-shoppingLogic4-apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/n-shoppingLogic4-apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/util/util.text.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/util/util.text.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,15 +340,7 @@
       <workItem from="1740350959622" duration="2619000" />
       <workItem from="1740551522151" duration="5529000" />
       <workItem from="1740614581693" duration="10053000" />
-      <workItem from="1740727375814" duration="25907000" />
-    </task>
-    <task id="LOCAL-00577" summary="v5.73.0 naverPlacePlayList &gt; savedDataPlay">
-      <option name="closed" value="true" />
-      <created>1740204104297</created>
-      <option name="number" value="00577" />
-      <option name="presentableId" value="LOCAL-00577" />
-      <option name="project" value="LOCAL" />
-      <updated>1740204104297</updated>
+      <workItem from="1740727375814" duration="26624000" />
     </task>
     <task id="LOCAL-00578" summary="v5.76.0 PatchNPlaceDayNowCount">
       <option name="closed" value="true" />
@@ -737,7 +726,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740893186786</updated>
     </task>
-    <option name="localTasksCounter" value="626" />
+    <task id="LOCAL-00626" summary="v8.9.0 back 에러받기 성공">
+      <option name="closed" value="true" />
+      <created>1740916572932</created>
+      <option name="number" value="00626" />
+      <option name="presentableId" value="LOCAL-00626" />
+      <option name="project" value="LOCAL" />
+      <updated>1740916572932</updated>
+    </task>
+    <option name="localTasksCounter" value="627" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -782,7 +779,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v6.3.3 라우터 초수 포멧변경 / build" />
     <MESSAGE value="v6.3.6 await browserManager?.cleanup()" />
     <MESSAGE value="v6.3.9 comparePricesFindAllProducts &gt; for (let i = 0; i &lt; 5; i++) {" />
     <MESSAGE value="v6.3.16 naverShopping 에러로그 강화" />
@@ -807,7 +803,8 @@
     <MESSAGE value="v8.0.0 플레이스 로직2셋팅 UI" />
     <MESSAGE value="v8.3.0 플레이스 &gt; blogReviewSelector).first().click()" />
     <MESSAGE value="v8.6.0 쇼핑 &gt; 로깅체크 강화" />
-    <option name="LAST_COMMIT_MESSAGE" value="v8.6.0 쇼핑 &gt; 로깅체크 강화" />
+    <MESSAGE value="v8.9.0 back 에러받기 성공" />
+    <option name="LAST_COMMIT_MESSAGE" value="v8.9.0 back 에러받기 성공" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

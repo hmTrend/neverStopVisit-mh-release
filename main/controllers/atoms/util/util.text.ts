@@ -5,6 +5,9 @@ export class UtilText {
     if (errMessage.includes("this is login button")) {
       return "로그인 풀림";
     }
+    if (errMessage.includes("Complete the day's counting tasks")) {
+      return "당일작업완료";
+    }
     if (errMessage.includes("#_sr_lst_")) {
       return "상품 미발견";
     }
