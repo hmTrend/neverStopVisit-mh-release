@@ -25,10 +25,10 @@ export const client = new ApolloClient({
   cache: new InMemoryCache(),
   defaultOptions: {
     query: {
-      errorPolicy: "all",
+      errorPolicy: "none",
     },
     mutate: {
-      errorPolicy: "all",
+      errorPolicy: "none",
     },
   },
 });

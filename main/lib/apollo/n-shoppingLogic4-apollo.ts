@@ -29,28 +29,25 @@ const gqlGetNShoppingLogic4ExcelAlignFlatTargetOne = gql`
 export const GetNShoppingLogic4ExcelAlignFlatTargetOne = async ({
   groupFid,
 }) => {
-  const { data, error } = await client.query({
-    query: gqlGetNShoppingLogic4ExcelAlignFlatTargetOne,
-    variables: {
-      input: {
-        groupFid,
+  try {
+    const { data } = await client.query({
+      query: gqlGetNShoppingLogic4ExcelAlignFlatTargetOne,
+      variables: {
+        input: {
+          groupFid,
+        },
       },
-    },
-    fetchPolicy: "no-cache",
-  });
-  if (error) {
-    console.error(error.message);
+      fetchPolicy: "no-cache",
+    });
     return {
-      data,
-      message: "ERR > GetNShoppingLogic4ExcelAlignFlatTargetOne ",
-      error: error.message,
+      data: data.getNShoppingLogic4ExcelAlignFlatTargetOne.data,
+      message: "OK > getNShoppingLogic4ExcelAlignFlatTargetOne ",
+      error: "",
     };
+  } catch (e) {
+    console.error(`GetNShoppingLogic4ExcelAlignFlatTargetOne > ${e.message}`);
+    throw Error(`GetNShoppingLogic4ExcelAlignFlatTargetOne > ${e.message}`);
   }
-  return {
-    data: data.getNShoppingLogic4ExcelAlignFlatTargetOne.data,
-    message: "OK > getNShoppingLogic4ExcelAlignFlatTargetOne ",
-    error: "",
-  };
 };
 
 const gqlPatchNShoppingLogic4NowCountIncrement = gql`
