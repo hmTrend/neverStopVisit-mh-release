@@ -68,6 +68,7 @@ export const loggedInCheck = async ({
         console.error(e.message);
       }
       await cookieNstateSave({ page, _id, nState: "미로그인" });
+      await page.close();
       throw Error("this is not loggedIn");
     }
     // 닫기 버튼 클릭
