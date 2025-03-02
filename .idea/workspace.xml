@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v8.9.0 back 에러받기 성공">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v8.9.3 당일작업완료 / 오류메시지 front 보내기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/util/util.text.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/util/util.text.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,15 +340,7 @@
       <workItem from="1740350959622" duration="2619000" />
       <workItem from="1740551522151" duration="5529000" />
       <workItem from="1740614581693" duration="10053000" />
-      <workItem from="1740727375814" duration="26624000" />
-    </task>
-    <task id="LOCAL-00578" summary="v5.76.0 PatchNPlaceDayNowCount">
-      <option name="closed" value="true" />
-      <created>1740205796978</created>
-      <option name="number" value="00578" />
-      <option name="presentableId" value="LOCAL-00578" />
-      <option name="project" value="LOCAL" />
-      <updated>1740205796978</updated>
+      <workItem from="1740727375814" duration="27745000" />
     </task>
     <task id="LOCAL-00579" summary="v5.79.0 clickTargetPlaceOrGoToNextStep &gt; 에러로그처리강화">
       <option name="closed" value="true" />
@@ -734,7 +726,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740916572932</updated>
     </task>
-    <option name="localTasksCounter" value="627" />
+    <task id="LOCAL-00627" summary="v8.9.3 당일작업완료 / 오류메시지 front 보내기">
+      <option name="closed" value="true" />
+      <created>1740920573239</created>
+      <option name="number" value="00627" />
+      <option name="presentableId" value="LOCAL-00627" />
+      <option name="project" value="LOCAL" />
+      <updated>1740920573239</updated>
+    </task>
+    <option name="localTasksCounter" value="628" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -779,7 +779,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v6.3.6 await browserManager?.cleanup()" />
     <MESSAGE value="v6.3.9 comparePricesFindAllProducts &gt; for (let i = 0; i &lt; 5; i++) {" />
     <MESSAGE value="v6.3.16 naverShopping 에러로그 강화" />
     <MESSAGE value="v5.116.3 노션 날짜 표기 에러 수정" />
@@ -804,7 +803,8 @@
     <MESSAGE value="v8.3.0 플레이스 &gt; blogReviewSelector).first().click()" />
     <MESSAGE value="v8.6.0 쇼핑 &gt; 로깅체크 강화" />
     <MESSAGE value="v8.9.0 back 에러받기 성공" />
-    <option name="LAST_COMMIT_MESSAGE" value="v8.9.0 back 에러받기 성공" />
+    <MESSAGE value="v8.9.3 당일작업완료 / 오류메시지 front 보내기" />
+    <option name="LAST_COMMIT_MESSAGE" value="v8.9.3 당일작업완료 / 오류메시지 front 보내기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
