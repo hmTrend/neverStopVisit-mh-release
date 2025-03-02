@@ -28,8 +28,8 @@ export async function playLogic2({
           getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent(),
           browser,
         ),
-      loginCheckCallback: async ({ browserManager }) =>
-        waitSelectAndForLoggedInCheck({ browserManager }),
+      // loginCheckCallback: async ({ browserManager }) =>
+      //   waitSelectAndForLoggedInCheck({ browserManager }),
       cookies,
     });
     page = getPage;
@@ -52,4 +52,4 @@ export async function playLogic2({
   }
 }
 
-// playLogic2();
+playLogic2();
