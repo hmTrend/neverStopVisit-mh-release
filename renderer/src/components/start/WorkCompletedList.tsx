@@ -1,16 +1,26 @@
-import { Box, Flex, Stat, StatArrow, Text } from "@chakra-ui/react";
+import { Box, Flex, Stat, StatArrow, Text, useToast } from "@chakra-ui/react";
 import { useSnapshot } from "valtio/react";
 import { storeWork } from "@/valtio/work.valtio";
 import { useEffect } from "react";
 
 export function WorkCompletedList() {
   const { completedList } = useSnapshot(storeWork);
+  const toast = useToast();
 
   useEffect(() => {
     const cleanup = window.ipc.on("error-to-front-result", (args: any) => {
-      storeWork.addToCompletedList(args);
-      console.log("args 333333");
-      console.log(args);
+      if (args.errorMessage !== "당일작업완료") {
+        storeWork.addToCompletedList(args);
+        console.log("args 333333");
+        console.log(args);
+      } else {
+        toast({
+          title: "당일작업완료",
+          status: "loading",
+          isClosable: true,
+          duration: 300 * 1000,
+        });
+      }
     });
     return cleanup;
   }, []);
