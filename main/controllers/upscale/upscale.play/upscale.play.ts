@@ -69,7 +69,15 @@ async function totalPlay({
       getPlaceData: { changeTime: resultChangeSeconds },
     });
     const allSettledData = await Promise.allSettled(basketPlayList());
-    await allSettledResult(allSettledData, nShoppingLogic4, savedDataPlay);
+    const allSettledResultWithLogging = withLogging(
+      allSettledResult,
+      "allSettledResult",
+    );
+    await allSettledResultWithLogging(
+      allSettledData,
+      nShoppingLogic4,
+      savedDataPlay,
+    );
   } catch (e) {
     console.error(`totalPlay > ${e.message}`);
     throw Error(`totalPlay > ${e.message}`);
@@ -98,7 +106,9 @@ async function totalPlay({
           "savedDataPlay_totalWorkingTime",
         );
         await savedDataPlay_totalWorkingTime({
-          getShoppingData: { totalWorkingTime: resultTotalWorkedSecondsTime },
+          getShoppingData: {
+            ["totalWorkingTime"]: resultTotalWorkedSecondsTime,
+          },
         });
       };
 
@@ -167,7 +177,11 @@ async function nShoppingLogic4IsStart({
   const { shoppingData } = savedDataPlay({});
   const shoppingResult = allSettledData[currentIndex];
   if (shoppingResult.status === "fulfilled") {
-    await workedDataToFront({
+    const workedDataToFrontWithLogging = withLogging(
+      workedDataToFront,
+      "workedDataToFront",
+    );
+    await workedDataToFrontWithLogging({
       savedData: {
         ...nShoppingLogic4,
         ...shoppingData,
@@ -177,7 +191,11 @@ async function nShoppingLogic4IsStart({
       mainWindow,
     });
   } else if (shoppingResult.status === "rejected") {
-    await workedDataToFront({
+    const workedDataToFrontWithLogging = withLogging(
+      workedDataToFront,
+      "workedDataToFront",
+    );
+    await workedDataToFrontWithLogging({
       savedData: {
         ...nShoppingLogic4,
         ...shoppingData,
@@ -189,12 +207,20 @@ async function nShoppingLogic4IsStart({
       mainWindow,
     });
   }
-  const { data } = await PatchNShoppingLogic4NowCountIncrement({
+  const PatchNShoppingLogic4NowCountIncrementWithLogging = withLogging(
+    PatchNShoppingLogic4NowCountIncrement,
+    "PatchNShoppingLogic4NowCountIncrement",
+  );
+  const { data } = await PatchNShoppingLogic4NowCountIncrementWithLogging({
     groupFid: shoppingData.dataGroupFid,
     nvMid: shoppingData.nvMid,
     targetKeyword: shoppingData.targetKeyword,
   });
-  await apiPatchDayNowCountForShopping({ data });
+  const apiPatchDayNowCountForShoppingWithLogging = withLogging(
+    apiPatchDayNowCountForShopping,
+    "apiPatchDayNowCountForShopping",
+  );
+  await apiPatchDayNowCountForShoppingWithLogging({ data });
   currentIndex++;
   return { getCurrentIndex: currentIndex };
 }
