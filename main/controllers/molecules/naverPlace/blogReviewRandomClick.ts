@@ -124,4 +124,4 @@ async function placeLinkClickInBlogDetailPage({ page }: { page: Page }) {
   }
 }
 
-blogReviewRandomClick();
+// blogReviewRandomClick();
