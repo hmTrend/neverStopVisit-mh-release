@@ -4,6 +4,7 @@ import { dataPlaywright } from "../data/data.playwright";
 import wait from "waait";
 import { utilGetNextProxyForPlaywright } from "../util/util.getNextProxy";
 import { DataCommons } from "../data/data.commons";
+import { setDataUser } from "../user/data.user";
 
 interface BrowserOptions {
   headless?: boolean;
@@ -89,11 +90,12 @@ export class BrowserManager {
 
   static async createMobileContext(userAgent: any, browser: Browser) {
     try {
-      console.log("DataCommons('commons').getData 33333");
-      console.log(DataCommons("commons").getData());
       const proxySettings = utilGetNextProxyForPlaywright({
         isProxy: DataCommons("commons").getData().ip === "PROXY",
       });
+      console.log("proxySettings.server 33333333");
+      console.log(proxySettings.server);
+      setDataUser({ myProxy: proxySettings.server });
       const context = await browser.newContext({
         userAgent: userAgent.userAgent,
         extraHTTPHeaders: userAgent.headers,

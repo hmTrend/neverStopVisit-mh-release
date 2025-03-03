@@ -18,6 +18,7 @@ import { apiNotionPatchDayNowCount } from "../../api/notion/api.patchDayNowCount
 import { loggedInCheckWithEmptyPage } from "../commons/naver/loggedInCheckWithEmptyPage";
 import { api_notion_errorLog } from "../../api/notion/api.notion.errorLog";
 import { globalBrowsers } from "../../lib/const/constVar";
+import { DataUser } from "../../controllers/atoms/user/data.user";
 
 export class NPlace extends PuppeteerEngine {
   async start({ nPlace, mainWindow, continuousWork }): Promise<void> {
@@ -143,6 +144,7 @@ export class NPlace extends PuppeteerEngine {
       const myIp = await UtilNetwork.getIpAddress();
       const createdAt = UtilDate.getCurrentDate();
       errorToFront({
+        ...DataUser,
         targetKeyword: this.query,
         mainWindow,
         errorMessage: "",
@@ -154,6 +156,7 @@ export class NPlace extends PuppeteerEngine {
       const myIp = await UtilNetwork.getIpAddress();
       const createdAt = UtilDate.getCurrentDate();
       errorToFront({
+        ...DataUser,
         targetKeyword: this.query,
         mainWindow,
         errorMessage: e.message,

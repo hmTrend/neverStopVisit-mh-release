@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v8.16.6 에러처리 대응">
-      <change afterPath="$PROJECT_DIR$/main/controllers/atoms/data/data.commons.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/controllers/atoms/util/util.getNextProxy.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-02-22__3_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-02-22__5_32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-02-24__9_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-02-24_오전_9_19/shelved.patch" beforeDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v9.0.0 proxy 탑재완료">
+      <change afterPath="$PROJECT_DIR$/clicked-location_component.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/startProgram.ipc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clicked-se-module-map-text.png" beforeDir="false" afterPath="$PROJECT_DIR$/clicked-se-module-map-text.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverShopping/playLogic1.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverShopping/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/OptionCommon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/OptionCommon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/start.valtio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/user/data.user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/user/data.user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/upscale/upscale.play/upscale.play.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/lib/apollo/finger-print.apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/finger-print.apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nPlace/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/nShopping/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/nShopping/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/start/WorkCompletedList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,23 +346,7 @@
       <workItem from="1740350959622" duration="2619000" />
       <workItem from="1740551522151" duration="5529000" />
       <workItem from="1740614581693" duration="10053000" />
-      <workItem from="1740727375814" duration="44702000" />
-    </task>
-    <task id="LOCAL-00588" summary="v5.106.0 changeTime">
-      <option name="closed" value="true" />
-      <created>1740236104936</created>
-      <option name="number" value="00588" />
-      <option name="presentableId" value="LOCAL-00588" />
-      <option name="project" value="LOCAL" />
-      <updated>1740236104936</updated>
-    </task>
-    <task id="LOCAL-00589" summary="v5.109.0 changeTime">
-      <option name="closed" value="true" />
-      <created>1740236566466</created>
-      <option name="number" value="00589" />
-      <option name="presentableId" value="LOCAL-00589" />
-      <option name="project" value="LOCAL" />
-      <updated>1740236566466</updated>
+      <workItem from="1740727375814" duration="49326000" />
     </task>
     <task id="LOCAL-00590" summary="v5.113.0 작업시간(대기초수)">
       <option name="closed" value="true" />
@@ -743,7 +724,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740966370137</updated>
     </task>
-    <option name="localTasksCounter" value="637" />
+    <task id="LOCAL-00637" summary="v9.0.0 proxy 탑재완료">
+      <option name="closed" value="true" />
+      <created>1740985914258</created>
+      <option name="number" value="00637" />
+      <option name="presentableId" value="LOCAL-00637" />
+      <option name="project" value="LOCAL" />
+      <updated>1740985914258</updated>
+    </task>
+    <task id="LOCAL-00638" summary="v9.0.0 proxy 탑재완료">
+      <option name="closed" value="true" />
+      <created>1740985920562</created>
+      <option name="number" value="00638" />
+      <option name="presentableId" value="LOCAL-00638" />
+      <option name="project" value="LOCAL" />
+      <updated>1740985920562</updated>
+    </task>
+    <option name="localTasksCounter" value="639" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -788,7 +785,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.123.6 AppLogging" />
     <MESSAGE value="v5.123.9 functionName, args: fnEndArgs" />
     <MESSAGE value="v5.123.9 yarn build" />
     <MESSAGE value="v7.0.0 작업했던 리스트 중복안되게 하기" />
@@ -813,7 +809,8 @@
     <MESSAGE value="v8.16.0 프로그램 시작시 플레이스 로직2 셋팅" />
     <MESSAGE value="v8.16.3 블로그리뷰 없음 대응" />
     <MESSAGE value="v8.16.6 에러처리 대응" />
-    <option name="LAST_COMMIT_MESSAGE" value="v8.16.6 에러처리 대응" />
+    <MESSAGE value="v9.0.0 proxy 탑재완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="v9.0.0 proxy 탑재완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

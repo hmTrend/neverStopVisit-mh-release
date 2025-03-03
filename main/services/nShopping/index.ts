@@ -8,6 +8,7 @@ import { UtilDate } from "../../lib/util/util.date";
 import { logicTypeNAVER } from "./logicType-NAVER";
 import { logicTypeGOOGLE } from "./logicType-GOOGLE";
 import { logicTypePLUSSTORE } from "./logicType-PLUS-STORE";
+import { DataUser } from "../../controllers/atoms/user/data.user";
 
 export class NShopping extends PuppeteerEngine {
   async start({ nShopping, mainWindow }): Promise<void> {
@@ -97,6 +98,7 @@ export class NShopping extends PuppeteerEngine {
       const myIp = await UtilNetwork.getIpAddress();
       const createdAt = UtilDate.getCurrentDate();
       errorToFront({
+        ...DataUser,
         targetKeyword: this.query,
         mainWindow,
         errorMessage: "",
@@ -108,6 +110,7 @@ export class NShopping extends PuppeteerEngine {
       const myIp = await UtilNetwork.getIpAddress();
       const createdAt = UtilDate.getCurrentDate();
       errorToFront({
+        ...DataUser,
         targetKeyword: this.query,
         mainWindow,
         errorMessage: e.message,

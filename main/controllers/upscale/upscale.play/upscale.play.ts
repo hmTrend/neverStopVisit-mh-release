@@ -17,6 +17,7 @@ import { PatchNPlaceDayNowCount } from "../../../lib/apollo/n-place-apollo";
 import { apiNotionPatchDayNowCount } from "../../../api/notion/api.patchDayNowCount";
 import { UtilAnalisys } from "../../atoms/util/util.analisys";
 import { withLogging } from "../../atoms/util/util.logger";
+import { DataUser, dataUserInitialize } from "../../atoms/user/data.user";
 
 export async function upscalePlay({
   internetType = "STATIC",
@@ -29,6 +30,7 @@ export async function upscalePlay({
 
   while (isRunning) {
     try {
+      dataUserInitialize();
       const savedDataPlay = playDataInitial();
       await totalPlay({
         playTime,
@@ -154,6 +156,8 @@ async function totalPlay({
     savedDataPlay: SavedDataPlayFunction,
   ) {
     let currentIndex = 0;
+    console.log("DataUser 3333333");
+    console.log(DataUser);
     const { getCurrentIndex } = await nShoppingLogic4IsStart({
       nShoppingLogic4,
       allSettledData,
@@ -189,6 +193,7 @@ async function nShoppingLogic4IsStart({
     );
     await workedDataToFrontWithLogging({
       savedData: {
+        ...DataUser,
         ...nShoppingLogic4,
         ...shoppingData,
         createdAt: UtilDate.getCurrentDate(),
@@ -203,6 +208,7 @@ async function nShoppingLogic4IsStart({
     );
     await workedDataToFrontWithLogging({
       savedData: {
+        ...DataUser,
         ...nShoppingLogic4,
         ...shoppingData,
         createdAt: UtilDate.getCurrentDate(),
@@ -245,6 +251,7 @@ async function nPlaceIsStart({
   if (placeResult.status === "fulfilled") {
     await workedDataToFront({
       savedData: {
+        ...DataUser,
         ...nPlace,
         ...placeData,
         createdAt: UtilDate.getCurrentDate(),
@@ -256,6 +263,7 @@ async function nPlaceIsStart({
     console.error(`nPlaceIsStart > ${placeResult.reason}`);
     await workedDataToFront({
       savedData: {
+        ...DataUser,
         ...nPlace,
         ...placeData,
         createdAt: UtilDate.getCurrentDate(),

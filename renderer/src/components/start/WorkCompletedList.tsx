@@ -58,7 +58,9 @@ export function WorkCompletedList() {
           <Text>{v?.logicType}</Text>
           <Text>{v?.targetKeyword}</Text>
           <Text>{v?.workKeyword}</Text>
-          <Text>{v?.myIp}</Text>
+          <Text>
+            {v?.myIp} ({v?.myProxy})
+          </Text>
           <Text color={"red"}>
             {v?.totalWorkingTime}초 ({v?.delayTime}초)
           </Text>

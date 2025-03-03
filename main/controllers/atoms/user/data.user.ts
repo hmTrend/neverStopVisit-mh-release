@@ -6,6 +6,7 @@ export const DataUser = {
   workType: "",
   logicType: "",
   myIp: "",
+  myProxy: "",
   nvMid: "",
   delayTime: 0,
   totalWorkingTime: 0,
@@ -24,6 +25,7 @@ export function dataUserInitialize() {
   DataUser.workType = "";
   DataUser.logicType = "";
   DataUser.myIp = "";
+  DataUser.myProxy = "";
   DataUser.nvMid = "";
   DataUser.delayTime = 0;
   DataUser.totalWorkingTime = 0;
@@ -41,6 +43,7 @@ export function setDataUser({
   workType,
   logicType,
   myIp,
+  myProxy,
   nvMid,
   delayTime,
   totalWorkingTime,
@@ -53,6 +56,7 @@ export function setDataUser({
   workType?: string;
   logicType?: string;
   myIp?: string;
+  myProxy?: string;
   nvMid?: string;
   delayTime?: number;
   totalWorkingTime?: number;
@@ -66,6 +70,7 @@ export function setDataUser({
   if (workType !== undefined) DataUser.workType = workType;
   if (logicType !== undefined) DataUser.logicType = logicType;
   if (myIp !== undefined) DataUser.myIp = myIp;
+  if (myProxy !== undefined) DataUser.myProxy = myProxy;
   if (nvMid !== undefined) DataUser.nvMid = nvMid;
   if (delayTime !== undefined) DataUser.delayTime = delayTime;
   if (groupFid !== undefined) DataUser.groupFid = groupFid;
