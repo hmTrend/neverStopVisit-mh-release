@@ -91,11 +91,9 @@ export class BrowserManager {
   static async createMobileContext(userAgent: any, browser: Browser) {
     try {
       const proxySettings = utilGetNextProxyForPlaywright({
-        isProxy: DataCommons("commons").getData().ip === "PROXY",
+        isProxy: DataCommons("commons").getData()?.ip === "PROXY" || false,
       });
-      console.log("proxySettings.server 33333333");
-      console.log(proxySettings.server);
-      setDataUser({ myProxy: proxySettings.server });
+      setDataUser({ myProxy: proxySettings?.server });
       const context = await browser.newContext({
         userAgent: userAgent.userAgent,
         extraHTTPHeaders: userAgent.headers,

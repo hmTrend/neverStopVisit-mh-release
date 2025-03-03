@@ -4,7 +4,7 @@ import { Page } from "playwright";
 import { BrowserManager } from "../../atoms/playwright/BrawserManager";
 
 export async function blogReviewRandomClick({
-  isTest = false,
+  isTest = true,
   page = undefined,
   browserManager = undefined,
   placeNumber = "1918144108",
