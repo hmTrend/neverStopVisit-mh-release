@@ -38,11 +38,21 @@ export async function blogReviewRandomClick({
 }
 
 async function blogReviewSelector({ page }: { page: Page }) {
-  const blogReviewSelector = 'a[href*="/review/ugc"]:has-text("블로그 리뷰")';
-  await page.locator(blogReviewSelector).first().click();
+  try {
+    const blogReviewSelector = 'a[href*="/review/ugc"]:has-text("블로그 리뷰")';
+    await page.locator(blogReviewSelector).first().click();
+  } catch (e) {
+    console.error(`blogReviewSelector > ${e.message}`);
+    throw Error(`blogReviewSelector > ${e.message}`);
+  }
 }
 
 async function blogReviewListOfOneRandomClick({ page }: { page: Page }) {
+  try {
+  } catch (e) {
+    console.error(`blogReviewListOfOneRandomClick > ${e.message}`);
+    throw Error(`blogReviewListOfOneRandomClick > ${e.message}`);
+  }
   await wait(1000);
   // 모든 블로그 링크 li 요소 가져오기
   const blogLinks = await page.locator("li.EblIP a.behIY").all();
@@ -52,23 +62,45 @@ async function blogReviewListOfOneRandomClick({ page }: { page: Page }) {
     return;
   }
 
-  // 랜덤 인덱스 생성
-  const randomIndex = Math.floor(Math.random() * blogLinks.length);
+  // blog.naver.com이 포함된 링크만 저장할 배열
+  const naverBlogLinks = [];
+  const naverBlogIndexes = [];
+
+  // 각 링크의 URL 확인하여 네이버 블로그만 필터링
+  for (let i = 0; i < blogLinks.length; i++) {
+    const linkUrl = await blogLinks[i].getAttribute("href");
+    // blog.naver.com이 포함된 링크만 유효한 링크로 간주
+    if (linkUrl && linkUrl.includes("blog.naver.com")) {
+      naverBlogLinks.push(blogLinks[i]);
+      naverBlogIndexes.push(i);
+    }
+  }
+
+  if (naverBlogLinks.length === 0) {
+    console.log("네이버 블로그 링크가 없습니다.");
+    return;
+  }
+
+  // 네이버 블로그 링크 중에서 랜덤 선택
+  const randomIndex = Math.floor(Math.random() * naverBlogLinks.length);
+  const selectedLink = naverBlogLinks[randomIndex];
+  const originalIndex = naverBlogIndexes[randomIndex];
+
   console.log(
-    `총 ${blogLinks.length}개 링크 중 ${randomIndex + 1}번째 링크를 클릭합니다.`,
+    `총 ${blogLinks.length}개 링크 중 ${naverBlogLinks.length}개가 네이버 블로그이며, ${originalIndex + 1}번째 링크를 클릭합니다.`,
   );
 
-  // 선택된 링크의 URL 가져오기 (선택 사항)
-  const linkUrl = await blogLinks[randomIndex].getAttribute("href");
+  // 선택된 링크의 URL 가져오기
+  const linkUrl = await selectedLink.getAttribute("href");
   console.log(`클릭할 링크 URL: ${linkUrl}`);
 
   // 블로그 제목 가져오기 (선택 사항)
-  const titleElement = blogLinks[randomIndex].locator(".pui__dGLDWy");
+  const titleElement = selectedLink.locator(".pui__dGLDWy");
   const title = await titleElement.textContent();
   console.log(`블로그 제목: ${title}`);
 
   // 랜덤으로 선택된 링크 클릭
-  await blogLinks[randomIndex].click();
+  await selectedLink.click();
 
   // 페이지가 로드될 때까지 잠시 대기
   await page.waitForLoadState("networkidle");

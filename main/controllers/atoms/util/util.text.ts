@@ -14,6 +14,9 @@ export class UtilText {
     if (errMessage.includes("https://nid.naver.com/mobile/user/help/")) {
       return "19세 제한";
     }
+    if (errMessage.includes("블로그 리뷰")) {
+      return "블로그리뷰 없음";
+    }
     return errMessage;
   }
 }
