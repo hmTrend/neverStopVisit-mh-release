@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v8.16.0 프로그램 시작시 플레이스 로직2 셋팅">
-      <change afterPath="$PROJECT_DIR$/clicked-se-module-map-text.png" afterDir="false" />
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v8.16.3 블로그리뷰 없음 대응">
+      <change afterPath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clicked-se-module-map-text.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/util/util.text.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/util/util.text.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/blogReviewRandomClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/blogReviewRandomClick.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clicked-location_component.png" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/clicked-location_component.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +166,7 @@
       <recent name="$PROJECT_DIR$/main/controllers/molecules/excel" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.playLogic2.ts">
+  <component name="RunManager" selected="TypeScript.blogReviewRandomClick.ts">
     <configuration name="api.patchDayNowCountForShopping.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisit-f" />
       <option name="interpreterRef" value="project" />
@@ -238,8 +238,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TypeScript.playLogic2.ts" />
         <item itemvalue="TypeScript.blogReviewRandomClick.ts" />
+        <item itemvalue="TypeScript.playLogic2.ts" />
         <item itemvalue="TypeScript.getFingerPrintTargetExcelOne2.ts" />
         <item itemvalue="TypeScript.clickTargetPlaceOrGoToNextStep.ts" />
         <item itemvalue="TypeScript.api.patchDayNowCountForShopping.ts" />
@@ -342,15 +342,7 @@
       <workItem from="1740350959622" duration="2619000" />
       <workItem from="1740551522151" duration="5529000" />
       <workItem from="1740614581693" duration="10053000" />
-      <workItem from="1740727375814" duration="35002000" />
-    </task>
-    <task id="LOCAL-00585" summary="v5.99.0 플레이스 느림대응">
-      <option name="closed" value="true" />
-      <created>1740213058273</created>
-      <option name="number" value="00585" />
-      <option name="presentableId" value="LOCAL-00585" />
-      <option name="project" value="LOCAL" />
-      <updated>1740213058273</updated>
+      <workItem from="1740727375814" duration="36243000" />
     </task>
     <task id="LOCAL-00586" summary="v5.99.0 플레이스 느림대응">
       <option name="closed" value="true" />
@@ -736,7 +728,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740962150046</updated>
     </task>
-    <option name="localTasksCounter" value="634" />
+    <task id="LOCAL-00634" summary="v8.16.3 블로그리뷰 없음 대응">
+      <option name="closed" value="true" />
+      <created>1740963408417</created>
+      <option name="number" value="00634" />
+      <option name="presentableId" value="LOCAL-00634" />
+      <option name="project" value="LOCAL" />
+      <updated>1740963408417</updated>
+    </task>
+    <option name="localTasksCounter" value="635" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -781,7 +781,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.123.0 ipcBackLogging" />
     <MESSAGE value="v5.123.3 globalMainWindow Move" />
     <MESSAGE value="v5.123.6 AppLogging" />
     <MESSAGE value="v5.123.9 functionName, args: fnEndArgs" />
@@ -806,7 +805,8 @@
     <MESSAGE value="v8.13.0 블로그내 플레이스 링크클릭" />
     <MESSAGE value="v8.13.3 블로그 작업 셋팅" />
     <MESSAGE value="v8.16.0 프로그램 시작시 플레이스 로직2 셋팅" />
-    <option name="LAST_COMMIT_MESSAGE" value="v8.16.0 프로그램 시작시 플레이스 로직2 셋팅" />
+    <MESSAGE value="v8.16.3 블로그리뷰 없음 대응" />
+    <option name="LAST_COMMIT_MESSAGE" value="v8.16.3 블로그리뷰 없음 대응" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -49,63 +49,63 @@ async function blogReviewSelector({ page }: { page: Page }) {
 
 async function blogReviewListOfOneRandomClick({ page }: { page: Page }) {
   try {
+    await wait(1000);
+    // 모든 블로그 링크 li 요소 가져오기
+    const blogLinks = await page.locator("li.EblIP a.behIY").all();
+
+    if (blogLinks.length === 0) {
+      console.log("블로그 링크를 찾을 수 없습니다.");
+      return;
+    }
+
+    // blog.naver.com이 포함된 링크만 저장할 배열
+    const naverBlogLinks = [];
+    const naverBlogIndexes = [];
+
+    // 각 링크의 URL 확인하여 네이버 블로그만 필터링
+    for (let i = 0; i < blogLinks.length; i++) {
+      const linkUrl = await blogLinks[i].getAttribute("href");
+      // blog.naver.com이 포함된 링크만 유효한 링크로 간주
+      if (linkUrl && linkUrl.includes("blog.naver.com")) {
+        naverBlogLinks.push(blogLinks[i]);
+        naverBlogIndexes.push(i);
+      }
+    }
+
+    if (naverBlogLinks.length === 0) {
+      console.log("네이버 블로그 링크가 없습니다.");
+      return;
+    }
+
+    // 네이버 블로그 링크 중에서 랜덤 선택
+    const randomIndex = Math.floor(Math.random() * naverBlogLinks.length);
+    const selectedLink = naverBlogLinks[randomIndex];
+    const originalIndex = naverBlogIndexes[randomIndex];
+
+    console.log(
+      `총 ${blogLinks.length}개 링크 중 ${naverBlogLinks.length}개가 네이버 블로그이며, ${originalIndex + 1}번째 링크를 클릭합니다.`,
+    );
+
+    // 선택된 링크의 URL 가져오기
+    const linkUrl = await selectedLink.getAttribute("href");
+    console.log(`클릭할 링크 URL: ${linkUrl}`);
+
+    // 블로그 제목 가져오기 (선택 사항)
+    const titleElement = selectedLink.locator(".pui__dGLDWy");
+    const title = await titleElement.textContent();
+    console.log(`블로그 제목: ${title}`);
+
+    // 랜덤으로 선택된 링크 클릭
+    await selectedLink.click();
+
+    // 페이지가 로드될 때까지 잠시 대기
+    await page.waitForLoadState("networkidle");
+    console.log("페이지 로드 완료");
+    return { pageO: page };
   } catch (e) {
     console.error(`blogReviewListOfOneRandomClick > ${e.message}`);
     throw Error(`blogReviewListOfOneRandomClick > ${e.message}`);
   }
-  await wait(1000);
-  // 모든 블로그 링크 li 요소 가져오기
-  const blogLinks = await page.locator("li.EblIP a.behIY").all();
-
-  if (blogLinks.length === 0) {
-    console.log("블로그 링크를 찾을 수 없습니다.");
-    return;
-  }
-
-  // blog.naver.com이 포함된 링크만 저장할 배열
-  const naverBlogLinks = [];
-  const naverBlogIndexes = [];
-
-  // 각 링크의 URL 확인하여 네이버 블로그만 필터링
-  for (let i = 0; i < blogLinks.length; i++) {
-    const linkUrl = await blogLinks[i].getAttribute("href");
-    // blog.naver.com이 포함된 링크만 유효한 링크로 간주
-    if (linkUrl && linkUrl.includes("blog.naver.com")) {
-      naverBlogLinks.push(blogLinks[i]);
-      naverBlogIndexes.push(i);
-    }
-  }
-
-  if (naverBlogLinks.length === 0) {
-    console.log("네이버 블로그 링크가 없습니다.");
-    return;
-  }
-
-  // 네이버 블로그 링크 중에서 랜덤 선택
-  const randomIndex = Math.floor(Math.random() * naverBlogLinks.length);
-  const selectedLink = naverBlogLinks[randomIndex];
-  const originalIndex = naverBlogIndexes[randomIndex];
-
-  console.log(
-    `총 ${blogLinks.length}개 링크 중 ${naverBlogLinks.length}개가 네이버 블로그이며, ${originalIndex + 1}번째 링크를 클릭합니다.`,
-  );
-
-  // 선택된 링크의 URL 가져오기
-  const linkUrl = await selectedLink.getAttribute("href");
-  console.log(`클릭할 링크 URL: ${linkUrl}`);
-
-  // 블로그 제목 가져오기 (선택 사항)
-  const titleElement = selectedLink.locator(".pui__dGLDWy");
-  const title = await titleElement.textContent();
-  console.log(`블로그 제목: ${title}`);
-
-  // 랜덤으로 선택된 링크 클릭
-  await selectedLink.click();
-
-  // 페이지가 로드될 때까지 잠시 대기
-  await page.waitForLoadState("networkidle");
-  console.log("페이지 로드 완료");
-  return { pageO: page };
 }
 
 async function placeLinkClickInBlogDetailPage({ page }: { page: Page }) {
@@ -151,9 +151,10 @@ async function placeLinkClickInBlogDetailPage({ page }: { page: Page }) {
     } else {
       console.log("두 요소 모두 지정된 시간 내에 나타나지 않았습니다.");
     }
-  } catch (error) {
-    console.error("실행 중 오류 발생:", error);
+  } catch (e) {
+    console.error(`placeLinkClickInBlogDetailPage > ${e.message}`);
+    throw Error(`placeLinkClickInBlogDetailPage > ${e.message}`);
   }
 }
 
-// blogReviewRandomClick();
+blogReviewRandomClick();
