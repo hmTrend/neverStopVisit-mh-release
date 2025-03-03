@@ -18,7 +18,7 @@ export async function blogReviewRandomClick({
     const { getPage, getBrowserManager } = await gotoPage({
       is3gMode: false,
       cpuThrottlingRate: 0,
-      url: "https://m.place.naver.com/nailshop/1918144108/home?entry=pll",
+      url: "https://m.place.naver.com/place/1376105447/home?entry=pll",
       // 합정네일 모바일
     });
     browserManager = getBrowserManager;
@@ -130,15 +130,47 @@ async function placeLinkClickInBlogDetailPage({ page }: { page: Page }) {
         return { element, type: "se-module-map-text" };
       });
 
-    // Promise.race를 사용하여 먼저 보이는 요소 찾기
-    console.log("두 요소 중 먼저 보이는 것을 기다리는 중...");
-
-    const result = await Promise.race([locationPromise, mapTextPromise]).catch(
-      (error) => {
-        console.error("요소를 찾지 못했습니다:", error);
+    const naverMapLinkPromise = page
+      .waitForSelector("div.txt a.tit", {
+        state: "visible",
+        timeout: 10 * 1000, // 10초 타임아웃
+      })
+      .then((element) => {
+        return { element, type: "naverMapDetailLink" };
+      })
+      .catch((error) => {
+        console.log(
+          "naverMapDetailLink 요소를 찾지 못했습니다:",
+          error.message,
+        );
         return null;
-      },
-    );
+      });
+
+    const seMapLinkPromise = page
+      .waitForSelector("a.se_map_link.__se_link", {
+        state: "visible",
+        timeout: 10 * 1000, // 10초 타임아웃
+      })
+      .then((element) => {
+        return { element, type: "se_map_link" };
+      })
+      .catch((error) => {
+        console.log("se_map_link 요소를 찾지 못했습니다:", error.message);
+        return null;
+      });
+
+    // Promise.race를 사용하여 먼저 보이는 요소 찾기
+    console.log("세 요소 중 먼저 보이는 것을 기다리는 중...");
+
+    const result = await Promise.race([
+      locationPromise,
+      mapTextPromise,
+      naverMapLinkPromise,
+      seMapLinkPromise,
+    ]).catch((error) => {
+      console.error("요소를 찾지 못했습니다:", error);
+      return null;
+    });
 
     // 결과에 따라 클릭 수행
     if (result) {
