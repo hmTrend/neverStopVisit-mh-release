@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v8.13.0 블로그내 플레이스 링크클릭">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v8.13.3 블로그 작업 셋팅">
+      <change afterPath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/clicked-location_component.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/blogReviewRandomClick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/molecules/naverPlace/blogReviewRandomClick.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/organisms/naverPlace/playLogic2.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/templetes/naverPlace/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +167,7 @@
       <recent name="$PROJECT_DIR$/main/controllers/molecules/excel" />
     </key>
   </component>
-  <component name="RunManager" selected="TypeScript.blogReviewRandomClick.ts">
+  <component name="RunManager" selected="TypeScript.playLogic2.ts">
     <configuration name="api.patchDayNowCountForShopping.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
       <module name="neverStopVisit-f" />
       <option name="interpreterRef" value="project" />
@@ -235,8 +239,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TypeScript.blogReviewRandomClick.ts" />
         <item itemvalue="TypeScript.playLogic2.ts" />
+        <item itemvalue="TypeScript.blogReviewRandomClick.ts" />
         <item itemvalue="TypeScript.getFingerPrintTargetExcelOne2.ts" />
         <item itemvalue="TypeScript.clickTargetPlaceOrGoToNextStep.ts" />
         <item itemvalue="TypeScript.api.patchDayNowCountForShopping.ts" />
@@ -339,15 +343,7 @@
       <workItem from="1740350959622" duration="2619000" />
       <workItem from="1740551522151" duration="5529000" />
       <workItem from="1740614581693" duration="10053000" />
-      <workItem from="1740727375814" duration="32633000" />
-    </task>
-    <task id="LOCAL-00583" summary="v5.93.0 findSelectorAndClick">
-      <option name="closed" value="true" />
-      <created>1740210783099</created>
-      <option name="number" value="00583" />
-      <option name="presentableId" value="LOCAL-00583" />
-      <option name="project" value="LOCAL" />
-      <updated>1740210783099</updated>
+      <workItem from="1740727375814" duration="33694000" />
     </task>
     <task id="LOCAL-00584" summary="v5.99.0 플레이스 느림대응">
       <option name="closed" value="true" />
@@ -733,7 +729,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740932417549</updated>
     </task>
-    <option name="localTasksCounter" value="632" />
+    <task id="LOCAL-00632" summary="v8.13.3 블로그 작업 셋팅">
+      <option name="closed" value="true" />
+      <created>1740961672410</created>
+      <option name="number" value="00632" />
+      <option name="presentableId" value="LOCAL-00632" />
+      <option name="project" value="LOCAL" />
+      <updated>1740961672410</updated>
+    </task>
+    <option name="localTasksCounter" value="633" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -778,7 +782,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v5.116.9 딜레이 줄이기" />
     <MESSAGE value="v5.119.0 logger" />
     <MESSAGE value="v5.123.0 ipcBackLogging" />
     <MESSAGE value="v5.123.3 globalMainWindow Move" />
@@ -803,7 +806,8 @@
     <MESSAGE value="v8.9.9 toast 당일작업완료 설치" />
     <MESSAGE value="v8.9.13 로그인 풀림시 창닫기" />
     <MESSAGE value="v8.13.0 블로그내 플레이스 링크클릭" />
-    <option name="LAST_COMMIT_MESSAGE" value="v8.13.0 블로그내 플레이스 링크클릭" />
+    <MESSAGE value="v8.13.3 블로그 작업 셋팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="v8.13.3 블로그 작업 셋팅" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

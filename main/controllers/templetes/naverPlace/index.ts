@@ -2,6 +2,7 @@ import { getFingerPrintTargetExcelOne } from "../../molecules/user/getFingerPrin
 import { setDataUser } from "../../atoms/user/data.user";
 import { getNPlaceExcelAlignFlatTargetOne } from "../../molecules/excel/getNPlaceExcelAlignFlatTargetOne";
 import { playLogic1 } from "../../organisms/naverPlace/playLogic1";
+import { playLogic2 } from "../../organisms/naverPlace/playLogic2";
 
 interface NPlaceExcelListAlignFlatMapEntity {
   _id: string;
@@ -72,7 +73,13 @@ async function playSelectLogic({
       targetKeyword,
       delayTime,
     });
-    naverPlaceLogic2({ logicType });
+    await naverPlaceLogic2({
+      logicType,
+      cookies,
+      placeNumber,
+      targetKeyword,
+      delayTime,
+    });
   } catch (e) {
     console.error(`playSelectLogic > ${e.message}`);
     throw Error(`playSelectLogic > ${e.message}`);
@@ -95,9 +102,16 @@ async function naverPlaceLogic1({
   }
 }
 
-function naverPlaceLogic2({ logicType }) {
+async function naverPlaceLogic2({
+  logicType,
+  cookies,
+  placeNumber,
+  targetKeyword,
+  delayTime,
+}) {
   try {
     if (logicType !== "LOGIC2") return;
+    await playLogic2({ cookies, placeNumber, targetKeyword, delayTime });
   } catch (e) {
     console.error(`naverPlaceLogic2 > ${e.message}`);
     throw Error(`naverPlaceLogic2 > ${e.message}`);

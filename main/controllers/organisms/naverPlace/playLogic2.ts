@@ -2,10 +2,10 @@ import { Page } from "playwright";
 import { BrowserManager } from "../../atoms/playwright/BrawserManager";
 import { gotoPage } from "../../molecules/commons/gotoPage";
 import { getNextCreateUserAgentWithDRSoftKoreaWithOutIPhoneIN100percent } from "../../../lib/network/userAgentWithDRSoftKoreaWithOutIPhoneIN100percent";
-import { waitSelectAndForLoggedInCheck } from "../../molecules/naver/waitSelectAndForLoggedInCheck";
 import { inputClickAndInputTextAndButtonClick } from "../../molecules/commons/inputClickAndInputTextAndButtonClick";
 import { clickTargetPlaceOrGoToNextStep } from "../../molecules/naverPlace/clickTargetPlaceOrGoToNextStep";
-import { lastActionRandomClick } from "../../molecules/naverPlace/lastActionRandomClick";
+import { blogReviewRandomClick } from "../../molecules/naverPlace/blogReviewRandomClick";
+import wait from "waait";
 
 export async function playLogic2({
   targetKeyword = "강남맛집",
@@ -44,6 +44,8 @@ export async function playLogic2({
       options: { clearFirst: true, delay: 300 },
     });
     await clickTargetPlaceOrGoToNextStep({ placeNumber, page, browserManager });
+    await blogReviewRandomClick({ page, browserManager });
+    await wait(delayTime * 1000);
     await browserManager?.cleanup();
   } catch (e) {
     await browserManager?.cleanup();
@@ -52,4 +54,4 @@ export async function playLogic2({
   }
 }
 
-playLogic2();
+// playLogic2();
