@@ -9,6 +9,7 @@ import { BrowserManager } from "../../atoms/playwright/BrawserManager";
 import { findSelectorAndClickWithDetailPage } from "../../molecules/commons/findSelectorAndClickWithDetailPage";
 import { waitSelectAndForLoggedInCheck } from "../../molecules/naver/waitSelectAndForLoggedInCheck";
 import { withLogging } from "../../atoms/util/util.logger";
+import { DataCommons } from "../../atoms/data/data.commons";
 
 export async function playLogic1({
   targetKeyword = "문제적커피",

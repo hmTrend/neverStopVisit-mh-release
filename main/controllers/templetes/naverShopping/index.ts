@@ -119,7 +119,12 @@ async function naverShoppingLogic1({
 }) {
   try {
     if (logicType !== "LOGIC1") return;
-    await playLogic1({ cookies, nvMid, targetKeyword, delayTime });
+    await playLogic1({
+      cookies,
+      nvMid,
+      targetKeyword,
+      delayTime,
+    });
   } catch (e) {
     console.error(e.message);
     throw Error(`naverShoppingLogic1 > ${e.message}`);

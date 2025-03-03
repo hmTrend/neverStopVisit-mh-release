@@ -2,6 +2,8 @@ import { Browser, BrowserContext, chromium, Page } from "playwright";
 import { getChromePath } from "./getChromPath";
 import { dataPlaywright } from "../data/data.playwright";
 import wait from "waait";
+import { utilGetNextProxyForPlaywright } from "../util/util.getNextProxy";
+import { DataCommons } from "../data/data.commons";
 
 interface BrowserOptions {
   headless?: boolean;
@@ -87,6 +89,11 @@ export class BrowserManager {
 
   static async createMobileContext(userAgent: any, browser: Browser) {
     try {
+      console.log("DataCommons('commons').getData 33333");
+      console.log(DataCommons("commons").getData());
+      const proxySettings = utilGetNextProxyForPlaywright({
+        isProxy: DataCommons("commons").getData().ip === "PROXY",
+      });
       const context = await browser.newContext({
         userAgent: userAgent.userAgent,
         extraHTTPHeaders: userAgent.headers,
@@ -94,6 +101,7 @@ export class BrowserManager {
         isMobile: true,
         hasTouch: true,
         deviceScaleFactor: 2.625,
+        proxy: proxySettings,
       });
 
       return { context, userAgent: userAgent.userAgent };

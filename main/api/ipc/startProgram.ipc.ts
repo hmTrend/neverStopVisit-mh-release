@@ -8,6 +8,7 @@ import wait from "waait";
 import { NShoppingLogic4 } from "../../services/nShoppingLogic4";
 import { upscalePlay } from "../../controllers/upscale/upscale.play/upscale.play";
 import { globalMainWindow } from "../../lib/const/constVar";
+import { DataCommons } from "../../controllers/atoms/data/data.commons";
 
 export const startProgramIpc = ({ mainWindow }) => {
   let currentNShoppingLogic4Instance = null;
@@ -18,6 +19,9 @@ export const startProgramIpc = ({ mainWindow }) => {
     try {
       const data = JSON.parse(args);
       const { common, nShoppingLogic4, nPlace } = data;
+      console.log("common 33333");
+      console.log(common);
+      DataCommons("commons").setData(common);
       globalMainWindow.mainWindow = mainWindow;
       await upscalePlay({
         internetType: common.ip,

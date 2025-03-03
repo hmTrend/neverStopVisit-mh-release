@@ -35,6 +35,7 @@ export const OptionCommon = () => {
               <Radio value="TETHERING">테더링</Radio>
               <Radio value="ROUTER">라우터</Radio>
               <Radio value="LOCAL">로컬</Radio>
+              <Radio value="PROXY">프록시</Radio>
             </HStack>
           </RadioGroup>
           <FormHelperText>IP 작업방식</FormHelperText>

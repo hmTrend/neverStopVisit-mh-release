@@ -39,7 +39,7 @@ const getInitialData = () => {
 class StartValtio {
   common: {
     isStart: boolean;
-    ip: "STATIC" | "TETHERING" | "ROUTER" | "LOCAL";
+    ip: "STATIC" | "TETHERING" | "ROUTER" | "LOCAL" | "PROXY";
     memberFid: string;
     ipChangeCount: number;
   };
