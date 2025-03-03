@@ -39,8 +39,14 @@ export async function upscalePlay({
         savedDataPlay,
       });
     } catch (error) {
-      console.error(`naverShopping > ${error.message}`);
+      console.error(`naverShopping 213222 > ${error.message}`);
       await wait(10 * 1000);
+      if (error.message.includes("Complete the day's counting tasks")) {
+        console.log(
+          "Complete the day's counting tasks... waiting for 300seconds",
+        );
+        await wait(300 * 1000);
+      }
     }
     await wait(2 * 1000);
   }
@@ -206,6 +212,7 @@ async function nShoppingLogic4IsStart({
       },
       mainWindow,
     });
+    throw Error(`basketPlayList > ${shoppingResult.reason.message}`);
   }
   const PatchNShoppingLogic4NowCountIncrementWithLogging = withLogging(
     PatchNShoppingLogic4NowCountIncrement,

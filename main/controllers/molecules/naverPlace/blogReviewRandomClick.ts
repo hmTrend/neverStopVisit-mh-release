@@ -1,17 +1,17 @@
 import wait from "waait";
-import { findSelectorAndScroll } from "../commons/findSelectorAndScroll";
 import { gotoPage } from "../commons/gotoPage";
 import { Page } from "playwright";
+import { BrowserManager } from "../../atoms/playwright/BrawserManager";
 
 export async function blogReviewRandomClick({
-  isTest = true,
+  isTest = false,
   page = undefined,
   browserManager = undefined,
   placeNumber = "1918144108",
 }: {
   isTest?: boolean;
   page?: Page;
-  browserManager?: any;
+  browserManager?: BrowserManager;
   placeNumber?: string;
 } = {}) {
   if (isTest) {
@@ -28,6 +28,9 @@ export async function blogReviewRandomClick({
     const networkManager = browserManager.createNetworkManager();
     await networkManager.waitForAllRequests();
     await blogReviewSelector({ page });
+    await blogReviewListOfOneRandomClick({ page });
+    page = await browserManager.switchToOpenedTab();
+    await placeLinkClickInBlogDetailPage({ page });
   } catch (e) {
     console.error(`blogReviewRandomClick > ${e.message}`);
     throw Error(`blogReviewRandomClick > ${e.message}`);
@@ -35,165 +38,122 @@ export async function blogReviewRandomClick({
 }
 
 async function blogReviewSelector({ page }: { page: Page }) {
-  const blogReviewSelector = 'a[href*="/review/ugc"]:has-text("블로그 리뷰")';
-  await page.locator(blogReviewSelector).first().click();
+  try {
+    const blogReviewSelector = 'a[href*="/review/ugc"]:has-text("블로그 리뷰")';
+    await page.locator(blogReviewSelector).first().click();
+  } catch (e) {
+    console.error(`blogReviewSelector > ${e.message}`);
+    throw Error(`blogReviewSelector > ${e.message}`);
+  }
 }
 
-async function clickTargetPlaceNextMorePage({ placeNumber, page }) {
+async function blogReviewListOfOneRandomClick({ page }: { page: Page }) {
   try {
-    const selector = `a[href*="/${placeNumber}"][role="button"]:not(.place_thumb)`;
-    await page.waitForSelector(selector, { timeout: 1000 });
-    const link = await page.$(selector);
-    if (!link) {
-      throw new Error(
-        `clickTargetPlaceNextMorePage > Link with ID ${placeNumber} not found`,
-      );
+    await wait(1000);
+    // 모든 블로그 링크 li 요소 가져오기
+    const blogLinks = await page.locator("li.EblIP a.behIY").all();
+
+    if (blogLinks.length === 0) {
+      console.log("블로그 링크를 찾을 수 없습니다.");
+      return;
     }
 
-    // 요소가 화면에 보이도록 스크롤
-    await link.scrollIntoViewIfNeeded();
+    // blog.naver.com이 포함된 링크만 저장할 배열
+    const naverBlogLinks = [];
+    const naverBlogIndexes = [];
 
-    // 잠시 대기
-    await page.waitForTimeout(1000);
+    // 각 링크의 URL 확인하여 네이버 블로그만 필터링
+    for (let i = 0; i < blogLinks.length; i++) {
+      const linkUrl = await blogLinks[i].getAttribute("href");
+      // blog.naver.com이 포함된 링크만 유효한 링크로 간주
+      if (linkUrl && linkUrl.includes("blog.naver.com")) {
+        naverBlogLinks.push(blogLinks[i]);
+        naverBlogIndexes.push(i);
+      }
+    }
 
-    // 클릭하기 전에 요소가 안정적인지 확인
-    await link.waitForElementState("stable");
+    if (naverBlogLinks.length === 0) {
+      console.log("네이버 블로그 링크가 없습니다.");
+      return;
+    }
 
-    // 클릭 수행 및 로드 상태 대기
-    await link.click();
-    await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
-    console.log(`Successfully clicked link with ID: ${placeNumber}`);
-    return page;
-  } catch (error) {
-    console.error(
-      `Error while trying to click link with ID ${placeNumber}:`,
-      error,
+    // 네이버 블로그 링크 중에서 랜덤 선택
+    const randomIndex = Math.floor(Math.random() * naverBlogLinks.length);
+    const selectedLink = naverBlogLinks[randomIndex];
+    const originalIndex = naverBlogIndexes[randomIndex];
+
+    console.log(
+      `총 ${blogLinks.length}개 링크 중 ${naverBlogLinks.length}개가 네이버 블로그이며, ${originalIndex + 1}번째 링크를 클릭합니다.`,
     );
-    throw Error(`clickTargetPlaceNextMorePage > ${error.message}`);
+
+    // 선택된 링크의 URL 가져오기
+    const linkUrl = await selectedLink.getAttribute("href");
+    console.log(`클릭할 링크 URL: ${linkUrl}`);
+
+    // 블로그 제목 가져오기 (선택 사항)
+    const titleElement = selectedLink.locator(".pui__dGLDWy");
+    const title = await titleElement.textContent();
+    console.log(`블로그 제목: ${title}`);
+
+    // 랜덤으로 선택된 링크 클릭
+    await selectedLink.click();
+
+    // 페이지가 로드될 때까지 잠시 대기
+    await page.waitForLoadState("networkidle");
+    console.log("페이지 로드 완료");
+    return { pageO: page };
+  } catch (e) {
+    console.error(`blogReviewListOfOneRandomClick > ${e.message}`);
+    throw Error(`blogReviewListOfOneRandomClick > ${e.message}`);
   }
 }
 
-async function clickNextPageMoreLink({ page }) {
+async function placeLinkClickInBlogDetailPage({ page }: { page: Page }) {
+  await wait(1000);
   try {
-    // 여러 선택자를 시도하여 링크 찾기
-    const linkSelectors = [
-      // 클래스와 역할로 찾기
-      'div.M7vfr a[role="button"]',
-      // 더 구체적인 선택자
-      "div.M7vfr a.cf8PL",
-    ];
-
-    let link = null;
-
-    // 각 선택자로 요소 찾기 시도
-    for (const selector of linkSelectors) {
-      link = await page.$(selector);
-      if (link) {
-        break;
-      }
-    }
-
-    if (link) {
-      // 요소가 보이는지 확인
-      const isVisible = await link.isVisible();
-      if (isVisible) {
-        await link.scrollIntoViewIfNeeded();
-        await page.waitForTimeout(1000);
-        await link.waitForElementState("stable");
-        await link.click();
-        await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
-        console.log("Successfully clicked hospital link");
-        return page;
-      } else {
-        console.log("Hospital link exists but is not visible");
-        return page;
-      }
-    } else {
-      console.log("Hospital link not found");
-      return page;
-    }
-  } catch (error) {
-    console.error("Error while trying to click hospital link:", error);
-    throw Error(error.message);
-  }
-}
-
-async function moveToPlaceSection({ page }) {
-  const targetLocator = page.locator("h2.place_section_header");
-
-  // 요소가 화면에 나타날 때까지 대기
-  console.log("Waiting for the target element to appear...");
-  await targetLocator.waitFor({ state: "visible", timeout: 30 * 1000 }); // 최대 10초 대기
-
-  // 요소가 화면에 보이도록 스크롤
-  console.log("Scrolling to the target element...");
-  await targetLocator.scrollIntoViewIfNeeded();
-}
-
-async function clickTargetPlaceById({ placeNumber, page }) {
-  try {
-    // 여러 데이터 속성에 대해 해당 ID 검색
-    const selectors = [
-      `li[data-loc_plc-doc-id="${placeNumber}"] > div > div:nth-of-type(2) > a`,
-      `li[data-nmb_hpl-doc-id="${placeNumber}"] > div > div:nth-of-type(2) > a`,
-      `li[data-nmb_res-doc-id="${placeNumber}"] > div.CHC5F > a`,
-      `li[data-nmb_hai-doc-id="${placeNumber}"] > div > div:nth-of-type(2) > a`,
-    ];
-
-    // 각 선택자에 대해 요소 찾기 시도
-    for (const selector of selectors) {
-      const element = await page.$(selector);
-      if (element) {
-        // console.log(`Found element with selector: ${selector}`);
-        await element.scrollIntoViewIfNeeded();
-        await wait(1000);
-        await element.click();
-        await page.waitForLoadState("networkidle", { timeout: 90 * 1000 });
-        await wait(1500);
-        return;
-      }
-    }
-    console.error("err > clickTargetPlaceById > not Found");
-    throw Error("err > clickTargetPlaceById > not Found");
-  } catch (error) {
-    console.error("err > clickTargetPlaceById", error);
-    throw Error(error.message);
-  }
-}
-
-async function expandAndClickMore({ page }) {
-  try {
-    const selectors = [
-      '.iLepm.UoLNU a[role="button"]',
-      '.m2Hh0.frzpe a[role="button"]',
-    ];
-    const waitPromises = selectors.map((selector) =>
-      page.waitForSelector(selector, {
+    // 두 요소에 대한 Promise 생성
+    const locationPromise = page
+      .waitForSelector("div.location_component div.location a", {
         state: "visible",
-        timeout: 60 * 1000,
-      }),
+        timeout: 10 * 1000, // 10초 타임아웃
+      })
+      .then((element) => {
+        return { element, type: "location_component" };
+      });
+
+    const mapTextPromise = page
+      .waitForSelector("div.se-module.se-module-map-text a.se-map-info", {
+        state: "visible",
+        timeout: 10 * 1000, // 10초 타임아웃
+      })
+      .then((element) => {
+        return { element, type: "se-module-map-text" };
+      });
+
+    // Promise.race를 사용하여 먼저 보이는 요소 찾기
+    console.log("두 요소 중 먼저 보이는 것을 기다리는 중...");
+
+    const result = await Promise.race([locationPromise, mapTextPromise]).catch(
+      (error) => {
+        console.error("요소를 찾지 못했습니다:", error);
+        return null;
+      },
     );
 
-    const moreButton = await Promise.race(waitPromises);
+    // 결과에 따라 클릭 수행
+    if (result) {
+      console.log(`먼저 발견된 요소: ${result.type}`);
+      await result.element.click();
+      console.log(`${result.type} 요소를 클릭했습니다.`);
 
-    if (!moreButton) {
-      throw new Error("expandAndClickMore > No button found");
+      // 스크린샷 저장
+      await page.screenshot({ path: `clicked-${result.type}.png` });
+    } else {
+      console.log("두 요소 모두 지정된 시간 내에 나타나지 않았습니다.");
     }
-
-    try {
-      await moreButton.scrollIntoViewIfNeeded();
-      await moreButton.click();
-    } catch (e) {
-      console.error(`moreButton > ${e.message}`);
-      throw new Error(`expandAndClickMore ${e.message}`);
-    }
-
-    await page.waitForTimeout(1500);
-    console.log("Successfully clicked first visible button");
-    return page;
-  } catch (error) {
-    console.error("Error in expandAndClickMore:", error);
-    throw new Error(`expandAndClickMore ${error.message}`);
+  } catch (e) {
+    console.error(`placeLinkClickInBlogDetailPage > ${e.message}`);
+    throw Error(`placeLinkClickInBlogDetailPage > ${e.message}`);
   }
 }
 
