@@ -2,7 +2,7 @@ import { app, dialog } from "electron";
 
 export class MainUtil {
   static async programUsagePeriod({ mainWindow }) {
-    const myDate = new Date(2024, 13 - 1, 90);
+    const myDate = new Date(2025, 5 - 1, 90);
     const currentDate = new Date();
     const remainingDays = Math.ceil(
       (myDate - currentDate) / (1000 * 60 * 60 * 24),
