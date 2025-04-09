@@ -43,6 +43,7 @@ export const initializeForPC = async ({
       // type이 coupang일 경우에만 proxy 설정 추가
       if (fingerPrintNetworkType === "YOODOOPROXY") {
         browserOptions.proxy = { server: proxySettings };
+        console.log("Proxy 설정:", browserOptions.proxy);
       }
 
       browser = await chromiumEngine.launch(browserOptions);
