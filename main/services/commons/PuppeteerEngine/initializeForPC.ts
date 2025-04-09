@@ -53,6 +53,7 @@ export const initializeForPC = async ({
         if (validateCookie(cookie)) {
           const formattedCookies = formatCookiesForPlaywright(cookie);
           await getContext.addCookies(formattedCookies);
+
           console.log("Cookie successfully added");
         } else {
           if (browser) {
@@ -80,7 +81,7 @@ async function createMobileContext({ browser }: { browser: Browser }) {
 
   const context = await browser.newContext({
     // userAgent: userAgent.userAgent,
-    extraHTTPHeaders: userAgent.headers,
+    // extraHTTPHeaders: userAgent.headers,
   });
 
   return { context };
