@@ -2,9 +2,9 @@ import { Browser, BrowserContext, chromium, Page } from "playwright";
 import { getChromePath } from "./getChromPath";
 import { dataPlaywright } from "../data/data.playwright";
 import wait from "waait";
-import { utilGetNextProxyForPlaywright } from "../util/util.getNextProxy";
 import { DataCommons } from "../data/data.commons";
 import { setDataUser } from "../user/data.user";
+import { utilGetNextProxyForPlaywright_hmInnovation } from "../util/util.getNextProxy_hmInnovation";
 
 interface BrowserOptions {
   headless?: boolean;
@@ -90,7 +90,7 @@ export class BrowserManager {
 
   static async createMobileContext(userAgent: any, browser: Browser) {
     try {
-      const proxySettings = utilGetNextProxyForPlaywright({
+      const proxySettings = utilGetNextProxyForPlaywright_hmInnovation({
         isProxy: DataCommons("commons").getData()?.ip === "PROXY" || false,
       });
       setDataUser({ myProxy: proxySettings?.server });

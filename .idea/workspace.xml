@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v10.0.0 쿠팡지문 급하게 수정">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v10.0.3 proxy 설정셋팅">
+      <change afterPath="$PROJECT_DIR$/main/controllers/atoms/util/util.getNextProxy_hmInnovation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025__4__9___9_35__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025__4__9__오전_9_35_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeForPC.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeForPC.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/controllers/atoms/playwright/BrawserManager.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,7 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2nkR5r2SQ8zWLE9oCCcMDupeYap" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="2" id="Remove" />
   </component>
@@ -246,7 +249,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-WS-243.24978.60" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
       </set>
     </attachedChunks>
   </component>
@@ -340,14 +343,9 @@
       <workItem from="1740551522151" duration="5529000" />
       <workItem from="1740614581693" duration="10053000" />
       <workItem from="1740727375814" duration="51324000" />
-    </task>
-    <task id="LOCAL-00593" summary="v5.119.0 GetFingerPrintTargetExcelOne / 에러처리 강화">
-      <option name="closed" value="true" />
-      <created>1740359716291</created>
-      <option name="number" value="00593" />
-      <option name="presentableId" value="LOCAL-00593" />
-      <option name="project" value="LOCAL" />
-      <updated>1740359716291</updated>
+      <workItem from="1745309378178" duration="733000" />
+      <workItem from="1745757663208" duration="1655000" />
+      <workItem from="1749097852678" duration="388000" />
     </task>
     <task id="LOCAL-00594" summary="v5.123.0 UtilAnalisys.measureExecutionTime">
       <option name="closed" value="true" />
@@ -733,7 +731,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744160420017</updated>
     </task>
-    <option name="localTasksCounter" value="642" />
+    <task id="LOCAL-00642" summary="v10.0.3 proxy 설정셋팅">
+      <option name="closed" value="true" />
+      <created>1744166346193</created>
+      <option name="number" value="00642" />
+      <option name="presentableId" value="LOCAL-00642" />
+      <option name="project" value="LOCAL" />
+      <updated>1744166346193</updated>
+    </task>
+    <option name="localTasksCounter" value="643" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -778,7 +784,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v7.0.0 쇼핑 아이디 중복안되게 작업하기" />
     <MESSAGE value="v7.0.3 getNShoppingLogic4ExcelAlignFlatTargetOne 10번 재작업" />
     <MESSAGE value="v7.3.0 쇼핑 playLogic1 / 로깅설치" />
     <MESSAGE value="v7.3.3 쇼핑 playLogic1 / 동작" />
@@ -803,7 +808,8 @@
     <MESSAGE value="v9.3.0 작업완료시 프록시 ip 반영" />
     <MESSAGE value="v9.3.3 proxy값이 비어있을때 셋팅" />
     <MESSAGE value="v10.0.0 쿠팡지문 급하게 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="v10.0.0 쿠팡지문 급하게 수정" />
+    <MESSAGE value="v10.0.3 proxy 설정셋팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="v10.0.3 proxy 설정셋팅" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
