@@ -11,9 +11,9 @@ export const App = () => {
     <Tabs isManual variant="enclosed">
       <TabList>
         <Tab>지문</Tab>
-        <Tab>플레이스</Tab>
-        <Tab>쇼핑 로직4</Tab>
-        <Tab>쿠팡</Tab>
+        {/*<Tab>플레이스</Tab>*/}
+        {/*<Tab>쇼핑 로직4</Tab>*/}
+        {/*<Tab>쿠팡</Tab>*/}
       </TabList>
       <TabPanels>
         <TabPanel>

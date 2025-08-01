@@ -28,7 +28,7 @@ export default function MainTopMenu() {
         <TabList>
           <Tab onClick={() => router.push("/")}>메인</Tab>
           <Tab onClick={() => router.push("/register")}>등록</Tab>
-          <Tab onClick={() => router.push("/start")}>시작</Tab>
+          {/*<Tab onClick={() => router.push("/start")}>시작</Tab>*/}
         </TabList>
       </Tabs>
     </Box>
