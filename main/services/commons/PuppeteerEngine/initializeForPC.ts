@@ -1,6 +1,7 @@
 import { Browser, Page } from "playwright";
 import { formatCookiesForPlaywright } from "./formatCookiesForPlaywright";
 import { validateCookie } from "./validateCookie";
+import { parseCookieString } from "./parseCookieString";
 import { getChromePath } from "./getChromePath";
 import wait from "waait";
 import { LaunchOptions } from "playwright-core";
@@ -48,19 +49,42 @@ export const initializeForPC = async ({
       let getContext;
       const { context } = await createMobileContext({ browser });
       getContext = context;
-      if (cookie && cookie.length > 0) {
-        if (validateCookie(cookie)) {
-          const formattedCookies = formatCookiesForPlaywright(cookie);
-          await getContext.addCookies(formattedCookies);
+      console.log("cookie 3311aaa");
+      console.log(cookie);
 
-          console.log("Cookie successfully added");
-        } else {
-          if (browser) {
-            await browser.close();
-            console.log("Browser exited due to failed cookie validation");
+      try {
+        // 쿠키 처리 로직
+        if (cookie) {
+          let processedCookie = cookie;
+
+          // 쿠키가 문자열인 경우 배열로 변환
+          if (typeof cookie === "string") {
+            console.log("쿠키가 문자열 형태입니다. 배열로 변환합니다.");
+            processedCookie = parseCookieString(cookie);
+            console.log("변환된 쿠키:", processedCookie);
           }
-          throw Error("Cookie validation failure ended");
+
+          // 배열로 변환된 쿠키 검증
+          if (validateCookie(processedCookie)) {
+            const formattedCookies =
+              formatCookiesForPlaywright(processedCookie);
+            if (formattedCookies.length > 0) {
+              await getContext.addCookies(formattedCookies);
+              console.log("쿠키가 성공적으로 추가되었습니다.");
+            } else {
+              console.log("포맷된 쿠키가 없습니다. 쿠키 없이 계속 진행합니다.");
+            }
+          } else {
+            console.log("쿠키 검증에 실패했습니다. 쿠키 없이 계속 진행합니다.");
+          }
+        } else {
+          console.log(
+            "쿠키가 없거나 유효하지 않습니다. 쿠키 없이 계속 진행합니다.",
+          );
         }
+      } catch (error) {
+        console.error("쿠키 처리 중 오류 발생:", error.message);
+        console.log("쿠키 없이 계속 진행합니다.");
       }
       page = await getContext.newPage();
       await page.goto(url, { waitUntil: "load" });
