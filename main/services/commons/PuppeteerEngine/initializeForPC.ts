@@ -27,6 +27,8 @@ export const initializeForPC = async ({
   fingerPrintNetworkType: string;
 }) => {
   const proxySettings = getNextProxyYoodooProxy();
+  console.log("proxySettings 33111aaa");
+  console.log(proxySettings);
   for (let i = 0; i < 2; i++) {
     try {
       const browserOptions: LaunchOptions = {

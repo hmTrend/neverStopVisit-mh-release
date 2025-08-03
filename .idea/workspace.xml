@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v10.9.16 + string으로 쿠키가 들어오는 문제 수정">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v10.9.19 + 불필요지문 안보이게 셋팅">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/api/ipc/fingerPrintBrowser.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/fingerPrintBrowser.ipc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelDownload.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelDownload.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintExcelList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeForPC.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeForPC.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/NetworkType.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/NetworkType.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/valtio/fingerPrint.register.valtio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/valtio/fingerPrint.register.valtio.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,14 +341,6 @@
       <workItem from="1740551522151" duration="5529000" />
       <workItem from="1740614581693" duration="10053000" />
       <workItem from="1740727375814" duration="51324000" />
-    </task>
-    <task id="LOCAL-00599" summary="v6.3.3 라우터 초수 포멧변경 / build">
-      <option name="closed" value="true" />
-      <created>1740388644862</created>
-      <option name="number" value="00599" />
-      <option name="presentableId" value="LOCAL-00599" />
-      <option name="project" value="LOCAL" />
-      <updated>1740388644862</updated>
     </task>
     <task id="LOCAL-00600" summary="v6.3.6 await browserManager?.cleanup()">
       <option name="closed" value="true" />
@@ -737,7 +726,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754261635683</updated>
     </task>
-    <option name="localTasksCounter" value="648" />
+    <task id="LOCAL-00648" summary="v10.9.19 + 불필요지문 안보이게 셋팅">
+      <option name="closed" value="true" />
+      <created>1754262377080</created>
+      <option name="number" value="00648" />
+      <option name="presentableId" value="LOCAL-00648" />
+      <option name="project" value="LOCAL" />
+      <updated>1754262377080</updated>
+    </task>
+    <option name="localTasksCounter" value="649" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -782,7 +779,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v7.6.0 에러 개선" />
     <MESSAGE value="v7.6.3 savedDataPlay_totalWorkingTime &gt; 에러로그개선" />
     <MESSAGE value="v8.0.0 플레이스 로직2셋팅 UI" />
     <MESSAGE value="v8.3.0 플레이스 &gt; blogReviewSelector).first().click()" />
@@ -807,7 +803,8 @@
     <MESSAGE value="v10.9.6 + finger-print.apollo.ts" />
     <MESSAGE value="v10.9.9 + finger-print openˆ" />
     <MESSAGE value="v10.9.16 + string으로 쿠키가 들어오는 문제 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="v10.9.16 + string으로 쿠키가 들어오는 문제 수정" />
+    <MESSAGE value="v10.9.19 + 불필요지문 안보이게 셋팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="v10.9.19 + 불필요지문 안보이게 셋팅" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
