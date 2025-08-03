@@ -1,8 +1,8 @@
 import { gql } from "@apollo/client";
 
 export const gqlCreateFingerPrintGroup = gql`
-  mutation CreateFingerPrintGroup($input: CreateFingerPrintInput!) {
-    createFingerPrintGroup(input: $input) {
+  mutation CreateFingerPrintGroup2($input: CreateFingerPrint2Input!) {
+    createFingerPrintGroup2(input: $input) {
       data {
         _id
         memberFid
@@ -17,8 +17,8 @@ export const gqlCreateFingerPrintGroup = gql`
 `;
 
 export const gqlGetFingerPrintGroupList = gql`
-  query GetFingerPrintGroupList($input: GetFingerPrintInput!) {
-    getFingerPrintGroupList(input: $input) {
+  query GetFingerPrintGroupList2($input: GetFingerPrint2Input!) {
+    getFingerPrintGroupList2(input: $input) {
       data {
         _id
         memberFid
@@ -33,8 +33,8 @@ export const gqlGetFingerPrintGroupList = gql`
 `;
 
 export const gqlDeleteFingerPrintGroup = gql`
-  mutation DeleteFingerPrintGroup($input: DeleteFingerPrintInput!) {
-    deleteFingerPrintGroup(input: $input) {
+  mutation DeleteFingerPrintGroup2($input: DeleteFingerPrint2Input!) {
+    deleteFingerPrintGroup2(input: $input) {
       message
       error
     }
@@ -42,8 +42,8 @@ export const gqlDeleteFingerPrintGroup = gql`
 `;
 
 export const gqlCreateExcelList = gql`
-  mutation CreateExcelList($input: [CreateFingerPrintExcelListInput!]!) {
-    createExcelList(input: $input) {
+  mutation CreateExcelList2($input: [CreateFingerPrint2ExcelListInput!]!) {
+    createExcelList2(input: $input) {
       data {
         _id
         groupFid
@@ -65,8 +65,8 @@ export const gqlCreateExcelList = gql`
 `;
 
 export const gqlGetExcelList = gql`
-  query GetExcelList($input: GetFingerPrintExcelListInput!) {
-    getExcelList(input: $input) {
+  query GetExcelList2($input: GetFingerPrint2ExcelListInput!) {
+    getExcelList2(input: $input) {
       data {
         _id
         groupFid
@@ -88,8 +88,8 @@ export const gqlGetExcelList = gql`
 `;
 
 export const gqlGetExcelListDownload = gql`
-  query GetExcelList($input: GetFingerPrintExcelListInput!) {
-    getExcelList(input: $input) {
+  query GetExcelList2($input: GetFingerPrintExcelListInput!) {
+    getExcelList2(input: $input) {
       data {
         _id
         groupFid
@@ -112,10 +112,10 @@ export const gqlGetExcelListDownload = gql`
 `;
 
 export const gqlPatchFingerPrintExcelList = gql`
-  mutation PatchFingerPrintExcelList(
+  mutation PatchFingerPrintExcelList2(
     $input: [CreateFingerPrintExcelListInput!]!
   ) {
-    patchFingerPrintExcelList(input: $input) {
+    patchFingerPrintExcelList2(input: $input) {
       data {
         _id
         groupFid
@@ -136,8 +136,8 @@ export const gqlPatchFingerPrintExcelList = gql`
 `;
 
 export const gqlFetchFingerPrintTargetExcelOne = gql`
-  mutation FetchFingerPrintTargetExcelOne($input: FetchFingerPrintInput!) {
-    fetchFingerPrintTargetExcelOne(input: $input) {
+  mutation FetchFingerPrint2TargetExcelOne2($input: FetchFingerPrintInput!) {
+    fetchFingerPrintTargetExcelOne2(input: $input) {
       data {
         _id
         groupFid

@@ -35,7 +35,7 @@ export const FingerprintGroupList = () => {
       return;
     }
     const getData: any = data;
-    storeFingerPrintRegister.groupList = getData.getFingerPrintGroupList.data;
+    storeFingerPrintRegister.groupList = getData.getFingerPrintGroupList2?.data;
   }, []);
 
   const handleSelectGroup = ({ groupId, groupName }) => {
@@ -48,7 +48,7 @@ export const FingerprintGroupList = () => {
         <FormControl>
           <FormLabel>생성된 그룹리스트</FormLabel>
           <Flex wrap={"wrap"} gap={3}>
-            {groupList.map((v: any, i: number) => (
+            {groupList?.map((v: any, i: number) => (
               <Box
                 key={i}
                 border="1px solid black"

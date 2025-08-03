@@ -20,9 +20,9 @@ export const useCreateFingerPrintGroup = () => {
         duration: 3000,
         status: "error",
       });
-      return;
+      return { data: [] };
     }
-    return { data: data.createFingerPrintGroup.data };
+    return { data: data.createFingerPrintGroup2.data };
   };
   return { createFingerPrintGroup };
 };

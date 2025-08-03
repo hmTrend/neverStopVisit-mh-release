@@ -21,18 +21,25 @@ export const FingerprintCreateGroup = () => {
   const toast = useToast();
 
   const handleSubmit = async () => {
-    const groupName = groupNameRef.current.value;
+    const groupName = groupNameRef?.current?.value;
+    console.log(2);
+    console.log(groupList);
     try {
       isSameGroup({ payload: groupList, groupName });
+      console.log(3);
     } catch (e) {
+      console.log(4);
       console.error(e.message);
       return;
     }
     setLoading(true);
+    console.log(1);
     const { data } = await createFingerPrintGroup({
       groupName,
       memberFid: "67315a7130d6d4d2bb26e38a",
     });
+    console.log("data 33211");
+    console.log(data);
     storeFingerPrintRegister.groupList.push(data);
     setLoading(false);
   };

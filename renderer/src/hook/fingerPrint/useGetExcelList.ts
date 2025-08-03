@@ -22,18 +22,31 @@ export const useGetExcelList = () => {
       throw Error(`ERR > getExcelList > ${error.message}`);
     }
 
-    const latestDate = Math.max(
-      ...data.getExcelList.data.map((v) => new Date(v.updatedAt).getTime()),
-    );
+    // 데이터가 없는 경우를 처리
+    if (!data.getExcelList?.data) {
+      return {
+        data: [],
+        listTotalCount: 0,
+      };
+    }
+
+    const latestDate = data.getExcelList.data.length
+      ? Math.max(
+          ...data.getExcelList.data.map((v) => new Date(v.updatedAt).getTime()),
+        )
+      : null;
 
     const dataTransDate = data.getExcelList.data.map((item) => ({
       ...item,
       updatedAt: UtilDate.formatKoreanTime(item.updatedAt),
-      isLatest: new Date(item.updatedAt).getTime() === latestDate,
+      isLatest:
+        latestDate !== null
+          ? new Date(item.updatedAt).getTime() === latestDate
+          : false,
     }));
     return {
       data: dataTransDate,
-      listTotalCount: data.getExcelList.listTotalCount,
+      listTotalCount: data.getExcelList?.listTotalCount || 0,
     };
   };
   return { getExcelList };
