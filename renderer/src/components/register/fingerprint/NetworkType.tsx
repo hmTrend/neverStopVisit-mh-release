@@ -28,9 +28,9 @@ export function NetworkType() {
               onChange={handleChange}
             >
               <Stack spacing={5} direction="row">
-                <Radio colorScheme="red" value="LOCAL">
-                  로컬(테더링)
-                </Radio>
+                {/*<Radio colorScheme="red" value="LOCAL">*/}
+                {/*  로컬(테더링)*/}
+                {/*</Radio>*/}
                 <Radio colorScheme="blue" value="YOODOOPROXY">
                   너두프록시
                 </Radio>

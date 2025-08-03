@@ -121,11 +121,11 @@ export const FingerprintExcelList = () => {
                   <Th>현재비번</Th>
                   <Th>이전비번</Th>
                   <Th>상태</Th>
-                  <Th>쿠키</Th>
+                  {/*<Th>쿠키</Th>*/}
                   <Th>아이피</Th>
                   <Th>폰번호</Th>
 
-                  <Th>삭제여부</Th>
+                  {/*<Th>삭제여부</Th>*/}
                 </Tr>
               </Thead>
               <Tbody>
@@ -155,30 +155,30 @@ export const FingerprintExcelList = () => {
                     <Td>{CommonUtil.maskLast4Digits(v.nPw)}</Td>
                     <Td>{CommonUtil.maskLast4Digits(v.bPw)}</Td>
                     <Td>{v.nState}</Td>
-                    <Td>
-                      <FingerprintCookeCook
-                        _id={v._id}
-                        nId={v.nId}
-                        indexNum={i}
-                        type={v.type}
-                      />
-                    </Td>
+                    {/*<Td>*/}
+                    {/*  <FingerprintCookeCook*/}
+                    {/*    _id={v._id}*/}
+                    {/*    nId={v.nId}*/}
+                    {/*    indexNum={i}*/}
+                    {/*    type={v.type}*/}
+                    {/*  />*/}
+                    {/*</Td>*/}
 
                     <Td>{v.ip}</Td>
                     <Td>{v.phoneNumber}</Td>
 
-                    <Td>
-                      <Button
-                        onClick={() =>
-                          fingerprintBrowserClose({ _id: v._id, type: v.type })
-                        }
-                        fontSize={"xs"}
-                        variant={"link"}
-                        fontWeight={"light"}
-                      >
-                        삭제
-                      </Button>
-                    </Td>
+                    {/*<Td>*/}
+                    {/*  <Button*/}
+                    {/*    onClick={() =>*/}
+                    {/*      fingerprintBrowserClose({ _id: v._id, type: v.type })*/}
+                    {/*    }*/}
+                    {/*    fontSize={"xs"}*/}
+                    {/*    variant={"link"}*/}
+                    {/*    fontWeight={"light"}*/}
+                    {/*  >*/}
+                    {/*    삭제*/}
+                    {/*  </Button>*/}
+                    {/*</Td>*/}
                   </Tr>
                 ))}
               </Tbody>

@@ -16,7 +16,7 @@ class FingerPrintRegisterValtio {
     this.selectedExcelList = [];
     this.getExcelList = [];
     this.listTotalCount = 0;
-    this.fingerPrintNetworkType = "LOCAL";
+    this.fingerPrintNetworkType = "YOODOOPROXY";
   }
 }
 

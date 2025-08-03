@@ -73,26 +73,26 @@ export const FingerprintExcelDownload = () => {
 
   return (
     <Flex gap={9}>
-      <Button
-        variant={"link"}
-        onClick={() =>
-          ExcelExportButton({
-            type: "그룹지문",
-          })
-        }
-      >
-        그룹지문 엑셀다운받기
-      </Button>
-      <Button
-        variant={"link"}
-        onClick={() =>
-          ExcelExportButton({
-            type: "정상지문",
-          })
-        }
-      >
-        정상지문 엑셀다운받기
-      </Button>
+      {/*<Button*/}
+      {/*  variant={"link"}*/}
+      {/*  onClick={() =>*/}
+      {/*    ExcelExportButton({*/}
+      {/*      type: "그룹지문",*/}
+      {/*    })*/}
+      {/*  }*/}
+      {/*>*/}
+      {/*  그룹지문 엑셀다운받기*/}
+      {/*</Button>*/}
+      {/*<Button*/}
+      {/*  variant={"link"}*/}
+      {/*  onClick={() =>*/}
+      {/*    ExcelExportButton({*/}
+      {/*      type: "정상지문",*/}
+      {/*    })*/}
+      {/*  }*/}
+      {/*>*/}
+      {/*  정상지문 엑셀다운받기*/}
+      {/*</Button>*/}
     </Flex>
   );
 };
