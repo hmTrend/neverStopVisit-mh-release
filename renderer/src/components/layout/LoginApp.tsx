@@ -18,9 +18,9 @@ export const LoginApp = () => {
 
   useEffect(() => {
     const savedUserId = localStorage.getItem("userEmail");
-    setEmail(savedUserId);
+    setEmail(savedUserId ?? "");
     const savedPassword = localStorage.getItem("password");
-    setPassword(savedPassword);
+    setPassword(savedPassword ?? "");
   }, []);
 
   const handleLogin = () => {
