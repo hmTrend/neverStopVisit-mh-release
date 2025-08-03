@@ -22,7 +22,7 @@ import { useRef } from "react";
 export function FingerprintCookeCook({ nId, indexNum, type, _id }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { fetchFingerPrintTargetExcelOne } = useFetchTargetExcelOneCookie();
-  const cookieRef = useRef(null);
+  const cookieRef = useRef<HTMLTextAreaElement>(null);
   const toast = useToast();
 
   return (
@@ -67,7 +67,7 @@ export function FingerprintCookeCook({ nId, indexNum, type, _id }) {
             <Button
               variant="ghost"
               onClick={async () => {
-                if (cookieRef.current.value === "") {
+                if (!cookieRef.current || cookieRef.current.value === "") {
                   toast({
                     title: "쿠키값 미입력",
                     duration: 3000,
