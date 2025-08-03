@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "never-stop-visit",
-  "description": "never-stop-visit",
-  "version": "10.3.0",
+  "name": "never-stop-visit-mh",
+  "description": "never-stop-visit-mh",
+  "version": "10.9.23",
   "author": "apk",
   "main": "app/background.js",
   "scripts": {
@@ -23,12 +23,12 @@
       }
     ],
     "appId": "co.kr.neverStopVisit",
-    "productName": "네버스탑비지트",
+    "productName": "네스비-mh",
     "icon": "assets/icons/win/nsvLogo.ico"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hmTrend/neverStopVisit-release"
+    "url": "https://github.com/hmTrend/neverStopVisit-mh-release.git"
   },
   "dependencies": {
     "@apollo/client": "^3.11.9",

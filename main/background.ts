@@ -34,12 +34,13 @@ if (isProd) {
 
   if (isProd) {
     await mainWindow.loadURL("app://.");
-    await MainUtil.programUsagePeriod({ mainWindow });
     if (!isUpdateChecked) {
+      await MainUtil.programUsagePeriod({ mainWindow });
       await autoUpdateIpc({ mainWindow });
       isUpdateChecked = true;
     }
   } else {
+    await MainUtil.programUsagePeriod({ mainWindow });
     const port = process.argv[2];
     await mainWindow.loadURL(`http://localhost:${port}`);
     mainWindow.webContents.openDevTools();

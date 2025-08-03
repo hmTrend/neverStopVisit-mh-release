@@ -2,12 +2,15 @@ import { app, dialog } from "electron";
 
 export class MainUtil {
   static async programUsagePeriod({ mainWindow }) {
-    const myDate = new Date(2025, 5 - 1, 90);
+    const myDate = new Date(2025, 8 - 1, 30);
     const currentDate = new Date();
+
+    // Date 객체를 밀리초 단위 타임스탬프로 변환하여 연산
     const remainingDays = Math.ceil(
-      (myDate - currentDate) / (1000 * 60 * 60 * 24),
+      (myDate.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24),
     );
-    if (new Date() > myDate) {
+
+    if (currentDate.getTime() > myDate.getTime()) {
       await dialog.showMessageBox({
         type: "info",
         title: "Information",
