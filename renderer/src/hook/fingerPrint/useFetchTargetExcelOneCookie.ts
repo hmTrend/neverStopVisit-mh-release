@@ -48,7 +48,7 @@ export const useFetchTargetExcelOneCookie = () => {
       duration: 3000,
       status: "success",
     });
-    return { data: data.fetchFingerPrintTargetExcelOne.data };
+    return { data: data.fetchFingerPrintTargetExcelOne2.data };
   };
   return { fetchFingerPrintTargetExcelOne };
 };

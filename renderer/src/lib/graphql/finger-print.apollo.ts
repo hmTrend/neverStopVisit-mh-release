@@ -136,7 +136,7 @@ export const gqlPatchFingerPrintExcelList = gql`
 `;
 
 export const gqlFetchFingerPrintTargetExcelOne = gql`
-  mutation FetchFingerPrint2TargetExcelOne2($input: FetchFingerPrintInput!) {
+  mutation FetchFingerPrint2TargetExcelOne2($input: FetchFingerPrint2Input!) {
     fetchFingerPrintTargetExcelOne2(input: $input) {
       data {
         _id

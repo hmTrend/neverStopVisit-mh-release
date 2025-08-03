@@ -49,8 +49,8 @@ export const GetFingerPrintTargetExcelOne = async ({
 };
 
 const gqlFetchFingerPrintTargetExcelOne = gql`
-  mutation FetchFingerPrintTargetExcelOne($input: FetchFingerPrintInput!) {
-    fetchFingerPrintTargetExcelOne(input: $input) {
+  mutation FetchFingerPrintTargetExcelOne2($input: FetchFingerPrint2Input!) {
+    fetchFingerPrintTargetExcelOne2(input: $input) {
       data {
         _id
         groupFid
@@ -91,7 +91,7 @@ export const FetchFingerPrintTargetExcelOne = async ({
     throw Error(`ERR > FetchFingerPrintTargetExcelOne > ${errors[0].message}`);
   }
   return {
-    data: data.fetchFingerPrintTargetExcelOne.data,
+    data: data.fetchFingerPrintTargetExcelOne2.data,
     message: "OK > FetchFingerPrintTargetExcelOne ",
     error: "",
   };
