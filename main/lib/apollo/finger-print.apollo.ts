@@ -98,10 +98,10 @@ export const FetchFingerPrintTargetExcelOne = async ({
 };
 
 const gqlGetFingerPrintTargetExcelOneFromId = gql`
-  query GetFingerPrintTargetExcelOneFromId(
-    $input: GetFingerPrintExcelListFromIdInput!
+  query GetFingerPrintTargetExcelOneFromId2(
+    $input: GetFingerPrint2ExcelListFromIdInput!
   ) {
-    getFingerPrintTargetExcelOneFromId(input: $input) {
+    getFingerPrintTargetExcelOneFromId2(input: $input) {
       data {
         _id
         groupFid
@@ -115,6 +115,9 @@ const gqlGetFingerPrintTargetExcelOneFromId = gql`
         phoneNumber
         updatedAt
         type
+        workedList
+        workedListExpireAt
+        workedListKeepDay
       }
       message
       error
@@ -137,7 +140,7 @@ export const GetFingerPrintTargetExcelOneFromId = async ({ _id }) => {
     throw Error(`ERR > GetFingerPrintTargetExcelOneFromId > ${error.message}`);
   }
   return {
-    data: data.getFingerPrintTargetExcelOneFromId.data,
+    data: data.getFingerPrintTargetExcelOneFromId2.data,
     message: "OK > GetFingerPrintTargetExcelOneFromId ",
     error: "",
   };

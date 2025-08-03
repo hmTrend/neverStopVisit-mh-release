@@ -14,6 +14,8 @@ export const fingerPrintBrowserIpc = async () => {
       const { _id, type, fingerPrintNetworkType } = args;
       const { data } = await GetFingerPrintTargetExcelOneFromId({ _id });
 
+      console.log("data 332211");
+      console.log(data);
       try {
         if (data && data.cookie.trim()) {
           parsedCookie = JSON.parse(data.cookie);

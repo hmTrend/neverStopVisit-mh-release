@@ -4,7 +4,6 @@ import { validateCookie } from "./validateCookie";
 import { getChromePath } from "./getChromePath";
 import wait from "waait";
 import { LaunchOptions } from "playwright-core";
-import { getNextCreateUserAgentWithPC } from "../../../lib/network/userAgentWithPC";
 import { getNextProxyYoodooProxy } from "../../../lib/proxy/getNextProxyYoodooProxy";
 import { getNextCreateUserAgentWithPC100percent } from "../../../lib/network/userAgentWithPC100percent";
 
@@ -26,7 +25,6 @@ export const initializeForPC = async ({
   type?: string;
   fingerPrintNetworkType: string;
 }) => {
-  // const proxySettings = getNextProxyDynamicProxy();
   const proxySettings = getNextProxyYoodooProxy();
   for (let i = 0; i < 2; i++) {
     try {

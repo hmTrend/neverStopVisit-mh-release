@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v10.9.3 + list 보기 셋팅">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v10.9.6 + finger-print.apollo.ts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/api/ipc/fingerPrintBrowser.ipc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/api/ipc/fingerPrintBrowser.ipc.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/lib/apollo/finger-print.apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/lib/apollo/finger-print.apollo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useFetchTargetExcelOneCookie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useFetchTargetExcelOneCookie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/lib/graphql/finger-print.apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/finger-print.apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeForPC.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main/services/commons/PuppeteerEngine/initializeForPC.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -342,14 +342,6 @@
       <workItem from="1740551522151" duration="5529000" />
       <workItem from="1740614581693" duration="10053000" />
       <workItem from="1740727375814" duration="51324000" />
-    </task>
-    <task id="LOCAL-00596" summary="v6.3.0 networkRouterEdu &gt; isTest">
-      <option name="closed" value="true" />
-      <created>1740373326166</created>
-      <option name="number" value="00596" />
-      <option name="presentableId" value="LOCAL-00596" />
-      <option name="project" value="LOCAL" />
-      <updated>1740373326166</updated>
     </task>
     <task id="LOCAL-00597" summary="v6.3.3 networkRouterEdu &gt; 포멧 완성">
       <option name="closed" value="true" />
@@ -735,7 +727,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754201040093</updated>
     </task>
-    <option name="localTasksCounter" value="645" />
+    <task id="LOCAL-00645" summary="v10.9.6 + finger-print.apollo.ts">
+      <option name="closed" value="true" />
+      <created>1754203501944</created>
+      <option name="number" value="00645" />
+      <option name="presentableId" value="LOCAL-00645" />
+      <option name="project" value="LOCAL" />
+      <updated>1754203501944</updated>
+    </task>
+    <option name="localTasksCounter" value="646" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -780,7 +780,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v7.3.3 쇼핑 playLogic1 / 동작" />
     <MESSAGE value="v7.3.6 navigateToPage" />
     <MESSAGE value="v7.3.9 화이트스크린 제거" />
     <MESSAGE value="v7.6.0 에러 개선" />
@@ -805,7 +804,8 @@
     <MESSAGE value="v10.6.9 + 네스비 지문" />
     <MESSAGE value="v10.9.0 + excel 등록성공" />
     <MESSAGE value="v10.9.3 + list 보기 셋팅" />
-    <option name="LAST_COMMIT_MESSAGE" value="v10.9.3 + list 보기 셋팅" />
+    <MESSAGE value="v10.9.6 + finger-print.apollo.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="v10.9.6 + finger-print.apollo.ts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
