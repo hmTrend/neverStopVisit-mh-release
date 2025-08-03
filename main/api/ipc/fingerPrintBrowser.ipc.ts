@@ -29,14 +29,18 @@ export const fingerPrintBrowserIpc = async () => {
       if (type === "naverM") {
         await newEngine.initialize({
           url: "https://m.naver.com/",
-          cookie: parsedCookie ?? "",
+          cookie: Array.isArray(parsedCookie)
+            ? JSON.stringify(parsedCookie)
+            : "",
           type,
         });
       } else {
         await newEngine.initializeForPC({
           url:
             type === "coupang" ? "https://coupang.com/" : "https://naver.com",
-          cookie: parsedCookie ?? "",
+          cookie: Array.isArray(parsedCookie)
+            ? JSON.stringify(parsedCookie)
+            : "",
           type,
           fingerPrintNetworkType,
         });
@@ -82,7 +86,7 @@ export const fingerPrintBrowserIpc = async () => {
       const newEngine = new PuppeteerEngine();
       await newEngine.initialize({
         url: "https://m.naver.com/",
-        cookie: [],
+        cookie: "",
       });
       engineMap.set(_id, newEngine);
     }
