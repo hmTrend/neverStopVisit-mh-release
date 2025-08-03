@@ -23,20 +23,22 @@ export const useGetExcelList = () => {
     }
 
     // 데이터가 없는 경우를 처리
-    if (!data.getExcelList?.data) {
+    if (!data.getExcelList2?.data) {
       return {
         data: [],
         listTotalCount: 0,
       };
     }
 
-    const latestDate = data.getExcelList.data.length
+    const latestDate = data.getExcelList2.data.length
       ? Math.max(
-          ...data.getExcelList.data.map((v) => new Date(v.updatedAt).getTime()),
+          ...data.getExcelList2.data.map((v) =>
+            new Date(v.updatedAt).getTime(),
+          ),
         )
       : null;
 
-    const dataTransDate = data.getExcelList.data.map((item) => ({
+    const dataTransDate = data.getExcelList2.data.map((item) => ({
       ...item,
       updatedAt: UtilDate.formatKoreanTime(item.updatedAt),
       isLatest:
@@ -46,7 +48,7 @@ export const useGetExcelList = () => {
     }));
     return {
       data: dataTransDate,
-      listTotalCount: data.getExcelList?.listTotalCount || 0,
+      listTotalCount: data.getExcelList2?.listTotalCount || 0,
     };
   };
   return { getExcelList };

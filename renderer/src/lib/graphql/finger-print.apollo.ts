@@ -88,7 +88,7 @@ export const gqlGetExcelList = gql`
 `;
 
 export const gqlGetExcelListDownload = gql`
-  query GetExcelList2($input: GetFingerPrintExcelListInput!) {
+  query GetExcelList2($input: GetFingerPrint2ExcelListInput!) {
     getExcelList2(input: $input) {
       data {
         _id

@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v10.6.9 + 네스비 지문">
+    <list default="true" id="483631a8-f052-4c50-8a80-2c78a8af19b6" name="Changes" comment="v10.9.0 + excel 등록성공">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintCreateGroup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/components/register/fingerprint/FingerprintGroupList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useCreateFingerPrintGroup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useCreateFingerPrintGroup.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useGetExcelList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/hook/fingerPrint/useGetExcelList.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer/src/lib/graphql/finger-print.apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/src/lib/graphql/finger-print.apollo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/renderer/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -345,14 +341,6 @@
       <workItem from="1740551522151" duration="5529000" />
       <workItem from="1740614581693" duration="10053000" />
       <workItem from="1740727375814" duration="51324000" />
-    </task>
-    <task id="LOCAL-00594" summary="v5.123.0 UtilAnalisys.measureExecutionTime">
-      <option name="closed" value="true" />
-      <created>1740372201419</created>
-      <option name="number" value="00594" />
-      <option name="presentableId" value="LOCAL-00594" />
-      <option name="project" value="LOCAL" />
-      <updated>1740372201419</updated>
     </task>
     <task id="LOCAL-00595" summary="v6.0.0 networkRouterEdu">
       <option name="closed" value="true" />
@@ -738,7 +726,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754048823439</updated>
     </task>
-    <option name="localTasksCounter" value="643" />
+    <task id="LOCAL-00643" summary="v10.9.0 + excel 등록성공">
+      <option name="closed" value="true" />
+      <created>1754200458964</created>
+      <option name="number" value="00643" />
+      <option name="presentableId" value="LOCAL-00643" />
+      <option name="project" value="LOCAL" />
+      <updated>1754200458964</updated>
+    </task>
+    <option name="localTasksCounter" value="644" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -783,7 +779,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="v7.0.3 getNShoppingLogic4ExcelAlignFlatTargetOne 10번 재작업" />
     <MESSAGE value="v7.3.0 쇼핑 playLogic1 / 로깅설치" />
     <MESSAGE value="v7.3.3 쇼핑 playLogic1 / 동작" />
     <MESSAGE value="v7.3.6 navigateToPage" />
@@ -808,7 +803,8 @@
     <MESSAGE value="v9.3.3 proxy값이 비어있을때 셋팅" />
     <MESSAGE value="v10.0.0 쿠팡지문 급하게 수정" />
     <MESSAGE value="v10.6.9 + 네스비 지문" />
-    <option name="LAST_COMMIT_MESSAGE" value="v10.6.9 + 네스비 지문" />
+    <MESSAGE value="v10.9.0 + excel 등록성공" />
+    <option name="LAST_COMMIT_MESSAGE" value="v10.9.0 + excel 등록성공" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
